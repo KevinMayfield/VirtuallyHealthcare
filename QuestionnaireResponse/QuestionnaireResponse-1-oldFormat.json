@@ -1,0 +1,87 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "coded",
+    "extension": [
+        {
+            "url": "http://fhir.virtuallyhealthcare.co.uk/Location",
+            "valueReference": {
+                "reference": "Location/4884"
+            }
+        },
+        {
+            "url": "http://fhir.virtuallyhealthcare.co.uk/LocationType",
+            "extension": [
+                {
+                    "url": "ID",
+                    "valueString": "1672871000006114"
+                },
+                {
+                    "url": "GUID",
+                    "valueString": "357EFD4F-7912-DE6E-13B8-D3FACED28522"
+                },
+                {
+                    "url": "Name",
+                    "valueString": "G.P.Surgery"
+                }
+            ]
+        }
+    ],
+    "identifier": {
+        "system": "urn:uuid",
+        "value": "e52506cf-10ec-49ed-a96f-f3ac1888dee7"
+    },
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/137"
+    },
+    "encounter": {
+        "reference": "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f",
+        "display": "Patient entered data"
+    },
+    "authored": "2021-10-20T09:15:00+10:00",
+    "author": {
+        "reference": "Practitioner/4620"
+    },
+    "item": [
+        {
+            "linkId": "spo2",
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "urn:uuid:469f18f8-e4d0-4713-b66c-9f36309084f3"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "temp",
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "urn:uuid:07907fc7-4a38-49af-b1cf-17503fdd1fa5"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "weight",
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "urn:uuid:d0178c0d-0db5-4577-8f9a-9ba66a5c899a"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "bp",
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "urn:uuid:9e0bf37b-964e-4fa4-b8d6-8685efdc6c76"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,4 +1,7 @@
 {
+    "encounter": {
+        "reference": "Encounter/7c8056db-5a6c-4799-8711-98f11cb039dc"
+    },
     "identifier": [
         {
             "system": "https://fhir.virtually.healthcare/Id/Observation",
