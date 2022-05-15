@@ -1,0 +1,44 @@
+{
+    "resourceType": "Condition",
+    "identifier": [
+        {
+            "system": "https://fhir.virtually.healthcare/Id/Condition",
+            "value": "13b4553f-f48f-4648-84a4-1ee382ce35ea"
+        }
+    ],
+    "clinicalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active"
+            }
+        ]
+    },
+    "severity": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "24484000",
+                "display": "Severe"
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "12802181000006102",
+                "display": "Suspected 2019-nCoV (Wuhan) infection"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd"
+    },
+    "onsetDateTime": "2021-10-09T12:00:00+00:00",
+    "note": [
+        {
+            "text": "Has cough and high body temp, this may be over training during lockdown. Cytokine triggered inflammation?"
+        }
+    ]
+}
