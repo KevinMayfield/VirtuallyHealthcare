@@ -1,0 +1,28 @@
+{
+    "resourceType": "Organization",
+    "identifier": [
+        {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "F83686"
+        }
+    ],
+    "active": true,
+    "name": "STROUD GREEN MEDICAL CENTRE",
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "020 72724323"
+        }
+    ],
+    "address": [
+        {
+            "line": [
+                "181 STROUD GREEN ROAD"
+            ],
+            "city": "LONDON",
+            "district": "GREATER LONDON",
+            "postalCode": "N4 3PZ",
+            "country": "ENGLAND"
+        }
+    ]
+}

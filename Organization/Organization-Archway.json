@@ -1,0 +1,28 @@
+{
+    "resourceType": "Organization",
+    "identifier": [
+        {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "F83004"
+        }
+    ],
+    "active": true,
+    "name": "ARCHWAY MEDICAL CENTRE",
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "020 72720111"
+        }
+    ],
+    "address": [
+        {
+            "line": [
+                "652 HOLLOWAY ROAD"
+            ],
+            "city": "LONDON",
+            "district": "GREATER LONDON",
+            "postalCode": "N19 3NU",
+            "country": "ENGLAND"
+        }
+    ]
+}
