@@ -1,0 +1,32 @@
+{
+    "resourceType": "Observation",
+    "identifier": [
+        {
+            "system": "https://fhir.virtually.healthcare/Id/Observation",
+            "value": "b24e6e43-8b51-4d82-ac58-a590a3196fcd"
+        }
+    ],
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "927981000000106",
+                "display": "Baseline oxygen saturation at periphery"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd"
+    },
+    "asserter": {
+        "reference": "Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd"
+    },
+    "effectiveDateTime": "2021-10-20T09:17:59+01:00",
+    "valueQuantity": {
+        "value": 89,
+        "unit": "percent",
+        "system": " ",
+        "code": "%"
+    }
+}

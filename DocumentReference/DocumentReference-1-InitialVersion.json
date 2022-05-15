@@ -1,0 +1,34 @@
+{
+    "resourceType": "DocumentReference",
+    "identifier": [
+        {
+            "system": "https://fhir.virtually.healthcare/Id/DocumentReference",
+            "value": "300848ed-17e6-473d-a46d-d8e3958c9f8a"
+        }
+    ],
+    "status": "current",
+    "docStatus": "preliminary",
+    "type": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "895551000000104",
+                "display": "Discharge notification"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd"
+    },
+    "date": "2021-10-24T09:43:41+11:00",
+    "description": "Example binary document taken fro HL7 FHIR website",
+    "content": [
+        {
+            "attachment": {
+                "contentType": "application/pdf",
+                "title": "IMG_1910.jpg",
+                "url" : "https://exampleurl.eu-west-2.amazonaws.com/ed7f46ca-35ff-4816-a7d2-4e41991284a3"
+            }
+        }
+    ]
+}
