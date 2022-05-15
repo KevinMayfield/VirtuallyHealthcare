@@ -19,14 +19,14 @@
     "subject": {
         "reference": "Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd"
     },
-    "asserter": {
+    "performer": [{
         "reference": "Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd"
-    },
+    }],
     "effectiveDateTime": "2021-10-20T09:17:59+01:00",
     "valueQuantity": {
         "value": 89,
         "unit": "percent",
-        "system": " ",
+        "system": "http://unitsofmeasure.org",
         "code": "%"
     }
 }
