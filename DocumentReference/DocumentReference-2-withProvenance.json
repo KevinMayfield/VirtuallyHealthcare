@@ -1,0 +1,57 @@
+{
+    "context": {
+        "encounter": [
+            {
+                "reference": "Encounter/7c8056db-5a6c-4799-8711-98f11cb039dc"
+            }
+        ]
+    },
+    "author": [
+        {
+            "reference": "Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd"
+        },
+        {
+            "reference": "PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb"
+        }
+    ],
+    "custodian": {
+        "reference": "Organization/61a55cac-08d5-4cf8-a4d5-581f50962a82"
+    },
+    "date": "2021-10-24T09:43:41+11:00",
+    "identifier": [
+        {
+            "system": "https://fhir.virtually.healthcare/Id/DocumentReference",
+            "value": "300848ed-17e6-473d-a46d-d8e3958c9f8a"
+        }
+    ],
+    "subject": {
+        "reference": "Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd"
+    },
+    "description": "Example binary document taken fro HL7 FHIR website",
+    "type": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "895551000000104",
+                "display": "Discharge notification"
+            }
+        ]
+    },
+    "content": [
+        {
+            "attachment": {
+                "title": "IMG_1910.jpg",
+                "contentType": "application/pdf",
+                "url": "https://exampleurl.eu-west-2.amazonaws.com/ed7f46ca-35ff-4816-a7d2-4e41991284a3"
+            }
+        }
+    ],
+    "docStatus": "preliminary",
+    "meta": {
+        "lastUpdated": "2022-05-15T08:46:32.140Z",
+        "versionId": "1"
+    },
+    "id": "4986300f-0f95-48e6-bd86-03c76c51523a",
+    "resourceType": "DocumentReference",
+    "status": "current"
+}

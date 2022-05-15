@@ -1,0 +1,24 @@
+{
+    "resourceType": "Location",
+    "identifier": [
+        {
+            "system": "https://emis.com/Id/Location/DBID",
+            "value": "4884"
+        }
+    ],
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "https://emis.com/Id/LocationType/DBID",
+                    "code": "357EFD4F-7912-DE6E-13B8-D3FACED28522",
+                    "display" : "G.P.Surgery"
+                }
+            ]
+        }
+    ],
+    "managingOrganization" : {
+        "reference" : "Organization/61a55cac-08d5-4cf8-a4d5-581f50962a82"
+    },
+    "name": "Archway telephone consultation"
+}

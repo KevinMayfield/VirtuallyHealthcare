@@ -1,0 +1,33 @@
+{
+    "resourceType": "Practitioner",
+    "identifier": [
+        {
+            "system": "https://emis.com/Id/Practitioner/DBID",
+            "value": "4620"
+        },
+        {
+            "system": "https://emis.com/Id/Practitioner/REFID",
+            "value": "4620"
+        },
+        {
+            "system": "https://emis.com/Id/Practitioner/GUID",
+            "value": "8159279c-6006-4f78-996a-4c5b96103bd4"
+        },
+        {
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+            "value": "8888888"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "family": "9128372",
+            "given": [
+                "First name"
+            ],
+            "prefix": [
+                "Dr"
+            ]
+        }
+    ]
+}

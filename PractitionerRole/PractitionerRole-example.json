@@ -1,0 +1,20 @@
+{
+    "resourceType": "PractitionerRole",
+    "identifier": [
+        {
+            "system": "https://fhir.virtually.healthcare/Id/PractitionerRole",
+            "value": "046b705f-55a5-4038-80bb-c60678f3439e"
+        }
+    ],
+    "practitioner": {
+        "reference": "Practitioner/27f558f5-47f6-47fa-8416-8e1f99659820"
+    },
+    "organization": {
+        "reference": "Organization/61a55cac-08d5-4cf8-a4d5-581f50962a82"
+    },
+    "location" : [
+        {
+            "reference" : "Location/bc019679-030c-4dc8-b386-033b5690f118"
+        }
+    ]
+}
