@@ -1,0 +1,41 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "identifier":  [
+                    {
+                        "system": "https://fhir.virtually.healthcare/Id/Observation",
+                        "value": "845c593b-15cc-4283-b413-db341b235d03"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "60621009",
+                            "display": "Body mass index"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/e8a80b1b-fa13-437f-970b-033411b275a3"
+                },
+                "effectiveDateTime": "2018-10-04T14:17:59+01:00",
+                "valueQuantity": {
+                    "value": 16.2,
+                    "unit": "kilogram / (meter ^ 2)",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg/m2"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        }
+    ]
+}
