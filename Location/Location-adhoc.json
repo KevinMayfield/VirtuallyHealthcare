@@ -1,10 +1,9 @@
 {
     "resourceType": "Location",
-    "id": "bc019679-030c-4dc8-b386-033b5690f118",
     "identifier": [
         {
             "system": "https://fhir.virtually.healthcare/Id/Location",
-            "value": "8d10ea6e-4509-4f9d-9032-4a6b2dbf4bc8"
+            "value": "c25fe93c-70df-4618-9aed-548bee0229e0"
         }
     ],
     "type": [
@@ -12,11 +11,11 @@
             "coding": [
                 {
                     "system": "http://snomed.info/sct",
-                    "code": "185317003",
-                    "display" : "Telephone encounter"
+                    "code": "185316007",
+                    "display" : "Indirect encounter"
                 }
             ]
         }
     ],
-    "name": "Virtually telephone"
+    "name": "Virtually adhoc"
 }
