@@ -14,6 +14,13 @@
     },
     "type":  [
         {
+            "coding" : [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "149971000000103",
+                    "display" : "General practice online consultation system encounter"
+                }
+            ],
             "text": "Patient completed questionnaire"
         }
     ],
