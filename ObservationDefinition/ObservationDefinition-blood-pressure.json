@@ -1,0 +1,88 @@
+{
+  "resourceType": "ObservationDefinition",
+  "id": "snomed-75367002",
+  "extension": [
+    {
+      "url": "https://fhir.virtually.healthcare/StructureDefinition/Extension-ObservationDefinition-component",
+      "extension": [
+        {
+          "url": "code",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "72313002",
+                "display": "Systolic arterial pressure"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "8480-6",
+                "display": "Systolic blood pressure"
+              }
+            ]
+          }
+        },
+        {
+          "url": "customaryUnit",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://unitsofmeasure.org",
+                "code": "mm[Hg]",
+                "display": "millimeter of mercury"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://fhir.virtually.healthcare/StructureDefinition/Extension-ObservationDefinition-component",
+      "extension": [
+        {
+          "url": "code",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "1091811000000102",
+                "display": "Diastolic arterial pressure"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "8462-4",
+                "display": "Diastolic blood pressure"
+              }
+            ]
+          }
+        },
+        {
+          "url": "customaryUnit",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://unitsofmeasure.org",
+                "code": "mm[Hg]",
+                "display": "millimeter of mercury"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "75367002",
+        "display": "Blood pressure"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "85354-9",
+        "display": "Blood pressure panel with all children optional"
+      }
+    ]
+  }
+}
