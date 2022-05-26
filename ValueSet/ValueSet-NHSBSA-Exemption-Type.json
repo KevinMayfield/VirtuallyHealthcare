@@ -1,0 +1,16 @@
+{
+    "resourceType": "ValueSet",
+    "id": "66434ee1-795a-425c-a77f-cc40a0db6b19",
+    "url": "https://fhir.nhsbsa.nhs.uk/ValueSet/ExemptionType",
+    "version": "0.0.1",
+    "name": "NHSBSAExemptionType",
+    "status": "draft",
+    "description": "NHSBSAExemptionType",
+    "compose": {
+        "include":  [
+            {
+                "system": "https://fhir.nhsbsa.nhs.uk/Id/ExemptionType"
+            }
+        ]
+    }
+}

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="bd288ae2-db3b-4380-985a-a40fb0e8525d" />
+  <url value="https://fhir.virtually.healthcare/StructureDefinition/VirtualHealthcare-Claim" />
+  <name value="VirtualHealthcareClaim" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Claim" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Claim" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Claim">
+      <path value="Claim" />
+      <definition value="This profile is designed to work with NHS BSA Claim API. &#xD;&#xA;&#xD;&#xA;It is compatible via transformation, this will be part of the virtually API." />
+    </element>
+    <element id="Claim.identifier">
+      <path value="Claim.identifier" />
+      <definition value="A unique identifier assigned to this claim.&#xD;&#xA;&#xD;&#xA;Example:&#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA;&quot;identifier&quot;: [&#xD;&#xA;      {&#xD;&#xA;          &quot;system&quot;: &quot;https://fhir.nhsbsa.nhs.uk/Id/CpcsClientReference&quot;,&#xD;&#xA;          &quot;value&quot;: &quot;MYS-78917-13&quot;&#xD;&#xA;      }&#xD;&#xA;  ]&#xD;&#xA;```" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.identifier.system">
+      <path value="Claim.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhsbsa.nhs.uk/Id/CpcsClientReference" />
+    </element>
+    <element id="Claim.identifier.value">
+      <path value="Claim.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Claim.type">
+      <path value="Claim.type" />
+      <definition value="This is a fixed value of &#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA;  &quot;type&quot;: {&#xD;&#xA;      &quot;coding&quot;: [&#xD;&#xA;          {&#xD;&#xA;              &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/claim-type&quot;,&#xD;&#xA;              &quot;code&quot;: &quot;pharmacy&quot;,&#xD;&#xA;              &quot;display&quot;: &quot;Pharmacy&quot;&#xD;&#xA;          }&#xD;&#xA;      ]&#xD;&#xA;  },&#xD;&#xA;```" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.patient">
+      <path value="Claim.patient" />
+      <definition value="The party to whom the professional services and/or products have been supplied or are being considered and for whom actual or forecast reimbursement is sought.&#xD;&#xA;&#xD;&#xA;Example:&#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA; &quot;patient&quot;: {&#xD;&#xA;      &quot;reference&quot;: &quot;Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd&quot;&#xD;&#xA;  },&#xD;&#xA;```" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.billablePeriod">
+      <path value="Claim.billablePeriod" />
+      <definition value="The period for which charges are being submitted.&#xD;&#xA;&#xD;&#xA;Example:&#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA; &quot;billablePeriod&quot;: {&#xD;&#xA;      &quot;start&quot;: &quot;2021-07-01&quot;&#xD;&#xA;  },&#xD;&#xA;```" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.billablePeriod.start">
+      <path value="Claim.billablePeriod.start" />
+      <min value="1" />
+    </element>
+    <element id="Claim.created">
+      <path value="Claim.created" />
+      <comment value="This field is independent of the date of creation of the resource as it may reflect the creation date of a source document prior to digitization. Typically for claims all services must be completed as of this date." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.provider">
+      <path value="Claim.provider" />
+      <definition value="The provider which is responsible for the claim, predetermination or preauthorization.&#xD;&#xA;&#xD;&#xA;Example:&#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA; &quot;provider&quot;: {&#xD;&#xA;      &quot;reference&quot;: &quot;Organization/88aaaa45-c1a0-4576-bc60-adc32e8d51d9&quot;&#xD;&#xA;  },&#xD;&#xA;```" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.provider.reference">
+      <path value="Claim.provider.reference" />
+      <definition value="This should point to the Virtually FHIR Organization resource" />
+      <min value="1" />
+    </element>
+    <element id="Claim.priority">
+      <path value="Claim.priority" />
+      <definition value="This is a fixed value of &#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA; &quot;priority&quot;: {&#xD;&#xA;      &quot;coding&quot;: [&#xD;&#xA;          {&#xD;&#xA;              &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/processpriority&quot;,&#xD;&#xA;              &quot;code&quot;: &quot;normal&quot;&#xD;&#xA;          }&#xD;&#xA;      ]&#xD;&#xA;  },&#xD;&#xA;```" />
+    </element>
+    <element id="Claim.referral">
+      <path value="Claim.referral" />
+      <comment value="The referral resource which lists the date, practitioner, reason and other supporting information.&#xD;&#xA;&#xD;&#xA;Example:&#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA;&quot;referral&quot;: {&#xD;&#xA;      &quot;identifier&quot;: {&#xD;&#xA;          &quot;system&quot;: &quot;https://fhir.nhsbsa.nhs.uk/Id/UrgentCareReference&quot;,&#xD;&#xA;          &quot;value&quot;: &quot;w1UylmUJFiJVU4b7lwptT&quot;&#xD;&#xA;      }&#xD;&#xA;  }&#xD;&#xA;```" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.referral.identifier">
+      <path value="Claim.referral.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Claim.supportingInfo">
+      <path value="Claim.supportingInfo" />
+      <definition value="Additional information codes regarding exceptions, special considerations, the condition, situation, prior or concurrent issues.&#xD;&#xA;&#xD;&#xA;Example: &#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA;  &quot;supportingInfo&quot;: [&#xD;&#xA;      {&#xD;&#xA;          &quot;sequence&quot;: 1,&#xD;&#xA;          &quot;category&quot;: {&#xD;&#xA;              &quot;coding&quot;: [&#xD;&#xA;                  {&#xD;&#xA;                      &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/claiminformationcategory&quot;,&#xD;&#xA;                      &quot;code&quot;: &quot;attachment&quot;&#xD;&#xA;                  }&#xD;&#xA;              ]&#xD;&#xA;          },&#xD;&#xA;          &quot;valueReference&quot;: {&#xD;&#xA;              &quot;reference&quot;: &quot;QuestionnaireResponse/876eed48-b411-4954-a682-03b9571c2c88&quot;&#xD;&#xA;          }&#xD;&#xA;      }&#xD;&#xA;  ]&#xD;&#xA;```" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Claim.supportingInfo.category">
+      <path value="Claim.supportingInfo.category" />
+      <definition value="Fixed value of&#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA;   &quot;category&quot;: {&#xD;&#xA;              &quot;coding&quot;: [&#xD;&#xA;                  {&#xD;&#xA;                      &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/claiminformationcategory&quot;,&#xD;&#xA;                      &quot;code&quot;: &quot;attachment&quot;&#xD;&#xA;                  }&#xD;&#xA;              ]&#xD;&#xA;          },&#xD;&#xA;```" />
+    </element>
+    <element id="Claim.supportingInfo.value[x]">
+      <path value="Claim.supportingInfo.value[x]" />
+      <definition value="This MUST reference a Virtually FHIR QuestionnaireResponse which contains the supporting claim information. &#xD;&#xA;&#xD;&#xA;The definition of this QuestionnaireResponse is held in [Virtually BSA Questionnaire](https://simplifier.net/guide/Virtually-Healthcare-FHIR-API/Home/Questionnaire/NHSBSA-Claim-SuppportingInfo.page.md?version=current)" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+    <element id="Claim.insurance">
+      <path value="Claim.insurance" />
+      <definition value="This is a fixed value of &#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA;&quot;insurance&quot;: [&#xD;&#xA;      {&#xD;&#xA;          &quot;sequence&quot;: 1,&#xD;&#xA;          &quot;focal&quot;: true,&#xD;&#xA;          &quot;coverage&quot;: {&#xD;&#xA;              &quot;identifier&quot;: {&#xD;&#xA;                  &quot;system&quot;: &quot;https://fhir.nhs.uk/Id/ods-organization-code&quot;,&#xD;&#xA;                  &quot;value&quot;: &quot;T1450&quot;&#xD;&#xA;              },&#xD;&#xA;              &quot;display&quot;: &quot;NHS BUSINESS SERVICES AUTHORITY&quot;&#xD;&#xA;          }&#xD;&#xA;      }&#xD;&#xA;  ],&#xD;&#xA;```" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.item">
+      <path value="Claim.item" />
+      <definition value="A claim line. Either a simple  product or service or a 'group' of details which can each be a simple items or groups of sub-details.&#xD;&#xA;&#xD;&#xA;Example:&#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA;&quot;item&quot;: [&#xD;&#xA;      {&#xD;&#xA;          &quot;sequence&quot;: 1,&#xD;&#xA;          &quot;productOrService&quot;: {&#xD;&#xA;              &quot;coding&quot;: [&#xD;&#xA;                  {&#xD;&#xA;                      &quot;system&quot;: &quot;https://fhir.nhsbsa.nhs.uk/Id/CpcsType&quot;,&#xD;&#xA;                      &quot;code&quot;: &quot;EMG_MED&quot;,&#xD;&#xA;                      &quot;display&quot;: &quot;NHS Urgent Medicines Supply&quot;&#xD;&#xA;                  }&#xD;&#xA;              ]&#xD;&#xA;          },&#xD;&#xA;          &quot;programCode&quot;: [&#xD;&#xA;              {&#xD;&#xA;                  &quot;coding&quot;: [&#xD;&#xA;                      {&#xD;&#xA;                          &quot;system&quot;: &quot;https://fhir.nhsbsa.nhs.uk/Id/ExemptionType&quot;,&#xD;&#xA;                          &quot;code&quot;: &quot;A&quot;,&#xD;&#xA;                          &quot;display&quot;: &quot;60 years of age or over or is under 16 years of age&quot;&#xD;&#xA;                      }&#xD;&#xA;                  ]&#xD;&#xA;              }&#xD;&#xA;          ]&#xD;&#xA;      }&#xD;&#xA;  ]&#xD;&#xA;```" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Claim.item.productOrService">
+      <path value="Claim.item.productOrService" />
+      <definition value="Fixed value of &#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA;&#xD;&#xA;```" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhsbsa.nhs.uk/ValueSet/CpcsType" />
+      </binding>
+    </element>
+    <element id="Claim.item.productOrService.coding">
+      <path value="Claim.item.productOrService.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Claim.item.productOrService.coding.system">
+      <path value="Claim.item.productOrService.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Claim.item.productOrService.coding.code">
+      <path value="Claim.item.productOrService.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Claim.item.productOrService.coding.display">
+      <path value="Claim.item.productOrService.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Claim.item.programCode">
+      <path value="Claim.item.programCode" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhsbsa.nhs.uk/ValueSet/ExemptionType" />
+      </binding>
+    </element>
+    <element id="Claim.item.programCode.coding">
+      <path value="Claim.item.programCode.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Claim.item.programCode.coding.system">
+      <path value="Claim.item.programCode.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Claim.item.programCode.coding.code">
+      <path value="Claim.item.programCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Claim.item.programCode.coding.display">
+      <path value="Claim.item.programCode.coding.display" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,16 @@
+{
+    "resourceType": "ValueSet",
+    "id": "4d252b71-a9b0-42b4-8a6d-de723c47d610",
+    "url": "https://fhir.nhsbsa.nhs.uk/ValueSet/CpcsType",
+    "version": "0.0.1",
+    "name": "NHSBSACpcsType",
+    "status": "draft",
+    "description": "NHSBSA CpcsType",
+    "compose": {
+        "include":  [
+            {
+                "system": "https://fhir.nhsbsa.nhs.uk/Id/CpcsType"
+            }
+        ]
+    }
+}
