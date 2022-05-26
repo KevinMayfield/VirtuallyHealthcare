@@ -1,0 +1,75 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "d90d74f4-737b-4bc1-9bc4-f7ca4f1736ec",
+    "url": "https://fhir.nhsbsa.nhs.uk/Id/ExemptionType",
+    "version": "1.0.0",
+    "name": "ExemptionType",
+    "status": "active",
+    "date": "2022-05-26T00:00:00+00:00",
+    "publisher": "NHS BSA",
+    "description": "Levy Exemption Codes - The following codes and descriptions should be used when a patient has received a medication that is subject to prescription levy or equivalent.  If a levy was paid, then the message segment (extension) should be omitted from the message.",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "A",
+            "display": "Under 16 years of age"
+        },
+        {
+            "code": "B",
+            "display": "Full-time students aged 16, 17 or 18"
+        },
+        {
+            "code": "C",
+            "display": "60 years of age or over"
+        },
+        {
+            "code": "D",
+            "display": "Maternity exemption"
+        },
+        {
+            "code": "E",
+            "display": "Medical exemption"
+        },
+        {
+            "code": "F",
+            "display": "Prescription pre-payment certificate (PPC)"
+        },
+        {
+            "code": "G",
+            "display": "War pension exemption"
+        },
+        {
+            "code": "H",
+            "display": "Income support (IS) or Income-related Employment and Support Allowance"
+        },
+        {
+            "code": "K",
+            "display": "Income-based Jobseeker's allowance (JSA) or Universal Credit (UC)"
+        },
+        {
+            "code": "L",
+            "display": "HC2 charges certificate"
+        },
+        {
+            "code": "M",
+            "display": "NHS Tax Credit Exemption"
+        },
+        {
+            "code": "S",
+            "display": "Pension Credit (Guarantee credit) paid on its own, or Pension Credit (Guarantee Credit with Savings Credit)"
+        },
+        {
+            "code": "X",
+            "display": "Free of charge contraceptives"
+        },
+        {
+            "code": "HMP",
+            "display": "Prisoner on release"
+        },
+        {
+            "code": "U",
+            "display": "Universal Credit and meets the criteria"
+        }
+    ]
+}

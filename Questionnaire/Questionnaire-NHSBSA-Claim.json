@@ -1,0 +1,97 @@
+{
+    "id": "0906e705-4a97-4701-b78c-00d68064ea79",
+    "version": "0.0.2",
+    "subjectType": [
+        "Patient"
+    ],
+    "status": "draft",
+    "url": "https://fhir.virtually.healthcare/Questionnaire/NHSBSA-Claim",
+    "title": "NHSABSA-Claim",
+    "resourceType": "Questionnaire",
+    "item": [
+        {
+            "linkId": "REFERRAL_REFERENCE",
+            "required": true,
+            "type": "string",
+            "text": "The NHS 111 call centre or online reference for the referral. Size max. 255. Mandatory for types EMG_MED, MIN_ILL, EMG_MED_UEC and MIN_ILL_UEC. Should not be supplied for type FLU_VAC, COVID_VAC. For GP Referrals should be supplied as 'GP-'  {Unique_identifier}. Recommended format: 'GP-' + {Caller_Identifier} + '-' + {generated_identifier}, e.g. GPNHSBSA-123456XYZ"
+        },
+        {
+            "linkId": "MEDICATION_SUPPLY_TYPE",
+            "required": false,
+            "type": "choice",
+            "text": "Over the counter/Minor Ailments Service/Patient Group Direction"
+        },
+        {
+            "linkId": "REFERRER_ORG_TYPE",
+            "required": false,
+            "type": "choice",
+            "text": "Type of referring organisation"
+        },
+        {
+            "linkId": "REFERRER_CASE_REF",
+            "required": false,
+            "type": "string",
+            "text": "The case reference number from the referring organisation. Optional if Referral Case ID (REFERRAL_REFERENCE) is present"
+        },
+        {
+            "linkId": "DISPOSITION_CODE",
+            "required": false,
+            "type": "choice",
+            "text": "Dx code from the 111 system resulting from the NHS Pathways"
+        },
+        {
+            "linkId": "CONSULTATION_METHOD",
+            "required": false,
+            "type": "choice",
+            "text": "Type of consultation conducted"
+        },
+        {
+            "linkId": "CONSULTATION_OUTCOME",
+            "required": false,
+            "type": "choice",
+            "text": "The outcome of the consultation conducted"
+        },
+        {
+            "linkId": "OTHER_CONSULTATION_OUTCOME",
+            "required": false,
+            "type": "string",
+            "text": "Free text value for other outcome of the consultation conducted and mandatory only if value of CONSULTATION_OUTCOME is selected as OTHER(Other)."
+        },
+        {
+            "linkId": "SIGNPOSTED_TO",
+            "required": false,
+            "type" : "choice",
+            "text": "Details of Where patient has been signposted to"
+        },
+        {
+            "linkId": "OTHER_SIGNPOSTED_TO",
+            "required": false,
+            "type": "string",
+            "text": "Free text value for other signposted to and mandatory only if value of SIGNPOSTED_TO is selected as option OTHER"
+        },
+        {
+            "linkId": "ESCALATED_TO",
+            "required": false,
+            "type" : "choice",
+            "text": "Where patient has been referred to (escalated)"
+        },
+        {
+            "linkId": "INCIDENT",
+            "required": false,
+            "type": "boolean",
+            "text": "Confirmation of whether the pharmacist would like to report an incident or send a message to CPCS commissioners. "
+        },
+        {
+            "linkId": "PRESENTING_COMPLAINT_OR_ISSUES",
+            "required": false,
+            "type": "string",
+            "text": "The health problem or issue experienced by the patient. Freetext values with max size 250 chars."
+        },
+        {
+            "linkId": "ONWARD_REFERRAL_REASON",
+            "required": false,
+            "type": "string",
+            "text": "Reason (free text value) for onward referral. Max size 250."
+        }
+    ]
+}

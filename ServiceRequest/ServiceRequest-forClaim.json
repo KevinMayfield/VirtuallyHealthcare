@@ -1,0 +1,20 @@
+{
+    "resourceType": "ServiceRequest",
+    "id": "91c9ae86-6f09-4823-ad33-0994cbc2f8b0",
+    "identifier": [
+      {
+        "system": "https://fhir.nhsbsa.nhs.uk/Id/UrgentCareReference",
+        "value": "91c9ae86-6f09-4823-ad33-0994cbc2f8b0"
+      }
+    ],
+    "locationCode": [
+      {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "code": "FK545"
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,23 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "876eed48-b411-4954-a682-03b9571c2c88",
+    "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/NHSBSA-Claim",
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd"
+    },
+    "authored": "2022-05-25T16:40:00+00:00",
+    "source": {
+        "reference" : "Organization/88aaaa45-c1a0-4576-bc60-adc32e8d51d9"
+    },
+    "item": [
+        {
+            "linkId": "REFERRAL_REFERENCE",
+            "answer": [
+                {
+                    "valueString": "51ee48c4-fa29-4b1d-9a74-deb63a9818ad"
+                }
+            ]
+        }
+    ]
+}

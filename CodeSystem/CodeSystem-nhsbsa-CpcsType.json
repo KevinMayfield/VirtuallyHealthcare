@@ -1,0 +1,43 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "72895f15-ab4f-40fb-b7b3-e226015fe1ea",
+    "url": "https://fhir.nhsbsa.nhs.uk/Id/CpcsType",
+    "version": "1.0.0",
+    "name": "CpcsType",
+    "status": "active",
+    "date": "2022-05-26T00:00:00+00:00",
+    "publisher": "NHS BSA",
+    "description": "CpcsType",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "NHS_111_SERVICE",
+            "display": "NHS 111 Service"
+        },
+        {
+            "code": "NHS_111_ONLINE",
+            "display": "NHS 111 online"
+        },
+        {
+            "code": "AMBULANCE",
+            "display": "Ambulance Service"
+        },
+        {
+            "code": "GP_PRACTICE",
+            "display": "GP Practice"
+        },
+        {
+            "code": "GP_ONLINE",
+            "display": "GP Practice (online)"
+        },
+        {
+            "code": "EMERGENCY",
+            "display": "Emergency Department"
+        },
+        {
+            "code": "UTC",
+            "display": "Urgent Treatment Centre"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "identifier": [
+        {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "FK545"
+        }
+    ],
+    "partOf": {
+        "reference": "https://ek1wj5eye3.execute-api.eu-west-2.amazonaws.com/dev/Organization/6d959410-13eb-4ca1-8a34-eb39124f322e",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "P3JX"
+        }
+    },
+    "address": [
+        {
+            "city": "West Yorkshire",
+            "use": "work",
+            "line": [
+                "17 Austhorpe Road",
+                "Crossgates",
+                "Leeds"
+            ],
+            "postalCode": "LS15 8BA"
+        }
+    ],
+    "active": true,
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+                    "code": "182",
+                    "display": "PHARMACY"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "lastUpdated": "2022-05-25T19:02:21.637Z",
+        "versionId": "1"
+    },
+    "name": "Crossgates Day & Night Pharmacy",
+    "telecom": [
+        {
+            "system": "phone",
+            "use": "work",
+            "value": "0113 3180277"
+        }
+    ],
+    "id": "88aaaa45-c1a0-4576-bc60-adc32e8d51d9",
+    "resourceType": "Organization"
+}

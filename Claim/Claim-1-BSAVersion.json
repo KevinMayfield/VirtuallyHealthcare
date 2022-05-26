@@ -1,0 +1,354 @@
+{
+    "meta": {
+      "profile": [
+        "https://fhir.nhsbsa.nhs.uk/StructureDefinition/CpcsToken"
+      ]
+    },
+    "identifier": [
+      {
+        "system": "https://fhir.nhsbsa.nhs.uk/Id/CpcsClientReference",
+        "value": "MYS-78917-13"
+      }
+    ],
+    "resourceType": "Claim",
+    "type": {
+      "coding": [
+        {
+          "system": "https://fhir.nhsbsa.nhs.uk/Id/CpcsType",
+          "code": "EMG_MED",
+          "display": "NHS Urgent Medicines Supply"
+        }
+      ]
+    },
+    "contained": [
+      {
+        "resourceType": "Organization",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Organization"
+          ]
+        },
+        "id": "organization1",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "FK545"
+          }
+        ]
+      },
+      {
+        "resourceType": "Organization",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Organization"
+          ]
+        },
+        "id": "gppractice",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "F83004"
+          }
+        ],
+        "name": "ARCHWAY MEDICAL CENTRE",
+        "address": [
+          {
+            "line": [
+                "652 HOLLOWAY ROAD"
+            ],
+            "city": "LONDON",
+            "district": "GREATER LONDON",
+            "postalCode": "N19 3NU",
+            "country": "ENGLAND"
+        }
+        ]
+      },
+      {
+        "resourceType": "Patient",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Patient"
+          ]
+        },
+        "id": "patient1",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Cavill",
+            "given": [
+                "Henry"
+            ],
+            "prefix": [
+                "Mr"
+            ]
+          }
+        ],
+        "birthDate": "1987-09-08",
+        "gender": "male",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "3Rd Floor,",
+              "Mayfield House",
+              "256 Banbury Rd"
+          ],
+          "city": "Oxford",
+          "postalCode": "OX2 7DE"
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "reference": "#gppractice"
+          }
+        ]
+      },
+      {
+        "resourceType": "ServiceRequest",
+        "meta": {
+          "profile": [
+            "https://fhir.nhsbsa.nhs.uk/StructureDefinition/ServiceRequest"
+          ]
+        },
+        "id": "referral1",
+        "identifier": [
+          {
+            "system": "https://fhir.nhsbsa.nhs.uk/Id/UrgentCareReference",
+            "value": "w1UylmUJFiJVU4b7lwptT"
+          }
+        ],
+        "locationCode": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "code": "FK545"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "url": "https://fhir.nhsbsa.nhs.uk/StructureDefinition/Extension-ExemptionType",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://fhir.nhsbsa.nhs.uk/Id/ExemptionType",
+              "code": "A",
+              "display": "60 years of age or over or is under 16 years of age"
+            }
+          ]
+        }
+      }
+    ],
+    "provider": {
+      "reference": "#organization1"
+    },
+    "billablePeriod": {
+      "start": "2021-07-01"
+    },
+    "patient": {
+      "reference": "#patient1"
+    },
+    "referral": {
+      "reference": "#referral1"
+    },
+    "supportingInfo": [
+      {
+        "sequence": 4,
+        "category": {
+          "coding": [
+            {
+              "system": "http: //terminology.hl7.org/CodeSystem/claiminformationcategory",
+              "code": "REFERRER_ORG_TYPE"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/referrer-organisation-type",
+              "code": "NHS_111_SERVICE"
+            }
+          ]
+        }
+      },
+      {
+        "sequence": 5,
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+              "code": "REFERRER_CASE_REF"
+            }
+          ]
+        },
+        "valueString": "xxxx"
+      },
+      {
+        "sequence": 6,
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+              "code": "DISPOSITION_CODE"
+            }
+          ]
+        },
+        "valueString": "DX85"
+      },
+      {
+        "sequence": 7,
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+              "code": "CONSULTATION_METHOD"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/consultation-method",
+              "code": "FTF"
+            }
+          ]
+        }
+      },
+      {
+        "sequence": 8,
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+              "code": "CONSULTATION_OUTCOME"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/consultation-outcome",
+              "code": "OTHER"
+            }
+          ],
+          "text": "some other free text value only for OTHER"
+        }
+      },
+      {
+        "sequence": 9,
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+              "code": "SIGNPOSTED_TO"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/signposted-to",
+              "code": "GP"
+            }
+          ]
+        }
+      },
+      {
+        "sequence": 10,
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+              "code": "ESCALATED_TO"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/escalated-to",
+              "code": "UTC"
+            }
+          ]
+        }
+      },
+      {
+        "sequence": 11,
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+              "code": "INCIDENT"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+              "code": "Y"
+            }
+          ]
+        }
+      },
+      {
+        "sequence": 12,
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+              "code": "PRESENTING_COMPLAINT_OR_ISSUES"
+            }
+          ]
+        },
+        "valueString": "some free text value"
+      },
+      {
+        "sequence": 13,
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+              "code": "ONWARD_REFERRAL_REASON"
+            }
+          ]
+        },
+        "valueString": "some free text value"
+      },
+      {
+        "sequence": 14,
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+              "code": "REFERRED_ODS"
+            }
+          ]
+        },
+        "valueString": "FXXXX"
+      },
+      {
+        "sequence": 15,
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+              "code": "ONWARD_REFERRAL_DATE"
+            }
+          ]
+        },
+        "timingDate": "2022-01-31"
+      }
+    ]
+  }
+  
