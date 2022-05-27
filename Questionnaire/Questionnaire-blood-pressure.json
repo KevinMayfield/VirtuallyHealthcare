@@ -1,0 +1,26 @@
+{
+    "item": [
+        {
+            "linkId": "entry",
+            "code": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "75367002",
+                    "display": "Blood pressure"
+                  }
+            ],
+            "answerOption": [
+                {
+                    "valueReference": {
+                        "reference": "ObservationDefinition/92bb3577-cc53-4569-9f9b-fd42dc77cd25"
+                    }
+                }
+            ]
+        }
+    ],
+    "title": "blood-pressure",
+    "url": "https://fhir.virtually.healthcare/Questionnaire/blood-pressure",
+    "resourceType": "Questionnaire",
+    "id": "7aac8781-aa31-4c27-a851-1f83258dc400",
+    "status": "draft"
+}

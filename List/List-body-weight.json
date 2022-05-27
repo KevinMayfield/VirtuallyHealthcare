@@ -1,0 +1,22 @@
+{
+    "resourceType": "List",
+    "status": "current",
+    "mode": "changes",
+    "date": "2012-11-25T22:17:00+11:00",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "27113001",
+                "display": "Body weight"
+            }
+        ]
+    },
+    "entry": [
+        {
+            "item": {
+                "reference": "ObservationDefinition/40c46892-48dd-4713-95a1-6c1f0a68efbc"
+            }
+        }
+    ]
+}

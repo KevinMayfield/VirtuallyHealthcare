@@ -1,0 +1,39 @@
+{
+    "id": "f2efa574-a768-4255-8d18-c1abb0f88e63",
+    "identifier":  [
+        {
+            "system": "http://fhir.virtually.healthcare/Id/Task",
+            "value": "f2efa574-a768-4255-8d18-c1abb0f88e63"
+        }
+    ],
+    "resourceType": "Task",
+    "focus": {
+        "reference" : "Encounter/2790465e-888e-4fbc-827b-4b27b0eb1150"
+    },
+    "status": "requested",
+    "intent": "order",
+    "priority": "routine",
+    "code": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "371530004",
+                "display": "Clinical consultation report"
+            }
+        ]
+    },
+    "for": {
+        "reference" : "Organization/61a55cac-08d5-4cf8-a4d5-581f50962a82",
+        "identifier" : {
+            "value": "F83004",
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code"
+        }
+    },
+    "requester" : {
+        "identifier" : {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "M8X3A"
+        }
+    },
+    "authoredOn": "2022-01-21T16:58:06.259000+00:00"
+}

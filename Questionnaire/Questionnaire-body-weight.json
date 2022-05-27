@@ -1,0 +1,26 @@
+{
+    "item": [
+        {
+            "linkId": "entry",
+            "code": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "27113001",
+                    "display": "Body weight"
+                }
+            ],
+            "answerOption": [
+                {
+                    "valueReference": {
+                        "reference": "https://ek1wj5eye3.execute-api.eu-west-2.amazonaws.com/dev/ObservationDefinition/40c46892-48dd-4713-95a1-6c1f0a68efbc"
+                    }
+                }
+            ]
+        }
+    ],
+    "id": "e8e5c92a-8941-40c2-bb85-f8634362bcb8",
+    "title": "body-weight",
+    "url": "https://fhir.virtually.healthcare/Questionnaire/body-weight",
+    "resourceType": "Questionnaire",
+    "status": "draft"
+}

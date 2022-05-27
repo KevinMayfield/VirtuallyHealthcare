@@ -1,0 +1,30 @@
+{
+    "resourceType": "ObservationDefinition",
+    "id": "snomed-363811000",
+    "code": {
+      "coding": [
+        {
+            "system": "http://snomed.info/sct",
+            "code": "363811000",
+            "display": "Head circumference measure"
+        },
+        {
+            "system": "http://loinc.org",
+            "code": "9843-4",
+            "display": "Head Occipital-frontal circumference"
+        }
+      ]
+    },
+    "quantitativeDetails": {
+      "customaryUnit": {
+        "coding": [
+          {
+            "system": "http://unitsofmeasure.org",
+            "code": "cm",
+            "display": "centimeter"
+          }
+        ]
+      }
+    }
+}
+    
