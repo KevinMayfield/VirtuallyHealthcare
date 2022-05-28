@@ -1,0 +1,64 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id" : "68aef45d-1b7b-4d9b-a62c-8382c44d8458",
+    "identifier": {
+        "system": "https://fhir.virtually.healthcare/Id/QuestionnaireResponse",
+        "value": "e52506cf-10ec-49ed-a96f-f3ac1888dee7"
+    },
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd"
+    },
+    "encounter": {
+        "identifier": {
+            "system": "https://fhir.virtually.healthcare/Id/Encounter",
+            "value": "96f33e26-1f09-4dac-8e69-56f7af6b4864"
+        }
+    },
+    "authored": "2021-10-20T09:15:00+10:00",
+    "author": {
+        "reference": "PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb"
+    },
+    "item": [
+        {
+            "linkId": "spo2",
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "Observation/ca012f88-d6e4-47fa-9c82-ad071ebe0a8d"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "temp",
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "Observation/54694bb3-faa7-49a1-b8f8-ae83948d35b9"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "weight",
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "Observation/97bb0384-29de-41f3-9132-cb5efa310939"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "bp",
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "Observation/e990ea96-3484-41d1-b9ca-81ef00053650"
+                    }
+                }
+            ]
+        }
+    ]
+}
