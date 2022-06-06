@@ -1,0 +1,34 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "identifier": {
+        "system": "https://fhir.virtually.healthcare/Id/QuestionnaireResponse",
+        "value": "5b59b357-3b03-4635-bbdb-3c3269e54bab"
+    },
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd"
+    },
+    "encounter": {
+        "identifier": {
+            "system": "https://fhir.virtually.healthcare/Id/Encounter",
+            "value": "507b8fde-d350-4f3a-81bd-c03fb4911890"
+        }
+    },
+    "authored": "2022-05-31T14:15:00+10:00",
+    "author": {
+        "reference": "PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb"
+    },
+    "item": [
+        {
+            "linkId": "1",
+            "text": "A document",
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "DocumentReference/29b51121-011b-4c67-9ca3-a63b5001098f"
+                    }
+                }
+            ]
+        }
+    ]
+}
