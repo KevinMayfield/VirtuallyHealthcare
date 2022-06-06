@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="bd288ae2-db3b-4380-985a-a40fb0e8525d" />
-  <url value="https://fhir.virtually.healthcare/StructureDefinition/VirtualHealthcare-Claim" />
-  <name value="VirtualHealthcareClaim" />
+  <url value="https://fhir.virtually.healthcare/StructureDefinition/Claim" />
+  <name value="VirtuallyHealthcareClaim" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
