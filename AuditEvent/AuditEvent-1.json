@@ -1,0 +1,61 @@
+{
+    "resourceType": "AuditEvent",
+    "type": {
+        "system": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+        "code": "transmit"
+    },
+    "action": "C",
+    "recorded": "2022-06-10T09:18:57.711+00:00",
+    "agent": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+                        "code": "PAT"
+                    }
+                ]
+            },
+            "who": {
+                "identifier": {
+                    "system": "https://emis.com/Id/Patient/DBID",
+                    "value": "Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd"
+                }
+            },
+            "requestor": true,
+            "network": {
+                "address": "127.0.0.1"
+            }
+        },
+        {
+            "requestor": false
+        }
+    ],
+    "source": {
+        "observer": {
+            "type": "Device",
+            "identifier": {
+                "value": "127.0.0.1"
+            },
+            "display": "EMIS FHIR Server 5.7.10 https://emis.virtually.healthcare"
+        }
+    },
+    "entity": [
+        {
+            "type": {
+                "system": "http://hl7.org/fhir/resource-types",
+                "code": "QuestionnaireResponse"
+            },
+            "detail": [
+                {
+                    "type": "query",
+                    "valueString": "http//:127.0.0.1/QuestionnaireResponse"
+                },
+                {
+                    "type": "resource",
+                    "valueString": "{\"resourceType\":\"QuestionnaireResponse\",\"identifier\":{\"system\":\"https://fhir.virtually.healthcare/Id/QuestionnaireResponse\",\"value\":\"5b59b357-3b03-4635-bbdb-3c3269e54bab\"},\"status\":\"completed\",\"subject\":{\"reference\":\"Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd\"},\"encounter\":{\"identifier\":{\"system\":\"https://fhir.virtually.healthcare/Id/Encounter\",\"value\":\"507b8fde-d350-4f3a-81bd-c03fb4911890\"}},\"authored\":\"2022-05-31T14:15:00+00:00\",\"author\":{\"reference\":\"PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb\"},\"item\":[{\"linkId\":\"1\",\"text\":\"A document\",\"answer\":[{\"valueReference\":{\"reference\":\"DocumentReference/29b51121-011b-4c67-9ca3-a63b5001098f\"}}]}]}"
+                }
+            ]
+        }
+    ]
+}
