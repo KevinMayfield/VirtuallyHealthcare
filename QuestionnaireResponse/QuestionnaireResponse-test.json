@@ -1,0 +1,106 @@
+{
+    "subject": {
+        "reference": "Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd"
+    },
+    "authored": "2022-05-31T14:15:00+00:00",
+    "identifier": {
+        "value": "5b59b357-3b03-4635-bbdb-3c3269e54bab",
+        "system": "https://fhir.virtually.healthcare/Id/QuestionnaireResponse"
+    },
+    "meta": {
+        "lastUpdated": "2022-06-10T13:21:06.322Z",
+        "versionId": "10"
+    },
+    "status": "completed",
+    "item": [
+        {
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "DocumentReference/29b51121-011b-4c67-9ca3-a63b5001098f"
+                    }
+                }
+            ],
+            "linkId": "1",
+            "text": "A document"
+        },
+        {
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "160618006",
+                        "display": "Current non-smoker"
+                    }
+                }
+            ],
+            "linkId": "2",
+            "text": "Some issue"
+        },
+        {
+            "item": [
+                {
+                    "item": [
+                        {
+                            "linkId": "problemStatus",
+                            "answer": [
+                                {
+                                    "valueBoolean": true
+                                }
+                            ],
+                            "text": "Problem Status"
+                        },
+                        {
+                            "linkId": "problemSignificance",
+                            "answer": [
+                                {
+                                    "valueInteger": 1
+                                }
+                            ],
+                            "text": "Problem Significance"
+                        },
+                        {
+                            "linkId": "problemType",
+                            "answer": [
+                                {
+                                    "valueInteger": 1
+                                }
+                            ],
+                            "text": "Problem Type"
+                        },
+                        {
+                            "linkId": "problemExpectedDuration",
+                            "answer": [
+                                {
+                                    "valueInteger": 84
+                                }
+                            ],
+                            "text": "Problem Expected Duration (days)"
+                        }
+                    ],
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "68566005",
+                                "display": "UTI - Urinary tract infection"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "encounter": {
+        "reference": "Encounter/61acde0c-5b2d-4880-bfef-9fa59e51fccf",
+        "identifier": {
+            "value": "507b8fde-d350-4f3a-81bd-c03fb4911890",
+            "system": "https://fhir.virtually.healthcare/Id/Encounter"
+        }
+    },
+    "resourceType": "QuestionnaireResponse",
+    "id": "6962c182-9bbc-46b7-9320-c14ee07770ae",
+    "author": {
+        "reference": "PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb"
+    }
+}

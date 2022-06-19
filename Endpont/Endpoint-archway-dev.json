@@ -1,0 +1,40 @@
+{
+  "identifier": [
+    {
+      "system": "https://fhir.virtually.healthcare/Id/Endpoint",
+      "value": "cc8783e0-a1ab-44aa-bf00-56a6523a2881"
+    }
+  ],
+  "address": "http://ec2-18-130-139-120.eu-west-2.compute.amazonaws.com/emis",
+  "connectionType": {
+    "system": "http://fhir.virtuallyhealthcare.co.uk/ConnectionType",
+    "code": "EMIS_SERVER"
+  },
+  "managingOrganization": {
+    "reference": "Organization/61a55cac-08d5-4cf8-a4d5-581f50962a82",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "F83004"
+    },
+    "display": "Archway Medical Centre"
+  },
+  "payloadType": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.virtuallyhealthcare.co.uk/ConnectionType",
+          "code": "EMIS_SERVER"
+        }
+      ],
+      "text": "FHIR R4 Server"
+    }
+  ],
+  "meta": {
+    "lastUpdated": "2022-05-30T06:29:26.162Z",
+    "versionId": "1"
+  },
+  "name": "Archway EMIS Test Server",
+  "id": "d99223eb-4152-4328-b6bd-9ffe3a98a1e1",
+  "resourceType": "Endpoint",
+  "status": "active"
+}
