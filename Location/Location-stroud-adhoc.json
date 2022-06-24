@@ -1,0 +1,24 @@
+{
+    "resourceType": "Location",
+    "identifier": [
+        {
+            "system": "https://fhir.virtually.healthcare/Id/Location",
+            "value": "c25fe93c-70df-4618-9aed-548bee0229e0"
+        }
+    ],
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "185316007",
+                    "display" : "Indirect encounter"
+                }
+            ]
+        }
+    ],
+    "managingOrganization": {
+        "reference": "Organization/eb510294-9870-430f-b228-6b621ba22735"  
+    },
+    "name": "Virtually adhoc"
+}

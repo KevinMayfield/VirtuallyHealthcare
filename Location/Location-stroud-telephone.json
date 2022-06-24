@@ -1,0 +1,25 @@
+{
+    "resourceType": "Location",
+    "id": "bc019679-030c-4dc8-b386-033b5690f118",
+    "identifier": [
+        {
+            "system": "https://fhir.virtually.healthcare/Id/Location",
+            "value": "8d10ea6e-4509-4f9d-9032-4a6b2dbf4bc8"
+        }
+    ],
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "185317003",
+                    "display" : "Telephone encounter"
+                }
+            ]
+        }
+    ],
+    "managingOrganization": {
+        "reference": "Organization/eb510294-9870-430f-b228-6b621ba22735"  
+    },
+    "name": "Virtually telephone"
+}

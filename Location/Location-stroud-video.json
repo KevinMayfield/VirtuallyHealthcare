@@ -1,0 +1,24 @@
+{
+    "resourceType": "Location",
+    "identifier": [
+        {
+            "system": "https://fhir.virtually.healthcare/Id/Location",
+            "value": "bc5eb960-91c0-41f9-8ecf-f1f666f5a378"
+        }
+    ],
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "307321000000107",
+                    "display" : "Video-link encounter"
+                }
+            ]
+        }
+    ],
+    "managingOrganization": {
+        "reference": "Organization/eb510294-9870-430f-b228-6b621ba22735"  
+    },
+    "name": "Virtually video"
+}
