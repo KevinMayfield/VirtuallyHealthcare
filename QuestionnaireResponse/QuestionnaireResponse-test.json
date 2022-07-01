@@ -1,105 +1,279 @@
 {
-    "subject": {
-        "reference": "Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd"
-    },
-    "authored": "2022-05-31T14:15:00+00:00",
+    "resourceType": "QuestionnaireResponse",
     "identifier": {
-        "value": "5b59b357-3b03-4635-bbdb-3c3269e54bab",
-        "system": "https://fhir.virtually.healthcare/Id/QuestionnaireResponse"
-    },
-    "meta": {
-        "lastUpdated": "2022-06-10T13:21:06.322Z",
-        "versionId": "10"
+        "system": "https://fhir.virtually.healthcare/Id/QuestionnaireResponse",
+        "value": "55f3180e-6fce-491c-9055-895241e938a8"
     },
     "status": "completed",
+    "subject": {
+        "reference": "Patient/b7f0c87e-7d05-40a1-a9a3-8118bbe097f8"
+    },
+    "encounter": {
+        "display": "Practitioner completed management plan",
+        "identifier": {
+            "system": "https://fhir.virtually.healthcare/Id/Encounter",
+            "value": "6225b3d2-acc3-4bae-8491-1e81f789377d"
+        }
+    },
+    "authored": "2022-06-29T16:23:45+01:00",
     "item": [
         {
+            "linkId": "fat-1",
+            "text": "Comments and advice",
             "answer": [
                 {
-                    "valueReference": {
-                        "reference": "DocumentReference/29b51121-011b-4c67-9ca3-a63b5001098f"
-                    }
+                    "valueString": "Today we discussed the scaling on your ear may be eczema or a skin condition called seborrheic dermatitis. Both of these skin conditions can cause similar symptoms on the ear, and both conditions we can treat with topical steroid cream. I've recommended a topical steroid for you to use once daily for up to 7 days. This condition can be recurrent, so if it resolves but then reappears several weeks to months later, you can reapply the same topical steroid cream. Please follow-up if your skin condition does not improve despite the use of the cream."
                 }
-            ],
-            "linkId": "1",
-            "text": "A document"
+            ]
         },
         {
+            "linkId": "fat-2",
+            "text": "Important red flags to be aware of",
             "answer": [
                 {
-                    "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "160618006",
-                        "display": "Current non-smoker"
-                    }
+                    "valueString": null
                 }
-            ],
-            "linkId": "2",
-            "text": "Some issue"
+            ]
+        },
+        {
+            "linkId": "fat-3",
+            "text": "Clinician shorthand notes",
+            "answer": [
+                {
+                    "valueString": "Pt c/o scaling and dryness around his left ear for the past year. The skin can crack and be a bit uncomfortable as a result, but otherwise it is not pruritic or uncomfortable. No similar skin issues elsewhere on his body. His mother has a hx of eczema, but pt has no personal hx of skin conditions."
+                }
+            ]
+        },
+        {
+            "linkId": "fat-4",
+            "text": "My Condition",
+            "answer": [
+                {
+                    "valueString": "Skin rash or hair problems"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-5",
+            "text": "Please describe the rash or hair problem in as much detail as possible. This will help your clinician to give you effective and personalised advice.",
+            "answer": [
+                {
+                    "valueString": "Dry skin on ear folds and lobes. I moisturise them as much as I can but dry skin always occurs after some time"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-6",
+            "text": "How long have you had this issue?",
+            "answer": [
+                {
+                    "valueString": "Approx 1 year"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-7",
+            "text": "Have you had a skin or hair condition diagnosed before? (If yes, what was it, when did you have it and what treatment did you have?)",
+            "answer": [
+                {
+                    "valueString": "No"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-8",
+            "text": "If this is a rash, where on the body or face are you affected?",
+            "answer": [
+                {
+                    "valueString": "Ears"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-9",
+            "text": "Is the rash itchy, sore, burning or stinging?\u00a0",
+            "answer": [
+                {
+                    "valueString": "Sometimes sore"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-10",
+            "text": "Do you have eczema, asthma or hay-fever?\u00a0",
+            "answer": [
+                {
+                    "valueString": "No"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-11",
+            "text": "Is there any family history in eczema, asthma, hayfever or psoriasis?",
+            "answer": [
+                {
+                    "valueString": "Mother and Aunt have had bouts of eczema"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-12",
+            "text": "Have you been in contact with any infectious conditions in the last 4 weeks?",
+            "answer": [
+                {
+                    "valueString": "No"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-13",
+            "text": "Do you think your rash has been triggered by something?",
+            "answer": [
+                {
+                    "valueString": "No"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-14",
+            "text": "Is the rash affecting your sleep?",
+            "answer": [
+                {
+                    "valueString": "No"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-15",
+            "text": "Do you have any allergies to medication or any substances?",
+            "answer": [
+                {
+                    "valueString": "No"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-16",
+            "text": "What significant conditions have you had in the past?\u00a0",
+            "answer": [
+                {
+                    "valueString": "None"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-17",
+            "text": "Have you tried any creams or medication yourself? If so, please state effect",
+            "answer": [
+                {
+                    "valueString": "Just extra hydrating moisturiser "
+                }
+            ]
+        },
+        {
+            "linkId": "fat-18",
+            "text": "If the issue is hair loss: Is your hair shedding or thinning? All over or in patches?",
+            "answer": [
+                {
+                    "valueString": "No"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-19",
+            "text": "Is there a family history of hair loss? For example when did your parents start losing their hair?\u00a0",
+            "answer": [
+                {
+                    "valueString": "No"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-20",
+            "text": "File Upload",
+            "answer": [
+                {
+                    "valueString": null
+                }
+            ]
+        },
+        {
+            "text": "Is there Do else you would like to tell us?",
+            "answer": [
+                {
+                    "valueString": null
+                }
+            ]
+        },
+        {
+            "linkId": "fat-22",
+            "text": "Screening notes",
+            "answer": []
         },
         {
             "item": [
                 {
-                    "item": [
-                        {
-                            "linkId": "problemStatus",
-                            "answer": [
-                                {
-                                    "valueBoolean": true
-                                }
-                            ],
-                            "text": "Problem Status"
-                        },
-                        {
-                            "linkId": "problemSignificance",
-                            "answer": [
-                                {
-                                    "valueInteger": 1
-                                }
-                            ],
-                            "text": "Problem Significance"
-                        },
-                        {
-                            "linkId": "problemType",
-                            "answer": [
-                                {
-                                    "valueInteger": 1
-                                }
-                            ],
-                            "text": "Problem Type"
-                        },
-                        {
-                            "linkId": "problemExpectedDuration",
-                            "answer": [
-                                {
-                                    "valueInteger": 84
-                                }
-                            ],
-                            "text": "Problem Expected Duration (days)"
-                        }
-                    ],
                     "answer": [
                         {
                             "valueCoding": {
                                 "system": "http://snomed.info/sct",
-                                "code": "68566005",
-                                "display": "UTI - Urinary tract infection"
+                                "code": "43116000",
+                                "display": "Eczema"
                             }
+                        }
+                    ],
+                    "item": [
+                        {
+                            "linkId": "problemStatus",
+                            "text": "Problem Status",
+                            "answer": [
+                                {
+                                    "valueBoolean": true
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "problemSignificance",
+                            "text": "Problem Significance",
+                            "answer": [
+                                {
+                                    "valueInteger": 1
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "problemType",
+                            "text": "Problem Type",
+                            "answer": [
+                                {
+                                    "valueInteger": 1
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "problemExpectedDuration",
+                            "text": "Problem Expected Duration (days)",
+                            "answer": [
+                                {
+                                    "valueInteger": 84
+                                }
+                            ]
                         }
                     ]
                 }
             ]
+        },
+        {
+            "linkId": "fat24",
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "DocumentReference/661ed8c3-bff1-4c16-bfd1-a5dda7d08956"
+                    }
+                }
+            ]
         }
     ],
-    "encounter": {
-        "reference": "Encounter/61acde0c-5b2d-4880-bfef-9fa59e51fccf",
-        "identifier": {
-            "value": "507b8fde-d350-4f3a-81bd-c03fb4911890",
-            "system": "https://fhir.virtually.healthcare/Id/Encounter"
-        }
-    },
-    "resourceType": "QuestionnaireResponse",
-    "id": "6962c182-9bbc-46b7-9320-c14ee07770ae",
     "author": {
         "reference": "PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb"
     }
