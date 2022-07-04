@@ -1,0 +1,22 @@
+{
+    "resourceType": "List",
+    "status": "current",
+    "mode": "changes",
+    "date": "2012-11-25T22:17:00+11:00",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "365981007",
+                "display": "Tobacco smoking behaviour - finding"
+            }
+        ]
+    },
+    "entry": [
+        {
+            "item": {
+                "reference": "ObservationDefinition/c094985a-b1bc-462b-b00b-9421342ca9eb"
+            }
+        }
+    ]
+}
