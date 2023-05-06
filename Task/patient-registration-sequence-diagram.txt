@@ -1,10 +1,10 @@
 title Patient Registration
 
 Alice->Virtually:Starts registrering at the practice 
-Virtually->Alice:Displays an input screen based \n on a common registration form definition \n[FHIR Questionnaire]
-Alice->Alice:Completes registration form
-Virtually->CDR: Store completed form \n[FHIR QuestionnaireResponse]
-Virtually->GP System: **request** for patient to be registered based on the data from the form \n[FHIR Task]
+Virtually->Alice:(1) Displays an input screen based \n on a common registration form definition \n[FHIR Questionnaire]
+Alice->Alice: Completes registration form
+Virtually->CDR: (2) Store completed form \n[FHIR QuestionnaireResponse]
+Virtually->GP System: (3) **request** for patient to be registered based on the data from the form \n[FHIR Task]
 GP System->CDR:Retrieve form\n[FHIR QuestionnaireRespoonse]
-GP System->Virtually: Notify the Task is **in-progress** \n[FHIR Task]
-GP System->Virtually: Notify the Task has been **completed** \n[FHIR Task]
+GP System->Virtually: (4) Notify the Task is **in-progress** \n[FHIR Task]
+GP System->Virtually: (4) Notify the Task has been **completed** \n[FHIR Task]
