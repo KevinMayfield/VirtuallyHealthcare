@@ -1,7 +1,7 @@
 {
     "resourceType": "ValueSet",
     "url": "https://fhir.virtually.healthcare/ValueSet/SmokingStatus",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "SmokingStatus",
     "status": "draft",
     "description": "Virtually Smoking Status",
@@ -10,10 +10,6 @@
             {
                 "system": "http://snomed.info/sct",
                 "concept": [
-                    {
-                        "code": "266918002",
-                        "display": "Tobacco consumption"
-                    },
                     {
                         "code": "266919005",
                         "display": "Never smoked tobacco"
