@@ -1,0 +1,19 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "7fdd6329-688d-4633-9f0e-2c6716091a99",
+    "url": "http://fhir.virtuallyhealthcare.co.uk/CodeSystem/tasks",
+    "version": "1.0.0",
+    "name": "virtuallyhealthcareTasks",
+    "status": "active",
+    "date": "2023-07-23T00:00:00+00:00",
+    "publisher": "Virtually Healthcare",
+    "description": "Virtually Healthcare Task Codes",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "WRITEBACK",
+            "display": "Consulation Write Back"
+        }
+    ]
+}
