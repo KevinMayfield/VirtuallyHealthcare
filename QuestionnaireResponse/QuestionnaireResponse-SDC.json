@@ -1,0 +1,316 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "798ff459-6685-4526-8ce9-db2842b73dca",
+    "meta": {
+        "versionId": "2",
+        "lastUpdated": "2023-07-25T14:22:33.840Z"
+    },
+    "identifier": {
+        "system": "https://fhir.virtually.healthcare/Id/QuestionnaireResponse",
+        "value": "632410ef-3c85-4c90-a7ae-97726b69549f"
+    },
+    "questionnaire": "https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding",
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/53662716-c840-48f5-8b71-d0ca7c3edf34"
+    },
+    "encounter": {
+        "reference": "Encounter/7caf1f7a-4c12-4879-9fe1-889a63fc93bd",
+        "identifier": {
+            "system": "https://fhir.virtually.healthcare/Id/Encounter",
+            "value": "632410ef-3c85-4c90-a7ae-97726b69549f"
+        },
+        "display": "Practitioner completed management plan"
+    },
+    "authored": "2023-07-25T15:20:14+01:00",
+    "author": {
+        "reference": "PractitionerRole/d299c5a2-81c2-4ff5-a0c7-8a9b419c3b39"
+    },
+    "item": [
+        {
+            "linkId": "fat-1",
+            "text": "Comments and advice",
+            "answer": [
+                {
+                    "valueString": "Hi Laura, \r\n\r\nYou explained in your questionnaire that you were interested in starting the copper IUD.\r\n\r\nUnfortunately we were not able to speak despite waiting 5 mins and also calling you twice. \r\n\r\nPlease kindly rebook an appointment to further discuss this. Typically copper coils and arranged via locally via sexual health clinic. \r\n\r\nJohn Scott Health Centre in Manor House have a sexual health service linked to Homerton hospital if local to you. This runs 9am to 4pm. \r\n\r\nKind regards,\r\nColina \r\nPA-R"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-2",
+            "text": "Important red flags to be aware of"
+        },
+        {
+            "linkId": "fat-3",
+            "text": "Clinician shorthand notes"
+        },
+        {
+            "linkId": "fat-4",
+            "text": "My Condition",
+            "answer": [
+                {
+                    "valueString": "Contraception care"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-5",
+            "text": "Have you decided on your preferred method or would you like the clinician to discuss these with you?",
+            "answer": [
+                {
+                    "valueString": "Decided on preferred method"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-6",
+            "text": "What methods have you tried in the past and what problems or side-effects did you have if any?",
+            "answer": [
+                {
+                    "valueString": "Looking for a copper iud"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-7",
+            "text": "Have you had high blood pressure, stroke or mini-stroke, blood clots, breast cancer or heart condition in the past? Please describe if applicable.",
+            "answer": [
+                {
+                    "valueString": "no"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-8",
+            "text": "Have you had migraine or any neurological condition in the past?",
+            "answer": [
+                {
+                    "valueString": "No"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-9",
+            "text": "Do you have any long-term conditions?",
+            "answer": [
+                {
+                    "valueString": "I have none of these"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-10",
+            "text": "Are you on any regular prescribed, or over the counter medications?",
+            "answer": [
+                {
+                    "valueString": "no"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-11",
+            "text": "Do you have a family history of heart disease, stroke, high blood pressure, blood clotting disorders or breast or ovarian cancer?",
+            "answer": [
+                {
+                    "valueString": "no"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-12",
+            "text": "Please tell us about any other significant health conditions you have or have had and any family history.",
+            "answer": [
+                {
+                    "valueString": "no"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-13",
+            "text": "Have you had any menstrual irregularity? Or bleeding in between periods or after sex.",
+            "answer": [
+                {
+                    "valueString": "no"
+                }
+            ]
+        },
+        {
+            "linkId": "/27113001",
+            "text": "What is your current weight? [[SNOMED_27113001]] (Please give your weight in kg)",
+            "answer": [
+                {
+                "valueQuantity": {
+                    "value": 68,
+                    "unit": "kilogram",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg"
+                }
+                }
+            ]
+        },
+        {
+            "linkId": "/50373000",
+            "text": "What is your current height? [[SNOMED_50373000]] (Please give your height in centimetres)",
+            "answer": [
+                {
+                    "valueQuantity": {
+                        "value": 163,
+                        "unit": "centimeter",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "cm"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "fat-16",
+            "text": "What was the 1st day of your last period?",
+            "answer": [
+                {
+                    "valueString": "11th july"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-17",
+            "text": "Please give the higher number in your blood pressure reading taken in the last 2 weeks [[SNOMED_75367002||72313002]] (Please purchase a BP monitor from your local pharmacy (about £20) and take your BP reading).",
+            "answer": [
+                {
+                    "valueString": "100"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-18",
+            "text": "Please give the lower number in your blood pressure reading taken in the last 2 weeks [[SNOMED_75367002||1091811000000102]] (Please purchase a BP monitor from your local pharmacy (about £20) and take your BP reading)",
+            "answer": [
+                {
+                    "valueString": "70"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-19",
+            "text": "Do you currently, or have you ever smoked? If so, what is your daily consumption?",
+            "answer": [
+                {
+                    "valueString": "no"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-20",
+            "text": "What are you seeking from this consultation? (repeat prescription, advice or change in method)",
+            "answer": [
+                {
+                    "valueString": "copper iud or non hormonal method"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-21",
+            "text": "Which pharmacy would you like your prescription to be sent to?",
+            "answer": [
+                {
+                    "valueString": "acton"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-22",
+            "text": "Is there anything else you would like to tell us?",
+            "answer": [
+                {
+                    "valueString": "no"
+                }
+            ]
+        },
+        {
+            "linkId": "fat-23",
+            "text": "If you have any images, documents or other files that are relevant to your consultation for the GP or Nurse to review, please upload them here."
+        },
+        {
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "185324002",
+                                "display": "Failed encounter"
+                            }
+                        }
+                    ],
+                    "item": [
+                        {
+                            "linkId": "problemStatus",
+                            "text": "Problem Status",
+                            "answer": [
+                                {
+                                    "valueBoolean": true
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "problemSignificance",
+                            "text": "Problem Significance",
+                            "answer": [
+                                {
+                                    "valueInteger": 1
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "problemType",
+                            "text": "Problem Type",
+                            "answer": [
+                                {
+                                    "valueInteger": 1
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "problemExpectedDuration",
+                            "text": "Problem Expected Duration (days)",
+                            "answer": [
+                                {
+                                    "valueInteger": 84
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "fat25",
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "Observation/ae77082b-e5d0-497a-8446-35d6a875836e"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "fat26",
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "Observation/2b2a465c-c358-45b5-b507-6a4618fb165e"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "fat27",
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "Observation/9bf49686-4efa-4db5-9f05-2886d5e59bf1"
+                    }
+                }
+            ]
+        }
+    ]
+}
