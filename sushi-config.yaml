@@ -1,0 +1,51 @@
+
+FSHOnly: false
+
+  # ╭─────────────────────────Commonly Used ImplementationGuide Properties───────────────────────────╮
+  # │  The properties below are used to create the ImplementationGuide resource. The most commonly   │
+  # │  used properties are included. For a list of all supported properties and their functions,     │
+  # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
+  # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: virtually.healthcare
+canonical: https://fhir.virtually.healthcare/
+name: Virtually Healthcare
+
+title: Virtually Healthcare
+
+# description: Example Implementation Guide for getting started with SUSHI
+status: draft
+version: 0.0.1
+fhirVersion: 4.0.1
+copyrightYear: 2024+
+releaseLabel: ci-build
+license: Apache-2.0
+jurisdiction: urn:iso:std:iso:3166#GB-ENG "England"
+publisher:
+  name: Virtually Healthcare
+  url: https://virtually.healthcare/
+
+
+# The dependencies property corresponds to IG.dependsOn. The key is the
+# package id and the value is the version (or dev/current). For advanced
+# use cases, the value can be an object with keys for id, uri, and version.
+#
+dependencies:
+  fhir.r4.ukcore.stu3.currentbuild:
+    version: 0.0.8-pre-release
+    uri: https://simplifier.net/guide/ukcoreversionhistory
+
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
+# │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │
+# │ The IG publisher currently only supports one level deep on sub-menus. To provide a             │
+# │ custom menu.xml file, do not include this property and include a `menu.xml` file in            │
+# │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
+# │ property below.                                                                                │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: index.html
+  Table of Contents: toc.html
+  FHIR Assets: artifacts.html
+  Support:
+    Downloads: downloads.html
