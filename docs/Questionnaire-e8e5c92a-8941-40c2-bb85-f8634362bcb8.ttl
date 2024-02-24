@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.0.1"] ; # 
   fhir:title [ fhir:v "body-weight"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-24T09:21:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-24T11:47:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Virtually Healthcare"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Virtually Healthcare" ] ;

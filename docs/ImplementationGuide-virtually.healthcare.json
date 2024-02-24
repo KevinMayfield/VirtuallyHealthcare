@@ -10,7 +10,7 @@
   "name" : "VirtuallyHealthcareImplementationGuide",
   "title" : "Virtually Healthcare Implementation Guide",
   "status" : "draft",
-  "date" : "2024-02-24T09:21:14+00:00",
+  "date" : "2024-02-24T11:47:15+00:00",
   "publisher" : "Virtually Healthcare",
   "contact" : [{
     "name" : "Virtually Healthcare",
@@ -738,10 +738,10 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "volume1.html"
+          "valueUrl" : "findpatient.html"
         }],
-        "nameUrl" : "volume1.html",
-        "title" : "Volume 1",
+        "nameUrl" : "findpatient.html",
+        "title" : "Findpatient",
         "generation" : "markdown"
       },
       {

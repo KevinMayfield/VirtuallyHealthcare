@@ -10,7 +10,7 @@
   <name value="VirtuallyHealthcareImplementationGuide"/>
   <title value="Virtually Healthcare Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-02-24T09:21:14+00:00"/>
+  <date value="2024-02-24T11:47:15+00:00"/>
   <publisher value="Virtually Healthcare"/>
   <contact>
     <name value="Virtually Healthcare"/>
@@ -569,10 +569,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="volume1.html"/>
+          <valueUrl value="findpatient.html"/>
         </extension>
-        <nameUrl value="volume1.html"/>
-        <title value="Volume 1"/>
+        <nameUrl value="findpatient.html"/>
+        <title value="Findpatient"/>
         <generation value="markdown"/>
       </page>
       <page>
