@@ -1,0 +1,16 @@
+{
+  "url" : "https://fhir.virtually.healthcare//ImplementationGuide/virtually.healthcare",
+  "name" : "VirtuallyHealthcareImplementationGuide",
+  "title" : "Virtually Healthcare Implementation Guide",
+  "description" : null,
+  "status" : "draft",
+  "package-id" : "virtually.healthcare",
+  "ig-ver" : "0.0.1",
+  "date" : "Sat, 24 Feb, 2024 09:21:14 +0000",
+  "errs" : 105,
+  "warnings" : 16,
+  "hints" : 4,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 887954856
+}

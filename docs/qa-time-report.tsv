@@ -1,0 +1,11 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-virtually.healthcare.json	3640	-	0	0	0	0	0	0	5	77	0	0	0	0	0	0	0	1	0	0	163	204	0	0	0	1	3	0	1
+input/resources/Questionnaire-blood-pressure.json	785	4	1	0	0	0	0	0	1	24	0	0	0	0	0	0	0	0	0	0	66	81	0	0	0	0	1	0	0
+input/resources/Questionnaire-body-weight.json	833	3	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	65	31	0	0	0	0	0	0	0
+input/resources/Questionnaire-self-measured-blood-pressure.json	922	4	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	66	34	0	0	0	0	1	0	0
+input/resources/Questionnaire-vital-signs.json	13620	27	0	0	0	0	0	0	1	37	0	0	0	0	0	0	0	0	0	0	251	76	0	0	0	0	3	0	0
+input/resources/QuestionnaireResponse-1-AWSFormat.json	1606	8	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	85	62	0	0	0	0	0	0	0
+input/resources/QuestionnaireResponse-1-AWSHybridFormat.json	1812	5	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	79	36	0	0	0	0	0	0	0
+input/resources/QuestionnaireResponse-2-Fatigue.json	1415	5	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	79	31	0	0	0	0	0	0	0
+input/resources/QuestionnaireResponse-SDC.json	10480	16	0	0	0	0	0	0	1	30	0	0	0	0	0	0	0	0	0	0	290	70	0	0	0	0	0	0	0
+input/resources/QuestionnaireResponse-document.json	1021	4	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	1	0	0	64	28	0	0	0	0	0	0	0

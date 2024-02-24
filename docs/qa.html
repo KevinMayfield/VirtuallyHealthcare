@@ -1,0 +1,960 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 105, warn = 16, info = 4-->
+<head>
+  <title>VirtuallyHealthcareImplementationGuide : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for VirtuallyHealthcareImplementationGuide</h1>
+ <p>Generated Sat Feb 24 09:21:40 GMT 2024, FHIR version 4.0.1 for virtually.healthcare#0.0.1 (canonical = <a href="https://fhir.virtually.healthcare/">https://fhir.virtually.healthcare/</a> (<a href="https://fhir.virtually.healthcare//history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.5.16</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = virtually.healthcare, Canonical = https://fhir.virtually.healthcare/</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><ul><li>The file package-list.json should not exist in the root folder <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>History Page 'https://fhir.virtually.healthcare//history.html' is wrong (ig.json#paths/history) - must be 'https://fhir.virtually.healthcare/history.html' <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Error fetching package-list from https://fhir.virtually.healthcare/: fhir.virtually.healthcare <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">22 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/kevinmayfield/github/virtually/VirtuallyHealthcare/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> virtually.healthcare</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://fhir.virtually.healthcare/</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/kevinmayfield/github/virtually/VirtuallyHealthcare/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.3.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.3.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.4.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/kevinmayfield/github/virtually/VirtuallyHealthcare/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/kevinmayfield/github/virtually/VirtuallyHealthcare/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> fhir.r4.ukcore.stu3.currentbuild</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.0.8-pre-release <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Not yet released">U</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: virtually.healthcare.template#0.0.1 -&gt; fhir.base.template#current. Tools: 0.1.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/extension-questionnaire-unitoption.html">unitOption</a>
+ (10 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools#0.1.0:     <a href="http://hl7.org/fhir/tools/0.1.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (9 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://fhir.virtually.healthcare/ (Problem #1 with package-list.json at https://fhir.virtually.healthcare/: fhir.virtually.healthcare)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 105, warn = 16, info = 4, broken links = 0</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>14</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_fsh-generated_resources_ImplementationGuide-virtually.healthcare"><b>/Users/kevinmayfield/github/virtually/VirtuallyHealthcare/fsh-generated/resources/ImplementationGuide-virtually.healthcare</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_Questionnaire-blood-pressure"><b>/Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-blood-pressure</b></a></td><td><b>6</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_Questionnaire-body-weight"><b>/Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-body-weight</b></a></td><td><b>6</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_Questionnaire-self-measured-blood-pressure"><b>/Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-self-measured-blood-pressure</b></a></td><td><b>7</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_Questionnaire-vital-signs"><b>/Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-vital-signs</b></a></td><td><b>34</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_QuestionnaireResponse-1-AWSFormat"><b>/Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/QuestionnaireResponse-1-AWSFormat</b></a></td><td><b>6</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_QuestionnaireResponse-1-AWSHybridFormat"><b>/Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/QuestionnaireResponse-1-AWSHybridFormat</b></a></td><td><b>6</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_QuestionnaireResponse-2-Fatigue"><b>/Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/QuestionnaireResponse-2-Fatigue</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_QuestionnaireResponse-SDC"><b>/Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/QuestionnaireResponse-SDC</b></a></td><td><b>33</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_QuestionnaireResponse-document"><b>/Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/QuestionnaireResponse-document</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.dependency[2].url</b></td><td><b>warning</b></td><td title=""><b>The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/68aef45d-1b7b-4d9b-a62c-8382c44d8458.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/798ff459-6685-4526-8ce9-db2842b73dca.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/aws-hybrid.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/document.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/fatigue.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_fsh-generated_resources_ImplementationGuide-virtually.healthcare"> </a>
+<h2><a href="ImplementationGuide-virtually.healthcare.html">fsh-generated/resources/ImplementationGuide-virtually.healthcare.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ImplementationGuide/virtually.healthcare: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide&#8203;.where(url = 'https:&#8203;/&#8203;/fhir&#8203;.virtually&#8203;.healthcare&#8203;/&#8203;/ImplementationGuide&#8203;/virtually&#8203;.healthcare')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/fsh-generated/resources/ImplementationGuide-virtually.healthcare.json - the canonical URL (https://fhir.virtually.healthcare/ImplementationGuide/virtually.healthcare) does not match the URL (https://fhir.virtually.healthcare//ImplementationGuide/virtually.healthcare)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c839)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_Questionnaire-blood-pressure"> </a>
+<h2><a href="Questionnaire-7aac8781-aa31-4c27-a851-1f83258dc400.html">input/resources/Questionnaire-blood-pressure.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.where(url = 'https:&#8203;/&#8203;/fhir&#8203;.virtually&#8203;.healthcare&#8203;/Questionnaire&#8203;/blood-pressure')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-blood-pressure.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400) does not match the URL (https://fhir.virtually.healthcare/Questionnaire/blood-pressure)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: 7aac8781-aa31-4c27-a851-1f83258dc400/https://fhir.virtually.healthcare/Questionnaire/blood-pressure</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c7451)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.item[0] (l1/c7699)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Questionnaire#que-5"><b>Constraint failed: que-5: 'Only 'choice' and 'open-choice' items can have answerValueSet'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[0]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Reference) (l1&#8203;/c7696)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'ObservationDefinition/92bb3577-cc53-4569-9f9b-fd42dc77cd25'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input&#8203;/resources&#8203;/Questionnaire-blood-pressure</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://fhir.virtually.healthcare//Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400 vs https://fhir.virtually.healthcare/Questionnaire/blood-pressure</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_Questionnaire-body-weight"> </a>
+<h2><a href="Questionnaire-e8e5c92a-8941-40c2-bb85-f8634362bcb8.html">input/resources/Questionnaire-body-weight.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.where(url = 'https:&#8203;/&#8203;/fhir&#8203;.virtually&#8203;.healthcare&#8203;/Questionnaire&#8203;/body-weight')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-body-weight.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8) does not match the URL (https://fhir.virtually.healthcare/Questionnaire/body-weight)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: e8e5c92a-8941-40c2-bb85-f8634362bcb8/https://fhir.virtually.healthcare/Questionnaire/body-weight</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c7442)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.item[0] (l1/c7746)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Questionnaire#que-5"><b>Constraint failed: que-5: 'Only 'choice' and 'open-choice' items can have answerValueSet'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[0]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Reference) (l1&#8203;/c7743)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'https://ek1wj5eye3.execute-api.eu-west-2.amazonaws.com/dev/ObservationDefinition/40c46892-48dd-4713-95a1-6c1f0a68efbc'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input&#8203;/resources&#8203;/Questionnaire-body-weight</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://fhir.virtually.healthcare//Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8 vs https://fhir.virtually.healthcare/Questionnaire/body-weight</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_Questionnaire-self-measured-blood-pressure"> </a>
+<h2><a href="Questionnaire-d692490b-413c-4fb5-a767-db447f3d1906.html">input/resources/Questionnaire-self-measured-blood-pressure.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.where(url = 'https:&#8203;/&#8203;/fhir&#8203;.virtually&#8203;.healthcare&#8203;/Questionnaire&#8203;/self-measure-blood-pressure')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-self-measured-blood-pressure.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906) does not match the URL (https://fhir.virtually.healthcare/Questionnaire/self-measure-blood-pressure)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: d692490b-413c-4fb5-a767-db447f3d1906/https://fhir.virtually.healthcare/Questionnaire/self-measure-blood-pressure</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c7543)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.item[0] (l1/c7820)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Questionnaire#que-5"><b>Constraint failed: que-5: 'Only 'choice' and 'open-choice' items can have answerValueSet'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[0]&#8203;.code[0]&#8203;.code (l1&#8203;/c7688)</b></td><td><b>error</b></td><td><b>Unknown code '335661000000109' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20230901'</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[0]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Reference) (l1&#8203;/c7817)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'ObservationDefinition/2f6432c3-2eee-47f6-a3e5-e21ff03839fa'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input&#8203;/resources&#8203;/Questionnaire-self-measured-blood-pressure</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://fhir.virtually.healthcare//Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906 vs https://fhir.virtually.healthcare/Questionnaire/self-measure-blood-pressure</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_Questionnaire-vital-signs"> </a>
+<h2><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.where(url = 'https:&#8203;/&#8203;/example&#8203;.fhir&#8203;.nhs&#8203;.uk&#8203;/Questionnaire&#8203;/VitalSignsFinding')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-vital-signs.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675) does not match the URL (https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c24833)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[0]&#8203;.extension[1] (l1&#8203;/c25255)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[0]&#8203;.extension[1]&#8203;.url (l1&#8203;/c25234)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[0]&#8203;.extension[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.display (l1&#8203;/c25413)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'percent' for http://unitsofmeasure.org#%. Valid display is '%' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[0]&#8203;.code[0]&#8203;.code (l1&#8203;/c25571)</b></td><td><b>error</b></td><td><b>Unknown code '927981000000106' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20230901'</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.extension[1] (l1&#8203;/c26078)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.extension[1]&#8203;.url (l1&#8203;/c26057)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.extension[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.display (l1&#8203;/c26238)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'kilogram' for http://unitsofmeasure.org#kg. Valid display is 'kg' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[2]&#8203;.extension[1] (l1&#8203;/c26825)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[2]&#8203;.extension[1]&#8203;.url (l1&#8203;/c26804)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[2]&#8203;.extension[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.display (l1&#8203;/c26987)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'centimeter' for http://unitsofmeasure.org#cm. Valid display is 'cm' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[3]&#8203;.extension[1] (l1&#8203;/c27596)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[3]&#8203;.extension[1]&#8203;.url (l1&#8203;/c27575)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[3]&#8203;.extension[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.display (l1&#8203;/c27758)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'centimeter' for http://unitsofmeasure.org#cm. Valid display is 'cm' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[4]&#8203;.extension[1] (l1&#8203;/c28351)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[4]&#8203;.extension[1]&#8203;.url (l1&#8203;/c28330)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[4]&#8203;.extension[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.display (l1&#8203;/c28518)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'degree Celsius' for http://unitsofmeasure.org#Cel. Valid display is 'Cel' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[5]&#8203;.extension[0] (l1&#8203;/c28936)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[5]&#8203;.extension[0]&#8203;.url (l1&#8203;/c28915)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[5]&#8203;.extension[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.display (l1&#8203;/c29113)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'millimeter of mercury' for http://unitsofmeasure.org#mm[Hg]. Valid display is 'mm[Hg]' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[6]&#8203;.extension[1] (l1&#8203;/c29740)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[6]&#8203;.extension[1]&#8203;.url (l1&#8203;/c29719)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[6]&#8203;.extension[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.display (l1&#8203;/c29917)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'millimeter of mercury' for http://unitsofmeasure.org#mm[Hg]. Valid display is 'mm[Hg]' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[7]&#8203;.extension[1] (l1&#8203;/c30562)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[7]&#8203;.extension[1]&#8203;.url (l1&#8203;/c30541)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[7]&#8203;.extension[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.display (l1&#8203;/c30745)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'heart beats per minute' for http://unitsofmeasure.org#{beats}/min. Valid display is '{beats}/min' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire&#8203;.item[7]&#8203;.initial[0]&#8203;.value&#8203;.ofType(Quantity) (l1&#8203;/c31031)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS"><b>UCUM Codes that contain human readable annotations like {beats} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[8]&#8203;.extension[1] (l1&#8203;/c31351)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[8]&#8203;.extension[1]&#8203;.url (l1&#8203;/c31330)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[8]&#8203;.extension[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.display (l1&#8203;/c31530)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Breaths / minute' for http://unitsofmeasure.org#{Breaths}/min. Valid display is '{Breaths}/min' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire&#8203;.item[8]&#8203;.initial[0]&#8203;.value&#8203;.ofType(Quantity) (l1&#8203;/c31815)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS"><b>UCUM Codes that contain human readable annotations like {Breaths} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[9]&#8203;.extension[1] (l1&#8203;/c32135)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[9]&#8203;.extension[1]&#8203;.url (l1&#8203;/c32114)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[9]&#8203;.extension[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.display (l1&#8203;/c32315)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'kilogram per square meter' for http://unitsofmeasure.org#kg/m2. Valid display is 'kg/m2' (for the language(s) '--')</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input&#8203;/resources&#8203;/Questionnaire-vital-signs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://fhir.virtually.healthcare//Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675 vs https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_QuestionnaireResponse-1-AWSFormat"> </a>
+<h2><a href="QuestionnaireResponse-68aef45d-1b7b-4d9b-a62c-8382c44d8458.html">input/resources/QuestionnaireResponse-1-AWSFormat.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>QuestionnaireResponse: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse.subject (l9/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse.author (l19/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Reference) (l27&#8203;/c14)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/ca012f88-d6e4-47fa-9c82-ad071ebe0a8d'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[1]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Reference) (l37&#8203;/c14)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/54694bb3-faa7-49a1-b8f8-ae83948d35b9'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[2]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Reference) (l47&#8203;/c14)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/97bb0384-29de-41f3-9132-cb5efa310939'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[3]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Reference) (l57&#8203;/c14)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/e990ea96-3484-41d1-b9ca-81ef00053650'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>QuestionnaireResponse (l1/c4)</b></td><td><b>information</b></td><td title="Questionnaire_QR_Q_None"><b>No questionnaire is identified, so no validation can be performed against the base questionnaire</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_QuestionnaireResponse-1-AWSHybridFormat"> </a>
+<h2><a href="QuestionnaireResponse-aws-hybrid.html">input/resources/QuestionnaireResponse-1-AWSHybridFormat.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>QuestionnaireResponse: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse.subject (l9/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse.author (l19/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Reference) (l27&#8203;/c22)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/ca012f88-d6e4-47fa-9c82-ad071ebe0a8d'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[1]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Reference) (l37&#8203;/c22)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/54694bb3-faa7-49a1-b8f8-ae83948d35b9'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[2]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Reference) (l47&#8203;/c22)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/97bb0384-29de-41f3-9132-cb5efa310939'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[3]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Reference) (l57&#8203;/c22)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/e990ea96-3484-41d1-b9ca-81ef00053650'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>QuestionnaireResponse (l1/c2)</b></td><td><b>information</b></td><td title="Questionnaire_QR_Q_None"><b>No questionnaire is identified, so no validation can be performed against the base questionnaire</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_QuestionnaireResponse-2-Fatigue"> </a>
+<h2><a href="QuestionnaireResponse-fatigue.html">input/resources/QuestionnaireResponse-2-Fatigue.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>QuestionnaireResponse: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse.subject (l9/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse.author (l19/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>QuestionnaireResponse (l1/c4)</b></td><td><b>information</b></td><td title="Questionnaire_QR_Q_None"><b>No questionnaire is identified, so no validation can be performed against the base questionnaire</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_QuestionnaireResponse-SDC"> </a>
+<h2><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>QuestionnaireResponse: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse.subject (l14/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/53662716-c840-48f5-8b71-d0ca7c3edf34'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.encounter (l17&#8203;/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Encounter/7caf1f7a-4c12-4879-9fe1-889a63fc93bd'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse.author (l26/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'PractitionerRole/d299c5a2-81c2-4ff5-a0c7-8a9b419c3b39'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[20] (l220&#8203;/c10)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>QuestionnaireResponse.item.linkId: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|4.0.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[20]&#8203;.item[0] (l222&#8203;/c18)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse#qrs-1"><b>Constraint failed: qrs-1: 'Nested item can't be beneath both item and answer'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[20]&#8203;.item[0] (l222&#8203;/c18)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>QuestionnaireResponse.item.linkId: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|4.0.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[21]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Reference) (l277&#8203;/c22)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/ae77082b-e5d0-497a-8446-35d6a875836e'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[22]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Reference) (l287&#8203;/c22)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/2b2a465c-c358-45b5-b507-6a4618fb165e'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[23]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Reference) (l297&#8203;/c22)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/9bf49686-4efa-4db5-9f05-2886d5e59bf1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l30/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-1' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l39/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-4' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l48/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-5' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l57/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-6' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l66/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-7' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l75/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-8' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l84/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-9' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l93/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-10' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l102/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-11' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l111/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-12' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l120/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-13' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l157/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-16' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l166/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-17' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l175/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-18' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l184/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-19' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l193/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-20' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l202/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-21' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l211/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat-22' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l220/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NoLinkId"><b>No LinkId, so can''t be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l273/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat25' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l283/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat26' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l293/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'fat27' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[11] (l129&#8203;/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_Text"><b>If text exists, it must match the questionnaire definition for linkId /27113001</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[12] (l143&#8203;/c10)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_Text"><b>If text exists, it must match the questionnaire definition for linkId /50373000</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_github_virtually_VirtuallyHealthcare_input_resources_QuestionnaireResponse-document"> </a>
+<h2><a href="QuestionnaireResponse-document.html">input/resources/QuestionnaireResponse-document.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>QuestionnaireResponse: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse.subject (l9/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse.author (l19/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse&#8203;.item[0]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Reference) (l28&#8203;/c22)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'DocumentReference/29b51121-011b-4c67-9ca3-a63b5001098f'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>QuestionnaireResponse (l1/c2)</b></td><td><b>information</b></td><td title="Questionnaire_QR_Q_None"><b>No questionnaire is identified, so no validation can be performed against the base questionnaire</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>Have verified that these examples are being checked against the expected profiles/resources.</b></p><ul>
+ <li>INFORMATION: Binary/example: Binary: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Binary <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Bundle/h1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Patient/example: Patient: Validate resource against profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...</b></p><ul>
+ <li>WARNING: StructureDefinition.where(url = 'http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation'): The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: StructureDefinition.where(url = 'http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner'): The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>The objective is to show a reference to an unknown code system, so these warnings are expected</b></p><ul>
+ <li>WARNING: ValueSet.where(id = 'valueset-no-codesystem'): Error from server: Unable to provide support for code system http://not-a-known-code-system <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: ValueSet/valueset-no-codesystem: ValueSet.compose[0].include[0]: Unknown System/Version specified, so Concepts and Filters can''t be checked <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>These errors are intentional to demonstrate that specifying the canonical URL for value sets in the CQL is expected</b></p><ul>
+ <li>ERROR: Library/example: Library.dataRequirement[4].codeFilter[0].valueSet: Canonical URLs must be absolute URLs if they are not fragment references (TBD) <span style="color: maroon">(0 uses)<span></li>
+ <li>ERROR: Library/example: Library.relatedArtifact[7].resource: Canonical URLs must be absolute URLs if they are not fragment references (TBD) <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>These examples are fake code systems - they're not expected to be checked</b></p><ul>
+ <li>Code System URI 'http://example.org/some-id-type-system' is unknown so the code cannot be validated <span style="color: maroon">(0 uses)<span></li>
+ <li>Code System URI 'http://example.org/some-system' is unknown so the code cannot be validated <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>This error is intentional to demonstrate that CQL files not included in a Library resource in the IG are an error:</b></p><ul>
+ <li>ERROR: sample-ig\input\cql\notincluded.cql: CQL source was not associated with a library resource in the IG. <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>This is inherited from the base resource</b></p><ul>
+ <li>WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We don't want a code for the change reason (and this binding shouldn't be extensible anyhow)</b></p><ul>
+ <li>WARNING: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance).reason[0]: No code provided, and a code should be provided from the value set 'PurposeOfUse' (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse) <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance).reason[0]: No code provided, and a code should be provided from the value set 'PurposeOfUse' (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse) <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We expect that all of the 'structural' resources will only be validated against their respective 'core' resource definitions</b></p><ul>
+ <li>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide <span style="color: maroon">(0 uses)<span></li>
+ <li>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library <span style="color: maroon">(0 uses)<span></li>
+ <li>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition <span style="color: maroon">(0 uses)<span></li>
+ <li>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present</b></p><ul>
+ <li>INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Extension_EXT_Unknown_NotHere"> </a>
+<h2>Extension_EXT_Unknown_NotHere</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Questionnaire_QR_Item_NoLinkId"> </a>
+<h2>Questionnaire_QR_Item_NoLinkId</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>No LinkId, so can''t be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Questionnaire_QR_Item_NotFound"> </a>
+<h2>Questionnaire_QR_Item_NotFound</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-1' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-4' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-5' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-6' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-7' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-8' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-9' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-10' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-11' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-12' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-13' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-16' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-17' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-18' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-19' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-20' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-21' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat-22' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat25' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat26' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>LinkId 'fat27' not found in questionnaire</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Questionnaire_QR_Item_Text"> </a>
+<h2>Questionnaire_QR_Item_Text</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>If text exists, it must match the questionnaire definition for linkId /27113001</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>If text exists, it must match the questionnaire definition for linkId /50373000</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Questionnaire_QR_Q_None"> </a>
+<h2>Questionnaire_QR_Q_None</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="QuestionnaireResponse-68aef45d-1b7b-4d9b-a62c-8382c44d8458.html">input/resources/QuestionnaireResponse-1-AWSFormat.json</a></td><td><b>No questionnaire is identified, so no validation can be performed against the base questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="QuestionnaireResponse-aws-hybrid.html">input/resources/QuestionnaireResponse-1-AWSHybridFormat.json</a></td><td><b>No questionnaire is identified, so no validation can be performed against the base questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="QuestionnaireResponse-fatigue.html">input/resources/QuestionnaireResponse-2-Fatigue.json</a></td><td><b>No questionnaire is identified, so no validation can be performed against the base questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="QuestionnaireResponse-document.html">input/resources/QuestionnaireResponse-document.json</a></td><td><b>No questionnaire is identified, so no validation can be performed against the base questionnaire</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ImplementationGuide-virtually.healthcare.html">fsh-generated/resources/ImplementationGuide-virtually.healthcare.json</a></td><td><b>Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/fsh-generated/resources/ImplementationGuide-virtually.healthcare.json - the canonical URL (https://fhir.virtually.healthcare/ImplementationGuide/virtually.healthcare) does not match the URL (https://fhir.virtually.healthcare//ImplementationGuide/virtually.healthcare)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-7aac8781-aa31-4c27-a851-1f83258dc400.html">input/resources/Questionnaire-blood-pressure.json</a></td><td><b>Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-blood-pressure.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400) does not match the URL (https://fhir.virtually.healthcare/Questionnaire/blood-pressure)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-e8e5c92a-8941-40c2-bb85-f8634362bcb8.html">input/resources/Questionnaire-body-weight.json</a></td><td><b>Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-body-weight.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8) does not match the URL (https://fhir.virtually.healthcare/Questionnaire/body-weight)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-d692490b-413c-4fb5-a767-db447f3d1906.html">input/resources/Questionnaire-self-measured-blood-pressure.json</a></td><td><b>Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-self-measured-blood-pressure.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906) does not match the URL (https://fhir.virtually.healthcare/Questionnaire/self-measure-blood-pressure)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-vital-signs.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675) does not match the URL (https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_ID_MISMATCH"> </a>
+<h2>RESOURCE_ID_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-7aac8781-aa31-4c27-a851-1f83258dc400.html">input/resources/Questionnaire-blood-pressure.json</a></td><td><b>Resource id/url mismatch: 7aac8781-aa31-4c27-a851-1f83258dc400/https://fhir.virtually.healthcare/Questionnaire/blood-pressure</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-e8e5c92a-8941-40c2-bb85-f8634362bcb8.html">input/resources/Questionnaire-body-weight.json</a></td><td><b>Resource id/url mismatch: e8e5c92a-8941-40c2-bb85-f8634362bcb8/https://fhir.virtually.healthcare/Questionnaire/body-weight</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-d692490b-413c-4fb5-a767-db447f3d1906.html">input/resources/Questionnaire-self-measured-blood-pressure.json</a></td><td><b>Resource id/url mismatch: d692490b-413c-4fb5-a767-db447f3d1906/https://fhir.virtually.healthcare/Questionnaire/self-measure-blood-pressure</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-7aac8781-aa31-4c27-a851-1f83258dc400.html">input/resources/Questionnaire-blood-pressure.json</a></td><td><b>Unable to resolve resource with reference 'ObservationDefinition/92bb3577-cc53-4569-9f9b-fd42dc77cd25'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-e8e5c92a-8941-40c2-bb85-f8634362bcb8.html">input/resources/Questionnaire-body-weight.json</a></td><td><b>Unable to resolve resource with reference 'https://ek1wj5eye3.execute-api.eu-west-2.amazonaws.com/dev/ObservationDefinition/40c46892-48dd-4713-95a1-6c1f0a68efbc'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-d692490b-413c-4fb5-a767-db447f3d1906.html">input/resources/Questionnaire-self-measured-blood-pressure.json</a></td><td><b>Unable to resolve resource with reference 'ObservationDefinition/2f6432c3-2eee-47f6-a3e5-e21ff03839fa'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-68aef45d-1b7b-4d9b-a62c-8382c44d8458.html">input/resources/QuestionnaireResponse-1-AWSFormat.json</a></td><td><b>Unable to resolve resource with reference 'Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-68aef45d-1b7b-4d9b-a62c-8382c44d8458.html">input/resources/QuestionnaireResponse-1-AWSFormat.json</a></td><td><b>Unable to resolve resource with reference 'PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-68aef45d-1b7b-4d9b-a62c-8382c44d8458.html">input/resources/QuestionnaireResponse-1-AWSFormat.json</a></td><td><b>Unable to resolve resource with reference 'Observation/ca012f88-d6e4-47fa-9c82-ad071ebe0a8d'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-68aef45d-1b7b-4d9b-a62c-8382c44d8458.html">input/resources/QuestionnaireResponse-1-AWSFormat.json</a></td><td><b>Unable to resolve resource with reference 'Observation/54694bb3-faa7-49a1-b8f8-ae83948d35b9'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-68aef45d-1b7b-4d9b-a62c-8382c44d8458.html">input/resources/QuestionnaireResponse-1-AWSFormat.json</a></td><td><b>Unable to resolve resource with reference 'Observation/97bb0384-29de-41f3-9132-cb5efa310939'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-68aef45d-1b7b-4d9b-a62c-8382c44d8458.html">input/resources/QuestionnaireResponse-1-AWSFormat.json</a></td><td><b>Unable to resolve resource with reference 'Observation/e990ea96-3484-41d1-b9ca-81ef00053650'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-aws-hybrid.html">input/resources/QuestionnaireResponse-1-AWSHybridFormat.json</a></td><td><b>Unable to resolve resource with reference 'Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-aws-hybrid.html">input/resources/QuestionnaireResponse-1-AWSHybridFormat.json</a></td><td><b>Unable to resolve resource with reference 'PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-aws-hybrid.html">input/resources/QuestionnaireResponse-1-AWSHybridFormat.json</a></td><td><b>Unable to resolve resource with reference 'Observation/ca012f88-d6e4-47fa-9c82-ad071ebe0a8d'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-aws-hybrid.html">input/resources/QuestionnaireResponse-1-AWSHybridFormat.json</a></td><td><b>Unable to resolve resource with reference 'Observation/54694bb3-faa7-49a1-b8f8-ae83948d35b9'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-aws-hybrid.html">input/resources/QuestionnaireResponse-1-AWSHybridFormat.json</a></td><td><b>Unable to resolve resource with reference 'Observation/97bb0384-29de-41f3-9132-cb5efa310939'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-aws-hybrid.html">input/resources/QuestionnaireResponse-1-AWSHybridFormat.json</a></td><td><b>Unable to resolve resource with reference 'Observation/e990ea96-3484-41d1-b9ca-81ef00053650'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-fatigue.html">input/resources/QuestionnaireResponse-2-Fatigue.json</a></td><td><b>Unable to resolve resource with reference 'Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-fatigue.html">input/resources/QuestionnaireResponse-2-Fatigue.json</a></td><td><b>Unable to resolve resource with reference 'PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>Unable to resolve resource with reference 'Patient/53662716-c840-48f5-8b71-d0ca7c3edf34'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>Unable to resolve resource with reference 'Encounter/7caf1f7a-4c12-4879-9fe1-889a63fc93bd'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>Unable to resolve resource with reference 'PractitionerRole/d299c5a2-81c2-4ff5-a0c7-8a9b419c3b39'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>Unable to resolve resource with reference 'Observation/ae77082b-e5d0-497a-8446-35d6a875836e'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>Unable to resolve resource with reference 'Observation/2b2a465c-c358-45b5-b507-6a4618fb165e'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>Unable to resolve resource with reference 'Observation/9bf49686-4efa-4db5-9f05-2886d5e59bf1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-document.html">input/resources/QuestionnaireResponse-document.json</a></td><td><b>Unable to resolve resource with reference 'Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-document.html">input/resources/QuestionnaireResponse-document.json</a></td><td><b>Unable to resolve resource with reference 'PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-document.html">input/resources/QuestionnaireResponse-document.json</a></td><td><b>Unable to resolve resource with reference 'DocumentReference/29b51121-011b-4c67-9ca3-a63b5001098f'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>UCUM Codes that contain human readable annotations like {beats} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>UCUM Codes that contain human readable annotations like {Breaths} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">input/resources/Questionnaire-vital-signs.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Minimum"> </a>
+<h2>Validation_VAL_Profile_Minimum</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>QuestionnaireResponse.item.linkId: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|4.0.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html">input/resources/QuestionnaireResponse-SDC.json</a></td><td><b>QuestionnaireResponse.item.linkId: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|4.0.1)</b></td>
+   </tr>
+</table>
+</body>
+</html>
