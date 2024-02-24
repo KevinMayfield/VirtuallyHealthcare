@@ -1,0 +1,56 @@
+@startuml
+
+
+node "Health Information Exchange - National Adaptors" {
+
+note "All interfaces are FHIR R4 RESTful API's.\n\nPDS enables verification of NHS Numbers as well as a national source of patient demographics.\nThis will also allow English NHS number requests for other patients who are eligible for care in the English NHS." as FHIR
+
+package community as "Local System" {
+
+
+}
+
+
+package national as "National" {
+
+  object "PDS" as pds {
+ Patient Demographics
+ Is PDS facaded as IHE PDQm (FHIR R4 RESTful)
+    }
+    object "ODS" as ods {
+ Organisation details
+ Is ODS facaded as IHE mCSD (FHIR R4 RESTful)
+    }
+ object "MESH" as mesh {
+ Document Transfers: FHIR Messaging
+    }
+}
+
+
+
+
+community -u-> national
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml

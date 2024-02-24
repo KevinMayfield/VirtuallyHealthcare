@@ -1,0 +1,58 @@
+@startuml
+
+node "Health Information Exchange  - Primary Care Adaptors" {
+
+note "All interfaces are FHIR R4 RESTful API's. \nWritebacks are UK SNOMED CT compliant." as FHIR
+
+package community as "Local System" {
+
+
+}
+
+package primary as "Primary Care" {
+
+object "EMIS" as emis {
+ Patient Demographics : IHE PDQm
+ Medidical Records: IHE QEDm
+ Patient Documents: IHE MHD
+ Clinically Coded Writebacks : FHIR R4 (UK Core compliant)
+ IM1 facaded as FHIR R4 RESTful
+    }
+ object "TPP" as tpp {
+ Patient Demographics : IHE PDQm
+ Medidical Records: IHE QEDm
+ Patient Documents: IHE MHD
+ Clinically Coded Writebacks : FHIR R4 (UK Core compliant)
+ IM1 facaded as FHIR R4 RESTful
+    }
+
+}
+
+
+}
+
+
+community -d-> primary
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml

@@ -1,5 +1,6 @@
 {
     "resourceType": "QuestionnaireResponse",
+  "id": "fatigue",
     "identifier": {
       "system": "https://fhir.virtually.healthcare/Id/QuestionnaireResponse",
       "value": "e52506cf-10aa-49ed-a96f-f3ac1888dee7"
@@ -48,4 +49,3 @@
       }
     ]
   }
-  

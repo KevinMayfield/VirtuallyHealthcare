@@ -1,0 +1,66 @@
+@startuml
+
+node "Health Information Exchange - Master Data" {
+
+note "All interfaces are FHIR R4 RESTful API's \n\nThe MPI is linked to PDS for English Patients. \nOther patients eligible for care in England will be allocated a MRN until a NHS Number is available.\nWe are likely to extend the MPI to include other providers MRN probably via IHE PIX/HL7 v2 ADT from acute trusts \n\nUses UK SNOMED CT and follows NHS Data Dictionary and Model requirements. \nAlso HL7 UK Core conformant \nConsultations/Structured Data Capture (SDC) is used to writeback clinically coded data to EMIS/TPP" as ukcore
+
+package community as "Local System" {
+
+  object "Master Patient Index" as localpas {
+ Patient Demographics : IHE PDQm
+    }
+    object "Care Directory's" as mcsd {
+      Directory of all local care providers: IHE mCSD
+      Endpoint Directory: Which systems to get the patients records from (IHE mCSD)
+      Care Team Directory: Who is providing care for the patient (IHE DCT)
+    }
+ object "Patient uploads" as uploads {
+ Patient Documents: IHE MHD
+
+    }
+    object "Consultations" as sdc {
+      Structured Data Capture : FHIR SDC
+    }
+    object "Personal Health Record" as phr {
+      Fitbit
+      Apple Health
+      Google Health
+      International Patient Access (EMIS PFS)
+    }
+
+}
+
+package primary as "Primary Care Systems" {
+
+}
+
+package national as "National" {
+
+}
+package regional as "Regional and/or NHS Trust" {
+
+}
+
+community -d-> primary
+community -u-> national
+community -r-> regional
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml

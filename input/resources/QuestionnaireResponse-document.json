@@ -1,5 +1,6 @@
 {
     "resourceType": "QuestionnaireResponse",
+    "id": "document",
     "identifier": {
         "system": "https://fhir.virtually.healthcare/Id/QuestionnaireResponse",
         "value": "5b59b357-3b03-4635-bbdb-3c3269e54bab"

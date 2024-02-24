@@ -2,6 +2,7 @@
     "item": [
         {
             "linkId": "entry",
+            "type": "reference",
             "code": [
                 {
                     "system": "http://snomed.info/sct",

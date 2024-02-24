@@ -19,7 +19,7 @@ fhirVersion: 4.0.1
 copyrightYear: 2024+
 releaseLabel: ci-build
 license: Apache-2.0
-jurisdiction: urn:iso:std:iso:3166#GB-ENG "England"
+jurisdiction: urn:iso:std:iso:3166#GB "UK"
 publisher:
   name: Virtually Healthcare
   url: https://virtually.healthcare/

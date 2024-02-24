@@ -1,0 +1,58 @@
+@startuml
+
+
+node "Health Information Exchange - NHS Trust or Regional Adaptors" {
+
+note "All interfaces are FHIR R4 RESTful API's.\nThis is likely to only mean One London, Yorkshire and Humberside Care Record, Cerner and/or EPIC" as FHIR
+
+package community as "Local System" {
+
+
+}
+
+
+
+package regional as "Regional or NHS Trust" {
+
+  object "PAS or MPI" as pas {
+ Patient Demographics
+ IHE PDQm (FHIR R4 RESTful)
+    }
+ object "EDMS or XDS" as xds {
+ Patient Documents: IHE MHD
+ XDS will be facaded as IHE MHD (FHIR R4 RESTful)
+  (supplier must be IHE XDS/MHD compliant)
+    }
+    object "EPR" as qedms {
+ Medical Records: IHE QEDm
+ (supplier must be IHE QEDm (FHIR R4 RESTful),
+ INTEROPen Care Connect API (STU3 API not profiles),
+ or US Core compliant (STU3/R4 API not profiles)
+    }
+}
+
+
+
+community -d-> regional
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml

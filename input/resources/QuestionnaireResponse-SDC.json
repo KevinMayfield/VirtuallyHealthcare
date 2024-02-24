@@ -37,14 +37,6 @@
             ]
         },
         {
-            "linkId": "fat-2",
-            "text": "Important red flags to be aware of"
-        },
-        {
-            "linkId": "fat-3",
-            "text": "Clinician shorthand notes"
-        },
-        {
             "linkId": "fat-4",
             "text": "My Condition",
             "answer": [
@@ -224,10 +216,6 @@
                     "valueString": "no"
                 }
             ]
-        },
-        {
-            "linkId": "fat-23",
-            "text": "If you have any images, documents or other files that are relevant to your consultation for the GP or Nurse to review, please upload them here."
         },
         {
             "item": [
