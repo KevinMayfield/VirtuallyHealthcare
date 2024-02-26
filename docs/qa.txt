@@ -1,20 +1,25 @@
 VirtuallyHealthcareImplementationGuide : Validation Results
 =========================================
 
-err = 105, warn = 16, info = 4
+err = 109, warn = 18, info = 4
 IG Publisher Version: 1.5.16
-Generated Sat Feb 24 11:47:40 GMT 2024. FHIR version 4.0.1 for virtually.healthcare#0.0.1 (canonical = https://fhir.virtually.healthcare/)
- Build Errors : 0 / 14 / 0
- /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/fsh-generated/resources/ImplementationGuide-virtually.healthcare : 2 / 0 / 1
- /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-blood-pressure : 6 / 0 / 1
- /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-body-weight : 6 / 0 / 1
- /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-self-measured-blood-pressure : 7 / 0 / 1
- /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-vital-signs : 34 / 2 / 1
- /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/QuestionnaireResponse-1-AWSFormat : 6 / 0 / 2
- /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/QuestionnaireResponse-1-AWSHybridFormat : 6 / 0 / 2
- /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/QuestionnaireResponse-2-Fatigue : 2 / 0 / 2
- /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/QuestionnaireResponse-SDC : 33 / 0 / 1
- /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/QuestionnaireResponse-document : 3 / 0 / 2
+Generated Mon Feb 26 11:49:03 GMT 2024. FHIR version 4.0.1 for virtually.healthcare#0.0.1 (canonical = https://fhir.virtually.healthcare)
+ Build Errors : 0 / 13 / 0
+ C:\Development\Virtually\VirtuallyHealthcare\fsh-generated\resources\CapabilityStatement-DocumentIndexProvider : 1 / 0 / 1
+ C:\Development\Virtually\VirtuallyHealthcare\fsh-generated\resources\CapabilityStatement-PatientIndexProvider : 1 / 0 / 1
+ C:\Development\Virtually\VirtuallyHealthcare\fsh-generated\resources\ImplementationGuide-virtually.healthcare : 1 / 0 / 1
+ C:\Development\Virtually\VirtuallyHealthcare\fsh-generated\resources\StructureDefinition-DocumentReference : 1 / 1 / 1
+ C:\Development\Virtually\VirtuallyHealthcare\fsh-generated\resources\StructureDefinition-Observation : 1 / 1 / 1
+ C:\Development\Virtually\VirtuallyHealthcare\fsh-generated\resources\StructureDefinition-Patient : 1 / 1 / 1
+ C:\Development\Virtually\VirtuallyHealthcare\input\resources\Questionnaire-blood-pressure : 6 / 0 / 1
+ C:\Development\Virtually\VirtuallyHealthcare\input\resources\Questionnaire-body-weight : 6 / 0 / 1
+ C:\Development\Virtually\VirtuallyHealthcare\input\resources\Questionnaire-self-measured-blood-pressure : 7 / 0 / 1
+ C:\Development\Virtually\VirtuallyHealthcare\input\resources\Questionnaire-vital-signs : 34 / 2 / 1
+ C:\Development\Virtually\VirtuallyHealthcare\input\resources\QuestionnaireResponse-1-AWSFormat : 6 / 0 / 2
+ C:\Development\Virtually\VirtuallyHealthcare\input\resources\QuestionnaireResponse-1-AWSHybridFormat : 6 / 0 / 2
+ C:\Development\Virtually\VirtuallyHealthcare\input\resources\QuestionnaireResponse-2-Fatigue : 2 / 0 / 2
+ C:\Development\Virtually\VirtuallyHealthcare\input\resources\QuestionnaireResponse-SDC : 33 / 0 / 1
+ C:\Development\Virtually\VirtuallyHealthcare\input\resources\QuestionnaireResponse-document : 3 / 0 / 2
 </table>
 == n/a ==
 WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
@@ -29,35 +34,46 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/fatigue.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/ImplementationGuide-virtually.healthcare.json ==
-ERROR: ImplementationGuide.where(url = 'https://fhir.virtually.healthcare//ImplementationGuide/virtually.healthcare'): Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/fsh-generated/resources/ImplementationGuide-virtually.healthcare.json - the canonical URL (https://fhir.virtually.healthcare/ImplementationGuide/virtually.healthcare) does not match the URL (https://fhir.virtually.healthcare//ImplementationGuide/virtually.healthcare)
+== fsh-generated\resources\CapabilityStatement-DocumentIndexProvider.json ==
+ERROR: CapabilityStatement/DocumentIndexProvider: CapabilityStatement.jurisdiction[0].coding[0].display: Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')
+== fsh-generated\resources\CapabilityStatement-PatientIndexProvider.json ==
+ERROR: CapabilityStatement/PatientIndexProvider: CapabilityStatement.jurisdiction[0].coding[0].display: Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')
+== fsh-generated\resources\ImplementationGuide-virtually.healthcare.json ==
 ERROR: ImplementationGuide/virtually.healthcare: ImplementationGuide.jurisdiction[0].coding[0].display: Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')
-== input/resources/Questionnaire-blood-pressure.json ==
-ERROR: Questionnaire.where(url = 'https://fhir.virtually.healthcare/Questionnaire/blood-pressure'): Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-blood-pressure.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400) does not match the URL (https://fhir.virtually.healthcare/Questionnaire/blood-pressure)
+== fsh-generated\resources\StructureDefinition-DocumentReference.json ==
+ERROR: StructureDefinition/DocumentReference: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')
+WARNING: StructureDefinition.where(url = 'https://fhir.virtually.healthcare/StructureDefinition/DocumentReference'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-Observation.json ==
+ERROR: StructureDefinition/Observation: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')
+WARNING: StructureDefinition.where(url = 'https://fhir.virtually.healthcare/StructureDefinition/Observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-Patient.json ==
+ERROR: StructureDefinition/Patient: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')
+WARNING: StructureDefinition.where(url = 'https://fhir.virtually.healthcare/StructureDefinition/Patient'): The Implementation Guide contains no examples for this profile
+== input\resources\Questionnaire-blood-pressure.json ==
+ERROR: Questionnaire.where(url = 'https://fhir.virtually.healthcare/Questionnaire/blood-pressure'): Conformance resource C:\Development\Virtually\VirtuallyHealthcare\input\resources\Questionnaire-blood-pressure.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400) does not match the URL (https://fhir.virtually.healthcare/Questionnaire/blood-pressure)
 ERROR: Questionnaire.url: Resource id/url mismatch: 7aac8781-aa31-4c27-a851-1f83258dc400/https://fhir.virtually.healthcare/Questionnaire/blood-pressure
 ERROR: Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400: Questionnaire.jurisdiction[0].coding[0].display: Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')
 ERROR: Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400: Questionnaire.item[0]: Constraint failed: que-5: 'Only 'choice' and 'open-choice' items can have answerValueSet'
 ERROR: Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400: Questionnaire.item[0].answerOption[0].value.ofType(Reference): Unable to resolve resource with reference 'ObservationDefinition/92bb3577-cc53-4569-9f9b-fd42dc77cd25'
-ERROR: /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-blood-pressure: URL Mismatch https://fhir.virtually.healthcare//Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400 vs https://fhir.virtually.healthcare/Questionnaire/blood-pressure
-== input/resources/Questionnaire-body-weight.json ==
-ERROR: Questionnaire.where(url = 'https://fhir.virtually.healthcare/Questionnaire/body-weight'): Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-body-weight.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8) does not match the URL (https://fhir.virtually.healthcare/Questionnaire/body-weight)
+ERROR: C:\Development\Virtually\VirtuallyHealthcare\input\resources\Questionnaire-blood-pressure: URL Mismatch https://fhir.virtually.healthcare/Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400 vs https://fhir.virtually.healthcare/Questionnaire/blood-pressure
+== input\resources\Questionnaire-body-weight.json ==
+ERROR: Questionnaire.where(url = 'https://fhir.virtually.healthcare/Questionnaire/body-weight'): Conformance resource C:\Development\Virtually\VirtuallyHealthcare\input\resources\Questionnaire-body-weight.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8) does not match the URL (https://fhir.virtually.healthcare/Questionnaire/body-weight)
 ERROR: Questionnaire.url: Resource id/url mismatch: e8e5c92a-8941-40c2-bb85-f8634362bcb8/https://fhir.virtually.healthcare/Questionnaire/body-weight
 ERROR: Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8: Questionnaire.jurisdiction[0].coding[0].display: Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')
 ERROR: Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8: Questionnaire.item[0]: Constraint failed: que-5: 'Only 'choice' and 'open-choice' items can have answerValueSet'
 ERROR: Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8: Questionnaire.item[0].answerOption[0].value.ofType(Reference): Unable to resolve resource with reference 'https://ek1wj5eye3.execute-api.eu-west-2.amazonaws.com/dev/ObservationDefinition/40c46892-48dd-4713-95a1-6c1f0a68efbc'
-ERROR: /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-body-weight: URL Mismatch https://fhir.virtually.healthcare//Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8 vs https://fhir.virtually.healthcare/Questionnaire/body-weight
-== input/resources/Questionnaire-self-measured-blood-pressure.json ==
-ERROR: Questionnaire.where(url = 'https://fhir.virtually.healthcare/Questionnaire/self-measure-blood-pressure'): Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-self-measured-blood-pressure.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906) does not match the URL (https://fhir.virtually.healthcare/Questionnaire/self-measure-blood-pressure)
+ERROR: C:\Development\Virtually\VirtuallyHealthcare\input\resources\Questionnaire-body-weight: URL Mismatch https://fhir.virtually.healthcare/Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8 vs https://fhir.virtually.healthcare/Questionnaire/body-weight
+== input\resources\Questionnaire-self-measured-blood-pressure.json ==
+ERROR: Questionnaire.where(url = 'https://fhir.virtually.healthcare/Questionnaire/self-measure-blood-pressure'): Conformance resource C:\Development\Virtually\VirtuallyHealthcare\input\resources\Questionnaire-self-measured-blood-pressure.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906) does not match the URL (https://fhir.virtually.healthcare/Questionnaire/self-measure-blood-pressure)
 ERROR: Questionnaire.url: Resource id/url mismatch: d692490b-413c-4fb5-a767-db447f3d1906/https://fhir.virtually.healthcare/Questionnaire/self-measure-blood-pressure
 ERROR: Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906: Questionnaire.jurisdiction[0].coding[0].display: Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')
 ERROR: Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906: Questionnaire.item[0]: Constraint failed: que-5: 'Only 'choice' and 'open-choice' items can have answerValueSet'
 ERROR: Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906: Questionnaire.item[0].code[0].code: Unknown code '335661000000109' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20230901'
 ERROR: Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906: Questionnaire.item[0].answerOption[0].value.ofType(Reference): Unable to resolve resource with reference 'ObservationDefinition/2f6432c3-2eee-47f6-a3e5-e21ff03839fa'
-ERROR: /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-self-measured-blood-pressure: URL Mismatch https://fhir.virtually.healthcare//Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906 vs https://fhir.virtually.healthcare/Questionnaire/self-measure-blood-pressure
-== input/resources/Questionnaire-vital-signs.json ==
-ERROR: Questionnaire.where(url = 'https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding'): Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-vital-signs.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675) does not match the URL (https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding)
+ERROR: C:\Development\Virtually\VirtuallyHealthcare\input\resources\Questionnaire-self-measured-blood-pressure: URL Mismatch https://fhir.virtually.healthcare/Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906 vs https://fhir.virtually.healthcare/Questionnaire/self-measure-blood-pressure
+== input\resources\Questionnaire-vital-signs.json ==
+ERROR: Questionnaire.where(url = 'https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding'): Conformance resource C:\Development\Virtually\VirtuallyHealthcare\input\resources\Questionnaire-vital-signs.json - the canonical URL (https://fhir.virtually.healthcare/Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675) does not match the URL (https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding)
 ERROR: Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675: Questionnaire.jurisdiction[0].coding[0].display: Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')
 ERROR: Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675: Questionnaire.item[0].extension[1]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
 ERROR: Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675: Questionnaire.item[0].extension[1].url: URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve
@@ -92,8 +108,8 @@ WARNING: Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675: Questionnaire.item[
 ERROR: Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675: Questionnaire.item[9].extension[1]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract could not be found so is not allowed here
 ERROR: Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675: Questionnaire.item[9].extension[1].url: URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract' does not resolve
 ERROR: Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675: Questionnaire.item[9].extension[2].value.ofType(Coding).display: Wrong Display Name 'kilogram per square meter' for http://unitsofmeasure.org#kg/m2. Valid display is 'kg/m2' (for the language(s) '--')
-ERROR: /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-vital-signs: URL Mismatch https://fhir.virtually.healthcare//Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675 vs https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding
-== input/resources/QuestionnaireResponse-1-AWSFormat.json ==
+ERROR: C:\Development\Virtually\VirtuallyHealthcare\input\resources\Questionnaire-vital-signs: URL Mismatch https://fhir.virtually.healthcare/Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675 vs https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding
+== input\resources\QuestionnaireResponse-1-AWSFormat.json ==
 ERROR: QuestionnaireResponse/68aef45d-1b7b-4d9b-a62c-8382c44d8458: QuestionnaireResponse.subject: Unable to resolve resource with reference 'Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd'
 ERROR: QuestionnaireResponse/68aef45d-1b7b-4d9b-a62c-8382c44d8458: QuestionnaireResponse.author: Unable to resolve resource with reference 'PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb'
 ERROR: QuestionnaireResponse/68aef45d-1b7b-4d9b-a62c-8382c44d8458: QuestionnaireResponse.item[0].answer[0].value.ofType(Reference): Unable to resolve resource with reference 'Observation/ca012f88-d6e4-47fa-9c82-ad071ebe0a8d'
@@ -101,7 +117,7 @@ ERROR: QuestionnaireResponse/68aef45d-1b7b-4d9b-a62c-8382c44d8458: Questionnaire
 ERROR: QuestionnaireResponse/68aef45d-1b7b-4d9b-a62c-8382c44d8458: QuestionnaireResponse.item[2].answer[0].value.ofType(Reference): Unable to resolve resource with reference 'Observation/97bb0384-29de-41f3-9132-cb5efa310939'
 ERROR: QuestionnaireResponse/68aef45d-1b7b-4d9b-a62c-8382c44d8458: QuestionnaireResponse.item[3].answer[0].value.ofType(Reference): Unable to resolve resource with reference 'Observation/e990ea96-3484-41d1-b9ca-81ef00053650'
 INFORMATION: QuestionnaireResponse/68aef45d-1b7b-4d9b-a62c-8382c44d8458: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
-== input/resources/QuestionnaireResponse-1-AWSHybridFormat.json ==
+== input\resources\QuestionnaireResponse-1-AWSHybridFormat.json ==
 ERROR: QuestionnaireResponse/aws-hybrid: QuestionnaireResponse.subject: Unable to resolve resource with reference 'Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd'
 ERROR: QuestionnaireResponse/aws-hybrid: QuestionnaireResponse.author: Unable to resolve resource with reference 'PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb'
 ERROR: QuestionnaireResponse/aws-hybrid: QuestionnaireResponse.item[0].answer[0].value.ofType(Reference): Unable to resolve resource with reference 'Observation/ca012f88-d6e4-47fa-9c82-ad071ebe0a8d'
@@ -109,11 +125,11 @@ ERROR: QuestionnaireResponse/aws-hybrid: QuestionnaireResponse.item[1].answer[0]
 ERROR: QuestionnaireResponse/aws-hybrid: QuestionnaireResponse.item[2].answer[0].value.ofType(Reference): Unable to resolve resource with reference 'Observation/97bb0384-29de-41f3-9132-cb5efa310939'
 ERROR: QuestionnaireResponse/aws-hybrid: QuestionnaireResponse.item[3].answer[0].value.ofType(Reference): Unable to resolve resource with reference 'Observation/e990ea96-3484-41d1-b9ca-81ef00053650'
 INFORMATION: QuestionnaireResponse/aws-hybrid: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
-== input/resources/QuestionnaireResponse-2-Fatigue.json ==
+== input\resources\QuestionnaireResponse-2-Fatigue.json ==
 ERROR: QuestionnaireResponse/fatigue: QuestionnaireResponse.subject: Unable to resolve resource with reference 'Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd'
 ERROR: QuestionnaireResponse/fatigue: QuestionnaireResponse.author: Unable to resolve resource with reference 'PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb'
 INFORMATION: QuestionnaireResponse/fatigue: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
-== input/resources/QuestionnaireResponse-SDC.json ==
+== input\resources\QuestionnaireResponse-SDC.json ==
 ERROR: QuestionnaireResponse/798ff459-6685-4526-8ce9-db2842b73dca: QuestionnaireResponse.subject: Unable to resolve resource with reference 'Patient/53662716-c840-48f5-8b71-d0ca7c3edf34'
 ERROR: QuestionnaireResponse/798ff459-6685-4526-8ce9-db2842b73dca: QuestionnaireResponse.encounter: Unable to resolve resource with reference 'Encounter/7caf1f7a-4c12-4879-9fe1-889a63fc93bd'
 ERROR: QuestionnaireResponse/798ff459-6685-4526-8ce9-db2842b73dca: QuestionnaireResponse.author: Unable to resolve resource with reference 'PractitionerRole/d299c5a2-81c2-4ff5-a0c7-8a9b419c3b39'
@@ -147,7 +163,7 @@ ERROR: QuestionnaireResponse/798ff459-6685-4526-8ce9-db2842b73dca: Questionnaire
 ERROR: QuestionnaireResponse/798ff459-6685-4526-8ce9-db2842b73dca: QuestionnaireResponse: LinkId 'fat27' not found in questionnaire
 ERROR: QuestionnaireResponse/798ff459-6685-4526-8ce9-db2842b73dca: QuestionnaireResponse.item[11]: If text exists, it must match the questionnaire definition for linkId /27113001
 ERROR: QuestionnaireResponse/798ff459-6685-4526-8ce9-db2842b73dca: QuestionnaireResponse.item[12]: If text exists, it must match the questionnaire definition for linkId /50373000
-== input/resources/QuestionnaireResponse-document.json ==
+== input\resources\QuestionnaireResponse-document.json ==
 ERROR: QuestionnaireResponse/document: QuestionnaireResponse.subject: Unable to resolve resource with reference 'Patient/6d4e737a-b119-4a26-84af-ef6b84c7a7dd'
 ERROR: QuestionnaireResponse/document: QuestionnaireResponse.author: Unable to resolve resource with reference 'PractitionerRole/6ffbacda-ef0f-4e38-8bbd-3b5ce83104bb'
 ERROR: QuestionnaireResponse/document: QuestionnaireResponse.item[0].answer[0].value.ofType(Reference): Unable to resolve resource with reference 'DocumentReference/29b51121-011b-4c67-9ca3-a63b5001098f'

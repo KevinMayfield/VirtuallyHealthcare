@@ -21,13 +21,13 @@
   fhir:version [ fhir:v "0.0.1"] ; # 
   fhir:title [ fhir:v "blood-pressure"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-24T11:47:15+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-26T11:48:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Virtually Healthcare"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Virtually Healthcare" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://virtually.healthcare/" ]
+       fhir:value [ fhir:v "https://virtually.healthcare" ]
      ] )
   ] ) ; # 
   fhir:jurisdiction ( [

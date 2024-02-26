@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Architecture Detail - Virtually Healthcare Implementation Guide v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/virtually.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon-32x32-1.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Virtually Healthcare Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+  UK
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="findpatient.html">Find Patient</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture-detail.html">Archtitecture Detail</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Architecture Detail</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Virtually Healthcare Implementation Guide - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.virtually.healthcare/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Architecture Detail</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#virtually-healthcare-core" id="markdown-toc-virtually-healthcare-core">Virtually Healthcare Core</a></li>
+  <li><a href="#primary-care-adaptors" id="markdown-toc-primary-care-adaptors">Primary Care Adaptors</a></li>
+  <li><a href="#national-adaptors" id="markdown-toc-national-adaptors">National Adaptors</a></li>
+  <li><a href="#regional-adaptors" id="markdown-toc-regional-adaptors">Regional Adaptors</a></li>
+</ul>
+
+</div>
+<h3 id="virtually-healthcare-core">Virtually Healthcare Core</h3>
+
+<p>TODO</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="587px" preserveAspectRatio="none" style="width:1381px;height:587px;background:#FFFFFF;" version="1.1" viewBox="0 0 1381 587" width="1381px" zoomAndPan="magnify"><defs /><g><!--cluster Health Information Exchange - Master Data--><g id="cluster_Health Information Exchange - Master Data"><polygon fill="none" points="16,16,26,6,1364,6,1364,560,1354,570,16,570,16,16" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="1354" x2="1364" y1="16" y2="6" /><line style="stroke:#181818;stroke-width:1.0;" x1="16" x2="1354" y1="16" y2="16" /><line style="stroke:#181818;stroke-width:1.0;" x1="1354" x2="1354" y1="16" y2="570" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="299" x="536.5" y="33.5332">Health Information Exchange - Master Data</text></g><!--cluster community--><g id="cluster_community"><path d="M50.5,228 L142.5,228 A3.75,3.75 0 0 1 145,230.5 L152,251.6094 L1118.5,251.6094 A2.5,2.5 0 0 1 1121,254.1094 L1121,535.5 A2.5,2.5 0 0 1 1118.5,538 L50.5,538 A2.5,2.5 0 0 1 48,535.5 L48,230.5 A2.5,2.5 0 0 1 50.5,228 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="48" x2="152" y1="251.6094" y2="251.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="91" x="52" y="244.5332">Local System</text></g><g id="elem_ukcore"><path d="M190.5,47 L190.5,204.1641 L873.5,204.1641 L873.5,57 L863.5,47 L190.5,47 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M863.5,47 L863.5,57 L873.5,57 L863.5,47 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="235" x="196.5" y="65.4951">All interfaces are FHIR R4 RESTful API's</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="196.5" y="81.8467">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="267" x="196.5" y="98.1982">The MPI is linked to PDS for English Patients.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="568" x="196.5" y="114.5498">Other patients eligible for care in England will be allocated a MRN until a NHS Number is available.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="658" x="196.5" y="130.9014">We are likely to extend the MPI to include other providers MRN probably via IHE PIX/HL7 v2 ADT from acute trusts</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="196.5" y="147.2529">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="472" x="196.5" y="163.6045">Uses UK SNOMED CT and follows NHS Data Dictionary and Model requirements.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="174" x="196.5" y="179.9561">Also HL7 UK Core conformant</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="584" x="196.5" y="196.3076">Consultations/Structured Data Capture (SDC) is used to writeback clinically coded data to EMIS/TPP</text></g><g id="elem_localpas"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="229" x="72.5" y="289.5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="123" y="306.0332">Master Patient Index</text><line style="stroke:#181818;stroke-width:0.5;" x1="73.5" x2="300.5" y1="311.1094" y2="311.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217" x="78.5" y="329.6426">Patient Demographics : IHE PDQm</text></g><g id="elem_mcsd"><rect fill="#F1F1F1" height="82.4375" style="stroke:#181818;stroke-width:0.5;" width="512" x="337" y="272" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="542" y="288.5332">Care Directory's</text><line style="stroke:#181818;stroke-width:0.5;" x1="338" x2="848" y1="293.6094" y2="293.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="343" y="312.1426">Directory of all local care providers: IHE mCSD</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="500" x="343" y="329.752">Endpoint Directory: Which systems to get the patients records from (IHE mCSD)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="437" x="343" y="347.3613">Care Team Directory: Who is providing care for the patient (IHE DCT)</text></g><g id="elem_uploads"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="194" x="884" y="289.5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="932" y="306.0332">Patient uploads</text><line style="stroke:#181818;stroke-width:0.5;" x1="885" x2="1077" y1="311.1094" y2="311.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="890" y="329.6426">Patient Documents: IHE MHD</text></g><g id="elem_sdc"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="243" x="72.5" y="440.5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="151" y="457.0332">Consultations</text><line style="stroke:#181818;stroke-width:0.5;" x1="73.5" x2="314.5" y1="462.1094" y2="462.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="231" x="78.5" y="480.6426">Structured Data Capture : FHIR SDC</text></g><g id="elem_phr"><rect fill="#F1F1F1" height="100.0469" style="stroke:#181818;stroke-width:0.5;" width="264" x="351" y="414" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="408" y="430.5332">Personal Health Record</text><line style="stroke:#181818;stroke-width:0.5;" x1="352" x2="614" y1="435.6094" y2="435.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="357" y="454.1426">Fitbit</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="357" y="471.752">Apple Health</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="357" y="489.3613">Google Health</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="252" x="357" y="506.9707">International Patient Access (EMIS PFS)</text></g><!--entity primary--><g id="elem_primary"><path d="M1147.5,435 L1207.5,435 A3.75,3.75 0 0 1 1210,437.5 L1217,458.6094 L1312.5,458.6094 A2.5,2.5 0 0 1 1315,461.1094 L1315,490.7188 A2.5,2.5 0 0 1 1312.5,493.2188 L1147.5,493.2188 A2.5,2.5 0 0 1 1145,490.7188 L1145,437.5 A2.5,2.5 0 0 1 1147.5,435 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="1145" x2="1217" y1="458.6094" y2="458.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="1155" y="452.5332">primary</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="1155" y="480.1426">Primary Care Systems</text></g><!--entity national--><g id="elem_national"><path d="M1069.5,96.5 L1132.5,96.5 A3.75,3.75 0 0 1 1135,99 L1142,120.1094 L1156.5,120.1094 A2.5,2.5 0 0 1 1159,122.6094 L1159,152.2188 A2.5,2.5 0 0 1 1156.5,154.7188 L1069.5,154.7188 A2.5,2.5 0 0 1 1067,152.2188 L1067,99 A2.5,2.5 0 0 1 1069.5,96.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="1067" x2="1142" y1="120.1094" y2="120.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="1077" y="114.0332">national</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="1077" y="141.6426">National</text></g><!--entity regional--><g id="elem_regional"><path d="M1151,284 L1215,284 A3.75,3.75 0 0 1 1217.5,286.5 L1224.5,307.6094 L1345,307.6094 A2.5,2.5 0 0 1 1347.5,310.1094 L1347.5,339.7188 A2.5,2.5 0 0 1 1345,342.2188 L1151,342.2188 A2.5,2.5 0 0 1 1148.5,339.7188 L1148.5,286.5 A2.5,2.5 0 0 1 1151,284 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="1148.5" x2="1224.5" y1="307.6094" y2="307.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="1158.5" y="301.5332">regional</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="1158.5" y="329.1426">Regional and/or NHS Trust</text></g><!--link community to primary--><g id="link_community_primary"><path codeLine="43" d="M1121.1726,361.9459 C1121.307,362.1838 1121.4421,362.4214 1121.578,362.6588 C1122.1213,363.6083 1122.6757,364.5534 1123.2406,365.4941 C1125.5002,369.257 1127.9285,372.949 1130.4933,376.563 C1135.6228,383.7909 1141.2981,390.7069 1147.2613,397.2537 C1159.1875,410.3475 1172.265,421.965 1184.43,431.65 " fill="none" id="community-to-primary" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="1188.61,434.94,1183.9877,426.2432,1184.6725,431.8585,1179.0572,432.5432,1188.61,434.94" style="stroke:#181818;stroke-width:1.0;" /></g><!--reverse link national to community--><g id="link_national_community"><path codeLine="44" d="M1113,159.93 C1113,173.0675 1113,188.9419 1113,205.412 C1113,209.5296 1113,213.6843 1113,217.8429 C1113,219.9222 1113,222.0024 1113,224.0794 C1113,225.1179 1113,226.1556 1113,227.1919 C1113,227.451 1113,227.71 1113,227.9689 " fill="none" id="national-backto-community" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="1113,154.67,1109,163.67,1113,159.67,1117,163.67,1113,154.67" style="stroke:#181818;stroke-width:1.0;" /></g><!--link community to regional--><g id="link_community_regional"><path codeLine="45" d="M1121.0802,313 C1121.119,313 1121.1577,313 1121.1964,313 C1121.2739,313 1121.3513,313 1121.4288,313 C1121.5837,313 1121.7386,313 1121.8935,313 C1122.2033,313 1122.5131,313 1122.8229,313 C1123.4426,313 1124.0622,313 1124.6819,313 C1125.9213,313 1127.1606,313 1128.4,313 C1133.3575,313 1138.315,313 1143.27,313 " fill="none" id="community-to-regional" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="1148.46,313,1139.46,309,1143.46,313,1139.46,317,1148.46,313" style="stroke:#181818;stroke-width:1.0;" /></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h3 id="primary-care-adaptors">Primary Care Adaptors</h3>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="364px" preserveAspectRatio="none" style="width:966px;height:364px;background:#FFFFFF;" version="1.1" viewBox="0 0 966 364" width="966px" zoomAndPan="magnify"><defs /><g><!--cluster Health Information Exchange  - Primary Care Adaptors--><g id="cluster_Health Information Exchange  - Primary Care Adaptors"><polygon fill="none" points="16,16,26,6,949,6,949,337,939,347,16,347,16,16" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="939" x2="949" y1="16" y2="6" /><line style="stroke:#181818;stroke-width:1.0;" x1="16" x2="939" y1="16" y2="16" /><line style="stroke:#181818;stroke-width:1.0;" x1="939" x2="939" y1="16" y2="347" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="375" x="291" y="33.5332">Health Information Exchange  - Primary Care Adaptors</text></g><!--cluster primary--><g id="cluster_primary"><path d="M50.5,129 L140.5,129 A3.75,3.75 0 0 1 143,131.5 L150,152.6094 L914.5,152.6094 A2.5,2.5 0 0 1 917,155.1094 L917,312.5 A2.5,2.5 0 0 1 914.5,315 L50.5,315 A2.5,2.5 0 0 1 48,312.5 L48,131.5 A2.5,2.5 0 0 1 50.5,129 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="48" x2="150" y1="152.6094" y2="152.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="89" x="52" y="145.5332">Primary Care</text></g><g id="elem_FHIR"><path d="M419,54.5 L419,97.2031 L695,97.2031 L695,64.5 L685,54.5 L419,54.5 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M685,54.5 L685,64.5 L695,64.5 L685,54.5 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="239" x="425" y="72.9951">All interfaces are FHIR R4 RESTful API's.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="255" x="425" y="89.3467">Writebacks are UK SNOMED CT compliant.</text></g><!--entity community--><g id="elem_community"><path d="M34.5,47 L114.5,47 A3.75,3.75 0 0 1 117,49.5 L124,70.6094 L143.5,70.6094 A2.5,2.5 0 0 1 146,73.1094 L146,102.7188 A2.5,2.5 0 0 1 143.5,105.2188 L34.5,105.2188 A2.5,2.5 0 0 1 32,102.7188 L32,49.5 A2.5,2.5 0 0 1 34.5,47 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="32" x2="124" y1="70.6094" y2="70.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="42" y="64.5332">community</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="42" y="92.1426">Local System</text></g><g id="elem_emis"><rect fill="#F1F1F1" height="117.6563" style="stroke:#181818;stroke-width:0.5;" width="383" x="509.5" y="173" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="685" y="189.5332">EMIS</text><line style="stroke:#181818;stroke-width:0.5;" x1="510.5" x2="891.5" y1="194.6094" y2="194.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217" x="515.5" y="213.1426">Patient Demographics : IHE PDQm</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="190" x="515.5" y="230.752">Medidical Records: IHE QEDm</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="515.5" y="248.3613">Patient Documents: IHE MHD</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="371" x="515.5" y="265.9707">Clinically Coded Writebacks : FHIR R4 (UK Core compliant)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="209" x="515.5" y="283.5801">IM1 facaded as FHIR R4 RESTful</text></g><g id="elem_tpp"><rect fill="#F1F1F1" height="117.6563" style="stroke:#181818;stroke-width:0.5;" width="383" x="91.5" y="173" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="269.5" y="189.5332">TPP</text><line style="stroke:#181818;stroke-width:0.5;" x1="92.5" x2="473.5" y1="194.6094" y2="194.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217" x="97.5" y="213.1426">Patient Demographics : IHE PDQm</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="190" x="97.5" y="230.752">Medidical Records: IHE QEDm</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="97.5" y="248.3613">Patient Documents: IHE MHD</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="371" x="97.5" y="265.9707">Clinically Coded Writebacks : FHIR R4 (UK Core compliant)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="209" x="97.5" y="283.5801">IM1 facaded as FHIR R4 RESTful</text></g><!--link community to primary--><g id="link_community_primary"><path codeLine="34" d="M77.42,105.11 C76.53,107.75 75.7,110.41 75,113 C74.1431,116.1538 73.3198,119.3661 72.529,122.6179 C72.1337,124.2438 71.7465,125.8795 71.3673,127.5228 C71.2725,127.9336 71.1782,128.3448 71.0845,128.7565 " fill="none" id="community-to-primary" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="71.0845,128.7565,76.9835,120.8698,72.195,123.8814,69.1833,119.0929,71.0845,128.7565" style="stroke:#181818;stroke-width:1.0;" /></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h3 id="national-adaptors">National Adaptors</h3>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="362px" preserveAspectRatio="none" style="width:1639px;height:362px;background:#FFFFFF;" version="1.1" viewBox="0 0 1639 362" width="1639px" zoomAndPan="magnify"><defs /><g><!--cluster Health Information Exchange - National Adaptors--><g id="cluster_Health Information Exchange - National Adaptors"><polygon fill="none" points="16,16,26,6,1622,6,1622,335.5,1612,345.5,16,345.5,16,16" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="1612" x2="1622" y1="16" y2="6" /><line style="stroke:#181818;stroke-width:1.0;" x1="16" x2="1612" y1="16" y2="16" /><line style="stroke:#181818;stroke-width:1.0;" x1="1612" x2="1612" y1="16" y2="345.5" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="339" x="645.5" y="33.5332">Health Information Exchange - National Adaptors</text></g><!--cluster national--><g id="cluster_national"><path d="M724.5,63 L782.5,63 A3.75,3.75 0 0 1 785,65.5 L792,86.6094 L1465.5,86.6094 A2.5,2.5 0 0 1 1468,89.1094 L1468,311 A2.5,2.5 0 0 1 1465.5,313.5 L724.5,313.5 A2.5,2.5 0 0 1 722,311 L722,65.5 A2.5,2.5 0 0 1 724.5,63 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="722" x2="792" y1="86.6094" y2="86.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="57" x="726" y="79.5332">National</text></g><g id="elem_FHIR"><path d="M32,102 L32,177.4063 L698,177.4063 L698,112 L688,102 L32,102 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M688,102 L688,112 L698,112 L688,102 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="239" x="38" y="120.4951">All interfaces are FHIR R4 RESTful API's.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="38" y="136.8467">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="552" x="38" y="153.1982">PDS enables verification of NHS Numbers as well as a national source of patient demographics.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="645" x="38" y="169.5498">This will also allow English NHS number requests for other patients who are eligible for care in the English NHS.</text></g><!--entity community--><g id="elem_community"><path d="M1494.5,237 L1574.5,237 A3.75,3.75 0 0 1 1577,239.5 L1584,260.6094 L1603.5,260.6094 A2.5,2.5 0 0 1 1606,263.1094 L1606,292.7188 A2.5,2.5 0 0 1 1603.5,295.2188 L1494.5,295.2188 A2.5,2.5 0 0 1 1492,292.7188 L1492,239.5 A2.5,2.5 0 0 1 1494.5,237 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="1492" x2="1584" y1="260.6094" y2="260.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="1502" y="254.5332">community</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="1502" y="282.1426">Local System</text></g><g id="elem_pds"><rect fill="#F1F1F1" height="64.8281" style="stroke:#181818;stroke-width:0.5;" width="321" x="746.5" y="107" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="893" y="123.5332">PDS</text><line style="stroke:#181818;stroke-width:0.5;" x1="747.5" x2="1066.5" y1="128.6094" y2="128.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="752.5" y="147.1426">Patient Demographics</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="309" x="752.5" y="164.752">Is PDS facaded as IHE PDQm (FHIR R4 RESTful)</text></g><g id="elem_ods"><rect fill="#F1F1F1" height="64.8281" style="stroke:#181818;stroke-width:0.5;" width="322" x="1103" y="107" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="1249" y="123.5332">ODS</text><line style="stroke:#181818;stroke-width:0.5;" x1="1104" x2="1424" y1="128.6094" y2="128.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="1109" y="147.1426">Organisation details</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="310" x="1109" y="164.752">Is ODS facaded as IHE mCSD (FHIR R4 RESTful)</text></g><g id="elem_mesh"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="252" x="781" y="242.5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="888" y="259.0332">MESH</text><line style="stroke:#181818;stroke-width:0.5;" x1="782" x2="1032" y1="264.1094" y2="264.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="787" y="282.6426">Document Transfers: FHIR Messaging</text></g><!--reverse link national to community--><g id="link_national_community"><path codeLine="31" d="M1468.2095,151.9832 C1468.2812,152.0835 1468.3533,152.1843 1468.4258,152.2856 C1468.5707,152.4883 1468.7171,152.6931 1468.8651,152.9001 C1469.1611,153.314 1469.4631,153.7364 1469.771,154.167 C1470.3868,155.0281 1471.0259,155.9221 1471.6868,156.8464 C1473.0086,158.695 1474.4172,160.6652 1475.8993,162.7381 C1478.8634,166.8839 1482.1213,171.4406 1485.565,176.2575 C1499.34,195.525 1516.09,218.955 1528.92,236.9 " fill="none" id="national-backto-community" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="1468.2095,151.9832,1470.1906,161.6308,1471.1178,156.0504,1476.6981,156.9776,1468.2095,151.9832" style="stroke:#181818;stroke-width:1.0;" /></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h3 id="regional-adaptors">Regional Adaptors</h3>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="488px" preserveAspectRatio="none" style="width:818px;height:488px;background:#FFFFFF;" version="1.1" viewBox="0 0 818 488" width="818px" zoomAndPan="magnify"><defs /><g><!--cluster Health Information Exchange - NHS Trust or Regional Adaptors--><g id="cluster_Health Information Exchange - NHS Trust or Regional Adaptors"><polygon fill="none" points="16,16,26,6,801,6,801,461,791,471,16,471,16,16" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="791" x2="801" y1="16" y2="6" /><line style="stroke:#181818;stroke-width:1.0;" x1="16" x2="791" y1="16" y2="16" /><line style="stroke:#181818;stroke-width:1.0;" x1="791" x2="791" y1="16" y2="471" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="436" x="186.5" y="33.5332">Health Information Exchange - NHS Trust or Regional Adaptors</text></g><!--cluster regional--><g id="cluster_regional"><path d="M83.5,129 L238.5,129 A3.75,3.75 0 0 1 241,131.5 L248,152.6094 L719.5,152.6094 A2.5,2.5 0 0 1 722,155.1094 L722,436.5 A2.5,2.5 0 0 1 719.5,439 L83.5,439 A2.5,2.5 0 0 1 81,436.5 L81,131.5 A2.5,2.5 0 0 1 83.5,129 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="81" x2="248" y1="152.6094" y2="152.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="154" x="85" y="145.5332">Regional or NHS Trust</text></g><g id="elem_FHIR"><path d="M181.5,54.5 L181.5,97.2031 L784.5,97.2031 L784.5,64.5 L774.5,54.5 L181.5,54.5 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M774.5,54.5 L774.5,64.5 L784.5,64.5 L774.5,54.5 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="239" x="187.5" y="72.9951">All interfaces are FHIR R4 RESTful API's.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="582" x="187.5" y="89.3467">This is likely to only mean One London, Yorkshire and Humberside Care Record, Cerner and/or EPIC</text></g><!--entity community--><g id="elem_community"><path d="M34.5,47 L114.5,47 A3.75,3.75 0 0 1 117,49.5 L124,70.6094 L143.5,70.6094 A2.5,2.5 0 0 1 146,73.1094 L146,102.7188 A2.5,2.5 0 0 1 143.5,105.2188 L34.5,105.2188 A2.5,2.5 0 0 1 32,102.7188 L32,49.5 A2.5,2.5 0 0 1 34.5,47 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="32" x2="124" y1="70.6094" y2="70.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="42" y="64.5332">community</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="42" y="92.1426">Local System</text></g><g id="elem_pas"><rect fill="#F1F1F1" height="64.8281" style="stroke:#181818;stroke-width:0.5;" width="201" x="124.5" y="181.5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="189.5" y="198.0332">PAS or MPI</text><line style="stroke:#181818;stroke-width:0.5;" x1="125.5" x2="324.5" y1="203.1094" y2="203.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="130.5" y="221.6426">Patient Demographics</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="130.5" y="239.252">IHE PDQm (FHIR R4 RESTful)</text></g><g id="elem_xds"><rect fill="#F1F1F1" height="82.4375" style="stroke:#181818;stroke-width:0.5;" width="337" x="360.5" y="173" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="485.5" y="189.5332">EDMS or XDS</text><line style="stroke:#181818;stroke-width:0.5;" x1="361.5" x2="696.5" y1="194.6094" y2="194.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="366.5" y="213.1426">Patient Documents: IHE MHD</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="325" x="366.5" y="230.752">XDS will be facaded as IHE MHD (FHIR R4 RESTful)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="268" x="366.5" y="248.3613">(supplier must be IHE XDS/MHD compliant)</text></g><g id="elem_qedms"><rect fill="#F1F1F1" height="100.0469" style="stroke:#181818;stroke-width:0.5;" width="357" x="124.5" y="315" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="289" y="331.5332">EPR</text><line style="stroke:#181818;stroke-width:0.5;" x1="125.5" x2="480.5" y1="336.6094" y2="336.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="179" x="130.5" y="355.1426">Medical Records: IHE QEDm</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="306" x="130.5" y="372.752">(supplier must be IHE QEDm (FHIR R4 RESTful),</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="345" x="130.5" y="390.3613">INTEROPen Care Connect API (STU3 API not profiles),</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="304" x="130.5" y="407.9707">or US Core compliant (STU3/R4 API not profiles)</text></g><!--link community to regional--><g id="link_community_regional"><path codeLine="35" d="M89,105.18 C89,110.0813 89,115.4088 89,120.9834 C89,122.3771 89,123.7862 89,125.2079 C89,125.9188 89,126.6328 89,127.3497 C89,127.7081 89,128.0673 89,128.427 C89,128.6069 89,128.787 89,128.9672 " fill="none" id="community-to-regional" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="89,128.9672,93,119.9672,89,123.9672,85,119.9672,89,128.9672" style="stroke:#181818;stroke-width:1.0;" /></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://virtually.healthcare">Virtually Healthcare</a>.  Package virtually.healthcare#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 26, 2024 11:48+0000">2024-02-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

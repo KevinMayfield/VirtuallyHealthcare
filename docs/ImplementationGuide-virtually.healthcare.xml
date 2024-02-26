@@ -3,20 +3,20 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="virtually.healthcare"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>VirtuallyHealthcareImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.virtually.healthcare//ImplementationGuide/virtually.healthcare</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>VirtuallyHealthcareImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.virtually.healthcare/ImplementationGuide/virtually.healthcare</pre></div>
   </text>
-  <url value="https://fhir.virtually.healthcare//ImplementationGuide/virtually.healthcare"/>
+  <url value="https://fhir.virtually.healthcare/ImplementationGuide/virtually.healthcare"/>
   <version value="0.0.1"/>
   <name value="VirtuallyHealthcareImplementationGuide"/>
   <title value="Virtually Healthcare Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-02-24T11:47:15+00:00"/>
+  <date value="2024-02-26T11:48:15+00:00"/>
   <publisher value="Virtually Healthcare"/>
   <contact>
     <name value="Virtually Healthcare"/>
     <telecom>
       <system value="url"/>
-      <value value="https://virtually.healthcare/"/>
+      <value value="https://virtually.healthcare"/>
     </telecom>
   </contact>
   <jurisdiction>
@@ -49,6 +49,21 @@
     <uri value="https://simplifier.net/guide/ukcoreversionhistory"/>
     <packageId value="fhir.r4.ukcore.stu3.currentbuild"/>
     <version value="0.0.8-pre-release"/>
+  </dependsOn>
+  <dependsOn id="ihe_iti_pdqm">
+    <uri value="https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm"/>
+    <packageId value="ihe.iti.pdqm"/>
+    <version value="2.4.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_ipa">
+    <uri value="http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa"/>
+    <packageId value="hl7.fhir.uv.ipa"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="ihe_iti_mhd">
+    <uri value="https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd"/>
+    <packageId value="ihe.iti.mhd"/>
+    <version value="4.2.1"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -128,7 +143,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://fhir.virtually.healthcare//history.html"/>
+        <valueString value="https://fhir.virtually.healthcare/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -331,7 +346,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://fhir.virtually.healthcare//history.html"/>
+        <valueString value="https://fhir.virtually.healthcare/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -526,12 +541,67 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/DocumentIndexProvider"/>
+      </reference>
+      <name value="Document Index Provider based on IHE MHD"/>
+      <description value="Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DocumentReference"/>
+      </reference>
+      <name value="DocumentReference"/>
+      <description value="Union of UKCore, IPA and IHE MHD"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <reference>
         <reference value="QuestionnaireResponse/fatigue"/>
       </reference>
       <name value="fatigue"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Observation"/>
+      </reference>
+      <name value="Observation"/>
+      <description value="Union of UKCore, IPA and IHE QEDm"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Patient"/>
+      </reference>
+      <name value="Patient"/>
+      <description value="Union of UKCore, IPA and IHE PDQm"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/PatientIndexProvider"/>
+      </reference>
+      <name value="Patient Index Provider based on IHE PDQm"/>
+      <description value="Provider supports read-only access to a patient index for the purposes of direct care and subject of care access."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -561,6 +631,14 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="architecture-detail.html"/>
+        </extension>
+        <nameUrl value="architecture-detail.html"/>
+        <title value="Architecture Detail"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="downloads.html"/>
         </extension>
         <nameUrl value="downloads.html"/>
@@ -573,14 +651,6 @@
         </extension>
         <nameUrl value="findpatient.html"/>
         <title value="Findpatient"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="volume2.html"/>
-        </extension>
-        <nameUrl value="volume2.html"/>
-        <title value="Volume 2"/>
         <generation value="markdown"/>
       </page>
     </page>

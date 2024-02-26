@@ -7,7 +7,7 @@ FSHOnly: false
   # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
   # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: virtually.healthcare
-canonical: https://fhir.virtually.healthcare/
+canonical: https://fhir.virtually.healthcare
 name: Virtually Healthcare Implementation Guide
 
 title: Virtually Healthcare Implementation Guide
@@ -22,7 +22,7 @@ license: Apache-2.0
 jurisdiction: urn:iso:std:iso:3166#GB "UK"
 publisher:
   name: Virtually Healthcare
-  url: https://virtually.healthcare/
+  url: https://virtually.healthcare
 
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -33,8 +33,9 @@ dependencies:
   fhir.r4.ukcore.stu3.currentbuild:
     version: 0.0.8-pre-release
     uri: https://simplifier.net/guide/ukcoreversionhistory
-
-
+  ihe.iti.pdqm: 2.4.0
+  hl7.fhir.uv.ipa: 1.0.0
+  ihe.iti.mhd: 4.2.1
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
 # │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │

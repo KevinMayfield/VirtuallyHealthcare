@@ -98,8 +98,15 @@
       </li>
     </ul>
   </li>
-  <li>
-    <a href="volume2.html">Volume 2</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture-detail.html">Archtitecture Detail</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="artifacts.html">FHIR Assets</a>
@@ -146,7 +153,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Virtually Healthcare Implementation Guide - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.virtually.healthcare//history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Virtually Healthcare Implementation Guide - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.virtually.healthcare/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -158,10 +165,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Questionnaires</a>
+         <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Other</a>
+         <a href="#2">Structures: Questionnaires</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#4">Other</a>
       </li>
    </ul>
 </div>
@@ -170,6 +183,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Behavior: Capability Statements </h3>
+    <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-DocumentIndexProvider.html"
+                  title="CapabilityStatement/DocumentIndexProvider">Document Index Provider based on IHE MHD</a>
+            </td>
+            <td>
+<p>Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-PatientIndexProvider.html"
+                  title="CapabilityStatement/PatientIndexProvider">Patient Index Provider based on IHE PDQm</a>
+            </td>
+            <td>
+<p>Provider supports read-only access to a patient index for the purposes of direct care and subject of care access.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
    <h3>Structures: Questionnaires </h3>
     <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users.</p>
 <table class="grid">
@@ -201,7 +240,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="3"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DocumentReference.html"
+                  title="StructureDefinition/DocumentReference">DocumentReference</a>
+            </td>
+            <td>
+<p>Union of UKCore, IPA and IHE MHD</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation.html"
+                  title="StructureDefinition/Observation">Observation</a>
+            </td>
+            <td>
+<p>Union of UKCore, IPA and IHE QEDm</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Patient.html"
+                  title="StructureDefinition/Patient">Patient</a>
+            </td>
+            <td>
+<p>Union of UKCore, IPA and IHE PDQm</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
    <h3>Other </h3>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
 <table class="grid">
@@ -263,7 +337,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://virtually.healthcare/">Virtually Healthcare</a>.  Package virtually.healthcare#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 24, 2024 11:47+0000">2024-02-24</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://virtually.healthcare">Virtually Healthcare</a>.  Package virtually.healthcare#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 26, 2024 11:48+0000">2024-02-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

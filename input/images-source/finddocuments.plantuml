@@ -47,7 +47,7 @@ else Regional
    XDS --> RegionalAdaptor: Matching Documents (XDS Document Metadata)
    else MHD e.g. Yorkshire and Humberside Care Record
    RegionalAdaptor -> MHD: Find Documents
-   MHD --> RegionalAdaptor: Matching Documents (FHIR)
+   MHD --> RegionalAdaptor: Matching Documents (FHIR R4 or STU3)
   end
 RegionalAdaptor --> Application: Matching Documents (FHIR)
 end

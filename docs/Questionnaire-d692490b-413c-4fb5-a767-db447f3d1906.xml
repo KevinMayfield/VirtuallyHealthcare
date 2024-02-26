@@ -15,13 +15,13 @@
   <version value="0.0.1"/>
   <title value="blood-pressure"/>
   <status value="draft"/>
-  <date value="2024-02-24T11:47:15+00:00"/>
+  <date value="2024-02-26T11:48:15+00:00"/>
   <publisher value="Virtually Healthcare"/>
   <contact>
     <name value="Virtually Healthcare"/>
     <telecom>
       <system value="url"/>
-      <value value="https://virtually.healthcare/"/>
+      <value value="https://virtually.healthcare"/>
     </telecom>
   </contact>
   <jurisdiction>

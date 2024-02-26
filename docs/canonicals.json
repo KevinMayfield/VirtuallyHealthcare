@@ -6,9 +6,21 @@
     "version" : "0.0.1"
   },
   {
+    "id" : "DocumentIndexProvider",
+    "type" : "CapabilityStatement",
+    "url" : "https://fhir.virtually.healthcare/CapabilityStatement/DocumentIndexProvider",
+    "version" : "0.0.1"
+  },
+  {
+    "id" : "PatientIndexProvider",
+    "type" : "CapabilityStatement",
+    "url" : "https://fhir.virtually.healthcare/CapabilityStatement/PatientIndexProvider",
+    "version" : "0.0.1"
+  },
+  {
     "id" : "virtually.healthcare",
     "type" : "ImplementationGuide",
-    "url" : "https://fhir.virtually.healthcare//ImplementationGuide/virtually.healthcare",
+    "url" : "https://fhir.virtually.healthcare/ImplementationGuide/virtually.healthcare",
     "version" : "0.0.1",
     "name" : "VirtuallyHealthcareImplementationGuide"
   },
@@ -29,5 +41,26 @@
     "type" : "Questionnaire",
     "url" : "https://fhir.virtually.healthcare/Questionnaire/self-measure-blood-pressure",
     "version" : "0.0.1"
+  },
+  {
+    "id" : "DocumentReference",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.virtually.healthcare/StructureDefinition/DocumentReference",
+    "version" : "0.0.1",
+    "name" : "DocumentReference"
+  },
+  {
+    "id" : "Observation",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.virtually.healthcare/StructureDefinition/Observation",
+    "version" : "0.0.1",
+    "name" : "Observation"
+  },
+  {
+    "id" : "Patient",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.virtually.healthcare/StructureDefinition/Patient",
+    "version" : "0.0.1",
+    "name" : "Patient"
   }
 ]

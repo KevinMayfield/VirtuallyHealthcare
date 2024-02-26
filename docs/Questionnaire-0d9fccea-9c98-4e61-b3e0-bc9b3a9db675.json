@@ -13,13 +13,13 @@
   "version" : "0.0.1",
   "title" : "Vital signs finding",
   "status" : "draft",
-  "date" : "2024-02-24T11:47:15+00:00",
+  "date" : "2024-02-26T11:48:15+00:00",
   "publisher" : "Virtually Healthcare",
   "contact" : [{
     "name" : "Virtually Healthcare",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://virtually.healthcare/"
+      "value" : "https://virtually.healthcare"
     }]
   }],
   "jurisdiction" : [{

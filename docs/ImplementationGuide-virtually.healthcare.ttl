@@ -10,20 +10,20 @@
   fhir:id [ fhir:v "virtually.healthcare"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VirtuallyHealthcareImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.virtually.healthcare//ImplementationGuide/virtually.healthcare</pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VirtuallyHealthcareImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.virtually.healthcare/ImplementationGuide/virtually.healthcare</pre></div>"
   ] ; # 
-  fhir:url [ fhir:v "https://fhir.virtually.healthcare//ImplementationGuide/virtually.healthcare"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "https://fhir.virtually.healthcare/ImplementationGuide/virtually.healthcare"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.0.1"] ; # 
   fhir:name [ fhir:v "VirtuallyHealthcareImplementationGuide"] ; # 
   fhir:title [ fhir:v "Virtually Healthcare Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-24T11:47:15+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-26T11:48:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Virtually Healthcare"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Virtually Healthcare" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://virtually.healthcare/" ]
+       fhir:value [ fhir:v "https://virtually.healthcare" ]
      ] )
   ] ) ; # 
   fhir:jurisdiction ( [
@@ -68,6 +68,30 @@
      ] ;
      fhir:packageId [ fhir:v "fhir.r4.ukcore.stu3.currentbuild" ] ;
      fhir:version [ fhir:v "0.0.8-pre-release" ]
+  ] [
+     fhir:id [ fhir:v "ihe_iti_pdqm" ] ;
+     fhir:uri [
+       fhir:v "https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm>
+     ] ;
+     fhir:packageId [ fhir:v "ihe.iti.pdqm" ] ;
+     fhir:version [ fhir:v "2.4.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_ipa" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.ipa" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] [
+     fhir:id [ fhir:v "ihe_iti_mhd" ] ;
+     fhir:uri [
+       fhir:v "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd>
+     ] ;
+     fhir:packageId [ fhir:v "ihe.iti.mhd" ] ;
+     fhir:version [ fhir:v "4.2.1" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -157,7 +181,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "https://fhir.virtually.healthcare//history.html" ]
+         fhir:value [ fhir:v "https://fhir.virtually.healthcare/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -385,7 +409,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "https://fhir.virtually.healthcare//history.html" ]
+         fhir:value [ fhir:v "https://fhir.virtually.healthcare/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -604,6 +628,30 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/CapabilityStatement/DocumentIndexProvider> ;
+         fhir:reference [ fhir:v "CapabilityStatement/DocumentIndexProvider" ]
+       ] ;
+       fhir:name [ fhir:v "Document Index Provider based on IHE MHD" ] ;
+       fhir:description [ fhir:v "Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/DocumentReference> ;
+         fhir:reference [ fhir:v "StructureDefinition/DocumentReference" ]
+       ] ;
+       fhir:name [ fhir:v "DocumentReference" ] ;
+       fhir:description [ fhir:v "Union of UKCore, IPA and IHE MHD" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "QuestionnaireResponse" ]
        ] ) ;
        fhir:reference [
@@ -611,6 +659,42 @@
          fhir:reference [ fhir:v "QuestionnaireResponse/fatigue" ]
        ] ;
        fhir:name [ fhir:v "fatigue" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Observation" ] ;
+       fhir:description [ fhir:v "Union of UKCore, IPA and IHE QEDm" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/Patient" ]
+       ] ;
+       fhir:name [ fhir:v "Patient" ] ;
+       fhir:description [ fhir:v "Union of UKCore, IPA and IHE PDQm" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/CapabilityStatement/PatientIndexProvider> ;
+         fhir:reference [ fhir:v "CapabilityStatement/PatientIndexProvider" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Index Provider based on IHE PDQm" ] ;
+       fhir:description [ fhir:v "Provider supports read-only access to a patient index for the purposes of direct care and subject of care access." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -643,6 +727,14 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "architecture-detail.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "architecture-detail.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Architecture Detail" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "downloads.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
@@ -655,14 +747,6 @@
          ] ) ;
          fhir:name [ fhir:v "findpatient.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Findpatient" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "volume2.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "volume2.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Volume 2" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

@@ -3,20 +3,20 @@
   "id" : "virtually.healthcare",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VirtuallyHealthcareImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.virtually.healthcare//ImplementationGuide/virtually.healthcare</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VirtuallyHealthcareImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.virtually.healthcare/ImplementationGuide/virtually.healthcare</pre></div>"
   },
-  "url" : "https://fhir.virtually.healthcare//ImplementationGuide/virtually.healthcare",
+  "url" : "https://fhir.virtually.healthcare/ImplementationGuide/virtually.healthcare",
   "version" : "0.0.1",
   "name" : "VirtuallyHealthcareImplementationGuide",
   "title" : "Virtually Healthcare Implementation Guide",
   "status" : "draft",
-  "date" : "2024-02-24T11:47:15+00:00",
+  "date" : "2024-02-26T11:48:15+00:00",
   "publisher" : "Virtually Healthcare",
   "contact" : [{
     "name" : "Virtually Healthcare",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://virtually.healthcare/"
+      "value" : "https://virtually.healthcare"
     }]
   }],
   "jurisdiction" : [{
@@ -54,6 +54,24 @@
     "uri" : "https://simplifier.net/guide/ukcoreversionhistory",
     "packageId" : "fhir.r4.ukcore.stu3.currentbuild",
     "version" : "0.0.8-pre-release"
+  },
+  {
+    "id" : "ihe_iti_pdqm",
+    "uri" : "https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm",
+    "packageId" : "ihe.iti.pdqm",
+    "version" : "2.4.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_ipa",
+    "uri" : "http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa",
+    "packageId" : "hl7.fhir.uv.ipa",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "ihe_iti_mhd",
+    "uri" : "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd",
+    "packageId" : "ihe.iti.mhd",
+    "version" : "4.2.1"
   }],
   "definition" : {
     "extension" : [{
@@ -162,7 +180,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://fhir.virtually.healthcare//history.html"
+        "valueString" : "https://fhir.virtually.healthcare/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -441,7 +459,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://fhir.virtually.healthcare//history.html"
+        "valueString" : "https://fhir.virtually.healthcare/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -690,12 +708,72 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/DocumentIndexProvider"
+      },
+      "name" : "Document Index Provider based on IHE MHD",
+      "description" : "Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DocumentReference"
+      },
+      "name" : "DocumentReference",
+      "description" : "Union of UKCore, IPA and IHE MHD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
         "reference" : "QuestionnaireResponse/fatigue"
       },
       "name" : "fatigue",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Observation"
+      },
+      "name" : "Observation",
+      "description" : "Union of UKCore, IPA and IHE QEDm",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Patient"
+      },
+      "name" : "Patient",
+      "description" : "Union of UKCore, IPA and IHE PDQm",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/PatientIndexProvider"
+      },
+      "name" : "Patient Index Provider based on IHE PDQm",
+      "description" : "Provider supports read-only access to a patient index for the purposes of direct care and subject of care access.",
       "exampleBoolean" : false
     },
     {
@@ -729,6 +807,15 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "architecture-detail.html"
+        }],
+        "nameUrl" : "architecture-detail.html",
+        "title" : "Architecture Detail",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "downloads.html"
         }],
         "nameUrl" : "downloads.html",
@@ -742,15 +829,6 @@
         }],
         "nameUrl" : "findpatient.html",
         "title" : "Findpatient",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "volume2.html"
-        }],
-        "nameUrl" : "volume2.html",
-        "title" : "Volume 2",
         "generation" : "markdown"
       }]
     },
