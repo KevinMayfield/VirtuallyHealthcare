@@ -1,0 +1,57 @@
+@startuml
+
+actor User
+participant Application
+participant PrimaryCareAdaptor
+participant NHSEnglandAdaptor
+participant AcuteCareAdaptor
+participant RegionalAdaptor
+participant EMIS
+participant TPP
+participant NRL as "NRL, BARS and eRS"
+participant EPIC
+participant Cerner
+participant XDS as "IHE XDS"
+participant MHD as "IHE MHD"
+
+User -> Application : Find Clinical Notes and Patient Documents
+opt EMIS
+Application-> PrimaryCareAdaptor: Find Documents
+PrimaryCareAdaptor -> EMIS: Find Documents (IM1)
+EMIS --> PrimaryCareAdaptor : Matching Documents (IM1)
+PrimaryCareAdaptor --> Application : Matching Documents (FHIR)
+else TPP
+Application-> PrimaryCareAdaptor: Find Documents
+PrimaryCareAdaptor -> TPP: Find Documents (IM1)
+TPP --> PrimaryCareAdaptor : Matching Documents (IM1)
+PrimaryCareAdaptor --> Application : Matching Documents (FHIR)
+else NHS England NRL
+Application-> NHSEnglandAdaptor: Find Documents
+NHSEnglandAdaptor -> NRL: Find Documents
+NRL --> NHSEnglandAdaptor: Matching Documents (FHIR)
+NHSEnglandAdaptor --> Application: Matching Documents (FHIR modified)
+else Acute Care
+  Application-> AcuteCareAdaptor: Find Documents
+  opt Cerner
+   AcuteCareAdaptor -> Cerner: Find Documents
+   Cerner --> AcuteCareAdaptor: Matching Documents (FHIR)
+   else EPIC
+   AcuteCareAdaptor -> EPIC: Find Documents
+   EPIC --> AcuteCareAdaptor: Matching Documents (FHIR)
+  end
+NHSEnglandAdaptor --> Application: Matching Documents (FHIR)
+else Regional
+  Application-> RegionalAdaptor: Find Documents
+  opt XDS e.g. OneLondon
+   RegionalAdaptor -> XDS: Find Documents
+   XDS --> RegionalAdaptor: Matching Documents (XDS Document Metadata)
+   else MHD e.g. Yorkshire and Humberside Care Record
+   RegionalAdaptor -> MHD: Find Documents
+   MHD --> RegionalAdaptor: Matching Documents (FHIR)
+  end
+RegionalAdaptor --> Application: Matching Documents (FHIR)
+end
+
+Application -> User: Documents Search Results
+
+@enduml

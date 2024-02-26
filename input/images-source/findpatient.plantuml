@@ -3,56 +3,43 @@
 actor User
 participant Application
 participant PrimaryCareAdaptor
-participant IPAAdaptor
+participant NHSEnglandAdaptor
+participant AcuteCareAdaptor
 participant EMIS
 participant TPP
-participant MCSD_MPI
-participant NHSEnglandAdaptor
 participant PDS
+participant EPIC
+participant Cerner
 
 
-User -> Application : Select Patient
-opt current (user = practitioner)
+User -> Application : Find Patient
+opt EMIS
 Application-> PrimaryCareAdaptor: Find Patient
 PrimaryCareAdaptor -> EMIS: Find Patient (IM1)
 EMIS --> PrimaryCareAdaptor : Matching Patients (IM1)
-PrimaryCareAdaptor --> Application : Mathcing Patients (FHIR)
-Application -> Application : Select Patient
-else future (user = practioner)
+PrimaryCareAdaptor --> Application : Matching Patients (FHIR)
+else TPP
+Application-> PrimaryCareAdaptor: Find Patient
+PrimaryCareAdaptor -> TPP: Find Patient (IM1)
+TPP --> PrimaryCareAdaptor : Matching Patients (IM1)
+PrimaryCareAdaptor --> Application : Matching Patients (FHIR)
+else NHS England PDS
 Application-> NHSEnglandAdaptor: Find Patient
 NHSEnglandAdaptor -> PDS: Find Patient
 PDS --> NHSEnglandAdaptor: Matching Patients (FHIR)
-NHSEnglandAdaptor --> Application: Matching Patients (FHIR corrected)
-Application -> Application: Select Patient
-Application -> PrimaryCareAdaptor: Get Patient
-PrimaryCareAdaptor-> MCSD_MPI: Get GP Endpoint
-MCSD_MPI --> PrimaryCareAdaptor: Endpoint
-
-opt system = EMIS
-PrimaryCareAdaptor -> EMIS: Get Patient (IM1)
-EMIS --> PrimaryCareAdaptor: FHIR Patient
-else system=TPP
-PrimaryCareAdaptor -> TPP: Get Patient (IM1)
-TPP --> PrimaryCareAdaptor: FHIR Patient
+NHSEnglandAdaptor --> Application: Matching Patients (FHIR modified)
+else Acute Care
+Application-> AcuteCareAdaptor: Find Patient
+opt Cerner
+AcuteCareAdaptor -> Cerner: Find Patient
+Cerner --> AcuteCareAdaptor: Matching Patients (FHIR)
+else EPIC
+AcuteCareAdaptor -> EPIC: Find Patient
+EPIC --> AcuteCareAdaptor: Matching Patients (FHIR)
 end
-PrimaryCareAdaptor --> Application: FHIR Patient
-else future (user = patient)
-Application-> IPAAdaptor: Get Patient
-IPAAdaptor-> EMIS: Get Patient (EMIS PFS)
-EMIS --> IPAAdaptor: FHIR Patient
-IPAAdaptor --> Application: FHIR Patient
+AcuteCareAdaptor --> Application: Matching Patients (FHIR)
 end
-Application -> User: Populate patient banner
-
-
-
-
-
-
-
-
-
-
+Application -> User: Patient Search Results
 
 
 @enduml

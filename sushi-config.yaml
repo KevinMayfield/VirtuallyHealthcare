@@ -48,7 +48,8 @@ menu:
   Table of Contents: toc.html
   Volume 1:
     Find Patient: findpatient.html
-  Volume 2: volume2.html
+  Volume 2:
+    Archtitecture Detail : architecture-detail.html
   FHIR Assets: artifacts.html
   Support:
     Downloads: downloads.html
