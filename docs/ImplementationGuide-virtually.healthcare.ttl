@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "VirtuallyHealthcareImplementationGuide"] ; # 
   fhir:title [ fhir:v "Virtually Healthcare Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-26T11:48:15+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-28T08:09:55+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Virtually Healthcare"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Virtually Healthcare" ] ;
@@ -551,6 +551,17 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Task" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/Task/63294ce7-eb5d-4371-a653-d3443e186500> ;
+         fhir:reference [ fhir:v "Task/63294ce7-eb5d-4371-a653-d3443e186500" ]
+       ] ;
+       fhir:name [ fhir:v "63294ce7-eb5d-4371-a653-d3443e186500" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "QuestionnaireResponse" ]
        ] ) ;
        fhir:reference [
@@ -699,6 +710,42 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Questionnaire> ;
+         fhir:reference [ fhir:v "StructureDefinition/Questionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire" ] ;
+       fhir:description [ fhir:v "Will include UK Core if required" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/QuestionnaireResponse" ]
+       ] ;
+       fhir:name [ fhir:v "QuestionnaireResponse" ] ;
+       fhir:description [ fhir:v "Will include UK Core if required" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Task> ;
+         fhir:reference [ fhir:v "StructureDefinition/Task" ]
+       ] ;
+       fhir:name [ fhir:v "Task" ] ;
+       fhir:description [ fhir:v "Will include UK Core if required" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
@@ -707,6 +754,20 @@
        ] ;
        fhir:name [ fhir:v "Vital signs finding" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Task" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/Task/task-patient1> ;
+         fhir:reference [ fhir:v "Task/task-patient1" ]
+       ] ;
+       fhir:name [ fhir:v "Example Task - task-patient1" ] ;
+       fhir:example [
+         fhir:v "https://fhir.virtually.healthcare/StructureDefinition/Task"^^xsd:anyURI ;
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Task>
+       ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

@@ -1,5 +1,10 @@
 {
     "resourceType": "QuestionnaireResponse",
+    "meta": {
+        "profile" : [
+            "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"
+        ]
+    },
     "id": "document",
     "identifier": {
         "system": "https://fhir.virtually.healthcare/Id/QuestionnaireResponse",

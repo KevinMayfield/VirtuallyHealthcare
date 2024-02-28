@@ -10,7 +10,7 @@
   <name value="VirtuallyHealthcareImplementationGuide"/>
   <title value="Virtually Healthcare Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-02-26T11:48:15+00:00"/>
+  <date value="2024-02-28T08:09:55+00:00"/>
   <publisher value="Virtually Healthcare"/>
   <contact>
     <name value="Virtually Healthcare"/>
@@ -471,6 +471,16 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/63294ce7-eb5d-4371-a653-d3443e186500"/>
+      </reference>
+      <name value="63294ce7-eb5d-4371-a653-d3443e186500"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <reference>
@@ -606,6 +616,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Questionnaire"/>
+      </reference>
+      <name value="Questionnaire"/>
+      <description value="Will include UK Core if required"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/QuestionnaireResponse"/>
+      </reference>
+      <name value="QuestionnaireResponse"/>
+      <description value="Will include UK Core if required"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Task"/>
+      </reference>
+      <name value="Task"/>
+      <description value="Will include UK Core if required"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
@@ -613,6 +656,16 @@
       </reference>
       <name value="Vital signs finding"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/task-patient1"/>
+      </reference>
+      <name value="Example Task - task-patient1"/>
+      <exampleCanonical value="https://fhir.virtually.healthcare/StructureDefinition/Task"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

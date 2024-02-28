@@ -3,7 +3,8 @@
   "id" : "0d9fccea-9c98-4e61-b3e0-bc9b3a9db675",
   "meta" : {
     "versionId" : "8",
-    "lastUpdated" : "2023-04-20T03:52:38.002Z"
+    "lastUpdated" : "2023-04-20T03:52:38.002Z",
+    "profile" : ["https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"]
   },
   "text" : {
     "status" : "generated",
@@ -13,7 +14,7 @@
   "version" : "0.0.1",
   "title" : "Vital signs finding",
   "status" : "draft",
-  "date" : "2024-02-26T11:48:15+00:00",
+  "date" : "2024-02-28T08:09:55+00:00",
   "publisher" : "Virtually Healthcare",
   "contact" : [{
     "name" : "Virtually Healthcare",

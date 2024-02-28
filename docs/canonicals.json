@@ -62,5 +62,26 @@
     "url" : "https://fhir.virtually.healthcare/StructureDefinition/Patient",
     "version" : "0.0.1",
     "name" : "Patient"
+  },
+  {
+    "id" : "Questionnaire",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire",
+    "version" : "0.0.1",
+    "name" : "Questionnaire"
+  },
+  {
+    "id" : "QuestionnaireResponse",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse",
+    "version" : "0.0.1",
+    "name" : "QuestionnaireResponse"
+  },
+  {
+    "id" : "Task",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.virtually.healthcare/StructureDefinition/Task",
+    "version" : "0.0.1",
+    "name" : "Task"
   }
 ]

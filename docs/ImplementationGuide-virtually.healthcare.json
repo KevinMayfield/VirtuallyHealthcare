@@ -10,7 +10,7 @@
   "name" : "VirtuallyHealthcareImplementationGuide",
   "title" : "Virtually Healthcare Implementation Guide",
   "status" : "draft",
-  "date" : "2024-02-26T11:48:15+00:00",
+  "date" : "2024-02-28T08:09:55+00:00",
   "publisher" : "Virtually Healthcare",
   "contact" : [{
     "name" : "Virtually Healthcare",
@@ -631,6 +631,17 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/63294ce7-eb5d-4371-a653-d3443e186500"
+      },
+      "name" : "63294ce7-eb5d-4371-a653-d3443e186500",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
@@ -779,6 +790,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Questionnaire"
+      },
+      "name" : "Questionnaire",
+      "description" : "Will include UK Core if required",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/QuestionnaireResponse"
+      },
+      "name" : "QuestionnaireResponse",
+      "description" : "Will include UK Core if required",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Task"
+      },
+      "name" : "Task",
+      "description" : "Will include UK Core if required",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Questionnaire"
       }],
       "reference" : {
@@ -786,6 +833,17 @@
       },
       "name" : "Vital signs finding",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/task-patient1"
+      },
+      "name" : "Example Task - task-patient1",
+      "exampleCanonical" : "https://fhir.virtually.healthcare/StructureDefinition/Task"
     }],
     "page" : {
       "extension" : [{

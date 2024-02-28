@@ -26,6 +26,9 @@
     "id": "d692490b-413c-4fb5-a767-db447f3d1906",
     "meta": {
         "versionId": "1",
-        "lastUpdated": "2022-11-04T14:31:15.324Z"
+        "lastUpdated": "2022-11-04T14:31:15.324Z",
+        "profile" : [
+            "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"
+        ]
     }
 }

@@ -11,7 +11,11 @@
   fhir:id [ fhir:v "0d9fccea-9c98-4e61-b3e0-bc9b3a9db675"] ; # 
   fhir:meta [
      fhir:versionId [ fhir:v "8" ] ;
-     fhir:lastUpdated [ fhir:v "2023-04-20T03:52:38.002Z"^^xsd:dateTime ]
+     fhir:lastUpdated [ fhir:v "2023-04-20T03:52:38.002Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"^^xsd:anyURI ;
+       fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Questionnaire>
+     ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
@@ -21,7 +25,7 @@
   fhir:version [ fhir:v "0.0.1"] ; # 
   fhir:title [ fhir:v "Vital signs finding"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-26T11:48:15+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-28T08:09:55+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Virtually Healthcare"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Virtually Healthcare" ] ;

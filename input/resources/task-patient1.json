@@ -1,0 +1,23 @@
+{
+  "resourceType": "Task",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Task"
+    ]
+  },
+  "status": "requested",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "103742009",
+        "display": "Renewal of prescription"
+      }]},
+  "focus": {
+    "reference": "MedicationRequest/3a275967-bcbe-4cb3-8cc8-fffa6781ba8c"
+  },
+  "note": [
+    {
+      "text": "Ran out of previous prescription"
+    }]}

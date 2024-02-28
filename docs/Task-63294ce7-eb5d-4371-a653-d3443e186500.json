@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Task",
+  "id" : "63294ce7-eb5d-4371-a653-d3443e186500",
+  "meta" : {
+    "profile" : ["https://fhir.virtually.healthcare/StructureDefinition/Task"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"63294ce7-eb5d-4371-a653-d3443e186500\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;63294ce7-eb5d-4371-a653-d3443e186500&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Task.html\">Task</a></p></div><p><b>status</b>: cancelled</p><p><b>intent</b>: order</p><p><b>code</b>: Renewal of prescription <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#103742009)</span></p><p><b>note</b>: Ran out of previous prescription</p></div>"
+  },
+  "status" : "cancelled",
+  "intent" : "order",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "103742009",
+      "display" : "Renewal of prescription"
+    }]
+  },
+  "note" : [{
+    "text" : "Ran out of previous prescription"
+  }]
+}

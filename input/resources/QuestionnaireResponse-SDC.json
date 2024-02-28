@@ -3,7 +3,10 @@
     "id": "798ff459-6685-4526-8ce9-db2842b73dca",
     "meta": {
         "versionId": "2",
-        "lastUpdated": "2023-07-25T14:22:33.840Z"
+        "lastUpdated": "2023-07-25T14:22:33.840Z",
+        "profile" : [
+                "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"
+        ]
     },
     "identifier": {
         "system": "https://fhir.virtually.healthcare/Id/QuestionnaireResponse",

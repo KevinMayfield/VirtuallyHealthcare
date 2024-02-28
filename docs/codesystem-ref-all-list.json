@@ -1,6 +1,18 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/CodeSystem/task-code",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "TaskCode",
+      "title" : "Task Codes",
+      "description" : "Codes indicating the type of action that is expected to be performed",
+      "oids" : ["2.16.840.1.113883.4.642.4.1397"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-task-code.html" : "Task Codes"
+    },
+    {
       "url" : "http://hl7.org/fhir/administrative-gender",
       "version" : "4.0.1",
       "status" : "active",
@@ -61,6 +73,18 @@
       "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
     },
     {
+      "url" : "http://hl7.org/fhir/item-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireItemType",
+      "title" : "QuestionnaireItemType",
+      "description" : "Distinguishes groups from questions and display text and indicates data type for questions.",
+      "oids" : ["2.16.840.1.113883.4.642.4.445"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-item-type.html" : "QuestionnaireItemType"
+    },
+    {
       "url" : "http://hl7.org/fhir/link-type",
       "version" : "4.0.1",
       "status" : "active",
@@ -85,6 +109,113 @@
       "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/publication-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "oids" : ["2.16.840.1.113883.4.642.4.4"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-publication-status.html" : "PublicationStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/questionnaire-answers-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireResponseStatus",
+      "title" : "QuestionnaireResponseStatus",
+      "description" : "Lifecycle status of the questionnaire response.",
+      "oids" : ["2.16.840.1.113883.4.642.4.448"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-questionnaire-answers-status.html" : "QuestionnaireResponseStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/questionnaire-enable-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EnableWhenBehavior",
+      "title" : "EnableWhenBehavior",
+      "description" : "Controls how multiple enableWhen values are interpreted -  whether all or any must be true.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1008"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-questionnaire-enable-behavior.html" : "EnableWhenBehavior"
+    },
+    {
+      "url" : "http://hl7.org/fhir/questionnaire-enable-operator",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireItemOperator",
+      "title" : "QuestionnaireItemOperator",
+      "description" : "The criteria by which a question is enabled.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1006"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-questionnaire-enable-operator.html" : "QuestionnaireItemOperator"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.114"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.116"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
+    },
+    {
+      "url" : "http://hl7.org/fhir/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/task-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "TaskIntent",
+      "title" : "TaskIntent",
+      "description" : "Distinguishes whether the task is a proposal, plan or full order.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1241"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/task-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "TaskStatus",
+      "title" : "TaskStatus",
+      "description" : "The current status of the task.",
+      "oids" : ["2.16.840.1.113883.4.642.4.791"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-task-status.html" : "TaskStatus"
+    },
+    {
       "url" : "http://loinc.org",
       "version" : "3.1.0",
       "status" : "active",
@@ -96,7 +227,8 @@
       },
       "http://hl7.org/fhir/R4/valueset-c80-doc-typecodes.html" : "Document Type Value Set",
       "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+      "http://hl7.org/fhir/R4/valueset-questionnaire-questions.html" : "Questionnaire Question Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -108,11 +240,13 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
       "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
+      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -233,6 +367,30 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ISO3166Part1",
+      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+      "oids" : ["1.0.3166.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-jurisdiction.html" : "Jurisdiction"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166:-2",
+      "version" : "2013-11",
+      "status" : "retired",
+      "name" : "Iso3166_2",
+      "title" : "ISO 3166 Part 2 Country Subdivision Codes",
+      "description" : "Identifies the coding system published in the ISO 3166-2 Standard for Country Subdivision codes. This standard is released periodically, and a new OID will be assigned by ISO for new editions.",
+      "oids" : ["1.0.3166.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-jurisdiction.html" : "Jurisdiction"
     }
   ]
 }

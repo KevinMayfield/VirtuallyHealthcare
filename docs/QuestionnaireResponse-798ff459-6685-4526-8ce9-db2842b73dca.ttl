@@ -11,7 +11,11 @@
   fhir:id [ fhir:v "798ff459-6685-4526-8ce9-db2842b73dca"] ; # 
   fhir:meta [
      fhir:versionId [ fhir:v "2" ] ;
-     fhir:lastUpdated [ fhir:v "2023-07-25T14:22:33.840Z"^^xsd:dateTime ]
+     fhir:lastUpdated [ fhir:v "2023-07-25T14:22:33.840Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"^^xsd:anyURI ;
+       fhir:link <https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse>
+     ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;

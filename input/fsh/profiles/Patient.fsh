@@ -11,3 +11,5 @@ Description: "Union of UKCore, IPA and IHE PDQm"
     NHS 0..1
 
 * identifier[NHS].system = "https://fhir.nhs.uk/Id/nhs-number" (exactly)
+
+* name 1..*

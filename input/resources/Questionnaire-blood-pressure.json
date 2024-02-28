@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "profile" : [
+            "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"
+        ]
+    },
     "item": [
         {
             "linkId": "entry",
