@@ -48,7 +48,11 @@ menu:
   Home: index.html
   Table of Contents: toc.html
   Volume 1:
-    Find Patient: findpatient.html
+    Find Patient: find-patient.html
+    Update Patient: update-patient.html
+    Find Patient Documents: find-documents.html
+    Clinical Notes and Compositions: clinical-notes.html
+    Get Clinical Record: clinical-record.html
   Volume 2:
     Archtitecture Detail : architecture-detail.html
   FHIR Assets: artifacts.html

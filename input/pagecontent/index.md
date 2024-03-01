@@ -1,47 +1,17 @@
 ## Virtually Healthcare Health Information Exchange (HIE)
 
 Is a series of adaptors to other systems such as GP Systems and NHS England Services.
-The adaptors provide a layer of consistency and simplification. This means an `application developers` doesn't have to deal the complexity.
+The adaptors provide a layer of consistency and simplification. This means an `application developers` doesn't have to deal with health and technical complexities.
 
-### Finding Patients
+### Use Case Solutions 
 
-For example, if a developer wants to search for a patient or what is commonly known as a `Patient Demographics Query` they call 
+We aim to support the following use cases:
 
-`GET /Patient` on one of our adaptors. 
-
-The adaptors will generally support the following searches:
-
-- NHS Number and other patient `identifier`s such as TPP psuedo id, EMIS id, Medical Record Number (MRN)
-- date of birth `birthdate`
-- surname `family`
-- forename `given`
-
-They don't need to interface directly with TPP, EMIS or NHS England's PDS. We do that for them, they only need to understand the one API. 
-
-<figure>{% include findpatient.svg %}</figure>
-<br clear="all"/>
-
-Details of the standard we follow to do this, can be found in [IHE Patient Demographics Query for mobile (PDQm)](https://profiles.ihe.net/ITI/PDQm/) and also [HL7 UK - UK Core Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/patient_index.html)
-
-
-### Finding Clinical Notes & Patient Documents
-
-Our adaptors supporting this use case will give a consistent
-
-`GET /DocumentReference` 
-
-API for each system we have adapted. The adaptors will generally support the following searches:
-
-- `patient` id and NHS Number searches
-- `date` ranges
-- document `type`
-
-They don't have to implement the diagram below:
-
-<figure>{% include finddocuments.svg %}</figure>
-<br clear="all"/>
-
-Details of the standard we follow to do this, can be found in [IHE Mobile access to Health Documents (MHD)](https://profiles.ihe.net/ITI/MHD/index.html)
+- [Find Patient](find-patient.html) Find a patient record on a connected system.
+- [Update Patient Demographics](update-patient.html) Update patient demographic records on a connected system.
+- [Find Patient clinical notes and documents](find-documents.html) on connected systems and view them.
+  - [Clinical Notes and Compositions](clinical-notes.html) Handling of health specific notes/documents formats.
+- [Query (structured) clinical record](clinical-record.html) from connected systems. This is our preferred option for handling clinical records (not clinical notes or composition formats).
 
 ### The Standards We Use
 

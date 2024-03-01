@@ -1,0 +1,15 @@
+@startuml
+
+hide footbox
+
+title "Register Patient Demographics"
+
+participant "Virtually Healthcare" as provider
+participant "Patient Demographics Provider" as pas
+
+provider -> provider: Update or create Patient Demographics
+provider -> pas: Request Patient Demographics are updated or record is created
+pas -> pas: Update or Create Patient Demographics entry
+pas -> provider: Request completed or PUT Patient (updated patient demographics)
+
+@enduml

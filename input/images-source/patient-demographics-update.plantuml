@@ -1,0 +1,17 @@
+@startuml
+
+hide footbox
+
+title "Update Patient Demographics"
+
+
+participant "Virtually Healthcare" as provider
+participant "Patient Demographics Consumer" as pas
+
+
+provider -> provider: Update Patient Demographics
+loop for each connected system
+provider -> pas: PUT /Patient (or HL7 v2 ADT_A31)
+end
+
+@enduml
