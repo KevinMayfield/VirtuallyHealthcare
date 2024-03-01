@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Findpatient - Virtually Healthcare Implementation Guide v0.0.1</title>
+    <title>Clinical Notes and Compositions - Virtually Healthcare Implementation Guide v0.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -94,7 +94,19 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="findpatient.html">Find Patient</a>
+        <a href="find-patient.html">Find Patient</a>
+      </li>
+      <li>
+        <a href="update-patient.html">Update Patient</a>
+      </li>
+      <li>
+        <a href="find-documents.html">Find Patient Documents</a>
+      </li>
+      <li>
+        <a href="clinical-notes-and-compositions.html">Clinical Notes and Compositions</a>
+      </li>
+      <li>
+        <a href="clinical-record.html">Get Clinical Record</a>
       </li>
     </ul>
   </li>
@@ -133,7 +145,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Findpatient</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Clinical Notes and Compositions</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -154,7 +166,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Virtually Healthcare Implementation Guide - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.virtually.healthcare/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Findpatient</h2>
+  <h2>Clinical Notes and Compositions</h2>
   
 
 
@@ -173,7 +185,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<p>TODO</p>
+<p>Health has a series of formats for clinical notes which are often focused around concepts of a <code class="language-plaintext highlighter-rouge">clinical document</code> or a <code class="language-plaintext highlighter-rouge">Composition</code>.</p>
+
+<p>Most suppliers and NHS trusts have not taken this route but it is quite popular in health informatics and has appeared on national API’s and also within the London region. It is also present in EMIS consultations.</p>
+
+<p>In FHIR this is called <a href="https://hl7.org/fhir/R4/documents.html">FHIR Documents</a>, this provides an overview of <code class="language-plaintext highlighter-rouge">clinical documents</code>. The full list of standards we may encounter are:</p>
+
+<ul>
+  <li><a href="https://www.hl7.org.uk/standards/hl7-standards/cda-clinical-document-architecture/">HL7 Clinical Document Architecture (CDA)</a></li>
+  <li><a href="https://hl7.org/fhir/R4/documents.html">FHIR Documents</a></li>
+  <li><a href="https://specifications.openehr.org/releases/RM/latest/ehr.html#_composition_package">openEHR Composition</a></li>
+</ul>
+
+<p>At present, we are handling these clinical documents as html (web pages). 
+For EMIS IM1 this is encoded in a FHIR Composition resource (which is part of a FHIR Document) but we are only making use of the html.</p>
 
 
 
@@ -200,7 +225,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://virtually.healthcare">Virtually Healthcare</a>.  Package virtually.healthcare#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 28, 2024 08:09+0000">2024-02-28</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://virtually.healthcare">Virtually Healthcare</a>.  Package virtually.healthcare#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 1, 2024 08:53+0000">2024-03-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

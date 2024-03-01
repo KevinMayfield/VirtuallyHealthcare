@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Find Documents - Virtually Healthcare Implementation Guide v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/virtually.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon-32x32-1.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Virtually Healthcare Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+  UK
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="find-patient.html">Find Patient</a>
+      </li>
+      <li>
+        <a href="update-patient.html">Update Patient</a>
+      </li>
+      <li>
+        <a href="find-documents.html">Find Patient Documents</a>
+      </li>
+      <li>
+        <a href="clinical-notes-and-compositions.html">Clinical Notes and Compositions</a>
+      </li>
+      <li>
+        <a href="clinical-record.html">Get Clinical Record</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture-detail.html">Archtitecture Detail</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Find Documents</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Virtually Healthcare Implementation Guide - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.virtually.healthcare/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Find Documents</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="finding-clinical-notes--patient-documents">Finding Clinical Notes &amp; Patient Documents</h3>
+
+<p>Our adaptors supporting this use case will give a consistent</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET /DocumentReference</code></p>
+
+<p>API for each system we have adapted. The adaptors will generally support the following searches:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">patient</code> id and NHS Number searches</li>
+  <li><code class="language-plaintext highlighter-rouge">date</code> ranges</li>
+  <li>document <code class="language-plaintext highlighter-rouge">type</code></li>
+</ul>
+
+<p>They don’t have to implement the diagram below:</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1128px" preserveAspectRatio="none" style="width:1615px;height:1128px;background:#FFFFFF;" version="1.1" viewBox="0 0 1615 1128" width="1615px" zoomAndPan="magnify"><defs /><g><rect fill="none" height="873.1152" style="stroke:#000000;stroke-width:1.5;" width="1348" x="260.5" y="127.7988" /><rect fill="none" height="149.5078" style="stroke:#000000;stroke-width:1.5;" width="683" x="756.5" y="578.0117" /><rect fill="none" height="149.5078" style="stroke:#000000;stroke-width:1.5;" width="691" x="907.5" y="815.0957" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="23" x2="23" y1="81.4883" y2="1047.2246" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="316.5" x2="316.5" y1="81.4883" y2="1047.2246" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="515.5" x2="515.5" y1="81.4883" y2="1047.2246" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="679.5" x2="679.5" y1="81.4883" y2="1047.2246" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="836.5" x2="836.5" y1="81.4883" y2="1047.2246" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="982.5" x2="982.5" y1="81.4883" y2="1047.2246" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1080.5" x2="1080.5" y1="81.4883" y2="1047.2246" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1132.5" x2="1132.5" y1="81.4883" y2="1047.2246" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1233.5" x2="1233.5" y1="81.4883" y2="1047.2246" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1336.5" x2="1336.5" y1="81.4883" y2="1047.2246" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1398.5" x2="1398.5" y1="81.4883" y2="1047.2246" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1472.5" x2="1472.5" y1="81.4883" y2="1047.2246" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1552.5" x2="1552.5" y1="81.4883" y2="1047.2246" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="5" y="78.5352">User</text><ellipse cx="23.5" cy="13.5" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M23.5,21.5 L23.5,48.5 M10.5,29.5 L36.5,29.5 M23.5,48.5 L10.5,63.5 M23.5,48.5 L36.5,63.5 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="5" y="1059.7598">User</text><ellipse cx="23.5" cy="1071.2129" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M23.5,1079.2129 L23.5,1106.2129 M10.5,1087.2129 L36.5,1087.2129 M23.5,1106.2129 L10.5,1121.2129 M23.5,1106.2129 L36.5,1121.2129 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="92" x="270.5" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="277.5" y="70.5352">Application</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="92" x="270.5" y="1046.2246" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="277.5" y="1066.7598">Application</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="154" x="438.5" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="445.5" y="70.5352">PrimaryCareAdaptor</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="154" x="438.5" y="1046.2246" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="445.5" y="1066.7598">PrimaryCareAdaptor</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="154" x="602.5" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="609.5" y="70.5352">NHSEnglandAdaptor</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="154" x="602.5" y="1046.2246" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="609.5" y="1066.7598">NHSEnglandAdaptor</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="141" x="766.5" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="773.5" y="70.5352">AcuteCareAdaptor</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="141" x="766.5" y="1046.2246" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="773.5" y="1066.7598">AcuteCareAdaptor</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="130" x="917.5" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="924.5" y="70.5352">RegionalAdaptor</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="130" x="917.5" y="1046.2246" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="924.5" y="1066.7598">RegionalAdaptor</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="46" x="1057.5" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="1064.5" y="70.5352">EMIS</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="46" x="1057.5" y="1046.2246" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="1064.5" y="1066.7598">EMIS</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="39" x="1113.5" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25" x="1120.5" y="70.5352">TPP</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="39" x="1113.5" y="1046.2246" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25" x="1120.5" y="1066.7598">TPP</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="142" x="1162.5" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="1169.5" y="70.5352">NRL, BARS and eRS</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="142" x="1162.5" y="1046.2246" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="1169.5" y="1066.7598">NRL, BARS and eRS</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="44" x="1314.5" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="1321.5" y="70.5352">EPIC</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="44" x="1314.5" y="1046.2246" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="1321.5" y="1066.7598">EPIC</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="61" x="1368.5" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="1375.5" y="70.5352">Cerner</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="61" x="1368.5" y="1046.2246" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="1375.5" y="1066.7598">Cerner</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="67" x="1439.5" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="1446.5" y="70.5352">IHE XDS</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="67" x="1439.5" y="1046.2246" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="1446.5" y="1066.7598">IHE XDS</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="1516.5" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="1523.5" y="70.5352">IHE MHD</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="1516.5" y="1046.2246" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="1523.5" y="1066.7598">IHE MHD</text><polygon fill="#181818" points="304.5,108.7988,314.5,112.7988,304.5,116.7988,308.5,112.7988" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="23.5" x2="310.5" y1="112.7988" y2="112.7988" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="269" x="30.5" y="108.0566">Find Clinical Notes and Patient Documents</text><path d="M260.5,127.7988 L327.5,127.7988 L327.5,135.1094 L317.5,145.1094 L260.5,145.1094 L260.5,127.7988 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="873.1152" style="stroke:#000000;stroke-width:1.5;" width="1348" x="260.5" y="127.7988" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="22" x="275.5" y="141.3672">opt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="35" x="342.5" y="140.4336">[EMIS]</text><polygon fill="#181818" points="503.5,162.4199,513.5,166.4199,503.5,170.4199,507.5,166.4199" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="316.5" x2="509.5" y1="166.4199" y2="166.4199" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="323.5" y="161.6777">Find Documents</text><polygon fill="#181818" points="1068.5,191.7305,1078.5,195.7305,1068.5,199.7305,1072.5,195.7305" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="515.5" x2="1074.5" y1="195.7305" y2="195.7305" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="138" x="522.5" y="190.9883">Find Documents (IM1)</text><polygon fill="#181818" points="526.5,221.041,516.5,225.041,526.5,229.041,522.5,225.041" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="520.5" x2="1079.5" y1="225.041" y2="225.041" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="532.5" y="220.2988">Matching Documents (IM1)</text><polygon fill="#181818" points="327.5,250.3516,317.5,254.3516,327.5,258.3516,323.5,254.3516" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="321.5" x2="514.5" y1="254.3516" y2="254.3516" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="175" x="333.5" y="249.6094">Matching Documents (FHIR)</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="260.5" x2="1608.5" y1="263.3516" y2="263.3516" /><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="30" x="265.5" y="273.9863">[TPP]</text><polygon fill="#181818" points="503.5,294.6172,513.5,298.6172,503.5,302.6172,507.5,298.6172" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="316.5" x2="509.5" y1="298.6172" y2="298.6172" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="323.5" y="293.875">Find Documents</text><polygon fill="#181818" points="1121,323.9277,1131,327.9277,1121,331.9277,1125,327.9277" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="515.5" x2="1127" y1="327.9277" y2="327.9277" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="138" x="522.5" y="323.1855">Find Documents (IM1)</text><polygon fill="#181818" points="526.5,353.2383,516.5,357.2383,526.5,361.2383,522.5,357.2383" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="520.5" x2="1132" y1="357.2383" y2="357.2383" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="532.5" y="352.4961">Matching Documents (IM1)</text><polygon fill="#181818" points="327.5,382.5488,317.5,386.5488,327.5,390.5488,323.5,386.5488" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="321.5" x2="514.5" y1="386.5488" y2="386.5488" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="175" x="333.5" y="381.8066">Matching Documents (FHIR)</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="260.5" x2="1608.5" y1="395.5488" y2="395.5488" /><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="106" x="265.5" y="406.1836">[NHS England NRL]</text><polygon fill="#181818" points="667.5,426.8145,677.5,430.8145,667.5,434.8145,671.5,430.8145" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="316.5" x2="673.5" y1="430.8145" y2="430.8145" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="323.5" y="426.0723">Find Documents</text><polygon fill="#181818" points="1221.5,456.125,1231.5,460.125,1221.5,464.125,1225.5,460.125" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="679.5" x2="1227.5" y1="460.125" y2="460.125" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="686.5" y="455.3828">Find Documents</text><polygon fill="#181818" points="690.5,485.4355,680.5,489.4355,690.5,493.4355,686.5,489.4355" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="684.5" x2="1232.5" y1="489.4355" y2="489.4355" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="175" x="696.5" y="484.6934">Matching Documents (FHIR)</text><polygon fill="#181818" points="327.5,514.7461,317.5,518.7461,327.5,522.7461,323.5,518.7461" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="321.5" x2="678.5" y1="518.7461" y2="518.7461" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="235" x="333.5" y="514.0039">Matching Documents (FHIR modified)</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="260.5" x2="1608.5" y1="527.7461" y2="527.7461" /><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="68" x="265.5" y="538.3809">[Acute Care]</text><polygon fill="#181818" points="825,559.0117,835,563.0117,825,567.0117,829,563.0117" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="316.5" x2="831" y1="563.0117" y2="563.0117" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="323.5" y="558.2695">Find Documents</text><path d="M756.5,578.0117 L823.5,578.0117 L823.5,585.3223 L813.5,595.3223 L756.5,595.3223 L756.5,578.0117 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="149.5078" style="stroke:#000000;stroke-width:1.5;" width="683" x="756.5" y="578.0117" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="22" x="771.5" y="591.5801">opt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="45" x="838.5" y="590.6465">[Cerner]</text><polygon fill="#181818" points="1387,612.6328,1397,616.6328,1387,620.6328,1391,616.6328" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="837" x2="1393" y1="616.6328" y2="616.6328" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="844" y="611.8906">Find Documents</text><polygon fill="#181818" points="848,641.9434,838,645.9434,848,649.9434,844,645.9434" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="842" x2="1398" y1="645.9434" y2="645.9434" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="175" x="854" y="641.2012">Matching Documents (FHIR)</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="756.5" x2="1439.5" y1="654.9434" y2="654.9434" /><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="34" x="761.5" y="665.5781">[EPIC]</text><polygon fill="#181818" points="1324.5,686.209,1334.5,690.209,1324.5,694.209,1328.5,690.209" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="837" x2="1330.5" y1="690.209" y2="690.209" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="844" y="685.4668">Find Documents</text><polygon fill="#181818" points="848,715.5195,838,719.5195,848,723.5195,844,719.5195" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="842" x2="1335.5" y1="719.5195" y2="719.5195" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="175" x="854" y="714.7773">Matching Documents (FHIR)</text><polygon fill="#181818" points="327.5,751.8301,317.5,755.8301,327.5,759.8301,323.5,755.8301" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="321.5" x2="678.5" y1="755.8301" y2="755.8301" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="175" x="333.5" y="751.0879">Matching Documents (FHIR)</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="260.5" x2="1608.5" y1="764.8301" y2="764.8301" /><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="57" x="265.5" y="775.4648">[Regional]</text><polygon fill="#181818" points="970.5,796.0957,980.5,800.0957,970.5,804.0957,974.5,800.0957" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="316.5" x2="976.5" y1="800.0957" y2="800.0957" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="323.5" y="795.3535">Find Documents</text><path d="M907.5,815.0957 L974.5,815.0957 L974.5,822.4063 L964.5,832.4063 L907.5,832.4063 L907.5,815.0957 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="149.5078" style="stroke:#000000;stroke-width:1.5;" width="691" x="907.5" y="815.0957" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="22" x="922.5" y="828.6641">opt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="120" x="989.5" y="827.7305">[XDS e.g. OneLondon]</text><polygon fill="#181818" points="1461,849.7168,1471,853.7168,1461,857.7168,1465,853.7168" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="982.5" x2="1467" y1="853.7168" y2="853.7168" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="989.5" y="848.9746">Find Documents</text><polygon fill="#181818" points="993.5,879.0273,983.5,883.0273,993.5,887.0273,989.5,883.0273" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="987.5" x2="1472" y1="883.0273" y2="883.0273" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="301" x="999.5" y="878.2852">Matching Documents (XDS Document Metadata)</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="907.5" x2="1598.5" y1="892.0273" y2="892.0273" /><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="286" x="912.5" y="902.6621">[MHD e.g. Yorkshire and Humberside Care Record]</text><polygon fill="#181818" points="1540.5,923.293,1550.5,927.293,1540.5,931.293,1544.5,927.293" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="982.5" x2="1546.5" y1="927.293" y2="927.293" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="989.5" y="922.5508">Find Documents</text><polygon fill="#181818" points="993.5,952.6035,983.5,956.6035,993.5,960.6035,989.5,956.6035" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="987.5" x2="1551.5" y1="956.6035" y2="956.6035" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="248" x="999.5" y="951.8613">Matching Documents (FHIR R4 or STU3)</text><polygon fill="#181818" points="327.5,988.9141,317.5,992.9141,327.5,996.9141,323.5,992.9141" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="321.5" x2="981.5" y1="992.9141" y2="992.9141" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="175" x="333.5" y="988.1719">Matching Documents (FHIR)</text><polygon fill="#181818" points="34.5,1025.2246,24.5,1029.2246,34.5,1033.2246,30.5,1029.2246" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="28.5" x2="315.5" y1="1029.2246" y2="1029.2246" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="167" x="40.5" y="1024.4824">Documents Search Results</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<p>Details of the standard we follow to do this, can be found in <a href="https://profiles.ihe.net/ITI/MHD/index.html">IHE Mobile access to Health Documents (MHD)</a></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://virtually.healthcare">Virtually Healthcare</a>.  Package virtually.healthcare#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 1, 2024 08:53+0000">2024-03-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

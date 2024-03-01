@@ -10,7 +10,7 @@
   "name" : "VirtuallyHealthcareImplementationGuide",
   "title" : "Virtually Healthcare Implementation Guide",
   "status" : "draft",
-  "date" : "2024-02-28T08:09:55+00:00",
+  "date" : "2024-03-01T08:53:42+00:00",
   "publisher" : "Virtually Healthcare",
   "contact" : [{
     "name" : "Virtually Healthcare",
@@ -874,6 +874,24 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "clinical-notes-and-compositions.html"
+        }],
+        "nameUrl" : "clinical-notes-and-compositions.html",
+        "title" : "Clinical Notes and Compositions",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "clinical-record.html"
+        }],
+        "nameUrl" : "clinical-record.html",
+        "title" : "Clinical Record",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "downloads.html"
         }],
         "nameUrl" : "downloads.html",
@@ -883,10 +901,28 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "findpatient.html"
+          "valueUrl" : "find-documents.html"
         }],
-        "nameUrl" : "findpatient.html",
-        "title" : "Findpatient",
+        "nameUrl" : "find-documents.html",
+        "title" : "Find Documents",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "find-patient.html"
+        }],
+        "nameUrl" : "find-patient.html",
+        "title" : "Find Patient",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "update-patient.html"
+        }],
+        "nameUrl" : "update-patient.html",
+        "title" : "Update Patient",
         "generation" : "markdown"
       }]
     },

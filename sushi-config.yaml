@@ -51,7 +51,7 @@ menu:
     Find Patient: find-patient.html
     Update Patient: update-patient.html
     Find Patient Documents: find-documents.html
-    Clinical Notes and Compositions: clinical-notes.html
+    Clinical Notes and Compositions: clinical-notes-and-compositions.html
     Get Clinical Record: clinical-record.html
   Volume 2:
     Archtitecture Detail : architecture-detail.html

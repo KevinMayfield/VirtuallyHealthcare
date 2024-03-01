@@ -1,0 +1,31 @@
+@startuml
+
+hide footbox
+
+title "Register at new GP Practice"
+
+actor patient
+participant "Virtually Healthcare" as provider
+participant "EMIS" as pas
+actor "Practice Admin" as admin
+participant "PDS" as pds
+
+patient -> provider : Completes new patient registration form (FHIR QuestionnaireResponse?)
+provider -> provider: Create update registration details request (Task)
+loop processes new registrations
+admin -> provider: approve or reject request
+opt automatic process
+provider -> pds: Update General Practice to new ODS code (PATCH /Patient)
+pds-> pas: PDS syncs with EMIS and new patient is registered
+
+provider-> pas: Update registration detais (may have to poll for updates or use a PDS MESH feed to trigger this)
+
+else manual process
+
+  admin-> pas: Register new patient at practice and update registration details
+
+end
+end
+
+
+@enduml

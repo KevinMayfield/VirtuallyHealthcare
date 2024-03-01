@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Update Patient - Virtually Healthcare Implementation Guide v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/virtually.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon-32x32-1.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Virtually Healthcare Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+  UK
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="find-patient.html">Find Patient</a>
+      </li>
+      <li>
+        <a href="update-patient.html">Update Patient</a>
+      </li>
+      <li>
+        <a href="find-documents.html">Find Patient Documents</a>
+      </li>
+      <li>
+        <a href="clinical-notes-and-compositions.html">Clinical Notes and Compositions</a>
+      </li>
+      <li>
+        <a href="clinical-record.html">Get Clinical Record</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture-detail.html">Archtitecture Detail</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Update Patient</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Virtually Healthcare Implementation Guide - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.virtually.healthcare/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Update Patient</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#common-nhs-approaches" id="markdown-toc-common-nhs-approaches">Common NHS Approaches</a></li>
+  <li><a href="#nhs-england-apis-and-event-messages" id="markdown-toc-nhs-england-apis-and-event-messages">NHS England APIs and Event Messages</a></li>
+  <li><a href="#emis-and-tpp" id="markdown-toc-emis-and-tpp">EMIS and TPP</a></li>
+</ul>
+
+</div>
+
+<h3 id="common-nhs-approaches">Common NHS Approaches</h3>
+
+<p>The traditional way of updating patient demographics is via HL7 v2 ADT Events <a href="https://hl7-definition.caristix.com/v2/HL7v2.4/TriggerEvents/ADT_A31">update person information</a>. This can be a large message but the core element can be reduced down to a single FHIR <a href="StructureDefinition-Patient.html">Patient</a> resource and using (FHIR) RESTful this gives</p>
+
+<p><code class="language-plaintext highlighter-rouge">PUT /Patient</code></p>
+
+<p>This is also the approach taken on <a href="https://profiles.ihe.net/ITI/PIXm/index.html">IHE Patient Identifier Cross-referencing for mobile (PIXm)</a> which roughly describes how to do a HL7 v2 ADT_A31 (and also IHE PIX) in HL7 FHIR.</p>
+
+<p>At present, we have one use case which may trigger a <code class="language-plaintext highlighter-rouge">update person information</code> related event.</p>
+
+<ul>
+  <li>Patient or Practitioner has updated patient demographics on our application</li>
+  <li>Updating connected system identifiers (also known as Medical Record Number (MRN)) on our patient registry (this is a technical requirement)</li>
+</ul>
+
+<p>We have potentially two other use cases which are</p>
+
+<ul>
+  <li>GP patient registration - a patient wishes to register with the practice</li>
+  <li>NHS Number allocation - a patient has moved from Scotland, Northern Ireland, etc and is can be provided care in the English NHS</li>
+  <li>We recieve patient demographic updates from PDS, acutue PAS system or a regional MPI.</li>
+</ul>
+
+<h4 id="update-person-information-event-provider">Update Person Information Event provider</h4>
+
+<p>If the patient demographics are changed within our application we are updating other systems.</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="203px" preserveAspectRatio="none" style="width:467px;height:203px;background:#FFFFFF;" version="1.1" viewBox="0 0 467 203" width="467px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="214" x="128" y="28.5352">Update Patient Demographics</text><rect fill="none" height="46.6211" style="stroke:#000000;stroke-width:1.5;" width="451" x="10" y="133.2871" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="93" x2="93" y1="73.9766" y2="196.9082" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="331" x2="331" y1="73.9766" y2="196.9082" /><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="20" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="27" y="63.0234">Virtually Healthcare</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="239" x="212" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="225" x="219" y="63.0234">Patient Demographics Consumer</text><line style="stroke:#181818;stroke-width:1.0;" x1="93.5" x2="135.5" y1="105.2871" y2="105.2871" /><line style="stroke:#181818;stroke-width:1.0;" x1="135.5" x2="135.5" y1="105.2871" y2="118.2871" /><line style="stroke:#181818;stroke-width:1.0;" x1="94.5" x2="135.5" y1="118.2871" y2="118.2871" /><polygon fill="#181818" points="104.5,114.2871,94.5,118.2871,104.5,122.2871,100.5,118.2871" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="186" x="100.5" y="100.5449">Update Patient Demographics</text><path d="M10,133.2871 L84,133.2871 L84,140.5977 L74,150.5977 L10,150.5977 L10,133.2871 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="46.6211" style="stroke:#000000;stroke-width:1.5;" width="451" x="10" y="133.2871" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="29" x="25" y="146.8555">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="157" x="99" y="145.9219">[for each connected system]</text><polygon fill="#181818" points="319.5,167.9082,329.5,171.9082,319.5,175.9082,323.5,171.9082" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="93.5" x2="325.5" y1="171.9082" y2="171.9082" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="214" x="100.5" y="167.166">PUT /Patient (or HL7 v2 ADT_A31)</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h4 id="update-person-information-event-consumer">Update Person Information Event consumer</h4>
+
+<p>It is likely in the future we may recieve updates from other systems</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="172px" preserveAspectRatio="none" style="width:562px;height:172px;background:#FFFFFF;" version="1.1" viewBox="0 0 562 172" width="562px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="214" x="173.75" y="28.5352">Update Patient Demographics</text><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="124" x2="124" y1="73.9766" y2="165.5977" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="362" x2="362" y1="73.9766" y2="165.5977" /><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="239" x="5" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="225" x="12" y="63.0234">Patient Demographics Consumer</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="289" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="296" y="63.0234">Virtually Healthcare</text><polygon fill="#181818" points="350.5,101.2871,360.5,105.2871,350.5,109.2871,354.5,105.2871" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="124.5" x2="356.5" y1="105.2871" y2="105.2871" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="214" x="131.5" y="100.5449">PUT /Patient (or HL7 v2 ADT_A31)</text><line style="stroke:#181818;stroke-width:1.0;" x1="362.5" x2="404.5" y1="134.5977" y2="134.5977" /><line style="stroke:#181818;stroke-width:1.0;" x1="404.5" x2="404.5" y1="134.5977" y2="147.5977" /><line style="stroke:#181818;stroke-width:1.0;" x1="363.5" x2="404.5" y1="147.5977" y2="147.5977" /><polygon fill="#181818" points="373.5,143.5977,363.5,147.5977,373.5,151.5977,369.5,147.5977" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="186" x="369.5" y="129.8555">Update Patient Demographics</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h4 id="update-person-information-workflow">Update Person Information Workflow</h4>
+
+<p>The process of asking for a record to be updated is below.</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="244px" preserveAspectRatio="none" style="width:815px;height:244px;background:#FFFFFF;" version="1.1" viewBox="0 0 815 244" width="815px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="224" x="295.25" y="28.5352">Register Patient Demographics</text><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="78" x2="78" y1="73.9766" y2="237.2188" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="518" x2="518" y1="73.9766" y2="237.2188" /><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="5" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="12" y="63.0234">Virtually Healthcare</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="225" x="406" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="211" x="413" y="63.0234">Patient Demographics Provider</text><line style="stroke:#181818;stroke-width:1.0;" x1="78.5" x2="120.5" y1="105.2871" y2="105.2871" /><line style="stroke:#181818;stroke-width:1.0;" x1="120.5" x2="120.5" y1="105.2871" y2="118.2871" /><line style="stroke:#181818;stroke-width:1.0;" x1="79.5" x2="120.5" y1="118.2871" y2="118.2871" /><polygon fill="#181818" points="89.5,114.2871,79.5,118.2871,89.5,122.2871,85.5,118.2871" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="245" x="85.5" y="100.5449">Update or create Patient Demographics</text><polygon fill="#181818" points="506.5,143.5977,516.5,147.5977,506.5,151.5977,510.5,147.5977" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="78.5" x2="512.5" y1="147.5977" y2="147.5977" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="396" x="85.5" y="142.8555">Request Patient Demographics are updated or record is created</text><line style="stroke:#181818;stroke-width:1.0;" x1="518.5" x2="560.5" y1="176.9082" y2="176.9082" /><line style="stroke:#181818;stroke-width:1.0;" x1="560.5" x2="560.5" y1="176.9082" y2="189.9082" /><line style="stroke:#181818;stroke-width:1.0;" x1="519.5" x2="560.5" y1="189.9082" y2="189.9082" /><polygon fill="#181818" points="529.5,185.9082,519.5,189.9082,529.5,193.9082,525.5,189.9082" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="283" x="525.5" y="172.166">Update or Create Patient Demographics entry</text><polygon fill="#181818" points="89.5,215.2188,79.5,219.2188,89.5,223.2188,85.5,219.2188" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="83.5" x2="517.5" y1="219.2188" y2="219.2188" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="416" x="95.5" y="214.4766">Request completed or PUT Patient (updated patient demographics)</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h3 id="nhs-england-apis-and-event-messages">NHS England APIs and Event Messages</h3>
+
+<p>NHS England version of `update person information’ event is a series of HL7 FHIR Messages transered via MESH. These are described here <a href="https://digital.nhs.uk/developer/api-catalogue/personal-demographic-service-mesh">Personal Demographics Service MESH</a>. This is feed we could consume to update our records (note: EMIS and TPP records are linked to PDS, so we can use <a href="find-patient.html">Find Patient</a> API’s instead). If we supported this feed we would have to convert all of these feeds to a single FHIR Patient resource (our model is compatible with HL7 v2 Events or FHIR Patient, we don’t support many of the concepts large messages from PDS - we just support the patient record has been updated).</p>
+
+<p>For updating PDS, NHS England has another version of `update person information’ called <a href="https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#patch-/Patient/-id-">Update patient details</a> which is part of <a href="https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir">Personal Demographics Service - FHIR API</a> (which is a <a href="find-patient.html">Find Patient</a> API). This API can only be called by an active patient or practitioner, it can not be used by a workflow process. 
+These users must be logged in via <a href="https://digital.nhs.uk/services/nhs-login">NHS Login</a> or <a href="https://digital.nhs.uk/services/care-identity-service/applications-and-services/cis2-authentication">NHS England CIS2</a></p>
+
+<h4 id="gp-registration">GP Registration</h4>
+
+<p>It may be possible for us to register a patient at a new practice but we may be blocked from using the API call because we are not a ‘Primary Care System’</p>
+
+<p>https://developer.community.nhs.uk/t/general-general-practice-update-register-with-a-new-practice/774</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="441px" preserveAspectRatio="none" style="width:1680px;height:441px;background:#FFFFFF;" version="1.1" viewBox="0 0 1680 441" width="1680px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="198" x="742.5" y="28.5352">Register at new GP Practice</text><rect fill="none" height="210.1289" style="stroke:#000000;stroke-width:1.5;" width="1258.5" x="415.5" y="207.5977" /><rect fill="none" height="149.5078" style="stroke:#000000;stroke-width:1.5;" width="1238.5" x="425.5" y="261.2188" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="32" x2="32" y1="118.9766" y2="434.7266" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="508.5" x2="508.5" y1="118.9766" y2="434.7266" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1131" x2="1131" y1="118.9766" y2="434.7266" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1550" x2="1550" y1="118.9766" y2="434.7266" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1634" x2="1634" y1="118.9766" y2="434.7266" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="5" y="116.0234">patient</text><ellipse cx="32" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M32,58.9883 L32,85.9883 M19,66.9883 L45,66.9883 M32,85.9883 L19,100.9883 M32,85.9883 L45,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="435.5" y="87.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="442.5" y="108.0234">Virtually Healthcare</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="46" x="1108" y="87.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="1115" y="108.0234">EMIS</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="1496" y="116.0234">Practice Admin</text><ellipse cx="1550" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M1550,58.9883 L1550,85.9883 M1537,66.9883 L1563,66.9883 M1550,85.9883 L1537,100.9883 M1550,85.9883 L1563,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="40" x="1614" y="87.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="1621" y="108.0234">PDS</text><polygon fill="#181818" points="497,146.2871,507,150.2871,497,154.2871,501,150.2871" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="32" x2="503" y1="150.2871" y2="150.2871" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="453" x="39" y="145.5449">Completes new patient registration form (FHIR QuestionnaireResponse?)</text><line style="stroke:#181818;stroke-width:1.0;" x1="509" x2="551" y1="179.5977" y2="179.5977" /><line style="stroke:#181818;stroke-width:1.0;" x1="551" x2="551" y1="179.5977" y2="192.5977" /><line style="stroke:#181818;stroke-width:1.0;" x1="510" x2="551" y1="192.5977" y2="192.5977" /><polygon fill="#181818" points="520,188.5977,510,192.5977,520,196.5977,516,192.5977" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="303" x="516" y="174.8555">Create update registration details request (Task)</text><path d="M415.5,207.5977 L489.5,207.5977 L489.5,214.9082 L479.5,224.9082 L415.5,224.9082 L415.5,207.5977 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="210.1289" style="stroke:#000000;stroke-width:1.5;" width="1258.5" x="415.5" y="207.5977" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="29" x="430.5" y="221.166">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="164" x="504.5" y="220.2324">[processes new registrations]</text><polygon fill="#181818" points="520,242.2188,510,246.2188,520,250.2188,516,246.2188" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="514" x2="1549" y1="246.2188" y2="246.2188" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="157" x="526" y="241.4766">approve or reject request</text><path d="M425.5,261.2188 L492.5,261.2188 L492.5,268.5293 L482.5,278.5293 L425.5,278.5293 L425.5,261.2188 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="149.5078" style="stroke:#000000;stroke-width:1.5;" width="1238.5" x="425.5" y="261.2188" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="22" x="440.5" y="274.7871">opt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="110" x="507.5" y="273.8535">[automatic process]</text><polygon fill="#181818" points="1622,295.8398,1632,299.8398,1622,303.8398,1626,299.8398" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="509" x2="1628" y1="299.8398" y2="299.8398" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="368" x="516" y="295.0977">Update General Practice to new ODS code (PATCH /Patient)</text><polygon fill="#181818" points="1142,325.1504,1132,329.1504,1142,333.1504,1138,329.1504" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="1136" x2="1633" y1="329.1504" y2="329.1504" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="314" x="1148" y="324.4082">PDS syncs with EMIS and new patient is registered</text><polygon fill="#181818" points="1119,354.4609,1129,358.4609,1119,362.4609,1123,358.4609" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="509" x2="1125" y1="358.4609" y2="358.4609" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="598" x="516" y="353.7188">Update registration detais (may have to poll for updates or use a PDS MESH feed to trigger this)</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="425.5" x2="1664" y1="367.4609" y2="367.4609" /><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="96" x="430.5" y="378.0957">[manual process]</text><polygon fill="#181818" points="1142,398.7266,1132,402.7266,1142,406.7266,1138,402.7266" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="1136" x2="1549" y1="402.7266" y2="402.7266" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="395" x="1148" y="397.9844">Register new patient at practice and update registration details</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h3 id="emis-and-tpp">EMIS and TPP</h3>
+
+<p>It is possible for patient to update their demographics via our EMIS PFS api. It’s not known if we can use this in workflow or via practitioner interactions - this may be an information governance question. <br />
+This would allow us to indirectly update PDS (EMIS and TPP are connected directly to the spine).</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="366px" preserveAspectRatio="none" style="width:1075px;height:366px;background:#FFFFFF;" version="1.1" viewBox="0 0 1075 366" width="1075px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="277" x="400.5" y="28.5352">Update Patient Demographics Request</text><rect fill="none" height="75.9316" style="stroke:#000000;stroke-width:1.5;" width="487" x="582" y="266.2188" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="32" x2="32" y1="118.9766" y2="359.1504" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="266.5" x2="266.5" y1="118.9766" y2="359.1504" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="615" x2="615" y1="118.9766" y2="359.1504" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="955" x2="955" y1="118.9766" y2="359.1504" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1039" x2="1039" y1="118.9766" y2="359.1504" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="5" y="116.0234">patient</text><ellipse cx="32" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M32,58.9883 L32,85.9883 M19,66.9883 L45,66.9883 M32,85.9883 L19,100.9883 M32,85.9883 L45,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="193.5" y="87.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="200.5" y="108.0234">Virtually Healthcare</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="46" x="592" y="87.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="599" y="108.0234">EMIS</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="901" y="116.0234">Practice Admin</text><ellipse cx="955" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M955,58.9883 L955,85.9883 M942,66.9883 L968,66.9883 M955,85.9883 L942,100.9883 M955,85.9883 L968,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="40" x="1019" y="87.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="1026" y="108.0234">PDS</text><polygon fill="#181818" points="255,146.2871,265,150.2871,255,154.2871,259,150.2871" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="32" x2="261" y1="150.2871" y2="150.2871" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="211" x="39" y="145.5449">Update contact or address details</text><polygon fill="#181818" points="603,175.5977,613,179.5977,603,183.5977,607,179.5977" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="267" x2="609" y1="179.5977" y2="179.5977" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="324" x="274" y="174.8555">Patient demographics update request (PUT /Patient)</text><line style="stroke:#181818;stroke-width:1.0;" x1="615" x2="657" y1="208.9082" y2="208.9082" /><line style="stroke:#181818;stroke-width:1.0;" x1="657" x2="657" y1="208.9082" y2="221.9082" /><line style="stroke:#181818;stroke-width:1.0;" x1="616" x2="657" y1="221.9082" y2="221.9082" /><polygon fill="#181818" points="626,217.9082,616,221.9082,626,225.9082,622,221.9082" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="326" x="622" y="204.166">Create Patient update request (we expose as a Task)</text><polygon fill="#181818" points="626,247.2188,616,251.2188,626,255.2188,622,251.2188" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="620" x2="954" y1="251.2188" y2="251.2188" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="239" x="632" y="246.4766">Query Tasks (patient update requests)</text><path d="M582,266.2188 L656,266.2188 L656,273.5293 L646,283.5293 L582,283.5293 L582,266.2188 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="75.9316" style="stroke:#000000;stroke-width:1.5;" width="487" x="582" y="266.2188" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="29" x="597" y="279.7871">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="84" x="671" y="278.8535">[process tasks]</text><polygon fill="#181818" points="626,300.8398,616,304.8398,626,308.8398,622,304.8398" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="620" x2="954" y1="304.8398" y2="304.8398" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="92" x="632" y="300.0977">Action request</text><polygon fill="#181818" points="1027,330.1504,1037,334.1504,1027,338.1504,1031,334.1504" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="615" x2="1033" y1="334.1504" y2="334.1504" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="622" y="329.4082">EMIS updates PDS</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://virtually.healthcare">Virtually Healthcare</a>.  Package virtually.healthcare#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 1, 2024 08:53+0000">2024-03-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

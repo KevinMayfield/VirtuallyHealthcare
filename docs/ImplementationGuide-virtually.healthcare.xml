@@ -10,7 +10,7 @@
   <name value="VirtuallyHealthcareImplementationGuide"/>
   <title value="Virtually Healthcare Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-02-28T08:09:55+00:00"/>
+  <date value="2024-03-01T08:53:42+00:00"/>
   <publisher value="Virtually Healthcare"/>
   <contact>
     <name value="Virtually Healthcare"/>
@@ -692,6 +692,22 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="clinical-notes-and-compositions.html"/>
+        </extension>
+        <nameUrl value="clinical-notes-and-compositions.html"/>
+        <title value="Clinical Notes and Compositions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="clinical-record.html"/>
+        </extension>
+        <nameUrl value="clinical-record.html"/>
+        <title value="Clinical Record"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="downloads.html"/>
         </extension>
         <nameUrl value="downloads.html"/>
@@ -700,10 +716,26 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="findpatient.html"/>
+          <valueUrl value="find-documents.html"/>
         </extension>
-        <nameUrl value="findpatient.html"/>
-        <title value="Findpatient"/>
+        <nameUrl value="find-documents.html"/>
+        <title value="Find Documents"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="find-patient.html"/>
+        </extension>
+        <nameUrl value="find-patient.html"/>
+        <title value="Find Patient"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="update-patient.html"/>
+        </extension>
+        <nameUrl value="update-patient.html"/>
+        <title value="Update Patient"/>
         <generation value="markdown"/>
       </page>
     </page>

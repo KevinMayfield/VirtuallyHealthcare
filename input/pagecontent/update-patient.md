@@ -39,6 +39,29 @@ The process of asking for a record to be updated is below.
 <figure>{% include patient-demographics-update-workflow.svg %}</figure>
 <br clear="all"/>
 
+### NHS England APIs and Event Messages
+
+NHS England version of `update person information' event is a series of HL7 FHIR Messages transered via MESH. These are described here [Personal Demographics Service MESH](https://digital.nhs.uk/developer/api-catalogue/personal-demographic-service-mesh). This is feed we could consume to update our records (note: EMIS and TPP records are linked to PDS, so we can use [Find Patient](find-patient.html) API's instead). If we supported this feed we would have to convert all of these feeds to a single FHIR Patient resource (our model is compatible with HL7 v2 Events or FHIR Patient, we don't support many of the concepts large messages from PDS - we just support the patient record has been updated).
+
+For updating PDS, NHS England has another version of `update person information' called [Update patient details](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#patch-/Patient/-id-) which is part of [Personal Demographics Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir) (which is a [Find Patient](find-patient.html) API). This API can only be called by an active patient or practitioner, it can not be used by a workflow process. 
+These users must be logged in via [NHS Login](https://digital.nhs.uk/services/nhs-login) or [NHS England CIS2](https://digital.nhs.uk/services/care-identity-service/applications-and-services/cis2-authentication)
+
+#### GP Registration 
+
+It may be possible for us to register a patient at a new practice but we may be blocked from using the API call because we are not a 'Primary Care System' 
+
+https://developer.community.nhs.uk/t/general-general-practice-update-register-with-a-new-practice/774
+
+<figure>{% include patient-demographics-update-register-patient.svg %}</figure>
+<br clear="all"/>
+
+### EMIS and TPP
+
+It is possible for patient to update their demographics via our EMIS PFS api. It's not known if we can use this in workflow or via practitioner interactions - this may be an information governance question.   
+This would allow us to indirectly update PDS (EMIS and TPP are connected directly to the spine).
+
+<figure>{% include patient-demographics-update-emis-pfs.svg %}</figure>
+<br clear="all"/>
 
 
 

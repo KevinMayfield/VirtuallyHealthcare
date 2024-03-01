@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "VirtuallyHealthcareImplementationGuide"] ; # 
   fhir:title [ fhir:v "Virtually Healthcare Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-28T08:09:55+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-01T08:53:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Virtually Healthcare"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Virtually Healthcare" ] ;
@@ -796,6 +796,22 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "clinical-notes-and-compositions.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "clinical-notes-and-compositions.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Clinical Notes and Compositions" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "clinical-record.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "clinical-record.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Clinical Record" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "downloads.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
@@ -804,10 +820,26 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "findpatient.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "find-documents.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "findpatient.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Findpatient" ] ;
+         fhir:name [ fhir:v "find-documents.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Find Documents" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "find-patient.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "find-patient.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Find Patient" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "update-patient.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "update-patient.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Update Patient" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

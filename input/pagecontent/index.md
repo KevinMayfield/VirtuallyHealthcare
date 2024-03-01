@@ -10,7 +10,7 @@ We aim to support the following use cases:
 - [Find Patient](find-patient.html) Find a patient record on a connected system.
 - [Update Patient Demographics](update-patient.html) Update patient demographic records on a connected system.
 - [Find Patient clinical notes and documents](find-documents.html) on connected systems and view them.
-  - [Clinical Notes and Compositions](clinical-notes.html) Handling of health specific notes/documents formats.
+  - [Clinical Notes and Compositions](clinical-notes-and-compositions.html) Handling of health specific notes/documents formats.
 - [Query (structured) clinical record](clinical-record.html) from connected systems. This is our preferred option for handling clinical records (not clinical notes or composition formats).
 
 ### The Standards We Use

@@ -226,9 +226,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-Questionnaire.html" : "Questionnaire",
-      "StructureDefinition-Observation.html" : "Observation",
       "StructureDefinition-DocumentReference.html" : "DocumentReference",
+      "StructureDefinition-Observation.html" : "Observation",
+      "StructureDefinition-Questionnaire.html" : "Questionnaire",
       "StructureDefinition-QuestionnaireResponse.html" : "QuestionnaireResponse",
       "StructureDefinition-Patient.html" : "Patient",
       "StructureDefinition-Task.html" : "Task"

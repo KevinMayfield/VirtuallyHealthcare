@@ -2,8 +2,8 @@ VirtuallyHealthcareImplementationGuide : Validation Results
 =========================================
 
 err = 107, warn = 20, info = 4
-IG Publisher Version: 1.5.16
-Generated Wed Feb 28 08:11:28 GMT 2024. FHIR version 4.0.1 for virtually.healthcare#0.0.1 (canonical = https://fhir.virtually.healthcare)
+IG Publisher Version: 1.5.16 Out of date - current version is 1.6.0
+Generated Fri Mar 01 08:54:54 GMT 2024. FHIR version 4.0.1 for virtually.healthcare#0.0.1 (canonical = https://fhir.virtually.healthcare)
  Build Errors : 0 / 15 / 0
  /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/fsh-generated/resources/CapabilityStatement-DocumentIndexProvider : 1 / 0 / 1
  /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/fsh-generated/resources/CapabilityStatement-PatientIndexProvider : 1 / 0 / 1

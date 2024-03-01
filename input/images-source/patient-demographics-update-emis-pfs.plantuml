@@ -1,0 +1,22 @@
+@startuml
+
+hide footbox
+
+title "Update Patient Demographics Request"
+
+actor patient
+participant "Virtually Healthcare" as provider
+participant "EMIS" as pas
+actor "Practice Admin" as admin
+participant "PDS" as pds
+
+patient -> provider : Update contact or address details
+provider -> pas: Patient demographics update request (PUT /Patient)
+pas -> pas: Create Patient update request (we expose as a Task)
+admin -> pas: Query Tasks (patient update requests)
+loop process tasks
+admin -> pas: Action request
+pas -> pds: EMIS updates PDS
+end
+
+@enduml
