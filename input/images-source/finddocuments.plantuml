@@ -2,6 +2,7 @@
 
 actor User
 participant Application
+participant Community as "Community (Self) \n AWS Healthlate (S3)"
 participant PrimaryCareAdaptor
 participant NHSEnglandAdaptor
 participant AcuteCareAdaptor
@@ -15,22 +16,28 @@ participant XDS as "IHE XDS"
 participant MHD as "IHE MHD"
 
 User -> Application : Find Clinical Notes and Patient Documents
-opt EMIS
+opt Community
+Application-> Community: Find Documents
+Community --> Application : Matching Documents (FHIR)
+end
+opt Primary Care
 Application-> PrimaryCareAdaptor: Find Documents
+opt EMIS
 PrimaryCareAdaptor -> EMIS: Find Documents (IM1)
 EMIS --> PrimaryCareAdaptor : Matching Documents (IM1)
-PrimaryCareAdaptor --> Application : Matching Documents (FHIR)
 else TPP
-Application-> PrimaryCareAdaptor: Find Documents
 PrimaryCareAdaptor -> TPP: Find Documents (IM1)
 TPP --> PrimaryCareAdaptor : Matching Documents (IM1)
+end
 PrimaryCareAdaptor --> Application : Matching Documents (FHIR)
-else NHS England NRL
+end
+opt NHS England NRL
 Application-> NHSEnglandAdaptor: Find Documents
 NHSEnglandAdaptor -> NRL: Find Documents
 NRL --> NHSEnglandAdaptor: Matching Documents (FHIR)
 NHSEnglandAdaptor --> Application: Matching Documents (FHIR modified)
-else Acute Care
+end
+opt Acute Care
   Application-> AcuteCareAdaptor: Find Documents
   opt Cerner
    AcuteCareAdaptor -> Cerner: Find Documents
@@ -40,7 +47,8 @@ else Acute Care
    EPIC --> AcuteCareAdaptor: Matching Documents (FHIR)
   end
 NHSEnglandAdaptor --> Application: Matching Documents (FHIR)
-else Regional
+end
+opt Regional
   Application-> RegionalAdaptor: Find Documents
   opt XDS e.g. OneLondon
    RegionalAdaptor -> XDS: Find Documents
