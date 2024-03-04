@@ -31,10 +31,12 @@ TPP --> PrimaryCareAdaptor : Matching Documents (IM1)
 end
 PrimaryCareAdaptor --> Application : Matching Documents (FHIR)
 end
-opt NHS England NRL
+opt NHS England
 Application-> NHSEnglandAdaptor: Find Documents
+loop for NRL, BARS and eRS (as required)
 NHSEnglandAdaptor -> NRL: Find Documents
 NRL --> NHSEnglandAdaptor: Matching Documents (FHIR)
+end
 NHSEnglandAdaptor --> Application: Matching Documents (FHIR modified)
 end
 opt Acute Care
