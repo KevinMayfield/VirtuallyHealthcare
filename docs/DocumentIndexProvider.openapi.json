@@ -2,7 +2,7 @@
   "openapi": "3.0.2",
   "info": {
     "title": "Document Index Provider based on IHE MHD",
-    "description": "Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access.",
+    "description": "Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access. \nBackwards compatible with IHE XDS.",
     "license": {
       "name": "Apache License 2.0",
       "url": "http://spdx.org/licenses/Apache-2.0.html"

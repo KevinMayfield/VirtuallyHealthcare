@@ -18,7 +18,7 @@
       "value" : "https://virtually.healthcare"
     }]
   }],
-  "description" : "Provider supports read-only access to a patient index for the purposes of direct care and subject of care access.",
+  "description" : "Provider supports read-only access to a patient index (PAS, MPI or PDS) for the purposes of direct care and subject of care access.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

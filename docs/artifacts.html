@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9"}
-    h3,h4,h5,h6{--heading-prefix:"9.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -107,6 +107,9 @@
       </li>
       <li>
         <a href="clinical-record.html">Get Clinical Record</a>
+      </li>
+      <li>
+        <a href="structured-data-capture.html">Structured Data Capture</a>
       </li>
     </ul>
   </li>
@@ -186,10 +189,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Example: Example Instances</a>
-      </li>
-      <li>
-         <a href="#5">Other</a>
+         <a href="#4">Other</a>
       </li>
    </ul>
 </div>
@@ -209,7 +209,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="CapabilityStatement/DocumentIndexProvider">Document Index Provider based on IHE MHD</a>
             </td>
             <td>
-<p>Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access.</p>
+<p>Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access. 
+Backwards compatible with IHE XDS.</p>
 </td>
          </tr>
          <tr>
@@ -218,7 +219,55 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="CapabilityStatement/PatientIndexProvider">Patient Index Provider based on IHE PDQm</a>
             </td>
             <td>
-<p>Provider supports read-only access to a patient index for the purposes of direct care and subject of care access.</p>
+<p>Provider supports read-only access to a patient index (PAS, MPI or PDS) for the purposes of direct care and subject of care access.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-QueryAPIProvider.html"
+                  title="CapabilityStatement/QueryAPIProvider">Query API Provider based on IHE QEDm and IPA</a>
+            </td>
+            <td>
+<p>Provider supports read-only access structured clinical record held within EHR’s.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-SchedulingProvider.html"
+                  title="CapabilityStatement/SchedulingProvider">Scheduling Provider</a>
+            </td>
+            <td>
+<p>Scheduling API blueprint for appointment providers (PAS and EPR) based on</p>
+<ul>
+  <li><a href="https://digital.nhs.uk/developer/api-catalogue/nhs-booking-fhir">NHS Booking - FHIR API</a></li>
+  <li><a href="https://digital.nhs.uk/developer/api-catalogue/gp-connect-appointment-management-fhir">GP Connect Appointment Management - FHIR API</a></li>
+  <li><a href="https://digital.nhs.uk/developer/api-catalogue/interface-mechanism-1-standards">IM1 supplier APIs</a></li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-StructuredDataCaptureProvider.html"
+                  title="CapabilityStatement/StructuredDataCaptureProvider">Structured Data Capture Provider</a>
+            </td>
+            <td>
+<p>Providers supports read only access to sources of structured data capture (e.g. openEHR). Is currently focused on Finding Questionnaires (Form Definitions) and Finding Completed Questionnaires. Form Pre-Population is suppported by capabilities in other provider API’s.</p>
+<ul>
+  <li><a href="https://build.fhir.org/ig/HL7/sdc/">FHIR Structured Data Capture</a></li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-WorkflowProvider.html"
+                  title="CapabilityStatement/WorkflowProvider">Workflow Provider</a>
+            </td>
+            <td>
+<p>Is primarily focused on supporting clinical process. 
+Technically this is a replacment of messaging with <a href="https://www.enterpriseintegrationpatterns.com/patterns/conversation/index.html">conversations</a> and the workflow API is based on</p>
+<ul>
+  <li><a href="https://hl7.org/fhir/R4/workflow-module.html">FHIR Workflow</a></li>
+</ul>
 </td>
          </tr>
       </tbody>
@@ -235,24 +284,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675">Vital signs finding</a>
             </td>
          </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Questionnaire-7aac8781-aa31-4c27-a851-1f83258dc400.html"
-                  title="Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400">blood-pressure</a>
-            </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Questionnaire-d692490b-413c-4fb5-a767-db447f3d1906.html"
-                  title="Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906">blood-pressure</a>
-            </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Questionnaire-e8e5c92a-8941-40c2-bb85-f8634362bcb8.html"
-                  title="Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8">body-weight</a>
-            </td>
-         </tr>
       </tbody>
    </table>
    <a name="3"> </a>
@@ -263,11 +294,65 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-AllergyIntolerance.html"
+                  title="StructureDefinition/AllergyIntolerance">AllergyIntolerance</a>
+            </td>
+            <td>
+<p>Union of UKCore, IPA and IHE QEDm</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Appointment.html"
+                  title="StructureDefinition/Appointment">Appointment</a>
+            </td>
+            <td>
+<p>Union of UKCore and NHS England Scheduling</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-AppointmentResponse.html"
+                  title="StructureDefinition/AppointmentResponse">AppointmentResponse</a>
+            </td>
+            <td>
+<p>‘Accept/Reject an appointment’. Union of UKCore and NHS England Scheduling</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition.html"
+                  title="StructureDefinition/Condition">Condition</a>
+            </td>
+            <td>
+<p>Union of UKCore, IPA and IHE QEDm</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-DocumentReference.html"
                   title="StructureDefinition/DocumentReference">DocumentReference</a>
             </td>
             <td>
 <p>Union of UKCore, IPA and IHE MHD</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Immunization.html"
+                  title="StructureDefinition/Immunization">Immunization</a>
+            </td>
+            <td>
+<p>Union of UKCore, IPA and IHE QEDm</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MedicationRequest.html"
+                  title="StructureDefinition/MedicationRequest">MedicationRequest</a>
+            </td>
+            <td>
+<p>Union of UKCore, IPA and IHE QEDm</p>
 </td>
          </tr>
          <tr>
@@ -294,7 +379,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/Questionnaire">Questionnaire</a>
             </td>
             <td>
-<p>Will include UK Core if required</p>
+<p>Based on FHIR Structured Data Capture</p>
 </td>
          </tr>
          <tr>
@@ -303,7 +388,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/QuestionnaireResponse">QuestionnaireResponse</a>
             </td>
             <td>
-<p>Will include UK Core if required</p>
+<p>Based on FHIR Structured Data Capture</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Schedule.html"
+                  title="StructureDefinition/Schedule">Schedule</a>
+            </td>
+            <td>
+<p>Union of UKCore and NHS England Scheduling</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Slot.html" title="StructureDefinition/Slot">Slot</a>
+            </td>
+            <td>
+<p>Union of UKCore and NHS England Scheduling</p>
 </td>
          </tr>
          <tr>
@@ -311,25 +413,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="StructureDefinition-Task.html" title="StructureDefinition/Task">Task</a>
             </td>
             <td>
-<p>Will include UK Core if required</p>
+<p>Based on FHIR Workflow</p>
 </td>
          </tr>
       </tbody>
    </table>
    <a name="4"> </a>
-   <h3>Example: Example Instances </h3>
-    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-task-patient1.html" title="Task/task-patient1">Example Task - task-patient1</a>
-            </td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="5"> </a>
    <h3>Other </h3>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
 <table class="grid">
@@ -337,38 +426,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Task-63294ce7-eb5d-4371-a653-d3443e186500.html"
-                  title="Task/63294ce7-eb5d-4371-a653-d3443e186500">63294ce7-eb5d-4371-a653-d3443e186500</a>
+               <a href="Patient-a8a85872-87c7-4f20-89c1-6747f980f919.html"
+                  title="Patient/a8a85872-87c7-4f20-89c1-6747f980f919">a8a85872-87c7-4f20-89c1-6747f980f919</a>
             </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="QuestionnaireResponse-68aef45d-1b7b-4d9b-a62c-8382c44d8458.html"
-                  title="QuestionnaireResponse/68aef45d-1b7b-4d9b-a62c-8382c44d8458">68aef45d-1b7b-4d9b-a62c-8382c44d8458</a>
+               <a href="Task-prescription-refill-request.html"
+                  title="Task/prescription-refill-request">prescription-refill-request</a>
             </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="QuestionnaireResponse-798ff459-6685-4526-8ce9-db2842b73dca.html"
-                  title="QuestionnaireResponse/798ff459-6685-4526-8ce9-db2842b73dca">798ff459-6685-4526-8ce9-db2842b73dca</a>
-            </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-aws-hybrid.html"
-                  title="QuestionnaireResponse/aws-hybrid">aws-hybrid</a>
-            </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-document.html"
-                  title="QuestionnaireResponse/document">document</a>
-            </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-fatigue.html"
-                  title="QuestionnaireResponse/fatigue">fatigue</a>
+               <a href="QuestionnaireResponse-questionnaireresponse-vital-signs.html"
+                  title="QuestionnaireResponse/questionnaireresponse-vital-signs">questionnaireresponse-vital-signs</a>
             </td>
          </tr>
       </tbody>
@@ -397,7 +468,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://virtually.healthcare">Virtually Healthcare</a>.  Package virtually.healthcare#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 1, 2024 08:53+0000">2024-03-01</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://virtually.healthcare">Virtually Healthcare</a>.  Package virtually.healthcare#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 4, 2024 08:45+0000">2024-03-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

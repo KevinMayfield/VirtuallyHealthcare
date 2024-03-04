@@ -7,7 +7,7 @@ Title: "Document Index Provider based on IHE MHD"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format = #json
-* description = "Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access."
+* description = "Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access. \nBackwards compatible with IHE XDS."
 * rest.mode = #server
 
 //Patient
@@ -16,5 +16,5 @@ Title: "Document Index Provider based on IHE MHD"
 * insert InteractionWithExpectation(#search-type, #SHALL)
 * insert SearchParamWithExpectation(patient, #reference, #SHALL)
 * insert SearchParamWithExpectation(patient:identifier, #token, #MAY)
-* insert SearchParamWithExpectation(type, #token, #MAY)
-* insert SearchParamWithExpectation(date, #date, #MAY)
+* insert SearchParamWithExpectation(type, #token, #SHOULD)
+* insert SearchParamWithExpectation(date, #date, #SHOULD)

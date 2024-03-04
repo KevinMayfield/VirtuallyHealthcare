@@ -10,7 +10,7 @@
   <name value="VirtuallyHealthcareImplementationGuide"/>
   <title value="Virtually Healthcare Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-03-01T08:53:42+00:00"/>
+  <date value="2024-03-04T08:45:19+00:00"/>
   <publisher value="Virtually Healthcare"/>
   <contact>
     <name value="Virtually Healthcare"/>
@@ -64,6 +64,11 @@
     <uri value="https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd"/>
     <packageId value="ihe.iti.mhd"/>
     <version value="4.2.1"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_sdc">
+    <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
+    <packageId value="hl7.fhir.uv.sdc"/>
+    <version value="3.0.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -471,82 +476,56 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
+        <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Task/63294ce7-eb5d-4371-a653-d3443e186500"/>
+        <reference value="Patient/a8a85872-87c7-4f20-89c1-6747f980f919"/>
       </reference>
-      <name value="63294ce7-eb5d-4371-a653-d3443e186500"/>
+      <name value="a8a85872-87c7-4f20-89c1-6747f980f919"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/68aef45d-1b7b-4d9b-a62c-8382c44d8458"/>
+        <reference value="StructureDefinition/AllergyIntolerance"/>
       </reference>
-      <name value="68aef45d-1b7b-4d9b-a62c-8382c44d8458"/>
+      <name value="AllergyIntolerance"/>
+      <description value="Union of UKCore, IPA and IHE QEDm"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/798ff459-6685-4526-8ce9-db2842b73dca"/>
+        <reference value="StructureDefinition/Appointment"/>
       </reference>
-      <name value="798ff459-6685-4526-8ce9-db2842b73dca"/>
+      <name value="Appointment"/>
+      <description value="Union of UKCore and NHS England Scheduling"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/aws-hybrid"/>
+        <reference value="StructureDefinition/AppointmentResponse"/>
       </reference>
-      <name value="aws-hybrid"/>
+      <name value="AppointmentResponse"/>
+      <description value="'Accept/Reject an appointment'. Union of UKCore and NHS England Scheduling"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400"/>
+        <reference value="StructureDefinition/Condition"/>
       </reference>
-      <name value="blood-pressure"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906"/>
-      </reference>
-      <name value="blood-pressure"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8"/>
-      </reference>
-      <name value="body-weight"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/document"/>
-      </reference>
-      <name value="document"/>
+      <name value="Condition"/>
+      <description value="Union of UKCore, IPA and IHE QEDm"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -557,7 +536,7 @@
         <reference value="CapabilityStatement/DocumentIndexProvider"/>
       </reference>
       <name value="Document Index Provider based on IHE MHD"/>
-      <description value="Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access."/>
+      <description value="Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access. &#xA;Backwards compatible with IHE XDS."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -573,12 +552,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/fatigue"/>
+        <reference value="StructureDefinition/Immunization"/>
       </reference>
-      <name value="fatigue"/>
+      <name value="Immunization"/>
+      <description value="Union of UKCore, IPA and IHE QEDm"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedicationRequest"/>
+      </reference>
+      <name value="MedicationRequest"/>
+      <description value="Union of UKCore, IPA and IHE QEDm"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -611,7 +602,28 @@
         <reference value="CapabilityStatement/PatientIndexProvider"/>
       </reference>
       <name value="Patient Index Provider based on IHE PDQm"/>
-      <description value="Provider supports read-only access to a patient index for the purposes of direct care and subject of care access."/>
+      <description value="Provider supports read-only access to a patient index (PAS, MPI or PDS) for the purposes of direct care and subject of care access."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/prescription-refill-request"/>
+      </reference>
+      <name value="prescription-refill-request"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/QueryAPIProvider"/>
+      </reference>
+      <name value="Query API Provider based on IHE QEDm and IPA"/>
+      <description value="Provider supports read-only access structured clinical record held within EHR's."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -622,7 +634,7 @@
         <reference value="StructureDefinition/Questionnaire"/>
       </reference>
       <name value="Questionnaire"/>
-      <description value="Will include UK Core if required"/>
+      <description value="Based on FHIR Structured Data Capture"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -633,7 +645,61 @@
         <reference value="StructureDefinition/QuestionnaireResponse"/>
       </reference>
       <name value="QuestionnaireResponse"/>
-      <description value="Will include UK Core if required"/>
+      <description value="Based on FHIR Structured Data Capture"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/questionnaireresponse-vital-signs"/>
+      </reference>
+      <name value="questionnaireresponse-vital-signs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Schedule"/>
+      </reference>
+      <name value="Schedule"/>
+      <description value="Union of UKCore and NHS England Scheduling"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/SchedulingProvider"/>
+      </reference>
+      <name value="Scheduling Provider"/>
+      <description value="Scheduling API blueprint for appointment providers (PAS and EPR) based on &#xA; - [NHS Booking - FHIR API](https://digital.nhs.uk/developer/api-catalogue/nhs-booking-fhir) &#xA; - [GP Connect Appointment Management - FHIR API](https://digital.nhs.uk/developer/api-catalogue/gp-connect-appointment-management-fhir) &#xA; - [IM1 supplier APIs](https://digital.nhs.uk/developer/api-catalogue/interface-mechanism-1-standards)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Slot"/>
+      </reference>
+      <name value="Slot"/>
+      <description value="Union of UKCore and NHS England Scheduling"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/StructuredDataCaptureProvider"/>
+      </reference>
+      <name value="Structured Data Capture Provider"/>
+      <description value="Providers supports read only access to sources of structured data capture (e.g. openEHR). Is currently focused on Finding Questionnaires (Form Definitions) and Finding Completed Questionnaires. Form Pre-Population is suppported by capabilities in other provider API's. &#xA; - [FHIR Structured Data Capture](https://build.fhir.org/ig/HL7/sdc/)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -644,7 +710,7 @@
         <reference value="StructureDefinition/Task"/>
       </reference>
       <name value="Task"/>
-      <description value="Will include UK Core if required"/>
+      <description value="Based on FHIR Workflow"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -659,13 +725,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
+        <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="Task/task-patient1"/>
+        <reference value="CapabilityStatement/WorkflowProvider"/>
       </reference>
-      <name value="Example Task - task-patient1"/>
-      <exampleCanonical value="https://fhir.virtually.healthcare/StructureDefinition/Task"/>
+      <name value="Workflow Provider"/>
+      <description value="Is primarily focused on supporting clinical process. &#xA;Technically this is a replacment of messaging with [conversations](https://www.enterpriseintegrationpatterns.com/patterns/conversation/index.html) and the workflow API is based on &#xA; - [FHIR Workflow](https://hl7.org/fhir/R4/workflow-module.html)"/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -728,6 +795,14 @@
         </extension>
         <nameUrl value="find-patient.html"/>
         <title value="Find Patient"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="structured-data-capture.html"/>
+        </extension>
+        <nameUrl value="structured-data-capture.html"/>
+        <title value="Structured Data Capture"/>
         <generation value="markdown"/>
       </page>
       <page>

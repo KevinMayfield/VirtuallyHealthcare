@@ -1,0 +1,43 @@
+{
+  "resourceType" : "Patient",
+  "id" : "a8a85872-87c7-4f20-89c1-6747f980f919",
+  "meta" : {
+    "profile" : ["https://fhir.virtually.healthcare/StructureDefinition/Patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Leslie Forster </b> male, DoB: 1957-02-11 ( <code>https://emis.com/Id/Patient/DBID</code>/1)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li><code>https://fhir.nhs.uk/Id/nhs-number</code>/6254892847</li><li><code>https://emis.com/Id/Patient/ID</code>/F83004-1</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">23 Church Lane Paddock East Morton LS12 2JN </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <span><code>https://fhir.nhs.uk/Id/ods-organization-code</code>/F83004</span></li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://emis.com/Id/Patient/DBID",
+    "value" : "1"
+  },
+  {
+    "system" : "https://fhir.nhs.uk/Id/nhs-number",
+    "value" : "6254892847"
+  },
+  {
+    "system" : "https://emis.com/Id/Patient/ID",
+    "value" : "F83004-1"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Forster",
+    "given" : ["Leslie"],
+    "prefix" : ["Mr"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1957-02-11",
+  "address" : [{
+    "line" : ["23 Church Lane",
+    "Paddock"],
+    "city" : "East Morton",
+    "postalCode" : "LS12 2JN"
+  }],
+  "generalPractitioner" : [{
+    "identifier" : {
+      "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value" : "F83004"
+    }
+  }]
+}

@@ -15,7 +15,7 @@
       }
     ],
     "status": "draft",
-    "url": "https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding",
+    "url": "https://fhir.virtually.healthcare/Questionnaire/VitalSignsFinding",
     "title": "Vital signs finding",
     "resourceType": "Questionnaire",
     "item": [

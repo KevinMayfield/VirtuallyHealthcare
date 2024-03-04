@@ -1,0 +1,30 @@
+{
+  "id": "prescription-refill-request",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Task"
+    ]
+  },
+  "resourceType": "Task",
+  "status": "requested",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "103742009",
+        "display": "Renewal of prescription"
+      }]},
+  "focus": {
+    "reference": "MedicationRequest/3a275967-bcbe-4cb3-8cc8-fffa6781ba8c"
+  },
+  "for": {
+    "reference": "Patient/a8a85872-87c7-4f20-89c1-6747f980f919"
+  },
+  "requester": {
+    "reference": "Patient/a8a85872-87c7-4f20-89c1-6747f980f919"
+  },
+  "note": [
+    {
+      "text": "Need a prescription to cover my holiday"
+    }]}

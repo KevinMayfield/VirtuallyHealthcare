@@ -3,7 +3,7 @@
 Is a series of adaptors to other systems such as GP Systems and NHS England Services.
 The adaptors provide a layer of consistency and simplification. This means an `application developers` doesn't have to deal with health and technical complexities.
 
-### Use Case Solutions 
+### Use Case Focused Solutions 
 
 We aim to support the following use cases:
 
@@ -13,7 +13,9 @@ We aim to support the following use cases:
   - [Clinical Notes and Compositions](clinical-notes-and-compositions.html) Handling of health specific notes/documents formats.
 - [Query (structured) clinical record](clinical-record.html) from connected systems. This is our preferred option for handling clinical records (not clinical notes or composition formats).
 
-### The Standards We Use
+To do this we use a mix of Enterprise, Technical and Data Standards.
+
+### Enterprise/Business Standards
 
 The following standards describe how HL7 FHIR is used for common use cases. 
 
@@ -26,13 +28,24 @@ The following standards describe how HL7 FHIR is used for common use cases.
 - [FHIR Structured Data Capture (SDC)](https://build.fhir.org/ig/HL7/sdc/)
   - A modern version of [IHE Mobile Retrieve Form for Data Capture](https://wiki.ihe.net/index.php/Mobile_Retrieve_Form_for_Data_Capture)
 
-All of these technical frameworks use the same HL7 FHIR schema and build on [FHIR RESTful API](https://hl7.org/fhir/R4/http.html)'s. The FHIR version is R4.
+### Technincal Standards
 
-- [FHIR RESTful](https://hl7.org/fhir/R4/http.html)
-- [FHIR Development Libraries](https://confluence.hl7.org/display/FHIR/Open+Source+Implementations)
+All the Enterprise/Business standards use the same HL7 FHIR schema and are built on [FHIR RESTful API](https://hl7.org/fhir/R4/http.html)'s (FHIR version is R4).
+ 
+Most of our adaptors interface with other standards. Other standards we support (or can support) include:  
 
-Our HIE and CDR is compliant with NHS Data Dictionary and Model and UK SNOMED CT requirements. Our data is also HL7 UK Core FHIR conformant.
-At present our adaptors do not perform any code conversions, so if the underlying system is not NHS England conformant then the adaptor is not conformant to these data standards.
+- GP Systems IM1
+- GP Systems PFS
+- IHE XDS
+- HL7 v2 ADT and ORU
+- openEHR 
+- NHS England (PDS, MESH and NRLF)
+
+### Data Standards 
+
+Our HIE and CDR is compliant with NHS Data Dictionary and Model and UK SNOMED CT requirements. 
+Our data is also [HL7 UK Core FHIR]() conformant.
+At present most of our adaptors only perform minimal code conversions to provide a pragmatic level of commonality between the different systems.
 
 ### Dependencies
 

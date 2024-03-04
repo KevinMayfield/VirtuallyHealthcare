@@ -2,7 +2,7 @@
   "openapi": "3.0.2",
   "info": {
     "title": "Patient Index Provider based on IHE PDQm",
-    "description": "Provider supports read-only access to a patient index for the purposes of direct care and subject of care access.",
+    "description": "Provider supports read-only access to a patient index (PAS, MPI or PDS) for the purposes of direct care and subject of care access.",
     "license": {
       "name": "Apache License 2.0",
       "url": "http://spdx.org/licenses/Apache-2.0.html"

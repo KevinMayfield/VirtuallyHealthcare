@@ -5,10 +5,46 @@
   "jurisdiction": "GB",
   "extensions": [],
   "profiles": {
+    "AllergyIntolerance": [
+      {
+        "url": "https://fhir.virtually.healthcare/StructureDefinition/AllergyIntolerance",
+        "title": "AllergyIntolerance"
+      }
+    ],
+    "Appointment": [
+      {
+        "url": "https://fhir.virtually.healthcare/StructureDefinition/Appointment",
+        "title": "Appointment"
+      }
+    ],
+    "AppointmentResponse": [
+      {
+        "url": "https://fhir.virtually.healthcare/StructureDefinition/AppointmentResponse",
+        "title": "AppointmentResponse"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://fhir.virtually.healthcare/StructureDefinition/Condition",
+        "title": "Condition"
+      }
+    ],
     "DocumentReference": [
       {
         "url": "https://fhir.virtually.healthcare/StructureDefinition/DocumentReference",
         "title": "DocumentReference"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "https://fhir.virtually.healthcare/StructureDefinition/Immunization",
+        "title": "Immunization"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "https://fhir.virtually.healthcare/StructureDefinition/MedicationRequest",
+        "title": "MedicationRequest"
       }
     ],
     "Observation": [
@@ -33,6 +69,18 @@
       {
         "url": "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse",
         "title": "QuestionnaireResponse"
+      }
+    ],
+    "Schedule": [
+      {
+        "url": "https://fhir.virtually.healthcare/StructureDefinition/Schedule",
+        "title": "Schedule"
+      }
+    ],
+    "Slot": [
+      {
+        "url": "https://fhir.virtually.healthcare/StructureDefinition/Slot",
+        "title": "Slot"
       }
     ],
     "Task": [

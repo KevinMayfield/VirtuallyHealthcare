@@ -1,0 +1,55 @@
+{
+  "resourceType": "Patient",
+  "id": "a8a85872-87c7-4f20-89c1-6747f980f919",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Patient"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://emis.com/Id/Patient/DBID",
+      "value": "1"
+    },
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "6254892847"
+    },
+    {
+      "system": "https://emis.com/Id/Patient/ID",
+      "value": "F83004-1"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Forster",
+      "given": [
+        "Leslie"
+      ],
+      "prefix": [
+        "Mr"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1957-02-11",
+  "address": [
+    {
+      "line": [
+        "23 Church Lane",
+        "Paddock"
+      ],
+      "city": "East Morton",
+      "postalCode": "LS12 2JN"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "F83004"
+      }
+    }
+  ]
+}

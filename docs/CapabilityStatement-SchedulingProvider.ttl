@@ -1,0 +1,154 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.virtually.healthcare/CapabilityStatement/SchedulingProvider> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SchedulingProvider"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2 id=\"title\">Scheduling Provider</h2><ul><li>Implementation Guide Version: 0.0.1</li><li>FHIR Version: 4.0.1</li><li>Supported Formats: <code>json</code></li><li>Supported Patch Formats: </li><li>Published on: Wed Feb 01 00:00:00 GMT 2023</li><li>Published by: Virtually Healthcare</li></ul><blockquote class=\"impl-note\"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as &quot;SHALL NOT&quot;. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h2 id=\"rest\">FHIR RESTful Capabilities</h2><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 id=\"mode1\" class=\"panel-title\">Mode: <code>server</code></h3></div><div class=\"panel-body\"><div class=\"lead\"><em>Summary of System-wide Interactions</em></div></div></div><h3 id=\"resourcesCap1\">Capabilities by Resource/Profile</h3><h4 id=\"resourcesSummary1\">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class=\"bg-info\">R</span></b>ead, <b><span class=\"bg-info\">S</span></b>earch, <b><span class=\"bg-info\">U</span></b>pdate, and <b><span class=\"bg-info\">C</span></b>reate, are always shown, while <b><span class=\"bg-info\">VR</span></b>ead, <b><span class=\"bg-info\">P</span></b>atch, <b><span class=\"bg-info\">D</span></b>elete, <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">I</span></b>nstance, or <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class=\"table-responsive\"><table class=\"table table-condensed table-hover\"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class=\"text-center\"><b title=\"GET a resource (read interaction)\">R</b></th><th class=\"text-center\"><b title=\"GET all set of resources of the type (search interaction)\">S</b></th><th class=\"text-center\"><b title=\"PUT a new resource version (update interaction)\">U</b></th><th class=\"text-center\"><b title=\"POST a new resource (create interaction)\">C</b></th><th class=\"text-center\"><b title=\"DELETE a resource (delete interaction)\">D</b></th><th><b title=\"Required and recommended search parameters\">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href=\"#Appointment1-1\">Appointment</a></td><td><a href=\"StructureDefinition-Appointment.html\">https://fhir.virtually.healthcare/StructureDefinition/Appointment</a><br/><em>Additional supported profiles:</em><br/>  <a href=\"https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.8-pre-release&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment\">UK Core Appointment</a></td><td></td><td class=\"text-center\"></td><td class=\"text-center\"></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td></td><td/><td/><td/></tr><tr><td><a href=\"#AppointmentResponse1-2\">AppointmentResponse</a></td><td><a href=\"StructureDefinition-AppointmentResponse.html\">https://fhir.virtually.healthcare/StructureDefinition/AppointmentResponse</a></td><td></td><td class=\"text-center\"></td><td class=\"text-center\"></td><td class=\"text-center\">y</td><td class=\"text-center\"></td><td></td><td/><td/><td/></tr><tr><td><a href=\"#Schedule1-3\">Schedule</a></td><td><a href=\"StructureDefinition-Schedule.html\">https://fhir.virtually.healthcare/StructureDefinition/Schedule</a><br/><em>Additional supported profiles:</em><br/>  <a href=\"https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.8-pre-release&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Schedule\">UK Core Schedule</a></td><td></td><td class=\"text-center\">y</td><td class=\"text-center\"></td><td class=\"text-center\"></td><td class=\"text-center\"></td><td>date, service-type</td><td/><td/><td/></tr><tr><td><a href=\"#Slot1-4\">Slot</a></td><td><a href=\"StructureDefinition-Slot.html\">https://fhir.virtually.healthcare/StructureDefinition/Slot</a><br/><em>Additional supported profiles:</em><br/>  <a href=\"https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.8-pre-release&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot\">UK Core Slot</a></td><td></td><td class=\"text-center\">y</td><td class=\"text-center\"></td><td class=\"text-center\"></td><td class=\"text-center\"></td><td>schedule</td><td/><td/><td/></tr></tbody></table></div><hr/><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Appointment1-1\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHALL</span>Appointment</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-Appointment.html\">https://fhir.virtually.healthcare/StructureDefinition/Appointment</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-6\"><span class=\"lead\">Supported Profiles</span><p><a href=\"https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.8-pre-release&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment\">https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment</a></p></div><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>create</code>, <code>delete</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"AppointmentResponse1-2\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHALL</span>AppointmentResponse</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-AppointmentResponse.html\">https://fhir.virtually.healthcare/StructureDefinition/AppointmentResponse</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>create</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Schedule1-3\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHALL</span>Schedule</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-Schedule.html\">https://fhir.virtually.healthcare/StructureDefinition/Schedule</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-6\"><span class=\"lead\">Supported Profiles</span><p><a href=\"https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.8-pre-release&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Schedule\">https://fhir.hl7.org.uk/StructureDefinition/UKCore-Schedule</a></p></div><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td>date</td><td><code>date</code></td><td><div></div></td></tr><tr><td><b>SHOULD</b></td><td>service-type</td><td><code>token</code></td><td><div></div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Slot1-4\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHALL</span>Slot</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-Slot.html\">https://fhir.virtually.healthcare/StructureDefinition/Slot</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-6\"><span class=\"lead\">Supported Profiles</span><p><a href=\"https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.8-pre-release&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot\">https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot</a></p></div><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td>schedule</td><td><code>reference</code></td><td><div></div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.virtually.healthcare/CapabilityStatement/SchedulingProvider"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.1"] ; # 
+  fhir:title [ fhir:v "Scheduling Provider"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-02-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Virtually Healthcare"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Virtually Healthcare" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://virtually.healthcare" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Scheduling API blueprint for appointment providers (PAS and EPR) based on \n - [NHS Booking - FHIR API](https://digital.nhs.uk/developer/api-catalogue/nhs-booking-fhir) \n - [GP Connect Appointment Management - FHIR API](https://digital.nhs.uk/developer/api-catalogue/gp-connect-appointment-management-fhir) \n - [IM1 supplier APIs](https://digital.nhs.uk/developer/api-catalogue/interface-mechanism-1-standards)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "GB" ] ;
+       fhir:display [ fhir:v "UK" ]
+     ] )
+  ] ) ; # 
+  fhir:kind [ fhir:v "requirements"] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:format ( [ fhir:v "json"] ) ; # 
+  fhir:rest ( [
+     fhir:mode [ fhir:v "server" ] ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SHALL" ]
+       ] ) ;
+       fhir:type [ fhir:v "Appointment" ] ;
+       fhir:profile [
+         fhir:v "https://fhir.virtually.healthcare/StructureDefinition/Appointment"^^xsd:anyURI ;
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Appointment>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment"^^xsd:anyURI ;
+         fhir:link <https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment>
+       ] ) ;
+       fhir:interaction ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "create" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "delete" ]
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SHALL" ]
+       ] ) ;
+       fhir:type [ fhir:v "AppointmentResponse" ] ;
+       fhir:profile [
+         fhir:v "https://fhir.virtually.healthcare/StructureDefinition/AppointmentResponse"^^xsd:anyURI ;
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/AppointmentResponse>
+       ] ;
+       fhir:interaction ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "create" ]
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SHALL" ]
+       ] ) ;
+       fhir:type [ fhir:v "Schedule" ] ;
+       fhir:profile [
+         fhir:v "https://fhir.virtually.healthcare/StructureDefinition/Schedule"^^xsd:anyURI ;
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Schedule>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Schedule"^^xsd:anyURI ;
+         fhir:link <https://fhir.hl7.org.uk/StructureDefinition/UKCore-Schedule>
+       ] ) ;
+       fhir:interaction ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:searchParam ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] ) ;
+         fhir:name [ fhir:v "date" ] ;
+         fhir:type [ fhir:v "date" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] ) ;
+         fhir:name [ fhir:v "service-type" ] ;
+         fhir:type [ fhir:v "token" ]
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SHALL" ]
+       ] ) ;
+       fhir:type [ fhir:v "Slot" ] ;
+       fhir:profile [
+         fhir:v "https://fhir.virtually.healthcare/StructureDefinition/Slot"^^xsd:anyURI ;
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Slot>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot"^^xsd:anyURI ;
+         fhir:link <https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot>
+       ] ) ;
+       fhir:interaction ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:searchParam ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] ) ;
+         fhir:name [ fhir:v "schedule" ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

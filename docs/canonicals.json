@@ -1,11 +1,5 @@
 [
   {
-    "id" : "0d9fccea-9c98-4e61-b3e0-bc9b3a9db675",
-    "type" : "Questionnaire",
-    "url" : "https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding",
-    "version" : "0.0.1"
-  },
-  {
     "id" : "DocumentIndexProvider",
     "type" : "CapabilityStatement",
     "url" : "https://fhir.virtually.healthcare/CapabilityStatement/DocumentIndexProvider",
@@ -18,6 +12,30 @@
     "version" : "0.0.1"
   },
   {
+    "id" : "QueryAPIProvider",
+    "type" : "CapabilityStatement",
+    "url" : "https://fhir.virtually.healthcare/CapabilityStatement/QueryAPIProvider",
+    "version" : "0.0.1"
+  },
+  {
+    "id" : "SchedulingProvider",
+    "type" : "CapabilityStatement",
+    "url" : "https://fhir.virtually.healthcare/CapabilityStatement/SchedulingProvider",
+    "version" : "0.0.1"
+  },
+  {
+    "id" : "StructuredDataCaptureProvider",
+    "type" : "CapabilityStatement",
+    "url" : "https://fhir.virtually.healthcare/CapabilityStatement/StructuredDataCaptureProvider",
+    "version" : "0.0.1"
+  },
+  {
+    "id" : "WorkflowProvider",
+    "type" : "CapabilityStatement",
+    "url" : "https://fhir.virtually.healthcare/CapabilityStatement/WorkflowProvider",
+    "version" : "0.0.1"
+  },
+  {
     "id" : "virtually.healthcare",
     "type" : "ImplementationGuide",
     "url" : "https://fhir.virtually.healthcare/ImplementationGuide/virtually.healthcare",
@@ -25,22 +43,38 @@
     "name" : "VirtuallyHealthcareImplementationGuide"
   },
   {
-    "id" : "7aac8781-aa31-4c27-a851-1f83258dc400",
+    "id" : "0d9fccea-9c98-4e61-b3e0-bc9b3a9db675",
     "type" : "Questionnaire",
-    "url" : "https://fhir.virtually.healthcare/Questionnaire/blood-pressure",
+    "url" : "https://fhir.virtually.healthcare/Questionnaire/VitalSignsFinding",
     "version" : "0.0.1"
   },
   {
-    "id" : "e8e5c92a-8941-40c2-bb85-f8634362bcb8",
-    "type" : "Questionnaire",
-    "url" : "https://fhir.virtually.healthcare/Questionnaire/body-weight",
-    "version" : "0.0.1"
+    "id" : "AllergyIntolerance",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.virtually.healthcare/StructureDefinition/AllergyIntolerance",
+    "version" : "0.0.1",
+    "name" : "AllergyIntolerance"
   },
   {
-    "id" : "d692490b-413c-4fb5-a767-db447f3d1906",
-    "type" : "Questionnaire",
-    "url" : "https://fhir.virtually.healthcare/Questionnaire/self-measure-blood-pressure",
-    "version" : "0.0.1"
+    "id" : "Appointment",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.virtually.healthcare/StructureDefinition/Appointment",
+    "version" : "0.0.1",
+    "name" : "Appointment"
+  },
+  {
+    "id" : "AppointmentResponse",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.virtually.healthcare/StructureDefinition/AppointmentResponse",
+    "version" : "0.0.1",
+    "name" : "AppointmentResponse"
+  },
+  {
+    "id" : "Condition",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.virtually.healthcare/StructureDefinition/Condition",
+    "version" : "0.0.1",
+    "name" : "Condition"
   },
   {
     "id" : "DocumentReference",
@@ -48,6 +82,20 @@
     "url" : "https://fhir.virtually.healthcare/StructureDefinition/DocumentReference",
     "version" : "0.0.1",
     "name" : "DocumentReference"
+  },
+  {
+    "id" : "Immunization",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.virtually.healthcare/StructureDefinition/Immunization",
+    "version" : "0.0.1",
+    "name" : "Immunization"
+  },
+  {
+    "id" : "MedicationRequest",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.virtually.healthcare/StructureDefinition/MedicationRequest",
+    "version" : "0.0.1",
+    "name" : "MedicationRequest"
   },
   {
     "id" : "Observation",
@@ -76,6 +124,20 @@
     "url" : "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse",
     "version" : "0.0.1",
     "name" : "QuestionnaireResponse"
+  },
+  {
+    "id" : "Schedule",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.virtually.healthcare/StructureDefinition/Schedule",
+    "version" : "0.0.1",
+    "name" : "Schedule"
+  },
+  {
+    "id" : "Slot",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.virtually.healthcare/StructureDefinition/Slot",
+    "version" : "0.0.1",
+    "name" : "Slot"
   },
   {
     "id" : "Task",

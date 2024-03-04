@@ -9,7 +9,7 @@
   "version" : "0.0.1",
   "name" : "QuestionnaireResponse",
   "status" : "draft",
-  "date" : "2024-03-01T08:53:42+00:00",
+  "date" : "2024-03-04T08:45:19+00:00",
   "publisher" : "Virtually Healthcare",
   "contact" : [{
     "name" : "Virtually Healthcare",
@@ -18,7 +18,7 @@
       "value" : "https://virtually.healthcare"
     }]
   }],
-  "description" : "Will include UK Core if required",
+  "description" : "Based on FHIR Structured Data Capture",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

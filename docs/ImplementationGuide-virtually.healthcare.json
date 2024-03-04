@@ -10,7 +10,7 @@
   "name" : "VirtuallyHealthcareImplementationGuide",
   "title" : "Virtually Healthcare Implementation Guide",
   "status" : "draft",
-  "date" : "2024-03-01T08:53:42+00:00",
+  "date" : "2024-03-04T08:45:19+00:00",
   "publisher" : "Virtually Healthcare",
   "contact" : [{
     "name" : "Virtually Healthcare",
@@ -72,6 +72,12 @@
     "uri" : "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd",
     "packageId" : "ihe.iti.mhd",
     "version" : "4.2.1"
+  },
+  {
+    "id" : "hl7_fhir_uv_sdc",
+    "uri" : "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+    "packageId" : "hl7.fhir.uv.sdc",
+    "version" : "3.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -631,89 +637,60 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
+        "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "Task/63294ce7-eb5d-4371-a653-d3443e186500"
+        "reference" : "Patient/a8a85872-87c7-4f20-89c1-6747f980f919"
       },
-      "name" : "63294ce7-eb5d-4371-a653-d3443e186500",
+      "name" : "a8a85872-87c7-4f20-89c1-6747f980f919",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "QuestionnaireResponse/68aef45d-1b7b-4d9b-a62c-8382c44d8458"
+        "reference" : "StructureDefinition/AllergyIntolerance"
       },
-      "name" : "68aef45d-1b7b-4d9b-a62c-8382c44d8458",
+      "name" : "AllergyIntolerance",
+      "description" : "Union of UKCore, IPA and IHE QEDm",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "QuestionnaireResponse/798ff459-6685-4526-8ce9-db2842b73dca"
+        "reference" : "StructureDefinition/Appointment"
       },
-      "name" : "798ff459-6685-4526-8ce9-db2842b73dca",
+      "name" : "Appointment",
+      "description" : "Union of UKCore and NHS England Scheduling",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "QuestionnaireResponse/aws-hybrid"
+        "reference" : "StructureDefinition/AppointmentResponse"
       },
-      "name" : "aws-hybrid",
+      "name" : "AppointmentResponse",
+      "description" : "'Accept/Reject an appointment'. Union of UKCore and NHS England Scheduling",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400"
+        "reference" : "StructureDefinition/Condition"
       },
-      "name" : "blood-pressure",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906"
-      },
-      "name" : "blood-pressure",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8"
-      },
-      "name" : "body-weight",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/document"
-      },
-      "name" : "document",
+      "name" : "Condition",
+      "description" : "Union of UKCore, IPA and IHE QEDm",
       "exampleBoolean" : false
     },
     {
@@ -725,7 +702,7 @@
         "reference" : "CapabilityStatement/DocumentIndexProvider"
       },
       "name" : "Document Index Provider based on IHE MHD",
-      "description" : "Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access.",
+      "description" : "Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access. \nBackwards compatible with IHE XDS.",
       "exampleBoolean" : false
     },
     {
@@ -743,12 +720,25 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "QuestionnaireResponse/fatigue"
+        "reference" : "StructureDefinition/Immunization"
       },
-      "name" : "fatigue",
+      "name" : "Immunization",
+      "description" : "Union of UKCore, IPA and IHE QEDm",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MedicationRequest"
+      },
+      "name" : "MedicationRequest",
+      "description" : "Union of UKCore, IPA and IHE QEDm",
       "exampleBoolean" : false
     },
     {
@@ -784,7 +774,30 @@
         "reference" : "CapabilityStatement/PatientIndexProvider"
       },
       "name" : "Patient Index Provider based on IHE PDQm",
-      "description" : "Provider supports read-only access to a patient index for the purposes of direct care and subject of care access.",
+      "description" : "Provider supports read-only access to a patient index (PAS, MPI or PDS) for the purposes of direct care and subject of care access.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/prescription-refill-request"
+      },
+      "name" : "prescription-refill-request",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/QueryAPIProvider"
+      },
+      "name" : "Query API Provider based on IHE QEDm and IPA",
+      "description" : "Provider supports read-only access structured clinical record held within EHR's.",
       "exampleBoolean" : false
     },
     {
@@ -796,7 +809,7 @@
         "reference" : "StructureDefinition/Questionnaire"
       },
       "name" : "Questionnaire",
-      "description" : "Will include UK Core if required",
+      "description" : "Based on FHIR Structured Data Capture",
       "exampleBoolean" : false
     },
     {
@@ -808,7 +821,66 @@
         "reference" : "StructureDefinition/QuestionnaireResponse"
       },
       "name" : "QuestionnaireResponse",
-      "description" : "Will include UK Core if required",
+      "description" : "Based on FHIR Structured Data Capture",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/questionnaireresponse-vital-signs"
+      },
+      "name" : "questionnaireresponse-vital-signs",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Schedule"
+      },
+      "name" : "Schedule",
+      "description" : "Union of UKCore and NHS England Scheduling",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/SchedulingProvider"
+      },
+      "name" : "Scheduling Provider",
+      "description" : "Scheduling API blueprint for appointment providers (PAS and EPR) based on \n - [NHS Booking - FHIR API](https://digital.nhs.uk/developer/api-catalogue/nhs-booking-fhir) \n - [GP Connect Appointment Management - FHIR API](https://digital.nhs.uk/developer/api-catalogue/gp-connect-appointment-management-fhir) \n - [IM1 supplier APIs](https://digital.nhs.uk/developer/api-catalogue/interface-mechanism-1-standards)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Slot"
+      },
+      "name" : "Slot",
+      "description" : "Union of UKCore and NHS England Scheduling",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/StructuredDataCaptureProvider"
+      },
+      "name" : "Structured Data Capture Provider",
+      "description" : "Providers supports read only access to sources of structured data capture (e.g. openEHR). Is currently focused on Finding Questionnaires (Form Definitions) and Finding Completed Questionnaires. Form Pre-Population is suppported by capabilities in other provider API's. \n - [FHIR Structured Data Capture](https://build.fhir.org/ig/HL7/sdc/)",
       "exampleBoolean" : false
     },
     {
@@ -820,7 +892,7 @@
         "reference" : "StructureDefinition/Task"
       },
       "name" : "Task",
-      "description" : "Will include UK Core if required",
+      "description" : "Based on FHIR Workflow",
       "exampleBoolean" : false
     },
     {
@@ -837,13 +909,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
+        "valueString" : "CapabilityStatement"
       }],
       "reference" : {
-        "reference" : "Task/task-patient1"
+        "reference" : "CapabilityStatement/WorkflowProvider"
       },
-      "name" : "Example Task - task-patient1",
-      "exampleCanonical" : "https://fhir.virtually.healthcare/StructureDefinition/Task"
+      "name" : "Workflow Provider",
+      "description" : "Is primarily focused on supporting clinical process. \nTechnically this is a replacment of messaging with [conversations](https://www.enterpriseintegrationpatterns.com/patterns/conversation/index.html) and the workflow API is based on \n - [FHIR Workflow](https://hl7.org/fhir/R4/workflow-module.html)",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{
@@ -914,6 +987,15 @@
         }],
         "nameUrl" : "find-patient.html",
         "title" : "Find Patient",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "structured-data-capture.html"
+        }],
+        "nameUrl" : "structured-data-capture.html",
+        "title" : "Structured Data Capture",
         "generation" : "markdown"
       },
       {

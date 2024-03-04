@@ -7,7 +7,7 @@ Title: "Patient Index Provider based on IHE PDQm"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format = #json
-* description = "Provider supports read-only access to a patient index for the purposes of direct care and subject of care access."
+* description = "Provider supports read-only access to a patient index (PAS, MPI or PDS) for the purposes of direct care and subject of care access."
 * rest.mode = #server
 
 //Patient

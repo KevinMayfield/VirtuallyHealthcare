@@ -13,6 +13,7 @@
     <sch:title>f:Task</sch:title>
     <sch:rule context="f:Task">
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:for) &gt;= 1">for: minimum cardinality of 'for' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

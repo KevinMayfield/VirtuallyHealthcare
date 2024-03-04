@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "VirtuallyHealthcareImplementationGuide"] ; # 
   fhir:title [ fhir:v "Virtually Healthcare Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-01T08:53:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-04T08:45:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Virtually Healthcare"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Virtually Healthcare" ] ;
@@ -92,6 +92,14 @@
      ] ;
      fhir:packageId [ fhir:v "ihe.iti.mhd" ] ;
      fhir:version [ fhir:v "4.2.1" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_sdc" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.sdc" ] ;
+     fhir:version [ fhir:v "3.0.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -551,90 +559,61 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Task" ]
+         fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.virtually.healthcare/Task/63294ce7-eb5d-4371-a653-d3443e186500> ;
-         fhir:reference [ fhir:v "Task/63294ce7-eb5d-4371-a653-d3443e186500" ]
+         fhir:link <https://fhir.virtually.healthcare/Patient/a8a85872-87c7-4f20-89c1-6747f980f919> ;
+         fhir:reference [ fhir:v "Patient/a8a85872-87c7-4f20-89c1-6747f980f919" ]
        ] ;
-       fhir:name [ fhir:v "63294ce7-eb5d-4371-a653-d3443e186500" ] ;
+       fhir:name [ fhir:v "a8a85872-87c7-4f20-89c1-6747f980f919" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "QuestionnaireResponse" ]
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.virtually.healthcare/QuestionnaireResponse/68aef45d-1b7b-4d9b-a62c-8382c44d8458> ;
-         fhir:reference [ fhir:v "QuestionnaireResponse/68aef45d-1b7b-4d9b-a62c-8382c44d8458" ]
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/AllergyIntolerance> ;
+         fhir:reference [ fhir:v "StructureDefinition/AllergyIntolerance" ]
        ] ;
-       fhir:name [ fhir:v "68aef45d-1b7b-4d9b-a62c-8382c44d8458" ] ;
+       fhir:name [ fhir:v "AllergyIntolerance" ] ;
+       fhir:description [ fhir:v "Union of UKCore, IPA and IHE QEDm" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "QuestionnaireResponse" ]
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.virtually.healthcare/QuestionnaireResponse/798ff459-6685-4526-8ce9-db2842b73dca> ;
-         fhir:reference [ fhir:v "QuestionnaireResponse/798ff459-6685-4526-8ce9-db2842b73dca" ]
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Appointment> ;
+         fhir:reference [ fhir:v "StructureDefinition/Appointment" ]
        ] ;
-       fhir:name [ fhir:v "798ff459-6685-4526-8ce9-db2842b73dca" ] ;
+       fhir:name [ fhir:v "Appointment" ] ;
+       fhir:description [ fhir:v "Union of UKCore and NHS England Scheduling" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "QuestionnaireResponse" ]
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.virtually.healthcare/QuestionnaireResponse/aws-hybrid> ;
-         fhir:reference [ fhir:v "QuestionnaireResponse/aws-hybrid" ]
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/AppointmentResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/AppointmentResponse" ]
        ] ;
-       fhir:name [ fhir:v "aws-hybrid" ] ;
+       fhir:name [ fhir:v "AppointmentResponse" ] ;
+       fhir:description [ fhir:v "'Accept/Reject an appointment'. Union of UKCore and NHS England Scheduling" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Questionnaire" ]
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.virtually.healthcare/Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400> ;
-         fhir:reference [ fhir:v "Questionnaire/7aac8781-aa31-4c27-a851-1f83258dc400" ]
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Condition> ;
+         fhir:reference [ fhir:v "StructureDefinition/Condition" ]
        ] ;
-       fhir:name [ fhir:v "blood-pressure" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Questionnaire" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.virtually.healthcare/Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906> ;
-         fhir:reference [ fhir:v "Questionnaire/d692490b-413c-4fb5-a767-db447f3d1906" ]
-       ] ;
-       fhir:name [ fhir:v "blood-pressure" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Questionnaire" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.virtually.healthcare/Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8> ;
-         fhir:reference [ fhir:v "Questionnaire/e8e5c92a-8941-40c2-bb85-f8634362bcb8" ]
-       ] ;
-       fhir:name [ fhir:v "body-weight" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "QuestionnaireResponse" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.virtually.healthcare/QuestionnaireResponse/document> ;
-         fhir:reference [ fhir:v "QuestionnaireResponse/document" ]
-       ] ;
-       fhir:name [ fhir:v "document" ] ;
+       fhir:name [ fhir:v "Condition" ] ;
+       fhir:description [ fhir:v "Union of UKCore, IPA and IHE QEDm" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -646,7 +625,7 @@
          fhir:reference [ fhir:v "CapabilityStatement/DocumentIndexProvider" ]
        ] ;
        fhir:name [ fhir:v "Document Index Provider based on IHE MHD" ] ;
-       fhir:description [ fhir:v "Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access." ] ;
+       fhir:description [ fhir:v "Provider supports read-only access to a patient document and clinical index for the purposes of direct care and subject of care access. \nBackwards compatible with IHE XDS." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -663,13 +642,26 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "QuestionnaireResponse" ]
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.virtually.healthcare/QuestionnaireResponse/fatigue> ;
-         fhir:reference [ fhir:v "QuestionnaireResponse/fatigue" ]
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Immunization> ;
+         fhir:reference [ fhir:v "StructureDefinition/Immunization" ]
        ] ;
-       fhir:name [ fhir:v "fatigue" ] ;
+       fhir:name [ fhir:v "Immunization" ] ;
+       fhir:description [ fhir:v "Union of UKCore, IPA and IHE QEDm" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/MedicationRequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/MedicationRequest" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationRequest" ] ;
+       fhir:description [ fhir:v "Union of UKCore, IPA and IHE QEDm" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -705,7 +697,30 @@
          fhir:reference [ fhir:v "CapabilityStatement/PatientIndexProvider" ]
        ] ;
        fhir:name [ fhir:v "Patient Index Provider based on IHE PDQm" ] ;
-       fhir:description [ fhir:v "Provider supports read-only access to a patient index for the purposes of direct care and subject of care access." ] ;
+       fhir:description [ fhir:v "Provider supports read-only access to a patient index (PAS, MPI or PDS) for the purposes of direct care and subject of care access." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Task" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/Task/prescription-refill-request> ;
+         fhir:reference [ fhir:v "Task/prescription-refill-request" ]
+       ] ;
+       fhir:name [ fhir:v "prescription-refill-request" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/CapabilityStatement/QueryAPIProvider> ;
+         fhir:reference [ fhir:v "CapabilityStatement/QueryAPIProvider" ]
+       ] ;
+       fhir:name [ fhir:v "Query API Provider based on IHE QEDm and IPA" ] ;
+       fhir:description [ fhir:v "Provider supports read-only access structured clinical record held within EHR's." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -717,7 +732,7 @@
          fhir:reference [ fhir:v "StructureDefinition/Questionnaire" ]
        ] ;
        fhir:name [ fhir:v "Questionnaire" ] ;
-       fhir:description [ fhir:v "Will include UK Core if required" ] ;
+       fhir:description [ fhir:v "Based on FHIR Structured Data Capture" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -729,7 +744,66 @@
          fhir:reference [ fhir:v "StructureDefinition/QuestionnaireResponse" ]
        ] ;
        fhir:name [ fhir:v "QuestionnaireResponse" ] ;
-       fhir:description [ fhir:v "Will include UK Core if required" ] ;
+       fhir:description [ fhir:v "Based on FHIR Structured Data Capture" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "QuestionnaireResponse" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/QuestionnaireResponse/questionnaireresponse-vital-signs> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/questionnaireresponse-vital-signs" ]
+       ] ;
+       fhir:name [ fhir:v "questionnaireresponse-vital-signs" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Schedule> ;
+         fhir:reference [ fhir:v "StructureDefinition/Schedule" ]
+       ] ;
+       fhir:name [ fhir:v "Schedule" ] ;
+       fhir:description [ fhir:v "Union of UKCore and NHS England Scheduling" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/CapabilityStatement/SchedulingProvider> ;
+         fhir:reference [ fhir:v "CapabilityStatement/SchedulingProvider" ]
+       ] ;
+       fhir:name [ fhir:v "Scheduling Provider" ] ;
+       fhir:description [ fhir:v "Scheduling API blueprint for appointment providers (PAS and EPR) based on \n - [NHS Booking - FHIR API](https://digital.nhs.uk/developer/api-catalogue/nhs-booking-fhir) \n - [GP Connect Appointment Management - FHIR API](https://digital.nhs.uk/developer/api-catalogue/gp-connect-appointment-management-fhir) \n - [IM1 supplier APIs](https://digital.nhs.uk/developer/api-catalogue/interface-mechanism-1-standards)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Slot> ;
+         fhir:reference [ fhir:v "StructureDefinition/Slot" ]
+       ] ;
+       fhir:name [ fhir:v "Slot" ] ;
+       fhir:description [ fhir:v "Union of UKCore and NHS England Scheduling" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/CapabilityStatement/StructuredDataCaptureProvider> ;
+         fhir:reference [ fhir:v "CapabilityStatement/StructuredDataCaptureProvider" ]
+       ] ;
+       fhir:name [ fhir:v "Structured Data Capture Provider" ] ;
+       fhir:description [ fhir:v "Providers supports read only access to sources of structured data capture (e.g. openEHR). Is currently focused on Finding Questionnaires (Form Definitions) and Finding Completed Questionnaires. Form Pre-Population is suppported by capabilities in other provider API's. \n - [FHIR Structured Data Capture](https://build.fhir.org/ig/HL7/sdc/)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -741,7 +815,7 @@
          fhir:reference [ fhir:v "StructureDefinition/Task" ]
        ] ;
        fhir:name [ fhir:v "Task" ] ;
-       fhir:description [ fhir:v "Will include UK Core if required" ] ;
+       fhir:description [ fhir:v "Based on FHIR Workflow" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -757,17 +831,15 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Task" ]
+         fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.virtually.healthcare/Task/task-patient1> ;
-         fhir:reference [ fhir:v "Task/task-patient1" ]
+         fhir:link <https://fhir.virtually.healthcare/CapabilityStatement/WorkflowProvider> ;
+         fhir:reference [ fhir:v "CapabilityStatement/WorkflowProvider" ]
        ] ;
-       fhir:name [ fhir:v "Example Task - task-patient1" ] ;
-       fhir:example [
-         fhir:v "https://fhir.virtually.healthcare/StructureDefinition/Task"^^xsd:anyURI ;
-         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Task>
-       ]
+       fhir:name [ fhir:v "Workflow Provider" ] ;
+       fhir:description [ fhir:v "Is primarily focused on supporting clinical process. \nTechnically this is a replacment of messaging with [conversations](https://www.enterpriseintegrationpatterns.com/patterns/conversation/index.html) and the workflow API is based on \n - [FHIR Workflow](https://hl7.org/fhir/R4/workflow-module.html)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
@@ -832,6 +904,14 @@
          ] ) ;
          fhir:name [ fhir:v "find-patient.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Find Patient" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "structured-data-capture.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "structured-data-capture.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Structured Data Capture" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

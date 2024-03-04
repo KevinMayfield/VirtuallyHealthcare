@@ -36,6 +36,7 @@ dependencies:
   ihe.iti.pdqm: 2.4.0
   hl7.fhir.uv.ipa: 1.0.0
   ihe.iti.mhd: 4.2.1
+  hl7.fhir.uv.sdc: 3.0.0
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
 # │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │
@@ -53,6 +54,7 @@ menu:
     Find Patient Documents: find-documents.html
     Clinical Notes and Compositions: clinical-notes-and-compositions.html
     Get Clinical Record: clinical-record.html
+    Structured Data Capture: structured-data-capture.html
   Volume 2:
     Archtitecture Detail : architecture-detail.html
   FHIR Assets: artifacts.html
