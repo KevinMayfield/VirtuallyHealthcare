@@ -1,0 +1,79 @@
+@startuml
+
+hide footbox
+
+title "Care and Support Plan"
+
+package "Our Clinical Data Repository" {
+
+  class "Personal Care and Support Plan: FHIR QuestionnaireResponse" as pcsp {
+    patient
+    items: Series of questions and answers
+  }
+
+  class "Care Plan (optional)" as carePlan {
+    patient
+    category : PCSP
+    careTeam?
+    addresses
+    goals
+  }
+
+  class "Goal : FHIR QuestionnaireResponse" as goal {
+    patient
+    items: Series of questions and answers
+  }
+
+  class "Goal (optional)" as Goal {
+    patient
+    targets
+    + measure
+  }
+
+  class "Problem : FHIR Condition" as problem {
+    patient
+    code
+  }
+  class "Observation" as observation {
+    patient
+    code : The question
+    value : The answer
+  }
+}
+
+package "Our Definitions" {
+   class "Personal Care and Support Plan Definition: FHIR Questionnaire" as pcspdef {
+    items: A series of Questions
+   }
+
+  class "Goal Definition : FHIR Questionnaire" as goaldef {
+      items: A series of Questions
+  }
+}
+
+package "EMIS, TPP, Android and/or Apple" {
+  class Observation {
+    patient
+    code : The question
+    value : The answer
+  }
+  class "Problem/Condition : FHIR Condition" as condition {
+    patient
+    code
+  }
+}
+
+pcsp ||--|{ problem
+pcsp ||--|| carePlan
+problem ||--|{ goal
+carePlan "addresses" ||--|{ problem
+carePlan "goals" ||--|{ Goal
+problem ||--o| condition
+pcsp ||--|{ Observation
+pcsp ||--|{ observation
+pcspdef ||--|{ pcsp
+goaldef ||--|{ goal
+Goal "measure" |o--|{ observation
+
+
+@enduml

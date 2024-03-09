@@ -10,7 +10,7 @@
   <name value="VirtuallyHealthcareImplementationGuide"/>
   <title value="Virtually Healthcare Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-03-04T08:45:19+00:00"/>
+  <date value="2024-03-09T08:46:02+00:00"/>
   <publisher value="Virtually Healthcare"/>
   <contact>
     <name value="Virtually Healthcare"/>
@@ -482,7 +482,7 @@
         <reference value="Patient/a8a85872-87c7-4f20-89c1-6747f980f919"/>
       </reference>
       <name value="a8a85872-87c7-4f20-89c1-6747f980f919"/>
-      <exampleBoolean value="false"/>
+      <exampleCanonical value="https://fhir.virtually.healthcare/StructureDefinition/Patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -519,6 +519,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/4953b4a9-cd3f-4a07-b12a-62b88cf3fb81"/>
+      </reference>
+      <name value="Care and Support Plan"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -548,6 +558,16 @@
       </reference>
       <name value="DocumentReference"/>
       <description value="Union of UKCore, IPA and IHE MHD"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/31424b39-5aec-4456-864b-86ad3348d075"/>
+      </reference>
+      <name value="Goal"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -613,7 +633,7 @@
         <reference value="Task/prescription-refill-request"/>
       </reference>
       <name value="prescription-refill-request"/>
-      <exampleBoolean value="false"/>
+      <exampleCanonical value="https://fhir.virtually.healthcare/StructureDefinition/Task"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -656,7 +676,7 @@
         <reference value="QuestionnaireResponse/questionnaireresponse-vital-signs"/>
       </reference>
       <name value="questionnaireresponse-vital-signs"/>
-      <exampleBoolean value="false"/>
+      <exampleCanonical value="https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -755,6 +775,14 @@
         </extension>
         <nameUrl value="architecture-detail.html"/>
         <title value="Architecture Detail"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="care-plans.html"/>
+        </extension>
+        <nameUrl value="care-plans.html"/>
+        <title value="Care Plans"/>
         <generation value="markdown"/>
       </page>
       <page>

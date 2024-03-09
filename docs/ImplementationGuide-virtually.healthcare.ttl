@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "VirtuallyHealthcareImplementationGuide"] ; # 
   fhir:title [ fhir:v "Virtually Healthcare Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-04T08:45:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-09T08:46:02+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Virtually Healthcare"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Virtually Healthcare" ] ;
@@ -566,7 +566,10 @@
          fhir:reference [ fhir:v "Patient/a8a85872-87c7-4f20-89c1-6747f980f919" ]
        ] ;
        fhir:name [ fhir:v "a8a85872-87c7-4f20-89c1-6747f980f919" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
+       fhir:example [
+         fhir:v "https://fhir.virtually.healthcare/StructureDefinition/Patient"^^xsd:anyURI ;
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Patient>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -606,6 +609,17 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/Questionnaire/4953b4a9-cd3f-4a07-b12a-62b88cf3fb81> ;
+         fhir:reference [ fhir:v "Questionnaire/4953b4a9-cd3f-4a07-b12a-62b88cf3fb81" ]
+       ] ;
+       fhir:name [ fhir:v "Care and Support Plan" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -638,6 +652,17 @@
        ] ;
        fhir:name [ fhir:v "DocumentReference" ] ;
        fhir:description [ fhir:v "Union of UKCore, IPA and IHE MHD" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/Questionnaire/31424b39-5aec-4456-864b-86ad3348d075> ;
+         fhir:reference [ fhir:v "Questionnaire/31424b39-5aec-4456-864b-86ad3348d075" ]
+       ] ;
+       fhir:name [ fhir:v "Goal" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -709,7 +734,10 @@
          fhir:reference [ fhir:v "Task/prescription-refill-request" ]
        ] ;
        fhir:name [ fhir:v "prescription-refill-request" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
+       fhir:example [
+         fhir:v "https://fhir.virtually.healthcare/StructureDefinition/Task"^^xsd:anyURI ;
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/Task>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -756,7 +784,10 @@
          fhir:reference [ fhir:v "QuestionnaireResponse/questionnaireresponse-vital-signs" ]
        ] ;
        fhir:name [ fhir:v "questionnaireresponse-vital-signs" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
+       fhir:example [
+         fhir:v "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"^^xsd:anyURI ;
+         fhir:link <https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -864,6 +895,14 @@
          ] ) ;
          fhir:name [ fhir:v "architecture-detail.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Architecture Detail" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "care-plans.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "care-plans.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Care Plans" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

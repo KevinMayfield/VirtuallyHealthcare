@@ -6,11 +6,11 @@
   "status" : "draft",
   "package-id" : "virtually.healthcare",
   "ig-ver" : "0.0.1",
-  "date" : "Mon, 04 Mar, 2024 08:45:19 +0000",
-  "errs" : 37,
-  "warnings" : 24,
-  "hints" : 2,
+  "date" : "Sat, 09 Mar, 2024 08:46:02 +0000",
+  "errs" : 39,
+  "warnings" : 26,
+  "hints" : 4,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1491794984
+  "maxMemory" : 1173071072
 }

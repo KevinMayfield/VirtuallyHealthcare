@@ -1,3 +1,16 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "UKCoreConditionCode",
+      "title" : "UK Core Condition Code",
+      "description" : "A set of codes that define a clinical finding or a finding with explicit context or an event. Selected from the SNOMED CT UK coding system.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "Questionnaire-4953b4a9-cd3f-4a07-b12a-62b88cf3fb81.html" : "Care and Support Plan"
+    }
+  ]
 }

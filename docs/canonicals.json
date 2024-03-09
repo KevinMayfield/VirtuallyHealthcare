@@ -43,6 +43,18 @@
     "name" : "VirtuallyHealthcareImplementationGuide"
   },
   {
+    "id" : "31424b39-5aec-4456-864b-86ad3348d075",
+    "type" : "Questionnaire",
+    "url" : "https://fhir.virtually.healthcare/Questionnaire/31424b39-5aec-4456-864b-86ad3348d075",
+    "version" : "0.0.1"
+  },
+  {
+    "id" : "4953b4a9-cd3f-4a07-b12a-62b88cf3fb81",
+    "type" : "Questionnaire",
+    "url" : "https://fhir.virtually.healthcare/Questionnaire/4953b4a9-cd3f-4a07-b12a-62b88cf3fb81",
+    "version" : "0.0.1"
+  },
+  {
     "id" : "0d9fccea-9c98-4e61-b3e0-bc9b3a9db675",
     "type" : "Questionnaire",
     "url" : "https://fhir.virtually.healthcare/Questionnaire/VitalSignsFinding",

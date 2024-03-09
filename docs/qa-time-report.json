@@ -1,54 +1,54 @@
 {
-  "date" : "Mon, 04 Mar, 2024 08:45:19 +0000",
+  "date" : "Sat, 09 Mar, 2024 08:46:02 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-virtually.healthcare.json",
-      "size" : 10370,
+      "size" : 11073,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 41,
-          "length" : 85
+          "start" : 44,
+          "length" : 66
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 43,
+          "start" : 47,
           "length" : 3
         },
         {
           "activity" : "generateNarratives",
-          "start" : 43,
-          "length" : 82
+          "start" : 47,
+          "length" : 81
         },
         {
           "activity" : "validate",
-          "start" : 50,
-          "length" : 544
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 51,
-          "length" : 1
+          "start" : 55,
+          "length" : 890
         },
         {
           "activity" : "generate1",
-          "start" : 51,
-          "length" : 211
+          "start" : 56,
+          "length" : 456
         },
         {
           "activity" : "generate2",
-          "start" : 64,
-          "length" : 250
+          "start" : 72,
+          "length" : 193
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 125,
+          "length" : 1
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
-          "length" : 3
+          "start" : 126,
+          "length" : 2
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 138,
+          "start" : 145,
           "length" : 1
         }
       ]
@@ -59,37 +59,42 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 7
+          "start" : 44,
+          "length" : 10
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 44,
+          "length" : 1
         },
         {
           "activity" : "load",
-          "start" : 41,
-          "length" : 13
+          "start" : 44,
+          "length" : 11
         },
         {
           "activity" : "generateNarratives",
-          "start" : 43,
-          "length" : 13
+          "start" : 47,
+          "length" : 17
         },
         {
           "activity" : "validate",
-          "start" : 50,
-          "length" : 36
+          "start" : 54,
+          "length" : 19
         },
         {
           "activity" : "generate1",
-          "start" : 51,
-          "length" : 65
+          "start" : 57,
+          "length" : 85
         },
         {
           "activity" : "generate2",
-          "start" : 65,
-          "length" : 66
+          "start" : 72,
+          "length" : 86
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
+          "start" : 126,
           "length" : 1
         }
       ]
@@ -100,37 +105,42 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 7
+          "start" : 44,
+          "length" : 8
         },
         {
           "activity" : "load",
-          "start" : 41,
+          "start" : 44,
           "length" : 9
         },
         {
+          "activity" : "checkR4R4B",
+          "start" : 47,
+          "length" : 1
+        },
+        {
           "activity" : "generateNarratives",
-          "start" : 43,
-          "length" : 12
+          "start" : 47,
+          "length" : 13
         },
         {
           "activity" : "validate",
-          "start" : 50,
-          "length" : 20
+          "start" : 54,
+          "length" : 17
         },
         {
           "activity" : "generate1",
-          "start" : 51,
-          "length" : 64
+          "start" : 57,
+          "length" : 75
         },
         {
           "activity" : "generate2",
-          "start" : 65,
-          "length" : 48
+          "start" : 72,
+          "length" : 67
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
+          "start" : 126,
           "length" : 1
         }
       ]
@@ -141,43 +151,43 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 15
+          "start" : 44,
+          "length" : 19
         },
         {
-          "activity" : "load",
-          "start" : 41,
-          "length" : 30
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 43,
+          "activity" : "load-configure",
+          "start" : 44,
           "length" : 1
         },
         {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 17
+        },
+        {
           "activity" : "generateNarratives",
-          "start" : 43,
-          "length" : 22
+          "start" : 47,
+          "length" : 24
         },
         {
           "activity" : "validate",
-          "start" : 50,
-          "length" : 54
+          "start" : 54,
+          "length" : 44
         },
         {
           "activity" : "generate1",
-          "start" : 51,
-          "length" : 177
+          "start" : 57,
+          "length" : 190
         },
         {
           "activity" : "generate2",
-          "start" : 65,
-          "length" : 59
+          "start" : 72,
+          "length" : 80
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
-          "length" : 2
+          "start" : 126,
+          "length" : 1
         }
       ]
     },
@@ -187,38 +197,38 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 7
+          "start" : 44,
+          "length" : 10
         },
         {
           "activity" : "load",
-          "start" : 41,
-          "length" : 13
+          "start" : 44,
+          "length" : 11
         },
         {
           "activity" : "generateNarratives",
-          "start" : 43,
+          "start" : 47,
           "length" : 12
         },
         {
           "activity" : "validate",
-          "start" : 50,
-          "length" : 24
+          "start" : 54,
+          "length" : 20
         },
         {
           "activity" : "generate1",
-          "start" : 51,
-          "length" : 104
+          "start" : 57,
+          "length" : 114
         },
         {
           "activity" : "generate2",
-          "start" : 65,
-          "length" : 106
+          "start" : 72,
+          "length" : 68
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
-          "length" : 2
+          "start" : 126,
+          "length" : 1
         }
       ]
     },
@@ -228,42 +238,37 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 10
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 41,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 41,
-          "length" : 11
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 43,
+          "start" : 44,
           "length" : 9
         },
         {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 47,
+          "length" : 10
+        },
+        {
           "activity" : "validate",
-          "start" : 50,
-          "length" : 19
+          "start" : 55,
+          "length" : 14
         },
         {
           "activity" : "generate1",
-          "start" : 51,
-          "length" : 81
+          "start" : 57,
+          "length" : 87
         },
         {
           "activity" : "generate2",
-          "start" : 65,
-          "length" : 92
+          "start" : 72,
+          "length" : 79
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
+          "start" : 126,
           "length" : 1
         }
       ]
@@ -274,47 +279,42 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 6
+          "start" : 44,
+          "length" : 7
         },
         {
           "activity" : "load",
-          "start" : 41,
+          "start" : 44,
           "length" : 8
         },
         {
-          "activity" : "load",
-          "start" : 41,
-          "length" : 1
-        },
-        {
           "activity" : "checkR4R4B",
-          "start" : 43,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 43,
-          "length" : 8
+          "start" : 47,
+          "length" : 10
         },
         {
           "activity" : "validate",
-          "start" : 50,
-          "length" : 14
+          "start" : 55,
+          "length" : 10
         },
         {
           "activity" : "generate1",
-          "start" : 52,
-          "length" : 66
+          "start" : 57,
+          "length" : 63
         },
         {
           "activity" : "generate2",
-          "start" : 65,
-          "length" : 93
+          "start" : 73,
+          "length" : 64
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
+          "start" : 126,
           "length" : 1
         }
       ]
@@ -325,53 +325,53 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
+          "start" : 44,
           "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 41,
+          "start" : 44,
           "length" : 12
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 41,
-          "length" : 116
+          "start" : 44,
+          "length" : 149
         },
         {
           "activity" : "generateNarratives",
-          "start" : 43,
-          "length" : 110
+          "start" : 47,
+          "length" : 135
         },
         {
           "activity" : "validate",
-          "start" : 46,
-          "length" : 393
+          "start" : 50,
+          "length" : 513
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 56,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 56,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 52,
-          "length" : 464
+          "start" : 57,
+          "length" : 447
         },
         {
           "activity" : "generate2",
-          "start" : 65,
-          "length" : 2208
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 118,
-          "length" : 1
+          "start" : 73,
+          "length" : 2561
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
-          "length" : 4
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 138,
-          "length" : 1
+          "start" : 126,
+          "length" : 3
         }
       ]
     },
@@ -381,48 +381,53 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 4
+          "start" : 44,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 41,
-          "length" : 7
+          "start" : 44,
+          "length" : 8
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 41,
-          "length" : 119
+          "start" : 45,
+          "length" : 156
         },
         {
           "activity" : "generateNarratives",
-          "start" : 43,
-          "length" : 111
+          "start" : 47,
+          "length" : 146
         },
         {
           "activity" : "validate",
-          "start" : 47,
-          "length" : 263
+          "start" : 51,
+          "length" : 333
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 51,
-          "length" : 1
+          "start" : 56,
+          "length" : 2
         },
         {
           "activity" : "generate1",
-          "start" : 52,
-          "length" : 383
+          "start" : 58,
+          "length" : 407
         },
         {
           "activity" : "generate2",
-          "start" : 67,
-          "length" : 953
+          "start" : 75,
+          "length" : 1013
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
-          "length" : 4
+          "start" : 126,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 145,
+          "length" : 1
         }
       ]
     },
@@ -432,48 +437,43 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 4
+          "start" : 44,
+          "length" : 6
         },
         {
           "activity" : "load",
-          "start" : 41,
-          "length" : 7
+          "start" : 44,
+          "length" : 8
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 41,
-          "length" : 59
+          "start" : 45,
+          "length" : 68
         },
         {
           "activity" : "generateNarratives",
-          "start" : 44,
-          "length" : 49
+          "start" : 47,
+          "length" : 72
         },
         {
           "activity" : "validate",
-          "start" : 47,
-          "length" : 113
-        },
-        {
-          "activity" : "scanForUsageStats",
           "start" : 51,
-          "length" : 1
+          "length" : 132
         },
         {
           "activity" : "generate1",
-          "start" : 52,
-          "length" : 233
+          "start" : 58,
+          "length" : 206
         },
         {
           "activity" : "generate2",
-          "start" : 68,
-          "length" : 693
+          "start" : 76,
+          "length" : 643
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
-          "length" : 1
+          "start" : 126,
+          "length" : 5
         }
       ]
     },
@@ -483,48 +483,48 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
+          "start" : 44,
           "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 41,
-          "length" : 8
+          "start" : 44,
+          "length" : 7
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 41,
-          "length" : 133
+          "start" : 45,
+          "length" : 134
         },
         {
           "activity" : "generateNarratives",
-          "start" : 44,
-          "length" : 121
+          "start" : 47,
+          "length" : 140
         },
         {
           "activity" : "validate",
-          "start" : 47,
-          "length" : 253
+          "start" : 51,
+          "length" : 338
         },
         {
           "activity" : "generate1",
-          "start" : 53,
-          "length" : 396
+          "start" : 58,
+          "length" : 647
         },
         {
           "activity" : "generate2",
-          "start" : 69,
-          "length" : 574
+          "start" : 77,
+          "length" : 701
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
-          "length" : 4
+          "start" : 126,
+          "length" : 5
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 138,
-          "length" : 2
+          "start" : 145,
+          "length" : 1
         }
       ]
     },
@@ -534,57 +534,62 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 5
+          "start" : 44,
+          "length" : 6
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "scan",
+          "start" : 44,
+          "length" : 1
         },
         {
           "activity" : "load",
-          "start" : 41,
-          "length" : 8
+          "start" : 44,
+          "length" : 9
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 42,
-          "length" : 172
+          "start" : 45,
+          "length" : 208
         },
         {
           "activity" : "generateNarratives",
-          "start" : 44,
-          "length" : 181
+          "start" : 47,
+          "length" : 190
         },
         {
           "activity" : "validate",
-          "start" : 47,
-          "length" : 306
+          "start" : 52,
+          "length" : 403
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 51,
+          "start" : 56,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 53,
-          "length" : 677
+          "start" : 59,
+          "length" : 730
         },
         {
           "activity" : "generate2",
-          "start" : 70,
-          "length" : 829
-        },
-        {
-          "activity" : "makeDependencies",
-          "start" : 104,
-          "length" : 1
+          "start" : 78,
+          "length" : 919
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
-          "length" : 4
+          "start" : 126,
+          "length" : 6
         },
         {
-          "activity" : "scanProfilesForR5",
-          "start" : 138,
+          "activity" : "scanExamplesForR5",
+          "start" : 145,
           "length" : 1
         }
       ]
@@ -595,42 +600,47 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 4
+          "start" : 44,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 41,
-          "length" : 8
+          "start" : 44,
+          "length" : 7
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 42,
-          "length" : 184
+          "start" : 45,
+          "length" : 230
         },
         {
           "activity" : "generateNarratives",
-          "start" : 44,
-          "length" : 177
+          "start" : 48,
+          "length" : 171
         },
         {
           "activity" : "validate",
-          "start" : 48,
-          "length" : 286
+          "start" : 52,
+          "length" : 419
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 56,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 54,
-          "length" : 1062
+          "start" : 60,
+          "length" : 1621
         },
         {
           "activity" : "generate2",
-          "start" : 70,
-          "length" : 717
+          "start" : 78,
+          "length" : 821
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
+          "start" : 126,
           "length" : 5
         }
       ]
@@ -641,57 +651,52 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
+          "start" : 44,
           "length" : 4
         },
         {
-          "activity" : "load-configure",
-          "start" : 41,
-          "length" : 1
-        },
-        {
           "activity" : "load",
-          "start" : 41,
+          "start" : 44,
           "length" : 7
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 42,
-          "length" : 262
+          "start" : 45,
+          "length" : 268
         },
         {
           "activity" : "generateNarratives",
-          "start" : 44,
-          "length" : 221
+          "start" : 48,
+          "length" : 246
         },
         {
           "activity" : "validate",
-          "start" : 48,
-          "length" : 415
+          "start" : 53,
+          "length" : 337
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 51,
+          "start" : 56,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 55,
-          "length" : 765
+          "start" : 61,
+          "length" : 851
         },
         {
           "activity" : "generate2",
-          "start" : 71,
-          "length" : 972
+          "start" : 79,
+          "length" : 997
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
+          "start" : 126,
           "length" : 7
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 138,
+          "start" : 145,
           "length" : 1
         }
       ]
@@ -702,47 +707,47 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 5
+          "start" : 44,
+          "length" : 6
         },
         {
           "activity" : "load",
-          "start" : 41,
+          "start" : 44,
           "length" : 8
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 42,
-          "length" : 177
+          "start" : 46,
+          "length" : 220
         },
         {
           "activity" : "generateNarratives",
-          "start" : 44,
-          "length" : 180
+          "start" : 48,
+          "length" : 157
         },
         {
           "activity" : "validate",
-          "start" : 48,
-          "length" : 268
+          "start" : 53,
+          "length" : 226
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 51,
+          "start" : 56,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 56,
-          "length" : 528
+          "start" : 62,
+          "length" : 1253
         },
         {
           "activity" : "generate2",
-          "start" : 72,
-          "length" : 682
+          "start" : 80,
+          "length" : 774
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
+          "start" : 126,
           "length" : 6
         }
       ]
@@ -753,53 +758,58 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 8
+          "start" : 44,
+          "length" : 6
         },
         {
           "activity" : "load",
-          "start" : 41,
-          "length" : 9
+          "start" : 44,
+          "length" : 10
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 42,
-          "length" : 188
+          "start" : 46,
+          "length" : 213
         },
         {
           "activity" : "generateNarratives",
-          "start" : 44,
-          "length" : 183
+          "start" : 48,
+          "length" : 247
         },
         {
           "activity" : "validate",
-          "start" : 49,
-          "length" : 270
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 51,
-          "length" : 1
+          "start" : 53,
+          "length" : 329
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 51,
+          "start" : 56,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 56,
-          "length" : 847
+          "start" : 63,
+          "length" : 998
         },
         {
           "activity" : "generate2",
-          "start" : 73,
-          "length" : 692
+          "start" : 81,
+          "length" : 746
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
-          "length" : 6
+          "start" : 126,
+          "length" : 7
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 145,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 145,
+          "length" : 1
         }
       ]
     },
@@ -809,48 +819,53 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 7
-        },
-        {
-          "activity" : "load",
-          "start" : 41,
+          "start" : 44,
           "length" : 6
         },
         {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 7
+        },
+        {
           "activity" : "generateSnapshots",
-          "start" : 43,
-          "length" : 240
+          "start" : 46,
+          "length" : 220
         },
         {
           "activity" : "generateNarratives",
-          "start" : 45,
-          "length" : 168
+          "start" : 48,
+          "length" : 332
         },
         {
           "activity" : "validate",
-          "start" : 49,
-          "length" : 234
+          "start" : 53,
+          "length" : 290
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 56,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 56,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 785
+          "start" : 64,
+          "length" : 659
         },
         {
           "activity" : "generate2",
-          "start" : 73,
-          "length" : 729
+          "start" : 82,
+          "length" : 707
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
-          "length" : 8
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 138,
-          "length" : 1
+          "start" : 126,
+          "length" : 7
         }
       ]
     },
@@ -860,47 +875,42 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 4
+          "start" : 44,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 41,
+          "start" : 44,
           "length" : 7
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 43,
-          "length" : 112
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 45,
-          "length" : 91
-        },
-        {
-          "activity" : "validate",
-          "start" : 49,
+          "start" : 46,
           "length" : 119
         },
         {
-          "activity" : "scanForUsageStats",
-          "start" : 51,
-          "length" : 1
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 106
+        },
+        {
+          "activity" : "validate",
+          "start" : 54,
+          "length" : 145
         },
         {
           "activity" : "generate1",
-          "start" : 58,
-          "length" : 353
+          "start" : 65,
+          "length" : 375
         },
         {
           "activity" : "generate2",
-          "start" : 74,
-          "length" : 447
+          "start" : 82,
+          "length" : 382
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
+          "start" : 126,
           "length" : 4
         }
       ]
@@ -911,47 +921,42 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 4
-        },
-        {
-          "activity" : "scan",
-          "start" : 41,
-          "length" : 1
+          "start" : 44,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 41,
+          "start" : 44,
           "length" : 6
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 43,
-          "length" : 54
+          "start" : 46,
+          "length" : 58
         },
         {
           "activity" : "generateNarratives",
-          "start" : 45,
-          "length" : 42
+          "start" : 49,
+          "length" : 56
         },
         {
           "activity" : "validate",
-          "start" : 49,
-          "length" : 64
+          "start" : 54,
+          "length" : 123
         },
         {
           "activity" : "generate1",
-          "start" : 58,
-          "length" : 191
+          "start" : 65,
+          "length" : 203
         },
         {
           "activity" : "generate2",
-          "start" : 75,
-          "length" : 559
+          "start" : 83,
+          "length" : 441
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
+          "start" : 126,
           "length" : 2
         }
       ]
@@ -962,42 +967,57 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 4
+          "start" : 44,
+          "length" : 5
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 44,
+          "length" : 1
         },
         {
           "activity" : "load",
-          "start" : 41,
-          "length" : 8
+          "start" : 44,
+          "length" : 6
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 43,
-          "length" : 56
+          "start" : 47,
+          "length" : 65
         },
         {
           "activity" : "generateNarratives",
-          "start" : 45,
-          "length" : 47
+          "start" : 49,
+          "length" : 63
         },
         {
           "activity" : "validate",
-          "start" : 49,
-          "length" : 64
+          "start" : 54,
+          "length" : 97
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 56,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 58,
-          "length" : 193
+          "start" : 66,
+          "length" : 206
         },
         {
           "activity" : "generate2",
-          "start" : 75,
-          "length" : 557
+          "start" : 83,
+          "length" : 463
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
+          "start" : 126,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 145,
           "length" : 1
         }
       ]
@@ -1008,84 +1028,238 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
+          "start" : 44,
           "length" : 6
         },
         {
           "activity" : "load",
-          "start" : 41,
+          "start" : 44,
           "length" : 8
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 43,
+          "start" : 47,
           "length" : 166
         },
         {
           "activity" : "generateNarratives",
-          "start" : 45,
-          "length" : 152
+          "start" : 49,
+          "length" : 196
         },
         {
           "activity" : "validate",
-          "start" : 50,
-          "length" : 289
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 51,
-          "length" : 1
+          "start" : 54,
+          "length" : 312
         },
         {
           "activity" : "generate1",
-          "start" : 58,
-          "length" : 581
+          "start" : 66,
+          "length" : 587
         },
         {
           "activity" : "generate2",
-          "start" : 76,
-          "length" : 635
+          "start" : 84,
+          "length" : 731
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 125,
+          "length" : 1
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
+          "start" : 126,
           "length" : 5
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 138,
-          "length" : 1
         }
       ]
     },
     {
-      "name" : "input/resources/Patient-leslie-foster.json",
+      "name" : "input/examples/Patient-leslie-foster.json",
       "size" : 1012,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
+          "start" : 44,
           "length" : 4
         },
         {
           "activity" : "generateNarratives",
-          "start" : 45,
-          "length" : 1243
+          "start" : 49,
+          "length" : 1158
         },
         {
           "activity" : "validate",
-          "start" : 51,
-          "length" : 11
+          "start" : 56,
+          "length" : 19
         },
         {
           "activity" : "generate1",
-          "start" : 59,
-          "length" : 23
+          "start" : 66,
+          "length" : 21
         },
         {
           "activity" : "generate2",
-          "start" : 76,
-          "length" : 57
+          "start" : 85,
+          "length" : 48
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/questionnaire-response-vital-signs.json",
+      "size" : 3650,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 11
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 50,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 56,
+          "length" : 30
+        },
+        {
+          "activity" : "generate1",
+          "start" : 66,
+          "length" : 127
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 55
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/task-patient1-prescription-renewal.json",
+      "size" : 726,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 50,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 56,
+          "length" : 14
+        },
+        {
+          "activity" : "generate1",
+          "start" : 66,
+          "length" : 25
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 50
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/Care-and-Support-Plan.R4.json",
+      "size" : 6333,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 16
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 22
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 50,
+          "length" : 27
+        },
+        {
+          "activity" : "validate",
+          "start" : 55,
+          "length" : 82
+        },
+        {
+          "activity" : "generate1",
+          "start" : 66,
+          "length" : 413
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 36
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 126,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/Goal.R4.json",
+      "size" : 907,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 50,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 56,
+          "length" : 13
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 56,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 67,
+          "length" : 104
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 24
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 126,
+          "length" : 1
         }
       ]
     },
@@ -1095,110 +1269,43 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 30
+          "start" : 44,
+          "length" : 26
         },
         {
           "activity" : "load",
-          "start" : 41,
-          "length" : 40
+          "start" : 44,
+          "length" : 33
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 43,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 46,
-          "length" : 35
+          "start" : 50,
+          "length" : 31
         },
         {
           "activity" : "validate",
-          "start" : 51,
-          "length" : 99
+          "start" : 56,
+          "length" : 162
         },
         {
           "activity" : "generate1",
-          "start" : 59,
-          "length" : 207
+          "start" : 67,
+          "length" : 198
         },
         {
           "activity" : "generate2",
-          "start" : 76,
-          "length" : 41
+          "start" : 85,
+          "length" : 43
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
+          "start" : 126,
           "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "input/resources/questionnaire-response-vital-signs.json",
-      "size" : 3650,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 41,
-          "length" : 9
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 41,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 46,
-          "length" : 12
-        },
-        {
-          "activity" : "validate",
-          "start" : 51,
-          "length" : 22
-        },
-        {
-          "activity" : "generate1",
-          "start" : 59,
-          "length" : 124
-        },
-        {
-          "activity" : "generate2",
-          "start" : 77,
-          "length" : 68
-        }
-      ]
-    },
-    {
-      "name" : "input/resources/task-patient1-prescription-renewal.json",
-      "size" : 726,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 41,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 46,
-          "length" : 11
-        },
-        {
-          "activity" : "validate",
-          "start" : 51,
-          "length" : 12
-        },
-        {
-          "activity" : "generate1",
-          "start" : 59,
-          "length" : 24
-        },
-        {
-          "activity" : "generate2",
-          "start" : 77,
-          "length" : 81
         }
       ]
     }

@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Care Plans - Virtually Healthcare Implementation Guide v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/virtually.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon-32x32-1.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Virtually Healthcare Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+  UK
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="find-patient.html">Find Patient</a>
+      </li>
+      <li>
+        <a href="update-patient.html">Update Patient</a>
+      </li>
+      <li>
+        <a href="find-documents.html">Find Patient Documents</a>
+      </li>
+      <li>
+        <a href="clinical-notes-and-compositions.html">Clinical Notes and Compositions</a>
+      </li>
+      <li>
+        <a href="clinical-record.html">Get Clinical Record</a>
+      </li>
+      <li>
+        <a href="care-plans.html">Care Plans</a>
+      </li>
+      <li>
+        <a href="structured-data-capture.html">Structured Data Capture</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture-detail.html">Archtitecture Detail</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Care Plans</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Virtually Healthcare Implementation Guide - Local Development build (v0.0.1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://fhir.virtually.healthcare/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Care Plans</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#data-capture-requirements" id="markdown-toc-data-capture-requirements">Data Capture Requirements</a></li>
+  <li><a href="#entity-relationship-model" id="markdown-toc-entity-relationship-model">Entity Relationship Model</a></li>
+  <li><a href="#fhir-structured-data-capture" id="markdown-toc-fhir-structured-data-capture">FHIR Structured Data Capture</a></li>
+</ul>
+
+</div>
+
+<h3 id="data-capture-requirements">Data Capture Requirements</h3>
+
+<p>This documentation is basic and just shows the types of data being captured.</p>
+
+<ul>
+  <li><a href="Questionnaire-4953b4a9-cd3f-4a07-b12a-62b88cf3fb81.html">Care and Support Plan</a></li>
+  <li><a href="Questionnaire-31424b39-5aec-4456-864b-86ad3348d075.html">Goals</a></li>
+</ul>
+
+<p><a name="l351">​</a>A more complete example can be found in <a href="Questionnaire-0d9fccea-9c98-4e61-b3e0-bc9b3a9db675.html">vital signs</a>, this has some data items which are included in the care and support plan. How this could look is shown in <a href="structured-data-capture.md">Structured Data Capture</a></p>
+
+<h3 id="entity-relationship-model">Entity Relationship Model</h3>
+
+<p>Virtually, EMIS, TPP, Android Health Connect and Apple HealthKit are all interrelated as shown in the diagram below:</p>
+
+<figure>  <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 1302 827" zoomAndPan="magnify" preserveAspectRatio="none" width="1302px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:1302px;height:827px;background:#FFFFFF;" version="1.1" height="827px"><defs/><g><text font-weight="bold" lengthAdjust="spacing" x="564" font-size="14" textLength="160" y="23.5352" font-family="sans-serif" fill="#000000">Care and Support Plan</text>  <!-- cluster Our Clinical Data Repository --><g id="cluster_Our Clinical Data Repository"><path d="M526.5,182.9783 L734.5,182.9783 A3.75,3.75 0 0 1 737,185.4783 L744,205.4666 L1012.5,205.4666 A2.5,2.5 0 0 1 1015,207.9666 L1015,817.8283 A2.5,2.5 0 0 1 1012.5,820.3283 L526.5,820.3283 A2.5,2.5 0 0 1 524,817.8283 L524,185.4783 A2.5,2.5 0 0 1 526.5,182.9783 " style="stroke:#000000;stroke-width:1.5;" fill="none"/><line y1="205.4666" x1="524" y2="205.4666" style="stroke:#000000;stroke-width:1.5;" x2="744"/><text font-weight="bold" lengthAdjust="spacing" x="528" font-size="14" textLength="207" y="198.5134" font-family="sans-serif" fill="#000000">Our Clinical Data Repository</text></g>  <!-- cluster Our Definitions --><g id="cluster_Our Definitions"><path d="M492.5,43.4883 L606.5,43.4883 A3.75,3.75 0 0 1 609,45.9883 L616,65.9766 L1292.5,65.9766 A2.5,2.5 0 0 1 1295,68.4766 L1295,156.4783 A2.5,2.5 0 0 1 1292.5,158.9783 L492.5,158.9783 A2.5,2.5 0 0 1 490,156.4783 L490,45.9883 A2.5,2.5 0 0 1 492.5,43.4883 " style="stroke:#000000;stroke-width:1.5;" fill="none"/><line y1="65.9766" x1="490" y2="65.9766" style="stroke:#000000;stroke-width:1.5;" x2="616"/><text font-weight="bold" lengthAdjust="spacing" x="494" font-size="14" textLength="113" y="59.0234" font-family="sans-serif" fill="#000000">Our Definitions</text></g>  <!-- cluster EMIS, TPP, Android and/or Apple --><g id="cluster_EMIS, TPP, Android and/or Apple"><path d="M8.5,671.8683 L244.5,671.8683 A3.75,3.75 0 0 1 247,674.3683 L254,694.3566 L497.5,694.3566 A2.5,2.5 0 0 1 500,696.8566 L500,817.8283 A2.5,2.5 0 0 1 497.5,820.3283 L8.5,820.3283 A2.5,2.5 0 0 1 6,817.8283 L6,674.3683 A2.5,2.5 0 0 1 8.5,671.8683 " style="stroke:#000000;stroke-width:1.5;" fill="none"/><line y1="694.3566" x1="6" y2="694.3566" style="stroke:#000000;stroke-width:1.5;" x2="254"/><text font-weight="bold" lengthAdjust="spacing" x="10" font-size="14" textLength="235" y="687.4034" font-family="sans-serif" fill="#000000">EMIS, TPP, Android and/or Apple</text></g>  <!-- class pcsp --><g id="elem_pcsp"><rect codeLine="8" rx="2.5" ry="2.5" width="455" x="539.5" y="217.9783" style="stroke:#181818;stroke-width:0.5;" id="pcsp" fill="#F1F1F1" height="80.9766"/><ellipse cx="554.5" cy="233.9783" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"/><path d="M556.9731,240.1213 Q556.3921,240.4202 555.7529,240.5696 Q555.1138,240.719 554.4082,240.719 Q551.9014,240.719 550.5815,239.0671 Q549.2617,237.4153 549.2617,234.2942 Q549.2617,231.1648 550.5815,229.5129 Q551.9014,227.8611 554.4082,227.8611 Q555.1138,227.8611 555.7612,228.0105 Q556.4087,228.1599 556.9731,228.4588 L556.9731,231.1814 Q556.3423,230.6004 555.7488,230.3306 Q555.1553,230.0608 554.5244,230.0608 Q553.1797,230.0608 552.4949,231.1275 Q551.8101,232.1941 551.8101,234.2942 Q551.8101,236.386 552.4949,237.4526 Q553.1797,238.5193 554.5244,238.5193 Q555.1553,238.5193 555.7488,238.2495 Q556.3423,237.9797 556.9731,237.3987 Z " fill="#000000"/><text lengthAdjust="spacing" x="568.5" font-size="14" textLength="423" y="239.2693" font-family="sans-serif" fill="#000000">Personal Care and Support Plan: FHIR QuestionnaireResponse</text><line y1="249.9783" x1="540.5" y2="249.9783" style="stroke:#181818;stroke-width:0.5;" x2="993.5"/><text lengthAdjust="spacing" x="545.5" font-size="14" textLength="48" y="267.5134" font-family="sans-serif" fill="#000000">patient</text><text lengthAdjust="spacing" x="545.5" font-size="14" textLength="265" y="284.0017" font-family="sans-serif" fill="#000000">items: Series of questions and answers</text><line y1="290.9548" x1="540.5" y2="290.9548" style="stroke:#181818;stroke-width:0.5;" x2="993.5"/></g>  <!-- class carePlan --><g id="elem_carePlan"><rect codeLine="13" rx="2.5" ry="2.5" width="168" x="657" y="358.9583" style="stroke:#181818;stroke-width:0.5;" id="carePlan" fill="#F1F1F1" height="130.4414"/><ellipse cx="672" cy="374.9583" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"/><path d="M674.4731,381.1013 Q673.8921,381.4002 673.2529,381.5496 Q672.6138,381.699 671.9082,381.699 Q669.4014,381.699 668.0815,380.0471 Q666.7617,378.3953 666.7617,375.2742 Q666.7617,372.1448 668.0815,370.4929 Q669.4014,368.8411 671.9082,368.8411 Q672.6138,368.8411 673.2612,368.9905 Q673.9087,369.1399 674.4731,369.4388 L674.4731,372.1614 Q673.8423,371.5804 673.2488,371.3106 Q672.6553,371.0408 672.0244,371.0408 Q670.6797,371.0408 669.9949,372.1075 Q669.3101,373.1741 669.3101,375.2742 Q669.3101,377.366 669.9949,378.4326 Q670.6797,379.4993 672.0244,379.4993 Q672.6553,379.4993 673.2488,379.2295 Q673.8423,378.9597 674.4731,378.3787 Z " fill="#000000"/><text lengthAdjust="spacing" x="686" font-size="14" textLength="136" y="380.2493" font-family="sans-serif" fill="#000000">Care Plan (optional)</text><line y1="390.9583" x1="658" y2="390.9583" style="stroke:#181818;stroke-width:0.5;" x2="824"/><text lengthAdjust="spacing" x="663" font-size="14" textLength="48" y="408.4934" font-family="sans-serif" fill="#000000">patient</text><text lengthAdjust="spacing" x="663" font-size="14" textLength="105" y="424.9817" font-family="sans-serif" fill="#000000">category : PCSP</text><text lengthAdjust="spacing" x="663" font-size="14" textLength="73" y="441.47" font-family="sans-serif" fill="#000000">careTeam?</text><text lengthAdjust="spacing" x="663" font-size="14" textLength="69" y="457.9583" font-family="sans-serif" fill="#000000">addresses</text><text lengthAdjust="spacing" x="663" font-size="14" textLength="37" y="474.4466" font-family="sans-serif" fill="#000000">goals</text><line y1="481.3997" x1="658" y2="481.3997" style="stroke:#181818;stroke-width:0.5;" x2="824"/></g>  <!-- class goal --><g id="elem_goal"><rect codeLine="21" rx="2.5" ry="2.5" width="277" x="722.5" y="715.1083" style="stroke:#181818;stroke-width:0.5;" id="goal" fill="#F1F1F1" height="80.9766"/><ellipse cx="739.3" cy="731.1083" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"/><path d="M741.7731,737.2513 Q741.1921,737.5502 740.5529,737.6996 Q739.9138,737.849 739.2082,737.849 Q736.7014,737.849 735.3815,736.1971 Q734.0617,734.5453 734.0617,731.4242 Q734.0617,728.2948 735.3815,726.6429 Q736.7014,724.9911 739.2082,724.9911 Q739.9138,724.9911 740.5612,725.1405 Q741.2087,725.2899 741.7731,725.5888 L741.7731,728.3114 Q741.1423,727.7304 740.5488,727.4606 Q739.9553,727.1908 739.3244,727.1908 Q737.9797,727.1908 737.2949,728.2575 Q736.6101,729.3241 736.6101,731.4242 Q736.6101,733.516 737.2949,734.5826 Q737.9797,735.6493 739.3244,735.6493 Q739.9553,735.6493 740.5488,735.3795 Q741.1423,735.1097 741.7731,734.5287 Z " fill="#000000"/><text lengthAdjust="spacing" x="753.7" font-size="14" textLength="241" y="736.3993" font-family="sans-serif" fill="#000000">Goal : FHIR QuestionnaireResponse</text><line y1="747.1083" x1="723.5" y2="747.1083" style="stroke:#181818;stroke-width:0.5;" x2="998.5"/><text lengthAdjust="spacing" x="728.5" font-size="14" textLength="48" y="764.6434" font-family="sans-serif" fill="#000000">patient</text><text lengthAdjust="spacing" x="728.5" font-size="14" textLength="265" y="781.1317" font-family="sans-serif" fill="#000000">items: Series of questions and answers</text><line y1="788.0848" x1="723.5" y2="788.0848" style="stroke:#181818;stroke-width:0.5;" x2="998.5"/></g>  <!-- class Goal --><g id="elem_Goal"><rect codeLine="26" rx="2.5" ry="2.5" width="134" x="590" y="549.3983" style="stroke:#181818;stroke-width:0.5;" id="Goal" fill="#F1F1F1" height="97.4648"/><ellipse cx="605" cy="565.3983" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"/><path d="M607.4731,571.5413 Q606.8921,571.8402 606.2529,571.9896 Q605.6138,572.139 604.9082,572.139 Q602.4014,572.139 601.0815,570.4871 Q599.7617,568.8353 599.7617,565.7142 Q599.7617,562.5848 601.0815,560.9329 Q602.4014,559.2811 604.9082,559.2811 Q605.6138,559.2811 606.2612,559.4305 Q606.9087,559.5799 607.4731,559.8788 L607.4731,562.6014 Q606.8423,562.0204 606.2488,561.7506 Q605.6553,561.4808 605.0244,561.4808 Q603.6797,561.4808 602.9949,562.5475 Q602.3101,563.6141 602.3101,565.7142 Q602.3101,567.806 602.9949,568.8726 Q603.6797,569.9393 605.0244,569.9393 Q605.6553,569.9393 606.2488,569.6695 Q606.8423,569.3997 607.4731,568.8187 Z " fill="#000000"/><text lengthAdjust="spacing" x="619" font-size="14" textLength="102" y="570.6893" font-family="sans-serif" fill="#000000">Goal (optional)</text><line y1="581.3983" x1="591" y2="581.3983" style="stroke:#181818;stroke-width:0.5;" x2="723"/><text lengthAdjust="spacing" x="610" font-size="14" textLength="48" y="598.9334" font-family="sans-serif" fill="#000000">patient</text><text lengthAdjust="spacing" x="610" font-size="14" textLength="48" y="615.4217" font-family="sans-serif" fill="#000000">targets</text><ellipse cx="601" cy="628.119" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;" fill="none"/><text lengthAdjust="spacing" x="610" font-size="14" textLength="59" y="631.91" font-family="sans-serif" fill="#000000">measure</text><line y1="638.8631" x1="591" y2="638.8631" style="stroke:#181818;stroke-width:0.5;" x2="723"/></g>  <!-- class problem --><g id="elem_problem"><rect codeLine="32" rx="2.5" ry="2.5" width="204" x="759" y="557.6383" style="stroke:#181818;stroke-width:0.5;" id="problem" fill="#F1F1F1" height="80.9766"/><ellipse cx="774" cy="573.6383" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"/><path d="M776.4731,579.7813 Q775.8921,580.0802 775.2529,580.2296 Q774.6138,580.379 773.9082,580.379 Q771.4014,580.379 770.0815,578.7271 Q768.7617,577.0753 768.7617,573.9542 Q768.7617,570.8248 770.0815,569.1729 Q771.4014,567.5211 773.9082,567.5211 Q774.6138,567.5211 775.2612,567.6705 Q775.9087,567.8199 776.4731,568.1188 L776.4731,570.8414 Q775.8423,570.2604 775.2488,569.9906 Q774.6553,569.7208 774.0244,569.7208 Q772.6797,569.7208 771.9949,570.7875 Q771.3101,571.8541 771.3101,573.9542 Q771.3101,576.046 771.9949,577.1126 Q772.6797,578.1793 774.0244,578.1793 Q774.6553,578.1793 775.2488,577.9095 Q775.8423,577.6397 776.4731,577.0587 Z " fill="#000000"/><text lengthAdjust="spacing" x="788" font-size="14" textLength="172" y="578.9293" font-family="sans-serif" fill="#000000">Problem : FHIR Condition</text><line y1="589.6383" x1="760" y2="589.6383" style="stroke:#181818;stroke-width:0.5;" x2="962"/><text lengthAdjust="spacing" x="765" font-size="14" textLength="48" y="607.1734" font-family="sans-serif" fill="#000000">patient</text><text lengthAdjust="spacing" x="765" font-size="14" textLength="33" y="623.6617" font-family="sans-serif" fill="#000000">code</text><line y1="630.6148" x1="760" y2="630.6148" style="stroke:#181818;stroke-width:0.5;" x2="962"/></g>  <!-- class observation --><g id="elem_observation"><rect codeLine="36" rx="2.5" ry="2.5" width="147" x="540.5" y="706.8683" style="stroke:#181818;stroke-width:0.5;" id="observation" fill="#F1F1F1" height="97.4648"/><ellipse cx="569.9" cy="722.8683" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"/><path d="M572.3731,729.0113 Q571.7921,729.3102 571.1529,729.4596 Q570.5138,729.609 569.8082,729.609 Q567.3014,729.609 565.9815,727.9571 Q564.6617,726.3053 564.6617,723.1842 Q564.6617,720.0548 565.9815,718.4029 Q567.3014,716.7511 569.8082,716.7511 Q570.5138,716.7511 571.1612,716.9005 Q571.8087,717.0499 572.3731,717.3488 L572.3731,720.0714 Q571.7423,719.4904 571.1488,719.2206 Q570.5553,718.9508 569.9244,718.9508 Q568.5797,718.9508 567.8949,720.0175 Q567.2101,721.0841 567.2101,723.1842 Q567.2101,725.276 567.8949,726.3426 Q568.5797,727.4093 569.9244,727.4093 Q570.5553,727.4093 571.1488,727.1395 Q571.7423,726.8697 572.3731,726.2887 Z " fill="#000000"/><text lengthAdjust="spacing" x="587.1" font-size="14" textLength="83" y="728.1593" font-family="sans-serif" fill="#000000">Observation</text><line y1="738.8683" x1="541.5" y2="738.8683" style="stroke:#181818;stroke-width:0.5;" x2="686.5"/><text lengthAdjust="spacing" x="546.5" font-size="14" textLength="48" y="756.4034" font-family="sans-serif" fill="#000000">patient</text><text lengthAdjust="spacing" x="546.5" font-size="14" textLength="135" y="772.8917" font-family="sans-serif" fill="#000000">code : The question</text><text lengthAdjust="spacing" x="546.5" font-size="14" textLength="127" y="789.38" font-family="sans-serif" fill="#000000">value : The answer</text><line y1="796.3331" x1="541.5" y2="796.3331" style="stroke:#181818;stroke-width:0.5;" x2="686.5"/></g>  <!-- class pcspdef --><g id="elem_pcspdef"><rect codeLine="44" rx="2.5" ry="2.5" width="460" x="506" y="78.4883" style="stroke:#181818;stroke-width:0.5;" id="pcspdef" fill="#F1F1F1" height="64.4883"/><ellipse cx="521" cy="94.4883" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"/><path d="M523.4731,100.6313 Q522.8921,100.9302 522.2529,101.0796 Q521.6138,101.229 520.9082,101.229 Q518.4014,101.229 517.0815,99.5771 Q515.7617,97.9253 515.7617,94.8042 Q515.7617,91.6748 517.0815,90.0229 Q518.4014,88.3711 520.9082,88.3711 Q521.6138,88.3711 522.2612,88.5205 Q522.9087,88.6699 523.4731,88.9688 L523.4731,91.6914 Q522.8423,91.1104 522.2488,90.8406 Q521.6553,90.5708 521.0244,90.5708 Q519.6797,90.5708 518.9949,91.6375 Q518.3101,92.7041 518.3101,94.8042 Q518.3101,96.896 518.9949,97.9626 Q519.6797,99.0293 521.0244,99.0293 Q521.6553,99.0293 522.2488,98.7595 Q522.8423,98.4897 523.4731,97.9087 Z " fill="#000000"/><text lengthAdjust="spacing" x="535" font-size="14" textLength="428" y="99.7793" font-family="sans-serif" fill="#000000">Personal Care and Support Plan Definition: FHIR Questionnaire</text><line y1="110.4883" x1="507" y2="110.4883" style="stroke:#181818;stroke-width:0.5;" x2="965"/><text lengthAdjust="spacing" x="512" font-size="14" textLength="190" y="128.0234" font-family="sans-serif" fill="#000000">items: A series of Questions</text><line y1="134.9766" x1="507" y2="134.9766" style="stroke:#181818;stroke-width:0.5;" x2="965"/></g>  <!-- class goaldef --><g id="elem_goaldef"><rect codeLine="48" rx="2.5" ry="2.5" width="278" x="1001" y="78.4883" style="stroke:#181818;stroke-width:0.5;" id="goaldef" fill="#F1F1F1" height="64.4883"/><ellipse cx="1016" cy="94.4883" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"/><path d="M1018.4731,100.6313 Q1017.8921,100.9302 1017.2529,101.0796 Q1016.6138,101.229 1015.9082,101.229 Q1013.4014,101.229 1012.0815,99.5771 Q1010.7617,97.9253 1010.7617,94.8042 Q1010.7617,91.6748 1012.0815,90.0229 Q1013.4014,88.3711 1015.9082,88.3711 Q1016.6138,88.3711 1017.2612,88.5205 Q1017.9087,88.6699 1018.4731,88.9688 L1018.4731,91.6914 Q1017.8423,91.1104 1017.2488,90.8406 Q1016.6553,90.5708 1016.0244,90.5708 Q1014.6797,90.5708 1013.9949,91.6375 Q1013.3101,92.7041 1013.3101,94.8042 Q1013.3101,96.896 1013.9949,97.9626 Q1014.6797,99.0293 1016.0244,99.0293 Q1016.6553,99.0293 1017.2488,98.7595 Q1017.8423,98.4897 1018.4731,97.9087 Z " fill="#000000"/><text lengthAdjust="spacing" x="1030" font-size="14" textLength="246" y="99.7793" font-family="sans-serif" fill="#000000">Goal Definition : FHIR Questionnaire</text><line y1="110.4883" x1="1002" y2="110.4883" style="stroke:#181818;stroke-width:0.5;" x2="1278"/><text lengthAdjust="spacing" x="1007" font-size="14" textLength="190" y="128.0234" font-family="sans-serif" fill="#000000">items: A series of Questions</text><line y1="134.9766" x1="1002" y2="134.9766" style="stroke:#181818;stroke-width:0.5;" x2="1278"/></g>  <!-- class Observation --><g id="elem_Observation"><rect codeLine="54" rx="2.5" ry="2.5" width="147" x="22.5" y="706.8683" style="stroke:#181818;stroke-width:0.5;" id="Observation" fill="#F1F1F1" height="97.4648"/><ellipse cx="51.9" cy="722.8683" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"/><path d="M54.3731,729.0113 Q53.7921,729.3102 53.1529,729.4596 Q52.5138,729.609 51.8082,729.609 Q49.3014,729.609 47.9815,727.9571 Q46.6617,726.3053 46.6617,723.1842 Q46.6617,720.0548 47.9815,718.4029 Q49.3014,716.7511 51.8082,716.7511 Q52.5138,716.7511 53.1612,716.9005 Q53.8087,717.0499 54.3731,717.3488 L54.3731,720.0714 Q53.7423,719.4904 53.1488,719.2206 Q52.5553,718.9508 51.9244,718.9508 Q50.5797,718.9508 49.8949,720.0175 Q49.2101,721.0841 49.2101,723.1842 Q49.2101,725.276 49.8949,726.3426 Q50.5797,727.4093 51.9244,727.4093 Q52.5553,727.4093 53.1488,727.1395 Q53.7423,726.8697 54.3731,726.2887 Z " fill="#000000"/><text lengthAdjust="spacing" x="69.1" font-size="14" textLength="83" y="728.1593" font-family="sans-serif" fill="#000000">Observation</text><line y1="738.8683" x1="23.5" y2="738.8683" style="stroke:#181818;stroke-width:0.5;" x2="168.5"/><text lengthAdjust="spacing" x="28.5" font-size="14" textLength="48" y="756.4034" font-family="sans-serif" fill="#000000">patient</text><text lengthAdjust="spacing" x="28.5" font-size="14" textLength="135" y="772.8917" font-family="sans-serif" fill="#000000">code : The question</text><text lengthAdjust="spacing" x="28.5" font-size="14" textLength="127" y="789.38" font-family="sans-serif" fill="#000000">value : The answer</text><line y1="796.3331" x1="23.5" y2="796.3331" style="stroke:#181818;stroke-width:0.5;" x2="168.5"/></g>  <!-- class condition --><g id="elem_condition"><rect codeLine="59" rx="2.5" ry="2.5" width="279" x="204.5" y="715.1083" style="stroke:#181818;stroke-width:0.5;" id="condition" fill="#F1F1F1" height="80.9766"/><ellipse cx="219.5" cy="731.1083" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"/><path d="M221.9731,737.2513 Q221.3921,737.5502 220.7529,737.6996 Q220.1138,737.849 219.4082,737.849 Q216.9014,737.849 215.5815,736.1971 Q214.2617,734.5453 214.2617,731.4242 Q214.2617,728.2948 215.5815,726.6429 Q216.9014,724.9911 219.4082,724.9911 Q220.1138,724.9911 220.7612,725.1405 Q221.4087,725.2899 221.9731,725.5888 L221.9731,728.3114 Q221.3423,727.7304 220.7488,727.4606 Q220.1553,727.1908 219.5244,727.1908 Q218.1797,727.1908 217.4949,728.2575 Q216.8101,729.3241 216.8101,731.4242 Q216.8101,733.516 217.4949,734.5826 Q218.1797,735.6493 219.5244,735.6493 Q220.1553,735.6493 220.7488,735.3795 Q221.3423,735.1097 221.9731,734.5287 Z " fill="#000000"/><text lengthAdjust="spacing" x="233.5" font-size="14" textLength="247" y="736.3993" font-family="sans-serif" fill="#000000">Problem/Condition : FHIR Condition</text><line y1="747.1083" x1="205.5" y2="747.1083" style="stroke:#181818;stroke-width:0.5;" x2="482.5"/><text lengthAdjust="spacing" x="210.5" font-size="14" textLength="48" y="764.6434" font-family="sans-serif" fill="#000000">patient</text><text lengthAdjust="spacing" x="210.5" font-size="14" textLength="33" y="781.1317" font-family="sans-serif" fill="#000000">code</text><line y1="788.0848" x1="205.5" y2="788.0848" style="stroke:#181818;stroke-width:0.5;" x2="482.5"/></g>  <!-- link pcsp to problem --><g id="link_pcsp_problem"><path codeLine="65" d="M811.23,306.7583 C823.28,322.2883 834.94,340.3583 842,358.9583 C865.53,420.9483 867.08,498.3783 864.93,547.8083 " style="stroke:#181818;stroke-width:1.0;" id="pcsp-problem" fill="none"/><line y1="306.16" x1="805.6106" y2="301.1677" style="stroke:#181818;stroke-width:1.0;" x2="811.8617"/><line y1="308.5042" x1="807.4827" y2="303.5119" style="stroke:#181818;stroke-width:1.0;" x2="813.7339"/><line y1="306.7894" x1="811.2323" y2="300.5383" style="stroke:#181818;stroke-width:1.0;" x2="806.24"/><line y1="547.7983" x1="864.9295" y2="556.0879" style="stroke:#181818;stroke-width:1.0;" x2="870.5225"/><line y1="547.7983" x1="864.9295" y2="555.4887" style="stroke:#181818;stroke-width:1.0;" x2="858.5375"/><line y1="547.7983" x1="864.9295" y2="555.7883" style="stroke:#181818;stroke-width:1.0;" x2="864.53"/><line y1="546.0005" x1="869.0244" y2="545.601" style="stroke:#181818;stroke-width:1.0;" x2="861.0344"/></g>  <!-- link pcsp to carePlan --><g id="link_pcsp_carePlan"><path codeLine="66" d="M759.41,307.2883 C757.25,320.8483 754.86,335.9283 752.53,350.5983 " style="stroke:#181818;stroke-width:1.0;" id="pcsp-carePlan" fill="none"/><line y1="303.9101" x1="755.8912" y2="305.1671" style="stroke:#181818;stroke-width:1.0;" x2="763.7919"/><line y1="306.8729" x1="755.4199" y2="308.1298" style="stroke:#181818;stroke-width:1.0;" x2="763.3205"/><line y1="308.4889" x1="759.2131" y2="300.5883" style="stroke:#181818;stroke-width:1.0;" x2="760.47"/><line y1="353.8764" x1="756.0588" y2="352.6195" style="stroke:#181818;stroke-width:1.0;" x2="748.1581"/><line y1="350.9137" x1="756.5301" y2="349.6568" style="stroke:#181818;stroke-width:1.0;" x2="748.6295"/><line y1="349.2976" x1="752.7369" y2="357.1983" style="stroke:#181818;stroke-width:1.0;" x2="751.48"/></g>  <!-- link problem to goal --><g id="link_problem_goal"><path codeLine="67" d="M861,648.0483 C861,666.3483 861,687.1183 861,705.4383 " style="stroke:#181818;stroke-width:1.0;" id="problem-goal" fill="none"/><line y1="644.2783" x1="857" y2="644.2783" style="stroke:#181818;stroke-width:1.0;" x2="865"/><line y1="647.2783" x1="857" y2="647.2783" style="stroke:#181818;stroke-width:1.0;" x2="865"/><line y1="648.2783" x1="861" y2="640.2783" style="stroke:#181818;stroke-width:1.0;" x2="861"/><line y1="705.2483" x1="861" y2="713.2483" style="stroke:#181818;stroke-width:1.0;" x2="867"/><line y1="705.2483" x1="861" y2="713.2483" style="stroke:#181818;stroke-width:1.0;" x2="855"/><line y1="705.2483" x1="861" y2="713.2483" style="stroke:#181818;stroke-width:1.0;" x2="861"/><line y1="703.2483" x1="865" y2="703.2483" style="stroke:#181818;stroke-width:1.0;" x2="857"/></g>  <!-- link carePlan to problem --><g id="link_carePlan_problem"><path codeLine="68" d="M791.45,497.4783 C803.73,515.0583 816.54,533.4283 827.78,549.5283 " style="stroke:#181818;stroke-width:1.0;" id="carePlan-problem" fill="none"/><line y1="496.5062" x1="785.8906" y2="491.9376" style="stroke:#181818;stroke-width:1.0;" x2="792.4579"/><line y1="498.9689" x1="787.6038" y2="494.4004" style="stroke:#181818;stroke-width:1.0;" x2="794.1711"/><line y1="497.5055" x1="791.4585" y2="490.9383" style="stroke:#181818;stroke-width:1.0;" x2="786.89"/><line y1="549.4377" x1="827.7219" y2="552.5647" style="stroke:#181818;stroke-width:1.0;" x2="837.2204"/><line y1="549.4377" x1="827.7219" y2="559.4319" style="stroke:#181818;stroke-width:1.0;" x2="827.3796"/><line y1="549.4377" x1="827.7219" y2="555.9983" style="stroke:#181818;stroke-width:1.0;" x2="832.3"/><line y1="545.5085" x1="829.8576" y2="550.0867" style="stroke:#181818;stroke-width:1.0;" x2="823.2971"/><text lengthAdjust="spacing" x="724.4142" font-size="13" textLength="63" y="509.8128" font-family="sans-serif" fill="#000000">addresses</text></g>  <!-- link carePlan to Goal --><g id="link_carePlan_Goal"><path codeLine="69" d="M705.4,498.0583 C698.45,512.2883 691.26,527.0083 684.61,540.6083 " style="stroke:#181818;stroke-width:1.0;" id="carePlan-Goal" fill="none"/><line y1="492.8942" x1="703.4694" y2="496.4089" style="stroke:#181818;stroke-width:1.0;" x2="710.6559"/><line y1="495.5892" x1="702.1513" y2="499.1039" style="stroke:#181818;stroke-width:1.0;" x2="709.3379"/><line y1="498.2449" x1="705.3053" y2="491.0583" style="stroke:#181818;stroke-width:1.0;" x2="708.82"/><line y1="540.359" x1="684.7291" y2="550.1801" style="stroke:#181818;stroke-width:1.0;" x2="686.612"/><line y1="540.359" x1="684.7291" y2="544.9165" style="stroke:#181818;stroke-width:1.0;" x2="675.828"/><line y1="540.359" x1="684.7291" y2="547.5483" style="stroke:#181818;stroke-width:1.0;" x2="681.22"/><line y1="540.3162" x1="689.201" y2="536.8071" style="stroke:#181818;stroke-width:1.0;" x2="682.0117"/><text lengthAdjust="spacing" x="670.4764" font-size="13" textLength="34" y="509.8128" font-family="sans-serif" fill="#000000">goals</text></g>  <!-- link problem to condition --><g id="link_problem_condition"><path codeLine="70" d="M759.47,641.9183 C753.28,643.7783 747.09,645.4483 741,646.8683 C646.77,668.7683 617.17,637.8183 524,663.8683 C486.56,674.3283 447.72,692.7983 415.74,710.3483 " style="stroke:#181818;stroke-width:1.0;" id="problem-condition" fill="none"/><line y1="636.9131" x1="762.064" y2="644.5443" style="stroke:#181818;stroke-width:1.0;" x2="764.4648"/><line y1="637.8134" x1="759.2022" y2="645.4446" style="stroke:#181818;stroke-width:1.0;" x2="761.6031"/><line y1="641.9291" x1="759.4488" y2="639.5283" style="stroke:#181818;stroke-width:1.0;" x2="767.08"/><line y1="708.7012" x1="418.7029" y2="714.0483" style="stroke:#181818;stroke-width:1.0;" x2="409.09"/><ellipse cx="418.7029" cy="708.7012" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" fill="none"/><line y1="715.5995" x1="414.53" y2="708.6083" style="stroke:#181818;stroke-width:1.0;" x2="410.6412"/></g>  <!-- link pcsp to Observation --><g id="link_pcsp_Observation"><path codeLine="71" d="M673.44,303.5083 C641.48,319.7083 606,338.9983 575,358.9583 C390.6,477.6883 351.16,518.4283 187,663.8683 C174.32,675.0983 161.15,687.6483 148.91,699.7483 " style="stroke:#181818;stroke-width:1.0;" id="pcsp-Observation" fill="none"/><line y1="298.1566" x1="675.1877" y2="305.3005" style="stroke:#181818;stroke-width:1.0;" x2="678.7883"/><line y1="299.5068" x1="672.5088" y2="306.6507" style="stroke:#181818;stroke-width:1.0;" x2="676.1093"/><line y1="303.5288" x1="673.416" y2="299.9283" style="stroke:#181818;stroke-width:1.0;" x2="680.56"/><line y1="699.7057" x1="148.9511" y2="709.6016" style="stroke:#181818;stroke-width:1.0;" x2="147.5119"/><line y1="699.7057" x1="148.9511" y2="701.0949" style="stroke:#181818;stroke-width:1.0;" x2="139.0481"/><line y1="699.7057" x1="148.9511" y2="705.3483" style="stroke:#181818;stroke-width:1.0;" x2="143.28"/><line y1="701.1307" x1="153.1902" y2="695.4595" style="stroke:#181818;stroke-width:1.0;" x2="147.5476"/></g>  <!-- link pcsp to observation --><g id="link_pcsp_observation"><path codeLine="72" d="M694.3,305.0983 C674.56,320.2783 654.62,338.5783 640,358.9583 C587.7,431.8683 588.1,460.9483 573,549.3983 C565.71,592.0983 565.17,604.2583 573,646.8683 C576.13,663.8883 581.82,681.6983 587.99,697.8283 " style="stroke:#181818;stroke-width:1.0;" id="pcsp-observation" fill="none"/><line y1="299.5483" x1="695.03" y2="305.9483" style="stroke:#181818;stroke-width:1.0;" x2="699.83"/><line y1="301.3483" x1="692.63" y2="307.7483" style="stroke:#181818;stroke-width:1.0;" x2="697.43"/><line y1="305.1483" x1="694.23" y2="300.3483" style="stroke:#181818;stroke-width:1.0;" x2="700.63"/><line y1="697.7587" x1="587.9584" y2="702.9921" style="stroke:#181818;stroke-width:1.0;" x2="596.4797"/><line y1="697.7587" x1="587.9584" y2="707.4044" style="stroke:#181818;stroke-width:1.0;" x2="585.3203"/><line y1="697.7587" x1="587.9584" y2="705.1983" style="stroke:#181818;stroke-width:1.0;" x2="590.9"/><line y1="694.428" x1="590.9428" y2="697.3696" style="stroke:#181818;stroke-width:1.0;" x2="583.5033"/></g>  <!-- link pcspdef to pcsp --><g id="link_pcspdef_pcsp"><path codeLine="73" d="M744.71,152.6583 C748.38,169.9583 752.7,190.2383 756.55,208.3383 " style="stroke:#181818;stroke-width:1.0;" id="pcspdef-pcsp" fill="none"/><line y1="149.5865" x1="739.9651" y2="147.9132" style="stroke:#181818;stroke-width:1.0;" x2="747.7882"/><line y1="152.5201" x1="740.5926" y2="150.8468" style="stroke:#181818;stroke-width:1.0;" x2="748.4157"/><line y1="152.6613" x1="744.7133" y2="144.8383" style="stroke:#181818;stroke-width:1.0;" x2="743.04"/><line y1="208.2646" x1="756.5296" y2="214.8355" style="stroke:#181818;stroke-width:1.0;" x2="764.0678"/><line y1="208.2646" x1="756.5296" y2="217.3411" style="stroke:#181818;stroke-width:1.0;" x2="752.3322"/><line y1="208.2646" x1="756.5296" y2="216.0883" style="stroke:#181818;stroke-width:1.0;" x2="758.2"/><line y1="205.4735" x1="760.0239" y2="207.1439" style="stroke:#181818;stroke-width:1.0;" x2="752.2002"/></g>  <!-- link goaldef to goal --><g id="link_goaldef_goal"><path codeLine="74" d="M1135.39,152.6083 C1123.26,246.4883 1083.92,482.1383 980,646.8683 C965.37,670.0583 944.4,691.3383 924.14,708.7483 " style="stroke:#181818;stroke-width:1.0;" id="goaldef-goal" fill="none"/><line y1="148.4163" x1="1131.8909" y2="149.4174" style="stroke:#181818;stroke-width:1.0;" x2="1139.828"/><line y1="151.3927" x1="1131.5155" y2="152.3938" style="stroke:#181818;stroke-width:1.0;" x2="1139.4526"/><line y1="152.8854" x1="1135.3589" y2="144.9483" style="stroke:#181818;stroke-width:1.0;" x2="1136.36"/><line y1="708.6187" x1="924.2923" y2="718.36" style="stroke:#181818;stroke-width:1.0;" x2="922.0322"/><line y1="708.6187" x1="924.2923" y2="709.1766" style="stroke:#181818;stroke-width:1.0;" x2="914.3078"/><line y1="708.6187" x1="924.2923" y2="713.7683" style="stroke:#181818;stroke-width:1.0;" x2="918.17"/><line y1="710.3925" x1="928.3976" y2="704.2702" style="stroke:#181818;stroke-width:1.0;" x2="923.248"/></g>  <!-- link Goal to observation --><g id="link_Goal_observation"><path codeLine="75" d="M641.25,656.0883 C637.52,669.5583 633.55,683.9283 629.82,697.4083 " style="stroke:#181818;stroke-width:1.0;" id="Goal-observation" fill="none"/><line y1="659.102" x1="640.4142" y2="648.4983" style="stroke:#181818;stroke-width:1.0;" x2="643.34"/><ellipse cx="640.4142" cy="659.102" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" fill="none"/><line y1="651.2902" x1="638.4201" y2="653.4181" style="stroke:#181818;stroke-width:1.0;" x2="646.132"/><line y1="697.4065" x1="629.8179" y2="706.7142" style="stroke:#181818;stroke-width:1.0;" x2="633.4739"/><line y1="697.4065" x1="629.8179" y2="703.5224" style="stroke:#181818;stroke-width:1.0;" x2="621.9061"/><line y1="697.4065" x1="629.8179" y2="705.1183" style="stroke:#181818;stroke-width:1.0;" x2="627.69"/><line y1="696.5425" x1="634.2058" y2="694.4146" style="stroke:#181818;stroke-width:1.0;" x2="626.494"/><text lengthAdjust="spacing" x="585.1602" font-size="13" textLength="53" y="667.5722" font-family="sans-serif" fill="#000000">measure</text></g></g></svg></figure>
+<p><br clear="all"/></p>
+
+<p>In EMIS, TPP and possibly Apple HealthKit these are all clinically coded entities. EMIS and TPP use a coding system called <a href="https://digital.nhs.uk/developer/guides-and-documentation/building-healthcare-software/clinical-coding-classifications-and-terminology#snomed-ct">SNOMED CT</a>
+(Apple Healthkit uses another coding system called <a href="https://loinc.org/fhir/">LOINC</a> - more on this later).</p>
+
+<p>This coding is important as it allows us to work with these external systems. For example EMIS and TPP both represent weight as SNOMED CT <code class="language-plaintext highlighter-rouge">27113001</code>.</p>
+
+<h4 id="appleandroid-to-cdr">Apple/Android to CDR</h4>
+
+<p>In the diagram above it is assumed data extracted from Apple/Android is stored in the virtually CDR (AWS FHIRWorks) Observation’s.
+These entries MUST be SNOMED encoded. 
+Apple HealthKit may support the FHIR format, if so this means mininmal data trasformation (probably just the patient id).</p>
+
+<h3 id="fhir-structured-data-capture">FHIR Structured Data Capture</h3>
+
+<p>This probably sets us apart from other vendors as we can now:</p>
+
+<ul>
+  <li>pre-populate the PCSP from existing data. So if we ask the patient for their weight we can use the latest values from EMIS, TPP and our own CDR.</li>
+  <li>extract data from the PCSP to EMIS, TPP and/or our own CDR.</li>
+</ul>
+
+<p>This concept can result in considerable savings in both practitioner and patient time. 
+It also allows reuse of data between different care plans and other questionnaires.</p>
+
+<p>These concepts are discussed in more detail in:</p>
+
+<ul>
+  <li><a href="https://build.fhir.org/ig/HL7/sdc/populate.html">Automatic population</a> helps to reduce the pain of having to fill in the same information ‘yet again’ by allowing a form to automatically fill in answers already known to the EHR or other data source. The user can then just verify that the information is still correct (and revise if necessary) rather than needing to fill out the information all over again (and possibly accidentally omitting or incorrectly entering some of it</li>
+  <li><a href="https://build.fhir.org/ig/HL7/sdc/extraction.html">Data Extraction</a> allows data captured in a QuestionnaireResponse to be extracted and used to create or update other FHIR resources - allowing the data to be more easily searched, compared and used by other FHIR systems</li>
+</ul>
+
+<figure>  <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 419 544" zoomAndPan="magnify" preserveAspectRatio="none" width="419px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:419px;height:544px;background:#FFFFFF;" version="1.1" height="544px"><defs/><g><ellipse cx="209.5" cy="20" rx="10" ry="10" style="stroke:#222222;stroke-width:1.0;" fill="#222222"/><rect rx="12.5" ry="12.5" width="194" x="112.5" y="50" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="34.1328"/><text lengthAdjust="spacing" x="122.5" font-size="12" textLength="174" y="71.6016" font-family="sans-serif" fill="#000000">patient links device to virtually</text><rect rx="12.5" ry="12.5" width="343" x="38" y="104.1328" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="34.1328"/><text lengthAdjust="spacing" x="48" font-size="12" textLength="323" y="125.7344" font-family="sans-serif" fill="#000000">data copied from device and stored on AWS FHIR Works</text><rect rx="12.5" ry="12.5" width="165" x="127" y="158.2656" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="34.1328"/><text lengthAdjust="spacing" x="137" font-size="12" textLength="145" y="179.8672" font-family="sans-serif" fill="#000000">patient begins PCSP form</text><rect rx="12.5" ry="12.5" width="378" x="20.5" y="212.3984" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="76.5313"/><text lengthAdjust="spacing" x="30.5" font-size="12" textLength="234" y="234" font-family="sans-serif" fill="#000000">virtualy app runs $populate request and</text><text lengthAdjust="spacing" x="30.5" font-size="12" textLength="304" y="248.1328" font-family="sans-serif" fill="#000000">this returns a partially completed FHIR Questionnaire</text><text lengthAdjust="spacing" x="30.5" font-size="12" textLength="4" y="262.2656" font-family="sans-serif" fill="#000000">&nbsp;</text><text lengthAdjust="spacing" x="30.5" font-size="12" textLength="358" y="276.3984" font-family="sans-serif" fill="#000000">(the form definition (Questionnaire) defines what is populated)</text><rect rx="12.5" ry="12.5" width="397" x="11" y="308.9297" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="34.1328"/><text lengthAdjust="spacing" x="21" font-size="12" textLength="377" y="330.5313" font-family="sans-serif" fill="#000000">citizen completes remaining part of the form and updates entries</text><rect rx="12.5" ry="12.5" width="390" x="14.5" y="363.0625" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="76.5313"/><text lengthAdjust="spacing" x="24.5" font-size="12" textLength="370" y="384.6641" font-family="sans-serif" fill="#000000">virtually app runs $extract to convert form into a FHIR resources</text><text lengthAdjust="spacing" x="24.5" font-size="12" textLength="4" y="398.7969" font-family="sans-serif" fill="#000000">&nbsp;</text><text lengthAdjust="spacing" x="24.5" font-size="12" textLength="350" y="412.9297" font-family="sans-serif" fill="#000000">(the form definition (Questionnaire) defines what is extracted</text><text lengthAdjust="spacing" x="24.5" font-size="12" textLength="296" y="427.0625" font-family="sans-serif" fill="#000000">from the completed form (QuestionnaireResponse))</text><rect rx="12.5" ry="12.5" width="284" x="67.5" y="459.5938" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="34.1328"/><text lengthAdjust="spacing" x="77.5" font-size="12" textLength="264" y="481.1953" font-family="sans-serif" fill="#000000">virtually app stores entries in AWS FHIR Works</text><ellipse cx="209.5" cy="523.7266" rx="10" ry="10" style="stroke:#222222;stroke-width:1.5;" fill="none"/><line y1="517.5394" x1="203.3128" y2="529.9137" style="stroke:#222222;stroke-width:2.5;" x2="215.6872"/><line y1="517.5394" x1="215.6872" y2="529.9137" style="stroke:#222222;stroke-width:2.5;" x2="203.3128"/><line y1="30" x1="209.5" y2="50" style="stroke:#181818;stroke-width:1.0;" x2="209.5"/><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="205.5,40,209.5,50,213.5,40,209.5,44"/><line y1="84.1328" x1="209.5" y2="104.1328" style="stroke:#181818;stroke-width:1.0;" x2="209.5"/><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="205.5,94.1328,209.5,104.1328,213.5,94.1328,209.5,98.1328"/><line y1="138.2656" x1="209.5" y2="158.2656" style="stroke:#181818;stroke-width:1.0;" x2="209.5"/><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="205.5,148.2656,209.5,158.2656,213.5,148.2656,209.5,152.2656"/><line y1="192.3984" x1="209.5" y2="212.3984" style="stroke:#181818;stroke-width:1.0;" x2="209.5"/><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="205.5,202.3984,209.5,212.3984,213.5,202.3984,209.5,206.3984"/><line y1="288.9297" x1="209.5" y2="308.9297" style="stroke:#181818;stroke-width:1.0;" x2="209.5"/><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="205.5,298.9297,209.5,308.9297,213.5,298.9297,209.5,302.9297"/><line y1="343.0625" x1="209.5" y2="363.0625" style="stroke:#181818;stroke-width:1.0;" x2="209.5"/><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="205.5,353.0625,209.5,363.0625,213.5,353.0625,209.5,357.0625"/><line y1="439.5938" x1="209.5" y2="459.5938" style="stroke:#181818;stroke-width:1.0;" x2="209.5"/><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="205.5,449.5938,209.5,459.5938,213.5,449.5938,209.5,453.5938"/><line y1="493.7266" x1="209.5" y2="513.7266" style="stroke:#181818;stroke-width:1.0;" x2="209.5"/><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="205.5,503.7266,209.5,513.7266,213.5,503.7266,209.5,507.7266"/></g></svg></figure>
+<p><br clear="all"/></p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://virtually.healthcare">Virtually Healthcare</a>.  Package virtually.healthcare#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Mar 9, 2024 08:46+0000">2024-03-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

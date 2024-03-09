@@ -1,0 +1,19 @@
+@startuml
+
+start
+:patient links device to virtually;
+:data copied from device and stored on AWS FHIR Works;
+:patient begins PCSP form;
+:virtualy app runs $populate request and
+this returns a partially completed FHIR Questionnaire
+
+(the form definition (Questionnaire) defines what is populated);
+:citizen completes remaining part of the form and updates entries;
+:virtually app runs $extract to convert form into a FHIR resources
+
+(the form definition (Questionnaire) defines what is extracted
+from the completed form (QuestionnaireResponse));
+:virtually app stores entries in AWS FHIR Works;
+
+end
+@enduml

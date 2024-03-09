@@ -111,6 +111,10 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl": [
+      "Questionnaire.item",
+      "Questionnaire.item.item.item"
+    ],
     "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption": [
       "Questionnaire.item"
     ],

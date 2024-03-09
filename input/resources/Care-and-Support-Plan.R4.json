@@ -1,0 +1,236 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "4953b4a9-cd3f-4a07-b12a-62b88cf3fb81",
+  "title": "Care and Support Plan",
+  "status": "draft",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "734163000",
+      "display": "Care plan"
+    }
+  ],
+  "item": [
+    {
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "4926949137907",
+      "text": "Please select and long term conditions you may have",
+      "repeats": true,
+      "answerValueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode"
+    },
+    {
+      "item": [
+        {
+          "item": [
+            {
+              "text": "This is a single test result",
+              "type": "display",
+              "linkId": "244700101223_helpText",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "string",
+          "linkId": "244700101223",
+          "text": "Test Result",
+          "readOnly": true
+        },
+        {
+          "type": "string",
+          "linkId": "3888741037003",
+          "text": "Test Result Comment",
+          "required": false
+        }
+      ],
+      "type": "group",
+      "linkId": "3730181671901",
+      "text": "Please review your test results",
+      "readOnly": true
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "7292900215492",
+          "text": "Your height"
+        },
+        {
+          "type": "string",
+          "linkId": "3473022896586",
+          "text": "Your weight"
+        },
+        {
+          "type": "string",
+          "linkId": "2584772487996",
+          "text": "Your smoking history"
+        },
+        {
+          "item": [
+            {
+              "type": "string",
+              "linkId": "7444335220974",
+              "text": "How many cigarettes do you smoke a day"
+            },
+            {
+              "type": "string",
+              "linkId": "5356820738608",
+              "text": "How many years have you smoked for?"
+            }
+          ],
+          "type": "string",
+          "linkId": "8945412473253",
+          "text": "Smoking",
+          "readOnly": true
+        }
+      ],
+      "type": "string",
+      "linkId": "2623779674139",
+      "text": "Please Review your lifestyle habbits"
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "764500992041",
+          "text": "How many units of alcohol do you drink on a typical day when you are drinking"
+        },
+        {
+          "type": "string",
+          "linkId": "120024532963",
+          "text": "How many units of alcohol do you drink in a week"
+        }
+      ],
+      "type": "string",
+      "linkId": "8212708208401",
+      "text": "How many days a month do you drink alcohol"
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "277087793069",
+          "text": "Systolic Blood Pressure"
+        },
+        {
+          "type": "string",
+          "linkId": "8306915280904",
+          "text": "Diastolic Blood Pressue"
+        }
+      ],
+      "type": "group",
+      "linkId": "6198193194987",
+      "text": "Do you know your blood pressue"
+    },
+    {
+      "type": "string",
+      "linkId": "3989315762128",
+      "text": "Tell us about your exercise habbits"
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "5282597155075",
+          "text": "For your clinician, please tell us what you would like to address for you personnel circumstances"
+        }
+      ],
+      "type": "string",
+      "linkId": "9814409156041",
+      "text": "Your personnel Circumstances"
+    },
+    {
+      "item": [
+        {
+          "item": [
+            {
+              "type": "boolean",
+              "linkId": "707821448143",
+              "text": "Bathing"
+            },
+            {
+              "type": "boolean",
+              "linkId": "7584358476532",
+              "text": "Shopping"
+            },
+            {
+              "type": "boolean",
+              "linkId": "2211081947986",
+              "text": "Dressing"
+            },
+            {
+              "type": "boolean",
+              "linkId": "4577298449177",
+              "text": "Cooking"
+            }
+          ],
+          "type": "group",
+          "linkId": "3826069573468",
+          "text": "Do you need help with?"
+        },
+        {
+          "type": "string",
+          "linkId": "1157749322430",
+          "text": "Do you need help with any other tasks?"
+        }
+      ],
+      "type": "string",
+      "linkId": "4470632198625",
+      "text": "Your personnel care and support plan needs"
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "1104535204051",
+          "text": "Please write down any concerns or problems you would like us to help you with"
+        },
+        {
+          "type": "integer",
+          "linkId": "2928665994348",
+          "text": "Please select a number to show how severe the problem or concern is now"
+        }
+      ],
+      "type": "group",
+      "linkId": "2056610828075",
+      "text": "Your problem or concerns",
+      "repeats": true
+    },
+    {
+      "type": "integer",
+      "linkId": "8331239708380",
+      "text": "How would you rate your general wellbeing?"
+    },
+    {
+      "type": "string",
+      "linkId": "621183321128",
+      "text": "Add general notes, thoughts and concerns on your test results for your clinician"
+    }
+  ]
+}

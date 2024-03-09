@@ -10,7 +10,7 @@
   "name" : "VirtuallyHealthcareImplementationGuide",
   "title" : "Virtually Healthcare Implementation Guide",
   "status" : "draft",
-  "date" : "2024-03-04T08:45:19+00:00",
+  "date" : "2024-03-09T08:46:02+00:00",
   "publisher" : "Virtually Healthcare",
   "contact" : [{
     "name" : "Virtually Healthcare",
@@ -643,7 +643,7 @@
         "reference" : "Patient/a8a85872-87c7-4f20-89c1-6747f980f919"
       },
       "name" : "a8a85872-87c7-4f20-89c1-6747f980f919",
-      "exampleBoolean" : false
+      "exampleCanonical" : "https://fhir.virtually.healthcare/StructureDefinition/Patient"
     },
     {
       "extension" : [{
@@ -684,6 +684,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/4953b4a9-cd3f-4a07-b12a-62b88cf3fb81"
+      },
+      "name" : "Care and Support Plan",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -715,6 +726,17 @@
       },
       "name" : "DocumentReference",
       "description" : "Union of UKCore, IPA and IHE MHD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/31424b39-5aec-4456-864b-86ad3348d075"
+      },
+      "name" : "Goal",
       "exampleBoolean" : false
     },
     {
@@ -786,7 +808,7 @@
         "reference" : "Task/prescription-refill-request"
       },
       "name" : "prescription-refill-request",
-      "exampleBoolean" : false
+      "exampleCanonical" : "https://fhir.virtually.healthcare/StructureDefinition/Task"
     },
     {
       "extension" : [{
@@ -833,7 +855,7 @@
         "reference" : "QuestionnaireResponse/questionnaireresponse-vital-signs"
       },
       "name" : "questionnaireresponse-vital-signs",
-      "exampleBoolean" : false
+      "exampleCanonical" : "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"
     },
     {
       "extension" : [{
@@ -942,6 +964,15 @@
         }],
         "nameUrl" : "architecture-detail.html",
         "title" : "Architecture Detail",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "care-plans.html"
+        }],
+        "nameUrl" : "care-plans.html",
+        "title" : "Care Plans",
         "generation" : "markdown"
       },
       {
