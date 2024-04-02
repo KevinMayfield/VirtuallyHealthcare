@@ -10,7 +10,7 @@
   <name value="VirtuallyHealthcareImplementationGuide"/>
   <title value="Virtually Healthcare Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-03-09T08:46:02+00:00"/>
+  <date value="2024-04-02T05:59:13+01:00"/>
   <publisher value="Virtually Healthcare"/>
   <contact>
     <name value="Virtually Healthcare"/>
@@ -519,6 +519,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-transaction-example"/>
+      </reference>
+      <name value="bundle-transaction-example"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
@@ -601,6 +611,96 @@
       </reference>
       <name value="Observation"/>
       <description value="Union of UKCore, IPA and IHE QEDm"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-blood-pressure"/>
+      </reference>
+      <name value="observation-definition-blood-pressure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-body-height"/>
+      </reference>
+      <name value="observation-definition-body-height"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-body-temperature"/>
+      </reference>
+      <name value="observation-definition-body-temperature"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-body-weight"/>
+      </reference>
+      <name value="observation-definition-body-weight"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-head-circumference"/>
+      </reference>
+      <name value="observation-definition-head-circumference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-heart-rate"/>
+      </reference>
+      <name value="observation-definition-heart-rate"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-inspired-oxygen"/>
+      </reference>
+      <name value="observation-definition-inspired-oxygen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-self-measured-blood-pressure"/>
+      </reference>
+      <name value="observation-definition-self-measured-blood-pressure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-smoking-status"/>
+      </reference>
+      <name value="observation-definition-smoking-status"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -709,6 +809,17 @@
       </reference>
       <name value="Slot"/>
       <description value="Union of UKCore and NHS England Scheduling"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-smoking-status"/>
+      </reference>
+      <name value="SmokingStatus"/>
+      <description value="Virtually Smoking Status"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -10,7 +10,7 @@
   "name" : "VirtuallyHealthcareImplementationGuide",
   "title" : "Virtually Healthcare Implementation Guide",
   "status" : "draft",
-  "date" : "2024-03-09T08:46:02+00:00",
+  "date" : "2024-04-02T05:59:13+01:00",
   "publisher" : "Virtually Healthcare",
   "contact" : [{
     "name" : "Virtually Healthcare",
@@ -684,6 +684,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/bundle-transaction-example"
+      },
+      "name" : "bundle-transaction-example",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Questionnaire"
       }],
       "reference" : {
@@ -773,6 +784,105 @@
       },
       "name" : "Observation",
       "description" : "Union of UKCore, IPA and IHE QEDm",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/observation-definition-blood-pressure"
+      },
+      "name" : "observation-definition-blood-pressure",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/observation-definition-body-height"
+      },
+      "name" : "observation-definition-body-height",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/observation-definition-body-temperature"
+      },
+      "name" : "observation-definition-body-temperature",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/observation-definition-body-weight"
+      },
+      "name" : "observation-definition-body-weight",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/observation-definition-head-circumference"
+      },
+      "name" : "observation-definition-head-circumference",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/observation-definition-heart-rate"
+      },
+      "name" : "observation-definition-heart-rate",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/observation-definition-inspired-oxygen"
+      },
+      "name" : "observation-definition-inspired-oxygen",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/observation-definition-self-measured-blood-pressure"
+      },
+      "name" : "observation-definition-self-measured-blood-pressure",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/observation-definition-smoking-status"
+      },
+      "name" : "observation-definition-smoking-status",
       "exampleBoolean" : false
     },
     {
@@ -891,6 +1001,18 @@
       },
       "name" : "Slot",
       "description" : "Union of UKCore and NHS England Scheduling",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/valueset-smoking-status"
+      },
+      "name" : "SmokingStatus",
+      "description" : "Virtually Smoking Status",
       "exampleBoolean" : false
     },
     {

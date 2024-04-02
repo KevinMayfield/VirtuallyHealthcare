@@ -10,7 +10,8 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.8-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" : "UK Core Condition Code"
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.8-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" : "UK Core Condition Code",
+      "ValueSet-valueset-smoking-status.html" : "SmokingStatus"
     }
   ]
 }

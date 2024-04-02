@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.virtually.healthcare/ObservationDefinition/observation-definition-inspired-oxygen> a fhir:ObservationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-definition-inspired-oxygen"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ObservationDefinition</b><a name=\"observation-definition-inspired-oxygen\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ObservationDefinition &quot;observation-definition-inspired-oxygen&quot; </p></div><p><b>code</b>: Patient on oxygen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#371825009)</span></p><h3>QuantitativeDetails</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>CustomaryUnit</b></td></tr><tr><td style=\"display: none\">*</td><td>liter per minute <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://ucum.org\">UCUM</a>#L/min)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:371825009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "371825009" ] ;
+       fhir:display [ fhir:v "Patient on oxygen" ]
+     ] )
+  ] ; # 
+  fhir:quantitativeDetails [
+     fhir:customaryUnit [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "L/min" ] ;
+         fhir:display [ fhir:v "liter per minute" ]
+       ] )
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -11,6 +11,15 @@
       "uses" : {
       },
       "Questionnaire-4953b4a9-cd3f-4a07-b12a-62b88cf3fb81.html" : "Care and Support Plan"
+    },
+    {
+      "url" : "https://fhir.virtually.healthcare/ValueSet/SmokingStatus",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "SmokingStatus",
+      "title" : null,
+      "description" : "Virtually Smoking Status",
+      "systems" : ["http://snomed.info/sct"]
     }
   ]
 }

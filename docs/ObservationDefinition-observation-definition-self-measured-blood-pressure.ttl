@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.virtually.healthcare/ObservationDefinition/observation-definition-self-measured-blood-pressure> a fhir:ObservationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-definition-self-measured-blood-pressure"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2022-11-04T14:29:24.263Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ObservationDefinition</b><a name=\"observation-definition-self-measured-blood-pressure\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ObservationDefinition &quot;observation-definition-self-measured-blood-pressure&quot; Version &quot;1&quot; Updated &quot;2022-11-04 14:29:24+0000&quot; </p></div><p><b>code</b>: Self measured blood pressure reading <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#335661000000109)</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:72313002 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "72313002" ] ;
+           fhir:display [ fhir:v "Systolic arterial pressure" ]
+         ] [
+           a loinc:8480-6 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "8480-6" ] ;
+           fhir:display [ fhir:v "Systolic blood pressure" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "customaryUnit"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "mm[Hg]" ] ;
+           fhir:display [ fhir:v "millimeter of mercury" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://fhir.virtually.healthcare/StructureDefinition/Extension-ObservationDefinition-component"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:1091811000000102 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1091811000000102" ] ;
+           fhir:display [ fhir:v "Diastolic arterial pressure" ]
+         ] [
+           a loinc:8462-4 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "8462-4" ] ;
+           fhir:display [ fhir:v "Diastolic blood pressure" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "customaryUnit"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "mm[Hg]" ] ;
+           fhir:display [ fhir:v "millimeter of mercury" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://fhir.virtually.healthcare/StructureDefinition/Extension-ObservationDefinition-component"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:335661000000109 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "335661000000109" ] ;
+       fhir:display [ fhir:v "Self measured blood pressure reading" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

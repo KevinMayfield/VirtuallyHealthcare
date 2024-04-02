@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-transaction-example"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="urn:uuid:e2f4870c-6305-42fb-a805-1b16529a4206"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ValueSet</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"/><p><b>url</b>: <code>https://fhir.virtually.healthcare/ValueSet/SmokingStatus</code></p><p><b>version</b>: 0.0.2</p><p><b>name</b>: SmokingStatus</p><p><b>status</b>: draft</p><p><b>description</b>: Virtually Smoking Status</p><blockquote><p><b>compose</b></p><blockquote><p><b>include</b></p><p><b>system</b>: <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a></p><blockquote><p><b>concept</b></p><p><b>code</b>: 266919005</p><p><b>display</b>: Never smoked tobacco</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 230059006</p><p><b>display</b>: Trivial cigarette smoker</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160603005</p><p><b>display</b>: Light cigarette smoker (1-9 cigs/day)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160604004</p><p><b>display</b>: Moderate cigarette smoker (10-19/day)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160605003</p><p><b>display</b>: Heavy cigarette smoker (20-39/day)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1092031000000108</p><p><b>display</b>: Ex-smoker amount unknown</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 82302008</p><p><b>display</b>: Pipe smoker</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160619003</p><p><b>display</b>: Rolls own cigarettes</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 59978006</p><p><b>display</b>: Cigar smoker</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 2253230000</p><p><b>display</b>: Smoking cessation advice</p></blockquote></blockquote></blockquote></div>
+        </text>
+        <url value="https://fhir.virtually.healthcare/ValueSet/SmokingStatus"/>
+        <version value="0.0.2"/>
+        <name value="SmokingStatus"/>
+        <status value="draft"/>
+        <description value="Virtually Smoking Status"/>
+        <compose>
+          <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+              <code value="266919005"/>
+              <display value="Never smoked tobacco"/>
+            </concept>
+            <concept>
+              <code value="230059006"/>
+              <display value="Trivial cigarette smoker"/>
+            </concept>
+            <concept>
+              <code value="160603005"/>
+              <display value="Light cigarette smoker (1-9 cigs/day)"/>
+            </concept>
+            <concept>
+              <code value="160604004"/>
+              <display value="Moderate cigarette smoker (10-19/day)"/>
+            </concept>
+            <concept>
+              <code value="160605003"/>
+              <display value="Heavy cigarette smoker (20-39/day)"/>
+            </concept>
+            <concept>
+              <code value="1092031000000108"/>
+              <display value="Ex-smoker amount unknown"/>
+            </concept>
+            <concept>
+              <code value="82302008"/>
+              <display value="Pipe smoker"/>
+            </concept>
+            <concept>
+              <code value="160619003"/>
+              <display value="Rolls own cigarettes"/>
+            </concept>
+            <concept>
+              <code value="59978006"/>
+              <display value="Cigar smoker"/>
+            </concept>
+            <concept>
+              <code value="2253230000"/>
+              <display value="Smoking cessation advice"/>
+            </concept>
+          </include>
+        </compose>
+      </ValueSet>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="ValueSet"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b9323c42-73f7-4c3f-a702-0c4f87e92f9e"/>
+    <resource>
+      <ObservationDefinition>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ObservationDefinition</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"/><p><b>code</b>: Tobacco smoking behaviour - finding <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#365981007)</span></p><p><b>validCodedValueSet</b>: <a href="#urnuuide2f4870c-6305-42fb-a805-1b16529a4206">See above (urn:uuid:e2f4870c-6305-42fb-a805-1b16529a4206)</a></p></div>
+        </text>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="365981007"/>
+            <display value="Tobacco smoking behaviour - finding"/>
+          </coding>
+        </code>
+        <validCodedValueSet>
+          <reference value="urn:uuid:e2f4870c-6305-42fb-a805-1b16529a4206"/>
+        </validCodedValueSet>
+      </ObservationDefinition>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="ObservationDefinition"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:9cd98a4f-8ce0-4a8b-96f1-32d319cf886a"/>
+    <resource>
+      <List>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: List</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"/><p><b>status</b>: current</p><p><b>mode</b>: changes</p><p><b>code</b>: Tobacco smoking behaviour - finding <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#365981007)</span></p><p><b>date</b>: 2012-11-25 22:17:00+1100</p><h3>Entries</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Item</b></td></tr><tr><td style="display: none">*</td><td><a href="#urnuuidb9323c42-73f7-4c3f-a702-0c4f87e92f9e">See above (urn:uuid:b9323c42-73f7-4c3f-a702-0c4f87e92f9e)</a></td></tr></table></div>
+        </text>
+        <status value="current"/>
+        <mode value="changes"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="365981007"/>
+            <display value="Tobacco smoking behaviour - finding"/>
+          </coding>
+        </code>
+        <date value="2012-11-25T22:17:00+11:00"/>
+        <entry>
+          <item>
+            <reference value="urn:uuid:b9323c42-73f7-4c3f-a702-0c4f87e92f9e"/>
+          </item>
+        </entry>
+      </List>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="List"/>
+    </request>
+  </entry>
+</Bundle>

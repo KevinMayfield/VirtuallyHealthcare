@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "VirtuallyHealthcareImplementationGuide"] ; # 
   fhir:title [ fhir:v "Virtually Healthcare Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-09T08:46:02+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-02T05:59:13+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Virtually Healthcare"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Virtually Healthcare" ] ;
@@ -609,6 +609,17 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/Bundle/bundle-transaction-example> ;
+         fhir:reference [ fhir:v "Bundle/bundle-transaction-example" ]
+       ] ;
+       fhir:name [ fhir:v "bundle-transaction-example" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
@@ -699,6 +710,105 @@
        ] ;
        fhir:name [ fhir:v "Observation" ] ;
        fhir:description [ fhir:v "Union of UKCore, IPA and IHE QEDm" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ObservationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/ObservationDefinition/observation-definition-blood-pressure> ;
+         fhir:reference [ fhir:v "ObservationDefinition/observation-definition-blood-pressure" ]
+       ] ;
+       fhir:name [ fhir:v "observation-definition-blood-pressure" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ObservationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/ObservationDefinition/observation-definition-body-height> ;
+         fhir:reference [ fhir:v "ObservationDefinition/observation-definition-body-height" ]
+       ] ;
+       fhir:name [ fhir:v "observation-definition-body-height" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ObservationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/ObservationDefinition/observation-definition-body-temperature> ;
+         fhir:reference [ fhir:v "ObservationDefinition/observation-definition-body-temperature" ]
+       ] ;
+       fhir:name [ fhir:v "observation-definition-body-temperature" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ObservationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/ObservationDefinition/observation-definition-body-weight> ;
+         fhir:reference [ fhir:v "ObservationDefinition/observation-definition-body-weight" ]
+       ] ;
+       fhir:name [ fhir:v "observation-definition-body-weight" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ObservationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/ObservationDefinition/observation-definition-head-circumference> ;
+         fhir:reference [ fhir:v "ObservationDefinition/observation-definition-head-circumference" ]
+       ] ;
+       fhir:name [ fhir:v "observation-definition-head-circumference" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ObservationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/ObservationDefinition/observation-definition-heart-rate> ;
+         fhir:reference [ fhir:v "ObservationDefinition/observation-definition-heart-rate" ]
+       ] ;
+       fhir:name [ fhir:v "observation-definition-heart-rate" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ObservationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/ObservationDefinition/observation-definition-inspired-oxygen> ;
+         fhir:reference [ fhir:v "ObservationDefinition/observation-definition-inspired-oxygen" ]
+       ] ;
+       fhir:name [ fhir:v "observation-definition-inspired-oxygen" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ObservationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/ObservationDefinition/observation-definition-self-measured-blood-pressure> ;
+         fhir:reference [ fhir:v "ObservationDefinition/observation-definition-self-measured-blood-pressure" ]
+       ] ;
+       fhir:name [ fhir:v "observation-definition-self-measured-blood-pressure" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ObservationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/ObservationDefinition/observation-definition-smoking-status> ;
+         fhir:reference [ fhir:v "ObservationDefinition/observation-definition-smoking-status" ]
+       ] ;
+       fhir:name [ fhir:v "observation-definition-smoking-status" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -823,6 +933,18 @@
        ] ;
        fhir:name [ fhir:v "Slot" ] ;
        fhir:description [ fhir:v "Union of UKCore and NHS England Scheduling" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.virtually.healthcare/ValueSet/valueset-smoking-status> ;
+         fhir:reference [ fhir:v "ValueSet/valueset-smoking-status" ]
+       ] ;
+       fhir:name [ fhir:v "SmokingStatus" ] ;
+       fhir:description [ fhir:v "Virtually Smoking Status" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

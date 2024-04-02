@@ -1,0 +1,122 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "bundle-transaction-example",
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:e2f4870c-6305-42fb-a805-1b16529a4206",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ValueSet</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"/><p><b>url</b>: <code>https://fhir.virtually.healthcare/ValueSet/SmokingStatus</code></p><p><b>version</b>: 0.0.2</p><p><b>name</b>: SmokingStatus</p><p><b>status</b>: draft</p><p><b>description</b>: Virtually Smoking Status</p><blockquote><p><b>compose</b></p><blockquote><p><b>include</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><blockquote><p><b>concept</b></p><p><b>code</b>: 266919005</p><p><b>display</b>: Never smoked tobacco</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 230059006</p><p><b>display</b>: Trivial cigarette smoker</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160603005</p><p><b>display</b>: Light cigarette smoker (1-9 cigs/day)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160604004</p><p><b>display</b>: Moderate cigarette smoker (10-19/day)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160605003</p><p><b>display</b>: Heavy cigarette smoker (20-39/day)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1092031000000108</p><p><b>display</b>: Ex-smoker amount unknown</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 82302008</p><p><b>display</b>: Pipe smoker</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 160619003</p><p><b>display</b>: Rolls own cigarettes</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 59978006</p><p><b>display</b>: Cigar smoker</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 2253230000</p><p><b>display</b>: Smoking cessation advice</p></blockquote></blockquote></blockquote></div>"
+      },
+      "url" : "https://fhir.virtually.healthcare/ValueSet/SmokingStatus",
+      "version" : "0.0.2",
+      "name" : "SmokingStatus",
+      "status" : "draft",
+      "description" : "Virtually Smoking Status",
+      "compose" : {
+        "include" : [{
+          "system" : "http://snomed.info/sct",
+          "concept" : [{
+            "code" : "266919005",
+            "display" : "Never smoked tobacco"
+          },
+          {
+            "code" : "230059006",
+            "display" : "Trivial cigarette smoker"
+          },
+          {
+            "code" : "160603005",
+            "display" : "Light cigarette smoker (1-9 cigs/day)"
+          },
+          {
+            "code" : "160604004",
+            "display" : "Moderate cigarette smoker (10-19/day)"
+          },
+          {
+            "code" : "160605003",
+            "display" : "Heavy cigarette smoker (20-39/day)"
+          },
+          {
+            "code" : "1092031000000108",
+            "display" : "Ex-smoker amount unknown"
+          },
+          {
+            "code" : "82302008",
+            "display" : "Pipe smoker"
+          },
+          {
+            "code" : "160619003",
+            "display" : "Rolls own cigarettes"
+          },
+          {
+            "code" : "59978006",
+            "display" : "Cigar smoker"
+          },
+          {
+            "code" : "2253230000",
+            "display" : "Smoking cessation advice"
+          }]
+        }]
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "ValueSet"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:b9323c42-73f7-4c3f-a702-0c4f87e92f9e",
+    "resource" : {
+      "resourceType" : "ObservationDefinition",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ObservationDefinition</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"/><p><b>code</b>: Tobacco smoking behaviour - finding <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#365981007)</span></p><p><b>validCodedValueSet</b>: <a href=\"#urnuuide2f4870c-6305-42fb-a805-1b16529a4206\">See above (urn:uuid:e2f4870c-6305-42fb-a805-1b16529a4206)</a></p></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "365981007",
+          "display" : "Tobacco smoking behaviour - finding"
+        }]
+      },
+      "validCodedValueSet" : {
+        "reference" : "urn:uuid:e2f4870c-6305-42fb-a805-1b16529a4206"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "ObservationDefinition"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:9cd98a4f-8ce0-4a8b-96f1-32d319cf886a",
+    "resource" : {
+      "resourceType" : "List",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: List</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"/><p><b>status</b>: current</p><p><b>mode</b>: changes</p><p><b>code</b>: Tobacco smoking behaviour - finding <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#365981007)</span></p><p><b>date</b>: 2012-11-25 22:17:00+1100</p><h3>Entries</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#urnuuidb9323c42-73f7-4c3f-a702-0c4f87e92f9e\">See above (urn:uuid:b9323c42-73f7-4c3f-a702-0c4f87e92f9e)</a></td></tr></table></div>"
+      },
+      "status" : "current",
+      "mode" : "changes",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "365981007",
+          "display" : "Tobacco smoking behaviour - finding"
+        }]
+      },
+      "date" : "2012-11-25T22:17:00+11:00",
+      "entry" : [{
+        "item" : {
+          "reference" : "urn:uuid:b9323c42-73f7-4c3f-a702-0c4f87e92f9e"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "List"
+    }
+  }]
+}

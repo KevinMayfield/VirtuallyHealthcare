@@ -148,6 +148,9 @@
     ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod": [
       "Questionnaire.item"
+    ],
+    "https://fhir.virtually.healthcare/StructureDefinition/Extension-ObservationDefinition-component": [
+      "ObservationDefinition"
     ]
   }
 }

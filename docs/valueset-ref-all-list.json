@@ -186,8 +186,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-Condition.html" : "Condition",
-      "StructureDefinition-Observation.html" : "Observation"
+      "StructureDefinition-Observation.html" : "Observation",
+      "StructureDefinition-Condition.html" : "Condition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-doc-typecodes",
@@ -229,10 +229,10 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-Schedule.html" : "Schedule",
-      "StructureDefinition-DocumentReference.html" : "DocumentReference",
       "StructureDefinition-Appointment.html" : "Appointment",
-      "StructureDefinition-Slot.html" : "Slot"
+      "StructureDefinition-Schedule.html" : "Schedule",
+      "StructureDefinition-Slot.html" : "Slot",
+      "StructureDefinition-DocumentReference.html" : "DocumentReference"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
@@ -302,8 +302,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-Condition.html" : "Condition",
-      "StructureDefinition-MedicationRequest.html" : "MedicationRequest"
+      "StructureDefinition-MedicationRequest.html" : "MedicationRequest",
+      "StructureDefinition-Condition.html" : "Condition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -446,8 +446,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
       "uses" : {
       },
-      "StructureDefinition-AppointmentResponse.html" : "AppointmentResponse",
-      "StructureDefinition-Appointment.html" : "Appointment"
+      "StructureDefinition-Appointment.html" : "Appointment",
+      "StructureDefinition-AppointmentResponse.html" : "AppointmentResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -714,20 +714,20 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-AppointmentResponse.html" : "AppointmentResponse",
-      "StructureDefinition-Task.html" : "Task",
-      "StructureDefinition-Condition.html" : "Condition",
-      "StructureDefinition-Schedule.html" : "Schedule",
-      "StructureDefinition-Questionnaire.html" : "Questionnaire",
-      "StructureDefinition-Observation.html" : "Observation",
-      "StructureDefinition-DocumentReference.html" : "DocumentReference",
-      "StructureDefinition-Slot.html" : "Slot",
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-MedicationRequest.html" : "MedicationRequest",
-      "StructureDefinition-AllergyIntolerance.html" : "AllergyIntolerance",
-      "StructureDefinition-Immunization.html" : "Immunization",
       "StructureDefinition-Appointment.html" : "Appointment",
-      "StructureDefinition-QuestionnaireResponse.html" : "QuestionnaireResponse"
+      "StructureDefinition-Schedule.html" : "Schedule",
+      "StructureDefinition-Slot.html" : "Slot",
+      "StructureDefinition-AppointmentResponse.html" : "AppointmentResponse",
+      "StructureDefinition-Patient.html" : "Patient",
+      "StructureDefinition-Questionnaire.html" : "Questionnaire",
+      "StructureDefinition-DocumentReference.html" : "DocumentReference",
+      "StructureDefinition-Task.html" : "Task",
+      "StructureDefinition-Immunization.html" : "Immunization",
+      "StructureDefinition-AllergyIntolerance.html" : "AllergyIntolerance",
+      "StructureDefinition-Observation.html" : "Observation",
+      "StructureDefinition-QuestionnaireResponse.html" : "QuestionnaireResponse",
+      "StructureDefinition-MedicationRequest.html" : "MedicationRequest",
+      "StructureDefinition-Condition.html" : "Condition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -990,8 +990,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.486"],
       "uses" : {
       },
-      "StructureDefinition-AppointmentResponse.html" : "AppointmentResponse",
-      "StructureDefinition-Appointment.html" : "Appointment"
+      "StructureDefinition-Appointment.html" : "Appointment",
+      "StructureDefinition-AppointmentResponse.html" : "AppointmentResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -1019,8 +1019,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.433"],
       "uses" : {
       },
-      "StructureDefinition-Task.html" : "Task",
-      "StructureDefinition-MedicationRequest.html" : "MedicationRequest"
+      "StructureDefinition-MedicationRequest.html" : "MedicationRequest",
+      "StructureDefinition-Task.html" : "Task"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/publication-status",
@@ -1048,8 +1048,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.446"],
       "uses" : {
       },
-      "StructureDefinition-Questionnaire.html" : "Questionnaire",
-      "StructureDefinition-QuestionnaireResponse.html" : "QuestionnaireResponse"
+      "StructureDefinition-QuestionnaireResponse.html" : "QuestionnaireResponse",
+      "StructureDefinition-Questionnaire.html" : "Questionnaire"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/questionnaire-answers-status",
@@ -1166,8 +1166,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.115"],
       "uses" : {
       },
-      "StructureDefinition-Task.html" : "Task",
-      "StructureDefinition-MedicationRequest.html" : "MedicationRequest"
+      "StructureDefinition-MedicationRequest.html" : "MedicationRequest",
+      "StructureDefinition-Task.html" : "Task"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -1195,8 +1195,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-MedicationRequest.html" : "MedicationRequest",
-      "StructureDefinition-AllergyIntolerance.html" : "AllergyIntolerance"
+      "StructureDefinition-AllergyIntolerance.html" : "AllergyIntolerance",
+      "StructureDefinition-MedicationRequest.html" : "MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -1230,8 +1230,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.516"],
       "uses" : {
       },
-      "StructureDefinition-Schedule.html" : "Schedule",
       "StructureDefinition-Appointment.html" : "Appointment",
+      "StructureDefinition-Schedule.html" : "Schedule",
       "StructureDefinition-Slot.html" : "Slot"
     },
     {
@@ -1246,8 +1246,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-Schedule.html" : "Schedule",
       "StructureDefinition-Appointment.html" : "Appointment",
+      "StructureDefinition-Schedule.html" : "Schedule",
       "StructureDefinition-Slot.html" : "Slot"
     },
     {
@@ -1405,6 +1405,15 @@
       "uses" : {
       },
       "Questionnaire-4953b4a9-cd3f-4a07-b12a-62b88cf3fb81.html" : "Care and Support Plan"
+    },
+    {
+      "url" : "https://fhir.virtually.healthcare/ValueSet/SmokingStatus",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "SmokingStatus",
+      "title" : null,
+      "description" : "Virtually Smoking Status",
+      "systems" : ["http://snomed.info/sct"]
     }
   ]
 }

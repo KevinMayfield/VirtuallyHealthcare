@@ -1,1 +1,2 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://fhir.virtually.healthcare/ValueSet/SmokingStatus,0.0.1,draft,,SmokingStatus,null,"Virtually Smoking Status",,"SCT"

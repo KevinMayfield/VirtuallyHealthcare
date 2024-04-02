@@ -1,8 +1,100 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d71bdc72-453e-43e2-9c6b-b3d7c8f3769a",
+  "id" : "950b06e4-633e-4990-aba9-2e83cfb58ea8",
   "meta" : {
-    "lastUpdated" : "2024-03-09T08:46:02.487+00:00"
+    "lastUpdated" : "2024-04-02T05:59:13.334+01:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://fhir.virtually.healthcare/ValueSet/SmokingStatus",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Feb 2024</p><p>This value set contains 8 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-266919005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/266919005\">266919005</a></td><td>http://snomed.info/sct</td><td>Never smoked</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-230059006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/230059006\">230059006</a></td><td>http://snomed.info/sct</td><td>Trivial cigarette smoker</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-160603005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/160603005\">160603005</a></td><td>http://snomed.info/sct</td><td>Light cigarette smoker (1-9 cigs/day)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-160604004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/160604004\">160604004</a></td><td>http://snomed.info/sct</td><td>Moderate cigarette smoker (10-19 cigs/day)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-160605003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/160605003\">160605003</a></td><td>http://snomed.info/sct</td><td>Heavy cigarette smoker (20-39 cigs/day)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-82302008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/82302008\">82302008</a></td><td>http://snomed.info/sct</td><td>Pipe smoker</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-160619003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/160619003\">160619003</a></td><td>http://snomed.info/sct</td><td>Rolls own cigarettes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-59978006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/59978006\">59978006</a></td><td>http://snomed.info/sct</td><td>Cigar smoker</td></tr></table></div>"
+      },
+      "url" : "https://fhir.virtually.healthcare/ValueSet/SmokingStatus",
+      "version" : "0.0.1",
+      "name" : "SmokingStatus",
+      "status" : "draft",
+      "date" : "2024-04-02T05:59:13+01:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "GB",
+          "display" : "UK"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:a8fd3a5d-540f-4b3e-86a6-b53c093f18ef",
+        "timestamp" : "2024-04-02T06:00:23+01:00",
+        "total" : 8,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "266919005",
+          "display" : "Never smoked"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "230059006",
+          "display" : "Trivial cigarette smoker"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "160603005",
+          "display" : "Light cigarette smoker (1-9 cigs/day)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "160604004",
+          "display" : "Moderate cigarette smoker (10-19 cigs/day)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "160605003",
+          "display" : "Heavy cigarette smoker (20-39 cigs/day)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "82302008",
+          "display" : "Pipe smoker"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "160619003",
+          "display" : "Rolls own cigarettes"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "59978006",
+          "display" : "Cigar smoker"
+        }]
+      }
+    }
+  }]
 }

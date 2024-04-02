@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.0.1"] ; # 
   fhir:name [ fhir:v "Condition"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-09T08:46:02+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-02T05:59:13+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Virtually Healthcare"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Virtually Healthcare" ] ;

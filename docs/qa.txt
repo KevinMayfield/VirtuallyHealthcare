@@ -1,10 +1,10 @@
 VirtuallyHealthcareImplementationGuide : Validation Results
 =========================================
 
-err = 39, warn = 26, info = 4
-IG Publisher Version: 1.5.16 Out of date - current version is 1.6.0
-Generated Sat Mar 09 08:47:43 GMT 2024. FHIR version 4.0.1 for virtually.healthcare#0.0.1 (canonical = https://fhir.virtually.healthcare)
- Build Errors : 1 / 10 / 0
+err = 59, warn = 48, info = 7
+IG Publisher Version: 1.5.16 Out of date - current version is 1.6.3
+Generated Tue Apr 02 06:01:24 BST 2024. FHIR version 4.0.1 for virtually.healthcare#0.0.1 (canonical = https://fhir.virtually.healthcare)
+ Build Errors : 1 / 20 / 0
  /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/fsh-generated/resources/CapabilityStatement-DocumentIndexProvider : 1 / 0 / 1
  /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/fsh-generated/resources/CapabilityStatement-PatientIndexProvider : 1 / 0 / 1
  /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/fsh-generated/resources/CapabilityStatement-QueryAPIProvider : 2 / 0 / 1
@@ -31,7 +31,18 @@ Generated Sat Mar 09 08:47:43 GMT 2024. FHIR version 4.0.1 for virtually.healthc
  /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/examples/task-patient1-prescription-renewal : 1 / 0 / 1
  /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Care-and-Support-Plan.R4 : 1 / 0 / 3
  /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Goal.R4 : 1 / 0 / 1
+ /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/ObservationDefinition-blood-pressure : 4 / 0 / 1
+ /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/ObservationDefinition-body-height : 1 / 0 / 1
+ /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/ObservationDefinition-body-temperature : 1 / 0 / 1
+ /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/ObservationDefinition-body-weight : 1 / 0 / 1
+ /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/ObservationDefinition-head-circumference : 1 / 0 / 1
+ /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/ObservationDefinition-heart-rate : 1 / 0 / 1
+ /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/ObservationDefinition-inspired-oxygen : 1 / 0 / 1
+ /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/ObservationDefinition-self-measured-blood-pressure : 5 / 0 / 1
+ /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/ObservationDefinition-smokingstatus : 0 / 0 / 1
+ /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/ObservationDefinition-transaction-smokingstatus : 1 / 8 / 6
  /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-vital-signs : 14 / 2 / 1
+ /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/ValueSet-SmokingStatus : 4 / 4 / 2
 </table>
 == n/a ==
 WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
@@ -41,6 +52,16 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/a8a85872-87c7-4f20-89c1-6747f980f919.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Task/prescription-refill-request.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/questionnaireresponse-vital-signs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/bundle-transaction-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ObservationDefinition/observation-definition-blood-pressure.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ObservationDefinition/observation-definition-body-height.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ObservationDefinition/observation-definition-body-temperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ObservationDefinition/observation-definition-body-weight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ObservationDefinition/observation-definition-head-circumference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ObservationDefinition/observation-definition-heart-rate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ObservationDefinition/observation-definition-inspired-oxygen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ObservationDefinition/observation-definition-self-measured-blood-pressure.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ObservationDefinition/observation-definition-smoking-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/output/care-plans.html#/html/body/div/div/div/div/div/p/a at Line 208, column 234: The link 'structured-data-capture.md' for "Structured Data Capture" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
@@ -114,6 +135,42 @@ INFORMATION: Questionnaire/4953b4a9-cd3f-4a07-b12a-62b88cf3fb81: Questionnaire.i
 INFORMATION: Questionnaire/4953b4a9-cd3f-4a07-b12a-62b88cf3fb81: Questionnaire.item[1].item[0].item[0].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
 == input/resources/Goal.R4.json ==
 ERROR: Questionnaire/31424b39-5aec-4456-864b-86ad3348d075: Questionnaire.jurisdiction[0].coding[0].display: Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')
+== input/resources/ObservationDefinition-blood-pressure.json ==
+ERROR: ObservationDefinition/observation-definition-blood-pressure: ObservationDefinition.extension[0]: The extension https://fhir.virtually.healthcare/StructureDefinition/Extension-ObservationDefinition-component could not be found so is not allowed here
+ERROR: ObservationDefinition/observation-definition-blood-pressure: ObservationDefinition.extension[0].extension[1].value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'millimeter of mercury' for http://unitsofmeasure.org#mm[Hg]. Valid display is 'mm[Hg]' (for the language(s) '--')
+ERROR: ObservationDefinition/observation-definition-blood-pressure: ObservationDefinition.extension[1]: The extension https://fhir.virtually.healthcare/StructureDefinition/Extension-ObservationDefinition-component could not be found so is not allowed here
+ERROR: ObservationDefinition/observation-definition-blood-pressure: ObservationDefinition.extension[1].extension[1].value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'millimeter of mercury' for http://unitsofmeasure.org#mm[Hg]. Valid display is 'mm[Hg]' (for the language(s) '--')
+== input/resources/ObservationDefinition-body-height.json ==
+ERROR: ObservationDefinition/observation-definition-body-height: ObservationDefinition.quantitativeDetails.customaryUnit.coding[0].display: Wrong Display Name 'centimeter' for http://unitsofmeasure.org#cm. Valid display is 'cm' (for the language(s) '--')
+== input/resources/ObservationDefinition-body-temperature.json ==
+ERROR: ObservationDefinition/observation-definition-body-temperature: ObservationDefinition.quantitativeDetails.customaryUnit.coding[0].display: Wrong Display Name 'degree Celsius' for http://unitsofmeasure.org#Cel. Valid display is 'Cel' (for the language(s) '--')
+== input/resources/ObservationDefinition-body-weight.json ==
+ERROR: ObservationDefinition/observation-definition-body-weight: ObservationDefinition.quantitativeDetails.customaryUnit.coding[0].display: Wrong Display Name 'kilogram' for http://unitsofmeasure.org#kg. Valid display is 'kg' (for the language(s) '--')
+== input/resources/ObservationDefinition-head-circumference.json ==
+ERROR: ObservationDefinition/observation-definition-head-circumference: ObservationDefinition.quantitativeDetails.customaryUnit.coding[0].display: Wrong Display Name 'centimeter' for http://unitsofmeasure.org#cm. Valid display is 'cm' (for the language(s) '--')
+== input/resources/ObservationDefinition-heart-rate.json ==
+ERROR: ObservationDefinition/observation-definition-heart-rate: ObservationDefinition.quantitativeDetails.customaryUnit.coding[0].display: Wrong Display Name 'heart beats per minute' for http://unitsofmeasure.org#{beats}/min. Valid display is '{beats}/min' (for the language(s) '--')
+== input/resources/ObservationDefinition-inspired-oxygen.json ==
+ERROR: ObservationDefinition/observation-definition-inspired-oxygen: ObservationDefinition.quantitativeDetails.customaryUnit.coding[0].display: Wrong Display Name 'liter per minute' for http://unitsofmeasure.org#L/min. Valid display is 'L/min' (for the language(s) '--')
+== input/resources/ObservationDefinition-self-measured-blood-pressure.json ==
+ERROR: ObservationDefinition/observation-definition-self-measured-blood-pressure: ObservationDefinition.extension[0]: The extension https://fhir.virtually.healthcare/StructureDefinition/Extension-ObservationDefinition-component could not be found so is not allowed here
+ERROR: ObservationDefinition/observation-definition-self-measured-blood-pressure: ObservationDefinition.extension[0].extension[1].value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'millimeter of mercury' for http://unitsofmeasure.org#mm[Hg]. Valid display is 'mm[Hg]' (for the language(s) '--')
+ERROR: ObservationDefinition/observation-definition-self-measured-blood-pressure: ObservationDefinition.extension[1]: The extension https://fhir.virtually.healthcare/StructureDefinition/Extension-ObservationDefinition-component could not be found so is not allowed here
+ERROR: ObservationDefinition/observation-definition-self-measured-blood-pressure: ObservationDefinition.extension[1].extension[1].value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'millimeter of mercury' for http://unitsofmeasure.org#mm[Hg]. Valid display is 'mm[Hg]' (for the language(s) '--')
+ERROR: ObservationDefinition/observation-definition-self-measured-blood-pressure: ObservationDefinition.code.coding[0].code: Unknown code '335661000000109' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240201'
+== input/resources/ObservationDefinition-smokingstatus.json ==
+== input/resources/ObservationDefinition-transaction-smokingstatus.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: null/https://fhir.virtually.healthcare/ValueSet/SmokingStatus
+WARNING: Bundle/bundle-transaction-example: Bundle.entry[0].resource/*ValueSet/null*/.compose.include[0].concept[5]: The code '1092031000000108' is not valid in the system http://snomed.info/sct
+WARNING: Bundle/bundle-transaction-example: Bundle.entry[0].resource/*ValueSet/null*/.compose.include[0].concept[9]: The code '2253230000' is not valid in the system http://snomed.info/sct
+INFORMATION: Bundle/bundle-transaction-example: Bundle.entry[0].resource/*ValueSet/null*/.compose.include[0]: This SNOMED-CT based include has some concepts with semantic tags (FSN terms) and some without (preferred terms) - check that this is what is intended  (examples for FSN: [Light cigarette smoker (1-9 cigs/day), Moderate cigarette smoker (10-19/day), Heavy cigarette smoker (20-39/day)] and examples for no FSN: [Never smoked tobacco, Trivial cigarette smoker, Ex-smoker amount unknown, Pipe smoker, Rolls own cigarettes])
+WARNING: Bundle/bundle-transaction-example: Bundle.entry[0].resource/*ValueSet/null*/: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
+WARNING: Bundle/bundle-transaction-example: Bundle.entry[0].resource/*ValueSet/null*/: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Bundle/bundle-transaction-example: Bundle.entry[0].resource.compose.include[0].concept[5]: The code '1092031000000108' is not valid in the system http://snomed.info/sct
+WARNING: Bundle/bundle-transaction-example: Bundle.entry[0].resource.compose.include[0].concept[9]: The code '2253230000' is not valid in the system http://snomed.info/sct
+INFORMATION: Bundle/bundle-transaction-example: Bundle.entry[0].resource.compose.include[0]: This SNOMED-CT based include has some concepts with semantic tags (FSN terms) and some without (preferred terms) - check that this is what is intended  (examples for FSN: [Light cigarette smoker (1-9 cigs/day), Moderate cigarette smoker (10-19/day), Heavy cigarette smoker (20-39/day)] and examples for no FSN: [Never smoked tobacco, Trivial cigarette smoker, Ex-smoker amount unknown, Pipe smoker, Rolls own cigarettes])
+WARNING: Bundle/bundle-transaction-example: Bundle.entry[0].resource: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
+WARNING: Bundle/bundle-transaction-example: Bundle.entry[0].resource: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == input/resources/Questionnaire-vital-signs.json ==
 ERROR: Questionnaire.url: Resource id/url mismatch: 0d9fccea-9c98-4e61-b3e0-bc9b3a9db675/https://fhir.virtually.healthcare/Questionnaire/VitalSignsFinding
 ERROR: Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675: Questionnaire.jurisdiction[0].coding[0].display: Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')
@@ -131,3 +188,13 @@ ERROR: Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675: Questionnaire.item[8]
 WARNING: Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675: Questionnaire.item[8].initial[0].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {Breaths} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 ERROR: Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675: Questionnaire.item[9].extension[2].value.ofType(Coding).display: Wrong Display Name 'kilogram per square meter' for http://unitsofmeasure.org#kg/m2. Valid display is 'kg/m2' (for the language(s) '--')
 ERROR: /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/Questionnaire-vital-signs: URL Mismatch https://fhir.virtually.healthcare/Questionnaire/0d9fccea-9c98-4e61-b3e0-bc9b3a9db675 vs https://fhir.virtually.healthcare/Questionnaire/VitalSignsFinding
+== input/resources/ValueSet-SmokingStatus.json ==
+ERROR: ValueSet.where(url = 'https://fhir.virtually.healthcare/ValueSet/SmokingStatus'): Conformance resource /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/ValueSet-SmokingStatus.json - the canonical URL (https://fhir.virtually.healthcare/ValueSet/valueset-smoking-status) does not match the URL (https://fhir.virtually.healthcare/ValueSet/SmokingStatus)
+ERROR: ValueSet.url: Resource id/url mismatch: valueset-smoking-status/https://fhir.virtually.healthcare/ValueSet/SmokingStatus
+ERROR: ValueSet/valueset-smoking-status: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'UK' for urn:iso:std:iso:3166#GB. Valid display is 'United Kingdom of Great Britain and Northern Ireland' (for the language(s) '--')
+WARNING: ValueSet/valueset-smoking-status: ValueSet.compose.include[0].concept[5]: The code '1092031000000108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/valueset-smoking-status: ValueSet.compose.include[0].concept[9]: The code '2253230000' is not valid in the system http://snomed.info/sct
+INFORMATION: ValueSet/valueset-smoking-status: ValueSet.compose.include[0]: This SNOMED-CT based include has some concepts with semantic tags (FSN terms) and some without (preferred terms) - check that this is what is intended  (examples for FSN: [Light cigarette smoker (1-9 cigs/day), Moderate cigarette smoker (10-19/day), Heavy cigarette smoker (20-39/day)] and examples for no FSN: [Never smoked tobacco, Trivial cigarette smoker, Ex-smoker amount unknown, Pipe smoker, Rolls own cigarettes])
+WARNING: ValueSet/valueset-smoking-status: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
+WARNING: ValueSet/valueset-smoking-status: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /Users/kevinmayfield/github/virtually/VirtuallyHealthcare/input/resources/ValueSet-SmokingStatus: URL Mismatch https://fhir.virtually.healthcare/ValueSet/valueset-smoking-status vs https://fhir.virtually.healthcare/ValueSet/SmokingStatus

@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.virtually.healthcare/ValueSet/valueset-smoking-status> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "valueset-smoking-status"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/266919005\">266919005</a></td><td>Never smoked tobacco</td></tr><tr><td><a href=\"http://snomed.info/id/230059006\">230059006</a></td><td>Trivial cigarette smoker</td></tr><tr><td><a href=\"http://snomed.info/id/160603005\">160603005</a></td><td>Light cigarette smoker (1-9 cigs/day)</td></tr><tr><td><a href=\"http://snomed.info/id/160604004\">160604004</a></td><td>Moderate cigarette smoker (10-19/day)</td></tr><tr><td><a href=\"http://snomed.info/id/160605003\">160605003</a></td><td>Heavy cigarette smoker (20-39/day)</td></tr><tr><td><a href=\"http://snomed.info/id/1092031000000108\">1092031000000108</a></td><td>Ex-smoker amount unknown</td></tr><tr><td><a href=\"http://snomed.info/id/82302008\">82302008</a></td><td>Pipe smoker</td></tr><tr><td><a href=\"http://snomed.info/id/160619003\">160619003</a></td><td>Rolls own cigarettes</td></tr><tr><td><a href=\"http://snomed.info/id/59978006\">59978006</a></td><td>Cigar smoker</td></tr><tr><td><a href=\"http://snomed.info/id/2253230000\">2253230000</a></td><td>Smoking cessation advice</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.virtually.healthcare/ValueSet/SmokingStatus"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.1"] ; # 
+  fhir:name [ fhir:v "SmokingStatus"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-04-02T05:59:13+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Virtually Healthcare"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Virtually Healthcare" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://virtually.healthcare" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Virtually Smoking Status"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "GB" ] ;
+       fhir:display [ fhir:v "UK" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "266919005" ] ;
+         fhir:display [ fhir:v "Never smoked tobacco" ]
+       ] [
+         fhir:code [ fhir:v "230059006" ] ;
+         fhir:display [ fhir:v "Trivial cigarette smoker" ]
+       ] [
+         fhir:code [ fhir:v "160603005" ] ;
+         fhir:display [ fhir:v "Light cigarette smoker (1-9 cigs/day)" ]
+       ] [
+         fhir:code [ fhir:v "160604004" ] ;
+         fhir:display [ fhir:v "Moderate cigarette smoker (10-19/day)" ]
+       ] [
+         fhir:code [ fhir:v "160605003" ] ;
+         fhir:display [ fhir:v "Heavy cigarette smoker (20-39/day)" ]
+       ] [
+         fhir:code [ fhir:v "1092031000000108" ] ;
+         fhir:display [ fhir:v "Ex-smoker amount unknown" ]
+       ] [
+         fhir:code [ fhir:v "82302008" ] ;
+         fhir:display [ fhir:v "Pipe smoker" ]
+       ] [
+         fhir:code [ fhir:v "160619003" ] ;
+         fhir:display [ fhir:v "Rolls own cigarettes" ]
+       ] [
+         fhir:code [ fhir:v "59978006" ] ;
+         fhir:display [ fhir:v "Cigar smoker" ]
+       ] [
+         fhir:code [ fhir:v "2253230000" ] ;
+         fhir:display [ fhir:v "Smoking cessation advice" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

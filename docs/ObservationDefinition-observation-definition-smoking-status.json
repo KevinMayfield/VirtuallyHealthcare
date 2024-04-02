@@ -1,0 +1,18 @@
+{
+  "resourceType" : "ObservationDefinition",
+  "id" : "observation-definition-smoking-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ObservationDefinition</b><a name=\"observation-definition-smoking-status\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ObservationDefinition &quot;observation-definition-smoking-status&quot; </p></div><p><b>code</b>: Tobacco smoking behaviour - finding <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#365981007)</span></p><p><b>validCodedValueSet</b>: <a href=\"https://fhir.virtually.healthcare/ValueSet/SmokingStatus\">https://fhir.virtually.healthcare/ValueSet/SmokingStatus</a> &quot;SmokingStatus&quot;</p></div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "365981007",
+      "display" : "Tobacco smoking behaviour - finding"
+    }]
+  },
+  "validCodedValueSet" : {
+    "reference" : "https://fhir.virtually.healthcare/ValueSet/SmokingStatus"
+  }
+}

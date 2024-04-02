@@ -1,0 +1,16 @@
+{
+  "resourceType": "ObservationDefinition",
+  "id": "observation-definition-smoking-status",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "365981007",
+        "display": "Tobacco smoking behaviour - finding"
+      }
+    ]
+  },
+  "validCodedValueSet": {
+    "reference": "https://fhir.virtually.healthcare/ValueSet/SmokingStatus"
+  }
+}

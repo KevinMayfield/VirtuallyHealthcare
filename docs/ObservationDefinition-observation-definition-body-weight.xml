@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+  <id value="observation-definition-body-weight"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ObservationDefinition</b><a name="observation-definition-body-weight"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ObservationDefinition &quot;observation-definition-body-weight&quot; </p></div><p><b>code</b>: Body weight <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#27113001; <a href="https://loinc.org/">LOINC</a>#29463-7 &quot;Body Weight&quot;)</span></p><h3>QuantitativeDetails</h3><table class="grid"><tr><td style="display: none">-</td><td><b>CustomaryUnit</b></td></tr><tr><td style="display: none">*</td><td>kilogram <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://ucum.org">UCUM</a>#kg)</span></td></tr></table></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="27113001"/>
+      <display value="Body weight"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="29463-7"/>
+      <display value="Body Weight"/>
+    </coding>
+  </code>
+  <quantitativeDetails>
+    <customaryUnit>
+      <coding>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="kg"/>
+        <display value="kilogram"/>
+      </coding>
+    </customaryUnit>
+  </quantitativeDetails>
+</ObservationDefinition>

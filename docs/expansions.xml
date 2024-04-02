@@ -1,9 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d71bdc72-453e-43e2-9c6b-b3d7c8f3769a"/>
+  <id value="950b06e4-633e-4990-aba9-2e83cfb58ea8"/>
   <meta>
-    <lastUpdated value="2024-03-09T08:46:02.487+00:00"/>
+    <lastUpdated value="2024-04-02T05:59:13.334+01:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://fhir.virtually.healthcare/ValueSet/SmokingStatus"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Feb 2024</p>
+            <p>This value set contains 8 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-266919005"> </a>  
+                  <a href="http://snomed.info/id/266919005">266919005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Never smoked</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-230059006"> </a>  
+                  <a href="http://snomed.info/id/230059006">230059006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Trivial cigarette smoker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-160603005"> </a>  
+                  <a href="http://snomed.info/id/160603005">160603005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Light cigarette smoker (1-9 cigs/day)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-160604004"> </a>  
+                  <a href="http://snomed.info/id/160604004">160604004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Moderate cigarette smoker (10-19 cigs/day)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-160605003"> </a>  
+                  <a href="http://snomed.info/id/160605003">160605003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Heavy cigarette smoker (20-39 cigs/day)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-82302008"> </a>  
+                  <a href="http://snomed.info/id/82302008">82302008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pipe smoker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-160619003"> </a>  
+                  <a href="http://snomed.info/id/160619003">160619003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rolls own cigarettes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-59978006"> </a>  
+                  <a href="http://snomed.info/id/59978006">59978006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cigar smoker</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.virtually.healthcare/ValueSet/SmokingStatus"/>
+        <version value="0.0.1"/>
+        <name value="SmokingStatus"/>
+        <status value="draft"/>
+        <date value="2024-04-02T05:59:13+01:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="GB"/>
+            <display value="UK"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a8fd3a5d-540f-4b3e-86a6-b53c093f18ef"/>
+          <timestamp value="2024-04-02T06:00:23+01:00"/>
+          <total value="8"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="266919005"/>
+            <display value="Never smoked"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="230059006"/>
+            <display value="Trivial cigarette smoker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="160603005"/>
+            <display value="Light cigarette smoker (1-9 cigs/day)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="160604004"/>
+            <display value="Moderate cigarette smoker (10-19 cigs/day)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="160605003"/>
+            <display value="Heavy cigarette smoker (20-39 cigs/day)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="82302008"/>
+            <display value="Pipe smoker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="160619003"/>
+            <display value="Rolls own cigarettes"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="59978006"/>
+            <display value="Cigar smoker"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

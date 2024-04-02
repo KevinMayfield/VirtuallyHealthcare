@@ -157,5 +157,12 @@
     "url" : "https://fhir.virtually.healthcare/StructureDefinition/Task",
     "version" : "0.0.1",
     "name" : "Task"
+  },
+  {
+    "id" : "valueset-smoking-status",
+    "type" : "ValueSet",
+    "url" : "https://fhir.virtually.healthcare/ValueSet/SmokingStatus",
+    "version" : "0.0.1",
+    "name" : "SmokingStatus"
   }
 ]

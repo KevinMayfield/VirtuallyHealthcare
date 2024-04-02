@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-smoking-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/266919005">266919005</a></td><td>Never smoked tobacco</td></tr><tr><td><a href="http://snomed.info/id/230059006">230059006</a></td><td>Trivial cigarette smoker</td></tr><tr><td><a href="http://snomed.info/id/160603005">160603005</a></td><td>Light cigarette smoker (1-9 cigs/day)</td></tr><tr><td><a href="http://snomed.info/id/160604004">160604004</a></td><td>Moderate cigarette smoker (10-19/day)</td></tr><tr><td><a href="http://snomed.info/id/160605003">160605003</a></td><td>Heavy cigarette smoker (20-39/day)</td></tr><tr><td><a href="http://snomed.info/id/1092031000000108">1092031000000108</a></td><td>Ex-smoker amount unknown</td></tr><tr><td><a href="http://snomed.info/id/82302008">82302008</a></td><td>Pipe smoker</td></tr><tr><td><a href="http://snomed.info/id/160619003">160619003</a></td><td>Rolls own cigarettes</td></tr><tr><td><a href="http://snomed.info/id/59978006">59978006</a></td><td>Cigar smoker</td></tr><tr><td><a href="http://snomed.info/id/2253230000">2253230000</a></td><td>Smoking cessation advice</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir.virtually.healthcare/ValueSet/SmokingStatus"/>
+  <version value="0.0.1"/>
+  <name value="SmokingStatus"/>
+  <status value="draft"/>
+  <date value="2024-04-02T05:59:13+01:00"/>
+  <publisher value="Virtually Healthcare"/>
+  <contact>
+    <name value="Virtually Healthcare"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://virtually.healthcare"/>
+    </telecom>
+  </contact>
+  <description value="Virtually Smoking Status"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="GB"/>
+      <display value="UK"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="266919005"/>
+        <display value="Never smoked tobacco"/>
+      </concept>
+      <concept>
+        <code value="230059006"/>
+        <display value="Trivial cigarette smoker"/>
+      </concept>
+      <concept>
+        <code value="160603005"/>
+        <display value="Light cigarette smoker (1-9 cigs/day)"/>
+      </concept>
+      <concept>
+        <code value="160604004"/>
+        <display value="Moderate cigarette smoker (10-19/day)"/>
+      </concept>
+      <concept>
+        <code value="160605003"/>
+        <display value="Heavy cigarette smoker (20-39/day)"/>
+      </concept>
+      <concept>
+        <code value="1092031000000108"/>
+        <display value="Ex-smoker amount unknown"/>
+      </concept>
+      <concept>
+        <code value="82302008"/>
+        <display value="Pipe smoker"/>
+      </concept>
+      <concept>
+        <code value="160619003"/>
+        <display value="Rolls own cigarettes"/>
+      </concept>
+      <concept>
+        <code value="59978006"/>
+        <display value="Cigar smoker"/>
+      </concept>
+      <concept>
+        <code value="2253230000"/>
+        <display value="Smoking cessation advice"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
