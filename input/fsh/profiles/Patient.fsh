@@ -1,15 +1,8 @@
 Profile: Patient
 Parent: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient
 Id: Patient
-Description: "TODO "
+Description: "Extension of UKCore-Patient"
 
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #openAtEnd
-
-* identifier contains
-    NHS 0..1
-
-* identifier[NHS].system = "https://fhir.nhs.uk/Id/nhs-number" (exactly)
+* identifier[nhsNumber] only NHSNumber
 
 * name 1..*
