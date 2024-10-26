@@ -1,7 +1,7 @@
 Profile: Patient
-Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient
+Parent: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient
 Id: Patient
-Description: "Union of UKCore, IPA and IHE PDQm"
+Description: "TODO "
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"

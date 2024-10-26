@@ -1,3 +1,0 @@
-URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
-https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode,2.2.0,active,,UKCoreConditionCode,UK Core Condition Code,"A set of codes that define a clinical finding or a finding with explicit context or an event. Selected from the SNOMED CT UK coding system.","Questionnaire/4953b4a9-cd3f-4a07-b12a-62b88cf3fb81","SCT"
-https://fhir.virtually.healthcare/ValueSet/SmokingStatus,0.0.1,draft,,SmokingStatus,null,"Virtually Smoking Status",,"SCT"

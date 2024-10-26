@@ -30,13 +30,9 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  fhir.r4.ukcore.stu3.currentbuild:
-    version: 0.0.8-pre-release
+  fhir.r4.ukcore.stu2:
+    version: 2.1.0
     uri: https://simplifier.net/guide/ukcoreversionhistory
-  ihe.iti.pdqm: 2.4.0
-  hl7.fhir.uv.ipa: 1.0.0
-  ihe.iti.mhd: 4.2.1
-  hl7.fhir.uv.sdc: 3.0.0
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
 # │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │
@@ -45,19 +41,43 @@ dependencies:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
+    - input/examples
+  path-pages:
+    - input/pagecontent
+    - input/intro-notes
+    - fsh-generated/includes
+  show-inherited-invariants: 'false'
+  usage-stats-opt-out: 'false'
+  logging: progress
+  shownav: 'true'
+  active-tables: 'false'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+  excludexml: 'false'
+  excludejsn: 'false'
+  excludettl: 'true'
+  excludemap: 'true'
+  excludeexample: 'false'
+  generate:
+    - xml
+    - json
+
+instanceOptions:
+  setMetaProfile: never
+
+resources:
+  ObservationDefinition/observation-definition-heart-rate:
+    name: Heart Rate
+    exampleBoolean: false
+
 menu:
   Home: index.html
-  Table of Contents: toc.html
-  Volume 1:
-    Find Patient: find-patient.html
-    Update Patient: update-patient.html
-    Find Patient Documents: find-documents.html
-    Clinical Notes and Compositions: clinical-notes-and-compositions.html
-    Get Clinical Record: clinical-record.html
-    Care Plans: care-plans.html
-    Structured Data Capture: structured-data-capture.html
-  Volume 2:
-    Archtitecture Detail : architecture-detail.html
   FHIR Assets: artifacts.html
-  Support:
-    Downloads: downloads.html
+
