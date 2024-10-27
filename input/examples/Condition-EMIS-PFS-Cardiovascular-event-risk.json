@@ -7,6 +7,12 @@
       "https://fhir.virtually.healthcare/StructureDefinition/Condition"
     ]
   },
+  "identifier": [
+    {
+      "system": "https://emis.com/Id/Event/GUID",
+      "value": "c60ea075-9992-4566-a314-b0fd27317310"
+    }
+  ],
   "severity": {
     "coding": [
       {

@@ -1,0 +1,51 @@
+{
+  "resourceType": "Observation",
+  "id": "367",
+  "identifier": [
+    {
+      "system": "https://emis.com/Id/Event/DBID",
+      "value": "367"
+    },
+    {
+      "system": "https://emis.com/Id/Event/GUID",
+      "value": "38431685-28e9-4cd0-854a-3ae0cb133264"
+    }
+  ],
+  "status": "unknown",
+  "code": {
+    "coding": [
+      {
+        "system": "http://read.info/readv2",
+        "code": "44g..",
+        "display": "Plasma glucose level"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1010671000000102",
+        "display": "Plasma glucose level"
+      }
+    ],
+    "text": "Plasma glucose level, 6.6 mmol/L "
+  },
+  "subject": {
+    "reference": "Patient/3"
+  },
+  "effectiveDateTime": "2004-03-04T00:00:00+00:00",
+  "issued": "2004-03-04T00:00:00.000+00:00",
+  "performer": [
+    {
+      "reference": "Practitioner/17",
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+        "value": "G3031757"
+      },
+      "display": "Dr Neil Burgess"
+    }
+  ],
+  "valueQuantity": {
+    "value": 6.6,
+    "unit": "mmol/L",
+    "system": "https://emis.com/System/units",
+    "code": "mmol/L"
+  }
+}

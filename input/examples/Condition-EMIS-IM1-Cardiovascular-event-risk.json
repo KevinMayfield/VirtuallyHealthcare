@@ -1,19 +1,19 @@
 {
   "resourceType": "Condition",
-  "id": "Condition-EMIS-IM1-Hypertension-monitoring",
   "meta": {
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Condition"
     ]
   },
+  "id": "Condition-EMIS-IM1-Cardiovascular-event-risk",
   "identifier": [
     {
       "system": "https://emis.com/Id/Event/DBID",
-      "value": "50002941"
+      "value": "3150"
     },
     {
       "system": "https://emis.com/Id/Event/GUID",
-      "value": "655c0646-3914-4ee0-b50c-1ab0d3291873"
+      "value": "c60ea075-9992-4566-a314-b0fd27317310"
     }
   ],
   "clinicalStatus": {
@@ -38,23 +38,27 @@
     "coding": [
       {
         "system": "http://read.info/readv2",
-        "code": "662P.",
-        "display": "Hypertension monitoring"
+        "code": "33BC.",
+        "display": "Cardiovascular event risk"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "275944005",
-        "display": "Hypertension monitoring"
+        "code": "395112001",
+        "display": "Cardiovascular event risk"
       }
     ],
-    "text": "Hypertension monitoring "
+    "text": "Cardiovascular event risk, 18 "
   },
   "subject": {
-    "reference": "Patient/500029"
+    "reference": "Patient/3"
   },
-  "onsetDateTime": "2017-08-25T14:13:00+00:00",
+  "onsetDateTime": "2006-01-05T00:00:00+00:00",
   "asserter": {
-    "reference": "Practitioner/3",
-    "display": "Dr Amanda McDonnell"
+    "reference": "Practitioner/149",
+    "identifier": {
+      "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+      "value": "G9380513"
+    },
+    "display": "Mrs Ann Potter"
   }
 }
