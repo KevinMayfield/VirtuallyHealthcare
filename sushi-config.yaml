@@ -81,6 +81,10 @@ resources:
     description: EMIS IM1 Patient Daniel O'Donnell
     exampleBoolean: true
   Patient/637:
+    name: Patient-EMIS-IM1-William-Dyer
+    description: EMIS IM1 Patient William Dyer
+    exampleBoolean: true
+  Patient/610:
     name: Patient-EMIS-IM1-Arthur-Thomas
     description: EMIS IM1 Patient Arthur Thomas
     exampleBoolean: true
@@ -175,4 +179,12 @@ resources:
   Task/Task-EMIS-PFS-Prescription-Refill:
     name: Task-EMIS-PFS-Prescription-Refill
     description: Task EMIS PFS Prescription Refill
+    exampleBoolean: true
+  Immunization/610266:
+    name: Immunization-EMIS-IM1-Pneumococcal-vaccination-declined
+    description: Immunization EMIS IM1 Pneumococcal vaccination declined
+    exampleBoolean: true
+  Immunization/610281:
+    name: Immunization-EMIS-IM1-Influenza vaccination
+    description: Immunization EMIS IM1 Influenza vaccination
     exampleBoolean: true

@@ -1,0 +1,72 @@
+{
+  "resourceType": "Patient",
+  "id": "610",
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "https://emis.com/Id/Patient/DBID",
+      "value": "610",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NH"
+          }
+        ]
+      },
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "2939425320"
+    },
+    {
+      "system": "https://emis.com/Id/Patient/ID",
+      "value": "F83004-610"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Dyer",
+      "given": [
+        "William"
+      ],
+      "prefix": [
+        "Mr"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1919-05-27",
+  "address": [
+    {
+      "line": [
+        "74 Victoria Street",
+        "Brockadale"
+      ],
+      "city": "Calverley",
+      "postalCode": "S72"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "F83004"
+      }
+    }
+  ]
+}
