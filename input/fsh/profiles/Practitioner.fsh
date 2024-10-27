@@ -10,7 +10,7 @@ Description:    "Extension of UKCore Practitioner"
 
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #closed
+* identifier ^slicing.rules = #open
 * identifier contains
   gmp-number 0..1 and
   gmc-number 0..1
