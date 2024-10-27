@@ -3,7 +3,7 @@ Parent:         http://hl7.org/fhir/StructureDefinition/Identifier
 Id:             gmp-code
 Title:          "General Medical Practitioner PPD Code"
 Description:     """
-[GENERAL MEDICAL PRACTITIONER PPD CODE](https://www.datadictionary.nhs.uk/attributes/general_medical_practitioner_ppd_code.html). Formerly called GP General National Code (GNC).
+NHS Data Dictionary [GENERAL MEDICAL PRACTITIONER PPD CODE](https://www.datadictionary.nhs.uk/attributes/general_medical_practitioner_ppd_code.html). Formerly called GP General National Code (GNC).
 
 Format G[1234589]NNNNNN
 

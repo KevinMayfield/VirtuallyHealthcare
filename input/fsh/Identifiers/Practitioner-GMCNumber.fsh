@@ -3,7 +3,7 @@ Parent:         http://hl7.org/fhir/StructureDefinition/Identifier
 Id:             gmc-number
 Title:          "General Medical Council Reference Number"
 Description:     """
-[GENERAL MEDICAL COUNCIL REFERENCE NUMBER](https://www.datadictionary.nhs.uk/attributes/general_medical_council_reference_number.html) which is a [CONSULTANT CODE](https://www.datadictionary.nhs.uk/data_elements/consultant_code.html)
+NHS Data Dictionary [GENERAL MEDICAL COUNCIL REFERENCE NUMBER](https://www.datadictionary.nhs.uk/attributes/general_medical_council_reference_number.html) which is a [CONSULTANT CODE](https://www.datadictionary.nhs.uk/data_elements/consultant_code.html)
 
 Format CNNNNNNN
 

@@ -21,7 +21,7 @@ Description: "Extension of UKCore-Observation"
 * code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
 
 * subject.reference 1..1 MS
-* subject.identifier only NHSNumber
+* subject.identifier only NHSNumber or CHINumber
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

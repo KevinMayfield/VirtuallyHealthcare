@@ -1,9 +1,9 @@
 {
   "resourceType": "MedicationRequest",
-  "id": "50002932",
+  "id": "MedicationRequest-EMIS-IM1-Amoxicillin",
   "meta": {
     "profile" : [
-      "https://fhir.virtually.healthcare/StructureDefinition/MedciationRequest"
+      "https://fhir.virtually.healthcare/StructureDefinition/MedicationRequest"
     ]
   },
   "identifier": [

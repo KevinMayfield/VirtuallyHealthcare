@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "50002947",
+  "id": "Observation-EMIS-IM1-Lyme-Disease-Test",
   "meta": {
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Observation"
