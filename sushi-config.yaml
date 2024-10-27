@@ -80,6 +80,10 @@ resources:
     name: Patient-EMIS-IM1-Daniel-ODonnell
     description: EMIS IM1 Patient Daniel O'Donnell
     exampleBoolean: true
+  Patient/637:
+    name: Patient-EMIS-IM1-Arthur-Thomas
+    description: EMIS IM1 Patient Arthur Thomas
+    exampleBoolean: true
   Patient/1bec52a2-1bea-452f-a6ba-5eea5f97a24e:
     name: Patient-EMIS-PFS-Daniel-ODonnell
     description: EMIS PFS Patient Daniel O'Donnell
@@ -95,6 +99,10 @@ resources:
   Condition/c60ea075-9992-4566-a314-b0fd27317310:
     name: Condition-EMIS-PFS-Cardiovascular-event-risk
     description: Condition EMIS PFS Cardiovascular event-risk
+    exampleBoolean: true
+  Condition/50002941:
+    name: Condition-EMIS-IM1-Hypertension-monitoring
+    description: Condition EMIS IM1 Hypertension monitoring
     exampleBoolean: true
   Observation/9e77f499-1081-4ec5-ad71-4eeb71bd25ba:
     name: Observation-EMIS-PFS-Weight
@@ -139,4 +147,8 @@ resources:
   MedicationRequest/4a71ace9-4d16-4dfb-8097-d7c78dc7ea7d:
     name: MedicationRequest-EMIS-PFS-Atorvastatin-10mg-tablets
     description: MedicationRequest EMIS PFS Atorvastatin 10mg tablets
+    exampleBoolean: true
+  MedicationRequest/50002932:
+    name: MedicationRequest-EMIS-IM1-Amoxicillin-125mg/5ml-oral-suspension-sugar-free
+    description: MedicationRequest EMIS IM1 Amoxicillin 125mg/5ml oral suspension sugar free
     exampleBoolean: true
