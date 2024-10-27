@@ -1,9 +1,18 @@
 {
   "resourceType": "Observation",
-  "id": "Observation-EMIS-PFS-Serum-cholesterol-level",
+  "id": "Observation-EMIS-PFS-SystolicBloodPressure",
   "meta": {
-    "lastUpdated": "2024-04-15T13:52:08.683+00:00"
+    "lastUpdated": "2008-06-27T00:00:00.000+00:00",
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Observation"
+    ]
   },
+  "identifier": [
+    {
+      "system": "https://emis.com/Id/Event/GUID",
+      "value": "cb41876b-ce8e-40c2-b6c1-1351d3e4e04a"
+    }
+  ],
   "status": "final",
   "category": [
     {
@@ -21,26 +30,26 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/coding-sctdescid",
-            "valueId": "150921000006118"
+            "valueId": "114311000006111"
           }
         ],
-        "display": "Serum cholesterol level"
+        "display": "Systolic blood pressure"
       }
     ],
-    "text": "Serum cholesterol level"
+    "text": "Systolic blood pressure"
   },
   "subject": {
     "reference": "Patient/1bec52a2-1bea-452f-a6ba-5eea5f97a24e"
   },
-  "effectiveDateTime": "2024-04-15T00:00:00+00:00",
+  "effectiveDateTime": "2005-10-14T00:00:00+00:00",
   "performer": [
     {
-      "reference": "PractitionerRole/68c78dec-fb99-401b-93ad-b54f02234a87",
+      "reference": "PractitionerRole/3125f0c4-c773-48a6-bf33-10a5106f6448",
       "display": "Dr Virtually Health (Partner Programme Test 04)"
     }
   ],
   "valueQuantity": {
-    "value": 2.8,
-    "unit": "mmol/L"
+    "value": 148,
+    "unit": "mm Hg"
   }
 }

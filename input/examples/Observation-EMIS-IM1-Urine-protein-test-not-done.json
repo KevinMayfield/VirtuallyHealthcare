@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "Observation-EMIS-IM1-Weight",
+  "id": "Observation-EMIS-IM1-Urine-protein-test-not-done",
   "meta": {
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Observation"
@@ -9,11 +9,11 @@
   "identifier": [
     {
       "system": "https://emis.com/Id/Event/DBID",
-      "value": "3195"
+      "value": "3205"
     },
     {
       "system": "https://emis.com/Id/Event/GUID",
-      "value": "9e77f499-1081-4ec5-ad71-4eeb71bd25ba"
+      "value": "4e197ae7-980e-4a76-979e-b94f952f1a65"
     }
   ],
   "status": "unknown",
@@ -21,16 +21,16 @@
     "coding": [
       {
         "system": "http://read.info/readv2",
-        "code": "22A..",
-        "display": "Body weight"
+        "code": "4671.",
+        "display": "Urine protein test not done"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "27113001",
-        "display": "Body weight"
+        "code": "167272007",
+        "display": "Urine protein test not done"
       }
     ],
-    "text": "O/E - weight, 81 Kg "
+    "text": "Urine protein test not done "
   },
   "subject": {
     "reference": "Patient/3"
@@ -46,11 +46,5 @@
       },
       "display": "Mrs Jean Kemp"
     }
-  ],
-  "valueQuantity": {
-    "value": 81,
-    "unit": "Kg",
-    "system": "https://emis.com/System/units",
-    "code": "Kg"
-  }
+  ]
 }

@@ -13,7 +13,7 @@
     },
     {
       "system": "https://emis.com/Id/Medication/GUID",
-      "value": "72EE3AF2-9E10-493C-A4A8-A203E810972B"
+      "value": "72ee3af2-9e10-493c-a4a8-a203e810972b"
     }
   ],
   "status": "active",
@@ -58,7 +58,7 @@
       "start": "2017-08-25T00:00:00+00:00"
     },
     "quantity": {
-      "value": 1.0,
+      "value": 1,
       "unit": "ml"
     }
   }

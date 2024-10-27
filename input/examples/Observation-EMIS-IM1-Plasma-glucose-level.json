@@ -1,6 +1,11 @@
 {
   "resourceType": "Observation",
-  "id": "367",
+  "id": "Observation-EMIS-IM1-Plasma-glucose-level",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Observation"
+    ]
+  },
   "identifier": [
     {
       "system": "https://emis.com/Id/Event/DBID",

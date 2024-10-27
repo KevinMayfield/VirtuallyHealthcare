@@ -1,8 +1,8 @@
 {
   "resourceType": "Observation",
-  "id": "Observation-EMIS-PFS-Plasma-glucose-level",
+  "id": "Observation-EMIS-PFS-Urine-protein-test-not-done",
   "meta": {
-    "lastUpdated": "2006-11-20T00:00:00.000+00:00",
+    "lastUpdated": "2007-12-03T00:00:00.000+00:00",
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Observation"
     ]
@@ -10,7 +10,7 @@
   "identifier": [
     {
       "system": "https://emis.com/Id/Event/GUID",
-      "value": "38431685-28e9-4cd0-854a-3ae0cb133264"
+      "value": "4e197ae7-980e-4a76-979e-b94f952f1a65"
     }
   ],
   "status": "final",
@@ -30,30 +30,22 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/coding-sctdescid",
-            "valueId": "134471000000110"
+            "valueId": "259802012"
           }
         ],
-        "display": "Plasma glucose level"
+        "display": "Urine protein test not done"
       }
     ],
-    "text": "Plasma glucose level"
+    "text": "Urine protein test not done"
   },
   "subject": {
     "reference": "Patient/1bec52a2-1bea-452f-a6ba-5eea5f97a24e"
   },
-  "effectiveDateTime": "2004-03-04T00:00:00+00:00",
+  "effectiveDateTime": "2005-03-21T00:00:00+00:00",
   "performer": [
     {
-      "reference": "PractitionerRole/812af0ad-e71e-41e2-997a-b6787f934928",
+      "reference": "PractitionerRole/4435f523-44ae-4cfb-903d-570b2887812c",
       "display": "Dr Virtually Health (Partner Programme Test 04)"
-    },
-    {
-      "reference": "PractitionerRole/3125f0c4-c773-48a6-bf33-10a5106f6448",
-      "display": "Entered by :Dr Virtually Health (Partner Programme Test 04)"
     }
-  ],
-  "valueQuantity": {
-    "value": 6.6,
-    "unit": "mmol/L"
-  }
+  ]
 }

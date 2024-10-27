@@ -9,11 +9,11 @@
   "identifier": [
     {
       "system": "https://emis.com/Id/Event/DBID",
-      "value": "5000294"
+      "value": "3114"
     },
     {
       "system": "https://emis.com/Id/Event/GUID",
-      "value": "965D8DFF-8F7B-44C8-AC21-5B57A316433E"
+      "value": "cb41876b-ce8e-40c2-b6c1-1351d3e4e04a"
     }
   ],
   "status": "unknown",
@@ -30,34 +30,27 @@
         "display": "Systolic arterial pressure"
       }
     ],
-    "text": "Systolic blood pressure, 140 mmHg "
+    "text": "Systolic blood pressure, 148 mm Hg "
   },
   "subject": {
-    "reference": "Patient/500029"
+    "reference": "Patient/3"
   },
-  "effectiveDateTime": "2017-08-25T00:00:00+00:00",
-  "issued": "2017-08-25T00:00:00.000+00:00",
+  "effectiveDateTime": "2005-10-14T00:00:00+00:00",
+  "issued": "2005-10-14T00:00:00.000+00:00",
   "performer": [
     {
-      "reference": "Practitioner/3",
-      "display": "Dr Amanda McDonnell"
+      "reference": "Practitioner/26",
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+        "value": "G3371701"
+      },
+      "display": "Dr Brian Harding"
     }
   ],
   "valueQuantity": {
-    "value": 140.0,
-    "unit": "mmHg",
+    "value": 148,
+    "unit": "mm Hg",
     "system": "https://emis.com/System/units",
-    "code": "mmHg"
-  },
-  "interpretation": [
-    {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-          "code": "A",
-          "display": "Abnormal"
-        }
-      ]
-    }
-  ]
+    "code": "mm Hg"
+  }
 }

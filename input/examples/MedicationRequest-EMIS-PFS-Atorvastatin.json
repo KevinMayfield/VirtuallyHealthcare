@@ -3,7 +3,7 @@
     "id": "MedicationRequest-EMIS-PFS-Atorvastatin",
     "meta": {
         "lastUpdated": "2024-05-03T12:37:40.840+00:00",
-        "profile": [
+        "profile" : [
             "https://fhir.virtually.healthcare/StructureDefinition/MedicationRequest"
         ]
     },
@@ -29,6 +29,12 @@
                     "valueBoolean": true
                 }
             ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "https://emis.com/Id/Medication/GUID",
+            "value": "4a71ace9-4d16-4dfb-8097-d7c78dc7ea7d"
         }
     ],
     "status": "active",

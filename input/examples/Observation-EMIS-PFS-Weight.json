@@ -1,8 +1,8 @@
 {
   "resourceType": "Observation",
-  "id": "Observation-EMIS-PFS-Plasma-glucose-level",
+  "id": "Observation-EMIS-PFS-Weight",
   "meta": {
-    "lastUpdated": "2006-11-20T00:00:00.000+00:00",
+    "lastUpdated": "2007-12-03T00:00:00.000+00:00",
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Observation"
     ]
@@ -10,7 +10,7 @@
   "identifier": [
     {
       "system": "https://emis.com/Id/Event/GUID",
-      "value": "38431685-28e9-4cd0-854a-3ae0cb133264"
+      "value": "9e77f499-1081-4ec5-ad71-4eeb71bd25ba"
     }
   ],
   "status": "final",
@@ -30,30 +30,26 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/coding-sctdescid",
-            "valueId": "134471000000110"
+            "valueId": "253677014"
           }
         ],
-        "display": "Plasma glucose level"
+        "display": "O/E - weight"
       }
     ],
-    "text": "Plasma glucose level"
+    "text": "O/E - weight"
   },
   "subject": {
     "reference": "Patient/1bec52a2-1bea-452f-a6ba-5eea5f97a24e"
   },
-  "effectiveDateTime": "2004-03-04T00:00:00+00:00",
+  "effectiveDateTime": "2005-03-21T00:00:00+00:00",
   "performer": [
     {
-      "reference": "PractitionerRole/812af0ad-e71e-41e2-997a-b6787f934928",
+      "reference": "PractitionerRole/4435f523-44ae-4cfb-903d-570b2887812c",
       "display": "Dr Virtually Health (Partner Programme Test 04)"
-    },
-    {
-      "reference": "PractitionerRole/3125f0c4-c773-48a6-bf33-10a5106f6448",
-      "display": "Entered by :Dr Virtually Health (Partner Programme Test 04)"
     }
   ],
   "valueQuantity": {
-    "value": 6.6,
-    "unit": "mmol/L"
+    "value": 81,
+    "unit": "Kg"
   }
 }
