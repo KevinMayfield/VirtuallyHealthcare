@@ -1,0 +1,63 @@
+{
+  "resourceType": "Observation",
+  "id": "5000294",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Observation"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://emis.com/Id/Event/DBID",
+      "value": "5000294"
+    },
+    {
+      "system": "https://emis.com/Id/Event/GUID",
+      "value": "965D8DFF-8F7B-44C8-AC21-5B57A316433E"
+    }
+  ],
+  "status": "unknown",
+  "code": {
+    "coding": [
+      {
+        "system": "http://read.info/readv2",
+        "code": "2469.",
+        "display": "Systolic arterial pressure"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "72313002",
+        "display": "Systolic arterial pressure"
+      }
+    ],
+    "text": "Systolic blood pressure, 140 mmHg "
+  },
+  "subject": {
+    "reference": "Patient/500029"
+  },
+  "effectiveDateTime": "2017-08-25T00:00:00+00:00",
+  "issued": "2017-08-25T00:00:00.000+00:00",
+  "performer": [
+    {
+      "reference": "Practitioner/3",
+      "display": "Dr Amanda McDonnell"
+    }
+  ],
+  "valueQuantity": {
+    "value": 140.0,
+    "unit": "mmHg",
+    "system": "https://emis.com/System/units",
+    "code": "mmHg"
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "A",
+          "display": "Abnormal"
+        }
+      ]
+    }
+  ]
+}

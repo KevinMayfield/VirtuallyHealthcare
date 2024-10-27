@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "50002912",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Observation"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://emis.com/Id/Event/DBID",
+      "value": "50002912"
+    },
+    {
+      "system": "https://emis.com/Id/Event/GUID",
+      "value": "DB078A2D-3AD0-4931-BC4D-BAE93B6C6C11"
+    }
+  ],
+  "status": "unknown",
+  "code": {
+    "coding": [
+      {
+        "system": "http://read.info/readv2",
+        "code": "22A..",
+        "display": "Body weight"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "27113001",
+        "display": "Body weight"
+      }
+    ],
+    "text": "O/E - weight, 55 kg "
+  },
+  "subject": {
+    "reference": "Patient/500029"
+  },
+  "effectiveDateTime": "2018-01-01T00:00:00+00:00",
+  "issued": "2018-01-01T00:00:00.000+00:00",
+  "valueQuantity": {
+    "value": 55.0,
+    "unit": "kg",
+    "system": "https://emis.com/System/units",
+    "code": "kg"
+  }
+}

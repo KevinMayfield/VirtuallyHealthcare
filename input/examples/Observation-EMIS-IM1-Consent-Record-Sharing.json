@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "50002911",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Observation"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://emis.com/Id/Event/DBID",
+      "value": "50002911"
+    },
+    {
+      "system": "https://emis.com/Id/Event/GUID",
+      "value": "2E3FC1DE-C6E7-46DF-8C05-95B4C51C852C"
+    }
+  ],
+  "status": "unknown",
+  "code": {
+    "coding": [
+      {
+        "system": "http://read.info/readv2",
+        "code": "93C0.",
+        "display": "Consent given for upload to local shared electronic record"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "417528008",
+        "display": "Consent given for upload to local shared electronic record"
+      }
+    ],
+    "text": "Consent given for upload to local shared electronic record "
+  },
+  "subject": {
+    "reference": "Patient/500029"
+  },
+  "effectiveDateTime": "2017-12-13T14:29:18+00:00",
+  "issued": "2017-12-13T14:29:18.000+00:00",
+  "performer": [
+    {
+      "reference": "Practitioner/9",
+      "display": "Dr MDSAS Test"
+    }
+  ]
+}

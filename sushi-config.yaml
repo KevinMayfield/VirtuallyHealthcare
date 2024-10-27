@@ -33,14 +33,11 @@ dependencies:
   fhir.r4.ukcore.stu2:
     version: 2.1.0
     uri: https://simplifier.net/guide/ukcoreversionhistory
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
-# │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │
-# │ The IG publisher currently only supports one level deep on sub-menus. To provide a             │
-# │ custom menu.xml file, do not include this property and include a `menu.xml` file in            │
-# │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
-# │ property below.                                                                                │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+  hl7.fhir.extensions.r5:
+    id: r5ext
+    version: 4.0.1
+    reason: |
+      Makes available certain R5 elements for use as part of this R4 IG
 
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
@@ -71,7 +68,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 
 instanceOptions:
   setMetaProfile: never
-
 
 menu:
   Home: index.html
