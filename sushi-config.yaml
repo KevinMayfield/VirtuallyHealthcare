@@ -84,6 +84,10 @@ resources:
     name: Patient-EMIS-PFS-Daniel-ODonnell
     description: EMIS PFS Patient Daniel O'Donnell
     exampleBoolean: true
+  Patient/1107:
+    name: Patient-TPP-IM1-Anthony-Avocet
+    description: TPP IM1 Anthony  Avocet
+    exampleBoolean: true
   Condition/3150:
     name: Condition-EMIS-IM1-Cardiovascular-event-risk
     description: Condition EMIS IM1 Cardiovascular event-risk
@@ -100,6 +104,26 @@ resources:
     name: Observation-EMIS-IM1-Weight
     description: Observation EMIS IM1 Weight
     exampleBoolean: true
+  Observation/3114:
+    name: Observation-EMIS-IM1-Systolic-blood-pressure
+    description: Observation EMIS IM1 Systolic blood pressure
+    exampleBoolean: true
+  Observation/3205:
+    name: Observation-EMIS-IM1-Urine-protein-test-not-done
+    description: Observation EMIS IM1 Urine protein test not done
+    exampleBoolean: true
+  Observation/4e197ae7-980e-4a76-979e-b94f952f1a65:
+    name: Observation-EMIS-PFS-Urine-protein-test-not-done
+    description: Observation EMIS PFS Urine protein test not done
+    exampleBoolean: true
+  Observation/367:
+    name: Observation-EMIS-IM1-Plasma-glucose-level
+    description: Observation EMIS IM1 Plasma glucose level
+    exampleBoolean: true
+  Observation/38431685-28e9-4cd0-854a-3ae0cb133264:
+    name: Observation-EMIS-PFS-Plasma-glucose-level
+    description: Observation EMIS PFS Plasma glucose level
+    exampleBoolean: true
   DocumentReference/3214:
     name: DocumentReference-EMIS-IM1-Letter
     description: DocumentReference EMIS IM1 Weight
@@ -107,4 +131,12 @@ resources:
   DocumentReference/ad1fcc5e-e9c6-491e-a12c-09085129c04c:
     name: DocumentReference-EMIS-PFS-Letter
     description: DocumentReference EMIS PFS Weight
+    exampleBoolean: true
+  Practitioner/4:
+    name: Practitioner-EMIS-IM1-Pauline-Steele
+    description: Practitioner EMIS IM1 Pauline Steele
+    exampleBoolean: true
+  MedicationRequest/4a71ace9-4d16-4dfb-8097-d7c78dc7ea7d:
+    name: MedicationRequest-EMIS-PFS-Atorvastatin-10mg-tablets
+    description: MedicationRequest EMIS PFS Atorvastatin 10mg tablets
     exampleBoolean: true
