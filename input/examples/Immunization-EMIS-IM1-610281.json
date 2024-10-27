@@ -1,0 +1,63 @@
+{
+  "resourceType": "Immunization",
+  "id": "610281",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Immunization"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://emis.com/Id/Event/DBID",
+      "value": "610281",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
+    },
+    {
+      "system": "https://emis.com/Id/Event/GUID",
+      "value": "b15c6be0-34e4-458b-aa8e-b6cbfdcb4b9c",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
+    }
+  ],
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://read.info/readv2",
+        "code": "65E..",
+        "display": "Influenza vaccination"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "86198006",
+        "display": "Influenza vaccination"
+      }
+    ],
+    "text": "Influenza vaccination "
+  },
+  "patient": {
+    "reference": "Patient/610"
+  },
+  "occurrenceDateTime": "2001-05-13T00:00:00+00:00",
+  "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/20",
+        "identifier": {
+          "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+          "value": "G8667998"
+        },
+        "display": "Mrs Jean Mitchell"
+      }
+    }
+  ]
+}

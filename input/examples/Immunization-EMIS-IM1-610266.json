@@ -1,0 +1,63 @@
+{
+  "resourceType": "Immunization",
+  "id": "610266",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Immunization"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://emis.com/Id/Event/DBID",
+      "value": "610266",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
+    },
+    {
+      "system": "https://emis.com/Id/Event/GUID",
+      "value": "4eb4ace6-c5fd-4b91-beef-672342115bc0",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
+    }
+  ],
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://read.info/readv2",
+        "code": "8I3Q.",
+        "display": "Pneumococcal vaccination declined"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "401086001",
+        "display": "Pneumococcal vaccination declined"
+      }
+    ],
+    "text": "Pneumococcal vaccination declined "
+  },
+  "patient": {
+    "reference": "Patient/610"
+  },
+  "occurrenceDateTime": "2000-11-25T00:00:00+00:00",
+  "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/20",
+        "identifier": {
+          "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+          "value": "G8667998"
+        },
+        "display": "Mrs Jean Mitchell"
+      }
+    }
+  ]
+}

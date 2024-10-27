@@ -5,7 +5,6 @@ Description: "Extentsion to UKCore Condition"
 
 * identifier 1..* MS
 
-
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #closed
@@ -17,3 +16,7 @@ Description: "Extentsion to UKCore Condition"
 
 * identifier[EMISEventGUID] only EMISEventGUID
 * identifier[EMISEventGUID] ^short = "EMIS Event GUID Identifier"
+
+* subject 1..1
+* subject only Reference(Patient)
+* subject.identifier only NHSNumber or CHINumber
