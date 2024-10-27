@@ -9,11 +9,23 @@
   "identifier": [
     {
       "system": "https://emis.com/Id/Event/DBID",
-      "value": "367"
+      "value": "367",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
     },
     {
       "system": "https://emis.com/Id/Event/GUID",
-      "value": "38431685-28e9-4cd0-854a-3ae0cb133264"
+      "value": "38431685-28e9-4cd0-854a-3ae0cb133264",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
     }
   ],
   "status": "unknown",

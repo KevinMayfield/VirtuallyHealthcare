@@ -9,11 +9,23 @@
   "identifier": [
     {
       "system": "https://emis.com/Id/Event/DBID",
-      "value": "50002941"
+      "value": "50002941",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
     },
     {
       "system": "https://emis.com/Id/Event/GUID",
-      "value": "655c0646-3914-4ee0-b50c-1ab0d3291873"
+      "value": "655c0646-3914-4ee0-b50c-1ab0d3291873",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
     }
   ],
   "clinicalStatus": {
