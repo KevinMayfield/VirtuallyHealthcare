@@ -3,7 +3,7 @@
   "id": "DocumentReference-EMIS-IM1-Letter",
   "meta": {
     "profile" : [
-      "https://fhir.virtually.healthcare/StructureDefinition/Condition"
+      "https://fhir.virtually.healthcare/StructureDefinition/DocumentReference"
     ]
   },
   "identifier": [
