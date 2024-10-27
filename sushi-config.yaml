@@ -72,10 +72,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 instanceOptions:
   setMetaProfile: never
 
-resources:
-  ObservationDefinition/observation-definition-heart-rate:
-    name: Heart Rate
-    exampleBoolean: false
 
 menu:
   Home: index.html
