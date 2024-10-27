@@ -138,11 +138,11 @@ resources:
     exampleBoolean: true
   DocumentReference/3214:
     name: DocumentReference-EMIS-IM1-Letter
-    description: DocumentReference EMIS IM1 Weight
+    description: DocumentReference EMIS IM1 Letter encounter
     exampleBoolean: true
   DocumentReference/ad1fcc5e-e9c6-491e-a12c-09085129c04c:
     name: DocumentReference-EMIS-PFS-Letter
-    description: DocumentReference EMIS PFS Weight
+    description: DocumentReference EMIS PFS Letter encounter
     exampleBoolean: true
   Practitioner/4:
     name: Practitioner-EMIS-IM1-Pauline-Steele
@@ -160,4 +160,11 @@ resources:
     name: MedicationRequest-EMIS-IM1-Amoxicillin-125mg/5ml-oral-suspension-sugar-free
     description: MedicationRequest EMIS IM1 Amoxicillin 125mg/5ml oral suspension sugar free
     exampleBoolean: true
-
+  Task/610595:
+    name: Task-EMIS-IM1-Elderly-health-assessment
+    description: Task-EMIS IM1 Elderly health assessment
+    exampleBoolean: true
+  Task/610596:
+    name: Task-EMIS-IM1-Medication-review
+    description: Task-EMIS IM1 Medication review
+    exampleBoolean: true
