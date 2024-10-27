@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "id": "valueset-smoking-status",
+    "id": "SmokingStatus",
     "url": "https://fhir.virtually.healthcare/ValueSet/SmokingStatus",
     "version": "0.0.2",
     "name": "SmokingStatus",
