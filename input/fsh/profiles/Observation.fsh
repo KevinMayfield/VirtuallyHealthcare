@@ -16,3 +16,22 @@ Description: "Extension of UKCore-Observation"
 
 * identifier[EMISEventGUID] only EMISEventGUID
 * identifier[EMISEventGUID] ^short = "EMIS Event GUID Identifier"
+
+* code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
+* code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
+
+* subject.reference 1..1 MS
+* subject.identifier only NHSNumber
+
+* effective[x] 1..1 MS
+* effective[x] only dateTime
+* effective[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
+* effective[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
+
+* performer 1..* MS
+* performer only Reference(Practitioner)
+* performer.reference 1..1
+* performer.identifier only GeneralMedicalCouncilReferenceNumber or GeneralMedicalPractitionerCode
+
+* value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
+* value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
