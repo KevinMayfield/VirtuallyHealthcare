@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "Patient-TPP-1107",
+  "id": "1107",
   "meta": {
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Patient"

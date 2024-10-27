@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "Observation-EMIS-IM1-Urine-protein-test-not-done",
+  "id": "3205",
   "meta": {
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Observation"

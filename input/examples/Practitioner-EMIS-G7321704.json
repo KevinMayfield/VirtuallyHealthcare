@@ -1,6 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "Practitioner-EMIS-G7321704",
+  "id": "4",
   "meta": {
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Practitioner"
