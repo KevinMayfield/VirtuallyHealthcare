@@ -5,7 +5,7 @@ Title:          "TPP Patient ID"
 Description:     """
 **Unofficial**
 
-Is known in TPP IM1 as Patient Id
+Is known in TPP IM1 as StrategicReportingIdentifier
 """
 
 
