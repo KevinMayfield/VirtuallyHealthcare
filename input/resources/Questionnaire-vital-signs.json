@@ -442,7 +442,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "kg/m2",
-              "display": "kg per square meter",
+              "display": "kg/m2",
               "system": "http://unitsofmeasure.org"
             }
           }
