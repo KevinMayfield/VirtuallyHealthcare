@@ -1,6 +1,11 @@
 {
   "resourceType": "Practitioner",
   "id": "Practitioner-TPP-123456",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Practitioner"
+    ]
+  },
   "identifier": [
     {
       "system": "https://fhir.hl7.org.uk/Id/gmc-number",
