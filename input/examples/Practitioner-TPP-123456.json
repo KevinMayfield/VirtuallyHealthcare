@@ -1,0 +1,28 @@
+{
+  "resourceType": "Practitioner",
+  "id": "Practitioner-TPP-123456",
+  "identifier": [
+    {
+      "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+      "value": "123456"
+    },
+    {
+      "system": "https://tpp-uk.com/Id/Practitioner/44HSCIC",
+      "value": "achawla0309",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "B87036"
+        }
+      }
+    }
+  ],
+  "name": [
+    {
+      "family": "Chawla",
+      "given": [
+        "Amit"
+      ]
+    }
+  ]
+}
