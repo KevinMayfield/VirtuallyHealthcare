@@ -1,0 +1,83 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "DocumentReference-EMIS-IM1-Letter",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Condition"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://emis.com/Id/Attachment/DBID",
+      "value": "3214",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
+    },
+    {
+      "system": "https://emis.com/Id/Attachment/GUID",
+      "value": "ad1fcc5e-e9c6-491e-a12c-09085129c04c",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
+    }
+  ],
+  "status": "current",
+  "type": {
+    "coding": [
+      {
+        "system": "http://read.info/readv2",
+        "code": "9N33.",
+        "display": "Letter encounter"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "308720009",
+        "display": "Letter encounter"
+      }
+    ],
+    "text": "Letter encounter "
+  },
+  "subject": {
+    "reference": "Patient/3"
+  },
+  "date": "2005-05-06T00:00:00.000+00:00",
+  "author": [
+    {
+      "reference": "Practitioner/1"
+    }
+  ],
+  "content": [
+    {
+      "attachment": {
+        "url": "Binary/4774095A-8333-4B7D-B741-106820384002",
+        "title": "Save250108120233.tif"
+      }
+    }
+  ],
+  "context": {
+    "event": [
+      {
+        "coding": [
+          {
+            "system": "http://read.info/readv2",
+            "code": "9N33.",
+            "display": "Letter encounter"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "308720009",
+            "display": "Letter encounter"
+          }
+        ],
+        "text": "Letter encounter "
+      }
+    ]
+  }
+}

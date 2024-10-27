@@ -1,0 +1,56 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "ad1fcc5e-e9c6-491e-a12c-09085129c04c",
+  "meta": {
+    "lastUpdated": "2008-01-25T00:00:00.000+00:00",
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Condition"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "code": "A28579"
+          }
+        ]
+      },
+      "system": "https://emis.com/Id/Attachment/DBID",
+      "value": "ad1fcc5e-e9c6-491e-a12c-09085129c04c"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/coding-sctdescid",
+            "valueId": "452036019"
+          }
+        ],
+        "display": "Letter encounter"
+      }
+    ],
+    "text": "Letter encounter"
+  },
+  "subject": {
+    "reference": "Patient/1bec52a2-1bea-452f-a6ba-5eea5f97a24e"
+  },
+  "date": "2005-05-06T00:00:00.000+00:00",
+  "author": [
+    {
+      "reference": "PractitionerRole/8550789d-1fad-470c-b2e7-04fca63f53af",
+      "display": "Mrs Margaret Graham (Partner Programme Test 04)"
+    }
+  ],
+  "content": [
+    {
+      "attachment": {
+        "contentType": "image/tiff",
+        "url": "Binary/4774095a-8333-4b7d-b741-106820384002"
+      }
+    }
+  ]
+}
