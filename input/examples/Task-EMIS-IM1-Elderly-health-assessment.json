@@ -1,0 +1,39 @@
+{
+  "resourceType": "Task",
+  "id": "Task-EMIS-IM1-Elderly-health-assessment",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Task"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://emis.com/Id/Diary/DBID",
+      "value": "610595"
+    },
+    {
+      "system": "https://emis.com/Id/Diary/GUID",
+      "value": "F054B752-3120-449C-BB18-91DE2A3499D8"
+    }
+  ],
+  "status": "ready",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "637681000006105",
+        "display": "Elderly health assessment"
+      }
+    ],
+    "text": "Elderly health assessment"
+  },
+  "for": {
+    "reference": "Patient/610"
+  },
+  "executionPeriod": {
+    "start": "2005-07-23T06:00:00+00:00"
+  },
+  "requester": {
+    "reference": "Practitioner/207"
+  }
+}

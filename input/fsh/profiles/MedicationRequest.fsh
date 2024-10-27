@@ -20,9 +20,10 @@ Description: "Extension of UKCore-MedicationRequest"
 * subject.reference 1..1 MS
 * subject.identifier only NHSNumber or CHINumber
 
-* medicationCodeableConcept 1..1 MS
-* medicationCodeableConcept insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
-* medicationCodeableConcept insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
+* medication[x] only CodeableConcept
+* medication[x] MS
+* medication[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
+* medication[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
 
 * performer only Reference(Practitioner)
 * performer.reference 1..1

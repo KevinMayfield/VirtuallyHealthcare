@@ -1,0 +1,39 @@
+{
+  "resourceType": "Task",
+  "id": "Task-EMIS-IM1-Medication-Review",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Task"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://emis.com/Id/Diary/DBID",
+      "value": "610596"
+    },
+    {
+      "system": "https://emis.com/Id/Diary/GUID",
+      "value": "905D117C-579F-4D49-9BFA-184F6A7630F9"
+    }
+  ],
+  "status": "ready",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "182836005",
+        "display": "Medication review"
+      }
+    ],
+    "text": "Medication review"
+  },
+  "for": {
+    "reference": "Patient/610"
+  },
+  "executionPeriod": {
+    "start": "2005-10-19T00:00:00+00:00"
+  },
+  "requester": {
+    "reference": "Practitioner/243"
+  }
+}

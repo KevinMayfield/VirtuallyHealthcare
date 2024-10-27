@@ -1,0 +1,48 @@
+{
+  "resourceType": "Condition",
+  "id": "Condition-EMIS-PFS-Cardiovascular-event-risk",
+  "meta": {
+    "lastUpdated": "2008-09-18T00:00:00.000+00:00",
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Condition"
+    ]
+  },
+  "severity": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "6736007",
+        "display": "Moderate"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/coding-sctdescid",
+            "valueId": "1488811018"
+          }
+        ],
+        "display": "Cardiovascular event risk"
+      }
+    ],
+    "text": "Cardiovascular event risk"
+  },
+  "subject": {
+    "reference": "Patient/1bec52a2-1bea-452f-a6ba-5eea5f97a24e"
+  },
+  "onsetPeriod": {
+    "start": "2006-01-05T00:00:00+00:00"
+  },
+  "recordedDate": "2006-01-05T00:00:00+00:00",
+  "recorder": {
+    "reference": "PractitionerRole/f0b26662-5519-4020-9fc9-35774eb1e826",
+    "display": "Mrs Ann Potter (Partner Programme Test 04)"
+  },
+  "asserter": {
+    "reference": "PractitionerRole/f0b26662-5519-4020-9fc9-35774eb1e826",
+    "display": "Mrs Ann Potter (Partner Programme Test 04)"
+  }
+}
