@@ -27,13 +27,9 @@
   "code": {
     "coding": [
       {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/coding-sctdescid",
-            "valueId": "253677014"
-          }
-        ],
-        "display": "O/E - weight"
+        "system": "http://snomed.info/sct",
+        "code": "27113001",
+        "display": "Body weight"
       }
     ],
     "text": "O/E - weight"

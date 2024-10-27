@@ -27,12 +27,8 @@
   "code": {
     "coding": [
       {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/coding-sctdescid",
-            "valueId": "134471000000110"
-          }
-        ],
+        "system": "http://snomed.info/sct",
+        "code": "1010671000000102",
         "display": "Plasma glucose level"
       }
     ],

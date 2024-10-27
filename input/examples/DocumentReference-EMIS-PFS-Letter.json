@@ -24,12 +24,8 @@
   "type": {
     "coding": [
       {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/coding-sctdescid",
-            "valueId": "452036019"
-          }
-        ],
+        "system": "http://snomed.info/sct",
+        "code": "308720009",
         "display": "Letter encounter"
       }
     ],

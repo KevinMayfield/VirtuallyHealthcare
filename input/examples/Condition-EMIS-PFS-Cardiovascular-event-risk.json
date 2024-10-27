@@ -25,12 +25,8 @@
   "code": {
     "coding": [
       {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/coding-sctdescid",
-            "valueId": "1488811018"
-          }
-        ],
+        "system": "http://snomed.info/sct",
+        "code": "395112001",
         "display": "Cardiovascular event risk"
       }
     ],

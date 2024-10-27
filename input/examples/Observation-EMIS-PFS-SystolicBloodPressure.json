@@ -27,13 +27,9 @@
   "code": {
     "coding": [
       {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/coding-sctdescid",
-            "valueId": "114311000006111"
-          }
-        ],
-        "display": "Systolic blood pressure"
+        "system": "http://snomed.info/sct",
+        "code": "72313002",
+        "display": "Systolic arterial pressure"
       }
     ],
     "text": "Systolic blood pressure"

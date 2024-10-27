@@ -27,12 +27,8 @@
   "code": {
     "coding": [
       {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/coding-sctdescid",
-            "valueId": "259802012"
-          }
-        ],
+        "system": "http://snomed.info/sct",
+        "code": "167272007",
         "display": "Urine protein test not done"
       }
     ],
