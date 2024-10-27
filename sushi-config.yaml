@@ -116,6 +116,10 @@ resources:
     name: Observation-EMIS-IM1-Systolic-blood-pressure
     description: Observation EMIS IM1 Systolic blood pressure
     exampleBoolean: true
+  Observation/cb41876b-ce8e-40c2-b6c1-1351d3e4e04a:
+    name: Observation-EMIS-PFS-Systolic-blood-pressure
+    description: Observation EMIS PFS Systolic blood pressure
+    exampleBoolean: true
   Observation/3205:
     name: Observation-EMIS-IM1-Urine-protein-test-not-done
     description: Observation EMIS IM1 Urine protein test not done
@@ -144,6 +148,10 @@ resources:
     name: Practitioner-EMIS-IM1-Pauline-Steele
     description: Practitioner EMIS IM1 Pauline Steele
     exampleBoolean: true
+  Practitioner/achawla0309 :
+    name: Practitioner-TPP-IM1-Amit-Chawla
+    description: Practitioner TPP IM1 Amit Chawla
+    exampleBoolean: true
   MedicationRequest/4a71ace9-4d16-4dfb-8097-d7c78dc7ea7d:
     name: MedicationRequest-EMIS-PFS-Atorvastatin-10mg-tablets
     description: MedicationRequest EMIS PFS Atorvastatin 10mg tablets
@@ -152,3 +160,4 @@ resources:
     name: MedicationRequest-EMIS-IM1-Amoxicillin-125mg/5ml-oral-suspension-sugar-free
     description: MedicationRequest EMIS IM1 Amoxicillin 125mg/5ml oral suspension sugar free
     exampleBoolean: true
+
