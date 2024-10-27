@@ -19,3 +19,5 @@ Format: NNNNNNNNNN (400 000 000 to 499 999 999, and 600 000 000 to 799 999)
 * system 1..1
 * system = "https://fhir.nhs.uk/Id/nhs-number"
 * value 1..1
+* type = http://terminology.hl7.org/CodeSystem/v2-0203#NH
+
