@@ -75,3 +75,12 @@ menu:
   Home: index.html
   FHIR Assets: artifacts.html
 
+resources:
+  Patient/3:
+    name: Patient-EMIS-IM1-3
+    description: EMIS IM1 Patient 3
+    exampleBoolean: true
+  Patient/1bec52a2-1bea-452f-a6ba-5eea5f97a24e:
+    name: Patient-EMIS-IM1-1bec52a2-1bea-452f-a6ba-5eea5f97a24e
+    description: EMIS IM1 Patient 1bec52a2-1bea-452f-a6ba-5eea5f97a24e (EMIS IM1 Patient 3)
+    exampleBoolean: true

@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "Patient-EMIS-IM1-3",
+  "id": "3",
   "meta": {
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Patient"

@@ -1,6 +1,6 @@
 {
   "resourceType": "DocumentReference",
-  "id": "DocumentReference-EMIS-IM1-Letter",
+  "id": "3214",
   "meta": {
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/DocumentReference"
