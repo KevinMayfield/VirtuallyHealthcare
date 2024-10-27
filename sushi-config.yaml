@@ -78,9 +78,33 @@ menu:
 resources:
   Patient/3:
     name: Patient-EMIS-IM1-3
-    description: EMIS IM1 Patient 3
+    description: EMIS IM1 Patient Daniel O'Donnell
     exampleBoolean: true
   Patient/1bec52a2-1bea-452f-a6ba-5eea5f97a24e:
     name: Patient-EMIS-IM1-1bec52a2-1bea-452f-a6ba-5eea5f97a24e
-    description: EMIS IM1 Patient 1bec52a2-1bea-452f-a6ba-5eea5f97a24e (EMIS IM1 Patient 3)
+    description: EMIS PFS Patient Daniel O'Donnell
+    exampleBoolean: true
+  Condition/3150:
+    name: Condition-EMIS-IM1-Cardiovascular-event-risk
+    description: Condition EMIS IM1 Cardiovascular event-risk
+    exampleBoolean: true
+  Condition/c60ea075-9992-4566-a314-b0fd27317310:
+    name: Condition-EMIS-PFS-Cardiovascular-event-risk
+    description: Condition EMIS PFS Cardiovascular event-risk
+    exampleBoolean: true
+  Observation/9e77f499-1081-4ec5-ad71-4eeb71bd25ba:
+    name: Observation-EMIS-PFS-Weight
+    description: Observation EMIS PFS Weight
+    exampleBoolean: true
+  Observation/3195:
+    name: Observation-EMIS-IM1-Weight
+    description: Observation EMIS IM1 Weight
+    exampleBoolean: true
+  DocumentReference/3214:
+    name: DocumentReference-EMIS-IM1-Letter
+    description: DocumentReference EMIS IM1 Weight
+    exampleBoolean: true
+  DocumentReference/ad1fcc5e-e9c6-491e-a12c-09085129c04c:
+    name: DocumentReference-EMIS-PFS-Letter
+    description: DocumentReference EMIS PFS Weight
     exampleBoolean: true
