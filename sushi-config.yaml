@@ -94,7 +94,11 @@ resources:
     exampleBoolean: true
   Patient/1107:
     name: Patient-TPP-IM1-Anthony-Avocet
-    description: TPP IM1 Anthony  Avocet
+    description: TPP IM1 Anthony Avocet
+    exampleBoolean: true
+  Patient/500029:
+    name: Patient-TPP-IM1-Anne-Smith
+    description: TPP IM1 Anne Smith
     exampleBoolean: true
   Condition/3150:
     name: Condition-EMIS-IM1-Cardiovascular-event-risk
