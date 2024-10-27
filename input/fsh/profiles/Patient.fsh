@@ -6,6 +6,7 @@ Description: "Extension of UKCore-Patient"
 * identifier 1..* MS
 
 * identifier contains
+  chiNumber 0..1 and
   emisDBID 0..1 and
   EMISAccessIdentityGuid 0..* and
   tppPatientId 0..1 and
@@ -13,6 +14,8 @@ Description: "Extension of UKCore-Patient"
 
 * identifier[nhsNumber] only NHSNumber
 * identifier[nhsNumber] ^short = "England and Wales National Health Identifier"
+* identifier[chiNumber] only CHINumber
+* identifier[chiNumber] ^short = "Scotland National Health Identifier"
 * identifier[emisDBID] only EMISDBID
 * identifier[emisDBID] ^short = "EMIS IM1 Medical Record Number"
 * identifier[EMISAccessIdentityGuid] only EMISAccessIdentityGuid
