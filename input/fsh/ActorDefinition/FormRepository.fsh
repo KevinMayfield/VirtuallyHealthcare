@@ -4,7 +4,7 @@ Title:   "Form Repository"
 Usage:  #definition
 
 * name = "Form Repository"
-* type = #system
+* type = http://hl7.org/fhir/examplescenario-actor-type#system
 * status = http://hl7.org/fhir/publication-status#draft
 * description = """
 The Form Repository is responsible for both the persistent storage of forms (and many archetypes).

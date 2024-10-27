@@ -4,7 +4,7 @@ Title:   "Clinical Data Service"
 Usage:  #definition
 
 * name = "ClinicalDataService"
-* type = #system
+* type = http://hl7.org/fhir/examplescenario-actor-type#system
 * status = http://hl7.org/fhir/publication-status#draft
 * description = """
 This is a service which acts as an [Anti-Corruption-Layer](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/acl.html)

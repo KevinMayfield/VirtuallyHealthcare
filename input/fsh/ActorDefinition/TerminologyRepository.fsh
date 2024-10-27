@@ -4,7 +4,7 @@ Title:   "Terminology Repository"
 Usage:  #definition
 
 * name = "TerminologyRepository"
-* type = #system
+* type = http://hl7.org/fhir/examplescenario-actor-type#system
 * status = http://hl7.org/fhir/publication-status#draft
 * description = """
 Central repository of codesystems (e.g. UK SNOMED CT), valuesets and concept maps.

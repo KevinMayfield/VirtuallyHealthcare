@@ -4,7 +4,7 @@ Title:   "Clinical Data Consumer"
 Usage:  #definition
 
 * name = "ClinicalDataConsumer"
-* type = #system
+* type = http://hl7.org/fhir/examplescenario-actor-type#system
 * status = http://hl7.org/fhir/publication-status#draft
 * description = """
 The Clinical Data Consumer sends FHIR-based queries to the Clinical Data Repository which exposes data in a clinical data repository

@@ -4,7 +4,7 @@ Title:   "Form Registry"
 Usage:  #definition
 
 * name = "Form Registry"
-* type = #system
+* type = http://hl7.org/fhir/examplescenario-actor-type#system
 * status = http://hl7.org/fhir/publication-status#draft
 * description = """
 Repository for form definitions.

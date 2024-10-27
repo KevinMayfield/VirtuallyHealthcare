@@ -4,7 +4,7 @@ Title:   "Clinical Data Repository"
 Usage:  #definition
 
 * name = "ClinicalDataRepository"
-* type = #system
+* type = http://hl7.org/fhir/examplescenario-actor-type#system
 * status = http://hl7.org/fhir/publication-status#draft
 * description = """
 The Clinical Data Repository is responsible for the persistent storage of clinical data items (observations, conditions, immunisations, etc). E.g. PHR, EHR and EPR

@@ -4,7 +4,7 @@ Title:   "Form Service"
 Usage:  #definition
 
 * name = "Form Service"
-* type = #system
+* type = http://hl7.org/fhir/examplescenario-actor-type#system
 * status = http://hl7.org/fhir/publication-status#draft
 * description = """
 Provides pre-population and data extraction services
