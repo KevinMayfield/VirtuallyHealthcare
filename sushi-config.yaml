@@ -77,11 +77,11 @@ menu:
 
 resources:
   Patient/3:
-    name: Patient-EMIS-IM1-3
+    name: Patient-EMIS-IM1-Daniel-ODonnell
     description: EMIS IM1 Patient Daniel O'Donnell
     exampleBoolean: true
   Patient/1bec52a2-1bea-452f-a6ba-5eea5f97a24e:
-    name: Patient-EMIS-IM1-1bec52a2-1bea-452f-a6ba-5eea5f97a24e
+    name: Patient-EMIS-PFS-Daniel-ODonnell
     description: EMIS PFS Patient Daniel O'Donnell
     exampleBoolean: true
   Condition/3150:
