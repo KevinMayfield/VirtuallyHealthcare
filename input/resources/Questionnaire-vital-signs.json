@@ -46,7 +46,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "%",
-              "display": "percent",
+              "display": "%",
               "system": "http://unitsofmeasure.org"
             }
           }
@@ -91,7 +91,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "kg",
-              "display": "kilogram",
+              "display": "kg",
               "system": "http://unitsofmeasure.org"
             }
           }
@@ -136,7 +136,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "cm",
-              "display": "centimeter",
+              "display": "cm",
               "system": "http://unitsofmeasure.org"
             }
           }
@@ -181,7 +181,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "cm",
-              "display": "centimeter",
+              "display": "cm",
               "system": "http://unitsofmeasure.org"
             }
           }
@@ -226,7 +226,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "Cel",
-              "display": "degree Celsius",
+              "display": "Cel",
               "system": "http://unitsofmeasure.org"
             }
           }
@@ -262,7 +262,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "mm[Hg]",
-              "display": "millimeter of mercury",
+              "display": "mm[Hg]",
               "system": "http://unitsofmeasure.org"
             }
           }
@@ -307,7 +307,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "mm[Hg]",
-              "display": "millimeter of mercury",
+              "display": "mm[Hg]",
               "system": "http://unitsofmeasure.org"
             }
           }
@@ -352,7 +352,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "{beats}/min",
-              "display": "heart beats per minute",
+              "display": "{beats}/min",
               "system": "http://unitsofmeasure.org"
             }
           }
@@ -397,7 +397,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "{Breaths}/min",
-              "display": "Breaths / minute",
+              "display": "{Breaths}/min",
               "system": "http://unitsofmeasure.org"
             }
           }
@@ -442,7 +442,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "kg/m2",
-              "display": "kilogram per square meter",
+              "display": "kg per square meter",
               "system": "http://unitsofmeasure.org"
             }
           }
@@ -453,7 +453,7 @@
         "initial": [
           {
             "valueQuantity": {
-              "unit": "kilogram per square meter",
+              "unit": "kg/m2",
               "code": "kg/m2",
               "system": "http://unitsofmeasure.org"
             }
