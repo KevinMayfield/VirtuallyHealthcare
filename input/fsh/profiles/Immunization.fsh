@@ -5,6 +5,6 @@ Description: "Extentsion to UKCore Immunization"
 
 * identifier 1..* MS
 
-* subject 1..1
-* subject only Reference(Patient)
-* subject.identifier only NHSNumber or CHINumber
+* patient 1..1
+* patient only Reference(Patient)
+* patient.identifier only NHSNumber or CHINumber
