@@ -1,0 +1,376 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "PhysicalActivityDefinitions",
+  "url": "https://fhir.virtually.healthcare/Questionnaire/PhysicalActivityDefinitions",
+  "title": "Physical Activity Definitions",
+  "status": "draft",
+  "description": "Influenced by [HL7 Physical Activity Implementation Guide](https://build.fhir.org/ig/HL7/physical-activity/)",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "68130003",
+      "display": "Physical activity"
+    }
+  ],
+  "item": [
+    {
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "ExerciseActivity",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "73985-4",
+              "display": "Exercise activity"
+            }
+          ],
+          "text": "Exercise activity",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "1968006",
+                "display": "Jogging"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "54391000087108",
+                "display": "Cycling"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "418060005",
+                "display": "Running"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "20461001",
+                "display": "Swimming"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "870595007",
+                "display": "Walking"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA11839-0",
+                "display": "Weights"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA11840-8",
+                "display": "Mixed"
+              }
+            }
+          ]
+        },
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "/min",
+                "display": "per minute"
+              }
+            }
+          ],
+          "linkId": "PeakActivityHeartRate",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "55426-1",
+              "display": "Maximum Heart rate in Unspecified Time"
+            }
+          ],
+          "text": "Peak Activity Heart Rate",
+          "initial": [
+            {
+              "valueQuantity": {
+                "unit": "per minute",
+                "system": "http://unitsofmeasure.org",
+                "code": "/min"
+              }
+            }
+          ]
+        },
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "min",
+                "display": "minute"
+              }
+            }
+          ],
+          "linkId": "ActivityDuration",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "55411-3",
+              "display": "Exercise duration"
+            }
+          ],
+          "text": "Activity Duration",
+          "initial": [
+            {
+              "valueQuantity": {
+                "unit": "minute",
+                "system": "http://unitsofmeasure.org",
+                "code": "min"
+              }
+            }
+          ]
+        },
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "/min",
+                "display": "per minute"
+              }
+            }
+          ],
+          "linkId": "AverageHeartRate",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "55425-3",
+              "display": "Mean Heart rate in Unspecified Time"
+            }
+          ],
+          "text": "Average Heart Rate",
+          "initial": [
+            {
+              "valueQuantity": {
+                "unit": "per minute",
+                "system": "http://unitsofmeasure.org",
+                "code": "/min"
+              }
+            }
+          ]
+        },
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "kcal",
+                "display": "kilocalorie"
+              }
+            }
+          ],
+          "linkId": "CaloriesPerActivity",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "55424-6",
+              "display": "Calories burned in Unspecified Time, Pedometer"
+            }
+          ],
+          "text": "Calories per activity",
+          "initial": [
+            {
+              "valueQuantity": {
+                "unit": "kilocalorie",
+                "system": "http://unitsofmeasure.org",
+                "code": "kcal"
+              }
+            }
+          ]
+        },
+        {
+          "text": "Based on https://build.fhir.org/ig/HL7/physical-activity/measures.html#activity-based-measures",
+          "type": "display",
+          "linkId": "919206018702_helpText",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "text": "Help-Button",
+                "coding": [
+                  {
+                    "code": "help",
+                    "display": "Help-Button",
+                    "system": "http://hl7.org/fhir/questionnaire-item-control"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "type": "group",
+      "linkId": "ActivityBasedMeasures",
+      "text": "Activity-based Measures"
+    },
+    {
+      "item": [
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "/d",
+                "display": "per day"
+              }
+            }
+          ],
+          "linkId": "DailyStepCount",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "41950-7",
+              "display": "Number of steps in 24 Hours, Measured"
+            }
+          ],
+          "text": "Daily Step Count",
+          "initial": [
+            {
+              "valueQuantity": {
+                "unit": "per day",
+                "system": "http://unitsofmeasure.org",
+                "code": "/d"
+              }
+            }
+          ]
+        },
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "/min",
+                "display": "per minute"
+              }
+            }
+          ],
+          "linkId": "PeakDailyHeartRate",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "8873-2",
+              "display": "Maximum Heart rate in 24 Hours"
+            }
+          ],
+          "text": "Peak daily heart rate",
+          "initial": [
+            {
+              "valueQuantity": {
+                "unit": "per minute",
+                "system": "http://unitsofmeasure.org",
+                "code": "/min"
+              }
+            }
+          ]
+        },
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "/min",
+                "display": "per minute"
+              }
+            }
+          ],
+          "linkId": "AverageRestingHeartRate",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "40443-4",
+              "display": "Heart rate - resting"
+            }
+          ],
+          "text": "Average resting heart rate",
+          "initial": [
+            {
+              "valueQuantity": {
+                "unit": "per minute",
+                "system": "http://unitsofmeasure.org",
+                "code": "/min"
+              }
+            }
+          ]
+        },
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "kcal/d",
+                "display": "kilocalorie per day"
+              }
+            }
+          ],
+          "linkId": "CaloriesPerDay",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "41979-6",
+              "display": "Calories burned in 24 Hours, Calc"
+            }
+          ],
+          "text": "Calories per Day",
+          "initial": [
+            {
+              "valueQuantity": {
+                "unit": "kilocalorie per 24 hour",
+                "system": "http://unitsofmeasure.org",
+                "code": "kcal/(24.h)"
+              }
+            }
+          ]
+        }
+      ],
+      "type": "string",
+      "linkId": "TimeBasedMeasure",
+      "text": "Time-based Measures"
+    }
+  ]
+}
