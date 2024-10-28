@@ -205,6 +205,7 @@ groups:
     description: "Clinical Data Repository Examples"
     resources:
       Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630
+      Organization/e2d3115b-402b-45a5-a01d-7acb64466ddc
 #      - Observation/8f750590-30d6-425f-a8c4-f0a7c41e01d4
 #      - Observation/71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0
 #      - Observation/cffe1a6e-8eda-4613-bf54-119b374bb5b9
