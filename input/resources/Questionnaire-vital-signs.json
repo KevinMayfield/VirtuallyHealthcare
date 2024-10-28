@@ -1,343 +1,429 @@
 {
-    "id": "VitalSignsDefinitions",
-    "meta": {
-      "versionId": "8",
-      "lastUpdated": "2023-04-20T03:52:38.002Z",
-      "profile" : [
-        "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"
+  "resourceType": "Questionnaire",
+  "id": "VitalSignsDefinitions",
+  "meta": {
+    "versionId": "8",
+    "lastUpdated": "2023-04-20T03:52:38.002Z",
+    "profile": [
+      "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"
+    ]
+  },
+  "url": "https://fhir.virtually.healthcare/Questionnaire/VitalSignsDefinitions",
+  "title": "Vital Signs Definitions",
+  "status": "draft",
+  "description": "This is a definition of vital signs and is influenced by [NHS England Clinical Observations](https://simplifier.net/guide/ClinicalObservations/Home)",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "118227000",
+      "display": "Vital signs finding"
+    }
+  ],
+  "item": [
+    {
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "%",
+            "display": "%"
+          }
+        }
+      ],
+      "linkId": "BaselineSpO2",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "927981000000106",
+          "display": "Baseline SpO2 (oxygen saturation at periphery)"
+        }
+      ],
+      "text": "Baseline SpO2 (oxygen saturation at periphery)",
+      "required": false,
+      "repeats": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "percent",
+            "system": "http://unitsofmeasure.org",
+            "code": "%"
+          }
+        }
       ]
     },
-    "code": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "118227000",
-        "display": "Vital signs finding"
-      }
-    ],
-    "status": "draft",
-    "url": "https://fhir.virtually.healthcare/Questionnaire/VitalSignsDefinitions",
-    "title": "Vital Signs Definitions",
-    "resourceType": "Questionnaire",
-    "item": [
-      {
-        "type": "quantity",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "927981000000106",
-            "display": "Baseline SpO2 (oxygen saturation at periphery)"
+    {
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "%"
           }
-        ],
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-            "valueCoding": {
-              "code": "%",
-              "display": "%",
-              "system": "http://unitsofmeasure.org"
-            }
+        }
+      ],
+      "linkId": "Target peripheral oxygen saturation",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "852641000000103",
+          "display": "Target peripheral oxygen saturation"
+        }
+      ],
+      "text": "Target peripheral oxygen saturation",
+      "initial": [
+        {
+          "valueQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "code": "%"
           }
-        ],
-        "required": false,
-        "linkId": "BaselineSpO2",
-        "text": "Baseline SpO2 (oxygen saturation at periphery)",
-        "initial": [
-          {
-            "valueQuantity": {
-              "unit": "percent",
-              "code": "%",
-              "system": "http://unitsofmeasure.org"
-            }
+        }
+      ]
+    },
+    {
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "%"
           }
-        ]
-      },
-      {
-        "type": "quantity",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "27113001",
-            "display": "Body weight"
+        }
+      ],
+      "linkId": "HemoglobinSaturationWithOxygen",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "103228002",
+          "display": "Hemoglobin saturation with oxygen"
+        }
+      ],
+      "text": "Hemoglobin saturation with oxygen"
+    },
+    {
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "kg",
+            "display": "kg"
           }
-        ],
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-            "valueCoding": {
-              "code": "kg",
-              "display": "kg",
-              "system": "http://unitsofmeasure.org"
-            }
+        }
+      ],
+      "linkId": "Weight",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "27113001",
+          "display": "Body weight"
+        }
+      ],
+      "text": "Weight",
+      "required": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "kilogram",
+            "system": "http://unitsofmeasure.org",
+            "code": "kg"
           }
-        ],
-        "required": false,
-        "linkId": "Weight",
-        "text": "Weight",
-        "initial": [
-          {
-            "valueQuantity": {
-              "unit": "kilogram",
-              "code": "kg",
-              "system": "http://unitsofmeasure.org"
-            }
+        }
+      ]
+    },
+    {
+      "type": "quantity",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "363811000",
+          "display": "Head circumference measure"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "code": "cm",
+            "display": "cm",
+            "system": "http://unitsofmeasure.org"
           }
-        ]
-      },
-      {
-        "type": "quantity",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "363811000",
-            "display": "Head circumference measure"
+        }
+      ],
+      "required": false,
+      "linkId": "HeadCircumference",
+      "text": "Head circumference",
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "centimeter",
+            "code": "cm",
+            "system": "http://unitsofmeasure.org"
           }
-        ],
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-            "valueCoding": {
-              "code": "cm",
-              "display": "cm",
-              "system": "http://unitsofmeasure.org"
-            }
+        }
+      ]
+    },
+    {
+      "type": "quantity",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "50373000",
+          "display": "Body height measure"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "code": "cm",
+            "display": "cm",
+            "system": "http://unitsofmeasure.org"
           }
-        ],
-        "required": false,
-        "linkId": "HeadCircumference",
-        "text": "Head circumference",
-        "initial": [
-          {
-            "valueQuantity": {
-              "unit": "centimeter",
-              "code": "cm",
-              "system": "http://unitsofmeasure.org"
-            }
+        }
+      ],
+      "required": false,
+      "linkId": "BodyHeight",
+      "text": "Body height",
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "centimeter",
+            "code": "cm",
+            "system": "http://unitsofmeasure.org"
           }
-        ]
-      },
-      {
-        "type": "quantity",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "50373000",
-            "display": "Body height measure"
+        }
+      ]
+    },
+    {
+      "type": "quantity",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "276885007",
+          "display": "Core body temperature"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "code": "Cel",
+            "display": "Cel",
+            "system": "http://unitsofmeasure.org"
           }
-        ],
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-            "valueCoding": {
-              "code": "cm",
-              "display": "cm",
-              "system": "http://unitsofmeasure.org"
-            }
+        }
+      ],
+      "required": false,
+      "linkId": "BodyTemperature",
+      "text": "Body temperature",
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "degree Celsius",
+            "code": "Cel",
+            "system": "http://unitsofmeasure.org"
           }
-        ],
-        "required": false,
-        "linkId": "BodyHeight",
-        "text": "Body height",
-        "initial": [
-          {
-            "valueQuantity": {
-              "unit": "centimeter",
-              "code": "cm",
-              "system": "http://unitsofmeasure.org"
-            }
+        }
+      ]
+    },
+    {
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "mm[Hg]",
+            "display": "mm[Hg]"
           }
-        ]
-      },
-      {
-        "type": "quantity",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "276885007",
-            "display": "Core body temperature"
+        }
+      ],
+      "linkId": "SystolicBloodPressure",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "72313002",
+          "display": "Systolic arterial pressure"
+        }
+      ],
+      "text": "Systolic blood pressure",
+      "required": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "millimeter of mercury",
+            "system": "http://unitsofmeasure.org",
+            "code": "mm[Hg]"
           }
-        ],
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-            "valueCoding": {
-              "code": "Cel",
-              "display": "Cel",
-              "system": "http://unitsofmeasure.org"
-            }
+        }
+      ]
+    },
+    {
+      "type": "quantity",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1091811000000102",
+          "display": "Diastolic arterial pressure"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "code": "mm[Hg]",
+            "display": "mm[Hg]",
+            "system": "http://unitsofmeasure.org"
           }
-        ],
-        "required": false,
-        "linkId": "BodyTemperature",
-        "text": "Body temperature",
-        "initial": [
-          {
-            "valueQuantity": {
-              "unit": "degree Celsius",
-              "code": "Cel",
-              "system": "http://unitsofmeasure.org"
-            }
+        }
+      ],
+      "required": false,
+      "linkId": "DiastolicBloodPressure",
+      "text": "Diastolic blood pressure",
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "millimeter of mercury",
+            "code": "mm[Hg]",
+            "system": "http://unitsofmeasure.org"
           }
-        ]
-      },
-      {
-        "type": "quantity",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "72313002",
-            "display": "Systolic arterial pressure"
+        }
+      ]
+    },
+    {
+      "type": "quantity",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "364075005",
+          "display": "Heart rate"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "code": "{beats}/min",
+            "display": "{beats}/min",
+            "system": "http://unitsofmeasure.org"
           }
-        ],
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-            "valueCoding": {
-              "code": "mm[Hg]",
-              "display": "mm[Hg]",
-              "system": "http://unitsofmeasure.org"
-            }
+        }
+      ],
+      "required": false,
+      "linkId": "HeartRate",
+      "text": "Heart rate",
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "heart beats per minute",
+            "code": "{beats}/min",
+            "system": "http://unitsofmeasure.org"
           }
-        ],
-        "required": false,
-        "linkId": "SystolicBloodPressure",
-        "text": "Systolic blood pressure",
-        "initial": [
-          {
-            "valueQuantity": {
-              "unit": "millimeter of mercury",
-              "code": "mm[Hg]",
-              "system": "http://unitsofmeasure.org"
-            }
+        }
+      ]
+    },
+    {
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{Breaths}/min",
+            "display": "{Breaths}/min"
           }
-        ]
-      },
-      {
-        "type": "quantity",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "1091811000000102",
-            "display": "Diastolic arterial pressure"
+        }
+      ],
+      "linkId": "RespiratoryRate",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "86290005",
+          "display": "Respiratory rate"
+        }
+      ],
+      "text": "Respiratory rate",
+      "required": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "Breaths / minute",
+            "system": "http://unitsofmeasure.org",
+            "code": "{Breaths}/min"
           }
-        ],
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-            "valueCoding": {
-              "code": "mm[Hg]",
-              "display": "mm[Hg]",
-              "system": "http://unitsofmeasure.org"
-            }
+        }
+      ]
+    },
+    {
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "kg/m2",
+            "display": "kg/m2"
           }
-        ],
-        "required": false,
-        "linkId": "DiastolicBloodPressure",
-        "text": "Diastolic blood pressure",
-        "initial": [
-          {
-            "valueQuantity": {
-              "unit": "millimeter of mercury",
-              "code": "mm[Hg]",
-              "system": "http://unitsofmeasure.org"
-            }
+        }
+      ],
+      "linkId": "BodyMassIndex",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "60621009",
+          "display": "Body mass index"
+        }
+      ],
+      "text": "Body mass Index",
+      "required": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "kg/m2",
+            "system": "http://unitsofmeasure.org",
+            "code": "kg/m2"
           }
-        ]
-      },
-      {
-        "type": "quantity",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "364075005",
-            "display": "Heart rate"
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "linkId": "BreathingRoomAir",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "722742002",
+          "display": "Breathing room air"
+        }
+      ],
+      "text": "Breathing room air"
+    },
+    {
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "L/min",
+            "display": "Liters per minute"
           }
-        ],
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-            "valueCoding": {
-              "code": "{beats}/min",
-              "display": "{beats}/min",
-              "system": "http://unitsofmeasure.org"
-            }
-          }
-        ],
-        "required": false,
-        "linkId": "HeartRate",
-        "text": "Heart rate",
-        "initial": [
-          {
-            "valueQuantity": {
-              "unit": "heart beats per minute",
-              "code": "{beats}/min",
-              "system": "http://unitsofmeasure.org"
-            }
-          }
-        ]
-      },
-      {
-        "type": "quantity",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "86290005",
-            "display": "Respiratory rate"
-          }
-        ],
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-            "valueCoding": {
-              "code": "{Breaths}/min",
-              "display": "{Breaths}/min",
-              "system": "http://unitsofmeasure.org"
-            }
-          }
-        ],
-        "required": false,
-        "linkId": "RespiratoryRate",
-        "text": "Resp rate",
-        "initial": [
-          {
-            "valueQuantity": {
-              "unit": "Breaths / minute",
-              "code": "{Breaths}/min",
-              "system": "http://unitsofmeasure.org"
-            }
-          }
-        ]
-      },
-      {
-        "type": "quantity",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "60621009",
-            "display": "Body mass index"
-          }
-        ],
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-            "valueCoding": {
-              "code": "kg/m2",
-              "display": "kg/m2",
-              "system": "http://unitsofmeasure.org"
-            }
-          }
-        ],
-        "required": false,
-        "linkId": "BodyMassIndex",
-        "text": "BMI",
-        "initial": [
-          {
-            "valueQuantity": {
-              "unit": "kg/m2",
-              "code": "kg/m2",
-              "system": "http://unitsofmeasure.org"
-            }
-          }
-        ]
-      }
-    ]
-  }
+        }
+      ],
+      "linkId": "PatientOnOxygen",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "371825009",
+          "display": "Patient on oxygen"
+        }
+      ],
+      "text": "Patient on oxygen"
+    }
+  ]
+}
