@@ -204,3 +204,29 @@ resources:
     name: Organisation-Moir-Medical-Centre
     description: Organisation Moir Medical Centre, imported from [ODS CSV Downloads](https://digital.nhs.uk/services/organisation-data-service/export-data-files/csv-downloads)
     exampleBoolean: true
+
+groups:
+  -emis-im1:
+    name: "EMIS IM1 Examples"
+    description: "Examples converted from EMIS IM1 API"
+    resources:
+      Task/Task-EMIS-IM1-Medication-review
+      Immunization/610281
+      Immunization/610266
+      Patient/3
+      Patient/637
+      Patient/610
+      Patient/1107
+      Patient/500029
+      Condition/3150
+      Condition/50002941
+      Observation/3195
+      Observation/3114
+      Observation/3205
+      Observation/367
+      DocumentReference/3214
+      Practitioner/4
+      MedicationRequest/50002932
+      Task/610595
+      Task/610596
+
