@@ -1,7 +1,7 @@
 Profile: Observation
 Parent: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation
 Id: Observation
-Description: "Extension of UKCore-Observation"
+Description: "Extension of UKCore-Observation and includes elements from [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)"
 
 * identifier 1..* MS
 

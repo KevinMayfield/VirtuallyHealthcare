@@ -1,7 +1,7 @@
 Profile: DocumentReference
 Parent: http://hl7.org/fhir/StructureDefinition/DocumentReference
 Id: DocumentReference
-Description: "Extentsion to future UKCore DocumentReference"
+Description: "Extension to future UKCore DocumentReference and includes elements from [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)"
 
 * identifier 1..* MS
 

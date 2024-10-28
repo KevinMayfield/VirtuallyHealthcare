@@ -1,5 +1,5 @@
 {
-    "id": "VitalSignsFinding",
+    "id": "VitalSignsDefinitions",
     "meta": {
       "versionId": "8",
       "lastUpdated": "2023-04-20T03:52:38.002Z",
@@ -15,8 +15,8 @@
       }
     ],
     "status": "draft",
-    "url": "https://fhir.virtually.healthcare/Questionnaire/VitalSignsFinding",
-    "title": "Vital signs finding",
+    "url": "https://fhir.virtually.healthcare/Questionnaire/VitalSignsDefinitions",
+    "title": "Vital Signs Definitions",
     "resourceType": "Questionnaire",
     "item": [
       {
@@ -30,19 +30,6 @@
         ],
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-            "valueDuration": {
-              "value": 2,
-              "unit": "weeks",
-              "system": "http://unitsofmeasure.org",
-              "code": "wk"
-            }
-          },
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-            "valueBoolean": true
-          },
-          {
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "%",
@@ -52,7 +39,7 @@
           }
         ],
         "required": false,
-        "linkId": "/927981000000106",
+        "linkId": "BaselineSpO2",
         "text": "Baseline SpO2 (oxygen saturation at periphery)",
         "initial": [
           {
@@ -75,19 +62,6 @@
         ],
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-            "valueDuration": {
-              "value": 2,
-              "unit": "weeks",
-              "system": "http://unitsofmeasure.org",
-              "code": "wk"
-            }
-          },
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-            "valueBoolean": true
-          },
-          {
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "kg",
@@ -97,8 +71,8 @@
           }
         ],
         "required": false,
-        "linkId": "/27113001",
-        "text": "Weight Measured",
+        "linkId": "Weight",
+        "text": "Weight",
         "initial": [
           {
             "valueQuantity": {
@@ -120,19 +94,6 @@
         ],
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-            "valueDuration": {
-              "value": 2,
-              "unit": "weeks",
-              "system": "http://unitsofmeasure.org",
-              "code": "wk"
-            }
-          },
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-            "valueBoolean": true
-          },
-          {
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "cm",
@@ -142,7 +103,7 @@
           }
         ],
         "required": false,
-        "linkId": "/363811000",
+        "linkId": "HeadCircumference",
         "text": "Head circumference",
         "initial": [
           {
@@ -165,19 +126,6 @@
         ],
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-            "valueDuration": {
-              "value": 2,
-              "unit": "weeks",
-              "system": "http://unitsofmeasure.org",
-              "code": "wk"
-            }
-          },
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-            "valueBoolean": true
-          },
-          {
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "cm",
@@ -187,7 +135,7 @@
           }
         ],
         "required": false,
-        "linkId": "/50373000",
+        "linkId": "BodyHeight",
         "text": "Body height",
         "initial": [
           {
@@ -210,19 +158,6 @@
         ],
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-            "valueDuration": {
-              "value": 2,
-              "unit": "weeks",
-              "system": "http://unitsofmeasure.org",
-              "code": "wk"
-            }
-          },
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-            "valueBoolean": true
-          },
-          {
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "Cel",
@@ -232,7 +167,7 @@
           }
         ],
         "required": false,
-        "linkId": "/276885007",
+        "linkId": "BodyTemperature",
         "text": "Body temperature",
         "initial": [
           {
@@ -255,10 +190,6 @@
         ],
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-            "valueBoolean": true
-          },
-          {
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "mm[Hg]",
@@ -268,7 +199,7 @@
           }
         ],
         "required": false,
-        "linkId": "/72313002",
+        "linkId": "SystolicBloodPressure",
         "text": "Systolic blood pressure",
         "initial": [
           {
@@ -291,19 +222,6 @@
         ],
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-            "valueDuration": {
-              "value": 2,
-              "unit": "weeks",
-              "system": "http://unitsofmeasure.org",
-              "code": "wk"
-            }
-          },
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-            "valueBoolean": true
-          },
-          {
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "mm[Hg]",
@@ -313,7 +231,7 @@
           }
         ],
         "required": false,
-        "linkId": "/1091811000000102",
+        "linkId": "DiastolicBloodPressure",
         "text": "Diastolic blood pressure",
         "initial": [
           {
@@ -336,19 +254,6 @@
         ],
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-            "valueDuration": {
-              "value": 2,
-              "unit": "weeks",
-              "system": "http://unitsofmeasure.org",
-              "code": "wk"
-            }
-          },
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-            "valueBoolean": true
-          },
-          {
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "{beats}/min",
@@ -358,7 +263,7 @@
           }
         ],
         "required": false,
-        "linkId": "/364075005",
+        "linkId": "HeartRate",
         "text": "Heart rate",
         "initial": [
           {
@@ -381,19 +286,6 @@
         ],
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-            "valueDuration": {
-              "value": 2,
-              "unit": "weeks",
-              "system": "http://unitsofmeasure.org",
-              "code": "wk"
-            }
-          },
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-            "valueBoolean": true
-          },
-          {
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "{Breaths}/min",
@@ -403,7 +295,7 @@
           }
         ],
         "required": false,
-        "linkId": "/86290005",
+        "linkId": "RespiratoryRate",
         "text": "Resp rate",
         "initial": [
           {
@@ -426,19 +318,6 @@
         ],
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-            "valueDuration": {
-              "value": 2,
-              "unit": "weeks",
-              "system": "http://unitsofmeasure.org",
-              "code": "wk"
-            }
-          },
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-            "valueBoolean": true
-          },
-          {
             "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
             "valueCoding": {
               "code": "kg/m2",
@@ -448,7 +327,7 @@
           }
         ],
         "required": false,
-        "linkId": "/60621009",
+        "linkId": "BodyMassIndex",
         "text": "BMI",
         "initial": [
           {

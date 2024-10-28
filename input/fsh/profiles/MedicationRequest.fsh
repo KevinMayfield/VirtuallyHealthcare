@@ -1,7 +1,7 @@
 Profile: MedicationRequest
 Parent: https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest
 Id: MedicationRequest
-Description: "Extension of UKCore-MedicationRequest"
+Description: "Extension of UKCore-MedicationRequest and includes elements from [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)"
 
 * identifier 1..* MS
 

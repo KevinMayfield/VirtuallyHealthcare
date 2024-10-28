@@ -1,7 +1,7 @@
 Profile: Task
 Parent: http://hl7.org/fhir/StructureDefinition/Task
 Id: Task
-Description: "Based on FHIR Workflow"
+Description: "Based on [FHIR Workflow](https://hl7.org/fhir/R4/workflow.html)"
 
 * code 1..1
 * note MS
