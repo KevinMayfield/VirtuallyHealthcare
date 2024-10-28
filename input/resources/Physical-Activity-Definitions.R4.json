@@ -30,7 +30,6 @@
         }
       ],
       "linkId": "ExerciseActivity",
-      "definition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport#code",
       "code": [
         {
           "system": "http://loinc.org",
