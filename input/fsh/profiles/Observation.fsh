@@ -32,9 +32,9 @@ Description: "Extension of UKCore-Observation and includes elements from [HL7 In
 * effective[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
 
 * performer 1..* MS
-* performer only Reference(Practitioner)
+* performer only Reference(Practitioner or Patient)
 * performer.reference 1..1
-* performer.identifier only GeneralMedicalCouncilReferenceNumber or GeneralMedicalPractitionerCode
+* performer.identifier only GeneralMedicalCouncilReferenceNumber or GeneralMedicalPractitionerCode or NHSNumber or CHINumber
 
 * value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
 * value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
