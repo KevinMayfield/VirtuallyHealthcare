@@ -176,9 +176,9 @@ resources:
     name: Task-EMIS-IM1-Medication-review
     description: Task EMIS IM1 Medication review
     exampleBoolean: true
-  Questionnaire/VitalSignsFinding:
-    name: Questionnaire-VitalSignsFinding
-    description: Questionnaire Vital Signs Finding Definition
+  Questionnaire/VitalSignsDefinitions:
+    name: Questionnaire-VitalSignsDefinitions
+    description: Questionnaire Vital Signs Definitions
     exampleBoolean: false
   Task/Task-EMIS-PFS-Prescription-Refill:
     name: Task-EMIS-PFS-Prescription-Refill
