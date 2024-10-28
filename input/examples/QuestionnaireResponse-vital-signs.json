@@ -1,9 +1,9 @@
 {
   "resourceType": "QuestionnaireResponse",
   "id": "questionnaireresponse-vital-signs",
-  "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/VitalSignsFinding",
+  "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/VitalSignsDefinitions",
   "subject": {
-    "reference": "Patient/a8a85872-87c7-4f20-89c1-6747f980f919"
+    "reference": "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
   },
   "status": "completed",
   "authored": "2024-03-04T06:27:40.701Z",

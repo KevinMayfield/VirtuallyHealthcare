@@ -1,0 +1,51 @@
+{
+  "resourceType": "Organization",
+  "id": "e2d3115b-402b-45a5-a01d-7acb64466ddc",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-10-10T14:32:55.950Z"
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "C81010"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+          "code": "76",
+          "display": "GP PRACTICE"
+        }
+      ]
+    }
+  ],
+  "name": "The Moir Medical Centre",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0115 9737320",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "line": [
+        "The Moir Medical Centre",
+        "Regent Street, Long Eaton",
+        "Nottingham"
+      ],
+      "postalCode": "NG10 1QQ"
+    }
+  ],
+  "partOf": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "15M"
+    }
+  }
+}

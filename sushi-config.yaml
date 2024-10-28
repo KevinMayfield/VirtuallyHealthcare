@@ -76,6 +76,10 @@ menu:
   FHIR Assets: artifacts.html
 
 resources:
+  Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630:
+    name: Patient-CDR-Rachel-Kanfeld
+    description: Clinical Data Reposotory Rachel Kanfeld
+    exampleBoolean: true
   Patient/3:
     name: Patient-EMIS-IM1-Daniel-ODonnell
     description: EMIS IM1 Patient Daniel O'Donnell
@@ -195,4 +199,8 @@ resources:
   Immunization/610281:
     name: Immunization-EMIS-IM1-Influenza vaccination
     description: Immunization EMIS IM1 Influenza vaccination
+    exampleBoolean: true
+  Organization/e2d3115b-402b-45a5-a01d-7acb64466ddc:
+    name: Organisation-Moir-Medical-Centre
+    description: Organisation Moir Medical Centre, imported from [ODS CSV Downloads](https://digital.nhs.uk/services/organisation-data-service/export-data-files/csv-downloads)
     exampleBoolean: true
