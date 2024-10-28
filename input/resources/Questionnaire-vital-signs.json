@@ -94,6 +94,14 @@
         }
       ],
       "linkId": "HemoglobinSaturationWithOxygen",
+      "initial": [
+        {
+          "valueQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "code": "%"
+          }
+        }
+      ],
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -121,6 +129,11 @@
           "system": "http://snomed.info/sct",
           "code": "27113001",
           "display": "Body weight"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
         }
       ],
       "text": "Weight",
@@ -142,6 +155,11 @@
           "system": "http://snomed.info/sct",
           "code": "363811000",
           "display": "Head circumference measure"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "9843-4",
+          "display": "Head Occipital-frontal circumference"
         }
       ],
       "extension": [
@@ -174,6 +192,11 @@
           "system": "http://snomed.info/sct",
           "code": "50373000",
           "display": "Body height measure"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body height"
         }
       ],
       "extension": [
@@ -206,6 +229,11 @@
           "system": "http://snomed.info/sct",
           "code": "276885007",
           "display": "Core body temperature"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "8310-5",
+          "display": "Body temperature"
         }
       ],
       "extension": [
@@ -302,6 +330,11 @@
           "system": "http://snomed.info/sct",
           "code": "364075005",
           "display": "Heart rate"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart rate"
         }
       ],
       "extension": [
@@ -345,6 +378,11 @@
           "system": "http://snomed.info/sct",
           "code": "86290005",
           "display": "Respiratory rate"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "9279-1",
+          "display": "Respiratory Rate"
         }
       ],
       "text": "Respiratory rate",
@@ -377,6 +415,11 @@
           "system": "http://snomed.info/sct",
           "code": "60621009",
           "display": "Body mass index"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body mass index (BMI) [Ratio]"
         }
       ],
       "text": "Body mass Index",
