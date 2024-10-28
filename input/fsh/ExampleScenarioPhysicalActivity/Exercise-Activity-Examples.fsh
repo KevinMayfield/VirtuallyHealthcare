@@ -6,7 +6,7 @@ Patient Held Device Data Capture - Calories per activity
 """
 Usage: #example
 
-* identifier
+* identifier[UUID]
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0"
 * status = #final
@@ -27,7 +27,7 @@ Patient Held Device Data Capture - Average Heart Rate
 """
 Usage: #example
 
-* identifier
+* identifier[UUID]
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "cffe1a6e-8eda-4613-bf54-119b374bb5b9"
 * status = #final
@@ -48,7 +48,7 @@ Patient Held Device Data Capture - Activity Duration
 """
 Usage: #example
 
-* identifier
+* identifier[UUID]
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "35eb7da3-9b85-46ce-bd29-75c2263b514a"
 * status = #final
@@ -69,7 +69,7 @@ Patient Held Device Data Capture - Peak Activity Heart Rate
 """
 Usage: #example
 
-* identifier
+* identifier[UUID]
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "ad7c1832-f855-4ece-a4c7-c79b433a7890"
 * status = #final
@@ -90,7 +90,7 @@ Patient Held Device Data Capture - Exercise Activity Walking
 """
 Usage: #example
 
-* identifier
+* identifier[UUID]
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "cb3c778b-cee4-4027-8163-c082958f87f1"
 * status = #final
@@ -109,7 +109,7 @@ Patient Held Device Data Capture - Walking Activity
 """
 Usage: #example
 
-* identifier[+]
+* identifier[UUID]
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "8f750590-30d6-425f-a8c4-f0a7c41e01d4"
 * status = #final

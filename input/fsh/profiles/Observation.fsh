@@ -9,13 +9,16 @@ Description: "Extension of UKCore-Observation and includes elements from [HL7 In
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #closed
 * identifier contains
-    EMISEventDBID 0..1 and EMISEventGUID 0..1
+    EMISEventDBID 0..1 and EMISEventGUID 0..1 and UUID 0..1
 
 * identifier[EMISEventDBID] only EMISEventDBID
 * identifier[EMISEventDBID] ^short = "EMIS Event DBID Identifier"
 
 * identifier[EMISEventGUID] only EMISEventGUID
 * identifier[EMISEventGUID] ^short = "EMIS Event GUID Identifier"
+
+* identifier[UUID] only UUID
+* identifier[UUID] ^short = "Universally Unique IDentifier"
 
 * code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
 * code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)

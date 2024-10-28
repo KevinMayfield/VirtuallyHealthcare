@@ -208,11 +208,11 @@ resources:
     exampleBoolean: true
 
 groups:
-  -cdr:
+  -ex-cdr:
     name: "Clinical Data Repository Examples"
     description: "Clinical Data Repository Examples"
     resources:
-#      - Observation/cb3c778b-cee4-4027-8163-c082958f87f1
+#      - Observation/8f750590-30d6-425f-a8c4-f0a7c41e01d4
 #      - Observation/71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0
 #      - Observation/cffe1a6e-8eda-4613-bf54-119b374bb5b9
 #      - Observation/35eb7da3-9b85-46ce-bd29-75c2263b514a
