@@ -62,7 +62,8 @@ Usage: #example
   * value = "78fef4ce-cb0a-4e7d-b768-2565550b62a2"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = http://snomed.info/sct#363811000 "Head circumference measure"
+* code.coding[+] = http://snomed.info/sct#363811000 "Head circumference measure"
+* code.coding[+] = http://loinc.org#9843-4 "Head Occipital-frontal circumference"
 * subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-03-04T06:27:40.701Z"
 * valueQuantity.value = 59
@@ -86,7 +87,8 @@ Usage: #example
   * value = "ba92afc0-a1c5-41df-93d8-c3df49888bcd"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = http://snomed.info/sct#50373000 "Body height measure"
+* code.coding[+] = http://snomed.info/sct#50373000 "Body height measure"
+* code.coding[+] = http://loinc.org#8302-2 "Body height"
 * subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-03-04T06:27:40.701Z"
 * valueQuantity.value = 179
@@ -110,7 +112,8 @@ Usage: #example
   * value = "5ba52e14-9a98-48cb-8029-770e3e76f428"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = http://snomed.info/sct#276885007 "Core body temperature"
+* code.coding[+] = http://snomed.info/sct#276885007 "Core body temperature"
+* code.coding[+] = http://loinc.org#8310-5 "Body temperature"
 * subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-03-04T06:27:40.701Z"
 * valueQuantity.value = 36.1
