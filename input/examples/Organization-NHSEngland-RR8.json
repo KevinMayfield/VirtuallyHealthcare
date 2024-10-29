@@ -1,0 +1,50 @@
+{
+  "resourceType": "Organization",
+  "id": "RR8",
+  "meta": {
+    "lastUpdated": "2023-11-14T00:00:00+00:00",
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Organization"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "RR8"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+          "code": "197",
+          "display": "NHS TRUST"
+        }
+      ]
+    }
+  ],
+  "name": "LEEDS TEACHING HOSPITALS NHS TRUST",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0113 243 3144"
+    },
+    {
+      "system": "url",
+      "value": "HTTPS://WWW.LEEDSTH.NHS.UK/"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "ST. JAMES'S UNIVERSITY HOSPITAL",
+        "BECKETT STREET"
+      ],
+      "city": "LEEDS",
+      "postalCode": "LS9 7TF",
+      "country": "ENGLAND"
+    }
+  ]
+}

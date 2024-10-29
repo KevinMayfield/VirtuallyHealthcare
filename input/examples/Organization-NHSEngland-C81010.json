@@ -1,0 +1,56 @@
+{
+  "resourceType": "Organization",
+  "id": "C81010",
+  "meta": {
+    "lastUpdated": "2023-08-22T00:00:00+00:00",
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Organization"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "C81010"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+          "code": "177",
+          "display": "PRESCRIBING COST CENTRE"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+          "code": "76",
+          "display": "GP PRACTICE"
+        }
+      ]
+    }
+  ],
+  "name": "THE MOIR MEDICAL CENTRE",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0115 9737320"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "REGENT STREET",
+        "LONG EATON"
+      ],
+      "city": "NOTTINGHAM",
+      "district": "NOTTINGHAMSHIRE",
+      "postalCode": "NG10 1QQ",
+      "country": "ENGLAND"
+    }
+  ]
+}

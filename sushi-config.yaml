@@ -102,6 +102,10 @@ resources:
     name: Patient-TPP-IM1-Anne-Smith
     description: TPP IM1 Anne Smith
     exampleBoolean: true
+  Patient/9876543210:
+    name: Patient NHSEngland - Matthew Sheppard (9876543210)
+    description: [NHS England PDS FHIR Api](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir) Matthew Sheppard (9876543210)
+    exampleBoolean: true
   Condition/3150:
     name: Condition-EMIS-IM1-Cardiovascular-event-risk
     description: Condition EMIS IM1 Cardiovascular event-risk
@@ -198,14 +202,22 @@ resources:
     name: Immunization-EMIS-IM1-Influenza vaccination
     description: Immunization EMIS IM1 Influenza vaccination
     exampleBoolean: true
+  Organization/RR8:
+    name: Organization NHS England - Leeds Teaching Trust (RR8)
+    description: Organization [NHS England ODS FHIR Api](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir) - Leeds Teaching Trust (RR8)
+    exampleBoolean: true
+  Organization/C81010:
+    name: Organization NHS England - The Moir Medical Centre (C81010)
+    description: Organization [NHS England ODS FHIR Api](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir) - The Moir Medical Centre (C81010)
+    exampleBoolean: true
 
-groups:
-  -ex-cdr:
-    name: "Clinical Data Repository Examples"
-    description: "Clinical Data Repository Examples"
-    resources:
-      Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630
-      Organization/e2d3115b-402b-45a5-a01d-7acb64466ddc
+#groups:
+#  -ex-cdr:
+#    name: "Clinical Data Repository Examples"
+#    description: "Clinical Data Repository Examples"
+#    resources:
+#      Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630
+#      Organization/e2d3115b-402b-45a5-a01d-7acb64466ddc
 #      - Observation/8f750590-30d6-425f-a8c4-f0a7c41e01d4
 #      - Observation/71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0
 #      - Observation/cffe1a6e-8eda-4613-bf54-119b374bb5b9

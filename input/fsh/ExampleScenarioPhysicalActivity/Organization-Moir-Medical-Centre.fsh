@@ -6,8 +6,9 @@ Organisation Moir Medical Centre, imported from [ODS CSV Downloads](https://digi
 """
 Usage: #example
 
-* identifier.system = "https://fhir.nhs.uk/Id/ods-organization-code"
-* identifier.system = "C81010"
+* identifier[odsOrganisationCode].system = "https://fhir.nhs.uk/Id/ods-organization-code"
+* identifier[odsOrganisationCode].value = "C81010"
+
 * active = true
 * name = "The Moir Medical Centre"
 
