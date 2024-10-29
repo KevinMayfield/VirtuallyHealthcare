@@ -167,3 +167,76 @@ Usage: #example
 * valueQuantity.system = "http://unitsofmeasure.org"
 * performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
+
+
+Instance: 3421ccda-63f3-4e6e-b39c-ca9e3850d3a2
+InstanceOf: Observation
+Title: "Observation CDR - Heart rate"
+Description: """
+Form based Data Capture - Heart rate
+
+For Device based data capture populate device instead of derivedFrom
+"""
+Usage: #example
+
+* identifier[UUID]
+  * system = "https://tools.ietf.org/html/rfc4122"
+  * value = "3421ccda-63f3-4e6e-b39c-ca9e3850d3a2"
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code = http://snomed.info/sct#364075005 "Heart rate"
+* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* effectiveDateTime = "2024-03-04T06:27:40.701Z"
+* valueQuantity.value = 49
+* valueQuantity.code = #{beats}/min
+* valueQuantity.system = "http://unitsofmeasure.org"
+* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
+
+Instance: 65083da2-c77f-419e-a205-68a7d3863e90
+InstanceOf: Observation
+Title: "Observation CDR - Respiratory rate"
+Description: """
+Form based Data Capture - Respiratory rate
+
+For Device based data capture populate device instead of derivedFrom
+"""
+Usage: #example
+
+* identifier[UUID]
+  * system = "https://tools.ietf.org/html/rfc4122"
+  * value = "65083da2-c77f-419e-a205-68a7d3863e90"
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code = http://snomed.info/sct#86290005 "Respiratory rate"
+* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* effectiveDateTime = "2024-03-04T06:27:40.701Z"
+* valueQuantity.value = 19
+* valueQuantity.code = #{Breaths}/min
+* valueQuantity.system = "http://unitsofmeasure.org"
+* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
+
+Instance: f268716f-9dc6-4361-a124-0aad3604d8a2
+InstanceOf: Observation
+Title: "Observation CDR - Body Mass Index"
+Description: """
+Form based Data Capture - Body Mass Index
+
+For Device based data capture populate device instead of derivedFrom
+"""
+Usage: #example
+
+* identifier[UUID]
+  * system = "https://tools.ietf.org/html/rfc4122"
+  * value = "f268716f-9dc6-4361-a124-0aad3604d8a2"
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#assesment
+* code = http://snomed.info/sct#60621009 "Body mass index"
+* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* effectiveDateTime = "2024-03-04T06:27:40.701Z"
+* valueQuantity.value = 25.1
+* valueQuantity.code = #kg/m2
+* valueQuantity.system = "http://unitsofmeasure.org"
+* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
