@@ -2,7 +2,7 @@
   "resourceType": "QuestionnaireResponse",
   "id": "questionnaireresponse-physical-activity",
   "meta": {
-    "profile" : [
+    "profile": [
       "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"
     ]
   },
@@ -14,71 +14,75 @@
   "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/PhysicalActivityDefinitions",
   "item": [
     {
-      "linkId": "ExerciseActivity",
-      "text": "Exercise activity",
-      "answer": [
+      "linkId": "PhysicalActivity",
+      "text": "Physical Activity",
+      "item": [
         {
-          "valueCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "870595007",
-            "display": "Walking"
-          },
-          "item": [
+          "linkId": "ExerciseActivity",
+          "text": "Exercise activity",
+          "answer": [
             {
-              "linkId": "CaloriesPerActivity",
-              "text": "Calories per activity",
-              "answer": [
-                {
-                  "valueQuantity": {
-                    "value": 413,
-                    "unit": "kilocalorie",
-                    "code": "kcal",
-                    "system": "http://unitsofmeasure.org"
-                  }
-                }
-              ]
-            },
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "870595007",
+                "display": "Walking"
+              } 
+            }
+          ]
+        },
+        {
+          "linkId": "PeakActivityHeartRate",
+          "text": "Peak Activity Heart Rate",
+          "answer": [
             {
-              "linkId": "AverageHeartRate",
-              "text": "Average Heart Rate",
-              "answer": [
-                {
-                  "valueQuantity": {
-                    "value": 116,
-                    "unit": "per minute",
-                    "code": "/min",
-                    "system": "http://unitsofmeasure.org"
-                  }
-                }
-              ]
-            },
+              "valueQuantity": {
+                "value": 119,
+                "unit": "per minute",
+                "code": "/min",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "ActivityDuration",
+          "text": "Activity Duration",
+          "answer": [
             {
-              "linkId": "ActivityDuration",
-              "text": "Activity Duration",
-              "answer": [
-                {
-                  "valueQuantity": {
-                    "value": 51,
-                    "unit": "minute",
-                    "code": "min",
-                    "system": "http://unitsofmeasure.org"
-                  }
-                }
-              ]
-            },
+              "valueQuantity": {
+                "value": 51,
+                "unit": "minute",
+                "code": "min",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CaloriesPerActivity",
+          "text": "Calories per activity",
+          "answer": [
             {
-              "linkId": "PeakActivityHeartRate",
-              "text": "Peak Activity Heart Rate",
-              "answer": [
-                {
-                  "valueQuantity": {
-                    "value": 119,
-                    "unit": "per minute",
-                    "code": "/min",
-                    "system": "http://unitsofmeasure.org"
-                  }
-                }
-              ]
+              "valueQuantity": {
+                "value": 413,
+                "unit": "kilocalorie",
+                "code": "kcal",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "AverageHeartRate",
+          "text": "Average Heart Rate",
+          "answer": [
+            {
+              "valueQuantity": {
+                "value": 116,
+                "unit": "per minute",
+                "code": "/min",
+                "system": "http://unitsofmeasure.org"
+              }
             }
           ]
         }
@@ -87,64 +91,60 @@
     {
       "linkId": "TimeBasedMeasure",
       "text": "Time-based Measures",
-      "answer": [
+      "item": [
         {
-          "item": [
+          "linkId": "DailyStepCount",
+          "text": "Daily Step Count",
+          "answer": [
             {
-              "linkId": "DailyStepCount",
-              "text": "Daily Step Count",
-              "answer": [
-                {
-                  "valueQuantity": {
-                    "value": 9607,
-                    "unit": "per day",
-                    "code": "/d",
-                    "system": "http://unitsofmeasure.org"
-                  }
-                }
-              ]
-            },
+              "valueQuantity": {
+                "value": 9607,
+                "unit": "per day",
+                "code": "/d",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "PeakDailyHeartRate",
+          "text": "Peak daily heart rate",
+          "answer": [
             {
-              "linkId": "PeakDailyHeartRate",
-              "text": "Peak daily heart rate",
-              "answer": [
-                {
-                  "valueQuantity": {
-                    "value": 132,
-                    "unit": "per minute",
-                    "code": "/min",
-                    "system": "http://unitsofmeasure.org"
-                  }
-                }
-              ]
-            },
+              "valueQuantity": {
+                "value": 132,
+                "unit": "per minute",
+                "code": "/min",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "AverageRestingHeartRate",
+          "text": "Average resting heart rate",
+          "answer": [
             {
-              "linkId": "AverageRestingHeartRate",
-              "text": "Average resting heart rate",
-              "answer": [
-                {
-                  "valueQuantity": {
-                    "value": 64,
-                    "unit": "per minute",
-                    "code": "/min",
-                    "system": "http://unitsofmeasure.org"
-                  }
-                }
-              ]
-            },
+              "valueQuantity": {
+                "value": 64,
+                "unit": "per minute",
+                "code": "/min",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CaloriesPerDay",
+          "text": "Calories per Day",
+          "answer": [
             {
-              "linkId": "CaloriesPerDay",
-              "text": "Calories per Day",
-              "answer": [
-                {
-                  "valueQuantity": {
-                    "value": 714,
-                    "unit": "kilocalorie per 24 hour",
-                    "code": "kcal/(24.h)",
-                    "system": "http://unitsofmeasure.org"
-                  }
-                }
-              ]
+              "valueQuantity": {
+                "value": 714,
+                "unit": "kilocalorie per 24 hour",
+                "code": "kcal/(24.h)",
+                "system": "http://unitsofmeasure.org"
+              }
             }
           ]
         }
