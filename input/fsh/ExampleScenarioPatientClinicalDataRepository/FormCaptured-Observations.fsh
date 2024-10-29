@@ -46,3 +46,75 @@ Usage: #example
 * valueQuantity.system = "http://unitsofmeasure.org"
 * performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
+
+Instance: 78fef4ce-cb0a-4e7d-b768-2565550b62a2
+InstanceOf: Observation
+Title: "Observation CDR - Head circumference"
+Description: """
+Form based Data Capture - Head circumference
+
+For Device based data capture populate device instead of derivedFrom
+"""
+Usage: #example
+
+* identifier[UUID]
+  * system = "https://tools.ietf.org/html/rfc4122"
+  * value = "78fef4ce-cb0a-4e7d-b768-2565550b62a2"
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code = http://snomed.info/sct#363811000 "Head circumference measure"
+* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* effectiveDateTime = "2024-03-04T06:27:40.701Z"
+* valueQuantity.value = 59
+* valueQuantity.code = #cm
+* valueQuantity.system = "http://unitsofmeasure.org"
+* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
+
+Instance: ba92afc0-a1c5-41df-93d8-c3df49888bcd
+InstanceOf: Observation
+Title: "Observation CDR - Body height"
+Description: """
+Form based Data Capture - Body height
+
+For Device based data capture populate device instead of derivedFrom
+"""
+Usage: #example
+
+* identifier[UUID]
+  * system = "https://tools.ietf.org/html/rfc4122"
+  * value = "ba92afc0-a1c5-41df-93d8-c3df49888bcd"
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code = http://snomed.info/sct#50373000 "Body height measure"
+* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* effectiveDateTime = "2024-03-04T06:27:40.701Z"
+* valueQuantity.value = 179
+* valueQuantity.code = #cm
+* valueQuantity.system = "http://unitsofmeasure.org"
+* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
+
+Instance: 5ba52e14-9a98-48cb-8029-770e3e76f428
+InstanceOf: Observation
+Title: "Observation CDR - Body temperature"
+Description: """
+Form based Data Capture - Body temperature
+
+For Device based data capture populate device instead of derivedFrom
+"""
+Usage: #example
+
+* identifier[UUID]
+  * system = "https://tools.ietf.org/html/rfc4122"
+  * value = "5ba52e14-9a98-48cb-8029-770e3e76f428"
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code = http://snomed.info/sct#276885007 "Core body temperature"
+* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* effectiveDateTime = "2024-03-04T06:27:40.701Z"
+* valueQuantity.value = 36.1
+* valueQuantity.code = #Cel
+* valueQuantity.system = "http://unitsofmeasure.org"
+* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
