@@ -29,7 +29,7 @@
     },
     {
       "linkId": "Weight",
-      "text": "Weight Measured",
+      "text": "Weight",
       "answer": [
         {
           "valueQuantity": {
@@ -127,7 +127,7 @@
     },
     {
       "linkId": "RespiratoryRate",
-      "text": "Resp rate",
+      "text": "Respiratory rate",
       "answer": [
         {
           "valueQuantity": {
@@ -141,7 +141,7 @@
     },
     {
       "linkId": "BodyMassIndex",
-      "text": "BMI",
+      "text": "Body Mass Index",
       "answer": [
         {
           "valueQuantity": {

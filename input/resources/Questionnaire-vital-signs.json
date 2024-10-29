@@ -367,8 +367,7 @@
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
-            "code": "{Breaths}/min",
-            "display": "{Breaths}/min"
+            "code": "{Breaths}/min"
           }
         }
       ],
@@ -392,7 +391,7 @@
           "valueQuantity": {
             "unit": "Breaths / minute",
             "system": "http://unitsofmeasure.org",
-            "code": "Breaths/min"
+            "code": "{Breaths}/min"
           }
         }
       ]
@@ -422,7 +421,7 @@
           "display": "Body mass index (BMI) [Ratio]"
         }
       ],
-      "text": "Body mass Index",
+      "text": "Body Mass Index",
       "required": false,
       "initial": [
         {

@@ -31,7 +31,8 @@ Usage: #example
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "cffe1a6e-8eda-4613-bf54-119b374bb5b9"
 * status = #final
-* code = http://loinc.org#55425-3 "Mean Heart rate in Unspecified Time"
+* code.coding[+] = http://loinc.org#55425-3 "Heart rate unspecified time mean by Pedometer"
+* code.coding[+] = http://loinc.org#8867-4
 * subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
 * valueQuantity.value = 116

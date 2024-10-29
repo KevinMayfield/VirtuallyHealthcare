@@ -98,7 +98,7 @@
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "kcal",
-                "display": "kilocalorie"
+                "display": "kcal"
               }
             }
           ],
@@ -160,7 +160,7 @@
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "min",
-                "display": "minute"
+                "display": "min"
               }
             }
           ],
@@ -339,7 +339,7 @@
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "kcal/d",
-                "display": "kcal/d'"
+                "display": "kcal/d"
               }
             }
           ],
