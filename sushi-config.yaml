@@ -104,7 +104,7 @@ resources:
     exampleBoolean: true
   Patient/9876543210:
     name: Patient NHSEngland - Matthew Sheppard (9876543210)
-    description: [NHS England PDS FHIR Api](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir) Matthew Sheppard (9876543210)
+    description: Patient [NHS England PDS FHIR Api](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir) Matthew Sheppard (9876543210)
     exampleBoolean: true
   Condition/3150:
     name: Condition-EMIS-IM1-Cardiovascular-event-risk
