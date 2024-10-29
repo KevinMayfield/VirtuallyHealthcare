@@ -118,3 +118,52 @@ Usage: #example
 * valueQuantity.system = "http://unitsofmeasure.org"
 * performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
+
+
+Instance: 8037d992-5936-44bf-9253-f76f904ba7b9
+InstanceOf: Observation
+Title: "Observation CDR - Systolic blood pressure"
+Description: """
+Form based Data Capture - Systolic blood pressure
+
+For Device based data capture populate device instead of derivedFrom
+"""
+Usage: #example
+
+* identifier[UUID]
+  * system = "https://tools.ietf.org/html/rfc4122"
+  * value = "8037d992-5936-44bf-9253-f76f904ba7b9"
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code = http://snomed.info/sct#72313002 "Systolic arterial pressure"
+* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* effectiveDateTime = "2024-03-04T06:27:40.701Z"
+* valueQuantity.value = 117
+* valueQuantity.code = #mm[Hg]
+* valueQuantity.system = "http://unitsofmeasure.org"
+* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
+
+Instance: 53dd8681-7578-4aff-abdf-1f330535e142
+InstanceOf: Observation
+Title: "Observation CDR - Diastolic blood pressure"
+Description: """
+Form based Data Capture - Diastolic blood pressure
+
+For Device based data capture populate device instead of derivedFrom
+"""
+Usage: #example
+
+* identifier[UUID]
+  * system = "https://tools.ietf.org/html/rfc4122"
+  * value = "53dd8681-7578-4aff-abdf-1f330535e142"
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code = http://snomed.info/sct#1091811000000102 "Diastolic arterial pressure"
+* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* effectiveDateTime = "2024-03-04T06:27:40.701Z"
+* valueQuantity.value = 74
+* valueQuantity.code = #mm[Hg]
+* valueQuantity.system = "http://unitsofmeasure.org"
+* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
