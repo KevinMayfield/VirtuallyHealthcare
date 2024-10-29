@@ -1,6 +1,11 @@
 {
   "resourceType": "QuestionnaireResponse",
   "id": "questionnaireresponse-physical-activity",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"
+    ]
+  },
   "status": "completed",
   "authored": "2024-10-28T04:49:08.943Z",
   "subject": {

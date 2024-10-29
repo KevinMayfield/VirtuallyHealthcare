@@ -1,6 +1,11 @@
 {
   "resourceType": "QuestionnaireResponse",
   "id": "questionnaireresponse-vital-signs",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"
+    ]
+  },
   "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/VitalSignsDefinitions",
   "subject": {
     "reference": "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
@@ -9,7 +14,7 @@
   "authored": "2024-03-04T06:27:40.701Z",
   "item": [
     {
-      "linkId": "/927981000000106",
+      "linkId": "BaselineSpO2",
       "text": "Baseline SpO2 (oxygen saturation at periphery)",
       "answer": [
         {
@@ -23,7 +28,7 @@
       ]
     },
     {
-      "linkId": "/27113001",
+      "linkId": "Weight",
       "text": "Weight Measured",
       "answer": [
         {
@@ -37,7 +42,7 @@
       ]
     },
     {
-      "linkId": "/363811000",
+      "linkId": "HeadCircumference",
       "text": "Head circumference",
       "answer": [
         {
@@ -51,7 +56,7 @@
       ]
     },
     {
-      "linkId": "/50373000",
+      "linkId": "BodyHeight",
       "text": "Body height",
       "answer": [
         {
@@ -65,7 +70,7 @@
       ]
     },
     {
-      "linkId": "/276885007",
+      "linkId": "BodyTemperature",
       "text": "Body temperature",
       "answer": [
         {
@@ -79,7 +84,7 @@
       ]
     },
     {
-      "linkId": "/72313002",
+      "linkId": "SystolicBloodPressure",
       "text": "Systolic blood pressure",
       "answer": [
         {
@@ -93,7 +98,7 @@
       ]
     },
     {
-      "linkId": "/1091811000000102",
+      "linkId": "DiastolicBloodPressure",
       "text": "Diastolic blood pressure",
       "answer": [
         {
@@ -107,7 +112,7 @@
       ]
     },
     {
-      "linkId": "/364075005",
+      "linkId": "HeartRate",
       "text": "Heart rate",
       "answer": [
         {
@@ -121,7 +126,7 @@
       ]
     },
     {
-      "linkId": "/86290005",
+      "linkId": "RespiratoryRate",
       "text": "Resp rate",
       "answer": [
         {
@@ -135,7 +140,7 @@
       ]
     },
     {
-      "linkId": "/60621009",
+      "linkId": "BodyMassIndex",
       "text": "BMI",
       "answer": [
         {
