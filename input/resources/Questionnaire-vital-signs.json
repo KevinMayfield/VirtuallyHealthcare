@@ -392,7 +392,7 @@
           "valueQuantity": {
             "unit": "Breaths / minute",
             "system": "http://unitsofmeasure.org",
-            "code": "{Breaths}/min"
+            "code": "Breaths/min"
           }
         }
       ]
@@ -454,7 +454,7 @@
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "L/min",
-            "display": "Liters per minute"
+            "display": "L/min"
           }
         }
       ],

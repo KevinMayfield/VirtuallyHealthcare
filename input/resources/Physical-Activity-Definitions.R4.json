@@ -129,7 +129,7 @@
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "/min",
-                "display": "per minute"
+                "display": "/min"
               }
             }
           ],
@@ -138,14 +138,14 @@
             {
               "system": "http://loinc.org",
               "code": "55425-3",
-              "display": "Mean Heart rate in Unspecified Time"
+              "display": "Heart rate unspecified time mean by Pedometer"
             }
           ],
           "text": "Average Heart Rate",
           "initial": [
             {
               "valueQuantity": {
-                "unit": "per minute",
+                "unit": "/min",
                 "system": "http://unitsofmeasure.org",
                 "code": "/min"
               }
@@ -191,7 +191,7 @@
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "/min",
-                "display": "per minute"
+                "display": "/min"
               }
             }
           ],
@@ -207,7 +207,7 @@
           "initial": [
             {
               "valueQuantity": {
-                "unit": "per minute",
+                "unit": "/min",
                 "system": "http://unitsofmeasure.org",
                 "code": "/min"
               }
@@ -246,7 +246,7 @@
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "/d",
-                "display": "per day"
+                "display": "/d"
               }
             }
           ],
@@ -262,7 +262,7 @@
           "initial": [
             {
               "valueQuantity": {
-                "unit": "per day",
+                "unit": "/d",
                 "system": "http://unitsofmeasure.org",
                 "code": "/d"
               }
@@ -277,7 +277,7 @@
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "/min",
-                "display": "per minute"
+                "display": "/min"
               }
             }
           ],
@@ -293,7 +293,7 @@
           "initial": [
             {
               "valueQuantity": {
-                "unit": "per minute",
+                "unit": "/min",
                 "system": "http://unitsofmeasure.org",
                 "code": "/min"
               }
@@ -308,7 +308,7 @@
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "/min",
-                "display": "per minute"
+                "display": "/min"
               }
             }
           ],
@@ -324,7 +324,7 @@
           "initial": [
             {
               "valueQuantity": {
-                "unit": "per minute",
+                "unit": "/min",
                 "system": "http://unitsofmeasure.org",
                 "code": "/min"
               }
@@ -339,7 +339,7 @@
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "kcal/d",
-                "display": "kilocalorie per day"
+                "display": "kcal/d'"
               }
             }
           ],
