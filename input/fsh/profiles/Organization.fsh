@@ -9,4 +9,4 @@ Description:    "Extension of UKCore Organization and includes elements from [IH
 * identifier.value 1..1
 
 * identifier[odsOrganisationCode] only OrganisationCode
-* identifier[odsSiteCode] ^short = "DO NOT USE"
+* identifier[odsSiteCode] ^short = "DO NOT USE. Sites are to be handled as Locations."
