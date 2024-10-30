@@ -1,8 +1,8 @@
 Instance: af22811f-218e-4ff6-aa07-93f12c666dd7
 InstanceOf: Observation
-Title: "Observation CDR - Weight"
+Title: "Observation CDR - Body weight"
 Description: """
-Form based Data Capture - Weight
+Form based Data Capture - Body weight
 
 See also [HL7 FHIR Body weight](https://hl7.org/fhir/R4/bodyweight.html)
 
@@ -146,7 +146,7 @@ Title: "Observation CDR - Blood pressure"
 Description: """
 Form based Data Capture - Blood pressure
 
-See also [HL7 Observationbp](https://hl7.org/fhir/R4/bp.html)
+See also [HL7 Blood pressure](https://hl7.org/fhir/R4/bp.html)
 
 For Device based data capture populate device instead of derivedFrom
 """
