@@ -1,0 +1,19 @@
+{
+  "resourceType": "Location",
+  "id": "4882",
+  "identifier": [
+    {
+      "system": "https://emis.com/Id/Location/DBID",
+      "value": "4882"
+    },
+    {
+      "system": "https://emis.com/Id/Location/REFID",
+      "value": "4882"
+    },
+    {
+      "system": "https://emis.com/Id/Location/GUID",
+      "value": "37088c97-82fc-4b3e-bdbc-28f2c03b6cb8"
+    }
+  ],
+  "name": "Main Building"
+}
