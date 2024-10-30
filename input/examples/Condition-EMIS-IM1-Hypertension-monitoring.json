@@ -42,7 +42,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "255604002",
-        "display": "Moderate"
+        "display": "Mild"
       }
     ]
   },
@@ -66,7 +66,7 @@
   },
   "onsetDateTime": "2017-08-25T14:13:00+00:00",
   "asserter": {
-    "reference": "Practitioner/3",
-    "display": "Dr Amanda McDonnell"
+    "reference": "Practitioner/4",
+    "display": "Nurse Pauline Steele"
   }
 }

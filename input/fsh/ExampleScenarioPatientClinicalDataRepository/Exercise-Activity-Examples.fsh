@@ -10,6 +10,7 @@ Usage: #example
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0"
 * status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code = http://loinc.org#55424-6 "Calories burned in Unspecified Time, Pedometer"
 * subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
@@ -31,12 +32,14 @@ Usage: #example
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "cffe1a6e-8eda-4613-bf54-119b374bb5b9"
 * status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[+] = http://loinc.org#55425-3 "Heart rate unspecified time mean by Pedometer"
 * code.coding[+] = http://loinc.org#8867-4
 * subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
 * valueQuantity.value = 116
 * valueQuantity.code = #/min
+* valueQuantity.unit = "/min"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * device.display = "Apple Healthkit"
@@ -53,6 +56,7 @@ Usage: #example
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "35eb7da3-9b85-46ce-bd29-75c2263b514a"
 * status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code = http://loinc.org#55411-3 "Exercise duration"
 * subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
@@ -74,6 +78,7 @@ Usage: #example
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "ad7c1832-f855-4ece-a4c7-c79b433a7890"
 * status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code = http://loinc.org#55426-1 "Maximum Heart rate in Unspecified Time"
 * subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
@@ -95,6 +100,7 @@ Usage: #example
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "cb3c778b-cee4-4027-8163-c082958f87f1"
 * status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code = http://loinc.org#73985-4 "Exercise activity"
 * subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"

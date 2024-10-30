@@ -14,8 +14,8 @@
   "authored": "2024-03-04T06:27:40.701Z",
   "item": [
     {
-      "linkId": "BaselineSpO2",
-      "text": "Baseline SpO2 (oxygen saturation at periphery)",
+      "linkId": "OxygenSaturation",
+      "text": "Oxygen Saturation",
       "answer": [
         {
           "valueQuantity": {

@@ -37,7 +37,7 @@
   },
   "authoredOn": "2017-08-25T00:00:00+00:00",
   "requester": {
-    "reference": "Practitioner/15"
+    "reference": "Practitioner/243"
   },
   "courseOfTherapyType": {
     "coding": [
@@ -61,5 +61,8 @@
       "value": 1,
       "unit": "ml"
     }
+  },
+  "substitution": {
+    "allowedBoolean": false
   }
 }

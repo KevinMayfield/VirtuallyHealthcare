@@ -51,12 +51,12 @@
   "issued": "2005-03-21T00:00:00.000+00:00",
   "performer": [
     {
-      "reference": "Practitioner/104",
+      "reference": "Practitioner/243",
       "identifier": {
         "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-        "value": "G3226482"
+        "value": "G2435868"
       },
-      "display": "Mrs Jean Kemp"
+      "display": "Dr Emis Test"
     }
   ]
 }

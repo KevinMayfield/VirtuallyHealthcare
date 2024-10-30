@@ -38,6 +38,7 @@
         }
     ],
     "status": "active",
+    "intent": "order",
     "medicationCodeableConcept": {
         "coding": [
             {
@@ -79,5 +80,8 @@
             "value": 28,
             "unit": "tablet"
         }
-    }
+    },
+    "substitution": {
+    "allowedBoolean": false
+}
 }

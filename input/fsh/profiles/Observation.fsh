@@ -18,7 +18,7 @@ Description: "Extension of UKCore-Observation and includes elements from [HL7 In
 * identifier[EMISEventGUID] ^short = "EMIS Event GUID Identifier"
 
 * identifier[UUID] only UUID
-* identifier[UUID] ^short = "Universally Unique IDentifier"
+* identifier[UUID] ^short = "Universally Unique Identifier"
 
 * code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
 * code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)

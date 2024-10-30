@@ -13,10 +13,11 @@
     },
     {
       "system": "https://emis.com/Id/Diary/GUID",
-      "value": "905D117C-579F-4D49-9BFA-184F6A7630F9"
+      "value": "905d117c-579f-4d49-9bfa-184f6a7630f9"
     }
   ],
   "status": "ready",
+  "intent": "plan",
   "code": {
     "coding": [
       {
@@ -34,6 +35,6 @@
     "start": "2005-10-19T00:00:00+00:00"
   },
   "requester": {
-    "reference": "Practitioner/243"
+    "reference": "Practitioner/4"
   }
 }

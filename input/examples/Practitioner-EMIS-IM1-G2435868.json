@@ -1,0 +1,60 @@
+{
+  "resourceType": "Practitioner",
+  "id": "243",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Practitioner"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://fhir.virtuallyhealthcare.co.uk/Role",
+      "extension": [
+        {
+          "url": "url",
+          "valueReference": {
+            "reference": "Location/4882"
+          }
+        },
+        {
+          "url": "role",
+          "valueInteger": 10
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://emis.com/Id/Practitioner/DBID",
+      "value": "243"
+    },
+    {
+      "system": "https://emis.com/Id/Practitioner/REFID",
+      "value": "243"
+    },
+    {
+      "system": "https://emis.com/Id/Practitioner/GUID",
+      "value": "dee9fec7-118b-4cb2-bcd7-55e79fa8e599"
+    },
+    {
+      "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+      "value": "G2435868"
+    },
+    {
+      "system": "https://fhir.nhs.uk/Id/gmc-reference-number",
+      "value": "2672376"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Test",
+      "given": [
+        "Emis"
+      ],
+      "prefix": [
+        "DR"
+      ]
+    }
+  ]
+}

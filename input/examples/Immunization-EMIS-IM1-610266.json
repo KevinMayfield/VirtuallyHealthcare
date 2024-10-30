@@ -51,12 +51,12 @@
   "performer": [
     {
       "actor": {
-        "reference": "Practitioner/20",
+        "reference": "Practitioner/243",
         "identifier": {
           "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-          "value": "G8667998"
+          "value": "G2435868"
         },
-        "display": "Mrs Jean Mitchell"
+        "display": "Dr Emis Test"
       }
     }
   ]

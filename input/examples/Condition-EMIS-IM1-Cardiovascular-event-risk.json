@@ -42,7 +42,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "255604002",
-        "display": "Moderate"
+        "display": "Mild"
       }
     ]
   },
@@ -66,11 +66,11 @@
   },
   "onsetDateTime": "2006-01-05T00:00:00+00:00",
   "asserter": {
-    "reference": "Practitioner/149",
+    "reference": "Practitioner/243",
     "identifier": {
       "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-      "value": "G9380513"
+      "value": "G2435868"
     },
-    "display": "Mrs Ann Potter"
+    "display": "Dr Emis Test"
   }
 }

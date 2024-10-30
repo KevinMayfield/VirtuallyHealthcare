@@ -51,12 +51,12 @@
   "issued": "2004-03-04T00:00:00.000+00:00",
   "performer": [
     {
-      "reference": "Practitioner/17",
+      "reference": "Practitioner/243",
       "identifier": {
         "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-        "value": "G3031757"
+        "value": "G2435868"
       },
-      "display": "Dr Neil Burgess"
+      "display": "Dr Emis Test"
     }
   ],
   "valueQuantity": {

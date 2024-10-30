@@ -32,50 +32,21 @@
           }
         }
       ],
-      "linkId": "BaselineSpO2",
+      "linkId": "OxygenSaturation",
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "927981000000106",
-          "display": "Baseline SpO2 (oxygen saturation at periphery)"
+          "code": "442476006",
+          "display": "Arterial oxygen saturation"
         }
       ],
-      "text": "Baseline SpO2 (oxygen saturation at periphery)",
+      "text": "Oxygen Saturation",
       "required": false,
       "repeats": false,
       "initial": [
         {
           "valueQuantity": {
             "unit": "percent",
-            "system": "http://unitsofmeasure.org",
-            "code": "%"
-          }
-        }
-      ]
-    },
-    {
-      "type": "quantity",
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-          "valueCoding": {
-            "system": "http://unitsofmeasure.org",
-            "code": "%"
-          }
-        }
-      ],
-      "linkId": "Target peripheral oxygen saturation",
-      "code": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "852641000000103",
-          "display": "Target peripheral oxygen saturation"
-        }
-      ],
-      "text": "Target peripheral oxygen saturation",
-      "initial": [
-        {
-          "valueQuantity": {
             "system": "http://unitsofmeasure.org",
             "code": "%"
           }

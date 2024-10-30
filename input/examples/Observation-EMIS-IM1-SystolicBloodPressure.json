@@ -51,12 +51,12 @@
   "issued": "2005-10-14T00:00:00.000+00:00",
   "performer": [
     {
-      "reference": "Practitioner/26",
+      "reference": "Practitioner/243",
       "identifier": {
         "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-        "value": "G3371701"
+        "value": "G2435868"
       },
-      "display": "Dr Brian Harding"
+      "display": "Dr Emis Test"
     }
   ],
   "valueQuantity": {
