@@ -110,9 +110,9 @@ Usage: #example
 
 Instance: 8f750590-30d6-425f-a8c4-f0a7c41e01d4
 InstanceOf: Observation
-Title: "Observation CDR - Activity Panel"
+Title: "Observation CDR - Physical Activity Panel"
 Description: """
-Patient Held Device Data Capture - Walking Activity
+Patient Held Device Data Capture - Physical Activity Panel
 """
 Usage: #example
 
