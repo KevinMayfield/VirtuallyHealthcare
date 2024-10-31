@@ -75,6 +75,9 @@ pages:
   index.md:
     title: Home
     generation: markdown
+  observation-definitions.md:
+    title: Observation Definition
+    generation: markdown
 
 
 resources:
@@ -230,4 +233,5 @@ resources:
 
 menu:
   Home: index.html
+  Observation Definitions: observation-definitions.html
   FHIR Assets: artifacts.html
