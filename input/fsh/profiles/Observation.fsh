@@ -34,7 +34,7 @@ Description: "Extension of [UKCore-Observation](https://simplifier.net/hl7fhiruk
 * performer 1..* MS
 * performer only Reference(Practitioner or Patient)
 * performer.reference 1..1
-* performer.identifier only GeneralMedicalCouncilReferenceNumber or GeneralMedicalPractitionerCode or NHSNumber or CHINumber
+* performer.identifier only GeneralMedicalCouncilReferenceNumber or GeneralMedicalPractitionerCode or NHSNumber or CHINumber or EMISPractitionerRoleGUID
 
 * value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
 * value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)

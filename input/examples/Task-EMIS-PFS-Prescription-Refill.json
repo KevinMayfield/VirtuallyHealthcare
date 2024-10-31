@@ -18,13 +18,13 @@
     ]
   },
   "focus": {
-    "reference": "MedicationRequest/3a275967-bcbe-4cb3-8cc8-fffa6781ba8c"
+    "reference": "MedicationRequest/4a71ace9-4d16-4dfb-8097-d7c78dc7ea7d"
   },
   "for": {
-    "reference": "Patient/a8a85872-87c7-4f20-89c1-6747f980f919"
+    "reference": "Patient/1bec52a2-1bea-452f-a6ba-5eea5f97a24e"
   },
   "requester": {
-    "reference": "Patient/a8a85872-87c7-4f20-89c1-6747f980f919"
+    "reference": "Patient/1bec52a2-1bea-452f-a6ba-5eea5f97a24e"
   },
   "note": [
     {
