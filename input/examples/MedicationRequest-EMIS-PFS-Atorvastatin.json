@@ -58,7 +58,10 @@
     },
     "authoredOn": "2024-05-14T16:48:02+00:00",
     "requester": {
-        "reference": "PractitionerRole/68c78dec-fb99-401b-93ad-b54f02234a87",
+        "identifier": {
+            "system": "https://emis.com/Id/PractitionerRole/GUID",
+            "value": "68c78dec-fb99-401b-93ad-b54f02234a87"
+        },
         "display": "Mrs Ann Stanley (Partner Programme Test 04)"
     },
     "courseOfTherapyType": {

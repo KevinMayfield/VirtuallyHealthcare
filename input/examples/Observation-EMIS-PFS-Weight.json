@@ -40,7 +40,10 @@
   "effectiveDateTime": "2005-03-21T00:00:00+00:00",
   "performer": [
     {
-      "reference": "PractitionerRole/4435f523-44ae-4cfb-903d-570b2887812c",
+      "identifier": {
+        "system": "https://emis.com/Id/PractitionerRole/GUID",
+        "value": "4435f523-44ae-4cfb-903d-570b2887812c"
+      },
       "display": "Dr Virtually Health (Partner Programme Test 04)"
     }
   ],

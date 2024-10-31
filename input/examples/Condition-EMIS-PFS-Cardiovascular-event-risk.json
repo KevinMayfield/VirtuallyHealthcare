@@ -40,11 +40,17 @@
   },
   "recordedDate": "2006-01-05T00:00:00+00:00",
   "recorder": {
-    "reference": "PractitionerRole/f0b26662-5519-4020-9fc9-35774eb1e826",
+    "identifier": {
+      "system": "https://emis.com/Id/PractitionerRole/GUID",
+      "value": "f0b26662-5519-4020-9fc9-35774eb1e826"
+    },
     "display": "Mrs Ann Potter (Partner Programme Test 04)"
   },
   "asserter": {
-    "reference": "PractitionerRole/f0b26662-5519-4020-9fc9-35774eb1e826",
+    "identifier": {
+      "system": "https://emis.com/Id/PractitionerRole/GUID",
+      "value": "f0b26662-5519-4020-9fc9-35774eb1e826"
+    },
     "display": "Mrs Ann Potter (Partner Programme Test 04)"
   }
 }

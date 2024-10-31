@@ -40,11 +40,17 @@
   "effectiveDateTime": "2004-03-04T00:00:00+00:00",
   "performer": [
     {
-      "reference": "PractitionerRole/812af0ad-e71e-41e2-997a-b6787f934928",
+      "identifier": {
+        "system": "https://emis.com/Id/PractitionerRole/GUID",
+        "value": "812af0ad-e71e-41e2-997a-b6787f934928"
+      },
       "display": "Dr Virtually Health (Partner Programme Test 04)"
     },
     {
-      "reference": "PractitionerRole/3125f0c4-c773-48a6-bf33-10a5106f6448",
+      "identifier": {
+        "system": "https://emis.com/Id/Practitioner/GUID",
+        "value": "3125f0c4-c773-48a6-bf33-10a5106f6448"
+      },
       "display": "Entered by :Dr Virtually Health (Partner Programme Test 04)"
     }
   ],
