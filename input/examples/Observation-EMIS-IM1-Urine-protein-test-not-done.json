@@ -42,7 +42,7 @@
         "display": "Urine protein test not done"
       }
     ],
-    "text": "Urine protein test not done "
+    "text": "Urine protein test not done"
   },
   "subject": {
     "reference": "Patient/3"

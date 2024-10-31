@@ -42,7 +42,7 @@
         "display": "Pneumococcal vaccination declined"
       }
     ],
-    "text": "Pneumococcal vaccination declined "
+    "text": "Pneumococcal vaccination declined"
   },
   "patient": {
     "reference": "Patient/610"

@@ -46,6 +46,8 @@
   ],
   "valueQuantity": {
     "value": 81,
-    "unit": "Kg"
+    "system": "http://unitsofmeasure.org",
+    "unit": "Kg",
+    "code": "kg"
   }
 }

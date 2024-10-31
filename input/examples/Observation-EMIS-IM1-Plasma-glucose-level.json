@@ -42,7 +42,7 @@
         "display": "Plasma glucose level"
       }
     ],
-    "text": "Plasma glucose level, 6.6 mmol/L "
+    "text": "Plasma glucose level, 6.6 mmol/L"
   },
   "subject": {
     "reference": "Patient/3"
@@ -62,7 +62,7 @@
   "valueQuantity": {
     "value": 6.6,
     "unit": "mmol/L",
-    "system": "https://emis.com/System/units",
+    "system": "http://unitsofmeasure.org",
     "code": "mmol/L"
   }
 }

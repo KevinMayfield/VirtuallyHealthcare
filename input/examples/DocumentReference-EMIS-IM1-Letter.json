@@ -42,7 +42,7 @@
         "display": "Letter encounter"
       }
     ],
-    "text": "Letter encounter "
+    "text": "Letter encounter"
   },
   "subject": {
     "reference": "Patient/3"

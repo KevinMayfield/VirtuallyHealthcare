@@ -46,6 +46,8 @@
   ],
   "valueQuantity": {
     "value": 148,
-    "unit": "mm Hg"
+    "system": "http://unitsofmeasure.org",
+    "unit": "mm Hg",
+    "code": "mm[Hg]"
   }
 }

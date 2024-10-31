@@ -42,7 +42,7 @@
         "display": "Systolic arterial pressure"
       }
     ],
-    "text": "Systolic blood pressure, 148 mm Hg "
+    "text": "Systolic blood pressure, 148 mm Hg"
   },
   "subject": {
     "reference": "Patient/3"
@@ -62,7 +62,7 @@
   "valueQuantity": {
     "value": 148,
     "unit": "mm Hg",
-    "system": "https://emis.com/System/units",
-    "code": "mm Hg"
+    "system": "http://unitsofmeasure.org",
+    "code": "mm[Hg]"
   }
 }

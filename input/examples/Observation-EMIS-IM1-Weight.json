@@ -42,7 +42,7 @@
         "display": "Body weight"
       }
     ],
-    "text": "O/E - weight, 81 Kg "
+    "text": "O/E - weight, 81 Kg"
   },
   "subject": {
     "reference": "Patient/3"
@@ -61,8 +61,8 @@
   ],
   "valueQuantity": {
     "value": 81,
-    "unit": "Kg",
-    "system": "https://emis.com/System/units",
-    "code": "Kg"
+    "unit": "kg",
+    "system": "http://unitsofmeasure.org",
+    "code": "kg"
   }
 }
