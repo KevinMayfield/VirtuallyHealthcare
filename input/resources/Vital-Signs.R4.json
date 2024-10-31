@@ -1,6 +1,6 @@
 {
   "resourceType": "Questionnaire",
-  "id": "VitalSignsDefinitions",
+  "id": "VitalSigns",
   "meta": {
     "versionId": "8",
     "lastUpdated": "2023-04-20T03:52:38.002Z",
@@ -8,8 +8,8 @@
       "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"
     ]
   },
-  "url": "https://fhir.virtually.healthcare/Questionnaire/VitalSignsDefinitions",
-  "title": "Vital Signs Definitions",
+  "url": "https://fhir.virtually.healthcare/Questionnaire/VitalSigns",
+  "title": "Vital Signs",
   "status": "draft",
   "description": "This is a list of vital signs SNOMED CT and units. It is influenced by [NHS England Clinical Observations](https://simplifier.net/guide/ClinicalObservations/Home)",
   "code": [

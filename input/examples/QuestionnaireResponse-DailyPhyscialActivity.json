@@ -1,0 +1,73 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "questionnaireresponse-daily-physical-activity",
+  "meta": {
+    "profile": [
+      "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"
+    ]
+  },
+  "status": "completed",
+  "authored": "2024-10-28T04:49:08.943Z",
+  "subject": {
+    "reference": "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+  },
+  "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/DailyPhysicalActivity",
+  "item": [
+    {
+      "linkId": "DailyStepCount",
+      "text": "Daily Step Count",
+      "answer": [
+        {
+          "valueQuantity": {
+            "value": 9607,
+            "unit": "per day",
+            "code": "/d",
+            "system": "http://unitsofmeasure.org"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "PeakDailyHeartRate",
+      "text": "Peak daily heart rate",
+      "answer": [
+        {
+          "valueQuantity": {
+            "value": 132,
+            "unit": "per minute",
+            "code": "/min",
+            "system": "http://unitsofmeasure.org"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AverageRestingHeartRate",
+      "text": "Average resting heart rate",
+      "answer": [
+        {
+          "valueQuantity": {
+            "value": 64,
+            "unit": "per minute",
+            "code": "/min",
+            "system": "http://unitsofmeasure.org"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "CaloriesPerDay",
+      "text": "Calories per Day",
+      "answer": [
+        {
+          "valueQuantity": {
+            "value": 714,
+            "unit": "kilocalorie per 24 hour",
+            "code": "kcal/(24.h)",
+            "system": "http://unitsofmeasure.org"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -6,7 +6,7 @@
       "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"
     ]
   },
-  "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/VitalSignsDefinitions",
+  "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/VitalSigns",
   "subject": {
     "reference": "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
   },

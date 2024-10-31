@@ -182,13 +182,17 @@ resources:
     name: Task-EMIS-IM1-Medication-review
     description: Task EMIS IM1 Medication review
     exampleBoolean: true
-  Questionnaire/VitalSignsDefinitions:
-    name: Questionnaire-VitalSignsDefinitions
+  Questionnaire/VitalSigns:
+    name: Questionnaire-VitalSigns
     description: Questionnaire Vital Signs Definitions based on [NHS England Clinical Observations](https://simplifier.net/guide/ClinicalObservations/Home)
     exampleBoolean: false
-  Questionnaire/PhysicalActivityDefinitions:
-    name: Questionnaire-PhysicalActivityDefinitions
-    description: Questionnaire Physical Activity Definitions based on [HL7 Physical Activity Implementation Guide](https://build.fhir.org/ig/HL7/physical-activity/)
+  Questionnaire/ExerciseActivity:
+    name: Questionnaire-ExerciseActivity
+    description: Questionnaire Exercise Activity based on activity based measures from [HL7 Physical Activity Implementation Guide](https://build.fhir.org/ig/HL7/physical-activity/)
+    exampleBoolean: false
+  Questionnaire/DailyPhysicalActivity:
+    name: Questionnaire-DailyPhysicalActivity
+    description: Questionnaire Daily Physical Activity based on time based measures from [HL7 Physical Activity Implementation Guide](https://build.fhir.org/ig/HL7/physical-activity/)
     exampleBoolean: false
   Task/Task-EMIS-PFS-Prescription-Refill:
     name: Task-EMIS-PFS-Prescription-Refill
