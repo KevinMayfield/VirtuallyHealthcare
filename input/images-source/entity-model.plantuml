@@ -1,7 +1,7 @@
 @startuml
 
 frame PD1 as "Patient" {
-class Patient <<aggregate root>> {
+class "[[StructureDefinition-Patient.html Patient]]" as Patient <<aggregate root>> {
 identifier 1..* : PatientIdentifier
 name
 gender
@@ -16,7 +16,8 @@ Hl7 v2 PD1
 end note
 
 class PatientIdentifier <<entity>> {
-NHSNumber 1..1
+[[StructureDefinition-nhs-number.html NHSNumber]] 0..1
+[[StructureDefinition-chi-number.html CHINumber]] 0..1
 MedicalRecordNumber (EMIS, TPP, Hospital Number, etc)
 }
 note right
@@ -28,7 +29,7 @@ end note
 }
 
 frame Report as "Reports and Observations" {
-class Observation <<entity>> {
+class "[[StructureDefinition-Observation.html Observation]]" as Observation <<entity>> {
 identifier 1..*
 subject 1..1: PatientIdentier
 code : UK SNOMED CT or LOINC
@@ -42,7 +43,7 @@ HL7 v2 OBX
 end note
 
 
-class ObservationPanel <<entity>> {
+class "[[observation-definitions.html Observation Panel]]" as ObservationPanel <<entity>> {
 identifier 1..*
 subject 1..1: PatientIdentier
 code : UK SNOMED CT or LOINC
@@ -60,7 +61,7 @@ Does not always exist as a data type in EMIS and TPP
 
 end note
 
-class DiagnosticReport <<aggregate root>> {
+class "[[StructureDefinition-DiagnosticReport.html Diagnostic Report]]" as DiagnosticReport <<aggregate root>> {
 identifier 1..*
 subject: PatientIdentier
 code : UK SNOMED CT or LOINC
@@ -125,7 +126,7 @@ HL7 v2 OBX
 IHE XDS Document Entry
 end note
 
-class DocumentEntry <<aggregate root>> {
+class "[[StructureDefinition-DocumentReference.html Document Entry]]" as DocumentEntry <<aggregate root>> {
 category: UK SNOMED CT
 type : UK SNOMED CT
 subject : PatientIdentifier
