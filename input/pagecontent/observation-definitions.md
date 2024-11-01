@@ -46,7 +46,7 @@ See also [Exercise Activity](Questionnaire-ExerciseActivity.html) form/data capt
 | Activity Duration        |           |                   | [55411-3](https://loinc.org/55411-3)                                         | Quantity                                       | min       | [Activity Duration example](Observation-35eb7da3-9b85-46ce-bd29-75c2263b514a.html)        |
 | Peak Activity Heart Rate |           |                   | [55426-1](https://loinc.org/55426-1)                                         | Quantity                                       | /min      | [Peak Activity Heart Rate example](Observation-ad7c1832-f855-4ece-a4c7-c79b433a7890.html) |
 
-#### Daily Physcial Activity
+#### Daily Physical Activity
 
 See also [Daily Physical Activity](Questionnaire-DailyPhysicalActivity.html) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
 

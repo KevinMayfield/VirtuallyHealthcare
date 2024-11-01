@@ -40,7 +40,7 @@ HL7 FHIR Observation
 HL7 v2 OBX
 end note
 
-class PanelObservation <<aggregate root>> {
+class ObservationPanel <<aggregate root>> {
 identifier 1..1
 identifier 1..1
 subject 1..1
