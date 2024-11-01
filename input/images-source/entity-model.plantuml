@@ -13,6 +13,9 @@ address
 note right
 HL7 FHIR Patient
 Hl7 v2 PD1
+
+commonly supported in UK interoperabiity as HL7 ADT
+(often undocumented HL7 ADT support in primary care)
 end note
 
 class PatientIdentifier <<entity>> {
@@ -25,10 +28,13 @@ HL7 FHIR identifier
 HL7 v2 CX (in PID)
 DICOM (0010,0020)
 IHE XDS patientId and sourcePatientId
+
+commonly supported in UK EPR and interoperabiity
+often based on HL7 v2 PID
 end note
 }
 
-frame Report as "Reports and Observations" {
+frame Diagnostics as "Diagnostics" {
 class "[[StructureDefinition-Observation.html Observation]]" as Observation <<entity>> {
 identifier 1..*
 subject 1..1: PatientIdentier
@@ -40,6 +46,8 @@ encounter 0..1
 note right
 HL7 FHIR Observation
 HL7 v2 OBX
+
+Commonly supported in UK EPR
 end note
 
 
@@ -57,26 +65,34 @@ HL7 v2 OBR
 extratced from Form
 defined by FormDefinition
 openEHR persisted archetype
-Does not always exist as a data type in EMIS and TPP
 
+Often not supported in UK EPR
 end note
 
 class "[[StructureDefinition-DiagnosticReport.html Diagnostic Report]]" as DiagnosticReport <<aggregate root>> {
 identifier 1..*
+basedOn 0..1: AccessionNumber
 subject: PatientIdentier
 code : UK SNOMED CT or LOINC
 effectiveDateTime
 result: ObservationPanel and Observation
+presentedForm 0..* : Attachment
 }
 note right
 HL7 FHIR DiagnosticReport
 HL7 v2 ORU_R01
 DHCW Laboratory Report (HL7 v2 ORU_R01)
 RCR Imaging Report (HL7 v2 ORU_R01)
+
+Often not supported in UK EPR
+commonly supported in UK interoperabiity as HL7 ORU
+(often undocumented HL7 ORU support in primary care)
 end note
 }
 
-class Form <<data transfer object>> {
+
+frame DataCapture as "Data Capture" {
+class "[[StructureDefinition-QuestionnaireResponse.html Form]]" as Form <<data transfer object>> {
 identifier 1..1
 subject
 questionnaire 0..1 : Questionnaire
@@ -89,10 +105,13 @@ Is often used to capture data, so
 <<data transfer object>> for full coded forms, else <<entity>>
 HL7 FHIR QuestionnaireResponse
 openEHR persisted Archetype or Template
+
+commonly supported in UK EPR in a wide variety of forms
+rarely present in UK interoperabiity
 end note
 
 
-class FormDefintion <<aggregate root>> {
+class "[[StructureDefinition-Questionnaire.html Form Defintion]]" as FormDefintion <<aggregate root>> {
 identifier 1..1
 url
 code : UK SNOMED CT or LOINC
@@ -101,8 +120,10 @@ questions 1..*
 note right
 HL7 FHIR Questionnaire
 openEHR CKM i.e. Archetype or Template
-end note
 
+many UK EPR have ad-hoc definitions
+rarely present in UK interoperabiity
+end note
 
 class LogicalModel {
 
@@ -110,6 +131,7 @@ class LogicalModel {
 note right
 [[https://theprsb.org/standards/ PRSB]]
 end note
+}
 
 frame Documents {
 
@@ -124,6 +146,8 @@ File
 [[https://hl7.org/fhir/R4/datatypes.html#Attachment HL7 FHIR Attacment]] Data Type
 HL7 v2 OBX
 IHE XDS Document Entry
+
+Commonly suported in UK EPR
 end note
 
 class "[[StructureDefinition-DocumentReference.html Document Entry]]" as DocumentEntry <<aggregate root>> {
@@ -131,18 +155,64 @@ category: UK SNOMED CT
 type : UK SNOMED CT
 subject : PatientIdentifier
 attachment 1..*
+referenceIdList : AccessionNumber (FHIR context.related)
 }
 note right
 HL7 FHIR DocumentReference
 IHE XDS Document Entry
 Digital Health and Care Scotland - CLINICAL DOCUMENT INDEXING STANDARDS
 IHE (Europe) Document Metadata
+
+Outside of IHE and national, not commonly supported in UK
 end note
 
 }
 
+frame Orders {
+
+class "Laboratory/Imaging Order" as labOrder <<aggregate root>> {
+accessionNumber 1..1 : AccessionNumber
+filerOrderNumber 1..1: Identifier
+placerOrderNumber 1..1 : Identifier
+subject: PatientIdentier
+code: Procedure code UK SNOMED CT, LOINC or NICIP
+}
+note right
+HL7 FHIR ServiceRequest
+HL7 v2 OML_O21
+end note
+
+class AccessionNumber <<value>> {
+
+}
+
+class "Prescription" as prescription <<aggregate root>> {
+identifier 1..*
+subject: PatientIdentier
+medication: UK SNOMED CT (dm+d)
+}
+note right
+HL7 FHIR MedicationeRequest
+end note
 
 
+class "Referral" as Referral <<aggregate root>> {
+identifier 1..*
+subject: PatientIdentier
+code: Procedure code UK SNOMED CT
+}
+note right
+HL7 FHIR ServiceRequest
+HL7 v2 ORM_O01?
+end note
+
+labOrder "accessionNumber" --> AccessionNumber
+
+}
+
+
+DocumentEntry "referenceIdList" --|> AccessionNumber
+DiagnosticReport "basedOn" --|> AccessionNumber
 
 Patient "identifier" --> PatientIdentifier
 DiagnosticReport "result" --> ObservationPanel
@@ -151,9 +221,16 @@ Observation "subject" --|> PatientIdentifier
 ObservationPanel "subject" --|> PatientIdentifier
 DiagnosticReport "subject" --|> PatientIdentifier
 DocumentEntry "subject" --|> PatientIdentifier
+Form "subject" --|> PatientIdentifier
+labOrder "subject" --|> PatientIdentifier
+Referral "subject" --|> PatientIdentifier
+Prescription "subject" --|> PatientIdentifier
+
 DocumentEntry "attachment" --> Attachment
 Form "answers" --|> Observation : data extraction
 Form "code and answers" --|> ObservationPanel: data extraction
 FormDefintion "url" --|> "questionnaire" Form : defintion
 LogicalModel --|> FormDefintion: FormDefinition are the physical models
+DiagnosticReport "attachment" --> Attachment
+
 @enduml
