@@ -32,6 +32,9 @@ IHE XDS patientId and sourcePatientId
 commonly supported in UK EPR and interoperabiity
 often based on HL7 v2 PID
 end note
+
+Patient "identifier" --> PatientIdentifier
+
 }
 
 frame Diagnostics as "Diagnostics" {
@@ -88,6 +91,11 @@ Often not supported in UK EPR
 commonly supported in UK interoperabiity as HL7 ORU
 (often undocumented HL7 ORU support in primary care)
 end note
+
+
+DiagnosticReport "result" --> ObservationPanel
+ObservationPanel "hasMember" --> Observation
+
 }
 
 
@@ -131,6 +139,11 @@ class LogicalModel {
 note right
 [[https://theprsb.org/standards/ PRSB]]
 end note
+
+LogicalModel -d-|> FormDefintion: FormDefinition are the physical models
+
+FormDefintion "url" -d-|> "questionnaire" Form : defintion
+
 }
 
 frame Documents {
@@ -166,6 +179,8 @@ IHE (Europe) Document Metadata
 Outside of IHE and national, not commonly supported in UK
 end note
 
+DocumentEntry "attachment" -d-> Attachment
+
 }
 
 frame Orders {
@@ -186,7 +201,7 @@ class AccessionNumber <<value>> {
 
 }
 
-class "Prescription" as prescription <<aggregate root>> {
+class "Prescription" as Prescription <<aggregate root>> {
 identifier 1..*
 subject: PatientIdentier
 medication: UK SNOMED CT (dm+d)
@@ -206,6 +221,10 @@ HL7 FHIR ServiceRequest
 HL7 v2 ORM_O01?
 end note
 
+labOrder -d[hidden]- Prescription
+Prescription -d[hidden]- Referral
+
+
 labOrder "accessionNumber" --> AccessionNumber
 
 }
@@ -214,23 +233,22 @@ labOrder "accessionNumber" --> AccessionNumber
 DocumentEntry "referenceIdList" --|> AccessionNumber
 DiagnosticReport "basedOn" --|> AccessionNumber
 
-Patient "identifier" --> PatientIdentifier
-DiagnosticReport "result" --> ObservationPanel
-ObservationPanel "hasMember" --> Observation
+
+
 Observation "subject" --|> PatientIdentifier
 ObservationPanel "subject" --|> PatientIdentifier
 DiagnosticReport "subject" --|> PatientIdentifier
 DocumentEntry "subject" --|> PatientIdentifier
 Form "subject" --|> PatientIdentifier
-labOrder "subject" --|> PatientIdentifier
-Referral "subject" --|> PatientIdentifier
-Prescription "subject" --|> PatientIdentifier
+labOrder "subject" -u-|> PatientIdentifier
+Referral "subject" -u-|> PatientIdentifier
+Prescription "subject" -u-|> PatientIdentifier
 
-DocumentEntry "attachment" --> Attachment
+
 Form "answers" --|> Observation : data extraction
 Form "code and answers" --|> ObservationPanel: data extraction
-FormDefintion "url" --|> "questionnaire" Form : defintion
-LogicalModel --|> FormDefintion: FormDefinition are the physical models
+
+
 DiagnosticReport "attachment" --> Attachment
 
 @enduml
