@@ -1,6 +1,6 @@
 Profile:        EMISPractitionerRoleGUID
 Parent:         http://hl7.org/fhir/StructureDefinition/Identifier
-Id:             emis-practitioner-role-guod
+Id:             emis-practitioner-role-guid
 Title:          "EMIS PractitionerRole GUID"
 Description:     """
 **Unofficial**
