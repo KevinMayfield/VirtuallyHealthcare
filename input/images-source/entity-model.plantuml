@@ -83,6 +83,13 @@ code : (in FHIR from Questionnaire)
 authored 1..1 : DateTime
 answers 1..*
 }
+note right
+Is often used to capture data, so
+<<data transfer object>> for full coded forms, else <<entity>>
+HL7 FHIR QuestionnaireResponse
+openEHR persisted Archetype or Template
+end note
+
 
 class FormDefintion <<aggregate root>> {
 identifier 1..1
@@ -90,18 +97,21 @@ url
 code : UK SNOMED CT or LOINC
 questions 1..*
 }
+note right
+HL7 FHIR Questionnaire
+openEHR CKM i.e. Archetype or Template
+end note
+
 
 class LogicalModel {
-[[https://theprsb.org/standards/ PRSB]]
+
 }
-
-
 note right
-Is often used to capture data, so
-<<data transfer object>> for full coded forms, else <<entity>>
-HL7 FHIR QuestionnaireResponse
-openEHR persisted Archetype or Template
+[[https://theprsb.org/standards/ PRSB]]
 end note
+
+
+
 
 
 
