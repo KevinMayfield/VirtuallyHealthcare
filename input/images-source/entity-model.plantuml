@@ -110,7 +110,35 @@ note right
 [[https://theprsb.org/standards/ PRSB]]
 end note
 
+frame Documents {
 
+class Attachment <<entity>> {
+contentType: (also mimeType and file extension)
+title
+languageCode
+data: file contents
+}
+note right
+File
+[[https://hl7.org/fhir/R4/datatypes.html#Attachment HL7 FHIR Attacment]] Data Type
+HL7 v2 OBX
+IHE XDS Document Entry
+end note
+
+class DocumentEntry <<aggregate root>> {
+category: UK SNOMED CT
+type : UK SNOMED CT
+subject : PatientIdentifier
+attachment 1..*
+}
+note right
+HL7 FHIR DocumentReference
+IHE XDS Document Entry
+Digital Health and Care Scotland - CLINICAL DOCUMENT INDEXING STANDARDS
+IHE (Europe) Document Metadata
+end note
+
+}
 
 
 
@@ -121,6 +149,8 @@ ObservationPanel "hasMember" --> Observation
 Observation "subject" --|> PatientIdentifier
 ObservationPanel "subject" --|> PatientIdentifier
 DiagnosticReport "subject" --|> PatientIdentifier
+DocumentEntry "subject" --|> PatientIdentifier
+DocumentEntry "attachment" --> Attachment
 Form "answers" --|> Observation : data extraction
 Form "code and answers" --|> ObservationPanel: data extraction
 FormDefintion "url" --|> "questionnaire" Form : defintion
