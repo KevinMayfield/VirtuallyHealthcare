@@ -1,5 +1,6 @@
 @startuml
 
+frame PD1 as "Patient" {
 class Patient <<aggregate root>> {
 identifier 1..* : PatientIdentifier
 name
@@ -14,22 +15,22 @@ HL7 FHIR Patient
 Hl7 v2 PD1
 end note
 
-class PatientIdentifer <<entity>> {
+class PatientIdentifier <<entity>> {
 NHSNumber 1..1
 MedicalRecordNumber (EMIS, TPP, Hospital Number, etc)
 }
 note right
 HL7 FHIR identifier
 HL7 v2 CX (in PID)
-DICOM
-IHE XDS
+DICOM (0010,0020)
+IHE XDS patientId and sourcePatientId
 end note
+}
 
-Patient "identifier" --> PatientIdentifer
-
+frame Report as "Reports and Observations" {
 class Observation <<entity>> {
-identifier 1..1
-subject 1..1
+identifier 1..*
+subject 1..1: PatientIdentier
 code : UK SNOMED CT or LOINC
 effectiveDateTime
 value[x]: codes are UK SNOMED CT or LOINC
@@ -40,10 +41,10 @@ HL7 FHIR Observation
 HL7 v2 OBX
 end note
 
-class ObservationPanel <<aggregate root>> {
-identifier 1..1
-identifier 1..1
-subject 1..1
+
+class ObservationPanel <<entity>> {
+identifier 1..*
+subject 1..1: PatientIdentier
 code : UK SNOMED CT or LOINC
 effectiveDateTime
 hasMember: 1..*: Observation
@@ -51,10 +52,67 @@ encounter 0..1
 }
 note right
 HL7 FHIR Observation
-FHIR QuestionnaireResponse
+HL7 v2 OBR
+extratced from Form
+defined by FormDefinition
 openEHR persisted archetype
 Does not always exist as a data type in EMIS and TPP
 
 end note
 
+class DiagnosticReport <<aggregate root>> {
+identifier 1..*
+subject: PatientIdentier
+code : UK SNOMED CT or LOINC
+effectiveDateTime
+result: ObservationPanel and Observation
+}
+note right
+HL7 FHIR DiagnosticReport
+HL7 v2 ORU_R01
+DHCW Laboratory Report (HL7 v2 ORU_R01)
+RCR Imaging Report (HL7 v2 ORU_R01)
+end note
+}
+
+class Form <<data transfer object>> {
+identifier 1..1
+subject
+questionnaire 0..1 : Questionnaire
+code : (in FHIR from Questionnaire)
+authored 1..1 : DateTime
+answers 1..*
+}
+
+class FormDefintion <<aggregate root>> {
+identifier 1..1
+url
+code : UK SNOMED CT or LOINC
+questions 1..*
+}
+
+class LogicalModel {
+[[https://theprsb.org/standards/ PRSB]]
+}
+
+
+note right
+Is often used to capture data, so
+<<data transfer object>> for full coded forms, else <<entity>>
+HL7 FHIR QuestionnaireResponse
+openEHR persisted Archetype or Template
+end note
+
+
+
+Patient "identifier" --> PatientIdentifier
+DiagnosticReport "result" --> ObservationPanel
+ObservationPanel "hasMember" --> Observation
+Observation "subject" --|> PatientIdentifier
+ObservationPanel "subject" --|> PatientIdentifier
+DiagnosticReport "subject" --|> PatientIdentifier
+Form "answers" --|> Observation : data extraction
+Form "code and answers" --|> ObservationPanel: data extraction
+FormDefintion "url" --|> "questionnaire" Form : defintion
+LogicalModel --|> FormDefintion: FormDefinition are the physical models
 @enduml
