@@ -1,0 +1,29 @@
+MSH|^
+~\&|ACMELab^2.16.840.1.113883.2.1.8.1.5.999^ISO|CAV^7A4BV^L|cymru.nhs.uk^2.16.840.1.113883.2.
+1.8.1.5.200^ISO|NHSWales^RQFW3^L|20190514102527+0200||ORU^R01^ORU
+R01|5051095-201905141025|T|2.5.1
+_
+|||AL
+PID|||403281375^^^154^PI~5189214567^^^NHS^NH||Bloggs^Joe^^^Mr||20010328|M|||A B M U Health
+Board^One Talbot Gateway^Baglan^Neath port talbot^SA12 7BR|||||||||||||||||||||01
+PV1||O||||||||CAR
+ORC|OR||||||||||||7A3C7MPAT^^^wales.nhs.uk&7A3&L,M,N^^^^^MH Pathology Dept,
+OBR|1||914694928301|B3051^HbA1c (IFCC traceable)|||201803091500|||^ABM: Angharad
+Shore||||201803091500|^^Dr Andar Gunneberg|^Gunneberg^Andar^^^Dr||||||201803091500|||C
+NTE|1||For monitoring known diabetic patients, please follow NICE guidelines. If not a known
+diabetic and the patient is asymptomatic, a second confirmatory sample is required within 2 weeks
+(WEDS Guidance). HbA1c is unreliable for diagnostic and monitoring purposes in the context of
+several conditions, including some haemoglobinopathies, abnormal haemoglobin levels, chronic renal
+failure, recent transfusion, pregnancy, or alcoholism.
+OBX|1|NM|B3553^HbA1c (IFCC traceable)||49|mmol/mol|<48|H|||C|||201803091500
+OBR|2||914694928301|B0001^Full blood count|||201803091500|||^ABM: Carl Owen||||201803091500|^^Dr
+Andar Gunneberg|^Gunneberg^Andar^^^Dr||||||201803091500|||F
+TQ1|||||||201803091400|201803091500|S^^^^^^^^Urgent
+OBX|1|NM|B0300^White blood cell (WBC) count||3.5|x10\S\9/L|4.0-11.0|L|||F|||201803091500
+OBX|2|NM|B0307^Haemoglobin (Hb)||200|g/L|130-180|H|||F|||201803091500
+OBX|3|NM|B0314^Platelet (PLT) count||500|x10\S\9/L|150-400|H|||F|||201803091500
+OBX|4|NM|B0306^Red blood cell (RBC) count||6.00|x10\S\12/L|4.50-6.00|N|||F|||201803091500
+OBX|5|NM|B0308^Haematocrit (Hct)||0.60|L/L|0.40-0.52|H|||F|||201803091500
+OBX|6|NM|B0309^Mean cell volume (MCV)||120|fL|80-100|H|||F|||201803091500
+OBX|7|NM|B0310^Mean cell haemoglobin (MCH)||34.0|pg|27.0-33.0|H|||F|||201803091500
+SPM|1|^9146949283||BLOO^Blood^ACME|||||||||||||201803091400|201803091500

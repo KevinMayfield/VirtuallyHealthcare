@@ -1,0 +1,60 @@
+@startuml
+
+class Patient <<aggregate root>> {
+identifier 1..* : PatientIdentifier
+name
+gender
+birthDate
+address
+telecom
+address
+}
+note right
+HL7 FHIR Patient
+Hl7 v2 PD1
+end note
+
+class PatientIdentifer <<entity>> {
+NHSNumber 1..1
+MedicalRecordNumber (EMIS, TPP, Hospital Number, etc)
+}
+note right
+HL7 FHIR identifier
+HL7 v2 CX (in PID)
+DICOM
+IHE XDS
+end note
+
+Patient "identifier" --> PatientIdentifer
+
+class Observation <<entity>> {
+identifier 1..1
+subject 1..1
+code : UK SNOMED CT or LOINC
+effectiveDateTime
+value[x]: codes are UK SNOMED CT or LOINC
+encounter 0..1
+}
+note right
+HL7 FHIR Observation
+HL7 v2 OBX
+end note
+
+class PanelObservation <<aggregate root>> {
+identifier 1..1
+identifier 1..1
+subject 1..1
+code : UK SNOMED CT or LOINC
+effectiveDateTime
+hasMember: 1..*: Observation
+encounter 0..1
+}
+note right
+HL7 FHIR Observation
+FHIR QuestionnaireResponse
+openEHR persisted archetype
+Does not always exist as a data type in EMIS and TPP
+
+end note
+
+@enduml

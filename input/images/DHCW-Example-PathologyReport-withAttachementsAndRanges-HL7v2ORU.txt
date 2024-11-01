@@ -1,0 +1,49 @@
+MSH|^
+~\&|ACMELab^2.16.840.1.113883.2.1.8.1.5.999^ISO|CAV^7A4BV^L|cymru.nhs.uk^2.16.840.1.113883.2.1.8.1.5.200^ISO|NHSWales^RQFW3^L|20190514102527+02
+00||ORU^R01^ORU
+R01|5051095-201905141025|T|2.5.1|||AL
+_
+PID|||403281375^^^154^PI~5189214567^^^NHS^NH||Bloggs^Joe^^^Mr||20010328|M|||A B M U Health Board^One Talbot Gateway^Baglan^Neath port talbot^SA12
+7BR|||||||||||||||||||||01
+PV1||O|^^^^^^^^Greendale Surgery^W95023|||||ABC123^Foster^G^^^Mr^^^L^^^^DN||CAR
+ORC|OR||||||||||||7A3C7MPAT^^^wales.nhs.uk&7A3&L,M,N^^^^^MH Pathology Dept,
+OBR|1||914694928301|B3051^HbA1c (IFCC traceable)|||201803091500|||^ABM: Sian Jones||||201803091500|^^Dr
+Jones|^Jones^Indiana^^^Dr||||||201803091500|||F
+NTE|1||For monitoring known diabetic patients, please follow NICE guidelines. If not a known diabetic and the patient is asymptomatic, a second
+confirmatory sample is required within 2 weeks (WEDS Guidance). HbA1c is unreliable for diagnostic and monitoring purposes in the context of several
+conditions, including some haemoglobinopathies, abnormal haemoglobin levels, chronic renal failure, recent transfusion, pregnancy, or alcoholism.
+OBX|1|NM|B3553^HbA1c (IFCC traceable)||49|mmol/mol|<48|H|||C|||201803091500
+OBR|2||914694928301|B0001^Full blood count|||201803091500|||^ABM: Sian Jones||||201803091500|^^Dr Jones
+Indiana|^Jones^Indiana^^^Dr||||||201803091500|||F
+TQ1|||||||201803091400|201803091500|S^^^^^^^^Urgent
+OBX|1|NM|B0300^White blood cell (WBC) count||3.5|x10\S\9/L|4.0-11.0|L|||F|||201803091500
+OBX|2|SN|B0307^Haemoglobin (Hb)||<^149|g/L|130-180|H|||F|||201803091500
+OBX|3|NM|B0314^Platelet (PLT) count||500|x10\S\9/L|150-400|H|||F|||201803091500
+OBX|4|NM|B0306^Red blood cell (RBC) count||6.00|x10\S\12/L|4.50-6.00|N|||F|||201803091500
+OBX|6|CE|B0309^Mean cell volume (MCV)||NA^Not assayed^ACME|fL|80-100|N|||F|||201803091500
+SPM|1|^9146949283||BLOO^Blood^ACME|||||||||||||201803091400|201803091500
+OBR|3||287018^7A4BV|CATH^Cardiac Catheter Report^L|||20181109123851|||||||||||||||20181109124818|||R||1^^^20181109123851
+OBX|1|ED|CATH^Cardiac Catheter
+Report^L|1|255^AP^pdf^Base64^JVBERi0xLjQKJcOkw7zDtsOfCjIgMCBvYmoKPDw...EyNDk0IDAwMDAwIG4gCnRyYWlsZXIKPDwvU2l6ZS||||||F
+OBX|2|ED|CATH^Cardiac Catheter
+Report^L|1|255^AP^pdf^Base64^AxNi9Sb290IDE0IDAgUgovSW5mbyAxNSAwIFIKL0lEIFsgPE...KPj4Kc3RhcnR4cmVmCjEyNzg3CiUlRU9GCg==||||||F
+OBR|4||A28701^7A4BV|Appointment^AppointmentLetter^L^|||20181109123851|||||||||||||||20181109124818|||R||1^^^20181109123851
+OBX|1|ED|Appointment^Appointment Letter^L||251^AP^pdf^Base64^JVBERi0xLjQKJcOkw7zDtsOfCjIgMCBvYm...VmCjEyNzg3CiUlRU9GCg==||||||F
+OBR|5||190000041:27491|MOLT^MOL TEST NAME^L^MOLT^MOL TEST
+NAME^L^NA|||20190514102000+0200|||ACME|O|||20190514102000+0200||1234567^JONES^INDIANA^^^DR^^^GMC^^^^DN||||||20190514102417+0200||DMOL|F||^^^^^R|||||
+ACME&USER&SUPER||ACME|||||||||||||190000041^MOL^L
+OBX|1|TX|INTER^INTERPRETATION^L^^^^NA|MOLT|rwtu||||||F|||20190514102417+0200||ACME|||20190514102417+0200||||^^^^^^^^^MyLAB
+NTE|1|L|Interpreted by: ACME Super User, Signed on 05/14/2019 at 10:24|RE^Remark^HL70364^ELSG^^L^2.5.1^NA
+OBX|2|TX|RESTE^Reason for testing^L^^^^NA|MOLT|erw||||||F|||20190514102417+0200||ACME|||20190514102417+0200||||^^^^^^^^^MyLAB
+OBX|3|TX|TMETH^Test Methodology^L^^^^NA|MOLT|sfjg||||||F|||20190514102417+0200||ACME|||20190514102417+0200||||^^^^^^^^^MyLAB
+OBX|4|TX|RESUM^Result summary^L^^^^NA|MOLT|tyityu||||||F|||20190514102417+0200||ACME|||20190514102417+0200||||^^^^^^^^^MyLAB
+OBX|5|TX|PATPH^Patient phenotype^L^^^^NA|MOLT|ghfjg||||||F|||20190514102417+0200||ACME|||20190514102417+0200||||^^^^^^^^^MyLAB
+OBX|6|TX|FOLL^Follow-up^L^^^^NA|MOLT|yue||||||F|||20190514102417+0200||ACME|||20190514102417+0200||||^^^^^^^^^MyLAB
+OBX|7|TX|MDS^Multi-disciplinary summary^L^^^^NA|MOLT|tyu||||||F|||20190514102417+0200||ACME|||20190514102417+0200||||^^^^^^^^^MyLAB
+OBX|8|TX|RESLT^Result^L^^^^NA|MOLT|dhjhd||||||F|||20190514102417+0200||ACME|||20190514102417+0200||||^^^^^^^^^MyLAB
+OBX|9|ST|GRFALN1^AlphaNumeric Generic Result Field
+1^L^^^^NA|MOLT|234dfsgsg||||||F|||20190514102335+0200||ACME|||20190514102417+0200||||^^^^^^^^^MyLAB
+OBX|10|ED|MOLT^MOL TEST
+NAME^L^^^^NA||MOL^IM^PDF^Base64^JVBERi0xLjMKJeLjz9MKMiAwIG9iago8PC...||||||F|||20190514102335+0200||ACME|||20190514102417+0200||||^^^^^^^^^MyLAB
+OBX|11|RP|MOLT^MOL TEST
+NAME^L^^^^NA||http://documents.example.com/document123.pdf||||||F|||20190514102335+0200||ACME|||20190514102417+0200||||^^^^^^^^^MyLAB
