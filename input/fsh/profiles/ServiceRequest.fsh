@@ -17,5 +17,5 @@ Extension of [UKCore-ServiceRequest](https://simplifier.net/hl7fhirukcorer4/ukco
 * identifier[CommonResourceIdentifiers] ^short = "Common Resource Identifiers"
 
 * code 0..1
-* subject.reference 1..1 MS
+* subject.reference 0..1 MS
 * subject.identifier only NHSNumber
