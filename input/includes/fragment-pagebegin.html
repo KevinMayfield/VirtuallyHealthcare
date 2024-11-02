@@ -59,10 +59,10 @@
             <span style="display:inline-block;">{{site.data.fhir.ig.version}} - {{status}}
 {% assign igId = site.data.fhir.ig.id | prepend: "ImplementationGuide/" %}
 {% for jurisdiction in site.data.resources[igId].jurisdictions %}
-{% if jurisdiction.flag %}
-  <img alt="{{jurisdiction.name}} flag" src="{{site.data.info.assets}}Flag_of_England.svg" height="16" title="{{jurisdiction.name}}"/>
-{% elsif jurisdiction.code %}
+                {% if jurisdiction.code %}
   <span title="{{jurisdiction.name}}">{{jurisdiction.code}}</span>
+                {% elsif jurisdiction.flag %}
+  <img alt="{{jurisdiction.name}} flag" src="{{site.data.info.assets}}Flag_of_England.svg" height="16" title="{{jurisdiction.name}}"/>
 {% else %}
   {{jurisdiction.name}}
 {% endif %}
