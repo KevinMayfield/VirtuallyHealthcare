@@ -24,7 +24,7 @@ Description: "Extension of [UKCore-Observation](https://simplifier.net/hl7fhiruk
 * code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
 
 * subject.reference 1..1 MS
-* subject.identifier only NHSNumber or CHINumber
+* subject.identifier only NHSNumber
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
@@ -34,7 +34,7 @@ Description: "Extension of [UKCore-Observation](https://simplifier.net/hl7fhiruk
 * performer 1..* MS
 * performer only Reference(Practitioner or Patient)
 * performer.reference 1..1
-* performer.identifier only GeneralMedicalCouncilReferenceNumber or GeneralMedicalPractitionerCode or NHSNumber or CHINumber or EMISPractitionerRoleGUID
+* performer.identifier only ProfessionalLicense or NHSNumber or EMISPractitionerRoleGUID
 
 * value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
 * value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)

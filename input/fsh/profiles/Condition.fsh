@@ -19,4 +19,4 @@ Description: "Extension to UKCore Condition and includes elements from [HL7 Inte
 
 * subject 1..1
 * subject only Reference(Patient)
-* subject.identifier only NHSNumber or CHINumber
+* subject.identifier only NHSNumber

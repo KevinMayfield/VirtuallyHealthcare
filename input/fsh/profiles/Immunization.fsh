@@ -7,4 +7,4 @@ Description: "Extension to UKCore Immunization  and includes elements from [HL7 
 
 * patient 1..1
 * patient only Reference(Patient)
-* patient.identifier only NHSNumber or CHINumber
+* patient.identifier only NHSNumber

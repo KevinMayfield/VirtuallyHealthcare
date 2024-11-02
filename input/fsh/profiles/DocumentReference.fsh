@@ -7,7 +7,7 @@ Description: "Extension to future UKCore DocumentReference and includes elements
 
 * subject 1..1
 * subject only Reference(Patient)
-* subject.identifier only NHSNumber or CHINumber
+* subject.identifier only NHSNumber
 
 * author only Reference(Organization or Practitioner)
-* author.identifier only GeneralMedicalPractitionerCode or GeneralMedicalCouncilReferenceNumber or EMISPractitionerRoleGUID
+* author.identifier only ProfessionalLicense or EMISPractitionerRoleGUID

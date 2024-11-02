@@ -18,7 +18,7 @@ Description: "Extension of UKCore-MedicationRequest and includes elements from [
 * identifier[EMISMedicationGUID] ^short = "EMIS Medication GUID Identifier"
 
 * subject.reference 1..1 MS
-* subject.identifier only NHSNumber or CHINumber
+* subject.identifier only NHSNumber
 
 * medication[x] only CodeableConcept
 * medication[x] MS
@@ -27,5 +27,5 @@ Description: "Extension of UKCore-MedicationRequest and includes elements from [
 
 * performer only Reference(Practitioner)
 * performer.reference 1..1
-* performer.identifier only GeneralMedicalCouncilReferenceNumber or GeneralMedicalPractitionerCode or EMISPractitionerRoleGUID
+* performer.identifier only ProfessionalLicense or EMISPractitionerRoleGUID
 

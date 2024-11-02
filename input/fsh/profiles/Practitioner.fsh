@@ -12,8 +12,7 @@ Description:    "Extension of UKCore Practitioner and includes elements from [IH
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains
-  gmp-number 0..1 and
-  gmc-number 0..1
+  ProfessionalLicense 0..1
 
-* identifier[gmp-number] only GeneralMedicalPractitionerCode
-* identifier[gmc-number] only GeneralMedicalCouncilReferenceNumber
+* identifier[ProfessionalLicense] only ProfessionalLicense
+

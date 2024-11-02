@@ -5,5 +5,5 @@ Description: "Based on [HL7 Structured Data Capture](https://build.fhir.org/ig/H
 
 * subject 1..1
 * subject only Reference(Patient)
-* subject.identifier only NHSNumber or CHINumber
+* subject.identifier only NHSNumber
 
