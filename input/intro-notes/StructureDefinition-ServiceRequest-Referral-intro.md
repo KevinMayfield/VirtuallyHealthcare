@@ -1,7 +1,9 @@
 
 ### eRS-ReferralRequest to FHIR ServiceRequest
 
-[Example $ers.createReferral multishortlist](eRS/ers-GenerateReferral-multishortlist-FHIR-STU3.json)
+Operation Definition [eRS-CreateReferral-Operation](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-CreateReferral-Operation-1)
+
+Example [$ers.createReferral multishortlist](eRS/ers-GenerateReferral-multishortlist-FHIR-STU3.json)
 
 | eRS Name       | Cadinality | FHIR ServiceRequest |
 |----------------|------------|---------------------|

@@ -1,0 +1,257 @@
+{
+  "resourceType": "Questionnaire",
+  "title": "eRS Referral Request",
+  "status": "draft",
+  "description": "Representation of eRS Referral Request as a Questionnaire",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "400999005",
+      "display": "Procedure requested"
+    }
+  ],
+  "item": [
+    {
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "7550720512606",
+      "text": "Intention to add referral letter",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralLetterIntention-1",
+            "code": "NEED_TO_ADD_LATER",
+            "display": "Need to add later"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralLetterIntention-1",
+            "code": "NOT_INTENDING_TO_ADD",
+            "display": "Not intending to add"
+          }
+        }
+      ]
+    },
+    {
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "display": "day"
+          }
+        }
+      ],
+      "linkId": "377422575818",
+      "text": "First Patient Reminder Letter Follow Up",
+      "required": true,
+      "item": [
+        {
+          "text": "f > 0, the system will send an automated letter to the patient after the number of days stated, if the patient hasn't yet booked or deferred to a Service. If = 0, the system will not send reminder letters for this referral.",
+          "type": "display",
+          "linkId": "377422575818_helpText",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "text": "Help-Button",
+                "coding": [
+                  {
+                    "code": "help",
+                    "display": "Help-Button",
+                    "system": "http://hl7.org/fhir/questionnaire-item-control"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "date",
+      "linkId": "629233464929",
+      "text": "Referral Pathway Start",
+      "item": [
+        {
+          "text": "The e-Referral Pathway Start Date is a derived value of when the Referral To Treatment (RTT) clock starts. You can supply an optional, alternate pathway start date when creating a referral. For more information see the e-RS FHIR API documentation.",
+          "type": "display",
+          "linkId": "629233464929_helpText",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "text": "Help-Button",
+                "coding": [
+                  {
+                    "code": "help",
+                    "display": "Help-Button",
+                    "system": "http://hl7.org/fhir/questionnaire-item-control"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "open-choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "548537357389",
+      "text": "Referring Clinician",
+      "required": true
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "463223346768",
+          "text": "Priority"
+        },
+        {
+          "type": "string",
+          "linkId": "605521000510",
+          "text": "Specialty"
+        },
+        {
+          "type": "string",
+          "linkId": "212866014798",
+          "text": "Clinic Type"
+        },
+        {
+          "type": "string",
+          "linkId": "921944143770",
+          "text": "Indicative Appointment Wait Time Limit"
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "280477502541",
+              "text": "Service",
+              "repeats": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://fhir.nhs.net/Id/ers-service",
+                    "code": "12000"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "string",
+          "linkId": "361829375861",
+          "text": "Selected Services",
+          "readOnly": false
+        },
+        {
+          "type": "string",
+          "linkId": "600227899498",
+          "text": "postcode"
+        },
+        {
+          "type": "string",
+          "linkId": "688964363479",
+          "text": "distanceLimit"
+        },
+        {
+          "type": "string",
+          "linkId": "453293410952",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1003"
+            }
+          ],
+          "text": "clinicalTerm"
+        },
+        {
+          "type": "string",
+          "linkId": "285632577551",
+          "text": "namedClinician"
+        },
+        {
+          "type": "string",
+          "linkId": "487204644938",
+          "text": "ageAndGenderAppropriate"
+        },
+        {
+          "type": "string",
+          "linkId": "543444241448",
+          "text": "Organisation Code"
+        },
+        {
+          "text": "shortlist - This appears to be a dump of data from A10 HealthcareService search",
+          "type": "display",
+          "linkId": "863090807904_helpText",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "text": "Help-Button",
+                "coding": [
+                  {
+                    "code": "help",
+                    "display": "Help-Button",
+                    "system": "http://hl7.org/fhir/questionnaire-item-control"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "type": "group",
+      "linkId": "863090807904",
+      "text": "Health Service Criteria",
+      "repeats": false
+    }
+  ],
+  "id": "5497602"
+}
