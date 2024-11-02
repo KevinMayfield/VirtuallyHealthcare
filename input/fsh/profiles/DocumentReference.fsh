@@ -5,6 +5,15 @@ Description: "Extension to future UKCore DocumentReference and includes elements
 
 * identifier 1..* MS
 
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #closed
+* identifier contains
+    CommonResourceIdentifiers 0..*
+
+* identifier[CommonResourceIdentifiers] only CommonResourceIdentifiers
+* identifier[CommonResourceIdentifiers] ^short = "Common Resource Identifiers"
+
 * subject 1..1
 * subject only Reference(Patient)
 * subject.identifier only NHSNumber

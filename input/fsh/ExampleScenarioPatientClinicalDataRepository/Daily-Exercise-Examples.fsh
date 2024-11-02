@@ -6,7 +6,7 @@ Patient Held Device Data Capture - Daily Step Count
 """
 Usage: #example
 
-* identifier[UUID]
+* identifier[CommonResourceIdentifiers]
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "0a7f38ae-9658-4b43-a3f9-02f66f65bf38"
 * status = #final
@@ -29,7 +29,7 @@ Patient Held Device Data Capture - Peak daily heart rate
 """
 Usage: #example
 
-* identifier[UUID]
+* identifier[CommonResourceIdentifiers]
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "a14a52b7-b647-45f3-851a-8c00e28c0968"
 * status = #final
@@ -53,7 +53,7 @@ Patient Held Device Data Capture - Average Resting Heart Rate
 """
 Usage: #example
 
-* identifier[UUID]
+* identifier[CommonResourceIdentifiers]
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "ea09866e-d540-4d9c-ba9c-8e22338e524c"
 * status = #final
@@ -77,7 +77,7 @@ Patient Held Device Data Capture - Calories per Day
 """
 Usage: #example
 
-* identifier[UUID]
+* identifier[CommonResourceIdentifiers]
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "b8df13d9-86f3-4545-9e82-50bca88090d9"
 * status = #final

@@ -12,7 +12,7 @@ Description:    "Extension of UKCore Practitioner and includes elements from [IH
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains
-  ProfessionalLicense 0..1
+  ProfessionalLicense 0..*
 
 * identifier[ProfessionalLicense] only ProfessionalLicense
 

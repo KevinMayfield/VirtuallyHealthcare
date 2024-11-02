@@ -5,6 +5,15 @@ Description: "Extension of UKCore-DiagnosticReport"
 
 * identifier 1..* MS
 
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #closed
+* identifier contains
+    CommonResourceIdentifiers 0..*
+
+* identifier[CommonResourceIdentifiers] only CommonResourceIdentifiers
+* identifier[CommonResourceIdentifiers] ^short = "Common Resource Identifiers"
+
 
 * code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
 * code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)

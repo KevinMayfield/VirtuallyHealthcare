@@ -9,13 +9,10 @@ Description: "Extension to UKCore Condition and includes elements from [HL7 Inte
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #closed
 * identifier contains
-    EMISEventDBID 0..1 and EMISEventGUID 0..1
+    CommonResourceIdentifiers 0..*
 
-* identifier[EMISEventDBID] only EMISEventDBID
-* identifier[EMISEventDBID] ^short = "EMIS Event DBID Identifier"
-
-* identifier[EMISEventGUID] only EMISEventGUID
-* identifier[EMISEventGUID] ^short = "EMIS Event GUID Identifier"
+* identifier[CommonResourceIdentifiers] only CommonResourceIdentifiers
+* identifier[CommonResourceIdentifiers] ^short = "Common Resource Identifiers"
 
 * subject 1..1
 * subject only Reference(Patient)

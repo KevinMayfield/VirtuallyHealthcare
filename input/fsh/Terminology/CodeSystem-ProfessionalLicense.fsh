@@ -3,6 +3,10 @@ Id: ProfessionalLicense
 Title: "UK Professional License"
 Description:  "UK Professional License"
 
-* #https://emis.com/Id/Patient/AccessIdentityGuid "EMIS PFS Access Identity Guid"
-    "**Unofficial** Is known in EMIS PFS as Access Identity Guid. This may change if the patients access is revoked."
+* #https://fhir.hl7.org.uk/Id/gmp-number "General Medical Practitioner"
+    "General Medical Practitioner Code GENERAL MEDICAL PRACTITIONER PPD CODE. Formerly called GP General National Code (GNC)."
+* #https://fhir.hl7.org.uk/Id/gmc-number "General Medical Council Code"
+* #https://fhir.hl7.org.uk/Id/nmc-number "Nursing and Midwifery Council Code"
+* #https://fhir.hl7.org.uk/Id/gphc-number "General Pharmaceutical Council Code"
+* #https://fhir.hl7.org.uk/Id/hcpc-number "Health and Care Professional Council Code"
 

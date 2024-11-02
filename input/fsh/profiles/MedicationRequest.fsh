@@ -9,13 +9,10 @@ Description: "Extension of UKCore-MedicationRequest and includes elements from [
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #closed
 * identifier contains
-    EMISMedicationDBID 0..1 and EMISMedicationGUID 0..1
+    CommonResourceIdentifiers 0..*
 
-* identifier[EMISMedicationDBID] only EMISMedicationDBID
-* identifier[EMISMedicationDBID] ^short = "EMIS Medication DBID Identifier"
-
-* identifier[EMISMedicationGUID] only EMISMedicationGUID
-* identifier[EMISMedicationGUID] ^short = "EMIS Medication GUID Identifier"
+* identifier[CommonResourceIdentifiers] only CommonResourceIdentifiers
+* identifier[CommonResourceIdentifiers] ^short = "Common Resource Identifiers"
 
 * subject.reference 1..1 MS
 * subject.identifier only NHSNumber

@@ -9,16 +9,10 @@ Description: "Extension of [UKCore-Observation](https://simplifier.net/hl7fhiruk
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #closed
 * identifier contains
-    EMISEventDBID 0..1 and EMISEventGUID 0..1 and UUID 0..1
+    CommonResourceIdentifiers 0..*
 
-* identifier[EMISEventDBID] only EMISEventDBID
-* identifier[EMISEventDBID] ^short = "EMIS Event DBID Identifier"
-
-* identifier[EMISEventGUID] only EMISEventGUID
-* identifier[EMISEventGUID] ^short = "EMIS Event GUID Identifier"
-
-* identifier[UUID] only UUID
-* identifier[UUID] ^short = "Universally Unique Identifier"
+* identifier[CommonResourceIdentifiers] only CommonResourceIdentifiers
+* identifier[CommonResourceIdentifiers] ^short = "Common Resource Identifiers"
 
 * code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
 * code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
