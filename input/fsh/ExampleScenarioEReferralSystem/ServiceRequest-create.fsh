@@ -14,3 +14,10 @@ Usage: #example
 * subject.identifier.system = "http://fhir.nhs.net/Id/nhs-number"
 * subject.identifier.value = "9912003888"
 
+* code.coding[+] = https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1#HEART_FAILURE
+* code.coding[+] = http://snomed.info/sct#425315000 "Cardiac assessment"
+
+* priority = #routine
+
+
+

@@ -1,0 +1,156 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id" : "ers-Referral-Request",
+  "meta": {
+    "profile": [
+      "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"
+    ]
+  },
+  "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/eRSReferralRequest",
+  "status": "completed",
+  "authored": "2024-11-02T13:48:59.669Z",
+  "subject": {
+    "reference": "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+  },
+  "item": [
+    {
+      "linkId": "7550720512606",
+      "text": "Intention to add referral letter",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralLetterIntention-1",
+            "code": "NEED_TO_ADD_LATER",
+            "display": "Need to add later"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "377422575818",
+      "text": "First Patient Reminder Letter Follow Up",
+      "answer": [
+        {
+          "valueQuantity": {
+            "value": 12,
+            "unit": "day",
+            "code": "d",
+            "system": "http://unitsofmeasure.org"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "629233464929",
+      "text": "Referral Pathway Start",
+      "answer": [
+        {
+          "valueDate": "2024-11-01"
+        }
+      ]
+    },
+    {
+      "linkId": "548537357389",
+      "text": "Referring Clinician",
+      "answer": [
+        {
+          "valueString": "123123123"
+        }
+      ]
+    },
+    {
+      "linkId": "648413232012",
+      "text": "Referral Request",
+      "item": [
+        {
+          "linkId": "949810170125",
+          "text": "Request Type",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestType-1",
+                "code": "ADVICE_AND_GUIDANCE_REQUEST",
+                "display": "Advice and Guidance Request"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "629639467891",
+          "text": "Priority",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                "code": "ROUTINE",
+                "display": "Routine"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "702803587307",
+          "text": "Specialty",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "CARDIOLOGY",
+                "display": "Cardiology"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "397153577526",
+          "text": "Clinic Type",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
+                "code": "HEART_FAILURE",
+                "display": "Heart Failure"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "766938134937",
+          "text": "Patient Postcode",
+          "answer": [
+            {
+              "valueString": "NG10 1AA"
+            }
+          ]
+        },
+        {
+          "linkId": "127117778162",
+          "text": "Commissioning Provisioning",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
+                "code": "ALL_AVAILABLE_FOR_BOOKING",
+                "display": "All available for Booking"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "863090807904",
+      "text": "Health Service Criteria",
+      "item": [
+        {
+          "linkId": "285632577551",
+          "text": "namedClinician",
+          "answer": [
+            {
+              "valueString": "Sahera Ramzan"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
