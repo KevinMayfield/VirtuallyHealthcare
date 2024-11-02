@@ -11,7 +11,7 @@ E.g. SDS User ID and Ministry of Defence Doctor.
 
 
 * system 1..1
-* system = "https://fhir.nhs.uk/Id/sds-user-id"
+* system from StaffNumber
 * value 1..1
 * type = http://terminology.hl7.org/CodeSystem/v2-0203#ESN
 * assigner ^short = "Assigning organisation, populate if known (i.e. X24/X26 for NHS England)"

@@ -6,6 +6,10 @@
       "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"
     ]
   },
+  "identifier" : {
+      "system" : "https://tools.ietf.org/html/rfc4122",
+      "value" : "238f1461-e644-4cca-98ad-e0b39ec2a96f"
+    },
   "status": "completed",
   "authored": "2024-10-28T04:49:08.943Z",
   "subject": {

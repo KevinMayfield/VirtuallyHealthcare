@@ -19,4 +19,4 @@ Description: "Extension to future UKCore DocumentReference and includes elements
 * subject.identifier only NHSNumber
 
 * author only Reference(Organization or Practitioner)
-* author.identifier only ProfessionalLicense or EMISPractitionerRoleGUID
+* author.identifier only ProfessionalLicense or StaffEnterpriseNumber

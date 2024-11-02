@@ -24,5 +24,5 @@ Description: "Extension of UKCore-MedicationRequest and includes elements from [
 
 * performer only Reference(Practitioner)
 * performer.reference 1..1
-* performer.identifier only ProfessionalLicense or EMISPractitionerRoleGUID
+* performer.identifier only ProfessionalLicense or StaffEnterpriseNumber
 
