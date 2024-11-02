@@ -10,14 +10,15 @@
 - Patient 
   - [NHS England HL7 v2 ADT](HSCIC-ITK-HL7-V2-Message-Specifications.pdf) and [NHS England HL7 v2 ADT Reference Tables](HSCIC-ITK-HL7-V2-Reference-Tables.pdf). Examples:
     - [ADT_A28](ADT/A28_Example.txt) Add person information (Create Patient Event)
-    - [ADT_A31](ADT/A31_Example.txt) Update person information (Update Patient Event)
+    - [ADT_A31](ADT/A31_example.txt) Update person information (Update Patient Event)
+    - [ADT_A40](ADT/A40_Example.txt) Merge person information (Merge Patient Event)
 - Encounter
   - [NHS England HL7 v2 ADT](HSCIC-ITK-HL7-V2-Message-Specifications.pdf) and [NHS England HL7 v2 ADT Reference Tables](HSCIC-ITK-HL7-V2-Reference-Tables.pdf). Examples:
     - [ADT_A05](ADT/A05_Example.txt) Pre-admit a patient (*Inpatient* Admission Notification Event)
-    - [ADT_A01](ADT/A01_Example.txt) Admit/visit notification (Admission/Visit Notification Event)
-    - [ADT_A03](ADT/A03_Example.txt) Discharge/end visit (Dischage/Visit End Notification Event)
-    - [ADT_A04](ADT/A04_Example.txt) Register a patient (*Outpatient* or *Emergency* Encounter (and Patient) Notification Event)
-    - [ADT_A08](ADT/A048_Example.txt) Update patient information (*Outpatient* or *Emergency* Encounter (and Patient) Updated Notification Event)
+    - [ADT_A01](ADT/A01_example.txt) Admit/visit notification (Admission/Visit Notification Event)
+    - [ADT_A03](ADT/A03_example.txt) Discharge/end visit (Dischage/Visit End Notification Event)
+    - [ADT_A04](ADT/A04_example.txt) Register a patient (*Outpatient* or *Emergency* Encounter (and Patient) Notification Event)
+    - [ADT_A08](ADT/A08_example.txt) Update patient information (*Outpatient* or *Emergency* Encounter (and Patient) Updated Notification Event)
 - Diagnostic Report, Observation Panel and Observation
   - [Digital Health and Care Wales Laboratory Report / Observation Result  - HL7 v2 ORU](DHCW-HL7v25-ORUR01-Specification.pdf). Examples:
     - [ORU_R01 Pathology Report](DHCW-Example-Pathology-Report-HL7v2ORU.txt)

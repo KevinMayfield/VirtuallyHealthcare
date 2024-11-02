@@ -1,7 +1,7 @@
 
 ### eRS-ReferralRequest to FHIR ServiceRequest
 
-[Example $ers.createReferral multishortlist](ERS/ers-GenerateReferral-multishortlist-FHIR-STU3.json)
+[Example $ers.createReferral multishortlist](eRS/ers-GenerateReferral-multishortlist-FHIR-STU3.json)
 
 | eRS Name       | Cadinality | FHIR ServiceRequest |
 |----------------|------------|---------------------|
