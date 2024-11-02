@@ -11,7 +11,7 @@ Usage: #example
   * value = "f3533ea0-9588-4f25-ace7-969d80823b20"
 * status = #active
 * intent = #order
-* subject.identifier.system = "http://fhir.nhs.net/Id/nhs-number"
+* subject.identifier.system = "https://fhir.nhs.net/Id/nhs-number"
 * subject.identifier.value = "9912003888"
 
 * code.coding[+] = https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1#HEART_FAILURE
