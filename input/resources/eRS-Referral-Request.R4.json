@@ -1,5 +1,6 @@
 {
   "resourceType": "Questionnaire",
+  "id": "eRS-Referral-Request",
   "title": "eRS Referral Request",
   "status": "draft",
   "description": "Representation of eRS Referral Request as a Questionnaire",
@@ -252,6 +253,5 @@
       "text": "Health Service Criteria",
       "repeats": false
     }
-  ],
-  "id": "5497602"
+  ]
 }
