@@ -18,7 +18,7 @@
           }
         ]
       },
-      "system": "https://emis.com/Id/Attachment/DBID",
+      "system": "https://emis.com/Id/Attachment/GUID",
       "value": "ad1fcc5e-e9c6-491e-a12c-09085129c04c"
     }
   ],
