@@ -34,7 +34,7 @@
           }
         }
       ],
-      "linkId": "949810170125",
+      "linkId": "requestType",
       "text": "Request Type",
       "required": true,
       "answerOption": [
@@ -136,7 +136,7 @@
           }
         }
       ],
-      "linkId": "548537357389",
+      "linkId": "referringClinician",
       "text": "Referring Clinician",
       "required": true,
       "answerOption": [
@@ -246,7 +246,7 @@
             }
           ],
           "linkId": "757172832143",
-          "text": "Commissioning Organisation",
+          "text": "Commissioning Organisation - no longer supported?",
           "answerOption": [
             {
               "valueCoding": {
@@ -259,7 +259,7 @@
         }
       ],
       "type": "group",
-      "linkId": "743383657235",
+      "linkId": "performer",
       "text": "Organisation or clinician providing the service"
     },
     {
@@ -604,8 +604,8 @@
               }
             }
           ],
-          "linkId": "209993719667",
-          "text": "Attachement Type",
+          "linkId": "requestAttachmentFileType",
+          "text": "Attachment Type",
           "answerOption": [
             {
               "valueCoding": {
@@ -639,7 +639,7 @@
         }
       ],
       "type": "group",
-      "linkId": "107410054588",
+      "linkId": "requestAttachmentFile",
       "text": "Attachments"
     }
   ]
