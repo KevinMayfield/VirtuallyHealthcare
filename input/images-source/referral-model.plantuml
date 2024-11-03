@@ -3,7 +3,7 @@
 
 class "[[StructureDefinition-ServiceRequest-Referral.html ServiceRequest-Referral]]" as ServiceRequest <<aggregate root>> {
 subject: must have NHS Number
-code : Procedure code
+code : Procedure code (UK SNOMED CT)
 supportingInfo[referralForm] : RS-Referral-Request Form
 supportingInfo[referralLetter] : Referral Letter
 performer: Organisation(Identifier) or HealthcareService(Identifier)
