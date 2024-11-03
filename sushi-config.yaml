@@ -81,6 +81,9 @@ pages:
   observation-definitions.md:
     title: Observation Panel
     generation: markdown
+  e-referral-service.md:
+    title: e Referral Service
+    generation: markdown
 
 
 resources:
@@ -202,7 +205,7 @@ resources:
     exampleBoolean: false
   Questionnaire/eRS-Referral-Request:
     name: Questionnaire-eRSReferralRequest
-    description: Initial mock up of eRS Referral Request
+    description: Data capture definition for [A011 Create Referral (Deprecated)](https://developer.nhs.uk/apis/e-Referrals/explore_endpoint_a011.html)
     exampleBoolean: false
   Task/Task-EMIS-PFS-Prescription-Refill:
     name: Task-EMIS-PFS-Prescription-Refill
@@ -240,6 +243,9 @@ resources:
 
 menu:
   Home: index.html
-  Data Model: data-model.html
-  Observation Panel: observation-definitions.html
+  Services Documentation:
+    e-Referral Service: e-referral-service.html
+  Information Model:
+    Data Model: data-model.html
+    Observation Panel: observation-definitions.html
   FHIR Assets: artifacts.html
