@@ -105,7 +105,15 @@
         }
       ]
     },
-
+    {
+      "linkId": "postcode",
+      "text": "Services near postcode",
+      "answer": [
+        {
+          "valueString": "NG10 1AA"
+        }
+      ]
+    },
     {
       "linkId": "firstReminderLetterFollowUpDays",
       "text": "First Patient Reminder Letter Follow Up",
@@ -121,18 +129,6 @@
       "answer": [
         {
           "valueDate": "2024-11-01"
-        }
-      ]
-    },
-
-
-
-    {
-      "linkId": "postcode",
-      "text": "Services near postcode",
-      "answer": [
-        {
-          "valueString": "NG10 1AA"
         }
       ]
     },
