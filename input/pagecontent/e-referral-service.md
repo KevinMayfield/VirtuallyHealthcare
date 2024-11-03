@@ -1,6 +1,13 @@
 
+### Clinical Data Repository Model
 
-### Create Referral Request 
+<figure>
+{%include referral-model.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">CDR Referral Model</p>
+</figure>
+<br clear="all">
+
+### Clinical Data Repository and eReferral Service Mapping
 
 This refers to on e-RS [A011: Create Referral (Deprecated)](https://developer.nhs.uk/apis/e-Referrals/explore_endpoint_a011.html)
 Example of the payload sent to eRS
