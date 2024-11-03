@@ -12,7 +12,7 @@ performer: Organisation(Identifier) or HealthcareService(Identifier)
 class "[[Questionnaire-eRS-Referral-Request.html eRS-Referral-Request Form]]" as form <<entity>> {
 }
 
-class "Referral Letter" as Composition <<entity>> {
+class "[[Bundle-FHIRDocumentEOLCCarePlanBundle.html Referral Letter]]" as Composition <<entity>> {
 }
 
 class "Healthcare Service" as service
