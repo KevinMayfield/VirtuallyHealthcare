@@ -218,7 +218,7 @@
               }
             }
           ],
-          "linkId": "757172832143",
+          "linkId": "commissioningOrganisation",
           "text": "Commissioning Organisation - no longer supported?",
           "answerOption": [
             {
@@ -233,7 +233,7 @@
       ],
       "type": "group",
       "linkId": "performer",
-      "text": "Organisation or clinician providing the service"
+      "text": "x"
     },
     {
       "type": "choice",
@@ -483,7 +483,7 @@
       "item": [
         {
           "type": "url",
-          "linkId": "622939923174",
+          "linkId": "attachmentLocation",
           "text": "Attachment Location",
           "required": true
         },
