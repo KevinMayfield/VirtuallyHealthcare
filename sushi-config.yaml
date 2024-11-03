@@ -82,7 +82,7 @@ pages:
     title: Observation Panel
     generation: markdown
   e-referral-service.md:
-    title: e Referral Service
+    title: eReferral Service
     generation: markdown
 
 

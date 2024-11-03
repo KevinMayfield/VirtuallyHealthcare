@@ -60,7 +60,7 @@
     },
     {
       "linkId": "performer",
-      "text": "Performer",
+      "text": "Organisation or clinician providing the service",
       "item": [
         {
           "linkId": "namedClinician",
