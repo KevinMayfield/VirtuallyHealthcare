@@ -6,7 +6,7 @@ subject: must have NHS Number
 code : Procedure code
 supportingInfo[referralForm] : RS-Referral-Request Form
 supportingInfo[referralLetter] : Referral Letter
-performer
+performer: Organisation(Identifier) or HealthcareService(Identifier)
 }
 
 class "[[Questionnaire-eRS-Referral-Request.html eRS-Referral-Request Form]]" as form <<entity>> {
