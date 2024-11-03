@@ -1,0 +1,17 @@
+{
+  "id": "1",
+  "meta": {
+    "versionId": "1"
+  },
+  "language": "en",
+  "resourceType": "HealthcareService",
+  "location": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-site-code",
+        "value": "R6901"
+      }
+    }
+  ],
+  "name": "Direct Service With Minimal"
+}
