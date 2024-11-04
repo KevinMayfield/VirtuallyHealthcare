@@ -9,5 +9,5 @@ NHS Data Dictionary [CONSULTANT CODE](https://www.datadictionary.nhs.uk/data_ele
 * system 1..1
 * system from ProfessionalLicense
 * value 1..1
-* type = http://terminology.hl7.org/CodeSystem/v2-0203#LN
+* type = $v2-0203#LN (exactly)
 * type ^short = "For doctors type.code = MD?"

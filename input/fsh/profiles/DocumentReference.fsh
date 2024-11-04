@@ -16,7 +16,7 @@ Description: "Extension to future UKCore DocumentReference and includes elements
 
 * subject 1..1
 * subject only Reference(Patient)
-* subject.identifier only NHSNumber
+* subject.identifier only NHSNumbers
 
 * author only Reference(Organization or Practitioner)
 * author.identifier only ProfessionalLicense or StaffEnterpriseNumber

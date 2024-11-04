@@ -18,4 +18,4 @@ Extension of [UKCore-ServiceRequest](https://simplifier.net/hl7fhirukcorer4/ukco
 
 * code 0..1
 * subject.reference 0..1 MS
-* subject.identifier only NHSNumber
+* subject.identifier only NHSNumbers

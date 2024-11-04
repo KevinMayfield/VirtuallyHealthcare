@@ -9,5 +9,5 @@ Use ODS Site code relevant for organisation. E.g. Use Mid Yorkshire Hospitals NH
 """
 
 * system 1..1
-* system = "https://fhir.nhs.uk/Id/ods-site-code"
+* system = "https://fhir.nhs.uk/Id/ods-site-code" (exactly)
 * value 1..1

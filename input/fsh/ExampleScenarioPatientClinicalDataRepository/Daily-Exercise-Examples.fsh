@@ -15,8 +15,8 @@ Usage: #example
 * subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
 * valueQuantity.value = 9607
-* valueQuantity.code = #/day
-* valueQuantity.unit = "/day"
+* valueQuantity.code = #/d
+* valueQuantity.unit = "/d"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * device.display = "Apple Healthkit"

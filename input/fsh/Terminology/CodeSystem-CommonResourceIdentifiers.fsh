@@ -3,6 +3,8 @@ Id: UKCommonResourceIdentifiers
 Title: "UKCommonResourceIdentifiers"
 Description:  "UK Common Resource Identifiers"
 
+* ^experimental  = false
+
 * #https://emis.com/Id/Event/DBID "EMIS Event DBID"
     "**Unofficial** Is known in EMIS IM1 as Event DBID"
 * #https://emis.com/Id/Event/GUID "EMIS Event GUID"

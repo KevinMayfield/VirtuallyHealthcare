@@ -3,6 +3,8 @@ Id: medical-record-system
 Title: "Medical Record System"
 Description:  "Medical Record Systems"
 
+* ^experimental  = false
+
 * #https://emis.com/Id/Patient/AccessIdentityGuid "EMIS PFS Access Identity Guid"
     "**Unofficial** Is known in EMIS PFS as Access Identity Guid. This may change if the patients access is revoked."
 * #https://emis.com/Id/Patient/DBID "EMIS Patient DBID"

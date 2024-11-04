@@ -12,5 +12,5 @@ HL7 v3/OID: 1.2.826.0.1285.0.2.0.67
 
 
 * system 1..1
-* system = "https://fhir.nhs.uk/Id/sds-role-profile-id"
+* system = "https://fhir.nhs.uk/Id/sds-role-profile-id" (exactly)
 * value 1..1

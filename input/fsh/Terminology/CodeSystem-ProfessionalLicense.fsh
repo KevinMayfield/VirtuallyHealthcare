@@ -3,6 +3,8 @@ Id: ProfessionalLicense
 Title: "UK Professional License"
 Description:  "UK Professional License"
 
+* ^experimental  = false
+
 * #https://fhir.hl7.org.uk/Id/gmp-number "General Medical Practitioner"
     "General Medical Practitioner Code GENERAL MEDICAL PRACTITIONER PPD CODE. Formerly called GP General National Code (GNC)."
 * #https://fhir.hl7.org.uk/Id/gmc-number "General Medical Council Code"

@@ -7,5 +7,5 @@ NHS Data Dictionary [ORGANISATION_CODE](https://www.datadictionary.nhs.uk/attrib
 """
 
 * system 1..1
-* system = "https://fhir.nhs.uk/Id/ods-organization-code"
+* system = "https://fhir.nhs.uk/Id/ods-organization-code" (exactly)
 * value 1..1

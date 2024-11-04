@@ -29,16 +29,16 @@ Usage: #example
   * title = "Medication Summary"
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul>
-                                                            <li>Aspirin</li>
-                                                            </ul></div>"
+<li>Aspirin</li>
+</ul></div>"
   * code = http://loinc.org#10160-0 "History of Medication use Narrative"
 
 * section[+]
   * title = "Allergies and Intolerances"
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul>
-                                                            <li>Nil</li>
-                                                            </ul></div>"
+<li>Nil</li>
+</ul></div>"
   * code = http://loinc.org#48765-2 "Allergies and adverse reactions Document"
 
 
@@ -46,16 +46,15 @@ Usage: #example
   * title = "Advance Directives"
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table>
-                                                            <thead>
-                                                            <tr>
-                                                            <th></th>
-                                                            <th></th>
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-
-                                                            </tbody>
-                                                            </table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
 </div>"
   * code = http://loinc.org#42348-3
 
@@ -63,17 +62,15 @@ Usage: #example
   * title = "Alerts"
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table>
-                                                            <thead>
-                                                            <tr>
-                                                            <th></th>
-                                                            <th></th>
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-
-
-                                                            </tbody>
-                                                            </table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+ </tbody>
+ </table>
 </div>"
   * code = http://loinc.org#104605-1
 
@@ -82,17 +79,16 @@ Usage: #example
   * title = "Individual Requirements (PRSB)"
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table>
-                                                             <thead>
-                                                             <tr>
-                                                             <th></th>
-                                                             <th></th>
-                                                             </tr>
-                                                             </thead>
-                                                             <tbody>
-
-                                                             </tbody>
-                                                             </table>
- </div>"
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>"
   * code = $sct#1078911000000106
 
 
@@ -100,17 +96,17 @@ Usage: #example
   * title = "Results"
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table>
-                                                            <thead>
-                                                            <tr>
-                                                            <th></th>
-                                                            <th></th>
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-
-                                                            </tbody>
-                                                            </table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
 </div>"
+
   * code = http://loinc.org#18776-5
 
 

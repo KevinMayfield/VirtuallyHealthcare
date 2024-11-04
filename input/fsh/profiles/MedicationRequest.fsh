@@ -15,7 +15,7 @@ Description: "Extension of UKCore-MedicationRequest and includes elements from [
 * identifier[CommonResourceIdentifiers] ^short = "Common Resource Identifiers"
 
 * subject.reference 1..1 MS
-* subject.identifier only NHSNumber
+* subject.identifier only NHSNumbers
 
 * medication[x] only CodeableConcept
 * medication[x] MS

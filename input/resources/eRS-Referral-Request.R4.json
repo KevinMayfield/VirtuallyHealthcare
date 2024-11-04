@@ -233,7 +233,7 @@
       ],
       "type": "group",
       "linkId": "performer",
-      "text": "x"
+      "text": "Organisation or clinician providing the service"
     },
     {
       "type": "choice",

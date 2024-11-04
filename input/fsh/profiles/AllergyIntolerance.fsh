@@ -16,4 +16,4 @@ Description: "Extension to UKCore AllergyIntolerance and includes elements from 
 
 * patient 1..1
 * patient only Reference(Patient)
-* patient.identifier only NHSNumber
+* patient.identifier only NHSNumbers
