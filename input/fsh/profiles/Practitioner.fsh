@@ -15,6 +15,6 @@ Description:    "Extension of UKCore Practitioner and includes elements from [IH
   ProfessionalLicense 0..* and StaffEnterpriseNumber 0..1
 
 * identifier[ProfessionalLicense] only ProfessionalLicense
-* identifier[StaffEnterpriseNumber] ^short = "Avoid using Staff Enterprise Number in FHIR Reference, LicenseNumbers are more useful to resource consumers."
+* identifier[StaffEnterpriseNumber] ^short = "Avoid using Staff Enterprise Numbers in FHIR Reference, LicenseNumbers are more useful to resource consumers."
 * identifier[StaffEnterpriseNumber] only StaffEnterpriseNumber
 
