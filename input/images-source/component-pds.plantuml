@@ -1,0 +1,21 @@
+@startuml
+
+component ClientApplication
+
+interface facade as "[[ActorDefinition-ServiceFacade.html Service Facade]]"
+note right
+[[CapabilityStatement-PDSFacade.html Facade - Personal Demographics Service - FHIR API]]
+end note
+
+component "[[ActorDefinition-DirectoryService.html Directory Service]]" as DirectoryService
+note right
+[[https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir Personal Demographics Service - FHIR API]]
+end note
+
+ClientApplication -d-> facade
+
+facade -d-> DirectoryService
+
+
+
+@enduml

@@ -3,8 +3,11 @@ InstanceOf: CapabilityStatement
 Title: "Facade - Personal Demographics Service - FHIR API"
 Usage: #definition
 * description = """
+### Overview
+
 This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [Personal Demographics Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir)
 
+This facade is related to [IHE Patient Demographics Query for Mobile (PDQm)](https://profiles.ihe.net/ITI/PDQm/)
 """
 
 * name = "FacadePersonalDemographicsService"
@@ -42,6 +45,24 @@ This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [Personal Demo
 * insert Interaction(#search-type)
 
 * insert SearchParam(identifier, #token)
-* insert WithSearchParamDocumentation([[A practitioner's Identifier]])
+* insert WithSearchParamDocumentation([[A patients NHS Number e.g. `identifier=https://fhir.nhs.uk/Id/nhs-number|9876543210`]])
+* insert SearchParam(name, #string)
+* insert WithSearchParamDocumentation([[A patients name]])
+* insert SearchParam(family, #string)
+* insert WithSearchParamDocumentation([[A patients surname]])
+* insert SearchParam(given, #string)
+* insert WithSearchParamDocumentation([[A patients first name]])
+* insert SearchParam(birthdate, #date)
+* insert WithSearchParamDocumentation([[A patients date of birth]])
+* insert SearchParam(gender, #token)
+* insert WithSearchParamDocumentation([[A patients gender - administrative]])
+* insert SearchParam(death-date, #token)
+* insert WithSearchParamDocumentation([[A patients date of birth]])
+* insert SearchParam(address-postalcode, #string)
+* insert WithSearchParamDocumentation([[A patients postcode]])
+* insert SearchParam(general-practitioner, #token)
+* insert WithSearchParamDocumentation([[A patients general practice]])
+
+
 
 

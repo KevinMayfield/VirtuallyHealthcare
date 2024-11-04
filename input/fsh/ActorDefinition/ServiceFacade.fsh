@@ -3,7 +3,7 @@ InstanceOf: ActorDefinition
 Title:   "Service Facade"
 Usage:  #definition
 
-* name = "ClinicalDataService"
+* name = "ServiceFacade"
 * type = http://hl7.org/fhir/examplescenario-actor-type#system
 * status = http://hl7.org/fhir/publication-status#draft
 * description = """
@@ -15,8 +15,8 @@ This acts as an [Anti-Corruption-Layer](https://docs.aws.amazon.com/prescriptive
 * documentation = """
 This enterprise domain model is based on:
 
-- [UK SNOMED CT](https://digital.nhs.uk/services/terminology-and-classifications/snomed-ct) for our clinical terminology.
 - [NHS Data Dictionary](https://www.datadictionary.nhs.uk/) for identifiers and values, such as NHS Number, GMC, GMP, ODS, etc.
+- [UK SNOMED CT](https://digital.nhs.uk/services/terminology-and-classifications/snomed-ct) for our clinical terminology.
 - [HL7 UK Core](https://simplifier.net/HL7FHIRUKCoreR4/)
 
 This enterprise domain model is represented as HL7 FHIR R4 and (where possible) will be compatible with HL7 v2 ADT and ORU, IHE XDS and DICOM.
