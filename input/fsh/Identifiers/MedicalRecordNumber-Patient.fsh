@@ -12,5 +12,6 @@ Only use in FHIR Reference if the NHS Number is not known or unverified.
 * system 1..1
 * system ^short = "Should indicate the assigning provider of the MRN. This is provider defined."
 * value 1..1
+
 * assigner ^short = "Populate if the identifier.value is reused by multiple providers (as is the case with EMIS identifiers)"
 * assigner.identifier only OrganisationCode

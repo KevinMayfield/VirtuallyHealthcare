@@ -12,5 +12,6 @@ This is aimed at being HL7 v2 compatible, in particular HL7 v2 OBX and HL7 FHIR 
 * system 1..1
 * system from CommonResourceIdentifiers
 * value 1..1
+
 * assigner ^short = "Populate if the identifier.value is reused by multiple providers (as is the case with UUID and EMIS identifiers)"
 * assigner.identifier only OrganisationCode
