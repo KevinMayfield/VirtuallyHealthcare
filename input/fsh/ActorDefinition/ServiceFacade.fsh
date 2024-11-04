@@ -21,5 +21,5 @@ This enterprise domain model is evolving, it is based on:
 - [HL7 UK Core](https://simplifier.net/HL7FHIRUKCoreR4/)
 
 The enterprise domain model is represented as HL7 FHIR R4 and (where possible) will be compatible with HL7 v2 ADT and ORU, IHE XDS and DICOM.
-In other words we don't view HL7 (v2 + FHIR), IHE XDS and DICOM as being different, they are just different representations (i.e. pipe+hat, JSON or XML) of the same enterprise model.
+In other words we don't view HL7 (v2 + FHIR), IHE XDS and DICOM as being different, they are just different representations (i.e. pipe+hat, JSON or XML) of a similar enterprise model.
 """
