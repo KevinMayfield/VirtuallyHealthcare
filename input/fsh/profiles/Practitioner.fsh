@@ -15,5 +15,6 @@ Description:    "Extension of UKCore Practitioner and includes elements from [IH
   ProfessionalLicense 0..* and StaffEnterpriseNumber 0..1
 
 * identifier[ProfessionalLicense] only ProfessionalLicense
+* identifier[StaffEnterpriseNumber] ^short = "Avoid using Staff Enterprise Number in FHIR Reference unless an API for resolving these identifiers is publicly available. sds-user-id currently has no API and should be avoided."
 * identifier[StaffEnterpriseNumber] only StaffEnterpriseNumber
 
