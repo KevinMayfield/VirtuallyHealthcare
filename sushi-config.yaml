@@ -90,6 +90,15 @@ pages:
   Organisation-Data-Service.md:
     title: Organisation Data Service Facade (NHS England)
     generation: markdown
+  IM1-Transaction-EMIS.md:
+    title: IM1 Transaction EMIS
+    generation: markdown
+  IM1-Patient-EMIS.md:
+    title: IM1 Patient EMIS
+    generation: markdown
+  IM1-Transaction-TPP.md:
+    title: IM1 Transaction TPP
+    generation: markdown
 
 resources:
   Patient/3:
@@ -248,11 +257,14 @@ resources:
 
 menu:
   Home: index.html
-  Adaptors Documentation:
+  Adaptors:
     Personal Demographics Service: Personal-Demographics-Service.html
     Organisation Data Service: Organisation-Data-Service.html
     e-Referral Service: e-Referral-Service.html
-  Information Model:
+    IM1 Transaction - EMIS: IM1-Transaction-EMIS.html
+    IM1 Patient - EMIS: IM1-Patient-EMIS.html
+    IM1 Transaction - TPP: IM1-Transaction-TPP.html
+  Domain Model:
     Data Model: data-model.html
     Observation Panel: observation-definitions.html
   FHIR Assets: artifacts.html
