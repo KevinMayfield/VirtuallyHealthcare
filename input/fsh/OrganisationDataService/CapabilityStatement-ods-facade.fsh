@@ -10,8 +10,8 @@ This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [Organisation 
 This facade is related to [IHE Mobile Care Services Discovery (mCSD)](https://profiles.ihe.net/ITI/mCSD/index.html)
 """
 
-* name = "FacaderganisationDataService"
-* title = "Facade - rganisation Data Service - FHIR API"
+* name = "FacadeOrganisationDataService"
+* title = "Facade - Organisation Data Service - FHIR API"
 * status = #draft
 * experimental = false
 * date = "2024-10-08"
@@ -37,11 +37,11 @@ This facade is related to [IHE Mobile Care Services Discovery (mCSD)](https://pr
   Search for Organization's for a patient with a ODS Code of RR8
 
   ```
-  GET /Patient?identifier=https://fhir.nhs.uk/Id/ods-organization-code|RR8
+  GET /Organization?identifier=https://fhir.nhs.uk/Id/ods-organization-code|RR8
   ```
 
  """
-
+* insert Interaction(#read)
 * insert Interaction(#search-type)
 
 * insert SearchParam(identifier, #token)

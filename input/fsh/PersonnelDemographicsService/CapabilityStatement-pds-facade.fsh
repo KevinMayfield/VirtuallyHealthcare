@@ -42,6 +42,7 @@ This facade is related to [IHE Patient Demographics Query for Mobile (PDQm)](htt
 
  """
 
+* insert Interaction(#read)
 * insert Interaction(#search-type)
 
 * insert SearchParam(identifier, #token)

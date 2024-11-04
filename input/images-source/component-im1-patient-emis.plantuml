@@ -4,7 +4,7 @@ component ClientApplication
 
 interface facade as "[[ActorDefinition-ServiceFacade.html Service Facade]]"
 note right
-[[CapabilityStatement-IM1PartnerAPIEMISFacade.html Facade - IM1 Partner API EMIS]]
+[[CapabilityStatement-IM1PatientEMISFacade.html Facade - IM1 Partner API EMIS]]
 end note
 
 component "[[ActorDefinition-ClinicalDataRepository.html Clinical Data Repository]]" as CDR
