@@ -6,7 +6,7 @@ Clinical Data Reposotory Rachel Kanfeld
 """
 Usage: #example
 
-* identifier[nhsNumber].system = "https://fhir.nhs.uk/Id/nhs-number"
+* identifier[nhsNumber].system = $nhs-number
 * identifier[nhsNumber].value = "9876543210"
 * name.use = #usual
 * name.family = "Kanfeld"

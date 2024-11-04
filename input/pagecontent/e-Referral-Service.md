@@ -1,7 +1,7 @@
 
 ### Overview
 
-This is a NHS Information Standards compliant [facade](https://en.wikipedia.org/wiki/Facade_pattern) to [e-Referral Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
+This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [e-Referral Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
 
 ### Clinical Data Repository Model
 
