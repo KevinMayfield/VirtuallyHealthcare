@@ -81,10 +81,15 @@ pages:
   observation-definitions.md:
     title: Observation Panel
     generation: markdown
-  e-referral-service.md:
-    title: eReferral Service
+  e-Referral-Service.md:
+    title: e-Referral Service Facade (NHS England)
     generation: markdown
-
+  Personal-Demographics-Service.md:
+    title: Personal Demographics Service Facade (NHS England)
+    generation: markdown
+  Organisation-Data-Service.md:
+    title: Organisation Data Service Facade (NHS England)
+    generation: markdown
 
 resources:
   Patient/3:
@@ -243,8 +248,10 @@ resources:
 
 menu:
   Home: index.html
-  Services Documentation:
-    e-Referral Service: e-referral-service.html
+  Adaptors Documentation:
+    Personal Demographics Service: Personal-Demographics-Service.html
+    e-Referral Service: e-Referral-Service.html
+    Organisation DataService: Organisation-Data-Service.html
   Information Model:
     Data Model: data-model.html
     Observation Panel: observation-definitions.html
