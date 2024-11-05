@@ -8,11 +8,11 @@ component "[[ActorDefinition-ClinicalDataRepository.html Clinical Data Repositor
 
 component "[[ActorDefinition-EventSource.html Event Source]]" as EventSource
 
-interface "[[ActorDefinition-EventServicee.html Event Service]]" as EventServiceIn
+interface "[[ActorDefinition-EventService.html Event Service]]" as EventServiceIn
 
 component "[[ActorDefinition-EventConsumer.html Event Consumer]]" as EventConsumer
 
-interface "[[ActorDefinition-EventServicee.html Event Service]]" as EventServiceOut
+interface "[[ActorDefinition-EventService.html Event Service]]" as EventServiceOut
 
 CDR -u-> facade
 
