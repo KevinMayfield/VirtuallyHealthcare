@@ -7,6 +7,8 @@ Usage: #definition
 This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [IM1 Patient](https://digital.nhs.uk/services/gp-it-futures-systems/im1-pairing-integration/interface-mechanisms-guidance#patient)
 
 This is influenced by [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)
+
+This is not a complete description of the API and so does not represent the actual implemented API or capabilities of the GP provider. This is a facade to the GP System IM1, this is not the API provided by the GP System.
 """
 
 * name = "IM1PatientEMISFacade"

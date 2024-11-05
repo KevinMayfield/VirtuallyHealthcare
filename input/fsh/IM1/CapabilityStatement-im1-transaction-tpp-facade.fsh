@@ -3,9 +3,9 @@ InstanceOf: CapabilityStatement
 Title: "Facade - IM1 Transaction TPP"
 Usage: #definition
 * description = """
-
 This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [IM1 Transaction](https://digital.nhs.uk/services/gp-it-futures-systems/im1-pairing-integration/interface-mechanisms-guidance#transaction)
 
+This is not a complete description of the API and so does not represent the actual implemented API or capabilities of the GP provider. This is a facade to the GP System IM1, this is not the API provided by the GP System.
 """
 
 * name = "IM1TransactionTPPFacade"
@@ -32,20 +32,36 @@ This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [IM1 Transacti
 
   **Search Examples**
 
-  Search for Patient's for a patient with a NHS Number of 9876543210
+  Search for Patient's by surname
 
   ```
-  GET /Patient?identifier=https://fhir.nhs.uk/Id/nhs-number|9876543210
+  GET /Patient?family=Avocet
   ```
 
  """
 * insert Interaction(#read)
 * insert Interaction(#search-type)
 
-* insert SearchParam(identifier, #token)
-* insert WithSearchParamDocumentation([[A patients NHS Number e.g. `identifier=https://fhir.nhs.uk/Id/nhs-number|9876543210`]])
+* insert SearchParam(family, #string)
+* insert WithSearchParamDocumentation([[A patients surname]])
+* insert SearchParam(given, #string)
+* insert WithSearchParamDocumentation([[A patients first name]])
+* insert SearchParam(telecom, #token)
+* insert WithSearchParamDocumentation([[A patients phone number or email address]])
+* insert SearchParam(birthdate, #date)
+* insert WithSearchParamDocumentation([[A patients date of birth]])
+* insert SearchParam(address-postalcode, #string)
+* insert WithSearchParamDocumentation([[A patients postcode]])
+* insert SearchParam(gender, #token)
+* insert WithSearchParamDocumentation([[A patients gender - administrative]])
 
-
+* insert ResourceWithExpectation(#QuestionnaireResponse, QuestionnaireResponse , #SHALL)
+* insert WithSupportedProfile(https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse)
+* rest.resource[=]
+  * documentation = """
+Writeback clinically coded (UK SNOMED CT) consultations to TPP
+ """
+* insert Interaction(#create)
 
 
 
