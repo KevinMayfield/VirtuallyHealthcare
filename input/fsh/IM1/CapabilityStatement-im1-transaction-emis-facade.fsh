@@ -103,7 +103,7 @@ Not fully implemented, used for testing writebacks.
  """
 * insert Interaction(#search-type)
 * insert SearchParam(patient, #reference)
-* insert WithSearchParamDocumentation([[Who and/or what the composition is about]])]
+* insert WithSearchParamDocumentation([[Who and/or what the composition is about]])
 * insert SearchParam(date, #date)
 * insert WithSearchParamDocumentation([[Composition editing time]])
 
