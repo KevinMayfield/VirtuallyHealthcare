@@ -75,20 +75,17 @@ pages:
   index.md:
     title: Home
     generation: markdown
-  data-model.md:
-    title: Data Model
-    generation: markdown
-  observation-definitions.md:
-    title: Observation Panel
-    generation: markdown
-  e-Referral-Service.md:
-    title: e-Referral Service Facade (NHS England)
+  clinical-data-repository.md:
+    title: Clinical Data Repository
     generation: markdown
   Personal-Demographics-Service.md:
     title: Personal Demographics Service Facade (NHS England)
     generation: markdown
   Organisation-Data-Service.md:
     title: Organisation Data Service Facade (NHS England)
+    generation: markdown
+  e-Referral-Service.md:
+    title: e-Referral Service Facade (NHS England)
     generation: markdown
   IM1-Transaction-EMIS.md:
     title: IM1 Transaction EMIS
@@ -99,9 +96,15 @@ pages:
   IM1-Transaction-TPP.md:
     title: IM1 Transaction TPP
     generation: markdown
-  clinical-data-repository.md:
-    title: Clinical Data Repository
+  data-model.md:
+    title: Data Model
     generation: markdown
+  observation-definitions.md:
+    title: Observation Panel
+    generation: markdown
+
+
+
 
 resources:
   Patient/3:
