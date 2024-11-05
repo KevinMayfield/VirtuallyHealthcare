@@ -1,0 +1,35 @@
+@startuml
+
+component ClientApplication as "Client Application"
+
+interface facade as "[[CapabilityStatement-VH-ClinicalDataRepository.html Clinical Data Query API]]"
+
+component "[[ActorDefinition-ClinicalDataRepository.html Clinical Data Repository]]" as CDR
+
+component "[[ActorDefinition-EventSource.html Event Source]]" as EventSource
+
+interface "[[ActorDefinition-EventServicee.html Event Service]]" as EventServiceIn
+
+component "[[ActorDefinition-EventConsumer.html Event Consumer]]" as EventConsumer
+
+interface "[[ActorDefinition-EventServicee.html Event Service]]" as EventServiceOut
+
+CDR -u-> facade
+
+facade -u-> ClientApplication
+
+EventSource -r-> EventServiceIn
+EventServiceIn -r-> CDR
+
+CDR -r-> EventServiceOut
+EventServiceOut -r-> EventConsumer
+
+ note "Incoming Events" as dataIn
+ note "Outgoing Events" as dataOut
+ note "Clinical Data Sharing API" as api
+
+ dataIn .u. EventSource
+ dataOut .u. EventConsumer
+ api .d. ClientApplication
+
+@enduml

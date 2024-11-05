@@ -1,6 +1,6 @@
 @startuml
 
-component ClientApplication
+component ClientApplication as "Client Application"
 
 interface facade as "[[ActorDefinition-ServiceFacade.html Service Facade]]"
 note right

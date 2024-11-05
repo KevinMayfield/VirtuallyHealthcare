@@ -99,6 +99,9 @@ pages:
   IM1-Transaction-TPP.md:
     title: IM1 Transaction TPP
     generation: markdown
+  clinical-data-repository.md:
+    title: Clinical Data Repository
+    generation: markdown
 
 resources:
   Patient/3:
@@ -258,6 +261,7 @@ resources:
 menu:
   Home: index.html
   Adaptors:
+    Clinical Data Repository:  clinical-data-repository.html
     Personal Demographics Service: Personal-Demographics-Service.html
     Organisation Data Service: Organisation-Data-Service.html
     e-Referral Service: e-Referral-Service.html
