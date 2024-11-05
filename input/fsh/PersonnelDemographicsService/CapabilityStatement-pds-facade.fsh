@@ -62,7 +62,9 @@ This facade is related to [IHE Patient Demographics Query for Mobile (PDQm)](htt
 * insert WithSearchParamDocumentation([[A patients postcode]])
 * insert SearchParam(general-practitioner, #token)
 * insert WithSearchParamDocumentation([[A patients general practice]])
-
-
+* insert SearchParam(email, #token)
+* insert WithSearchParamDocumentation([[A patients email address]])
+* insert SearchParam(phone, #token)
+* insert WithSearchParamDocumentation([[A patients phone number]])
 
 
