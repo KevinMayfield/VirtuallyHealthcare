@@ -3,7 +3,6 @@ InstanceOf: CapabilityStatement
 Title: "Facade - Organisation Data Service - FHIR API"
 Usage: #definition
 * description = """
-### Overview
 
 This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir)
 

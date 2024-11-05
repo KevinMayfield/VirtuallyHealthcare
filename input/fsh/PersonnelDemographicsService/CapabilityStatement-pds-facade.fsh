@@ -3,7 +3,6 @@ InstanceOf: CapabilityStatement
 Title: "Facade - Personal Demographics Service - FHIR API"
 Usage: #definition
 * description = """
-### Overview
 
 This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [Personal Demographics Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir)
 

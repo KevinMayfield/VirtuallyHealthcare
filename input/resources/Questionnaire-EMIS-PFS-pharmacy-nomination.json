@@ -1,0 +1,30 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "PharmacyNomination",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2024-05-12T15:03:19.365Z",
+    "profile": [
+      "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"
+    ]
+  },
+  "url": "https://fhir.virtually.healthcare/Questionnaire/PharmacyNomination",
+  "title": "Pharmacy Nomination (for EMIS PFS)",
+  "status": "draft",
+  "publisher": "Virtually Healthcare",
+  "purpose": "Wrapper for EMIS PFS Pharmacy Nomination ",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Pharmacy ODS Code",
+      "type": "string",
+      "required": true
+    },
+    {
+      "linkId": "2",
+      "text": "Pharmacy Postcode",
+      "type": "string",
+      "required": true
+    }
+  ]
+}

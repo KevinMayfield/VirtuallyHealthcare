@@ -3,7 +3,6 @@ InstanceOf: CapabilityStatement
 Title: "Facade - IM1 Transaction EMIS"
 Usage: #definition
 * description = """
-### Overview
 
 This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [IM1 Transaction](https://digital.nhs.uk/services/gp-it-futures-systems/im1-pairing-integration/interface-mechanisms-guidance#transaction)
 

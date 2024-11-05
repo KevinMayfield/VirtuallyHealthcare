@@ -1,0 +1,40 @@
+{
+  "resourceType": "Encounter",
+  "id": "93d2c059-a934-4796-827b-dee1158cc4dc",
+  "meta": {
+    "lastUpdated": "2005-01-14T00:00:00.000+00:00"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "325851000000107",
+          "display": "Consultation"
+        }
+      ],
+      "text": "MITCHELL, Jean (Mrs)"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/1bec52a2-1bea-452f-a6ba-5eea5f97a24e"
+  },
+  "participant": [
+    {
+      "individual": {
+        "reference": "Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+        "display": "Ms SpectraTest Test (Partner Programme Test 04)"
+      }
+    }
+  ],
+  "period": {
+    "start": "2002-05-03T00:00:00+00:00"
+  },
+  "location": [
+    {
+      "location": {
+        "display": "EMIS PCS Test Practice 1"
+      }
+    }
+  ]
+}
