@@ -27,6 +27,10 @@ The following standards can be supported:
 
 ### Outgoing Events
 
+The following is supported:
+
+- Consultation write backs to EMIS and TPP via IM1
+
 The following standards can be supported:
 
 - HL7 v2 Admission, Discharge and Transfers (ADT), [IHE Patient Identifier Cross-referencing (PIX)](https://profiles.ihe.net/ITI/TF/Volume1/ch-5.html) and/or [IHE Patient Administration Management (PAM)](https://profiles.ihe.net/ITI/TF/Volume1/ch-14.html) following **NHS England HL7 v2 (2.4) ADT Messaging Specification**
