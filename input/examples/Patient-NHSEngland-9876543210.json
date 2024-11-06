@@ -38,28 +38,6 @@
       ]
     },
     {
-      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSCommunication",
-      "extension": [
-        {
-          "url": "language",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage",
-                "version": "1.0.0",
-                "code": "q4",
-                "display": "British Sign Language"
-              }
-            ]
-          }
-        },
-        {
-          "url": "interpreterRequired",
-          "valueBoolean": false
-        }
-      ]
-    },
-    {
       "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference",
       "extension": [
         {
@@ -157,6 +135,20 @@
     }
   ],
   "multipleBirthInteger": 1,
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "version": "1.0.0",
+            "code": "bfi",
+            "display": "British Sign Language"
+          }
+        ]
+      }
+    }
+  ],
   "generalPractitioner": [
     {
       "id": "1drp",
