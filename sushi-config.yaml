@@ -8,9 +8,9 @@ FSHOnly: false
   # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: virtually.healthcare
 canonical: https://fhir.virtually.healthcare
-name: Virtually Healthcare Implementation Guide
+name: Virtually Healthcare HL7 FHIR Implementation Guide
 
-title: Virtually Healthcare Implementation Guide
+title: Virtually Healthcare HL7 FHIR Implementation Guide
 
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft
