@@ -26,7 +26,9 @@ This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [Personal Demo
 
 ### PDS RelatedPerson Conversions
 
-| PDS FHIR RelatedPerson     | Domain Model FHIR RelatedPerson |
-|----------------------------|---------------------------------|
-| patient.identifier         | identifier                      |
-| queryParameter `nhsNumber` | patient.identifier              |
+| PDS FHIR RelatedPerson                                                                   | Domain Model FHIR RelatedPerson |
+|------------------------------------------------------------------------------------------|---------------------------------|
+| patient.identifier                                                                       | identifier                      |
+| queryParameter `nhsNumber`                                                               | patient.identifier              |
+| relationship.coding.system = http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype | Changed to    http://terminology.hl7.org/CodeSystem/v3-RoleClass                  | 
+| N code (next of kin)                                                                     | changed to NOK | 

@@ -81,3 +81,12 @@ This facade is related to [IHE Patient Demographics Query for Mobile (PDQm)](htt
 
 * insert SearchParam(patient:identifier, #token)
 * insert WithSearchParamDocumentation([[The patient identifier that is the subject of the questionnaire response, e.g. `patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9449304424`]])
+
+
+* insert ResourceWithExpectation(#RelatedPerson,RelatedPerson , #SHALL)
+* insert WithSupportedProfile(https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson)
+
+* insert Interaction(#search-type)
+
+* insert SearchParam(patient:identifier, #token)
+* insert WithSearchParamDocumentation([[The patient identifier this related person is related to, e.g. `patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9730906181`]])

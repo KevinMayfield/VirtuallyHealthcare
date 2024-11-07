@@ -1,0 +1,62 @@
+{
+  "resourceType": "RelatedPerson",
+  "id": "CE234750",
+  "meta": {
+    "profile": [
+      "https://fhir.virtually.healthcare/StructureDefinition/RelatedPerson"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9730906203"
+    }
+  ],
+  "active": true,
+  "patient": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9730906181"
+    }
+  },
+  "relationship": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole",
+          "code": "Carer",
+          "display": "Carer of patient"
+        },
+        {
+          "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole",
+          "code": "Agent",
+          "display": "Agent of patient"
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code": "NOK",
+          "display": "next of kin"
+        }
+      ]
+    }
+  ],
+  "name": [
+    {
+      "use": "usual",
+      "family": "LALLY",
+      "given": [
+        "Mathew",
+        "Gerard"
+      ],
+      "prefix": [
+        "Mr"
+      ],
+      "period": {
+        "start": "2024-02-21"
+      }
+    }
+  ],
+  "period": {
+    "start": "2024-02-21"
+  }
+}
