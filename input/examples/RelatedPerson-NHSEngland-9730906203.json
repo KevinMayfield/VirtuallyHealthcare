@@ -23,12 +23,12 @@
     {
       "coding": [
         {
-          "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole",
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
           "code": "Carer",
           "display": "Carer of patient"
         },
         {
-          "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole",
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
           "code": "Agent",
           "display": "Agent of patient"
         },
