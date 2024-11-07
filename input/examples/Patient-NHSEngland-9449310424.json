@@ -1,0 +1,229 @@
+{
+  "resourceType": "Patient",
+  "id": "9449310416",
+  "meta": {
+    "versionId": "96",
+    "security": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+        "code": "U",
+        "display": "unrestricted"
+      }
+    ],
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Patient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization",
+      "valueReference": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "FEC09"
+        }
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference",
+      "extension": [
+        {
+          "url": "PreferredContactMethod",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod",
+                "code": "1",
+                "display": "Letter"
+              }
+            ]
+          }
+        },
+        {
+          "url": "PreferredContactTimes",
+          "valueString": "Not after 7pm"
+        },
+        {
+          "url": "PreferredWrittenCommunicationFormat",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat",
+                "code": "13",
+                "display": "Audio tape"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "use": "old",
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449310424"
+    }
+  ],
+  "name": [
+    {
+      "id": "frs0",
+      "use": "usual",
+      "family": "automation edited",
+      "given": [
+        "pdsautomation",
+        "edited"
+      ],
+      "prefix": [
+        "MR"
+      ],
+      "period": {
+        "start": "2024-10-18"
+      }
+    }
+  ],
+  "telecom": [
+    {
+      "id": "DF8EFBCE",
+      "system": "phone",
+      "value": "9988774455",
+      "use": "mobile",
+      "period": {
+        "start": "2024-05-07"
+      }
+    },
+    {
+      "id": "8EFC6313",
+      "system": "email",
+      "value": "work@gmail.com",
+      "use": "work",
+      "period": {
+        "start": "2024-05-07"
+      }
+    },
+    {
+      "id": "7FE84ECF",
+      "system": "phone",
+      "value": "9988774455",
+      "use": "work",
+      "period": {
+        "start": "2024-05-07"
+      }
+    },
+    {
+      "id": "921AEEB0",
+      "system": "phone",
+      "value": "234578902345",
+      "use": "home",
+      "period": {
+        "start": "2024-08-13"
+      }
+    },
+    {
+      "id": "9FC06FC6",
+      "system": "email",
+      "value": "hometest@gmail.com",
+      "use": "home",
+      "period": {
+        "start": "2024-05-07"
+      }
+    }
+  ],
+  "gender": "male",
+  "birthDate": "2007-03-28",
+  "address": [
+    {
+      "id": "goml",
+      "extension": [
+        {
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey",
+          "extension": [
+            {
+              "url": "type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType",
+                    "code": "PAF"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "value",
+              "valueString": "07356884"
+            }
+          ]
+        },
+        {
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey",
+          "extension": [
+            {
+              "url": "type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType",
+                    "code": "UPRN"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "value",
+              "valueString": "100061415468"
+            }
+          ]
+        }
+      ],
+      "use": "home",
+      "line": [
+        "153 Craddocks Avenue",
+        "ASHTEAD"
+      ],
+      "postalCode": "KT21 1NT",
+      "period": {
+        "start": "2024-05-02"
+      }
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "version": "1.0.0",
+            "code": "fr",
+            "display": "French"
+          }
+        ]
+      }
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "id": "dpsw",
+      "type": "Organization",
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "E82665",
+        "period": {
+          "start": "2007-11-08"
+        }
+      }
+    }
+  ],
+  "link": [
+    {
+      "other": {
+        "identifier": {
+          "use": "official",
+          "system": "https://fhir.nhs.uk/Id/nhs-number",
+          "value": "9449310416"
+        }
+      },
+      "type": "replaced-by"
+    }
+  ]
+}
