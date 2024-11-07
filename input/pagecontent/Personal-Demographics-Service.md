@@ -24,3 +24,9 @@ This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [Personal Demo
 | extension[UKCore-MedicalApplianceSupplier] | Removed and converted to a QuestionnaireResponse[PatientPreferences]                                                                                            |
 | extension[UKCore-AddressKey] | Converted from valueCoding to valueCodeableConcept                                                                                                              |
 
+### PDS RelatedPerson Conversions
+
+| PDS FHIR RelatedPerson     | Domain Model FHIR RelatedPerson |
+|----------------------------|---------------------------------|
+| patient.identifier         | identifier                      |
+| queryParameter `nhsNumber` | patient.identifier              |

@@ -1,0 +1,125 @@
+{
+  "resourceType": "Patient",
+  "id": "9730906181",
+  "meta": {
+    "versionId": "7",
+    "security": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+        "code": "U",
+        "display": "unrestricted"
+      }
+    ],
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Patient"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9730906181"
+    }
+  ],
+  "name": [
+    {
+      "id": "lhIkm",
+      "use": "usual",
+      "family": "HAMER",
+      "given": [
+        "Gus",
+        "Eric"
+      ],
+      "prefix": [
+        "MR"
+      ],
+      "period": {
+        "start": "1995-10-13"
+      }
+    }
+  ],
+  "telecom": [
+    {
+      "id": "D0B760DF",
+      "system": "phone",
+      "value": "07890123456",
+      "use": "mobile",
+      "period": {
+        "start": "2024-03-12"
+      }
+    },
+    {
+      "id": "6E248B80",
+      "system": "phone",
+      "value": "07789123456",
+      "use": "work",
+      "period": {
+        "start": "2024-03-12"
+      }
+    },
+    {
+      "id": "BB753B60",
+      "system": "email",
+      "value": "abc@nhs.net",
+      "use": "work",
+      "period": {
+        "start": "2024-03-12"
+      }
+    },
+    {
+      "id": "23817ACF",
+      "system": "email",
+      "value": "abcd@gmail.com",
+      "use": "home",
+      "period": {
+        "start": "2024-03-12"
+      }
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1987-11-18",
+  "address": [
+    {
+      "id": "TvMjK",
+      "extension": [
+        {
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey",
+          "extension": [
+            {
+              "url": "type",
+              "valueCoding": {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType",
+                "code": "PAF"
+              }
+            },
+            {
+              "url": "value",
+              "valueString": "6297124"
+            }
+          ]
+        }
+      ],
+      "use": "home",
+      "line": [
+        "3 HIGH STREET",
+        "BARTON-UPON-HUMBER"
+      ],
+      "postalCode": "DN18 5PA",
+      "period": {
+        "start": "2000-04-29"
+      }
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "id": "DPNiM",
+      "type": "Organization",
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "A20047",
+        "period": {
+          "start": "2015-08-10"
+        }
+      }
+    }
+  ]
+}
