@@ -1,0 +1,30 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "PDSPatientPreferences",
+  "meta": {
+    "profile": [
+      "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"
+    ]
+  },
+  "url": "https://fhir.virtually.healthcare/Questionnaire/PDSPatientPreferences",
+  "title": "PDS Patient Preferences",
+  "status": "draft",
+  "description": "Refactor of PDS Demographics to split out none demographic items and simplify API interactions",
+  "item": [
+    {
+      "type": "reference",
+      "linkId": "nominatedPharmacy",
+      "text": "Nominated Pharmacy"
+    },
+    {
+      "type": "reference",
+      "linkId": "medicalApplianceSupplier",
+      "text": "Medical Appliance Supplier"
+    },
+    {
+      "type": "boolean",
+      "linkId": "interpreterRequired",
+      "text": "Interpreter Required"
+    }
+  ]
+}

@@ -68,3 +68,16 @@ This facade is related to [IHE Patient Demographics Query for Mobile (PDQm)](htt
 * insert WithSearchParamDocumentation([[A patients phone number]])
 
 
+* insert ResourceWithExpectation(#QuestionnaireResponse,QuestionnaireResponse , #SHALL)
+* insert WithSupportedProfile(https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse)
+
+* insert Interaction(#search-type)
+
+* insert SearchParam(questionnaire, #reference)
+* insert WithSearchParamDocumentation([[The questionnaire the answers are provided for, e.g. `questionnaire=https://fhir.virtually.healthcare/Questionnaire/PDSPatientPreferences`]])
+
+* insert SearchParam(patient, #reference)
+* insert WithSearchParamDocumentation([[The patient that is the subject of the questionnaire response, e.g. `patient=Patient/9449304424`]])
+
+* insert SearchParam(patient:identifier, #token)
+* insert WithSearchParamDocumentation([[The patient identifier that is the subject of the questionnaire response, e.g. `patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9449304424`]])

@@ -133,6 +133,10 @@ resources:
     exampleBoolean: true
   Patient/9876543210:
     name: Patient NHSEngland - Matthew Sheppard (9876543210)
+    description: Patient [NHS England PDS FHIR Api - OAS Specification](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir) Matthew Sheppard (9876543210)
+    exampleBoolean: true
+  Patient/9449304424:
+    name: Patient NHSEngland - COMFORT26th Jones26th (9449304424)
     description: Patient [NHS England PDS FHIR Api - Int Environment](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir) Matthew Sheppard (9876543210)
     exampleBoolean: true
   Condition/3150:
@@ -226,6 +230,10 @@ resources:
   Questionnaire/eRS-Referral-Request:
     name: Questionnaire-eRSReferralRequest
     description: Data capture definition for [A011 Create Referral (Deprecated)](https://developer.nhs.uk/apis/e-Referrals/explore_endpoint_a011.html)
+    exampleBoolean: false
+  Questionnaire/PDSPatientPreferences:
+    name: Questionnaire-PDSPatientPreferences
+    description: PDS Patient Preferences - refactor of none demographics extensions in PDS Patient API
     exampleBoolean: false
   Task/Task-EMIS-PFS-Prescription-Refill:
     name: Task-EMIS-PFS-Prescription-Refill

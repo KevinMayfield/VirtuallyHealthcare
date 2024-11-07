@@ -1,0 +1,58 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "9449304424",
+  "meta": {
+    "versionId": "219",
+    "profile": [
+      "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"
+    ]
+  },
+  "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/PDSPatientPreferences",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/9449304424",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449304424"
+    }
+  },
+  "item": [
+    {
+      "linkId": "nominatedPharmacy",
+      "text": "Nominated Pharmacy",
+      "answer": [
+        {
+          "valueReference": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "FH734"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "medicalApplianceSupplier",
+      "text": "Medical Appliance Supplier",
+      "answer": [
+        {
+          "valueReference": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "FC850"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "interpreterRequired",
+      "text": "Interpreter Required",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    }
+  ]
+}
