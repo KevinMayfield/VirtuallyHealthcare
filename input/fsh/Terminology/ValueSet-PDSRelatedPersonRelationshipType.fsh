@@ -23,6 +23,7 @@ Extracted from [PDS FHIR API - Get a patient's related people](https://digital.n
 * $RoleCode#BRO
 * $RoleCode#FAMMEMB
 * $RoleCode#ONESELF
+* $RoleCode#NOK
 
 * http://terminology.hl7.org/CodeSystem/v2-0131#U
 
