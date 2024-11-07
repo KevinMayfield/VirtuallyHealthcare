@@ -30,8 +30,8 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  fhir.r4.ukcore.stu2:
-    version: 2.1.0
+  fhir.r4.ukcore.stu3.currentbuild:
+    version: 0.0.15-pre-release
     uri: https://simplifier.net/guide/ukcoreversionhistory
   hl7.fhir.uv.sdc:
    version: 3.0.0
