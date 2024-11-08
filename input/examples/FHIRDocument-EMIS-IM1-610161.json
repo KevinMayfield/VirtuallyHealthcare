@@ -101,7 +101,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Lives alone - help available&amp;lt;/b&amp;gt;</p><p>&amp;lt;b&amp;gt;No nervous symptoms&amp;lt;/b&amp;gt;</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Lives alone - help available</p><p>No nervous symptoms</p></div>"
             },
             "entry": [
               {
@@ -135,7 +135,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Alcohol consumption, 1 units/week&amp;lt;/b&amp;gt;</p><p>&amp;lt;b&amp;gt;District nurse attends, 0 times/week&amp;lt;/b&amp;gt;</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Alcohol consumption, 1 units/week</p><p>District nurse attends, 0 times/week</p></div>"
             },
             "entry": [
               {
@@ -164,7 +164,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Elderly health assessment&amp;lt;/b&amp;gt;</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Elderly health assessment</p></div>"
             },
             "entry": [
               {
@@ -193,7 +193,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Urine protein test negative&amp;lt;/b&amp;gt;</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Urine protein test negative</p></div>"
             },
             "entry": [
               {
@@ -217,7 +217,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Independent on stairs&amp;lt;/b&amp;gt;</p><p>&amp;lt;b&amp;gt;Bladder: fully continent&amp;lt;/b&amp;gt;</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Independent on stairs</p><p>Bladder: fully continent</p></div>"
             },
             "entry": [
               {
