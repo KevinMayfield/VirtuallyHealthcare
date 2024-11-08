@@ -1,7 +1,7 @@
 Instance: Composition-ReferralLetter-JackDawkins
 InstanceOf: Composition
-Title: "Referral Letter"
-Description: "Referral Letter"
+Title: "Composition - Referral Letter Jack Dawkins"
+Description: "Composition - Referral Letter Jack Dawkins"
 Usage: #example
 
 * status = #final
