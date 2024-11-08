@@ -1,0 +1,216 @@
+{
+  "resourceType": "Composition",
+  "id": "610161",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Composition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://fhir.virtuallyhealthcare.co.uk/LocationType",
+      "valueString": "D5753427-76EC-48E8-AB19-7F3308D5CA3D"
+    }
+  ],
+  "identifier": {
+    "system": "https://emis.com/Id/Consultation/GUID",
+    "value": "7c810de8-f2f0-437c-af75-8dd3daafb0a2",
+    "assigner": {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "F83004"
+      }
+    }
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "823651000000106",
+        "display": "Clinical note"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/610"
+  },
+  "date": "2004-07-23T00:00:00+00:00",
+  "author": [
+    {
+      "reference": "Practitioner/162",
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+        "value": "G7321704"
+      },
+      "display": "Nurse Pauline Steele"
+    }
+  ],
+  "title": "Clinical note",
+  "section": [
+    {
+      "title": "Follow up",
+      "code": {
+        "coding": [
+          {
+            "system": "https://emis.com/Id/SectionHeader",
+            "code": "Follow up",
+            "display": "Follow up"
+          }
+        ],
+        "text": "Follow up"
+      },
+      "text": {
+        "status": "generated"
+      },
+      "entry": [
+        {
+          "reference": "ServiceRequest/610163",
+          "type": "Task"
+        }
+      ]
+    },
+    {
+      "title": "History",
+      "code": {
+        "coding": [
+          {
+            "system": "https://emis.com/Id/SectionHeader",
+            "code": "History",
+            "display": "History"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "717121000000105",
+            "display": "History"
+          }
+        ],
+        "text": "History"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Lives alone - help available&amp;lt;/b&amp;gt;</p><p>&amp;lt;b&amp;gt;No nervous symptoms&amp;lt;/b&amp;gt;</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "Observation/610164",
+          "display": "Lives alone - help available"
+        },
+        {
+          "reference": "Observation/610165",
+          "display": "No nervous symptoms"
+        }
+      ]
+    },
+    {
+      "title": "Social",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social history Narrative"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "887051000000101",
+            "display": "Social Context"
+          }
+        ],
+        "text": "Social"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Alcohol consumption, 1 units/week&amp;lt;/b&amp;gt;</p><p>&amp;lt;b&amp;gt;District nurse attends, 0 times/week&amp;lt;/b&amp;gt;</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "Observation/610166",
+          "display": "Alcohol consumption, 1 units/week"
+        },
+        {
+          "reference": "Observation/610167",
+          "display": "District nurse attends, 0 times/week"
+        }
+      ]
+    },
+    {
+      "title": "Comment",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48767-8",
+            "display": "Annotation comment"
+          }
+        ],
+        "text": "Comment"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Elderly health assessment&amp;lt;/b&amp;gt;</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "Observation/610168",
+          "display": "Elderly health assessment"
+        }
+      ]
+    },
+    {
+      "title": "Result",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Relevant diagnostic tests &or laboratory data"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1082101000000102",
+            "display": "Investigation results"
+          }
+        ],
+        "text": "Result"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Urine protein test negative&amp;lt;/b&amp;gt;</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "Observation/610169",
+          "display": "Urine protein test negative"
+        }
+      ]
+    },
+    {
+      "title": "Additional",
+      "code": {
+        "coding": [
+          {
+            "system": "https://emis.com/Id/SectionHeader",
+            "code": "Additional",
+            "display": "Additional"
+          }
+        ],
+        "text": "Additional"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Independent on stairs&amp;lt;/b&amp;gt;</p><p>&amp;lt;b&amp;gt;Bladder: fully continent&amp;lt;/b&amp;gt;</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "Observation/610170",
+          "display": "Independent on stairs"
+        },
+        {
+          "reference": "Observation/610171",
+          "display": "Bladder: fully continent"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,806 @@
+{
+  "resourceType": "Bundle",
+  "id": "610161",
+  "identifier": {
+    "system": "https://emis.com/Id/Consultation/GUID",
+    "value": "7c810de8-f2f0-437c-af75-8dd3daafb0a2",
+    "assigner": {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "F83004"
+      }
+    }
+  },
+  "type": "document",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:7c810de8-f2f0-437c-af75-8dd3daafb0a2",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "610161",
+        "extension": [
+          {
+            "url": "http://fhir.virtuallyhealthcare.co.uk/LocationType",
+            "valueString": "D5753427-76EC-48E8-AB19-7F3308D5CA3D"
+          }
+        ],
+        "identifier": {
+          "system": "https://emis.com/Id/Consultation/GUID",
+          "value": "7c810de8-f2f0-437c-af75-8dd3daafb0a2",
+          "assigner": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "F83004"
+            }
+          }
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "823651000000106",
+              "display": "Clinical note"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+        },
+        "date": "2004-07-23T00:00:00+00:00",
+        "author": [
+          {
+            "reference": "Practitioner/162",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G7321704"
+            },
+            "display": "Nurse Pauline Steele"
+          }
+        ],
+        "title": "Clinical note",
+        "section": [
+          {
+            "title": "Follow up",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Follow up",
+                  "display": "Follow up"
+                }
+              ],
+              "text": "Follow up"
+            },
+            "text": {
+              "status": "generated"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:2968e190-6b1f-4da6-9e8b-f564e2edfd2f",
+                "type": "Task"
+              }
+            ]
+          },
+          {
+            "title": "History",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "History",
+                  "display": "History"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "717121000000105",
+                  "display": "History"
+                }
+              ],
+              "text": "History"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Lives alone - help available&amp;lt;/b&amp;gt;</p><p>&amp;lt;b&amp;gt;No nervous symptoms&amp;lt;/b&amp;gt;</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:87774f5b-8552-4db9-8756-e40abc46daee",
+                "type": "Observation",
+                "display": "Lives alone - help available"
+              },
+              {
+                "reference": "urn:uuid:14c911ab-2c26-4279-9c8f-c901aa906eab",
+                "type": "Observation",
+                "display": "No nervous symptoms"
+              }
+            ]
+          },
+          {
+            "title": "Social",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "29762-2",
+                  "display": "Social history Narrative"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "887051000000101",
+                  "display": "Social Context"
+                }
+              ],
+              "text": "Social"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Alcohol consumption, 1 units/week&amp;lt;/b&amp;gt;</p><p>&amp;lt;b&amp;gt;District nurse attends, 0 times/week&amp;lt;/b&amp;gt;</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:a7a53d9d-53ff-43d9-97f5-9bd98d5f8a6d",
+                "type": "Observation",
+                "display": "Alcohol consumption, 1 units/week"
+              },
+              {
+                "reference": "urn:uuid:dd01857f-5897-44d1-9994-9c24130cc72a",
+                "type": "Observation",
+                "display": "District nurse attends, 0 times/week"
+              }
+            ]
+          },
+          {
+            "title": "Comment",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48767-8",
+                  "display": "Annotation comment"
+                }
+              ],
+              "text": "Comment"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Elderly health assessment&amp;lt;/b&amp;gt;</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:363db6ed-652b-472c-9f07-080b01f06569",
+                "type": "Observation",
+                "display": "Elderly health assessment"
+              }
+            ]
+          },
+          {
+            "title": "Result",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "30954-2",
+                  "display": "Relevant diagnostic tests &or laboratory data"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1082101000000102",
+                  "display": "Investigation results"
+                }
+              ],
+              "text": "Result"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Urine protein test negative&amp;lt;/b&amp;gt;</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:1e4a65a3-b223-42c8-a0e6-77c688ae6f73",
+                "type": "Observation",
+                "display": "Urine protein test negative"
+              }
+            ]
+          },
+          {
+            "title": "Additional",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Additional",
+                  "display": "Additional"
+                }
+              ],
+              "text": "Additional"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>&amp;lt;b&amp;gt;Independent on stairs&amp;lt;/b&amp;gt;</p><p>&amp;lt;b&amp;gt;Bladder: fully continent&amp;lt;/b&amp;gt;</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:822d2fff-e1ed-49a1-b7ec-1f05a546a87a",
+                "type": "Observation",
+                "display": "Independent on stairs"
+              },
+              {
+                "reference": "urn:uuid:f0cf7c0f-8bef-49ef-9170-d771ecd7cb8a",
+                "type": "Observation",
+                "display": "Bladder: fully continent"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "00e46a1c-588d-4393-a259-b6a3656157b1",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR"
+                }
+              ]
+            },
+            "system": "https://emis.com/Id/Patient/DBID",
+            "value": "610",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "NH"
+                }
+              ]
+            },
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "2939425320"
+          },
+          {
+            "system": "https://emis.com/Id/Patient/ID",
+            "value": "F83004-610"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Dyer",
+            "given": [
+              "William"
+            ],
+            "prefix": [
+              "Mr"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1919-05-27",
+        "address": [
+          {
+            "line": [
+              "74 Victoria Street",
+              "Brockadale"
+            ],
+            "city": "Calverley",
+            "postalCode": "S72"
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "F83004"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:87774f5b-8552-4db9-8756-e40abc46daee",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "610164",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610164",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "87774f5b-8552-4db9-8756-e40abc46daee",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "13F2.",
+              "display": "Lives alone - help available"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "160725005",
+              "display": "Lives alone - help available"
+            }
+          ],
+          "text": "Lives alone - help available"
+        },
+        "subject": {
+          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+        },
+        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
+        "issued": "2004-07-23T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/162",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G7321704"
+            },
+            "display": "Nurse Pauline Steele"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:14c911ab-2c26-4279-9c8f-c901aa906eab",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "610165",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610165",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "14c911ab-2c26-4279-9c8f-c901aa906eab",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "1B11.",
+              "display": "No nervous symptoms"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "162190005",
+              "display": "No nervous symptoms"
+            }
+          ],
+          "text": "No nervous symptoms"
+        },
+        "subject": {
+          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+        },
+        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
+        "issued": "2004-07-23T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/162",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G7321704"
+            },
+            "display": "Nurse Pauline Steele"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a7a53d9d-53ff-43d9-97f5-9bd98d5f8a6d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "610166",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610166",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "a7a53d9d-53ff-43d9-97f5-9bd98d5f8a6d",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "136..",
+              "display": "Alcohol consumption"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "160573003",
+              "display": "Alcohol consumption"
+            }
+          ],
+          "text": "Alcohol consumption, 1 units/week"
+        },
+        "subject": {
+          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+        },
+        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
+        "issued": "2004-07-23T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/162",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G7321704"
+            },
+            "display": "Nurse Pauline Steele"
+          }
+        ],
+        "valueQuantity": {
+          "value": 1,
+          "unit": "units/week",
+          "system": "http://unitsofmeasure.org",
+          "code": "/wk"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:dd01857f-5897-44d1-9994-9c24130cc72a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "610167",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610167",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "dd01857f-5897-44d1-9994-9c24130cc72a",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "13G1.",
+              "display": "District nurse attends"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "160761000",
+              "display": "District nurse attends"
+            }
+          ],
+          "text": "District nurse attends, 0 times/week"
+        },
+        "subject": {
+          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+        },
+        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
+        "issued": "2004-07-23T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/162",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G7321704"
+            },
+            "display": "Nurse Pauline Steele"
+          }
+        ],
+        "valueQuantity": {
+          "value": 0,
+          "unit": "times/week",
+          "system": "http://unitsofmeasure.org",
+          "code": "times/week"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:363db6ed-652b-472c-9f07-080b01f06569",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "610168",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610168",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "363db6ed-652b-472c-9f07-080b01f06569",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "EGTONEL2",
+              "display": "Elderly health assessment"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "637681000006105",
+              "display": "Elderly health assessment"
+            }
+          ],
+          "text": "Elderly health assessment"
+        },
+        "subject": {
+          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+        },
+        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
+        "issued": "2004-07-23T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/162",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G7321704"
+            },
+            "display": "Nurse Pauline Steele"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1e4a65a3-b223-42c8-a0e6-77c688ae6f73",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "610169",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610169",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "1e4a65a3-b223-42c8-a0e6-77c688ae6f73",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "4672.",
+              "display": "Urine protein test negative"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "167273002",
+              "display": "Urine protein test negative"
+            }
+          ],
+          "text": "Urine protein test negative"
+        },
+        "subject": {
+          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+        },
+        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
+        "issued": "2004-07-23T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/162",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G7321704"
+            },
+            "display": "Nurse Pauline Steele"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:822d2fff-e1ed-49a1-b7ec-1f05a546a87a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "610170",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610170",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "822d2fff-e1ed-49a1-b7ec-1f05a546a87a",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "3992.",
+              "display": "Independent on stairs"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "165249009",
+              "display": "Independent on stairs"
+            }
+          ],
+          "text": "Independent on stairs"
+        },
+        "subject": {
+          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+        },
+        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
+        "issued": "2004-07-23T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/162",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G7321704"
+            },
+            "display": "Nurse Pauline Steele"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f0cf7c0f-8bef-49ef-9170-d771ecd7cb8a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "610171",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610171",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "f0cf7c0f-8bef-49ef-9170-d771ecd7cb8a",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "3942.",
+              "display": "Bladder: fully continent"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "165234001",
+              "display": "Bladder: fully continent"
+            }
+          ],
+          "text": "Bladder: fully continent"
+        },
+        "subject": {
+          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+        },
+        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
+        "issued": "2004-07-23T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/162",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G7321704"
+            },
+            "display": "Nurse Pauline Steele"
+          }
+        ]
+      }
+    }
+  ]
+}

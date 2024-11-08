@@ -6,7 +6,6 @@ The PRSB/Transfer of Care section headings are coming from:
 - [Outpatient Letter Headings](https://developer.nhs.uk/apis/itk3tocoutpatientletter-2-9-0/explore_headings.html)
 - [eDischarge Headings](https://developer.nhs.uk/apis/itk3tocedischarge-2-9-0/explore_headings.html)
 
-
 | [SOAP note](https://en.wikipedia.org/wiki/SOAP_note) | EMIS Header  | [HL7 IPS Section](https://build.fhir.org/ig/HL7/fhir-ips/Structure-of-the-International-Patient-Summary.html) | LOINC                                | PRSB Section Heading <br/> [Transfer of Care](https://digital.nhs.uk/services/transfer-of-care-initiative/transfer-of-care-resource-library) | SNOMED CT                                                  |
 |------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
 |                                                      | Social       | Social History                                                                                                | [29762-2](https://loinc.org/29762-2) | [Social Context](https://developer.nhs.uk/apis/itk3tocoutpatientletter-2-9-0/explore_social_context.html)                        | [887051000000101](http://snomed.info/id/887051000000101)   | 
