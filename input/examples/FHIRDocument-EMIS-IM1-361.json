@@ -1,0 +1,2242 @@
+{
+  "resourceType": "Bundle",
+  "id": "361",
+  "identifier": {
+    "system": "https://emis.com/Id/Consultation/GUID",
+    "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+    "assigner": {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "F83004"
+      }
+    }
+  },
+  "type": "document",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "361",
+        "extension": [
+          {
+            "url": "http://fhir.virtuallyhealthcare.co.uk/LocationType",
+            "valueString": "37088C97-82FC-4B3E-BDBC-28F2C03B6CB8"
+          }
+        ],
+        "identifier": {
+          "system": "https://emis.com/Id/Consultation/GUID",
+          "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "assigner": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "F83004"
+            }
+          }
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "823651000000106",
+              "display": "Clinical note"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "date": "2024-11-08T00:00:00+00:00",
+        "author": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ],
+        "title": "Clinical note",
+        "section": [
+          {
+            "title": "Result",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "30954-2",
+                  "display": "Relevant diagnostic tests &or laboratory data"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1082101000000102",
+                  "display": "Investigation results"
+                }
+              ],
+              "text": "Result"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Serum TSH (thyroid stimulating hormone) level, 12 mU/LAdded some lines of text</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:5fa04e13-3d6e-4ccd-99df-3d3ecdcb264b",
+                "type": "Observation",
+                "display": "Serum TSH (thyroid stimulating hormone) level, 12 mU/L"
+              }
+            ]
+          },
+          {
+            "title": "Examination",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Examination",
+                  "display": "Examination"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "715851000000102",
+                  "display": "Examination findings"
+                }
+              ],
+              "text": "Examination"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Body weight, 79 kg</p><p>Standing height, 179 cm</p><p>Body mass index, 24.66 kg/m2</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:d3adf58c-bd92-4d45-b598-d76e2210a4a5",
+                "type": "Observation",
+                "display": "Body weight, 79 kg"
+              },
+              {
+                "reference": "urn:uuid:f859d2b0-a68f-4ff5-aa5d-44ebeff18505",
+                "type": "Observation",
+                "display": "Standing height, 179 cm"
+              },
+              {
+                "reference": "urn:uuid:9f8e11e9-381e-434c-b9da-a309ee669f83",
+                "type": "Observation",
+                "display": "Body mass index, 24.66 kg/m2"
+              }
+            ]
+          },
+          {
+            "title": "Procedure",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Procedure",
+                  "display": "Procedure"
+                }
+              ],
+              "text": "Procedure"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Physical therapy procedure</p><p>getting hip pain</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:d7c55283-f991-4854-85f5-e6def3cc82be",
+                "type": "Observation",
+                "display": "Physical therapy procedure"
+              }
+            ]
+          },
+          {
+            "title": "Document",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Document",
+                  "display": "Document"
+                }
+              ],
+              "text": "Document"
+            },
+            "text": {
+              "status": "generated"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:900566b1-a93d-4cb1-998a-a5141e2127bf",
+                "type": "DocumentReference"
+              }
+            ]
+          },
+          {
+            "title": "Allergy",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Allergy",
+                  "display": "Allergy"
+                }
+              ],
+              "text": "Allergy"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Adverse reaction to drugaspirin</p><p>Allergy to drug</p><p>Allergy to aspirin</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:b795e488-21eb-49cb-9360-d4cb7a02dc6e",
+                "type": "Observation",
+                "display": "Adverse reaction to drug"
+              },
+              {
+                "reference": "urn:uuid:6a18b33e-23f7-4fab-9899-232e494267c7",
+                "type": "Observation",
+                "display": "Allergy to drug"
+              },
+              {
+                "reference": "urn:uuid:6e1a1654-a02b-4638-bad1-c64b65fd09f3",
+                "type": "Observation",
+                "display": "Allergy to aspirin"
+              }
+            ]
+          },
+          {
+            "title": "History",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "History",
+                  "display": "History"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "717121000000105",
+                  "display": "History"
+                }
+              ],
+              "text": "History"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Family history of alcohol misuse (Aunt)</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:552182f3-208a-479f-ad28-bca5a82e312e",
+                "type": "Observation",
+                "display": "Family history of alcohol misuse (Aunt)"
+              }
+            ]
+          },
+          {
+            "title": "Test Request",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Test Request",
+                  "display": "Test Request"
+                }
+              ],
+              "text": "Test Request"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Venous blood specimen</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:3fe68913-6016-46b1-a20a-fb97fd125ea1",
+                "type": "Observation",
+                "display": "Venous blood specimen"
+              }
+            ]
+          },
+          {
+            "title": "Comment",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48767-8",
+                  "display": "Annotation comment"
+                }
+              ],
+              "text": "Comment"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>this is a comment. steps. weight</p></div>"
+            }
+          },
+          {
+            "title": "Family History",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Family History",
+                  "display": "Family History"
+                }
+              ],
+              "text": "Family History"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>No family history diabetessome test</p><p>Family history of breast cancer (Uncle)</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:603260f4-3d90-4418-925b-4766f96f8575",
+                "type": "Observation",
+                "display": "No family history diabetes"
+              },
+              {
+                "reference": "urn:uuid:0242b574-fa7b-4614-9e7d-2a5736b58eda",
+                "type": "Observation",
+                "display": "Family history of breast cancer (Uncle)"
+              }
+            ]
+          },
+          {
+            "title": "Problem",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11450-4",
+                  "display": "Problem list"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "887151000000100",
+                  "display": "Problems and issue"
+                }
+              ],
+              "text": "Problem"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Current non-smoker</p><p>Essential hypertension</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:9c58bbb7-7211-48fc-8368-1b88d04fc6cf",
+                "type": "Observation",
+                "display": "Current non-smoker"
+              },
+              {
+                "reference": "urn:uuid:27201baa-56c6-40b2-b1b5-9dc709b50f89",
+                "type": "Observation",
+                "display": "Essential hypertension"
+              }
+            ]
+          },
+          {
+            "title": "Assessment",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Assessment",
+                  "display": "Assessment"
+                }
+              ],
+              "text": "Assessment"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Hypertension monitoring</p><p>Hypertension six month review</p><p>Medication review done</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:0abe00a6-7142-4cac-8478-042516975bf3",
+                "type": "Observation",
+                "display": "Hypertension monitoring"
+              },
+              {
+                "reference": "urn:uuid:388867f2-2e40-4b13-91e5-7bbf6b309a5b",
+                "type": "Observation",
+                "display": "Hypertension six month review"
+              },
+              {
+                "reference": "urn:uuid:b26a203d-51d9-4dfe-a6f1-143dec6a7d28",
+                "type": "Observation",
+                "display": "Medication review done"
+              }
+            ]
+          },
+          {
+            "title": "Additional",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Additional",
+                  "display": "Additional"
+                }
+              ],
+              "text": "Additional"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Hypertension resolved</p><p>Excepted from hypertension quality indicators - patient unsuitable</p><p>British or mixed British - ethnic category 2001 census</p><p>Dietary advice</p><p>Education about alcohol consumption</p><p>ECG requested</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:470190a2-309a-4f28-a107-418bfc22ba77",
+                "type": "Observation",
+                "display": "Hypertension resolved"
+              },
+              {
+                "reference": "urn:uuid:d47702bf-a108-41a2-8f1f-0e34f718a654",
+                "type": "Observation",
+                "display": "Excepted from hypertension quality indicators - patient unsuitable"
+              },
+              {
+                "reference": "urn:uuid:f47bd9a2-5de0-4598-be29-d45b242c18b7",
+                "type": "Observation",
+                "display": "British or mixed British - ethnic category 2001 census"
+              },
+              {
+                "reference": "urn:uuid:77828dc0-c740-4d22-8543-be5e44036c79",
+                "type": "Observation",
+                "display": "Dietary advice"
+              },
+              {
+                "reference": "urn:uuid:5ea579ff-88c8-4265-a539-c15d0e0ba185",
+                "type": "Observation",
+                "display": "Education about alcohol consumption"
+              },
+              {
+                "reference": "urn:uuid:22ba9307-b02e-4424-9856-3c424b2cdfe9",
+                "type": "Observation",
+                "display": "ECG requested"
+              }
+            ]
+          },
+          {
+            "title": "Social",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "29762-2",
+                  "display": "Social history Narrative"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "887051000000101",
+                  "display": "Social Context"
+                }
+              ],
+              "text": "Social"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Alcohol consumption, 0 U/week</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:01247827-f6d8-4766-bf19-97d0cb029d1a",
+                "type": "Observation",
+                "display": "Alcohol consumption, 0 U/week"
+              }
+            ]
+          },
+          {
+            "title": "Result",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "30954-2",
+                  "display": "Relevant diagnostic tests &or laboratory data"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1082101000000102",
+                  "display": "Investigation results"
+                }
+              ],
+              "text": "Result"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Serum cholesterol level, 123 mmol/L</p><p>Serum high density lipoprotein cholesterol level, 234 mmol/L</p><p>Serum creatinine level, 123 umol/L</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:9955d4bb-51fb-41c3-9e24-182eb108dfe7",
+                "type": "Observation",
+                "display": "Serum cholesterol level, 123 mmol/L"
+              },
+              {
+                "reference": "urn:uuid:02bb3059-6ff1-48af-a4ec-27afb78ef59d",
+                "type": "Observation",
+                "display": "Serum high density lipoprotein cholesterol level, 234 mmol/L"
+              },
+              {
+                "reference": "urn:uuid:44fa1523-ffef-4d71-ba05-4a38f629b02e",
+                "type": "Observation",
+                "display": "Serum creatinine level, 123 umol/L"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "9716ac93-1451-43ec-a2e0-ec0e79d36327",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR"
+                }
+              ]
+            },
+            "system": "https://emis.com/Id/Patient/DBID",
+            "value": "3",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "NH"
+                }
+              ]
+            },
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "5393501883"
+          },
+          {
+            "system": "https://emis.com/Id/Patient/ID",
+            "value": "F83004-3"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "O'Donnell",
+            "given": [
+              "Daniel"
+            ],
+            "prefix": [
+              "Mr"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1947-12-30",
+        "address": [
+          {
+            "line": [
+              "42 The Avenue",
+              "Crimbles"
+            ],
+            "city": "East Hardwick",
+            "postalCode": "WF16"
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "F83004"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5fa04e13-3d6e-4ccd-99df-3d3ecdcb264b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "364",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "364",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "5fa04e13-3d6e-4ccd-99df-3d3ecdcb264b",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "442W.",
+              "display": "Serum TSH (thyroid stimulating hormone) level"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1022791000000101",
+              "display": "Serum TSH (thyroid stimulating hormone) level"
+            }
+          ],
+          "text": "Serum TSH (thyroid stimulating hormone) level, 12 mU/L Added some lines of text"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ],
+        "valueQuantity": {
+          "value": 12,
+          "unit": "mU/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mU/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d3adf58c-bd92-4d45-b598-d76e2210a4a5",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "365",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "365",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "d3adf58c-bd92-4d45-b598-d76e2210a4a5",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "22A..",
+              "display": "Body weight"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27113001",
+              "display": "Body weight"
+            }
+          ],
+          "text": "Body weight, 79 kg"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ],
+        "valueQuantity": {
+          "value": 79,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f859d2b0-a68f-4ff5-aa5d-44ebeff18505",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "366",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "366",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "f859d2b0-a68f-4ff5-aa5d-44ebeff18505",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "229..",
+              "display": "Standing height"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "248333004",
+              "display": "Standing height"
+            }
+          ],
+          "text": "Standing height, 179 cm"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ],
+        "valueQuantity": {
+          "value": 179,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9f8e11e9-381e-434c-b9da-a309ee669f83",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "367",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "367",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "9f8e11e9-381e-434c-b9da-a309ee669f83",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "22K..",
+              "display": "Body mass index"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "60621009",
+              "display": "Body mass index"
+            }
+          ],
+          "text": "Body mass index, 24.66 kg/m2"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ],
+        "valueQuantity": {
+          "value": 24.66,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d7c55283-f991-4854-85f5-e6def3cc82be",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "368",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "368",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "d7c55283-f991-4854-85f5-e6def3cc82be",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "^ESCTPH398275",
+              "display": "Physical therapy procedure"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "91251008",
+              "display": "Physical therapy procedure"
+            }
+          ],
+          "text": "Physical therapy procedure"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b795e488-21eb-49cb-9360-d4cb7a02dc6e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "371",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "371",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "b795e488-21eb-49cb-9360-d4cb7a02dc6e",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "1Z3..",
+              "display": "Adverse reaction to drug"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "62014003",
+              "display": "Adverse reaction to drug"
+            }
+          ],
+          "text": "Adverse reaction to drug aspirin"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6a18b33e-23f7-4fab-9899-232e494267c7",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "372",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "372",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "6a18b33e-23f7-4fab-9899-232e494267c7",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "^ESCTAL688730",
+              "display": "Allergy to drug"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "416098002",
+              "display": "Allergy to drug"
+            }
+          ],
+          "text": "Allergy to drug"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6e1a1654-a02b-4638-bad1-c64b65fd09f3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "373",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "373",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "6e1a1654-a02b-4638-bad1-c64b65fd09f3",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "^ESCT1379761",
+              "display": "Allergy to aspirin"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "293586001",
+              "display": "Allergy to aspirin"
+            }
+          ],
+          "text": "Allergy to aspirin"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:552182f3-208a-479f-ad28-bca5a82e312e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "374",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "374",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "552182f3-208a-479f-ad28-bca5a82e312e",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "12X0.",
+              "display": "Family history of alcohol misuse"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "293161000000103",
+              "display": "Family history of alcohol misuse"
+            }
+          ],
+          "text": "Family history of alcohol misuse (Aunt)"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3fe68913-6016-46b1-a20a-fb97fd125ea1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "375",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "375",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "3fe68913-6016-46b1-a20a-fb97fd125ea1",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "EMISNQVE3",
+              "display": "Venous blood specimen"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "122555007",
+              "display": "Venous blood specimen"
+            }
+          ],
+          "text": "Venous blood specimen"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T00:00:00+00:00",
+        "issued": "2024-11-08T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:603260f4-3d90-4418-925b-4766f96f8575",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "377",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "377",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "603260f4-3d90-4418-925b-4766f96f8575",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "1228.",
+              "display": "No family history diabetes"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "160274005",
+              "display": "No family history diabetes"
+            }
+          ],
+          "text": "No family history diabetes some test"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0242b574-fa7b-4614-9e7d-2a5736b58eda",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "378",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "378",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "0242b574-fa7b-4614-9e7d-2a5736b58eda",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "1243.",
+              "display": "Family history of breast cancer"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "429740004",
+              "display": "Family history of breast cancer"
+            }
+          ],
+          "text": "Family history of breast cancer (Uncle)"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9c58bbb7-7211-48fc-8368-1b88d04fc6cf",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "379",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "379",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "9c58bbb7-7211-48fc-8368-1b88d04fc6cf",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "137L.",
+              "display": "Current non-smoker"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "160618006",
+              "display": "Current non-smoker"
+            }
+          ],
+          "text": "Current non-smoker"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:27201baa-56c6-40b2-b1b5-9dc709b50f89",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "381",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "381",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "27201baa-56c6-40b2-b1b5-9dc709b50f89",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "G20..",
+              "display": "Essential hypertension"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "59621000",
+              "display": "Essential hypertension"
+            }
+          ],
+          "text": "Essential hypertension"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0abe00a6-7142-4cac-8478-042516975bf3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "383",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "383",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "0abe00a6-7142-4cac-8478-042516975bf3",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "662P.",
+              "display": "Hypertension monitoring"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "275944005",
+              "display": "Hypertension monitoring"
+            }
+          ],
+          "text": "Hypertension monitoring"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:388867f2-2e40-4b13-91e5-7bbf6b309a5b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "384",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "384",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "388867f2-2e40-4b13-91e5-7bbf6b309a5b",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "662c.",
+              "display": "Hypertension six month review"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "401048005",
+              "display": "Hypertension six month review"
+            }
+          ],
+          "text": "Hypertension six month review"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b26a203d-51d9-4dfe-a6f1-143dec6a7d28",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "385",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "385",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "b26a203d-51d9-4dfe-a6f1-143dec6a7d28",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "8B3V.",
+              "display": "Medication review done"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "314530002",
+              "display": "Medication review done"
+            }
+          ],
+          "text": "Medication review done"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:470190a2-309a-4f28-a107-418bfc22ba77",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "386",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "386",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "470190a2-309a-4f28-a107-418bfc22ba77",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "212K.",
+              "display": "Hypertension resolved"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "162659009",
+              "display": "Hypertension resolved"
+            }
+          ],
+          "text": "Hypertension resolved"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d47702bf-a108-41a2-8f1f-0e34f718a654",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "387",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "387",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "d47702bf-a108-41a2-8f1f-0e34f718a654",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "9h31.",
+              "display": "Excepted from hypertension quality indicators - patient unsuitable"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "716821000000100",
+              "display": "Excepted from hypertension quality indicators - patient unsuitable"
+            }
+          ],
+          "text": "Excepted from hypertension quality indicators - patient unsuitable"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f47bd9a2-5de0-4598-be29-d45b242c18b7",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "388",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "388",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "f47bd9a2-5de0-4598-be29-d45b242c18b7",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "9i0..",
+              "display": "British or mixed British - ethnic category 2001 census"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "92391000000108",
+              "display": "British or mixed British - ethnic category 2001 census"
+            }
+          ],
+          "text": "British or mixed British - ethnic category 2001 census"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:77828dc0-c740-4d22-8543-be5e44036c79",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "389",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "389",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "77828dc0-c740-4d22-8543-be5e44036c79",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "8CA4.",
+              "display": "Dietary advice"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "11816003",
+              "display": "Dietary advice"
+            }
+          ],
+          "text": "Dietary advice"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5ea579ff-88c8-4265-a539-c15d0e0ba185",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "390",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "390",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "5ea579ff-88c8-4265-a539-c15d0e0ba185",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "8CAM.",
+              "display": "Education about alcohol consumption"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "281078001",
+              "display": "Education about alcohol consumption"
+            }
+          ],
+          "text": "Education about alcohol consumption"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:22ba9307-b02e-4424-9856-3c424b2cdfe9",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "391",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "391",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "22ba9307-b02e-4424-9856-3c424b2cdfe9",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "3211.",
+              "display": "ECG requested"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "164846002",
+              "display": "ECG requested"
+            }
+          ],
+          "text": "ECG requested"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:01247827-f6d8-4766-bf19-97d0cb029d1a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "392",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "392",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "01247827-f6d8-4766-bf19-97d0cb029d1a",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "136..",
+              "display": "Alcohol consumption"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "160573003",
+              "display": "Alcohol consumption"
+            }
+          ],
+          "text": "Alcohol consumption, 0 U/week"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ],
+        "valueQuantity": {
+          "value": 0,
+          "unit": "U/week",
+          "system": "http://unitsofmeasure.org",
+          "code": "U/week"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9955d4bb-51fb-41c3-9e24-182eb108dfe7",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "393",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "393",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "9955d4bb-51fb-41c3-9e24-182eb108dfe7",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "44P..",
+              "display": "Serum cholesterol level"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1005671000000105",
+              "display": "Serum cholesterol level"
+            }
+          ],
+          "text": "Serum cholesterol level, 123 mmol/L"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ],
+        "valueQuantity": {
+          "value": 123,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:02bb3059-6ff1-48af-a4ec-27afb78ef59d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "394",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "394",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "02bb3059-6ff1-48af-a4ec-27afb78ef59d",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "44P5.",
+              "display": "Serum high density lipoprotein cholesterol level"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1005681000000107",
+              "display": "Serum high density lipoprotein cholesterol level"
+            }
+          ],
+          "text": "Serum high density lipoprotein cholesterol level, 234 mmol/L"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ],
+        "valueQuantity": {
+          "value": 234,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:44fa1523-ffef-4d71-ba05-4a38f629b02e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "395",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "395",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "44fa1523-ffef-4d71-ba05-4a38f629b02e",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "44J3.",
+              "display": "Serum creatinine level"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1000731000000107",
+              "display": "Serum creatinine level"
+            }
+          ],
+          "text": "Serum creatinine level, 123 umol/L"
+        },
+        "subject": {
+          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ],
+        "valueQuantity": {
+          "value": 123,
+          "unit": "umol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "umol/L"
+        }
+      }
+    }
+  ]
+}
