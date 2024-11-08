@@ -73,12 +73,14 @@
               "text": "Follow up"
             },
             "text": {
-              "status": "generated"
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Coronary heart disease annual review 24/07/2005</p></div>"
             },
             "entry": [
               {
                 "reference": "urn:uuid:2968e190-6b1f-4da6-9e8b-f564e2edfd2f",
-                "type": "Task"
+                "type": "Task",
+                "display": "Coronary heart disease annual review 24/07/2005"
               }
             ]
           },
