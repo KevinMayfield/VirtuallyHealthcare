@@ -51,14 +51,14 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "urn:uuid:87808fa7-5910-4a3c-8719-d64320ef67fa"
         },
         "date": "2024-11-08T15:51:00+00:00",
         "author": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
-              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
             },
             "display": "Dr HealthOnline Test"
@@ -537,10 +537,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616",
+      "fullUrl": "urn:uuid:87808fa7-5910-4a3c-8719-d64320ef67fa",
       "resource": {
         "resourceType": "Patient",
-        "id": "e28c1e92-2d20-40f6-a5ae-324f25b27616",
+        "id": "87808fa7-5910-4a3c-8719-d64320ef67fa",
         "identifier": [
           {
             "type": {
@@ -655,13 +655,14 @@
           "text": "Serum TSH (thyroid stimulating hormone) level, 12 mU/L Added some lines of text"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -721,13 +722,14 @@
           "text": "Body weight, 79 kg"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -787,13 +789,14 @@
           "text": "Standing height, 179 cm"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -853,13 +856,14 @@
           "text": "Body mass index, 24.66 kg/m2"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -919,13 +923,14 @@
           "text": "Physical therapy procedure"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -933,6 +938,93 @@
             "display": "Dr HealthOnline Test"
           }
         ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:900566b1-a93d-4cb1-998a-a5141e2127bf",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "370",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Attachment/DBID",
+            "value": "370",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Attachment/GUID",
+            "value": "900566b1-a93d-4cb1-998a-a5141e2127bf",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "9b0g.",
+              "display": "Referral letter"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "25611000000107",
+              "display": "Referral letter"
+            }
+          ],
+          "text": "Referral Letter (08-Nov-2024) for Refer for thyroid test"
+        },
+        "subject": {
+          "reference": "Patient/3",
+          "type": "Patient"
+        },
+        "date": "2024-11-08T00:00:00.000+00:00",
+        "author": [
+          {
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ],
+        "content": [
+          {
+            "attachment": {
+              "url": "Binary/1350ff0a-9660-445d-b835-97ef764a9436",
+              "title": "2411081558_Referral Letter.rtf"
+            }
+          }
+        ],
+        "context": {
+          "event": [
+            {
+              "coding": [
+                {
+                  "system": "http://read.info/readv2",
+                  "code": "9b0g.",
+                  "display": "Referral letter"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "25611000000107",
+                  "display": "Referral letter"
+                }
+              ],
+              "text": "Referral Letter (08-Nov-2024) for Refer for thyroid test"
+            }
+          ]
+        }
       }
     },
     {
@@ -979,13 +1071,14 @@
           "text": "Adverse reaction to drug aspirin"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1039,13 +1132,14 @@
           "text": "Allergy to drug"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1099,13 +1193,14 @@
           "text": "Allergy to aspirin"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1159,13 +1254,14 @@
           "text": "Family history of alcohol misuse (Aunt)"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1219,13 +1315,14 @@
           "text": "Venous blood specimen"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T00:00:00+00:00",
         "issued": "2024-11-08T00:00:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1279,13 +1376,14 @@
           "text": "No family history diabetes some test"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1339,13 +1437,14 @@
           "text": "Family history of breast cancer (Uncle)"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1399,13 +1498,14 @@
           "text": "Current non-smoker"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1459,13 +1559,14 @@
           "text": "Essential hypertension"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1519,13 +1620,14 @@
           "text": "Hypertension monitoring"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1579,13 +1681,14 @@
           "text": "Hypertension six month review"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1639,13 +1742,14 @@
           "text": "Medication review done"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1699,13 +1803,14 @@
           "text": "Hypertension resolved"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1759,13 +1864,14 @@
           "text": "Excepted from hypertension quality indicators - patient unsuitable"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1819,13 +1925,14 @@
           "text": "British or mixed British - ethnic category 2001 census"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1879,13 +1986,14 @@
           "text": "Dietary advice"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1939,13 +2047,14 @@
           "text": "Education about alcohol consumption"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -1999,13 +2108,14 @@
           "text": "ECG requested"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -2059,13 +2169,14 @@
           "text": "Alcohol consumption, 0 U/week"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -2125,13 +2236,14 @@
           "text": "Serum cholesterol level, 123 mmol/L"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -2191,13 +2303,14 @@
           "text": "Serum high density lipoprotein cholesterol level, 234 mmol/L"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -2257,13 +2370,14 @@
           "text": "Serum creatinine level, 123 umol/L"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -2323,10 +2437,21 @@
           "text": "Test request : Full Blood Count"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
-        "issued": "2024-11-08T15:51:00.000+00:00"
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
       }
     },
     {
@@ -2373,13 +2498,14 @@
           "text": "Test request : Plasma Viscosity"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -2433,13 +2559,14 @@
           "text": "Test request : Antenatal"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -2493,13 +2620,14 @@
           "text": "Systolic arterial pressure, 117 mmHg"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"
@@ -2559,13 +2687,14 @@
           "text": "Diastolic arterial pressure, 75 mmHg"
         },
         "subject": {
-          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+          "reference": "Patient/3",
+          "type": "Patient"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/1",
+            "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/professional-code",
               "value": "25825845"

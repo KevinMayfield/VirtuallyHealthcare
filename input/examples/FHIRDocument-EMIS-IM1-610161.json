@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "610161",
+  "id": "61061",
   "meta": {
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Bundle-Document"
@@ -8,7 +8,7 @@
   },
   "identifier": {
     "system": "https://emis.com/Id/Consultation/GUID",
-    "value": "7c810de8-f2f0-437c-af75-8dd3daafb0a2",
+    "value": "e119d231-def6-43a7-af40-56d7754977bd",
     "assigner": {
       "identifier": {
         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -17,21 +17,22 @@
     }
   },
   "type": "document",
+  "timestamp": "2002-06-30T00:00:00.000+00:00",
   "entry": [
     {
-      "fullUrl": "urn:uuid:7c810de8-f2f0-437c-af75-8dd3daafb0a2",
+      "fullUrl": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
       "resource": {
         "resourceType": "Composition",
-        "id": "610161",
+        "id": "61061",
         "extension": [
           {
             "url": "http://fhir.virtuallyhealthcare.co.uk/LocationType",
-            "valueString": "D5753427-76EC-48E8-AB19-7F3308D5CA3D"
+            "valueString": "d5753427-76ec-48e8-ab19-7f3308d5ca3d"
           }
         ],
         "identifier": {
           "system": "https://emis.com/Id/Consultation/GUID",
-          "value": "7c810de8-f2f0-437c-af75-8dd3daafb0a2",
+          "value": "e119d231-def6-43a7-af40-56d7754977bd",
           "assigner": {
             "identifier": {
               "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -50,45 +51,21 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+          "reference": "urn:uuid:05cc3986-106d-4a4b-bafb-6b3fe6645d5b"
         },
-        "date": "2004-07-23T00:00:00+00:00",
+        "date": "2002-06-30T00:00:00+00:00",
         "author": [
           {
-            "reference": "Practitioner/162",
+            "reference": "Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-              "value": "G7321704"
+              "value": "G8667998"
             },
-            "display": "Nurse Pauline Steele"
+            "display": "Mrs Jean Mitchell"
           }
         ],
         "title": "Clinical note",
         "section": [
-          {
-            "title": "Follow up",
-            "code": {
-              "coding": [
-                {
-                  "system": "https://emis.com/Id/SectionHeader",
-                  "code": "Follow up",
-                  "display": "Follow up"
-                }
-              ],
-              "text": "Follow up"
-            },
-            "text": {
-              "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Coronary heart disease annual review 24/07/2005</p></div>"
-            },
-            "entry": [
-              {
-                "reference": "urn:uuid:2968e190-6b1f-4da6-9e8b-f564e2edfd2f",
-                "type": "Task",
-                "display": "Coronary heart disease annual review 24/07/2005"
-              }
-            ]
-          },
           {
             "title": "History",
             "code": {
@@ -108,18 +85,42 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Lives alone - help available</p><p>No nervous symptoms</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Breathless - mild exertion</p></div>"
             },
             "entry": [
               {
-                "reference": "urn:uuid:87774f5b-8552-4db9-8756-e40abc46daee",
+                "reference": "urn:uuid:b08cd0b8-048b-4dca-9e43-02cdd4ddc3de",
                 "type": "Observation",
-                "display": "Lives alone - help available"
-              },
+                "display": "Breathless - mild exertion"
+              }
+            ]
+          },
+          {
+            "title": "Examination",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Examination",
+                  "display": "Examination"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "715851000000102",
+                  "display": "Examination findings"
+                }
+              ],
+              "text": "Examination"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>O/E - weight, 70 Kg</p></div>"
+            },
+            "entry": [
               {
-                "reference": "urn:uuid:14c911ab-2c26-4279-9c8f-c901aa906eab",
+                "reference": "urn:uuid:609ba048-2eca-43c9-b4a1-85fa695c572c",
                 "type": "Observation",
-                "display": "No nervous symptoms"
+                "display": "O/E - weight, 70 Kg"
               }
             ]
           },
@@ -142,18 +143,13 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Alcohol consumption, 1 units/week</p><p>District nurse attends, 0 times/week</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Alcohol consumption, 0 units/week</p></div>"
             },
             "entry": [
               {
-                "reference": "urn:uuid:a7a53d9d-53ff-43d9-97f5-9bd98d5f8a6d",
+                "reference": "urn:uuid:829f303a-55c5-402b-bfb8-f8f892b92af6",
                 "type": "Observation",
-                "display": "Alcohol consumption, 1 units/week"
-              },
-              {
-                "reference": "urn:uuid:dd01857f-5897-44d1-9994-9c24130cc72a",
-                "type": "Observation",
-                "display": "District nurse attends, 0 times/week"
+                "display": "Alcohol consumption, 0 units/week"
               }
             ]
           },
@@ -171,44 +167,8 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Elderly health assessment</p></div>"
-            },
-            "entry": [
-              {
-                "reference": "urn:uuid:363db6ed-652b-472c-9f07-080b01f06569",
-                "type": "Observation",
-                "display": "Elderly health assessment"
-              }
-            ]
-          },
-          {
-            "title": "Result",
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "30954-2",
-                  "display": "Relevant diagnostic tests &or laboratory data"
-                },
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "1082101000000102",
-                  "display": "Investigation results"
-                }
-              ],
-              "text": "Result"
-            },
-            "text": {
-              "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Urine protein test negative</p></div>"
-            },
-            "entry": [
-              {
-                "reference": "urn:uuid:1e4a65a3-b223-42c8-a0e6-77c688ae6f73",
-                "type": "Observation",
-                "display": "Urine protein test negative"
-              }
-            ]
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <i> In pain</i></p></div>"
+            }
           },
           {
             "title": "Additional",
@@ -224,18 +184,18 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Independent on stairs</p><p>Bladder: fully continent</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Beta blocker contraindicated</p><p>CHD monitoring</p></div>"
             },
             "entry": [
               {
-                "reference": "urn:uuid:822d2fff-e1ed-49a1-b7ec-1f05a546a87a",
+                "reference": "urn:uuid:586be240-ef5b-43ff-9c4d-2b710c5c17fe",
                 "type": "Observation",
-                "display": "Independent on stairs"
+                "display": "Beta blocker contraindicated"
               },
               {
-                "reference": "urn:uuid:f0cf7c0f-8bef-49ef-9170-d771ecd7cb8a",
+                "reference": "urn:uuid:be3f4196-dee7-42e4-b384-b230a2433ecf",
                 "type": "Observation",
-                "display": "Bladder: fully continent"
+                "display": "CHD monitoring"
               }
             ]
           }
@@ -243,10 +203,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1",
+      "fullUrl": "urn:uuid:05cc3986-106d-4a4b-bafb-6b3fe6645d5b",
       "resource": {
         "resourceType": "Patient",
-        "id": "00e46a1c-588d-4393-a259-b6a3656157b1",
+        "id": "05cc3986-106d-4a4b-bafb-6b3fe6645d5b",
         "identifier": [
           {
             "type": {
@@ -318,14 +278,14 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:87774f5b-8552-4db9-8756-e40abc46daee",
+      "fullUrl": "urn:uuid:b08cd0b8-048b-4dca-9e43-02cdd4ddc3de",
       "resource": {
         "resourceType": "Observation",
-        "id": "610164",
+        "id": "61062",
         "identifier": [
           {
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "610164",
+            "value": "61062",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -335,7 +295,7 @@
           },
           {
             "system": "https://emis.com/Id/Event/GUID",
-            "value": "87774f5b-8552-4db9-8756-e40abc46daee",
+            "value": "b08cd0b8-048b-4dca-9e43-02cdd4ddc3de",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -349,43 +309,44 @@
           "coding": [
             {
               "system": "http://read.info/readv2",
-              "code": "13F2.",
-              "display": "Lives alone - help available"
+              "code": "1733.",
+              "display": "Breathless - mild exertion"
             },
             {
               "system": "http://snomed.info/sct",
-              "code": "160725005",
-              "display": "Lives alone - help available"
+              "code": "161940008",
+              "display": "Breathless - mild exertion"
             }
           ],
-          "text": "Lives alone - help available"
+          "text": "Breathless - mild exertion"
         },
         "subject": {
-          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+          "reference": "Patient/610",
+          "type": "Patient"
         },
-        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
-        "issued": "2004-07-23T00:00:00.000+00:00",
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/162",
+            "reference": "Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-              "value": "G7321704"
+              "value": "G8667998"
             },
-            "display": "Nurse Pauline Steele"
+            "display": "Mrs Jean Mitchell"
           }
         ]
       }
     },
     {
-      "fullUrl": "urn:uuid:14c911ab-2c26-4279-9c8f-c901aa906eab",
+      "fullUrl": "urn:uuid:609ba048-2eca-43c9-b4a1-85fa695c572c",
       "resource": {
         "resourceType": "Observation",
-        "id": "610165",
+        "id": "61063",
         "identifier": [
           {
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "610165",
+            "value": "61063",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -395,7 +356,7 @@
           },
           {
             "system": "https://emis.com/Id/Event/GUID",
-            "value": "14c911ab-2c26-4279-9c8f-c901aa906eab",
+            "value": "609ba048-2eca-43c9-b4a1-85fa695c572c",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -409,43 +370,50 @@
           "coding": [
             {
               "system": "http://read.info/readv2",
-              "code": "1B11.",
-              "display": "No nervous symptoms"
+              "code": "22A..",
+              "display": "Body weight"
             },
             {
               "system": "http://snomed.info/sct",
-              "code": "162190005",
-              "display": "No nervous symptoms"
+              "code": "27113001",
+              "display": "Body weight"
             }
           ],
-          "text": "No nervous symptoms"
+          "text": "O/E - weight, 70 Kg"
         },
         "subject": {
-          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+          "reference": "Patient/610",
+          "type": "Patient"
         },
-        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
-        "issued": "2004-07-23T00:00:00.000+00:00",
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/162",
+            "reference": "Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-              "value": "G7321704"
+              "value": "G8667998"
             },
-            "display": "Nurse Pauline Steele"
+            "display": "Mrs Jean Mitchell"
           }
-        ]
+        ],
+        "valueQuantity": {
+          "value": 70,
+          "unit": "Kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
       }
     },
     {
-      "fullUrl": "urn:uuid:a7a53d9d-53ff-43d9-97f5-9bd98d5f8a6d",
+      "fullUrl": "urn:uuid:829f303a-55c5-402b-bfb8-f8f892b92af6",
       "resource": {
         "resourceType": "Observation",
-        "id": "610166",
+        "id": "61064",
         "identifier": [
           {
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "610166",
+            "value": "61064",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -455,7 +423,7 @@
           },
           {
             "system": "https://emis.com/Id/Event/GUID",
-            "value": "a7a53d9d-53ff-43d9-97f5-9bd98d5f8a6d",
+            "value": "829f303a-55c5-402b-bfb8-f8f892b92af6",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -478,25 +446,26 @@
               "display": "Alcohol consumption"
             }
           ],
-          "text": "Alcohol consumption, 1 units/week"
+          "text": "Alcohol consumption, 0 units/week"
         },
         "subject": {
-          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+          "reference": "Patient/610",
+          "type": "Patient"
         },
-        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
-        "issued": "2004-07-23T00:00:00.000+00:00",
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/162",
+            "reference": "Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-              "value": "G7321704"
+              "value": "G8667998"
             },
-            "display": "Nurse Pauline Steele"
+            "display": "Mrs Jean Mitchell"
           }
         ],
         "valueQuantity": {
-          "value": 1,
+          "value": 0,
           "unit": "units/week",
           "system": "http://unitsofmeasure.org",
           "code": "/wk"
@@ -504,14 +473,14 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:dd01857f-5897-44d1-9994-9c24130cc72a",
+      "fullUrl": "urn:uuid:586be240-ef5b-43ff-9c4d-2b710c5c17fe",
       "resource": {
         "resourceType": "Observation",
-        "id": "610167",
+        "id": "61066",
         "identifier": [
           {
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "610167",
+            "value": "61066",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -521,7 +490,7 @@
           },
           {
             "system": "https://emis.com/Id/Event/GUID",
-            "value": "dd01857f-5897-44d1-9994-9c24130cc72a",
+            "value": "586be240-ef5b-43ff-9c4d-2b710c5c17fe",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -535,109 +504,44 @@
           "coding": [
             {
               "system": "http://read.info/readv2",
-              "code": "13G1.",
-              "display": "District nurse attends"
+              "code": "8I26.",
+              "display": "Beta blocker contraindicated"
             },
             {
               "system": "http://snomed.info/sct",
-              "code": "160761000",
-              "display": "District nurse attends"
+              "code": "315062004",
+              "display": "Beta blocker contraindicated"
             }
           ],
-          "text": "District nurse attends, 0 times/week"
+          "text": "Beta blocker contraindicated"
         },
         "subject": {
-          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+          "reference": "Patient/610",
+          "type": "Patient"
         },
-        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
-        "issued": "2004-07-23T00:00:00.000+00:00",
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/162",
+            "reference": "Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-              "value": "G7321704"
+              "value": "G8667998"
             },
-            "display": "Nurse Pauline Steele"
-          }
-        ],
-        "valueQuantity": {
-          "value": 0,
-          "unit": "times/week",
-          "system": "http://unitsofmeasure.org",
-          "code": "times/week"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:363db6ed-652b-472c-9f07-080b01f06569",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "610168",
-        "identifier": [
-          {
-            "system": "https://emis.com/Id/Event/DBID",
-            "value": "610168",
-            "assigner": {
-              "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "F83004"
-              }
-            }
-          },
-          {
-            "system": "https://emis.com/Id/Event/GUID",
-            "value": "363db6ed-652b-472c-9f07-080b01f06569",
-            "assigner": {
-              "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "F83004"
-              }
-            }
-          }
-        ],
-        "status": "unknown",
-        "code": {
-          "coding": [
-            {
-              "system": "http://read.info/readv2",
-              "code": "EGTONEL2",
-              "display": "Elderly health assessment"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "637681000006105",
-              "display": "Elderly health assessment"
-            }
-          ],
-          "text": "Elderly health assessment"
-        },
-        "subject": {
-          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
-        },
-        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
-        "issued": "2004-07-23T00:00:00.000+00:00",
-        "performer": [
-          {
-            "reference": "Practitioner/162",
-            "identifier": {
-              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-              "value": "G7321704"
-            },
-            "display": "Nurse Pauline Steele"
+            "display": "Mrs Jean Mitchell"
           }
         ]
       }
     },
     {
-      "fullUrl": "urn:uuid:1e4a65a3-b223-42c8-a0e6-77c688ae6f73",
+      "fullUrl": "urn:uuid:be3f4196-dee7-42e4-b384-b230a2433ecf",
       "resource": {
         "resourceType": "Observation",
-        "id": "610169",
+        "id": "61067",
         "identifier": [
           {
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "610169",
+            "value": "61067",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -647,7 +551,7 @@
           },
           {
             "system": "https://emis.com/Id/Event/GUID",
-            "value": "1e4a65a3-b223-42c8-a0e6-77c688ae6f73",
+            "value": "be3f4196-dee7-42e4-b384-b230a2433ecf",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -661,150 +565,31 @@
           "coding": [
             {
               "system": "http://read.info/readv2",
-              "code": "4672.",
-              "display": "Urine protein test negative"
+              "code": "662N.",
+              "display": "CHD monitoring"
             },
             {
               "system": "http://snomed.info/sct",
-              "code": "167273002",
-              "display": "Urine protein test negative"
+              "code": "170601008",
+              "display": "CHD monitoring"
             }
           ],
-          "text": "Urine protein test negative"
+          "text": "CHD monitoring"
         },
         "subject": {
-          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
+          "reference": "Patient/610",
+          "type": "Patient"
         },
-        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
-        "issued": "2004-07-23T00:00:00.000+00:00",
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/162",
+            "reference": "Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-              "value": "G7321704"
+              "value": "G8667998"
             },
-            "display": "Nurse Pauline Steele"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:822d2fff-e1ed-49a1-b7ec-1f05a546a87a",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "610170",
-        "identifier": [
-          {
-            "system": "https://emis.com/Id/Event/DBID",
-            "value": "610170",
-            "assigner": {
-              "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "F83004"
-              }
-            }
-          },
-          {
-            "system": "https://emis.com/Id/Event/GUID",
-            "value": "822d2fff-e1ed-49a1-b7ec-1f05a546a87a",
-            "assigner": {
-              "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "F83004"
-              }
-            }
-          }
-        ],
-        "status": "unknown",
-        "code": {
-          "coding": [
-            {
-              "system": "http://read.info/readv2",
-              "code": "3992.",
-              "display": "Independent on stairs"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "165249009",
-              "display": "Independent on stairs"
-            }
-          ],
-          "text": "Independent on stairs"
-        },
-        "subject": {
-          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
-        },
-        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
-        "issued": "2004-07-23T00:00:00.000+00:00",
-        "performer": [
-          {
-            "reference": "Practitioner/162",
-            "identifier": {
-              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-              "value": "G7321704"
-            },
-            "display": "Nurse Pauline Steele"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:f0cf7c0f-8bef-49ef-9170-d771ecd7cb8a",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "610171",
-        "identifier": [
-          {
-            "system": "https://emis.com/Id/Event/DBID",
-            "value": "610171",
-            "assigner": {
-              "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "F83004"
-              }
-            }
-          },
-          {
-            "system": "https://emis.com/Id/Event/GUID",
-            "value": "f0cf7c0f-8bef-49ef-9170-d771ecd7cb8a",
-            "assigner": {
-              "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "F83004"
-              }
-            }
-          }
-        ],
-        "status": "unknown",
-        "code": {
-          "coding": [
-            {
-              "system": "http://read.info/readv2",
-              "code": "3942.",
-              "display": "Bladder: fully continent"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "165234001",
-              "display": "Bladder: fully continent"
-            }
-          ],
-          "text": "Bladder: fully continent"
-        },
-        "subject": {
-          "reference": "urn:uuid:00e46a1c-588d-4393-a259-b6a3656157b1"
-        },
-        "effectiveDateTime": "2004-07-23T00:00:00+00:00",
-        "issued": "2004-07-23T00:00:00.000+00:00",
-        "performer": [
-          {
-            "reference": "Practitioner/162",
-            "identifier": {
-              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-              "value": "G7321704"
-            },
-            "display": "Nurse Pauline Steele"
+            "display": "Mrs Jean Mitchell"
           }
         ]
       }
