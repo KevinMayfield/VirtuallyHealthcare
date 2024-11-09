@@ -1,6 +1,11 @@
 {
   "resourceType": "Bundle",
   "id": "361",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Bundle-Document"
+    ]
+  },
   "identifier": {
     "system": "https://emis.com/Id/Consultation/GUID",
     "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
@@ -12,6 +17,7 @@
     }
   },
   "type": "document",
+  "timestamp": "2024-11-08T00:00:00.000+00:00",
   "entry": [
     {
       "fullUrl": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
@@ -21,7 +27,7 @@
         "extension": [
           {
             "url": "http://fhir.virtuallyhealthcare.co.uk/LocationType",
-            "valueString": "37088C97-82FC-4B3E-BDBC-28F2C03B6CB8"
+            "valueString": "37088c97-82fc-4b3e-bdbc-28f2c03b6cb8"
           }
         ],
         "identifier": {
@@ -45,7 +51,7 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "date": "2024-11-08T00:00:00+00:00",
         "author": [
@@ -79,7 +85,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Serum TSH (thyroid stimulating hormone) level, 12 mU/LAdded some lines of text</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Serum TSH (thyroid stimulating hormone) level, 12 mU/L <i>Added some lines of text</i></p></div>"
             },
             "entry": [
               {
@@ -142,7 +148,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Physical therapy procedure</p><p>getting hip pain</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Physical therapy procedure</p><p> <i>getting hip pain</i></p></div>"
             },
             "entry": [
               {
@@ -165,7 +171,8 @@
               "text": "Document"
             },
             "text": {
-              "status": "generated"
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Referral Letter (08-Nov-2024) <i>for Refer for thyroid test</i></p></div>"
             },
             "entry": [
               {
@@ -188,7 +195,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Adverse reaction to drugaspirin</p><p>Allergy to drug</p><p>Allergy to aspirin</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Adverse reaction to drug <i>aspirin</i></p><p>Allergy to drug</p><p>Allergy to aspirin</p></div>"
             },
             "entry": [
               {
@@ -275,7 +282,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>this is a comment. steps. weight</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <i>this is a comment. steps. weight</i></p></div>"
             }
           },
           {
@@ -292,7 +299,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>No family history diabetessome test</p><p>Family history of breast cancer (Uncle)</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>No family history diabetes <i>some test</i></p><p>Family history of breast cancer (Uncle)</p></div>"
             },
             "entry": [
               {
@@ -496,10 +503,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327",
+      "fullUrl": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e",
       "resource": {
         "resourceType": "Patient",
-        "id": "9716ac93-1451-43ec-a2e0-ec0e79d36327",
+        "id": "5cf76190-b920-4bc1-af9c-894041b0185e",
         "identifier": [
           {
             "type": {
@@ -614,7 +621,7 @@
           "text": "Serum TSH (thyroid stimulating hormone) level, 12 mU/L Added some lines of text"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -680,7 +687,7 @@
           "text": "Body weight, 79 kg"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -746,7 +753,7 @@
           "text": "Standing height, 179 cm"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -812,7 +819,7 @@
           "text": "Body mass index, 24.66 kg/m2"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -878,7 +885,7 @@
           "text": "Physical therapy procedure"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -938,7 +945,7 @@
           "text": "Adverse reaction to drug aspirin"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -998,7 +1005,7 @@
           "text": "Allergy to drug"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1058,7 +1065,7 @@
           "text": "Allergy to aspirin"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1118,7 +1125,7 @@
           "text": "Family history of alcohol misuse (Aunt)"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1178,7 +1185,7 @@
           "text": "Venous blood specimen"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T00:00:00+00:00",
         "issued": "2024-11-08T00:00:00.000+00:00",
@@ -1238,7 +1245,7 @@
           "text": "No family history diabetes some test"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1298,7 +1305,7 @@
           "text": "Family history of breast cancer (Uncle)"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1358,7 +1365,7 @@
           "text": "Current non-smoker"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1418,7 +1425,7 @@
           "text": "Essential hypertension"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1478,7 +1485,7 @@
           "text": "Hypertension monitoring"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1538,7 +1545,7 @@
           "text": "Hypertension six month review"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1598,7 +1605,7 @@
           "text": "Medication review done"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1658,7 +1665,7 @@
           "text": "Hypertension resolved"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1718,7 +1725,7 @@
           "text": "Excepted from hypertension quality indicators - patient unsuitable"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1778,7 +1785,7 @@
           "text": "British or mixed British - ethnic category 2001 census"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1838,7 +1845,7 @@
           "text": "Dietary advice"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1898,7 +1905,7 @@
           "text": "Education about alcohol consumption"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1958,7 +1965,7 @@
           "text": "ECG requested"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2018,7 +2025,7 @@
           "text": "Alcohol consumption, 0 U/week"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2084,7 +2091,7 @@
           "text": "Serum cholesterol level, 123 mmol/L"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2150,7 +2157,7 @@
           "text": "Serum high density lipoprotein cholesterol level, 234 mmol/L"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2216,7 +2223,7 @@
           "text": "Serum creatinine level, 123 umol/L"
         },
         "subject": {
-          "reference": "urn:uuid:9716ac93-1451-43ec-a2e0-ec0e79d36327"
+          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",

@@ -1,6 +1,11 @@
 {
   "resourceType": "Bundle",
   "id": "610161",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Bundle-Document"
+    ]
+  },
   "identifier": {
     "system": "https://emis.com/Id/Consultation/GUID",
     "value": "7c810de8-f2f0-437c-af75-8dd3daafb0a2",
