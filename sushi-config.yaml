@@ -263,8 +263,8 @@ resources:
     name: Composition EMIS IM1
     description: Composition EMIS IM1
     exampleBoolean: true
-  Bundle/610161:
-    name: FHIR Document EMIS IM1 Consultation Note
+  Bundle/61061:
+    name: FHIR Document EMIS IM1 Consultation Note 30 Jun 2002
     description: FHIR Document EMIS IM1 Consultation Note
     exampleBoolean: true
   Bundle/361:
