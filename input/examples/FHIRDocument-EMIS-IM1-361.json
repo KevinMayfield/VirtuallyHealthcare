@@ -17,7 +17,7 @@
     }
   },
   "type": "document",
-  "timestamp": "2024-11-08T00:00:00.000+00:00",
+  "timestamp": "2024-11-08T15:51:00.000+00:00",
   "entry": [
     {
       "fullUrl": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
@@ -51,9 +51,9 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
-        "date": "2024-11-08T00:00:00+00:00",
+        "date": "2024-11-08T15:51:00+00:00",
         "author": [
           {
             "reference": "Practitioner/1",
@@ -498,15 +498,49 @@
                 "display": "Serum creatinine level, 123 umol/L"
               }
             ]
+          },
+          {
+            "title": "Additional",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Additional",
+                  "display": "Additional"
+                }
+              ],
+              "text": "Additional"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Test request : Full Blood Count</p><p>Test request : Plasma Viscosity</p><p>Test request : Antenatal</p><p>Systolic arterial pressure, 117 mmHg</p><p>Diastolic arterial pressure, 75 mmHg</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:39e7a63a-4f09-4ad9-a2a0-66ad94a77851"
+              },
+              {
+                "reference": "urn:uuid:2715a9e3-7c06-4925-ae4a-0b11e5b8e987"
+              },
+              {
+                "reference": "urn:uuid:c59dee86-4d6e-40e0-ad1e-e7959075e753"
+              },
+              {
+                "reference": "urn:uuid:107b410c-384c-4c0f-b5f5-def84619d40f"
+              },
+              {
+                "reference": "urn:uuid:82c1918b-6466-47b7-b940-a5e5f4d84c8b"
+              }
+            ]
           }
         ]
       }
     },
     {
-      "fullUrl": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e",
+      "fullUrl": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616",
       "resource": {
         "resourceType": "Patient",
-        "id": "5cf76190-b920-4bc1-af9c-894041b0185e",
+        "id": "e28c1e92-2d20-40f6-a5ae-324f25b27616",
         "identifier": [
           {
             "type": {
@@ -621,7 +655,7 @@
           "text": "Serum TSH (thyroid stimulating hormone) level, 12 mU/L Added some lines of text"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -687,7 +721,7 @@
           "text": "Body weight, 79 kg"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -753,7 +787,7 @@
           "text": "Standing height, 179 cm"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -819,7 +853,7 @@
           "text": "Body mass index, 24.66 kg/m2"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -885,7 +919,7 @@
           "text": "Physical therapy procedure"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -945,7 +979,7 @@
           "text": "Adverse reaction to drug aspirin"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1005,7 +1039,7 @@
           "text": "Allergy to drug"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1065,7 +1099,7 @@
           "text": "Allergy to aspirin"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1125,7 +1159,7 @@
           "text": "Family history of alcohol misuse (Aunt)"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1185,7 +1219,7 @@
           "text": "Venous blood specimen"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T00:00:00+00:00",
         "issued": "2024-11-08T00:00:00.000+00:00",
@@ -1245,7 +1279,7 @@
           "text": "No family history diabetes some test"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1305,7 +1339,7 @@
           "text": "Family history of breast cancer (Uncle)"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1365,7 +1399,7 @@
           "text": "Current non-smoker"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1425,7 +1459,7 @@
           "text": "Essential hypertension"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1485,7 +1519,7 @@
           "text": "Hypertension monitoring"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1545,7 +1579,7 @@
           "text": "Hypertension six month review"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1605,7 +1639,7 @@
           "text": "Medication review done"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1665,7 +1699,7 @@
           "text": "Hypertension resolved"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1725,7 +1759,7 @@
           "text": "Excepted from hypertension quality indicators - patient unsuitable"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1785,7 +1819,7 @@
           "text": "British or mixed British - ethnic category 2001 census"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1845,7 +1879,7 @@
           "text": "Dietary advice"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1905,7 +1939,7 @@
           "text": "Education about alcohol consumption"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1965,7 +1999,7 @@
           "text": "ECG requested"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2025,7 +2059,7 @@
           "text": "Alcohol consumption, 0 U/week"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2091,7 +2125,7 @@
           "text": "Serum cholesterol level, 123 mmol/L"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2157,7 +2191,7 @@
           "text": "Serum high density lipoprotein cholesterol level, 234 mmol/L"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2223,7 +2257,7 @@
           "text": "Serum creatinine level, 123 umol/L"
         },
         "subject": {
-          "reference": "urn:uuid:5cf76190-b920-4bc1-af9c-894041b0185e"
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2242,6 +2276,308 @@
           "unit": "umol/L",
           "system": "http://unitsofmeasure.org",
           "code": "umol/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:39e7a63a-4f09-4ad9-a2a0-66ad94a77851",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "30",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "30",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "39e7a63a-4f09-4ad9-a2a0-66ad94a77851",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "EMISREQ|424..",
+              "display": "Test request : Full Blood Count"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "109841000006101",
+              "display": "Test request : Full Blood Count"
+            }
+          ],
+          "text": "Test request : Full Blood Count"
+        },
+        "subject": {
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2715a9e3-7c06-4925-ae4a-0b11e5b8e987",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "32",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "32",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "2715a9e3-7c06-4925-ae4a-0b11e5b8e987",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "EMISREQ|42B..",
+              "display": "Test request : Plasma Viscosity"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "110021000006108",
+              "display": "Test request : Plasma Viscosity"
+            }
+          ],
+          "text": "Test request : Plasma Viscosity"
+        },
+        "subject": {
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c59dee86-4d6e-40e0-ad1e-e7959075e753",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "33",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "33",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "c59dee86-4d6e-40e0-ad1e-e7959075e753",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "EMISREQ|62L..",
+              "display": "Test request : Antenatal"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "109661000006103",
+              "display": "Test request : Antenatal"
+            }
+          ],
+          "text": "Test request : Antenatal"
+        },
+        "subject": {
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:107b410c-384c-4c0f-b5f5-def84619d40f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "34",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "34",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "107b410c-384c-4c0f-b5f5-def84619d40f",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "2469.",
+              "display": "Systolic arterial pressure"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "72313002",
+              "display": "Systolic arterial pressure"
+            }
+          ],
+          "text": "Systolic arterial pressure, 117 mmHg"
+        },
+        "subject": {
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ],
+        "valueQuantity": {
+          "value": 117,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmHg"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:82c1918b-6466-47b7-b940-a5e5f4d84c8b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "35",
+        "identifier": [
+          {
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "35",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "82c1918b-6466-47b7-b940-a5e5f4d84c8b",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "246A.",
+              "display": "Diastolic arterial pressure"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1091811000000102",
+              "display": "Diastolic arterial pressure"
+            }
+          ],
+          "text": "Diastolic arterial pressure, 75 mmHg"
+        },
+        "subject": {
+          "reference": "urn:uuid:e28c1e92-2d20-40f6-a5ae-324f25b27616"
+        },
+        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
+        "issued": "2024-11-08T15:51:00.000+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ],
+        "valueQuantity": {
+          "value": 75,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmHg"
         }
       }
     }
