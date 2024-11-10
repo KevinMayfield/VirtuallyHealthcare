@@ -35,6 +35,8 @@ dependencies:
     uri: https://simplifier.net/guide/ukcoreversionhistory
   hl7.fhir.uv.sdc:
    version: 3.0.0
+  hl7.fhir.uv.ipa:
+    version: 1.0.0
   hl7.fhir.extensions.r5:
     id: r5ext
     version: 4.0.1
@@ -202,6 +204,10 @@ resources:
   Practitioner/a8fec350-25cf-4d63-88d7-a3fc6bb98cc6:
     name: Practitioner-EMIS-IM1-EMIS-Test
     description: Practitioner EMIS IM1 EMIS Test
+    exampleBoolean: true
+  Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3:
+    name: Practitioner-EMIS-IM1-HealthOnline-Test
+    description: Practitioner EMIS IM1 HealthOnline Test
     exampleBoolean: true
   Practitioner/achawla0309 :
     name: Practitioner-TPP-IM1-Amit-Chawla

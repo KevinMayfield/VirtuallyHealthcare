@@ -13,6 +13,6 @@ E.g. SDS User ID and Ministry of Defence Doctor.
 * system 1..1
 * system from StaffNumber
 * value 1..1
-* type = $v2-0203#ESN (exactly)
+* type.coding = $v2-0203#ESN (exactly)
 * assigner ^short = "Assigning organisation, populate if known (i.e. X24/X26 for NHS England)"
 * assigner.identifier only OrganisationCode
