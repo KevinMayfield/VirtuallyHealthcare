@@ -7,6 +7,7 @@
     ]
   },
   "identifier": {
+    "use": "usual",
     "system": "https://emis.com/Id/Consultation/GUID",
     "value": "e119d231-def6-43a7-af40-56d7754977bd",
     "assigner": {
@@ -31,6 +32,7 @@
           }
         ],
         "identifier": {
+          "use": "usual",
           "system": "https://emis.com/Id/Consultation/GUID",
           "value": "e119d231-def6-43a7-af40-56d7754977bd",
           "assigner": {
@@ -51,12 +53,14 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:05cc3986-106d-4a4b-bafb-6b3fe6645d5b"
+          "reference": "urn:uuid:3572ce83-5b44-43b9-9398-40ee7034cb1b",
+          "type": "Patient"
         },
         "date": "2002-06-30T00:00:00+00:00",
         "author": [
           {
-            "reference": "Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/gmp-number",
               "value": "G8667998"
@@ -203,12 +207,13 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:05cc3986-106d-4a4b-bafb-6b3fe6645d5b",
+      "fullUrl": "urn:uuid:3572ce83-5b44-43b9-9398-40ee7034cb1b",
       "resource": {
         "resourceType": "Patient",
-        "id": "05cc3986-106d-4a4b-bafb-6b3fe6645d5b",
+        "id": "3572ce83-5b44-43b9-9398-40ee7034cb1b",
         "identifier": [
           {
+            "use": "usual",
             "type": {
               "coding": [
                 {
@@ -227,6 +232,7 @@
             }
           },
           {
+            "use": "official",
             "type": {
               "coding": [
                 {
@@ -237,10 +243,6 @@
             },
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "2939425320"
-          },
-          {
-            "system": "https://emis.com/Id/Patient/ID",
-            "value": "F83004-610"
           }
         ],
         "active": true,
@@ -284,6 +286,7 @@
         "id": "61062",
         "identifier": [
           {
+            "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
             "value": "61062",
             "assigner": {
@@ -294,6 +297,7 @@
             }
           },
           {
+            "use": "usual",
             "system": "https://emis.com/Id/Event/GUID",
             "value": "b08cd0b8-048b-4dca-9e43-02cdd4ddc3de",
             "assigner": {
@@ -321,14 +325,15 @@
           "text": "Breathless - mild exertion"
         },
         "subject": {
-          "reference": "Patient/610",
+          "reference": "urn:uuid:3572ce83-5b44-43b9-9398-40ee7034cb1b",
           "type": "Patient"
         },
         "effectiveDateTime": "2002-06-30T00:00:00+00:00",
         "issued": "2002-06-30T00:00:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/gmp-number",
               "value": "G8667998"
@@ -345,6 +350,7 @@
         "id": "61063",
         "identifier": [
           {
+            "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
             "value": "61063",
             "assigner": {
@@ -355,6 +361,7 @@
             }
           },
           {
+            "use": "usual",
             "system": "https://emis.com/Id/Event/GUID",
             "value": "609ba048-2eca-43c9-b4a1-85fa695c572c",
             "assigner": {
@@ -382,14 +389,15 @@
           "text": "O/E - weight, 70 Kg"
         },
         "subject": {
-          "reference": "Patient/610",
+          "reference": "urn:uuid:3572ce83-5b44-43b9-9398-40ee7034cb1b",
           "type": "Patient"
         },
         "effectiveDateTime": "2002-06-30T00:00:00+00:00",
         "issued": "2002-06-30T00:00:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/gmp-number",
               "value": "G8667998"
@@ -412,6 +420,7 @@
         "id": "61064",
         "identifier": [
           {
+            "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
             "value": "61064",
             "assigner": {
@@ -422,6 +431,7 @@
             }
           },
           {
+            "use": "usual",
             "system": "https://emis.com/Id/Event/GUID",
             "value": "829f303a-55c5-402b-bfb8-f8f892b92af6",
             "assigner": {
@@ -449,14 +459,15 @@
           "text": "Alcohol consumption, 0 units/week"
         },
         "subject": {
-          "reference": "Patient/610",
+          "reference": "urn:uuid:3572ce83-5b44-43b9-9398-40ee7034cb1b",
           "type": "Patient"
         },
         "effectiveDateTime": "2002-06-30T00:00:00+00:00",
         "issued": "2002-06-30T00:00:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/gmp-number",
               "value": "G8667998"
@@ -479,6 +490,7 @@
         "id": "61066",
         "identifier": [
           {
+            "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
             "value": "61066",
             "assigner": {
@@ -489,6 +501,7 @@
             }
           },
           {
+            "use": "usual",
             "system": "https://emis.com/Id/Event/GUID",
             "value": "586be240-ef5b-43ff-9c4d-2b710c5c17fe",
             "assigner": {
@@ -516,14 +529,15 @@
           "text": "Beta blocker contraindicated"
         },
         "subject": {
-          "reference": "Patient/610",
+          "reference": "urn:uuid:3572ce83-5b44-43b9-9398-40ee7034cb1b",
           "type": "Patient"
         },
         "effectiveDateTime": "2002-06-30T00:00:00+00:00",
         "issued": "2002-06-30T00:00:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/gmp-number",
               "value": "G8667998"
@@ -540,6 +554,7 @@
         "id": "61067",
         "identifier": [
           {
+            "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
             "value": "61067",
             "assigner": {
@@ -550,6 +565,7 @@
             }
           },
           {
+            "use": "usual",
             "system": "https://emis.com/Id/Event/GUID",
             "value": "be3f4196-dee7-42e4-b384-b230a2433ecf",
             "assigner": {
@@ -577,19 +593,38 @@
           "text": "CHD monitoring"
         },
         "subject": {
-          "reference": "Patient/610",
+          "reference": "urn:uuid:3572ce83-5b44-43b9-9398-40ee7034cb1b",
           "type": "Patient"
         },
         "effectiveDateTime": "2002-06-30T00:00:00+00:00",
         "issued": "2002-06-30T00:00:00.000+00:00",
         "performer": [
           {
-            "reference": "Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
             "identifier": {
               "system": "https://fhir.hl7.org.uk/Id/gmp-number",
               "value": "G8667998"
             },
             "display": "Mrs Jean Mitchell"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+        "identifier": [
+          {
+            "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+            "value": "G8667998"
+          }
+        ],
+        "name": [
+          {
+            "text": "Mrs Jean Mitchell"
           }
         ]
       }
