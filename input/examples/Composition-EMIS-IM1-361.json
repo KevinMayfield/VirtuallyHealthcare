@@ -13,6 +13,7 @@
     }
   ],
   "identifier": {
+    "use": "usual",
     "system": "https://emis.com/Id/Consultation/GUID",
     "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
     "assigner": {
@@ -33,12 +34,14 @@
     ]
   },
   "subject": {
-    "reference": "Patient/3"
+    "reference": "Patient/3",
+    "type": "Patient"
   },
   "date": "2024-11-08T15:51:00+00:00",
   "author": [
     {
       "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
+      "type": "Practitioner",
       "identifier": {
         "system": "https://fhir.hl7.org.uk/Id/professional-code",
         "value": "25825845"
@@ -55,12 +58,7 @@
           {
             "system": "http://loinc.org",
             "code": "30954-2",
-            "display": "Relevant diagnostic tests &or laboratory data"
-          },
-          {
-            "system": "http://snomed.info/sct",
-            "code": "1082101000000102",
-            "display": "Investigation results"
+            "display": "Relevant diagnostic tests/laboratory data Narrative"
           }
         ],
         "text": "Result"
@@ -247,7 +245,7 @@
           {
             "system": "http://loinc.org",
             "code": "48767-8",
-            "display": "Annotation comment"
+            "display": "Annotation comment [Interpretation] Narrative"
           }
         ],
         "text": "Comment"
@@ -291,12 +289,7 @@
           {
             "system": "http://loinc.org",
             "code": "11450-4",
-            "display": "Problem list"
-          },
-          {
-            "system": "http://snomed.info/sct",
-            "code": "887151000000100",
-            "display": "Problems and issue"
+            "display": "Problem list - Reported"
           }
         ],
         "text": "Problem"
@@ -398,11 +391,6 @@
             "system": "http://loinc.org",
             "code": "29762-2",
             "display": "Social history Narrative"
-          },
-          {
-            "system": "http://snomed.info/sct",
-            "code": "887051000000101",
-            "display": "Social Context"
           }
         ],
         "text": "Social"
@@ -425,12 +413,7 @@
           {
             "system": "http://loinc.org",
             "code": "30954-2",
-            "display": "Relevant diagnostic tests &or laboratory data"
-          },
-          {
-            "system": "http://snomed.info/sct",
-            "code": "1082101000000102",
-            "display": "Investigation results"
+            "display": "Relevant diagnostic tests/laboratory data Narrative"
           }
         ],
         "text": "Result"
