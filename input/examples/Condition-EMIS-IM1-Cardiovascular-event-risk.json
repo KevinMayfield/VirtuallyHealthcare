@@ -62,15 +62,17 @@
     "text": "Cardiovascular event risk, 18"
   },
   "subject": {
-    "reference": "Patient/3"
+    "reference": "Patient/3",
+    "type": "Patient"
   },
   "onsetDateTime": "2006-01-05T00:00:00+00:00",
   "asserter": {
-    "reference": "Practitioner/243",
+    "reference": "Practitioner/f0b26662-5519-4020-9fc9-35774eb1e826",
+    "type": "Practitioner",
     "identifier": {
       "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-      "value": "G2435868"
+      "value": "G9380513"
     },
-    "display": "Dr Emis Test"
+    "display": "Mrs Ann Potter"
   }
 }

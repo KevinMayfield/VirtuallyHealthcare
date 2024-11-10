@@ -8,12 +8,26 @@
   },
   "identifier": [
     {
+      "use": "secondary",
       "system": "https://emis.com/Id/Medication/DBID",
-      "value": "50002932"
+      "value": "50002932",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
     },
     {
+      "use": "usual",
       "system": "https://emis.com/Id/Medication/GUID",
-      "value": "72ee3af2-9e10-493c-a4a8-a203e810972b"
+      "value": "72ee3af2-9e10-493c-a4a8-a203e810972b",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
     }
   ],
   "status": "active",
@@ -37,7 +51,13 @@
   },
   "authoredOn": "2017-08-25T00:00:00+00:00",
   "requester": {
-    "reference": "Practitioner/243"
+    "reference": "Practitioner/eb70cfd7-6e08-4e83-9131-9af4e4412c60",
+    "type": "Practitioner",
+    "identifier": {
+      "system": "https://emis.com/Id/Practitioner/GUID",
+      "value": "eb70cfd7-6e08-4e83-9131-9af4e4412c60"
+    },
+    "display": "Dr Amanda McDonnell"
   },
   "courseOfTherapyType": {
     "coding": [

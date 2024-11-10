@@ -8,6 +8,7 @@
   },
   "identifier": [
     {
+      "use": "usual",
       "type": {
         "coding": [
           {
@@ -26,6 +27,7 @@
       }
     },
     {
+      "use": "official",
       "type": {
         "coding": [
           {
@@ -36,10 +38,6 @@
       },
       "system": "https://fhir.nhs.uk/Id/nhs-number",
       "value": "5465474637"
-    },
-    {
-      "system": "https://emis.com/Id/Patient/ID",
-      "value": "F83004-500029"
     }
   ],
   "active": true,

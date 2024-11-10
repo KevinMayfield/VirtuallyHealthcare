@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "3195",
+  "id": "3201",
   "meta": {
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Observation"
@@ -9,7 +9,7 @@
   "identifier": [
     {
       "system": "https://emis.com/Id/Event/DBID",
-      "value": "3195",
+      "value": "3201",
       "assigner": {
         "identifier": {
           "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -45,23 +45,25 @@
     "text": "O/E - weight, 81 Kg"
   },
   "subject": {
-    "reference": "Patient/3"
+    "reference": "Patient/3",
+    "type": "Patient"
   },
   "effectiveDateTime": "2005-03-21T00:00:00+00:00",
   "issued": "2005-03-21T00:00:00.000+00:00",
   "performer": [
     {
-      "reference": "Practitioner/243",
+      "reference": "Practitioner/4435f523-44ae-4cfb-903d-570b2887812c",
+      "type": "Practitioner",
       "identifier": {
         "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-        "value": "G2435868"
+        "value": "G3226482"
       },
-      "display": "Dr Emis Test"
+      "display": "Mrs Jean Kemp"
     }
   ],
   "valueQuantity": {
     "value": 81,
-    "unit": "kg",
+    "unit": "Kg",
     "system": "http://unitsofmeasure.org",
     "code": "kg"
   }

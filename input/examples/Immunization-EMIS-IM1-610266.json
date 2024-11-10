@@ -45,18 +45,20 @@
     "text": "Pneumococcal vaccination declined"
   },
   "patient": {
-    "reference": "Patient/610"
+    "reference": "Patient/610",
+    "type": "Patient"
   },
   "occurrenceDateTime": "2000-11-25T00:00:00+00:00",
   "performer": [
     {
       "actor": {
-        "reference": "Practitioner/243",
+        "reference": "Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+        "type": "Practitioner",
         "identifier": {
           "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-          "value": "G2435868"
+          "value": "G8667998"
         },
-        "display": "Dr Emis Test"
+        "display": "Mrs Jean Mitchell"
       }
     }
   ]

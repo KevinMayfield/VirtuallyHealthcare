@@ -159,7 +159,7 @@ resources:
     name: Observation-EMIS-PFS-Weight
     description: Observation EMIS PFS Weight
     exampleBoolean: true
-  Observation/3195:
+  Observation/3201:
     name: Observation-EMIS-IM1-Weight
     description: Observation EMIS IM1 Weight
     exampleBoolean: true
@@ -171,7 +171,7 @@ resources:
     name: Observation-EMIS-PFS-Systolic-blood-pressure
     description: Observation EMIS PFS Systolic blood pressure
     exampleBoolean: true
-  Observation/3205:
+  Observation/3211:
     name: Observation-EMIS-IM1-Urine-protein-test-not-done
     description: Observation EMIS IM1 Urine protein test not done
     exampleBoolean: true
@@ -187,7 +187,7 @@ resources:
     name: Observation-EMIS-PFS-Plasma-glucose-level
     description: Observation EMIS PFS Plasma glucose level
     exampleBoolean: true
-  DocumentReference/3214:
+  DocumentReference/3220:
     name: DocumentReference-EMIS-IM1-Letter
     description: DocumentReference EMIS IM1 Letter encounter
     exampleBoolean: true
@@ -195,9 +195,13 @@ resources:
     name: DocumentReference-EMIS-PFS-Letter
     description: DocumentReference EMIS PFS Letter encounter
     exampleBoolean: true
-  Practitioner/4:
+  Practitioner/dee9fec7-118b-4cb2-bcd7-55e79fa8e599:
     name: Practitioner-EMIS-IM1-Pauline-Steele
     description: Practitioner EMIS IM1 Pauline Steele
+    exampleBoolean: true
+  Practitioner/a8fec350-25cf-4d63-88d7-a3fc6bb98cc6:
+    name: Practitioner-EMIS-IM1-EMIS-Test
+    description: Practitioner EMIS IM1 EMIS Test
     exampleBoolean: true
   Practitioner/achawla0309 :
     name: Practitioner-TPP-IM1-Amit-Chawla

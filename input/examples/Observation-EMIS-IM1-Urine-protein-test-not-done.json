@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "3205",
+  "id": "3211",
   "meta": {
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Observation"
@@ -8,8 +8,9 @@
   },
   "identifier": [
     {
+      "use": "secondary",
       "system": "https://emis.com/Id/Event/DBID",
-      "value": "3205",
+      "value": "3211",
       "assigner": {
         "identifier": {
           "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -18,6 +19,7 @@
       }
     },
     {
+      "use": "usual",
       "system": "https://emis.com/Id/Event/GUID",
       "value": "4e197ae7-980e-4a76-979e-b94f952f1a65",
       "assigner": {
@@ -45,18 +47,20 @@
     "text": "Urine protein test not done"
   },
   "subject": {
-    "reference": "Patient/3"
+    "reference": "Patient/3",
+    "type": "Patient"
   },
   "effectiveDateTime": "2005-03-21T00:00:00+00:00",
   "issued": "2005-03-21T00:00:00.000+00:00",
   "performer": [
     {
-      "reference": "Practitioner/243",
+      "reference": "Practitioner/4435f523-44ae-4cfb-903d-570b2887812c",
+      "type": "Practitioner",
       "identifier": {
         "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-        "value": "G2435868"
+        "value": "G3226482"
       },
-      "display": "Dr Emis Test"
+      "display": "Mrs Jean Kemp"
     }
   ]
 }

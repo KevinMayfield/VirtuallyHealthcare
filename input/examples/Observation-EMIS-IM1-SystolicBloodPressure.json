@@ -45,18 +45,20 @@
     "text": "Systolic blood pressure, 148 mm Hg"
   },
   "subject": {
-    "reference": "Patient/3"
+    "reference": "Patient/3",
+    "type": "Patient"
   },
   "effectiveDateTime": "2005-10-14T00:00:00+00:00",
   "issued": "2005-10-14T00:00:00.000+00:00",
   "performer": [
     {
-      "reference": "Practitioner/243",
+      "reference": "Practitioner/3125f0c4-c773-48a6-bf33-10a5106f6448",
+      "type": "Practitioner",
       "identifier": {
         "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-        "value": "G2435868"
+        "value": "G3371701"
       },
-      "display": "Dr Emis Test"
+      "display": "Dr Brian Harding"
     }
   ],
   "valueQuantity": {

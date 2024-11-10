@@ -1,11 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "243",
-  "meta": {
-    "profile" : [
-      "https://fhir.virtually.healthcare/StructureDefinition/Practitioner"
-    ]
-  },
+  "id": "dee9fec7-118b-4cb2-bcd7-55e79fa8e599",
   "extension": [
     {
       "url": "http://fhir.virtuallyhealthcare.co.uk/Role",
@@ -25,22 +20,57 @@
   ],
   "identifier": [
     {
+      "use": "old",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PN"
+          }
+        ]
+      },
       "system": "https://emis.com/Id/Practitioner/DBID",
-      "value": "243"
+      "value": "243",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
     },
     {
+      "use": "old",
       "system": "https://emis.com/Id/Practitioner/REFID",
       "value": "243"
     },
     {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "ESN"
+          }
+        ]
+      },
       "system": "https://emis.com/Id/Practitioner/GUID",
       "value": "dee9fec7-118b-4cb2-bcd7-55e79fa8e599"
     },
     {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "LN"
+          }
+        ]
+      },
       "system": "https://fhir.hl7.org.uk/Id/gmp-number",
       "value": "G2435868"
     },
     {
+      "use": "secondary",
       "system": "https://fhir.nhs.uk/Id/gmc-reference-number",
       "value": "2672376"
     }

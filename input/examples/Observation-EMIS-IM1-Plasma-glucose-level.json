@@ -45,18 +45,20 @@
     "text": "Plasma glucose level, 6.6 mmol/L"
   },
   "subject": {
-    "reference": "Patient/3"
+    "reference": "Patient/3",
+    "type": "Patient"
   },
   "effectiveDateTime": "2004-03-04T00:00:00+00:00",
   "issued": "2004-03-04T00:00:00.000+00:00",
   "performer": [
     {
-      "reference": "Practitioner/243",
+      "reference": "Practitioner/812af0ad-e71e-41e2-997a-b6787f934928",
+      "type": "Practitioner",
       "identifier": {
         "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-        "value": "G2435868"
+        "value": "G3031757"
       },
-      "display": "Dr Emis Test"
+      "display": "Dr Neil Burgess"
     }
   ],
   "valueQuantity": {

@@ -62,11 +62,17 @@
     "text": "Hypertension monitoring"
   },
   "subject": {
-    "reference": "Patient/500029"
+    "reference": "Patient/500029",
+    "type": "Patient"
   },
   "onsetDateTime": "2017-08-25T14:13:00+00:00",
   "asserter": {
-    "reference": "Practitioner/4",
-    "display": "Nurse Pauline Steele"
+    "reference": "Practitioner/eb70cfd7-6e08-4e83-9131-9af4e4412c60",
+    "type": "Practitioner",
+    "identifier": {
+      "system": "https://emis.com/Id/Practitioner/GUID",
+      "value": "eb70cfd7-6e08-4e83-9131-9af4e4412c60"
+    },
+    "display": "Dr Amanda McDonnell"
   }
 }

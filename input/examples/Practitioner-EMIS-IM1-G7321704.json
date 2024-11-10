@@ -1,6 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "4",
+  "id": "a8fec350-25cf-4d63-88d7-a3fc6bb98cc6",
   "meta": {
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Practitioner"
@@ -25,11 +25,12 @@
   ],
   "identifier": [
     {
+      "use": "old",
       "type": {
         "coding": [
           {
             "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "ESN"
+            "code": "PN"
           }
         ]
       },
@@ -43,6 +44,12 @@
       }
     },
     {
+      "use": "old",
+      "system": "https://emis.com/Id/Practitioner/REFID",
+      "value": "4"
+    },
+    {
+      "use": "usual",
       "type": {
         "coding": [
           {
@@ -52,15 +59,18 @@
         ]
       },
       "system": "https://emis.com/Id/Practitioner/GUID",
-      "value": "a8fec350-25cf-4d63-88d7-a3fc6bb98cc6",
-      "assigner": {
-        "identifier": {
-          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-          "value": "F83004"
-        }
-      }
+      "value": "a8fec350-25cf-4d63-88d7-a3fc6bb98cc6"
     },
     {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "LN"
+          }
+        ]
+      },
       "system": "https://fhir.hl7.org.uk/Id/gmp-number",
       "value": "G7321704"
     }
