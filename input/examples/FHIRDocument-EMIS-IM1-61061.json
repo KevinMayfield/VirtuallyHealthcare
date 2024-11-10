@@ -53,7 +53,7 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:3572ce83-5b44-43b9-9398-40ee7034cb1b",
+          "reference": "urn:uuid:72e953f4-842e-4837-96f6-1c21827bbd17",
           "type": "Patient"
         },
         "date": "2002-06-30T00:00:00+00:00",
@@ -136,11 +136,6 @@
                   "system": "http://loinc.org",
                   "code": "29762-2",
                   "display": "Social history Narrative"
-                },
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "887051000000101",
-                  "display": "Social Context"
                 }
               ],
               "text": "Social"
@@ -164,7 +159,7 @@
                 {
                   "system": "http://loinc.org",
                   "code": "48767-8",
-                  "display": "Annotation comment"
+                  "display": "Annotation comment [Interpretation] Narrative"
                 }
               ],
               "text": "Comment"
@@ -207,10 +202,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:3572ce83-5b44-43b9-9398-40ee7034cb1b",
+      "fullUrl": "urn:uuid:72e953f4-842e-4837-96f6-1c21827bbd17",
       "resource": {
         "resourceType": "Patient",
-        "id": "3572ce83-5b44-43b9-9398-40ee7034cb1b",
+        "id": "72e953f4-842e-4837-96f6-1c21827bbd17",
         "identifier": [
           {
             "use": "usual",
@@ -325,7 +320,7 @@
           "text": "Breathless - mild exertion"
         },
         "subject": {
-          "reference": "urn:uuid:3572ce83-5b44-43b9-9398-40ee7034cb1b",
+          "reference": "urn:uuid:72e953f4-842e-4837-96f6-1c21827bbd17",
           "type": "Patient"
         },
         "effectiveDateTime": "2002-06-30T00:00:00+00:00",
@@ -389,7 +384,7 @@
           "text": "O/E - weight, 70 Kg"
         },
         "subject": {
-          "reference": "urn:uuid:3572ce83-5b44-43b9-9398-40ee7034cb1b",
+          "reference": "urn:uuid:72e953f4-842e-4837-96f6-1c21827bbd17",
           "type": "Patient"
         },
         "effectiveDateTime": "2002-06-30T00:00:00+00:00",
@@ -459,7 +454,7 @@
           "text": "Alcohol consumption, 0 units/week"
         },
         "subject": {
-          "reference": "urn:uuid:3572ce83-5b44-43b9-9398-40ee7034cb1b",
+          "reference": "urn:uuid:72e953f4-842e-4837-96f6-1c21827bbd17",
           "type": "Patient"
         },
         "effectiveDateTime": "2002-06-30T00:00:00+00:00",
@@ -529,7 +524,7 @@
           "text": "Beta blocker contraindicated"
         },
         "subject": {
-          "reference": "urn:uuid:3572ce83-5b44-43b9-9398-40ee7034cb1b",
+          "reference": "urn:uuid:72e953f4-842e-4837-96f6-1c21827bbd17",
           "type": "Patient"
         },
         "effectiveDateTime": "2002-06-30T00:00:00+00:00",
@@ -593,7 +588,7 @@
           "text": "CHD monitoring"
         },
         "subject": {
-          "reference": "urn:uuid:3572ce83-5b44-43b9-9398-40ee7034cb1b",
+          "reference": "urn:uuid:72e953f4-842e-4837-96f6-1c21827bbd17",
           "type": "Patient"
         },
         "effectiveDateTime": "2002-06-30T00:00:00+00:00",
