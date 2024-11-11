@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "361",
+  "id": "363",
   "meta": {
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Bundle-Document"
@@ -24,13 +24,7 @@
       "fullUrl": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
       "resource": {
         "resourceType": "Composition",
-        "id": "361",
-        "extension": [
-          {
-            "url": "http://fhir.virtuallyhealthcare.co.uk/LocationType",
-            "valueString": "37088c97-82fc-4b3e-bdbc-28f2c03b6cb8"
-          }
-        ],
+        "id": "363",
         "identifier": {
           "use": "usual",
           "system": "https://emis.com/Id/Consultation/GUID",
@@ -53,8 +47,21 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "date": "2024-11-08T15:51:00+00:00",
         "author": [
@@ -199,17 +206,17 @@
             "entry": [
               {
                 "reference": "urn:uuid:b795e488-21eb-49cb-9360-d4cb7a02dc6e",
-                "type": "Observation",
+                "type": "AllergyIntolerance",
                 "display": "Adverse reaction to drug"
               },
               {
                 "reference": "urn:uuid:6a18b33e-23f7-4fab-9899-232e494267c7",
-                "type": "Observation",
+                "type": "AllergyIntolerance",
                 "display": "Allergy to drug"
               },
               {
                 "reference": "urn:uuid:6e1a1654-a02b-4638-bad1-c64b65fd09f3",
-                "type": "Observation",
+                "type": "AllergyIntolerance",
                 "display": "Allergy to aspirin"
               }
             ]
@@ -521,10 +528,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+      "fullUrl": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
       "resource": {
         "resourceType": "Patient",
-        "id": "720d0105-e594-4467-b4fc-6817de3875d2",
+        "id": "afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
         "identifier": [
           {
             "use": "usual",
@@ -597,12 +604,12 @@
       "fullUrl": "urn:uuid:5fa04e13-3d6e-4ccd-99df-3d3ecdcb264b",
       "resource": {
         "resourceType": "Observation",
-        "id": "364",
+        "id": "366",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "364",
+            "value": "366",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -623,6 +630,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -639,8 +656,21 @@
           "text": "Serum TSH (thyroid stimulating hormone) level, 12 mU/L Added some lines of text"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -667,12 +697,12 @@
       "fullUrl": "urn:uuid:d3adf58c-bd92-4d45-b598-d76e2210a4a5",
       "resource": {
         "resourceType": "Observation",
-        "id": "365",
+        "id": "367",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "365",
+            "value": "367",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -693,6 +723,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -709,8 +749,21 @@
           "text": "Body weight, 79 kg"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -737,12 +790,12 @@
       "fullUrl": "urn:uuid:f859d2b0-a68f-4ff5-aa5d-44ebeff18505",
       "resource": {
         "resourceType": "Observation",
-        "id": "366",
+        "id": "368",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "366",
+            "value": "368",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -763,6 +816,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -779,8 +842,21 @@
           "text": "Standing height, 179 cm"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -807,12 +883,12 @@
       "fullUrl": "urn:uuid:9f8e11e9-381e-434c-b9da-a309ee669f83",
       "resource": {
         "resourceType": "Observation",
-        "id": "367",
+        "id": "369",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "367",
+            "value": "369",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -833,6 +909,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -849,8 +935,21 @@
           "text": "Body mass index, 24.66 kg/m2"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -877,12 +976,12 @@
       "fullUrl": "urn:uuid:d7c55283-f991-4854-85f5-e6def3cc82be",
       "resource": {
         "resourceType": "Observation",
-        "id": "368",
+        "id": "370",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "368",
+            "value": "370",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -903,6 +1002,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -919,8 +1028,21 @@
           "text": "Physical therapy procedure"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -941,12 +1063,12 @@
       "fullUrl": "urn:uuid:900566b1-a93d-4cb1-998a-a5141e2127bf",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "370",
+        "id": "372",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Attachment/DBID",
-            "value": "370",
+            "value": "372",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -983,7 +1105,7 @@
           "text": "Referral Letter (08-Nov-2024) for Refer for thyroid test"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
         },
         "date": "2024-11-08T00:00:00.000+00:00",
@@ -1007,6 +1129,21 @@
           }
         ],
         "context": {
+          "encounter": [
+            {
+              "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+              "identifier": {
+                "system": "https://emis.com/Id/Consultation/GUID",
+                "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+                "assigner": {
+                  "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "F83004"
+                  }
+                }
+              }
+            }
+          ],
           "event": [
             {
               "coding": [
@@ -1030,13 +1167,13 @@
     {
       "fullUrl": "urn:uuid:b795e488-21eb-49cb-9360-d4cb7a02dc6e",
       "resource": {
-        "resourceType": "Observation",
-        "id": "371",
+        "resourceType": "AllergyIntolerance",
+        "id": "373",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "371",
+            "value": "373",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1056,7 +1193,6 @@
             }
           }
         ],
-        "status": "unknown",
         "code": {
           "coding": [
             {
@@ -1072,35 +1208,45 @@
           ],
           "text": "Adverse reaction to drug aspirin"
         },
-        "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+        "patient": {
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
         },
-        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
-        "issued": "2024-11-08T15:51:00.000+00:00",
-        "performer": [
-          {
-            "reference": "urn:uuid:a716058c-f9d5-4537-b1e7-d021bd2185a3",
-            "type": "Practitioner",
-            "identifier": {
-              "system": "https://fhir.hl7.org.uk/Id/professional-code",
-              "value": "25825845"
-            },
-            "display": "Dr HealthOnline Test"
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
           }
-        ]
+        },
+        "recordedDate": "2024-11-08T15:51:00+00:00",
+        "recorder": {
+          "reference": "urn:uuid:a716058c-f9d5-4537-b1e7-d021bd2185a3",
+          "type": "Practitioner",
+          "identifier": {
+            "system": "https://fhir.hl7.org.uk/Id/professional-code",
+            "value": "25825845"
+          },
+          "display": "Dr HealthOnline Test"
+        }
       }
     },
     {
       "fullUrl": "urn:uuid:6a18b33e-23f7-4fab-9899-232e494267c7",
       "resource": {
-        "resourceType": "Observation",
-        "id": "372",
+        "resourceType": "AllergyIntolerance",
+        "id": "374",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "372",
+            "value": "374",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1120,7 +1266,6 @@
             }
           }
         ],
-        "status": "unknown",
         "code": {
           "coding": [
             {
@@ -1136,35 +1281,45 @@
           ],
           "text": "Allergy to drug"
         },
-        "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+        "patient": {
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
         },
-        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
-        "issued": "2024-11-08T15:51:00.000+00:00",
-        "performer": [
-          {
-            "reference": "urn:uuid:a716058c-f9d5-4537-b1e7-d021bd2185a3",
-            "type": "Practitioner",
-            "identifier": {
-              "system": "https://fhir.hl7.org.uk/Id/professional-code",
-              "value": "25825845"
-            },
-            "display": "Dr HealthOnline Test"
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
           }
-        ]
+        },
+        "recordedDate": "2024-11-08T15:51:00+00:00",
+        "recorder": {
+          "reference": "urn:uuid:a716058c-f9d5-4537-b1e7-d021bd2185a3",
+          "type": "Practitioner",
+          "identifier": {
+            "system": "https://fhir.hl7.org.uk/Id/professional-code",
+            "value": "25825845"
+          },
+          "display": "Dr HealthOnline Test"
+        }
       }
     },
     {
       "fullUrl": "urn:uuid:6e1a1654-a02b-4638-bad1-c64b65fd09f3",
       "resource": {
-        "resourceType": "Observation",
-        "id": "373",
+        "resourceType": "AllergyIntolerance",
+        "id": "375",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "373",
+            "value": "375",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1184,7 +1339,6 @@
             }
           }
         ],
-        "status": "unknown",
         "code": {
           "coding": [
             {
@@ -1200,35 +1354,45 @@
           ],
           "text": "Allergy to aspirin"
         },
-        "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+        "patient": {
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
         },
-        "effectiveDateTime": "2024-11-08T15:51:00+00:00",
-        "issued": "2024-11-08T15:51:00.000+00:00",
-        "performer": [
-          {
-            "reference": "urn:uuid:a716058c-f9d5-4537-b1e7-d021bd2185a3",
-            "type": "Practitioner",
-            "identifier": {
-              "system": "https://fhir.hl7.org.uk/Id/professional-code",
-              "value": "25825845"
-            },
-            "display": "Dr HealthOnline Test"
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
           }
-        ]
+        },
+        "recordedDate": "2024-11-08T15:51:00+00:00",
+        "recorder": {
+          "reference": "urn:uuid:a716058c-f9d5-4537-b1e7-d021bd2185a3",
+          "type": "Practitioner",
+          "identifier": {
+            "system": "https://fhir.hl7.org.uk/Id/professional-code",
+            "value": "25825845"
+          },
+          "display": "Dr HealthOnline Test"
+        }
       }
     },
     {
       "fullUrl": "urn:uuid:552182f3-208a-479f-ad28-bca5a82e312e",
       "resource": {
         "resourceType": "Observation",
-        "id": "374",
+        "id": "376",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "374",
+            "value": "376",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1249,6 +1413,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "social-history"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -1265,8 +1439,21 @@
           "text": "Family history of alcohol misuse (Aunt)"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1287,12 +1474,12 @@
       "fullUrl": "urn:uuid:3fe68913-6016-46b1-a20a-fb97fd125ea1",
       "resource": {
         "resourceType": "Observation",
-        "id": "375",
+        "id": "377",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "375",
+            "value": "377",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1313,6 +1500,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -1329,8 +1526,21 @@
           "text": "Venous blood specimen"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T00:00:00+00:00",
         "issued": "2024-11-08T00:00:00.000+00:00",
@@ -1351,12 +1561,12 @@
       "fullUrl": "urn:uuid:603260f4-3d90-4418-925b-4766f96f8575",
       "resource": {
         "resourceType": "Observation",
-        "id": "377",
+        "id": "379",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "377",
+            "value": "379",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1377,6 +1587,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "social-history"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -1393,8 +1613,21 @@
           "text": "No family history diabetes some test"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1415,12 +1648,12 @@
       "fullUrl": "urn:uuid:0242b574-fa7b-4614-9e7d-2a5736b58eda",
       "resource": {
         "resourceType": "Observation",
-        "id": "378",
+        "id": "380",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "378",
+            "value": "380",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1441,6 +1674,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "social-history"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -1457,8 +1700,21 @@
           "text": "Family history of breast cancer (Uncle)"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1479,12 +1735,12 @@
       "fullUrl": "urn:uuid:9c58bbb7-7211-48fc-8368-1b88d04fc6cf",
       "resource": {
         "resourceType": "Observation",
-        "id": "379",
+        "id": "381",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "379",
+            "value": "381",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1505,6 +1761,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -1521,8 +1787,21 @@
           "text": "Current non-smoker"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1543,12 +1822,12 @@
       "fullUrl": "urn:uuid:27201baa-56c6-40b2-b1b5-9dc709b50f89",
       "resource": {
         "resourceType": "Observation",
-        "id": "381",
+        "id": "383",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "381",
+            "value": "383",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1569,6 +1848,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -1585,8 +1874,21 @@
           "text": "Essential hypertension"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1607,12 +1909,12 @@
       "fullUrl": "urn:uuid:0abe00a6-7142-4cac-8478-042516975bf3",
       "resource": {
         "resourceType": "Observation",
-        "id": "383",
+        "id": "385",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "383",
+            "value": "385",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1633,6 +1935,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -1649,8 +1961,21 @@
           "text": "Hypertension monitoring"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1671,12 +1996,12 @@
       "fullUrl": "urn:uuid:388867f2-2e40-4b13-91e5-7bbf6b309a5b",
       "resource": {
         "resourceType": "Observation",
-        "id": "384",
+        "id": "386",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "384",
+            "value": "386",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1697,6 +2022,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -1713,8 +2048,21 @@
           "text": "Hypertension six month review"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1735,12 +2083,12 @@
       "fullUrl": "urn:uuid:b26a203d-51d9-4dfe-a6f1-143dec6a7d28",
       "resource": {
         "resourceType": "Observation",
-        "id": "385",
+        "id": "387",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "385",
+            "value": "387",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1761,6 +2109,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -1777,8 +2135,21 @@
           "text": "Medication review done"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1799,12 +2170,12 @@
       "fullUrl": "urn:uuid:470190a2-309a-4f28-a107-418bfc22ba77",
       "resource": {
         "resourceType": "Observation",
-        "id": "386",
+        "id": "388",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "386",
+            "value": "388",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1825,6 +2196,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -1841,8 +2222,21 @@
           "text": "Hypertension resolved"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1863,12 +2257,12 @@
       "fullUrl": "urn:uuid:d47702bf-a108-41a2-8f1f-0e34f718a654",
       "resource": {
         "resourceType": "Observation",
-        "id": "387",
+        "id": "389",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "387",
+            "value": "389",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1889,6 +2283,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -1905,8 +2309,21 @@
           "text": "Excepted from hypertension quality indicators - patient unsuitable"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1927,12 +2344,12 @@
       "fullUrl": "urn:uuid:f47bd9a2-5de0-4598-be29-d45b242c18b7",
       "resource": {
         "resourceType": "Observation",
-        "id": "388",
+        "id": "390",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "388",
+            "value": "390",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1953,6 +2370,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -1969,8 +2396,21 @@
           "text": "British or mixed British - ethnic category 2001 census"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -1991,12 +2431,12 @@
       "fullUrl": "urn:uuid:77828dc0-c740-4d22-8543-be5e44036c79",
       "resource": {
         "resourceType": "Observation",
-        "id": "389",
+        "id": "391",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "389",
+            "value": "391",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2017,6 +2457,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -2033,8 +2483,21 @@
           "text": "Dietary advice"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2055,12 +2518,12 @@
       "fullUrl": "urn:uuid:5ea579ff-88c8-4265-a539-c15d0e0ba185",
       "resource": {
         "resourceType": "Observation",
-        "id": "390",
+        "id": "392",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "390",
+            "value": "392",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2081,6 +2544,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -2097,8 +2570,21 @@
           "text": "Education about alcohol consumption"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2119,12 +2605,12 @@
       "fullUrl": "urn:uuid:22ba9307-b02e-4424-9856-3c424b2cdfe9",
       "resource": {
         "resourceType": "Observation",
-        "id": "391",
+        "id": "393",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "391",
+            "value": "393",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2145,6 +2631,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -2161,8 +2657,21 @@
           "text": "ECG requested"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2183,12 +2692,12 @@
       "fullUrl": "urn:uuid:01247827-f6d8-4766-bf19-97d0cb029d1a",
       "resource": {
         "resourceType": "Observation",
-        "id": "392",
+        "id": "394",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "392",
+            "value": "394",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2209,6 +2718,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -2225,8 +2744,21 @@
           "text": "Alcohol consumption, 0 U/week"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2253,12 +2785,12 @@
       "fullUrl": "urn:uuid:9955d4bb-51fb-41c3-9e24-182eb108dfe7",
       "resource": {
         "resourceType": "Observation",
-        "id": "393",
+        "id": "395",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "393",
+            "value": "395",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2279,6 +2811,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -2295,8 +2837,21 @@
           "text": "Serum cholesterol level, 123 mmol/L"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2323,12 +2878,12 @@
       "fullUrl": "urn:uuid:02bb3059-6ff1-48af-a4ec-27afb78ef59d",
       "resource": {
         "resourceType": "Observation",
-        "id": "394",
+        "id": "396",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "394",
+            "value": "396",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2349,6 +2904,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -2365,8 +2930,21 @@
           "text": "Serum high density lipoprotein cholesterol level, 234 mmol/L"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2393,12 +2971,12 @@
       "fullUrl": "urn:uuid:44fa1523-ffef-4d71-ba05-4a38f629b02e",
       "resource": {
         "resourceType": "Observation",
-        "id": "395",
+        "id": "397",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "395",
+            "value": "397",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2419,6 +2997,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -2435,8 +3023,21 @@
           "text": "Serum creatinine level, 123 umol/L"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2489,6 +3090,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -2505,8 +3116,21 @@
           "text": "Test request : Full Blood Count"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2553,6 +3177,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -2569,8 +3203,21 @@
           "text": "Test request : Plasma Viscosity"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2617,6 +3264,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -2633,8 +3290,21 @@
           "text": "Test request : Antenatal"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2681,6 +3351,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -2697,8 +3377,21 @@
           "text": "Systolic arterial pressure, 117 mmHg"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2751,6 +3444,16 @@
           }
         ],
         "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -2767,8 +3470,21 @@
           "text": "Diastolic arterial pressure, 75 mmHg"
         },
         "subject": {
-          "reference": "urn:uuid:720d0105-e594-4467-b4fc-6817de3875d2",
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
           "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
         },
         "effectiveDateTime": "2024-11-08T15:51:00+00:00",
         "issued": "2024-11-08T15:51:00.000+00:00",
@@ -2871,6 +3587,56 @@
             "prefix": [
               "Dr"
             ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0b81d76b-fdb2-4019-a7c3-5a42d8e96c64",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "0b81d76b-fdb2-4019-a7c3-5a42d8e96c64",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "https://emis.com/Id/LocationType/GUID",
+                "code": "357efd4f-7912-de6e-13b8-d3faced28522"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "type": "Patient"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:a716058c-f9d5-4537-b1e7-d021bd2185a3",
+              "type": "Practitioner",
+              "identifier": {
+                "system": "https://fhir.hl7.org.uk/Id/professional-code",
+                "value": "25825845"
+              },
+              "display": "Dr HealthOnline Test"
+            }
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "identifier": {
+                "system": "https://emis.com/Id/Location/GUID",
+                "value": "37088c97-82fc-4b3e-bdbc-28f2c03b6cb8"
+              },
+              "display": "Main Building"
+            }
           }
         ]
       }
