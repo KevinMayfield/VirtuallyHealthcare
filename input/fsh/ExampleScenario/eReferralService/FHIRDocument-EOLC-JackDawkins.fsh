@@ -112,7 +112,7 @@ Usage: #example
 
 
 Instance: FHIRDocumentEOLCCarePlanBundle
-InstanceOf: Bundle-Document
+InstanceOf: FHIRDocument
 Title:       "Bundle `Document` - Referral Letter"
 Description:  "FHIR Document Referral Letter for Jack Dawkins"
 Usage: #example
