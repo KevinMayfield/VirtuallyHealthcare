@@ -23,11 +23,9 @@ Description: "Is based on  [HL7 International Patient Summary - Bundle (document
 * entry.response ..0
 * entry contains
     composition 1..1 and
-    patient 1..1 and other 0..*
+    patient 1..1
 
 * entry[composition].resource 1..
 * entry[composition].resource only Composition
 * entry[patient].resource 1..
 * entry[patient].resource only Patient
-* entry[other].resource 1..
-* entry[other].resource only Observation or MedicationRequest or Immunization or Condition or Encounter or Practitioner or ServiceRequest or DocumentReference or Task or AllergyIntolerance

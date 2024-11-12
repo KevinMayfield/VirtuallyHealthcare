@@ -9,7 +9,7 @@
   "identifier": {
     "use": "usual",
     "system": "https://tools.ietf.org/html/rfc4122",
-    "value": "d676b89f-7a1a-4129-bd0b-5cc8163020c0",
+    "value": "70c2de6c-9c95-4b68-8503-036fa35e0968",
     "assigner": {
       "identifier": {
         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -21,14 +21,14 @@
   "timestamp": "2024-11-08T15:51:00.000+00:00",
   "entry": [
     {
-      "fullUrl": "urn:uuid:d676b89f-7a1a-4129-bd0b-5cc8163020c0",
+      "fullUrl": "urn:uuid:70c2de6c-9c95-4b68-8503-036fa35e0968",
       "resource": {
         "resourceType": "Composition",
         "id": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
         "identifier": {
           "use": "usual",
           "system": "https://tools.ietf.org/html/rfc4122",
-          "value": "d676b89f-7a1a-4129-bd0b-5cc8163020c0",
+          "value": "70c2de6c-9c95-4b68-8503-036fa35e0968",
           "assigner": {
             "identifier": {
               "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -47,7 +47,7 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -106,9 +106,9 @@
             "code": {
               "coding": [
                 {
-                  "system": "http://snomed.info/sct",
-                  "code": "715851000000102",
-                  "display": "Examination findings"
+                  "system": "http://loinc.org",
+                  "code": "8716-3",
+                  "display": "Vital signs"
                 }
               ],
               "text": "Examination"
@@ -592,10 +592,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+      "fullUrl": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
       "resource": {
         "resourceType": "Patient",
-        "id": "a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+        "id": "961b4d3d-be06-4a76-8404-d2876e02f17c",
         "identifier": [
           {
             "use": "usual",
@@ -715,7 +715,7 @@
           "text": "Serum TSH (thyroid stimulating hormone) level, 12 mU/L"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -803,7 +803,7 @@
           "text": "Body weight, 79 kg"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -891,7 +891,7 @@
           "text": "Standing height, 179 cm"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -979,7 +979,7 @@
           "text": "Body mass index, 24.66 kg/m2"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -1067,7 +1067,7 @@
           "text": "Physical therapy procedure"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -1127,11 +1127,13 @@
             }
           }
         ],
+        "status": "unknown",
+        "intent": "order",
         "code": {
           "text": "Refer for thyroid test"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -1200,7 +1202,7 @@
           "text": "Referral Letter (08-Nov-2024)"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "date": "2024-11-08T00:00:00.000+00:00",
@@ -1295,7 +1297,7 @@
           "text": "Discharge summary report"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "date": "2024-11-08T15:51:00.000+00:00",
@@ -1389,7 +1391,7 @@
           "text": "Adverse reaction to drug"
         },
         "patient": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -1457,7 +1459,7 @@
           "text": "Allergy to drug"
         },
         "patient": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -1525,7 +1527,7 @@
           "text": "Allergy to aspirin"
         },
         "patient": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -1604,7 +1606,7 @@
           "text": "Family history of alcohol misuse (Aunt)"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -1686,7 +1688,7 @@
           "text": "Venous blood specimen"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -1757,7 +1759,7 @@
           "text": "Medication review"
         },
         "for": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -1838,7 +1840,7 @@
           "text": "No family history diabetes"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -1920,7 +1922,7 @@
           "text": "Family history of breast cancer (Uncle)"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -2002,7 +2004,7 @@
           "text": "Current non-smoker"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -2084,7 +2086,7 @@
           "text": "Essential hypertension"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -2166,7 +2168,7 @@
           "text": "Hypertension monitoring"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -2248,7 +2250,7 @@
           "text": "Hypertension six month review"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -2330,7 +2332,7 @@
           "text": "Medication review done"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -2412,7 +2414,7 @@
           "text": "Hypertension resolved"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -2494,7 +2496,7 @@
           "text": "Excepted from hypertension quality indicators - patient unsuitable"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -2576,7 +2578,7 @@
           "text": "British or mixed British - ethnic category 2001 census"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -2658,7 +2660,7 @@
           "text": "Dietary advice"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -2740,7 +2742,7 @@
           "text": "Education about alcohol consumption"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -2822,7 +2824,7 @@
           "text": "ECG requested"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -2904,7 +2906,7 @@
           "text": "Alcohol consumption, 0 U/week"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -2937,7 +2939,7 @@
           "value": 0,
           "unit": "U/week",
           "system": "http://unitsofmeasure.org",
-          "code": "U/week"
+          "code": "U/wk"
         }
       }
     },
@@ -2992,7 +2994,7 @@
           "text": "Serum cholesterol level, 123 mmol/L"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -3080,7 +3082,7 @@
           "text": "Serum high density lipoprotein cholesterol level, 234 mmol/L"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -3168,7 +3170,7 @@
           "text": "Serum creatinine level, 123 umol/L"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -3245,7 +3247,7 @@
           "text": "Hypertension monitoring"
         },
         "for": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -3326,7 +3328,7 @@
           "text": "Test request : Full Blood Count"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -3408,7 +3410,7 @@
           "text": "Test request : Plasma Viscosity"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -3490,7 +3492,7 @@
           "text": "Test request : Antenatal"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -3572,7 +3574,7 @@
           "text": "Systolic arterial pressure, 117 mmHg"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -3660,7 +3662,7 @@
           "text": "Diastolic arterial pressure, 75 mmHg"
         },
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "encounter": {
@@ -3802,7 +3804,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
+          "reference": "urn:uuid:961b4d3d-be06-4a76-8404-d2876e02f17c",
           "type": "Patient"
         },
         "participant": [
