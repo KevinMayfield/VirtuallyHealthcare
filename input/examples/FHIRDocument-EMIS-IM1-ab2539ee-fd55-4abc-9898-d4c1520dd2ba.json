@@ -3,13 +3,13 @@
   "id": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
   "meta": {
     "profile" : [
-      "https://fhir.virtually.healthcare/StructureDefinition/Bundle-Document"
+      "https://fhir.virtually.healthcare/StructureDefinition/FHIRDocument"
     ]
   },
   "identifier": {
     "use": "usual",
     "system": "https://tools.ietf.org/html/rfc4122",
-    "value": "3bca320f-b618-4027-a0f6-4b21c975c153",
+    "value": "d676b89f-7a1a-4129-bd0b-5cc8163020c0",
     "assigner": {
       "identifier": {
         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -21,14 +21,14 @@
   "timestamp": "2024-11-08T15:51:00.000+00:00",
   "entry": [
     {
-      "fullUrl": "urn:uuid:3bca320f-b618-4027-a0f6-4b21c975c153",
+      "fullUrl": "urn:uuid:d676b89f-7a1a-4129-bd0b-5cc8163020c0",
       "resource": {
         "resourceType": "Composition",
         "id": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
         "identifier": {
           "use": "usual",
           "system": "https://tools.ietf.org/html/rfc4122",
-          "value": "3bca320f-b618-4027-a0f6-4b21c975c153",
+          "value": "d676b89f-7a1a-4129-bd0b-5cc8163020c0",
           "assigner": {
             "identifier": {
               "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -47,7 +47,7 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -592,10 +592,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+      "fullUrl": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
       "resource": {
         "resourceType": "Patient",
-        "id": "6399ee03-d967-4908-904a-916e6549483d",
+        "id": "a099b9d4-1ddc-41eb-8167-08ceddc26d78",
         "identifier": [
           {
             "use": "usual",
@@ -707,11 +707,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "442W.",
-              "display": "Serum TSH (thyroid stimulating hormone) level"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "1022791000000101",
               "display": "Serum TSH (thyroid stimulating hormone) level"
@@ -720,7 +715,7 @@
           "text": "Serum TSH (thyroid stimulating hormone) level, 12 mU/L"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -800,11 +795,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "22A..",
-              "display": "Body weight"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "27113001",
               "display": "Body weight"
@@ -813,7 +803,7 @@
           "text": "Body weight, 79 kg"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -893,11 +883,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "229..",
-              "display": "Standing height"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "248333004",
               "display": "Standing height"
@@ -906,7 +891,7 @@
           "text": "Standing height, 179 cm"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -986,11 +971,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "22K..",
-              "display": "Body mass index"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "60621009",
               "display": "Body mass index"
@@ -999,7 +979,7 @@
           "text": "Body mass index, 24.66 kg/m2"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -1079,11 +1059,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "^ESCTPH398275",
-              "display": "Physical therapy procedure"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "91251008",
               "display": "Physical therapy procedure"
@@ -1092,7 +1067,7 @@
           "text": "Physical therapy procedure"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -1156,7 +1131,7 @@
           "text": "Refer for thyroid test"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -1217,11 +1192,6 @@
         "type": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "9b0g.",
-              "display": "Referral letter"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "25611000000107",
               "display": "Referral letter"
@@ -1230,7 +1200,7 @@
           "text": "Referral Letter (08-Nov-2024)"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "date": "2024-11-08T00:00:00.000+00:00",
@@ -1272,11 +1242,6 @@
           "event": [
             {
               "coding": [
-                {
-                  "system": "http://read.info/readv2",
-                  "code": "9b0g.",
-                  "display": "Referral letter"
-                },
                 {
                   "system": "http://snomed.info/sct",
                   "code": "25611000000107",
@@ -1322,11 +1287,6 @@
         "type": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "9b0B.",
-              "display": "Discharge summary report"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "25581000000101",
               "display": "Discharge summary report"
@@ -1335,7 +1295,7 @@
           "text": "Discharge summary report"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "date": "2024-11-08T15:51:00.000+00:00",
@@ -1377,11 +1337,6 @@
           "event": [
             {
               "coding": [
-                {
-                  "system": "http://read.info/readv2",
-                  "code": "9b0B.",
-                  "display": "Discharge summary report"
-                },
                 {
                   "system": "http://snomed.info/sct",
                   "code": "25581000000101",
@@ -1426,11 +1381,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "1Z3..",
-              "display": "Adverse reaction to drug"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "62014003",
               "display": "Adverse reaction to drug"
@@ -1439,7 +1389,7 @@
           "text": "Adverse reaction to drug"
         },
         "patient": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -1499,11 +1449,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "^ESCTAL688730",
-              "display": "Allergy to drug"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "416098002",
               "display": "Allergy to drug"
@@ -1512,7 +1457,7 @@
           "text": "Allergy to drug"
         },
         "patient": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -1572,11 +1517,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "^ESCT1379761",
-              "display": "Allergy to aspirin"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "293586001",
               "display": "Allergy to aspirin"
@@ -1585,7 +1525,7 @@
           "text": "Allergy to aspirin"
         },
         "patient": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -1656,11 +1596,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "12X0.",
-              "display": "Family history of alcohol misuse"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "293161000000103",
               "display": "Family history of alcohol misuse"
@@ -1669,7 +1604,7 @@
           "text": "Family history of alcohol misuse (Aunt)"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -1743,11 +1678,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "EMISNQVE3",
-              "display": "Venous blood specimen"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "122555007",
               "display": "Venous blood specimen"
@@ -1756,7 +1686,7 @@
           "text": "Venous blood specimen"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -1827,7 +1757,7 @@
           "text": "Medication review"
         },
         "for": {
-          "reference": "Patient/3",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -1900,11 +1830,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "1228.",
-              "display": "No family history diabetes"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "160274005",
               "display": "No family history diabetes"
@@ -1913,7 +1838,7 @@
           "text": "No family history diabetes"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -1987,11 +1912,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "1243.",
-              "display": "Family history of breast cancer"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "429740004",
               "display": "Family history of breast cancer"
@@ -2000,7 +1920,7 @@
           "text": "Family history of breast cancer (Uncle)"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -2074,11 +1994,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "137L.",
-              "display": "Current non-smoker"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "160618006",
               "display": "Current non-smoker"
@@ -2087,7 +2002,7 @@
           "text": "Current non-smoker"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -2161,11 +2076,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "G20..",
-              "display": "Essential hypertension"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "59621000",
               "display": "Essential hypertension"
@@ -2174,7 +2084,7 @@
           "text": "Essential hypertension"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -2248,11 +2158,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "662P.",
-              "display": "Hypertension monitoring"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "275944005",
               "display": "Hypertension monitoring"
@@ -2261,7 +2166,7 @@
           "text": "Hypertension monitoring"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -2335,11 +2240,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "662c.",
-              "display": "Hypertension six month review"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "401048005",
               "display": "Hypertension six month review"
@@ -2348,7 +2248,7 @@
           "text": "Hypertension six month review"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -2422,11 +2322,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "8B3V.",
-              "display": "Medication review done"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "314530002",
               "display": "Medication review done"
@@ -2435,7 +2330,7 @@
           "text": "Medication review done"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -2509,11 +2404,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "212K.",
-              "display": "Hypertension resolved"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "162659009",
               "display": "Hypertension resolved"
@@ -2522,7 +2412,7 @@
           "text": "Hypertension resolved"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -2596,11 +2486,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "9h31.",
-              "display": "Excepted from hypertension quality indicators - patient unsuitable"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "716821000000100",
               "display": "Excepted from hypertension quality indicators - patient unsuitable"
@@ -2609,7 +2494,7 @@
           "text": "Excepted from hypertension quality indicators - patient unsuitable"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -2683,11 +2568,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "9i0..",
-              "display": "British or mixed British - ethnic category 2001 census"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "92391000000108",
               "display": "British or mixed British - ethnic category 2001 census"
@@ -2696,7 +2576,7 @@
           "text": "British or mixed British - ethnic category 2001 census"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -2770,11 +2650,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "8CA4.",
-              "display": "Dietary advice"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "11816003",
               "display": "Dietary advice"
@@ -2783,7 +2658,7 @@
           "text": "Dietary advice"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -2857,11 +2732,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "8CAM.",
-              "display": "Education about alcohol consumption"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "281078001",
               "display": "Education about alcohol consumption"
@@ -2870,7 +2740,7 @@
           "text": "Education about alcohol consumption"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -2944,11 +2814,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "3211.",
-              "display": "ECG requested"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "164846002",
               "display": "ECG requested"
@@ -2957,7 +2822,7 @@
           "text": "ECG requested"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -3031,11 +2896,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "136..",
-              "display": "Alcohol consumption"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "160573003",
               "display": "Alcohol consumption"
@@ -3044,7 +2904,7 @@
           "text": "Alcohol consumption, 0 U/week"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -3124,11 +2984,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "44P..",
-              "display": "Serum cholesterol level"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "1005671000000105",
               "display": "Serum cholesterol level"
@@ -3137,7 +2992,7 @@
           "text": "Serum cholesterol level, 123 mmol/L"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -3217,11 +3072,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "44P5.",
-              "display": "Serum high density lipoprotein cholesterol level"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "1005681000000107",
               "display": "Serum high density lipoprotein cholesterol level"
@@ -3230,7 +3080,7 @@
           "text": "Serum high density lipoprotein cholesterol level, 234 mmol/L"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -3310,11 +3160,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "44J3.",
-              "display": "Serum creatinine level"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "1000731000000107",
               "display": "Serum creatinine level"
@@ -3323,7 +3168,7 @@
           "text": "Serum creatinine level, 123 umol/L"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -3400,7 +3245,7 @@
           "text": "Hypertension monitoring"
         },
         "for": {
-          "reference": "Patient/3",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -3473,11 +3318,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "EMISREQ|424..",
-              "display": "Test request : Full Blood Count"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "109841000006101",
               "display": "Test request : Full Blood Count"
@@ -3486,7 +3326,7 @@
           "text": "Test request : Full Blood Count"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -3560,11 +3400,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "EMISREQ|42B..",
-              "display": "Test request : Plasma Viscosity"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "110021000006108",
               "display": "Test request : Plasma Viscosity"
@@ -3573,7 +3408,7 @@
           "text": "Test request : Plasma Viscosity"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -3647,11 +3482,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "EMISREQ|62L..",
-              "display": "Test request : Antenatal"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "109661000006103",
               "display": "Test request : Antenatal"
@@ -3660,7 +3490,7 @@
           "text": "Test request : Antenatal"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -3734,11 +3564,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "2469.",
-              "display": "Systolic arterial pressure"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "72313002",
               "display": "Systolic arterial pressure"
@@ -3747,7 +3572,7 @@
           "text": "Systolic arterial pressure, 117 mmHg"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -3827,11 +3652,6 @@
         "code": {
           "coding": [
             {
-              "system": "http://read.info/readv2",
-              "code": "246A.",
-              "display": "Diastolic arterial pressure"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "1091811000000102",
               "display": "Diastolic arterial pressure"
@@ -3840,7 +3660,7 @@
           "text": "Diastolic arterial pressure, 75 mmHg"
         },
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "encounter": {
@@ -3982,7 +3802,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6399ee03-d967-4908-904a-916e6549483d",
+          "reference": "urn:uuid:a099b9d4-1ddc-41eb-8167-08ceddc26d78",
           "type": "Patient"
         },
         "participant": [

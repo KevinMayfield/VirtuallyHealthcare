@@ -3,7 +3,7 @@
   "id": "61061",
   "meta": {
     "profile" : [
-      "https://fhir.virtually.healthcare/StructureDefinition/Bundle-Document"
+      "https://fhir.virtually.healthcare/StructureDefinition/FHIRDocument"
     ]
   },
   "identifier": {
