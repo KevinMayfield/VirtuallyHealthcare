@@ -56,6 +56,7 @@ Description: "Merge of UKCore-Composition, PRSB Section Headers, NHS England [Tr
 * section[sectionMedications].code 1..
 * section[sectionMedications].code = $loinc#10160-0
 
+
 * section[sectionAllergies] ^short = "IPS Allergies and Intolerances Section"
 * section[sectionAllergies] ^definition = "This section documents the relevant allergies or intolerances (conditions) for that patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.\r\nAt a minimum, it should list currently active and any relevant historical allergies and adverse reactions.\r\nIf no information about allergies is available, or if no allergies are known this should be clearly documented in the section."
 * section[sectionAllergies].title 1.. MS
