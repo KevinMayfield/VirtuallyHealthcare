@@ -277,7 +277,7 @@ resources:
     name: FHIR Document EMIS IM1 Consultation Note 30 Jun 2002
     description: FHIR Document EMIS IM1 Consultation Note
     exampleBoolean: true
-  Bundle/363:
+  Bundle/ab2539ee-fd55-4abc-9898-d4c1520dd2ba:
     name: FHIR Document EMIS IM1 Consultation Note 8 Nov 2024
     description: FHIR Document EMIS IM1 Consultation Note 8 Nov 2024
     exampleBoolean: true

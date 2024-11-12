@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "363",
+  "id": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
   "meta": {
     "profile" : [
       "https://fhir.virtually.healthcare/StructureDefinition/Bundle-Document"
@@ -8,8 +8,8 @@
   },
   "identifier": {
     "use": "usual",
-    "system": "https://emis.com/Id/Consultation/GUID",
-    "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "b95ae600-4d18-4d62-9465-e04592f9bfa9",
     "assigner": {
       "identifier": {
         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -21,14 +21,14 @@
   "timestamp": "2024-11-08T15:51:00.000+00:00",
   "entry": [
     {
-      "fullUrl": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+      "fullUrl": "urn:uuid:b95ae600-4d18-4d62-9465-e04592f9bfa9",
       "resource": {
         "resourceType": "Composition",
-        "id": "363",
+        "id": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
         "identifier": {
           "use": "usual",
-          "system": "https://emis.com/Id/Consultation/GUID",
-          "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "system": "https://tools.ietf.org/html/rfc4122",
+          "value": "b95ae600-4d18-4d62-9465-e04592f9bfa9",
           "assigner": {
             "identifier": {
               "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -47,7 +47,7 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -91,7 +91,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Serum TSH (thyroid stimulating hormone) level, 12 mU/L <i>Added some lines of text</i></p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Serum TSH (thyroid stimulating hormone) level, 12 mU/L <i/></p></div>"
             },
             "entry": [
               {
@@ -120,7 +120,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Body weight, 79 kg</p><p>Standing height, 179 cm</p><p>Body mass index, 24.66 kg/m2</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Body weight, 79 kg <i/></p><p>Standing height, 179 cm <i/></p><p>Body mass index, 24.66 kg/m2 <i/></p></div>"
             },
             "entry": [
               {
@@ -154,13 +154,36 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Physical therapy procedure</p><p> <i>getting hip pain</i></p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Physical therapy procedure <i/></p></div>"
             },
             "entry": [
               {
                 "reference": "urn:uuid:d7c55283-f991-4854-85f5-e6def3cc82be",
                 "type": "Observation",
                 "display": "Physical therapy procedure"
+              }
+            ]
+          },
+          {
+            "title": "Referral",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Referral",
+                  "display": "Referral"
+                }
+              ],
+              "text": "Referral"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Refer for thyroid test <i/></p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:71f58a26-5daa-491d-b85f-cf60fbe90236",
+                "type": "ServiceRequest"
               }
             ]
           },
@@ -178,11 +201,15 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Referral Letter (08-Nov-2024) <i>for Refer for thyroid test</i></p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Referral Letter (08-Nov-2024) <i/></p><p>Discharge summary report <i/></p></div>"
             },
             "entry": [
               {
                 "reference": "urn:uuid:900566b1-a93d-4cb1-998a-a5141e2127bf",
+                "type": "DocumentReference"
+              },
+              {
+                "reference": "urn:uuid:4a838ced-3568-4839-b247-316fabef3163",
                 "type": "DocumentReference"
               }
             ]
@@ -201,7 +228,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Adverse reaction to drug <i>aspirin</i></p><p>Allergy to drug</p><p>Allergy to aspirin</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Adverse reaction to drug <i/></p><p>Allergy to drug <i/></p><p>Allergy to aspirin <i/></p></div>"
             },
             "entry": [
               {
@@ -240,7 +267,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Family history of alcohol misuse (Aunt)</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Family history of alcohol misuse (Aunt) <i/></p></div>"
             },
             "entry": [
               {
@@ -264,7 +291,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Venous blood specimen</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Venous blood specimen <i/></p></div>"
             },
             "entry": [
               {
@@ -287,9 +314,32 @@
               "text": "Comment"
             },
             "text": {
-              "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <i>this is a comment. steps. weight</i></p></div>"
+              "status": "generated"
             }
+          },
+          {
+            "title": "Follow up",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Follow up",
+                  "display": "Follow up"
+                }
+              ],
+              "text": "Follow up"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Medication review 08/12/2024</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:70efbefb-9985-4579-90ed-fc1b36ef2905",
+                "type": "Task",
+                "display": "Medication review 08/12/2024"
+              }
+            ]
           },
           {
             "title": "Family History",
@@ -305,7 +355,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>No family history diabetes <i>some test</i></p><p>Family history of breast cancer (Uncle)</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>No family history diabetes <i/></p><p>Family history of breast cancer (Uncle) <i/></p></div>"
             },
             "entry": [
               {
@@ -334,7 +384,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Current non-smoker</p><p>Essential hypertension</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Current non-smoker <i/></p><p>Essential hypertension <i/></p></div>"
             },
             "entry": [
               {
@@ -363,7 +413,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Hypertension monitoring</p><p>Hypertension six month review</p><p>Medication review done</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Hypertension monitoring <i/></p><p>Hypertension six month review <i/></p><p>Medication review done <i/></p></div>"
             },
             "entry": [
               {
@@ -397,7 +447,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Hypertension resolved</p><p>Excepted from hypertension quality indicators - patient unsuitable</p><p>British or mixed British - ethnic category 2001 census</p><p>Dietary advice</p><p>Education about alcohol consumption</p><p>ECG requested</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Hypertension resolved <i/></p><p>Excepted from hypertension quality indicators - patient unsuitable <i/></p><p>British or mixed British - ethnic category 2001 census <i/></p><p>Dietary advice <i/></p><p>Education about alcohol consumption <i/></p><p>ECG requested <i/></p></div>"
             },
             "entry": [
               {
@@ -446,7 +496,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Alcohol consumption, 0 U/week</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Alcohol consumption, 0 U/week <i/></p></div>"
             },
             "entry": [
               {
@@ -470,7 +520,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Serum cholesterol level, 123 mmol/L</p><p>Serum high density lipoprotein cholesterol level, 234 mmol/L</p><p>Serum creatinine level, 123 umol/L</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Serum cholesterol level, 123 mmol/L <i/></p><p>Serum high density lipoprotein cholesterol level, 234 mmol/L <i/></p><p>Serum creatinine level, 123 umol/L <i/></p></div>"
             },
             "entry": [
               {
@@ -487,6 +537,30 @@
                 "reference": "urn:uuid:44fa1523-ffef-4d71-ba05-4a38f629b02e",
                 "type": "Observation",
                 "display": "Serum creatinine level, 123 umol/L"
+              }
+            ]
+          },
+          {
+            "title": "Follow up",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Follow up",
+                  "display": "Follow up"
+                }
+              ],
+              "text": "Follow up"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Hypertension monitoring 08/11/2024</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:b8657275-8d33-4b78-9f93-8977ffb319df",
+                "type": "Task",
+                "display": "Hypertension monitoring 08/11/2024"
               }
             ]
           },
@@ -528,10 +602,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+      "fullUrl": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
       "resource": {
         "resourceType": "Patient",
-        "id": "afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+        "id": "b7951809-0acb-4dfa-ba90-3032869e0685",
         "identifier": [
           {
             "use": "usual",
@@ -604,12 +678,12 @@
       "fullUrl": "urn:uuid:5fa04e13-3d6e-4ccd-99df-3d3ecdcb264b",
       "resource": {
         "resourceType": "Observation",
-        "id": "366",
+        "id": "5fa04e13-3d6e-4ccd-99df-3d3ecdcb264b",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "366",
+            "value": "3263",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -653,10 +727,10 @@
               "display": "Serum TSH (thyroid stimulating hormone) level"
             }
           ],
-          "text": "Serum TSH (thyroid stimulating hormone) level, 12 mU/L Added some lines of text"
+          "text": "Serum TSH (thyroid stimulating hormone) level, 12 mU/L"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -697,12 +771,12 @@
       "fullUrl": "urn:uuid:d3adf58c-bd92-4d45-b598-d76e2210a4a5",
       "resource": {
         "resourceType": "Observation",
-        "id": "367",
+        "id": "d3adf58c-bd92-4d45-b598-d76e2210a4a5",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "367",
+            "value": "3264",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -749,7 +823,7 @@
           "text": "Body weight, 79 kg"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -790,12 +864,12 @@
       "fullUrl": "urn:uuid:f859d2b0-a68f-4ff5-aa5d-44ebeff18505",
       "resource": {
         "resourceType": "Observation",
-        "id": "368",
+        "id": "f859d2b0-a68f-4ff5-aa5d-44ebeff18505",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "368",
+            "value": "3265",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -842,7 +916,7 @@
           "text": "Standing height, 179 cm"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -883,12 +957,12 @@
       "fullUrl": "urn:uuid:9f8e11e9-381e-434c-b9da-a309ee669f83",
       "resource": {
         "resourceType": "Observation",
-        "id": "369",
+        "id": "9f8e11e9-381e-434c-b9da-a309ee669f83",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "369",
+            "value": "3266",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -935,7 +1009,7 @@
           "text": "Body mass index, 24.66 kg/m2"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -976,12 +1050,12 @@
       "fullUrl": "urn:uuid:d7c55283-f991-4854-85f5-e6def3cc82be",
       "resource": {
         "resourceType": "Observation",
-        "id": "370",
+        "id": "d7c55283-f991-4854-85f5-e6def3cc82be",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "370",
+            "value": "3267",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1028,7 +1102,7 @@
           "text": "Physical therapy procedure"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -1060,15 +1134,76 @@
       }
     },
     {
+      "fullUrl": "urn:uuid:71f58a26-5daa-491d-b85f-cf60fbe90236",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "71f58a26-5daa-491d-b85f-cf60fbe90236",
+        "identifier": [
+          {
+            "use": "secondary",
+            "system": "https://emis.com/Id/Referral/DBID",
+            "value": "3269",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "usual",
+            "system": "https://emis.com/Id/Referral/GUID",
+            "value": "71f58a26-5daa-491d-b85f-cf60fbe90236",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "code": {
+          "text": "Refer for thyroid test"
+        },
+        "subject": {
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
+          "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        },
+        "authoredOn": "2024-11-08T00:00:00+00:00",
+        "requester": {
+          "reference": "urn:uuid:a716058c-f9d5-4537-b1e7-d021bd2185a3",
+          "type": "Practitioner",
+          "identifier": {
+            "system": "https://fhir.hl7.org.uk/Id/professional-code",
+            "value": "25825845"
+          },
+          "display": "Dr HealthOnline Test"
+        }
+      }
+    },
+    {
       "fullUrl": "urn:uuid:900566b1-a93d-4cb1-998a-a5141e2127bf",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "372",
+        "id": "3272",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Attachment/DBID",
-            "value": "372",
+            "value": "3272",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1102,10 +1237,10 @@
               "display": "Referral letter"
             }
           ],
-          "text": "Referral Letter (08-Nov-2024) for Refer for thyroid test"
+          "text": "Referral Letter (08-Nov-2024)"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "date": "2024-11-08T00:00:00.000+00:00",
@@ -1158,7 +1293,112 @@
                   "display": "Referral letter"
                 }
               ],
-              "text": "Referral Letter (08-Nov-2024) for Refer for thyroid test"
+              "text": "Referral Letter (08-Nov-2024)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4a838ced-3568-4839-b247-316fabef3163",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "3273",
+        "identifier": [
+          {
+            "use": "secondary",
+            "system": "https://emis.com/Id/Attachment/DBID",
+            "value": "3273",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "usual",
+            "system": "https://emis.com/Id/Attachment/GUID",
+            "value": "4a838ced-3568-4839-b247-316fabef3163",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "system": "http://read.info/readv2",
+              "code": "9b0B.",
+              "display": "Discharge summary report"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "25581000000101",
+              "display": "Discharge summary report"
+            }
+          ],
+          "text": "Discharge summary report"
+        },
+        "subject": {
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
+          "type": "Patient"
+        },
+        "date": "2024-11-08T15:51:00.000+00:00",
+        "author": [
+          {
+            "reference": "urn:uuid:a716058c-f9d5-4537-b1e7-d021bd2185a3",
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/professional-code",
+              "value": "25825845"
+            },
+            "display": "Dr HealthOnline Test"
+          }
+        ],
+        "content": [
+          {
+            "attachment": {
+              "url": "Binary/bdd1a93f-ba2e-437d-aca7-c2130fa392d7",
+              "title": "Example NHS Health Checks Template HMP Mnachester.pdf"
+            }
+          }
+        ],
+        "context": {
+          "encounter": [
+            {
+              "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+              "identifier": {
+                "system": "https://emis.com/Id/Consultation/GUID",
+                "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+                "assigner": {
+                  "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "F83004"
+                  }
+                }
+              }
+            }
+          ],
+          "event": [
+            {
+              "coding": [
+                {
+                  "system": "http://read.info/readv2",
+                  "code": "9b0B.",
+                  "display": "Discharge summary report"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "25581000000101",
+                  "display": "Discharge summary report"
+                }
+              ],
+              "text": "Discharge summary report"
             }
           ]
         }
@@ -1168,12 +1408,12 @@
       "fullUrl": "urn:uuid:b795e488-21eb-49cb-9360-d4cb7a02dc6e",
       "resource": {
         "resourceType": "AllergyIntolerance",
-        "id": "373",
+        "id": "b795e488-21eb-49cb-9360-d4cb7a02dc6e",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "373",
+            "value": "3274",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1206,10 +1446,10 @@
               "display": "Adverse reaction to drug"
             }
           ],
-          "text": "Adverse reaction to drug aspirin"
+          "text": "Adverse reaction to drug"
         },
         "patient": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -1241,12 +1481,12 @@
       "fullUrl": "urn:uuid:6a18b33e-23f7-4fab-9899-232e494267c7",
       "resource": {
         "resourceType": "AllergyIntolerance",
-        "id": "374",
+        "id": "6a18b33e-23f7-4fab-9899-232e494267c7",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "374",
+            "value": "3275",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1282,7 +1522,7 @@
           "text": "Allergy to drug"
         },
         "patient": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -1314,12 +1554,12 @@
       "fullUrl": "urn:uuid:6e1a1654-a02b-4638-bad1-c64b65fd09f3",
       "resource": {
         "resourceType": "AllergyIntolerance",
-        "id": "375",
+        "id": "6e1a1654-a02b-4638-bad1-c64b65fd09f3",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "375",
+            "value": "3276",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1355,7 +1595,7 @@
           "text": "Allergy to aspirin"
         },
         "patient": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -1387,12 +1627,12 @@
       "fullUrl": "urn:uuid:552182f3-208a-479f-ad28-bca5a82e312e",
       "resource": {
         "resourceType": "Observation",
-        "id": "376",
+        "id": "552182f3-208a-479f-ad28-bca5a82e312e",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "376",
+            "value": "3277",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1439,7 +1679,7 @@
           "text": "Family history of alcohol misuse (Aunt)"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -1474,12 +1714,12 @@
       "fullUrl": "urn:uuid:3fe68913-6016-46b1-a20a-fb97fd125ea1",
       "resource": {
         "resourceType": "Observation",
-        "id": "377",
+        "id": "3fe68913-6016-46b1-a20a-fb97fd125ea1",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "377",
+            "value": "3278",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1526,7 +1766,7 @@
           "text": "Venous blood specimen"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -1561,12 +1801,12 @@
       "fullUrl": "urn:uuid:603260f4-3d90-4418-925b-4766f96f8575",
       "resource": {
         "resourceType": "Observation",
-        "id": "379",
+        "id": "603260f4-3d90-4418-925b-4766f96f8575",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "379",
+            "value": "3281",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1610,10 +1850,10 @@
               "display": "No family history diabetes"
             }
           ],
-          "text": "No family history diabetes some test"
+          "text": "No family history diabetes"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -1648,12 +1888,12 @@
       "fullUrl": "urn:uuid:0242b574-fa7b-4614-9e7d-2a5736b58eda",
       "resource": {
         "resourceType": "Observation",
-        "id": "380",
+        "id": "0242b574-fa7b-4614-9e7d-2a5736b58eda",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "380",
+            "value": "3282",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1700,7 +1940,7 @@
           "text": "Family history of breast cancer (Uncle)"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -1735,12 +1975,12 @@
       "fullUrl": "urn:uuid:9c58bbb7-7211-48fc-8368-1b88d04fc6cf",
       "resource": {
         "resourceType": "Observation",
-        "id": "381",
+        "id": "9c58bbb7-7211-48fc-8368-1b88d04fc6cf",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "381",
+            "value": "3283",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1787,7 +2027,7 @@
           "text": "Current non-smoker"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -1822,12 +2062,12 @@
       "fullUrl": "urn:uuid:27201baa-56c6-40b2-b1b5-9dc709b50f89",
       "resource": {
         "resourceType": "Observation",
-        "id": "383",
+        "id": "27201baa-56c6-40b2-b1b5-9dc709b50f89",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "383",
+            "value": "3284",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1874,7 +2114,7 @@
           "text": "Essential hypertension"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -1909,12 +2149,12 @@
       "fullUrl": "urn:uuid:0abe00a6-7142-4cac-8478-042516975bf3",
       "resource": {
         "resourceType": "Observation",
-        "id": "385",
+        "id": "0abe00a6-7142-4cac-8478-042516975bf3",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "385",
+            "value": "3285",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1961,7 +2201,7 @@
           "text": "Hypertension monitoring"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -1996,12 +2236,12 @@
       "fullUrl": "urn:uuid:388867f2-2e40-4b13-91e5-7bbf6b309a5b",
       "resource": {
         "resourceType": "Observation",
-        "id": "386",
+        "id": "388867f2-2e40-4b13-91e5-7bbf6b309a5b",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "386",
+            "value": "3286",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2048,7 +2288,7 @@
           "text": "Hypertension six month review"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -2083,12 +2323,12 @@
       "fullUrl": "urn:uuid:b26a203d-51d9-4dfe-a6f1-143dec6a7d28",
       "resource": {
         "resourceType": "Observation",
-        "id": "387",
+        "id": "b26a203d-51d9-4dfe-a6f1-143dec6a7d28",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "387",
+            "value": "3287",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2135,7 +2375,7 @@
           "text": "Medication review done"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -2170,12 +2410,12 @@
       "fullUrl": "urn:uuid:470190a2-309a-4f28-a107-418bfc22ba77",
       "resource": {
         "resourceType": "Observation",
-        "id": "388",
+        "id": "470190a2-309a-4f28-a107-418bfc22ba77",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "388",
+            "value": "3288",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2222,7 +2462,7 @@
           "text": "Hypertension resolved"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -2257,12 +2497,12 @@
       "fullUrl": "urn:uuid:d47702bf-a108-41a2-8f1f-0e34f718a654",
       "resource": {
         "resourceType": "Observation",
-        "id": "389",
+        "id": "d47702bf-a108-41a2-8f1f-0e34f718a654",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "389",
+            "value": "3289",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2309,7 +2549,7 @@
           "text": "Excepted from hypertension quality indicators - patient unsuitable"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -2344,12 +2584,12 @@
       "fullUrl": "urn:uuid:f47bd9a2-5de0-4598-be29-d45b242c18b7",
       "resource": {
         "resourceType": "Observation",
-        "id": "390",
+        "id": "f47bd9a2-5de0-4598-be29-d45b242c18b7",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "390",
+            "value": "3290",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2396,7 +2636,7 @@
           "text": "British or mixed British - ethnic category 2001 census"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -2431,12 +2671,12 @@
       "fullUrl": "urn:uuid:77828dc0-c740-4d22-8543-be5e44036c79",
       "resource": {
         "resourceType": "Observation",
-        "id": "391",
+        "id": "77828dc0-c740-4d22-8543-be5e44036c79",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "391",
+            "value": "3291",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2483,7 +2723,7 @@
           "text": "Dietary advice"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -2518,12 +2758,12 @@
       "fullUrl": "urn:uuid:5ea579ff-88c8-4265-a539-c15d0e0ba185",
       "resource": {
         "resourceType": "Observation",
-        "id": "392",
+        "id": "5ea579ff-88c8-4265-a539-c15d0e0ba185",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "392",
+            "value": "3292",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2570,7 +2810,7 @@
           "text": "Education about alcohol consumption"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -2605,12 +2845,12 @@
       "fullUrl": "urn:uuid:22ba9307-b02e-4424-9856-3c424b2cdfe9",
       "resource": {
         "resourceType": "Observation",
-        "id": "393",
+        "id": "22ba9307-b02e-4424-9856-3c424b2cdfe9",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "393",
+            "value": "3293",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2657,7 +2897,7 @@
           "text": "ECG requested"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -2692,12 +2932,12 @@
       "fullUrl": "urn:uuid:01247827-f6d8-4766-bf19-97d0cb029d1a",
       "resource": {
         "resourceType": "Observation",
-        "id": "394",
+        "id": "01247827-f6d8-4766-bf19-97d0cb029d1a",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "394",
+            "value": "3294",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2744,7 +2984,7 @@
           "text": "Alcohol consumption, 0 U/week"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -2785,12 +3025,12 @@
       "fullUrl": "urn:uuid:9955d4bb-51fb-41c3-9e24-182eb108dfe7",
       "resource": {
         "resourceType": "Observation",
-        "id": "395",
+        "id": "9955d4bb-51fb-41c3-9e24-182eb108dfe7",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "395",
+            "value": "3295",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2837,7 +3077,7 @@
           "text": "Serum cholesterol level, 123 mmol/L"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -2878,12 +3118,12 @@
       "fullUrl": "urn:uuid:02bb3059-6ff1-48af-a4ec-27afb78ef59d",
       "resource": {
         "resourceType": "Observation",
-        "id": "396",
+        "id": "02bb3059-6ff1-48af-a4ec-27afb78ef59d",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "396",
+            "value": "3296",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -2930,7 +3170,7 @@
           "text": "Serum high density lipoprotein cholesterol level, 234 mmol/L"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -2971,12 +3211,12 @@
       "fullUrl": "urn:uuid:44fa1523-ffef-4d71-ba05-4a38f629b02e",
       "resource": {
         "resourceType": "Observation",
-        "id": "397",
+        "id": "44fa1523-ffef-4d71-ba05-4a38f629b02e",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "397",
+            "value": "3297",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -3023,7 +3263,7 @@
           "text": "Serum creatinine level, 123 umol/L"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -3064,12 +3304,12 @@
       "fullUrl": "urn:uuid:39e7a63a-4f09-4ad9-a2a0-66ad94a77851",
       "resource": {
         "resourceType": "Observation",
-        "id": "30",
+        "id": "39e7a63a-4f09-4ad9-a2a0-66ad94a77851",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "30",
+            "value": "3151",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -3116,7 +3356,7 @@
           "text": "Test request : Full Blood Count"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -3151,12 +3391,12 @@
       "fullUrl": "urn:uuid:2715a9e3-7c06-4925-ae4a-0b11e5b8e987",
       "resource": {
         "resourceType": "Observation",
-        "id": "32",
+        "id": "2715a9e3-7c06-4925-ae4a-0b11e5b8e987",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "32",
+            "value": "3153",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -3203,7 +3443,7 @@
           "text": "Test request : Plasma Viscosity"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -3238,12 +3478,12 @@
       "fullUrl": "urn:uuid:c59dee86-4d6e-40e0-ad1e-e7959075e753",
       "resource": {
         "resourceType": "Observation",
-        "id": "33",
+        "id": "c59dee86-4d6e-40e0-ad1e-e7959075e753",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "33",
+            "value": "3154",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -3290,7 +3530,7 @@
           "text": "Test request : Antenatal"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -3325,12 +3565,12 @@
       "fullUrl": "urn:uuid:107b410c-384c-4c0f-b5f5-def84619d40f",
       "resource": {
         "resourceType": "Observation",
-        "id": "34",
+        "id": "107b410c-384c-4c0f-b5f5-def84619d40f",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "34",
+            "value": "3155",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -3377,7 +3617,7 @@
           "text": "Systolic arterial pressure, 117 mmHg"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -3410,7 +3650,7 @@
           "value": 117,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
-          "code": "mmHg"
+          "code": "mm[Hg]"
         }
       }
     },
@@ -3418,12 +3658,12 @@
       "fullUrl": "urn:uuid:82c1918b-6466-47b7-b940-a5e5f4d84c8b",
       "resource": {
         "resourceType": "Observation",
-        "id": "35",
+        "id": "82c1918b-6466-47b7-b940-a5e5f4d84c8b",
         "identifier": [
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "35",
+            "value": "3156",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -3470,7 +3710,7 @@
           "text": "Diastolic arterial pressure, 75 mmHg"
         },
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "encounter": {
@@ -3503,8 +3743,481 @@
           "value": 75,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
-          "code": "mmHg"
+          "code": "mm[Hg]"
         }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8550789d-1fad-470c-b2e7-04fca63f53af",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "8550789d-1fad-470c-b2e7-04fca63f53af",
+        "extension": [
+          {
+            "url": "http://fhir.virtuallyhealthcare.co.uk/Role",
+            "extension": [
+              {
+                "url": "url",
+                "valueReference": {
+                  "reference": "Location/4882"
+                }
+              },
+              {
+                "url": "role",
+                "valueInteger": 20
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "use": "old",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PN"
+                }
+              ]
+            },
+            "system": "https://emis.com/Id/Practitioner/DBID",
+            "value": "5",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "old",
+            "system": "https://emis.com/Id/Practitioner/REFID",
+            "value": "5"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "ESN"
+                }
+              ]
+            },
+            "system": "https://emis.com/Id/Practitioner/GUID",
+            "value": "8550789d-1fad-470c-b2e7-04fca63f53af"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Bradshaw",
+            "given": [
+              "Eileen"
+            ],
+            "prefix": [
+              "Mrs"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f0b26662-5519-4020-9fc9-35774eb1e826",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "f0b26662-5519-4020-9fc9-35774eb1e826",
+        "extension": [
+          {
+            "url": "http://fhir.virtuallyhealthcare.co.uk/Role",
+            "extension": [
+              {
+                "url": "url",
+                "valueReference": {
+                  "reference": "Location/4882"
+                }
+              },
+              {
+                "url": "role",
+                "valueInteger": 14
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "use": "old",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PN"
+                }
+              ]
+            },
+            "system": "https://emis.com/Id/Practitioner/DBID",
+            "value": "6",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "old",
+            "system": "https://emis.com/Id/Practitioner/REFID",
+            "value": "6"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "ESN"
+                }
+              ]
+            },
+            "system": "https://emis.com/Id/Practitioner/GUID",
+            "value": "f0b26662-5519-4020-9fc9-35774eb1e826"
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "LN"
+                }
+              ]
+            },
+            "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+            "value": "G9380513"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Potter",
+            "given": [
+              "Ann"
+            ],
+            "prefix": [
+              "Mrs"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+        "identifier": [
+          {
+            "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+            "value": "G8667998"
+          }
+        ],
+        "name": [
+          {
+            "text": "Mrs Jean Mitchell"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:812af0ad-e71e-41e2-997a-b6787f934928",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "812af0ad-e71e-41e2-997a-b6787f934928",
+        "extension": [
+          {
+            "url": "http://fhir.virtuallyhealthcare.co.uk/Role",
+            "extension": [
+              {
+                "url": "url",
+                "valueReference": {
+                  "reference": "Location/4882"
+                }
+              },
+              {
+                "url": "role",
+                "valueInteger": 10
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "use": "old",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PN"
+                }
+              ]
+            },
+            "system": "https://emis.com/Id/Practitioner/DBID",
+            "value": "9",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "old",
+            "system": "https://emis.com/Id/Practitioner/REFID",
+            "value": "9"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "ESN"
+                }
+              ]
+            },
+            "system": "https://emis.com/Id/Practitioner/GUID",
+            "value": "812af0ad-e71e-41e2-997a-b6787f934928"
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "LN"
+                }
+              ]
+            },
+            "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+            "value": "G3031757"
+          },
+          {
+            "use": "secondary",
+            "system": "https://fhir.nhs.uk/Id/gmc-reference-number",
+            "value": "4744203"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Burgess",
+            "given": [
+              "Neil"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3125f0c4-c773-48a6-bf33-10a5106f6448",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "3125f0c4-c773-48a6-bf33-10a5106f6448",
+        "extension": [
+          {
+            "url": "http://fhir.virtuallyhealthcare.co.uk/Role",
+            "extension": [
+              {
+                "url": "url",
+                "valueReference": {
+                  "reference": "Location/4882"
+                }
+              },
+              {
+                "url": "role",
+                "valueInteger": 10
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "use": "old",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PN"
+                }
+              ]
+            },
+            "system": "https://emis.com/Id/Practitioner/DBID",
+            "value": "12",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "old",
+            "system": "https://emis.com/Id/Practitioner/REFID",
+            "value": "12"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "ESN"
+                }
+              ]
+            },
+            "system": "https://emis.com/Id/Practitioner/GUID",
+            "value": "3125f0c4-c773-48a6-bf33-10a5106f6448"
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "LN"
+                }
+              ]
+            },
+            "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+            "value": "G3371701"
+          },
+          {
+            "use": "secondary",
+            "system": "https://fhir.nhs.uk/Id/gmc-reference-number",
+            "value": "7041831"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Harding",
+            "given": [
+              "Brian"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:68ea3bc3-b908-431f-8019-599b654eb279",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "68ea3bc3-b908-431f-8019-599b654eb279",
+        "identifier": [
+          {
+            "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+            "value": "G2215996"
+          }
+        ],
+        "name": [
+          {
+            "text": "Dr Sarah Whitehead"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4435f523-44ae-4cfb-903d-570b2887812c",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "4435f523-44ae-4cfb-903d-570b2887812c",
+        "extension": [
+          {
+            "url": "http://fhir.virtuallyhealthcare.co.uk/Role",
+            "extension": [
+              {
+                "url": "url",
+                "valueReference": {
+                  "reference": "Location/4882"
+                }
+              },
+              {
+                "url": "role",
+                "valueInteger": 28
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "use": "old",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PN"
+                }
+              ]
+            },
+            "system": "https://emis.com/Id/Practitioner/DBID",
+            "value": "7",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "old",
+            "system": "https://emis.com/Id/Practitioner/REFID",
+            "value": "7"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "ESN"
+                }
+              ]
+            },
+            "system": "https://emis.com/Id/Practitioner/GUID",
+            "value": "4435f523-44ae-4cfb-903d-570b2887812c"
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "LN"
+                }
+              ]
+            },
+            "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+            "value": "G3226482"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Kemp",
+            "given": [
+              "Jean"
+            ],
+            "prefix": [
+              "Mrs"
+            ]
+          }
+        ]
       }
     },
     {
@@ -3592,10 +4305,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:0b81d76b-fdb2-4019-a7c3-5a42d8e96c64",
+      "fullUrl": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
       "resource": {
         "resourceType": "Encounter",
-        "id": "0b81d76b-fdb2-4019-a7c3-5a42d8e96c64",
+        "id": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
         "status": "finished",
         "class": {
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -3612,7 +4325,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:afcf9b2b-3d3e-4f7d-955e-9ef6b8bd73dc",
+          "reference": "urn:uuid:b7951809-0acb-4dfa-ba90-3032869e0685",
           "type": "Patient"
         },
         "participant": [
