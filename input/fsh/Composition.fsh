@@ -20,8 +20,6 @@ Description: "Merge of UKCore-Composition, PRSB Section Headers, NHS England [Tr
 * section.code.coding.code 1..1
 
 
-* section ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
-* section ^extension[=].valueString = "Section"
 * section ^slicing.discriminator[0].type = #pattern
 * section ^slicing.discriminator[=].path = "code"
 * section ^slicing.ordered = false
