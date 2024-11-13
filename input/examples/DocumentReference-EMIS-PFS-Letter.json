@@ -7,7 +7,6 @@
       "https://fhir.virtually.healthcare/StructureDefinition/DocumentReference"
     ]
   },
-  "status": "current",
   "identifier": [
     {
       "type": {
@@ -26,7 +25,7 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "308720009",
+        "code": "452036019",
         "display": "Letter encounter"
       }
     ],
@@ -38,10 +37,7 @@
   "date": "2005-05-06T00:00:00.000+00:00",
   "author": [
     {
-      "identifier": {
-        "system": "https://emis.com/Id/PractitionerRole/GUID",
-        "value": "8550789d-1fad-470c-b2e7-04fca63f53af"
-      },
+      "reference": "Practitioner/8550789d-1fad-470c-b2e7-04fca63f53af",
       "display": "Mrs Margaret Graham (Partner Programme Test 04)"
     }
   ],

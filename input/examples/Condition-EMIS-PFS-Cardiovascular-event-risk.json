@@ -9,6 +9,14 @@
   },
   "identifier": [
     {
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "code": "A28579"
+          }
+        ]
+      },
       "system": "https://emis.com/Id/Event/GUID",
       "value": "c60ea075-9992-4566-a314-b0fd27317310"
     }
@@ -26,7 +34,7 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "395112001",
+        "code": "1488811018",
         "display": "Cardiovascular event risk"
       }
     ],
@@ -40,15 +48,17 @@
   },
   "recordedDate": "2006-01-05T00:00:00+00:00",
   "recorder": {
+    "reference": "Practitioner/f0b26662-5519-4020-9fc9-35774eb1e826",
     "identifier": {
-      "system": "https://emis.com/Id/PractitionerRole/GUID",
+      "system": "https://emis.com/Id/Practitioner/GUID",
       "value": "f0b26662-5519-4020-9fc9-35774eb1e826"
     },
     "display": "Mrs Ann Potter (Partner Programme Test 04)"
   },
   "asserter": {
+    "reference": "Practitioner/f0b26662-5519-4020-9fc9-35774eb1e826",
     "identifier": {
-      "system": "https://emis.com/Id/PractitionerRole/GUID",
+      "system": "https://emis.com/Id/Practitioner/GUID",
       "value": "f0b26662-5519-4020-9fc9-35774eb1e826"
     },
     "display": "Mrs Ann Potter (Partner Programme Test 04)"
