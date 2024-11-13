@@ -203,11 +203,23 @@ resources:
     exampleBoolean: true
   Practitioner/a8fec350-25cf-4d63-88d7-a3fc6bb98cc6:
     name: Practitioner-EMIS-IM1-EMIS-Test
-    description: Practitioner EMIS IM1 EMIS Test
+    description: Practitioner EMIS EMIS Test
     exampleBoolean: true
   Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3:
     name: Practitioner-EMIS-IM1-HealthOnline-Test
-    description: Practitioner EMIS IM1 HealthOnline Test
+    description: Practitioner EMIS HealthOnline Test
+    exampleBoolean: true
+  Practitioner/3125f0c4-c773-48a6-bf33-10a5106f6448:
+    name: Practitioner-EMIS-IM1-Harding
+    description: Practitioner EMIS Harding
+    exampleBoolean: true
+  Practitioner/4435f523-44ae-4cfb-903d-570b2887812c:
+    name: Practitioner-EMIS-IM1-Kemp
+    description: Practitioner EMIS Kemp
+    exampleBoolean: true
+  Practitioner/9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2:
+    name: Practitioner-EMIS-IM1-Mitchell
+    description: Practitioner EMIS Mitchell
     exampleBoolean: true
   Practitioner/achawla0309 :
     name: Practitioner-TPP-IM1-Amit-Chawla

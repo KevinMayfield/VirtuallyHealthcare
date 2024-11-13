@@ -1,0 +1,20 @@
+{
+  "resourceType": "Practitioner",
+  "id": "9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Practitioner"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+      "value": "G8667998"
+    }
+  ],
+  "name": [
+    {
+      "text": "Mrs Jean Mitchell"
+    }
+  ]
+}
