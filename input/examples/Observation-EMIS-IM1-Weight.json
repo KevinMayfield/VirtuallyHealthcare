@@ -8,8 +8,9 @@
   },
   "identifier": [
     {
+      "use": "secondary",
       "system": "https://emis.com/Id/Event/DBID",
-      "value": "3201",
+      "value": "3203",
       "assigner": {
         "identifier": {
           "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -18,6 +19,7 @@
       }
     },
     {
+      "use": "usual",
       "system": "https://emis.com/Id/Event/GUID",
       "value": "9e77f499-1081-4ec5-ad71-4eeb71bd25ba",
       "assigner": {
@@ -29,17 +31,26 @@
     }
   ],
   "status": "unknown",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
   "code": {
     "coding": [
-      {
-        "system": "http://read.info/readv2",
-        "code": "22A..",
-        "display": "Body weight"
-      },
       {
         "system": "http://snomed.info/sct",
         "code": "27113001",
         "display": "Body weight"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "29463-7"
       }
     ],
     "text": "O/E - weight, 81 Kg"
@@ -62,7 +73,7 @@
     }
   ],
   "valueQuantity": {
-    "value": 81,
+    "value": 81.0,
     "unit": "Kg",
     "system": "http://unitsofmeasure.org",
     "code": "kg"

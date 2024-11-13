@@ -10,7 +10,7 @@
     {
       "use": "secondary",
       "system": "https://emis.com/Id/Event/DBID",
-      "value": "3211",
+      "value": "3213",
       "assigner": {
         "identifier": {
           "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -31,13 +31,18 @@
     }
   ],
   "status": "unknown",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    }
+  ],
   "code": {
     "coding": [
-      {
-        "system": "http://read.info/readv2",
-        "code": "4671.",
-        "display": "Urine protein test not done"
-      },
       {
         "system": "http://snomed.info/sct",
         "code": "167272007",

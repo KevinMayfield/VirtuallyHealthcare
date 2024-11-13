@@ -269,11 +269,7 @@ resources:
     name: Organization NHS England - The Moir Medical Centre (C81010)
     description: Organization [NHS England ODS FHIR Api](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir) - The Moir Medical Centre (C81010)
     exampleBoolean: true
-  Composition/361:
-    name: Composition EMIS IM1
-    description: Composition EMIS IM1
-    exampleBoolean: true
-  Bundle/61061:
+  Bundle/e119d231-def6-43a7-af40-56d7754977bd:
     name: FHIR Document EMIS IM1 Consultation Note 30 Jun 2002
     description: FHIR Document EMIS IM1 Consultation Note
     exampleBoolean: true

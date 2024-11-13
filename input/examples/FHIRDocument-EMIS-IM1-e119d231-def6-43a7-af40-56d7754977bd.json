@@ -1,0 +1,1388 @@
+{
+  "resourceType": "Bundle",
+  "id": "e119d231-def6-43a7-af40-56d7754977bd",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/FHIRDocument"
+    ]
+  },
+  "identifier": {
+    "use": "usual",
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "f29f7420-9e3a-4c68-8710-0e57a5c24104",
+    "assigner": {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "F83004"
+      }
+    }
+  },
+  "type": "document",
+  "timestamp": "2002-06-30T00:00:00.000+00:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:f29f7420-9e3a-4c68-8710-0e57a5c24104",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "e119d231-def6-43a7-af40-56d7754977bd",
+        "identifier": {
+          "use": "usual",
+          "system": "https://tools.ietf.org/html/rfc4122",
+          "value": "f29f7420-9e3a-4c68-8710-0e57a5c24104",
+          "assigner": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "F83004"
+            }
+          }
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "823651000000106",
+              "display": "Clinical note"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+          "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "e119d231-def6-43a7-af40-56d7754977bd",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        },
+        "date": "2002-06-30T00:00:00+00:00",
+        "author": [
+          {
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G8667998"
+            },
+            "display": "Mrs Jean Mitchell"
+          }
+        ],
+        "title": "Clinical note",
+        "section": [
+          {
+            "title": "Problem",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11450-4",
+                  "display": "Problem list - Reported"
+                }
+              ],
+              "text": "Problem"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Congestive heart failure <i/></p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:0b218a7e-d179-48c9-bf6c-67236009537a",
+                "type": "Observation",
+                "display": "Congestive heart failure"
+              }
+            ]
+          },
+          {
+            "title": "History",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "717121000000105",
+                  "display": "History"
+                }
+              ],
+              "text": "History"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Breathless - mild exertion <i/></p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:b08cd0b8-048b-4dca-9e43-02cdd4ddc3de",
+                "type": "Observation",
+                "display": "Breathless - mild exertion"
+              }
+            ]
+          },
+          {
+            "title": "Examination",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8716-3",
+                  "display": "Vital signs"
+                }
+              ],
+              "text": "Examination"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>O/E - height, 161 cm <i/></p><p>O/E - weight, 70 Kg <i/></p><p>Body Mass Index, 27.01 <i/></p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:c4cb2c6f-66e0-49e6-bf10-04e087cae2a0",
+                "type": "Observation",
+                "display": "O/E - height, 161 cm"
+              },
+              {
+                "reference": "urn:uuid:609ba048-2eca-43c9-b4a1-85fa695c572c",
+                "type": "Observation",
+                "display": "O/E - weight, 70 Kg"
+              },
+              {
+                "reference": "urn:uuid:574785a1-b8fa-4e45-97c0-a971498396d4",
+                "type": "Observation",
+                "display": "Body Mass Index, 27.01"
+              }
+            ]
+          },
+          {
+            "title": "Social",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "29762-2",
+                  "display": "Social history Narrative"
+                }
+              ],
+              "text": "Social"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Alcohol consumption, 0 units/week <i/></p><p>Enjoys moderate exercise <i/></p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:829f303a-55c5-402b-bfb8-f8f892b92af6",
+                "type": "Observation",
+                "display": "Alcohol consumption, 0 units/week"
+              },
+              {
+                "reference": "urn:uuid:f1f7f14b-0da1-4121-a8d4-1db82752cecd",
+                "type": "Observation",
+                "display": "Enjoys moderate exercise"
+              }
+            ]
+          },
+          {
+            "title": "Comment",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48767-8",
+                  "display": "Annotation comment [Interpretation] Narrative"
+                }
+              ],
+              "text": "Comment"
+            },
+            "text": {
+              "status": "generated"
+            }
+          },
+          {
+            "title": "Additional",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Additional",
+                  "display": "Additional"
+                }
+              ],
+              "text": "Additional"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Beta blocker contraindicated <i/></p><p>Salicylate prophylaxis <i/></p><p>CHD monitoring <i/></p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:586be240-ef5b-43ff-9c4d-2b710c5c17fe",
+                "type": "Observation",
+                "display": "Beta blocker contraindicated"
+              },
+              {
+                "reference": "urn:uuid:2660f9e7-d338-4818-82af-f8b40b5ebff1",
+                "type": "Observation",
+                "display": "Salicylate prophylaxis"
+              },
+              {
+                "reference": "urn:uuid:be3f4196-dee7-42e4-b384-b230a2433ecf",
+                "type": "Observation",
+                "display": "CHD monitoring"
+              }
+            ]
+          },
+          {
+            "title": "Additional",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://emis.com/Id/SectionHeader",
+                  "code": "Additional",
+                  "display": "Additional"
+                }
+              ],
+              "text": "Additional"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Blood Pressure 146/72 mmHg</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:bcb18eed-b73b-45b5-aff3-d0e07d845326"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR"
+                }
+              ]
+            },
+            "system": "https://emis.com/Id/Patient/DBID",
+            "value": "610",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "NH"
+                }
+              ]
+            },
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "2939425320"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Dyer",
+            "given": [
+              "William"
+            ],
+            "prefix": [
+              "Mr"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1919-05-27",
+        "address": [
+          {
+            "line": [
+              "74 Victoria Street",
+              "Brockadale"
+            ],
+            "city": "Calverley",
+            "postalCode": "S72"
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "F83004"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0b218a7e-d179-48c9-bf6c-67236009537a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0b218a7e-d179-48c9-bf6c-67236009537a",
+        "identifier": [
+          {
+            "use": "secondary",
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610366",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "usual",
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "0b218a7e-d179-48c9-bf6c-67236009537a",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "42343007",
+              "display": "Congestive heart failure"
+            }
+          ],
+          "text": "Congestive heart failure"
+        },
+        "subject": {
+          "reference": "urn:uuid:ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+          "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "e119d231-def6-43a7-af40-56d7754977bd",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        },
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G8667998"
+            },
+            "display": "Mrs Jean Mitchell"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b08cd0b8-048b-4dca-9e43-02cdd4ddc3de",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b08cd0b8-048b-4dca-9e43-02cdd4ddc3de",
+        "identifier": [
+          {
+            "use": "secondary",
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610367",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "usual",
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "b08cd0b8-048b-4dca-9e43-02cdd4ddc3de",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "161940008",
+              "display": "Breathless - mild exertion"
+            }
+          ],
+          "text": "Breathless - mild exertion"
+        },
+        "subject": {
+          "reference": "urn:uuid:ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+          "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "e119d231-def6-43a7-af40-56d7754977bd",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        },
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G8667998"
+            },
+            "display": "Mrs Jean Mitchell"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c4cb2c6f-66e0-49e6-bf10-04e087cae2a0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c4cb2c6f-66e0-49e6-bf10-04e087cae2a0",
+        "identifier": [
+          {
+            "use": "secondary",
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610368",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "usual",
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "c4cb2c6f-66e0-49e6-bf10-04e087cae2a0",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "248333004",
+              "display": "Standing height"
+            }
+          ],
+          "text": "O/E - height, 161 cm"
+        },
+        "subject": {
+          "reference": "urn:uuid:ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+          "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "e119d231-def6-43a7-af40-56d7754977bd",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        },
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G8667998"
+            },
+            "display": "Mrs Jean Mitchell"
+          }
+        ],
+        "valueQuantity": {
+          "value": 161.0,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:609ba048-2eca-43c9-b4a1-85fa695c572c",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "609ba048-2eca-43c9-b4a1-85fa695c572c",
+        "identifier": [
+          {
+            "use": "secondary",
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610369",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "usual",
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "609ba048-2eca-43c9-b4a1-85fa695c572c",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27113001",
+              "display": "Body weight"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ],
+          "text": "O/E - weight, 70 Kg"
+        },
+        "subject": {
+          "reference": "urn:uuid:ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+          "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "e119d231-def6-43a7-af40-56d7754977bd",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        },
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G8667998"
+            },
+            "display": "Mrs Jean Mitchell"
+          }
+        ],
+        "valueQuantity": {
+          "value": 70.0,
+          "unit": "Kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:574785a1-b8fa-4e45-97c0-a971498396d4",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "574785a1-b8fa-4e45-97c0-a971498396d4",
+        "identifier": [
+          {
+            "use": "secondary",
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610370",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "usual",
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "574785a1-b8fa-4e45-97c0-a971498396d4",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "60621009",
+              "display": "Body mass index"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5"
+            }
+          ],
+          "text": "Body Mass Index, 27.01"
+        },
+        "subject": {
+          "reference": "urn:uuid:ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+          "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "e119d231-def6-43a7-af40-56d7754977bd",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        },
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G8667998"
+            },
+            "display": "Mrs Jean Mitchell"
+          }
+        ],
+        "valueQuantity": {
+          "value": 27.01
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:829f303a-55c5-402b-bfb8-f8f892b92af6",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "829f303a-55c5-402b-bfb8-f8f892b92af6",
+        "identifier": [
+          {
+            "use": "secondary",
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610371",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "usual",
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "829f303a-55c5-402b-bfb8-f8f892b92af6",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "160573003",
+              "display": "Alcohol consumption"
+            }
+          ],
+          "text": "Alcohol consumption, 0 units/week"
+        },
+        "subject": {
+          "reference": "urn:uuid:ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+          "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "e119d231-def6-43a7-af40-56d7754977bd",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        },
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G8667998"
+            },
+            "display": "Mrs Jean Mitchell"
+          }
+        ],
+        "valueQuantity": {
+          "value": 0.0,
+          "unit": "units/week",
+          "system": "http://unitsofmeasure.org",
+          "code": "/wk"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f1f7f14b-0da1-4121-a8d4-1db82752cecd",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f1f7f14b-0da1-4121-a8d4-1db82752cecd",
+        "identifier": [
+          {
+            "use": "secondary",
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610372",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "usual",
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "f1f7f14b-0da1-4121-a8d4-1db82752cecd",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "160632008",
+              "display": "Enjoys moderate exercise"
+            }
+          ],
+          "text": "Enjoys moderate exercise"
+        },
+        "subject": {
+          "reference": "urn:uuid:ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+          "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "e119d231-def6-43a7-af40-56d7754977bd",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        },
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G8667998"
+            },
+            "display": "Mrs Jean Mitchell"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:586be240-ef5b-43ff-9c4d-2b710c5c17fe",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "586be240-ef5b-43ff-9c4d-2b710c5c17fe",
+        "identifier": [
+          {
+            "use": "secondary",
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610374",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "usual",
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "586be240-ef5b-43ff-9c4d-2b710c5c17fe",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "315062004",
+              "display": "Beta blocker contraindicated"
+            }
+          ],
+          "text": "Beta blocker contraindicated"
+        },
+        "subject": {
+          "reference": "urn:uuid:ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+          "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "e119d231-def6-43a7-af40-56d7754977bd",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        },
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G8667998"
+            },
+            "display": "Mrs Jean Mitchell"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2660f9e7-d338-4818-82af-f8b40b5ebff1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2660f9e7-d338-4818-82af-f8b40b5ebff1",
+        "identifier": [
+          {
+            "use": "secondary",
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610375",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "usual",
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "2660f9e7-d338-4818-82af-f8b40b5ebff1",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266716006",
+              "display": "Salicylate prophylaxis"
+            }
+          ],
+          "text": "Salicylate prophylaxis"
+        },
+        "subject": {
+          "reference": "urn:uuid:ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+          "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "e119d231-def6-43a7-af40-56d7754977bd",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        },
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G8667998"
+            },
+            "display": "Mrs Jean Mitchell"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:be3f4196-dee7-42e4-b384-b230a2433ecf",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "be3f4196-dee7-42e4-b384-b230a2433ecf",
+        "identifier": [
+          {
+            "use": "secondary",
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "610376",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "usual",
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "be3f4196-dee7-42e4-b384-b230a2433ecf",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170601008",
+              "display": "CHD monitoring"
+            }
+          ],
+          "text": "CHD monitoring"
+        },
+        "subject": {
+          "reference": "urn:uuid:ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+          "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "e119d231-def6-43a7-af40-56d7754977bd",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        },
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G8667998"
+            },
+            "display": "Mrs Jean Mitchell"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:bcb18eed-b73b-45b5-aff3-d0e07d845326",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bcb18eed-b73b-45b5-aff3-d0e07d845326",
+        "identifier": [
+          {
+            "use": "secondary",
+            "system": "https://emis.com/Id/Event/DBID",
+            "value": "61090",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          },
+          {
+            "use": "usual",
+            "system": "https://emis.com/Id/Event/GUID",
+            "value": "bcb18eed-b73b-45b5-aff3-d0e07d845326",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "75367002",
+              "display": "Blood pressure"
+            }
+          ],
+          "text": "Blood Pressure 146/72 mmHg"
+        },
+        "subject": {
+          "reference": "urn:uuid:ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+          "type": "Patient"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
+          "identifier": {
+            "system": "https://emis.com/Id/Consultation/GUID",
+            "value": "e119d231-def6-43a7-af40-56d7754977bd",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "F83004"
+              }
+            }
+          }
+        },
+        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
+        "issued": "2002-06-30T00:00:00.000+00:00",
+        "performer": [
+          {
+            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G8667998"
+            },
+            "display": "Mrs Jean Mitchell"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "72313002",
+                  "display": "Systolic arterial pressure"
+                },
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ],
+              "text": "Systolic blood pressure, 146 mm Hg"
+            },
+            "valueQuantity": {
+              "value": 146.0,
+              "unit": "mm Hg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1091811000000102",
+                  "display": "Diastolic arterial pressure"
+                },
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ],
+              "text": "Diastolic blood pressure, 72 mm Hg"
+            },
+            "valueQuantity": {
+              "value": 72.0,
+              "unit": "mm Hg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+        "identifier": [
+          {
+            "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+            "value": "G8667998"
+          }
+        ],
+        "name": [
+          {
+            "text": "Mrs Jean Mitchell"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "e119d231-def6-43a7-af40-56d7754977bd",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "https://emis.com/Id/LocationType/GUID",
+                "code": "638b35b3-e244-765f-46dd-6b21afa1b6f4"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:ded32d1a-3b26-4d8c-a91f-cc39713c1bb5",
+          "type": "Patient"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+              "type": "Practitioner",
+              "identifier": {
+                "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+                "value": "G8667998"
+              },
+              "display": "Mrs Jean Mitchell"
+            }
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "identifier": {
+                "system": "https://emis.com/Id/Location/GUID",
+                "value": "d5753427-76ec-48e8-ab19-7f3308d5ca3d"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
