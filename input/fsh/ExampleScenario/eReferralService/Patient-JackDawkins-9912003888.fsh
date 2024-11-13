@@ -11,12 +11,14 @@ Usage: #example
 * identifier[nhsNumber].type = $v2-0203#NH
 * identifier[nhsNumber].system = $nhs-number
 * identifier[nhsNumber].value = "9912003888"
+* identifier[nhsNumber].assigner.identifier.system = $ods-code
 * identifier[nhsNumber].assigner.identifier.value = "X24"
 * identifier[MedicalRecordNumber][+]
   * type = $v2-0203#MR
   * system = "https://hospitalpas.example.nhs.uk/Id/MRN"
   * value = "A12356565"
   * assigner.identifier.value = "RW1"
+
 * identifier[MedicalRecordNumber][+]
   * type = $v2-0203#MR
   * system = "https://gpsupplier.example.nhs.uk/Id/MRN"
