@@ -53,7 +53,6 @@ See also [Exercise Activity](Questionnaire-ExerciseActivity.html) form/data capt
 
 See also [Daily Physical Activity](Questionnaire-DailyPhysicalActivity.html) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
 
-
 | Panel | SNOMED CT | SNOMED CT Display | LOINC | Example |
 |-------|-----------|-------------------|-------|---------|
 | n/a   |           |                   |       |         |
@@ -75,7 +74,6 @@ This relates to the *Social History* section of the [HL7 International Patient S
 | Number Of Times Fallen | [161898004](http://snomed.info/id/161898004)          | Falls                                 |                 |
 
 ### Miscellaneous
-
 
 | Term                       | SNOMED CT | SNOMED CT Display                   | FHIR Value Type | Unit Code | ValueSet                                                |
 |----------------------------|-----------|-------------------------------------|-----------------|-----------|---------------------------------------------------------|

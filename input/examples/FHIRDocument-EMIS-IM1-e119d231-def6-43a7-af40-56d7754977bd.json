@@ -9,7 +9,7 @@
   "identifier": {
     "use": "usual",
     "system": "https://tools.ietf.org/html/rfc4122",
-    "value": "faab7c80-3096-445f-bcbc-e1f806cac844",
+    "value": "4fd2407b-d044-49d7-b9b8-6c4006c897a2",
     "assigner": {
       "identifier": {
         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -21,14 +21,14 @@
   "timestamp": "2002-06-30T00:00:00.000+00:00",
   "entry": [
     {
-      "fullUrl": "urn:uuid:faab7c80-3096-445f-bcbc-e1f806cac844",
+      "fullUrl": "urn:uuid:4fd2407b-d044-49d7-b9b8-6c4006c897a2",
       "resource": {
         "resourceType": "Composition",
         "id": "e119d231-def6-43a7-af40-56d7754977bd",
         "identifier": {
           "use": "usual",
           "system": "https://tools.ietf.org/html/rfc4122",
-          "value": "faab7c80-3096-445f-bcbc-e1f806cac844",
+          "value": "4fd2407b-d044-49d7-b9b8-6c4006c897a2",
           "assigner": {
             "identifier": {
               "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -47,7 +47,7 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
+          "reference": "urn:uuid:b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
           "type": "Patient"
         },
         "encounter": {
@@ -91,7 +91,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Congestive heart failure <i/></p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Congestive heart failure</p></div>"
             },
             "entry": [
               {
@@ -115,7 +115,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Breathless - mild exertion <i/></p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Breathless - mild exertion</p></div>"
             },
             "entry": [
               {
@@ -139,7 +139,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>O/E - height, 161 cm <i/></p><p>O/E - weight, 70 Kg <i/></p><p>Body Mass Index, 27.01 <i/></p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>O/E - height, 161 cm</p><p>O/E - weight, 70 Kg</p><p>Body Mass Index, 27.01</p></div>"
             },
             "entry": [
               {
@@ -173,7 +173,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Alcohol consumption, 0 units/week <i/></p><p>Enjoys moderate exercise <i/></p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Alcohol consumption, 0 units/week</p><p>Enjoys moderate exercise</p></div>"
             },
             "entry": [
               {
@@ -201,7 +201,25 @@
               "text": "Comment"
             },
             "text": {
-              "status": "generated"
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <i> In pain</i></p></div>"
+            }
+          },
+          {
+            "title": "Medication",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10160-0",
+                  "display": "History of Medication use Narrative"
+                }
+              ],
+              "text": "Medication"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <i>Ramipril  Capsules  10 mg 28 capsule(s) TAKE ONE DAILY</i></p></div>"
             }
           },
           {
@@ -218,7 +236,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Beta blocker contraindicated <i/></p><p>Salicylate prophylaxis <i/></p><p>CHD monitoring <i/></p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Beta blocker contraindicated</p><p>Salicylate prophylaxis</p><p>CHD monitoring</p></div>"
             },
             "entry": [
               {
@@ -252,14 +270,11 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Systolic blood pressure, 146 mm Hg</p><p>Diastolic blood pressure, 72 mm Hg</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Blood Pressure 146/72 mmHg</p></div>"
             },
             "entry": [
               {
                 "reference": "urn:uuid:bcb18eed-b73b-45b5-aff3-d0e07d845326"
-              },
-              {
-                "reference": "urn:uuid:5094a55d-c5a6-4561-926c-1d8b70adde1a"
               }
             ]
           }
@@ -267,10 +282,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
+      "fullUrl": "urn:uuid:b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
       "resource": {
         "resourceType": "Patient",
-        "id": "634363d5-4be6-42ee-ac4c-3048796c413f",
+        "id": "b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
         "identifier": [
           {
             "use": "usual",
@@ -348,7 +363,7 @@
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "610366",
+            "value": "610365",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -390,7 +405,7 @@
           "text": "Congestive heart failure"
         },
         "subject": {
-          "reference": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
+          "reference": "urn:uuid:b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
           "type": "Patient"
         },
         "encounter": {
@@ -430,7 +445,7 @@
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "610367",
+            "value": "610366",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -472,7 +487,7 @@
           "text": "Breathless - mild exertion"
         },
         "subject": {
-          "reference": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
+          "reference": "urn:uuid:b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
           "type": "Patient"
         },
         "encounter": {
@@ -512,7 +527,7 @@
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "610368",
+            "value": "610367",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -554,7 +569,7 @@
           "text": "O/E - height, 161 cm"
         },
         "subject": {
-          "reference": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
+          "reference": "urn:uuid:b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
           "type": "Patient"
         },
         "encounter": {
@@ -600,7 +615,7 @@
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "610369",
+            "value": "610368",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -637,12 +652,16 @@
               "system": "http://snomed.info/sct",
               "code": "27113001",
               "display": "Body weight"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
             }
           ],
           "text": "O/E - weight, 70 Kg"
         },
         "subject": {
-          "reference": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
+          "reference": "urn:uuid:b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
           "type": "Patient"
         },
         "encounter": {
@@ -688,7 +707,7 @@
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "610370",
+            "value": "610369",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -725,12 +744,16 @@
               "system": "http://snomed.info/sct",
               "code": "60621009",
               "display": "Body mass index"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5"
             }
           ],
           "text": "Body Mass Index, 27.01"
         },
         "subject": {
-          "reference": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
+          "reference": "urn:uuid:b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
           "type": "Patient"
         },
         "encounter": {
@@ -773,7 +796,7 @@
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "610371",
+            "value": "610370",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -815,7 +838,7 @@
           "text": "Alcohol consumption, 0 units/week"
         },
         "subject": {
-          "reference": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
+          "reference": "urn:uuid:b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
           "type": "Patient"
         },
         "encounter": {
@@ -861,7 +884,7 @@
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "610372",
+            "value": "610371",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -903,7 +926,7 @@
           "text": "Enjoys moderate exercise"
         },
         "subject": {
-          "reference": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
+          "reference": "urn:uuid:b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
           "type": "Patient"
         },
         "encounter": {
@@ -985,7 +1008,7 @@
           "text": "Beta blocker contraindicated"
         },
         "subject": {
-          "reference": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
+          "reference": "urn:uuid:b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
           "type": "Patient"
         },
         "encounter": {
@@ -1067,7 +1090,7 @@
           "text": "Salicylate prophylaxis"
         },
         "subject": {
-          "reference": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
+          "reference": "urn:uuid:b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
           "type": "Patient"
         },
         "encounter": {
@@ -1149,7 +1172,7 @@
           "text": "CHD monitoring"
         },
         "subject": {
-          "reference": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
+          "reference": "urn:uuid:b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
           "type": "Patient"
         },
         "encounter": {
@@ -1189,7 +1212,7 @@
           {
             "use": "secondary",
             "system": "https://emis.com/Id/Event/DBID",
-            "value": "61090",
+            "value": "61087",
             "assigner": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -1223,15 +1246,19 @@
         "code": {
           "coding": [
             {
+              "system": "http://loinc.org",
+              "code": "85354-9"
+            },
+            {
               "system": "http://snomed.info/sct",
-              "code": "72313002",
-              "display": "Systolic arterial pressure"
+              "code": "75367002",
+              "display": "Blood pressure"
             }
           ],
-          "text": "Systolic blood pressure, 146 mm Hg"
+          "text": "Blood Pressure 146/72 mmHg"
         },
         "subject": {
-          "reference": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
+          "reference": "urn:uuid:b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
           "type": "Patient"
         },
         "encounter": {
@@ -1260,100 +1287,52 @@
             "display": "Mrs Jean Mitchell"
           }
         ],
-        "valueQuantity": {
-          "value": 146.0,
-          "unit": "mm Hg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:5094a55d-c5a6-4561-926c-1d8b70adde1a",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "5094a55d-c5a6-4561-926c-1d8b70adde1a",
-        "identifier": [
+        "component": [
           {
-            "use": "secondary",
-            "system": "https://emis.com/Id/Event/DBID",
-            "value": "61091",
-            "assigner": {
-              "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "F83004"
-              }
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "72313002",
+                  "display": "Systolic arterial pressure"
+                },
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ],
+              "text": "Systolic blood pressure, 146 mm Hg"
+            },
+            "valueQuantity": {
+              "value": 146.0,
+              "unit": "mm Hg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
             }
           },
           {
-            "use": "usual",
-            "system": "https://emis.com/Id/Event/GUID",
-            "value": "5094a55d-c5a6-4561-926c-1d8b70adde1a",
-            "assigner": {
-              "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "F83004"
-              }
-            }
-          }
-        ],
-        "status": "unknown",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-signs"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1091811000000102",
-              "display": "Diastolic arterial pressure"
-            }
-          ],
-          "text": "Diastolic blood pressure, 72 mm Hg"
-        },
-        "subject": {
-          "reference": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
-          "type": "Patient"
-        },
-        "encounter": {
-          "reference": "urn:uuid:e119d231-def6-43a7-af40-56d7754977bd",
-          "identifier": {
-            "system": "https://emis.com/Id/Consultation/GUID",
-            "value": "e119d231-def6-43a7-af40-56d7754977bd",
-            "assigner": {
-              "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "F83004"
-              }
-            }
-          }
-        },
-        "effectiveDateTime": "2002-06-30T00:00:00+00:00",
-        "issued": "2002-06-30T00:00:00.000+00:00",
-        "performer": [
-          {
-            "reference": "urn:uuid:9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
-            "type": "Practitioner",
-            "identifier": {
-              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-              "value": "G8667998"
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1091811000000102",
+                  "display": "Diastolic arterial pressure"
+                },
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ],
+              "text": "Diastolic blood pressure, 72 mm Hg"
             },
-            "display": "Mrs Jean Mitchell"
+            "valueQuantity": {
+              "value": 72.0,
+              "unit": "mm Hg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
           }
-        ],
-        "valueQuantity": {
-          "value": 72.0,
-          "unit": "mm Hg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
+        ]
       }
     },
     {
@@ -1389,13 +1368,13 @@
             "coding": [
               {
                 "system": "https://emis.com/Id/LocationType/GUID",
-                "code": "638b35b3-e244-765f-46dd-6b21afa1b6f4"
+                "code": "0090f724-0a37-5e49-3f14-11fee4d46f93"
               }
             ]
           }
         ],
         "subject": {
-          "reference": "urn:uuid:634363d5-4be6-42ee-ac4c-3048796c413f",
+          "reference": "urn:uuid:b8b8f845-75da-48c5-8b17-8a0a2113d8f8",
           "type": "Patient"
         },
         "participant": [
