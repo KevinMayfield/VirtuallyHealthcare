@@ -9,6 +9,14 @@
   },
   "identifier": [
     {
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "code": "A28579"
+          }
+        ]
+      },
       "system": "https://emis.com/Id/Event/GUID",
       "value": "cb41876b-ce8e-40c2-b6c1-1351d3e4e04a"
     }
@@ -19,7 +27,7 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory"
+          "code": "exam"
         }
       ]
     }
@@ -28,8 +36,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "72313002",
-        "display": "Systolic arterial pressure"
+        "code": "114311000006111",
+        "display": "Systolic blood pressure"
       }
     ],
     "text": "Systolic blood pressure"
@@ -40,8 +48,9 @@
   "effectiveDateTime": "2005-10-14T00:00:00+00:00",
   "performer": [
     {
+      "reference": "Practitioner/3125f0c4-c773-48a6-bf33-10a5106f6448",
       "identifier": {
-        "system": "https://emis.com/Id/PractitionerRole/GUID",
+        "system": "https://emis.com/Id/Practitioner/GUID",
         "value": "3125f0c4-c773-48a6-bf33-10a5106f6448"
       },
       "display": "Dr Virtually Health (Partner Programme Test 04)"
@@ -49,8 +58,8 @@
   ],
   "valueQuantity": {
     "value": 148,
-    "system": "http://unitsofmeasure.org",
     "unit": "mm Hg",
+    "system": "http://unitsofmeasure.org",
     "code": "mm[Hg]"
   }
 }

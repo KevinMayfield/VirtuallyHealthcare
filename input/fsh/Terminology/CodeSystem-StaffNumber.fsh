@@ -4,6 +4,7 @@ Title: "Staff Number"
 Description:  "UK Staff Numbers"
 
 * ^experimental  = false
+* ^caseSensitive  = true
 
 * #https://emis.com/Id/PractitionerRole/GUID "EMIS PFS PractitionerRole Identifier"
 * #https://emis.com/Id/Practitioner/GUID "EMIS PFS Practitioner Identifier"

@@ -6,11 +6,6 @@
       "https://fhir.virtually.healthcare/StructureDefinition/Practitioner"
     ]
   },
-  "meta": {
-    "profile" : [
-      "https://fhir.virtually.healthcare/StructureDefinition/Practitioner"
-    ]
-  },
   "extension": [
     {
       "url": "http://fhir.virtuallyhealthcare.co.uk/Role",

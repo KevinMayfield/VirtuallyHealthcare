@@ -9,6 +9,14 @@
   },
   "identifier": [
     {
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "code": "A28579"
+          }
+        ]
+      },
       "system": "https://emis.com/Id/Event/GUID",
       "value": "9e77f499-1081-4ec5-ad71-4eeb71bd25ba"
     }
@@ -19,7 +27,7 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory"
+          "code": "exam"
         }
       ]
     }
@@ -28,8 +36,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "27113001",
-        "display": "Body weight"
+        "code": "253677014",
+        "display": "O/E - weight"
       }
     ],
     "text": "O/E - weight"
@@ -40,8 +48,9 @@
   "effectiveDateTime": "2005-03-21T00:00:00+00:00",
   "performer": [
     {
+      "reference": "Practitioner/4435f523-44ae-4cfb-903d-570b2887812c",
       "identifier": {
-        "system": "https://emis.com/Id/PractitionerRole/GUID",
+        "system": "https://emis.com/Id/Practitioner/GUID",
         "value": "4435f523-44ae-4cfb-903d-570b2887812c"
       },
       "display": "Dr Virtually Health (Partner Programme Test 04)"
@@ -49,8 +58,8 @@
   ],
   "valueQuantity": {
     "value": 81,
-    "system": "http://unitsofmeasure.org",
     "unit": "Kg",
+    "system": "http://unitsofmeasure.org",
     "code": "kg"
   }
 }
