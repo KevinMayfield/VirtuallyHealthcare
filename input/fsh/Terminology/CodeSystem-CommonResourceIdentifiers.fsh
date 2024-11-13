@@ -4,6 +4,7 @@ Title: "UKCommonResourceIdentifiers"
 Description:  "UK Common Resource Identifiers"
 
 * ^experimental  = false
+* ^caseSensitive  = true
 
 * #https://emis.com/Id/Event/DBID "EMIS Event DBID"
     "**Unofficial** Is known in EMIS IM1 as Event DBID"

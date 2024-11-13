@@ -6,6 +6,7 @@ Description:  "Read v2"
 * ^experimental  = false
 * ^url = "http://read.info/readv2"
 * ^content = #not-present
+* ^caseSensitive  = true
 
 
 

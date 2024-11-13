@@ -4,6 +4,7 @@ Title: "Medical Record System"
 Description:  "Medical Record Systems"
 
 * ^experimental  = false
+* ^caseSensitive  = true
 
 * #https://emis.com/Id/Patient/AccessIdentityGuid "EMIS PFS Access Identity Guid"
     "**Unofficial** Is known in EMIS PFS as Access Identity Guid. This may change if the patients access is revoked."
