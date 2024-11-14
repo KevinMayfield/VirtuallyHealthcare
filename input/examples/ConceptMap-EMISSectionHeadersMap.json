@@ -1,0 +1,48 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "EMISSectionHeaders",
+  "url": "https://fhir.virtually.healthcare/ConceptMap/EMISSectionHeaders",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:456e5381-e66b-410e-a50c-8433a8f69599"
+  },
+  "version": "4.0.1",
+  "name": "EMISSectionHeaders",
+  "title": "EMIS Section Headers Mapping",
+  "status": "draft",
+  "experimental": true,
+  "date": "2024-11-14",
+  "publisher": "Virtually Healthcare",
+  "description": "EMIS Section Headers Mapping to [HL7 Document section codes (LOINC codes used in CCDA sections)](https://hl7.org/fhir/valueset-doc-section-codes.html)",
+  "purpose": "To help implementers map from HL7 v3/CDA to FHIR",
+  "copyright": "Creative Commons 0",
+  "group": [
+    {
+      "target": "http://loinc.org",
+      "element": [
+        {
+          "code": "Social",
+          "display": "Social",
+          "target": [
+            {
+              "code": "29762-2",
+              "display": "Social history Narrative",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "History",
+          "display": "History",
+          "target": [
+            {
+              "code": "11329-0",
+              "display": "History general Narrative - Reported",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
