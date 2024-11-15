@@ -15,6 +15,7 @@ Description: "Merge of UKCore-Composition, PRSB Section Headers, NHS England [Tr
 * section.section ..0
 * section.title 1..1
 * section.code 1..1
+* section.code from http://hl7.org/fhir/ValueSet/doc-section-codes
 * section.code.coding 1..*
 * section.code.coding.system 1..1
 * section.code.coding.code 1..1
