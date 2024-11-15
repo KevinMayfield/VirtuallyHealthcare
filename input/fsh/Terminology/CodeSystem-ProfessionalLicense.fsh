@@ -12,4 +12,5 @@ Description:  "UK Professional License"
 * #https://fhir.hl7.org.uk/Id/nmc-number "Nursing and Midwifery Council Code"
 * #https://fhir.hl7.org.uk/Id/gphc-number "General Pharmaceutical Council Code"
 * #https://fhir.hl7.org.uk/Id/hcpc-number "Health and Care Professional Council Code"
+* #https://fhir.hl7.org.uk/Id/professional-code "Do not use"
 
