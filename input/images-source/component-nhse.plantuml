@@ -4,7 +4,7 @@ component ClientApplication as "Client Application"
 
 interface facade as "[[ActorDefinition-ServiceFacade.html Service Facade]]"
 note right
-[[CapabilityStatement-NHSEFacade.html NHS England Facade - FHIR API]]
+[[CapabilityStatement-NHSEFacade.html NHS England Facade - FHIR R4 RESTful API]]
 end note
 
 component "[[ActorDefinition-DirectoryService.html PDS API]]" as PDSDirectoryService

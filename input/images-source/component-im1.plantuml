@@ -4,7 +4,7 @@ component ClientApplication as "Client Application"
 
 interface facade as "[[ActorDefinition-ServiceFacade.html Service Facade]]"
 note right
-[[CapabilityStatement-IM1TransactionEMISFacade.html Facade - IM1 Transaction EMIS]]
+[[CapabilityStatement-IM1TransactionEMISFacade.html IM1 Transaction EMIS - FHIR R4 RESTful API]]
 end note
 
 component "[[ActorDefinition-ClinicalDataRepository.html EMIS Clinical Data Repository]]" as CDR
@@ -23,12 +23,12 @@ end note
 
 interface facadePFS as "[[ActorDefinition-ServiceFacade.html Service Facade]]"
 note right
-[[CapabilityStatement-IM1PatientEMISFacade.html Facade - IM1 Patient EMIS]]
+[[CapabilityStatement-IM1PatientEMISFacade.html Facade - IM1 Patient EMIS - FHIR R4 RESTful API]]
 end note
 
 interface facadeTPP as "[[ActorDefinition-ServiceFacade.html Service Facade]]"
 note right
-[[CapabilityStatement-IM1TransactionTPPFacade.html Facade - IM1 Transaction TPP]]
+[[CapabilityStatement-IM1TransactionTPPFacade.html IM1 Transaction TPP - FHIR R4 RESTful API]]
 end note
 
 ClientApplication -d-> facade
