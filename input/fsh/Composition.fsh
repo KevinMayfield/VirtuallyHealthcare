@@ -33,22 +33,22 @@ Not following UKCore-Composition due to coding issues around section.code.
 * section.text 1.. MS
 * section.section ..0
 * section contains
-    sectionMedications 0..1 MS and
-    sectionAllergies 0..1 MS and
-    sectionProblems 0..1 MS and
-    sectionProceduresHx 0..1 MS and
-    sectionImmunizations 0..1 MS and
-    sectionMedicalDevices 0..1 MS and
-    sectionResults 0..1 MS and
-    sectionVitalSigns 0..1 and
-    sectionPastIllnessHx 0..1 and
-    sectionFunctionalStatus 0..1 and
-    sectionPlanOfCare 0..1 and
-    sectionSocialHistory 0..1 and
-    sectionPregnancyHx 0..1 and
-    sectionAdvanceDirectives 0..1 and
-    sectionAlerts 0..1 and
-    sectionPatientStory 0..1
+    sectionMedications 0..* MS and
+    sectionAllergies 0..* MS and
+    sectionProblems 0..* MS and
+    sectionProceduresHx 0..* MS and
+    sectionImmunizations 0..* MS and
+    sectionMedicalDevices 0..* MS and
+    sectionResults 0..* MS and
+    sectionVitalSigns 0..* and
+    sectionPastIllnessHx 0..* and
+    sectionFunctionalStatus 0..* and
+    sectionPlanOfCare 0..* and
+    sectionSocialHistory 0..* and
+    sectionPregnancyHx 0..* and
+    sectionAdvanceDirectives 0..* and
+    sectionAlerts 0..* and
+    sectionPatientStory 0..*
 
 * section[sectionMedications] ^short = "IPS Medication Summary Section"
 * section[sectionMedications] ^definition = "The medication summary section contains a description of the patient's medications relevant for the scope of the patient summary.\r\nThe actual content could depend on the jurisdiction, it could report:\r\n- the currently active medications; \r\n- the current and past medications considered relevant by the authoring GP; \r\n- the patient prescriptions or dispensations automatically extracted by a regional or a national EHR.\r\n\r\nIn those cases medications are documented in the Patient Summary as medication statements or medication requests.\r\nThis section requires either an entry indicating the subject is known not to be on any relevant medication; either an entry indicating that no information is available about medications; or entries summarizing the subject's relevant medications."
