@@ -1,16 +1,16 @@
-Instance: PDSFacade
+Instance: NHSEFacade
 InstanceOf: CapabilityStatement
-Title: "Facade - Personal Demographics Service - FHIR API"
+Title: "NHS England Directory Service Facade"
 Usage: #definition
 * description = """
 
-This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [Personal Demographics Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir)
+This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [Personal Demographics Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir) and [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir)
 
-This facade is related to [IHE Patient Demographics Query for Mobile (PDQm)](https://profiles.ihe.net/ITI/PDQm/)
+This facade is related to [IHE Patient Demographics Query for Mobile (PDQm)](https://profiles.ihe.net/ITI/PDQm/) and [IHE Mobile Care Services Discovery (mCSD)](https://profiles.ihe.net/ITI/mCSD/index.html)
 """
 
-* name = "FacadePersonalDemographicsService"
-* title = "Facade - Personal Demographics Service - FHIR API"
+* name = "NHSEnglandFacade"
+* title = "NHS England Service Facade"
 * status = #draft
 * experimental = false
 * date = "2024-10-08"
@@ -90,3 +90,41 @@ This facade is related to [IHE Patient Demographics Query for Mobile (PDQm)](htt
 
 * insert SearchParam(patient:identifier, #token)
 * insert WithSearchParamDocumentation([[The patient identifier this related person is related to, e.g. `patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9730906181`]])
+
+* insert ResourceWithExpectation(#Organization,Organization , #SHALL)
+* insert WithSupportedProfile(https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization)
+* rest.resource[=]
+  * documentation = """
+
+  ```
+  GET /Organization?{parameters}
+  ```
+
+  Conformance to this implementation guide **SHOULD** be tested via [FHIR Validation](https://hl7.org/fhir/R4/validation.html).
+
+  **Search Examples**
+
+  Search for Organization's for a patient with a ODS Code of RR8
+
+  ```
+  GET /Organization?identifier=https://fhir.nhs.uk/Id/ods-organization-code|RR8
+  ```
+
+ """
+* insert Interaction(#read)
+* insert Interaction(#search-type)
+
+* insert SearchParam(identifier, #token)
+* insert WithSearchParamDocumentation([[A organisations ODS Code e.g. `identifier=https://fhir.nhs.uk/Id/ods-organization-code|RR8`]])
+* insert SearchParam(name, #string)
+* insert WithSearchParamDocumentation([[A portion of the organization's name or alias]])
+* insert SearchParam(active, #token)
+* insert WithSearchParamDocumentation([[Is the Organization record active]])
+* insert SearchParam(address-postalcode, #string)
+* insert WithSearchParamDocumentation([[A postal code specified in an address]])
+* insert SearchParam(address-city, #string)
+* insert WithSearchParamDocumentation([[A city specified in an address]])
+* insert SearchParam(ods-org-primaryRole, #token)
+* insert WithSearchParamDocumentation([[organisation ods primary role]])
+* insert SearchParam(type, #token)
+* insert WithSearchParamDocumentation([[A code for the type of organization]])

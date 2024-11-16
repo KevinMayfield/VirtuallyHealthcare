@@ -1,0 +1,42 @@
+@startuml
+
+component ClientApplication as "Client Application"
+
+interface facade as "[[ActorDefinition-ServiceFacade.html Service Facade]]"
+note right
+[[CapabilityStatement-IM1TransactionEMISFacade.html Facade - IM1 Transaction EMIS]]
+end note
+
+component "[[ActorDefinition-ClinicalDataRepository.html EMIS Clinical Data Repository]]" as CDR
+note right
+[[https://digital.nhs.uk/services/gp-it-futures-systems/im1-pairing-integration/interface-mechanisms-guidance#transaction IM1 Transaction EMIS]]
+and
+[[https://digital.nhs.uk/services/gp-it-futures-systems/im1-pairing-integration/interface-mechanisms-guidance#partner-api IM1 Partner API EMIS]]
+end note
+
+component "[[ActorDefinition-ClinicalDataRepository.html S1 Clinical Data Repository]]" as CDRS1
+note right
+[[https://digital.nhs.uk/services/gp-it-futures-systems/im1-pairing-integration/interface-mechanisms-guidance#transaction IM1 Transaction TPP]]
+end note
+
+
+
+interface facadePFS as "[[ActorDefinition-ServiceFacade.html Service Facade]]"
+note right
+[[CapabilityStatement-IM1PatientEMISFacade.html Facade - IM1 Patient EMIS]]
+end note
+
+interface facadeTPP as "[[ActorDefinition-ServiceFacade.html Service Facade]]"
+note right
+[[CapabilityStatement-IM1TransactionTPPFacade.html Facade - IM1 Transaction TPP]]
+end note
+
+ClientApplication -d-> facade
+ClientApplication -d-> facadePFS
+ClientApplication -d-> facadeTPP
+
+facadePFS -d-> CDR
+facade -d-> CDR
+facadeTPP -d-> CDRS1
+
+@enduml

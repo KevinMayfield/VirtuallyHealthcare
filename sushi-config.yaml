@@ -80,23 +80,14 @@ pages:
   clinical-data-repository.md:
     title: Clinical Data Repository
     generation: markdown
-  Personal-Demographics-Service.md:
-    title: Personal Demographics Service Facade (NHS England)
-    generation: markdown
-  Organisation-Data-Service.md:
-    title: Organisation Data Service Facade (NHS England)
+  NHS-England.md:
+    title: NHS England Directory Services Facade
     generation: markdown
   e-Referral-Service.md:
     title: e-Referral Service Facade (NHS England)
     generation: markdown
-  IM1-Transaction-EMIS.md:
-    title: IM1 Transaction EMIS
-    generation: markdown
-  IM1-Patient-EMIS.md:
-    title: IM1 Patient EMIS
-    generation: markdown
-  IM1-Transaction-TPP.md:
-    title: IM1 Transaction TPP
+  IM1.md:
+    title: IM1 Transaction and PatientS
     generation: markdown
   data-model.md:
     title: Data Model
@@ -310,12 +301,9 @@ menu:
   Home: index.html
   Adaptors:
     Clinical Data Repository:  clinical-data-repository.html
-    Personal Demographics Service: Personal-Demographics-Service.html
-    Organisation Data Service: Organisation-Data-Service.html
-    e-Referral Service: e-Referral-Service.html
-    IM1 Transaction - EMIS: IM1-Transaction-EMIS.html
-    IM1 Patient - EMIS: IM1-Patient-EMIS.html
-    IM1 Transaction - TPP: IM1-Transaction-TPP.html
+    NHS England Interfaces: NHS-England.html
+  #  e-Referral Service: e-Referral-Service.html
+    IM1 Transaction and Patient: IM1.html
   Domain Model:
     Data Model: data-model.html
     Observation Panel: observation-definitions.html
