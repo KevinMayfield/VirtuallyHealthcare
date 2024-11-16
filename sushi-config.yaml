@@ -87,7 +87,7 @@ pages:
     title: e-Referral Service Facade (NHS England)
     generation: markdown
   IM1.md:
-    title: IM1 Transaction and PatientS
+    title: IM1 Transaction and Patient
     generation: markdown
   data-model.md:
     title: Data Model
