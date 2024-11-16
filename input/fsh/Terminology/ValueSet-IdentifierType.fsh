@@ -1,5 +1,5 @@
-ValueSet: IdentifierType
-Id: IdentifierType
+ValueSet: IdentifierTypeVH
+Id: IdentifierTypeVH
 Title: "Identifier Type"
 Description: """
 Identifier Type - override
