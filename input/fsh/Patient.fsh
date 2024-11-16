@@ -4,6 +4,7 @@ Id: Patient
 Description: "Extension of UKCore-Patient and includes elements from [HL7 International Access](https://build.fhir.org/ig/HL7/fhir-ipa/)"
 
 * identifier 1..* MS
+* identifier.type from IdentifierType
 
 * identifier contains
   MedicalRecordNumber 0..*

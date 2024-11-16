@@ -8,6 +8,7 @@ Description:    "Extension of UKCore Practitioner and includes elements from [IH
 * extension contains ExtLocationType named role 0..1
 
 * identifier 1..* MS
+* identifier.type from IdentifierType
 * identifier.system 1..1
 * identifier.value 1..1
 
