@@ -2,7 +2,7 @@ ValueSet: IdentifierTypeVH
 Id: IdentifierTypeVH
 Title: "Identifier Type"
 Description: """
-Identifier Type - override
+Identifier Type - override to prevent warnings in validation
 """
 
 * ^experimental  = false
