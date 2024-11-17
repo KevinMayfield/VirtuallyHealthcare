@@ -157,12 +157,12 @@ resources:
     description: Observation EMIS IM1 Weight
     exampleBoolean: true
   Observation/3114:
-    name: Observation-EMIS-IM1-Systolic-blood-pressure
-    description: Observation EMIS IM1 Systolic blood pressure
+    name: Observation-EMIS-IM1-blood-pressure
+    description: Observation EMIS IM1 Blood pressure
     exampleBoolean: true
   Observation/cb41876b-ce8e-40c2-b6c1-1351d3e4e04a:
-    name: Observation-EMIS-PFS-Systolic-blood-pressure
-    description: Observation EMIS PFS Systolic blood pressure
+    name: Observation-EMIS-PFS-blood-pressure
+    description: Observation EMIS PFS Blood pressure
     exampleBoolean: true
   Observation/3211:
     name: Observation-EMIS-IM1-Urine-protein-test-not-done

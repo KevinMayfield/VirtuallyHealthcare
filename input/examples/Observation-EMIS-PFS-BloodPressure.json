@@ -68,7 +68,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "72313002",
-            "display": "Systolic blood pressure"
+            "display": "Systolic arterial pressure"
           },
           {
             "system": "http://loinc.org",
@@ -89,7 +89,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "1091811000000102",
-            "display": "Diastolic blood pressure"
+            "display": "Diastolic arterial pressure"
           },
           {
             "system": "http://loinc.org",
