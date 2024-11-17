@@ -9,16 +9,14 @@
   },
   "identifier": [
     {
-      "type": {
-        "coding": [
-          {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "code": "A28579"
-          }
-        ]
-      },
       "system": "https://emis.com/Id/Event/GUID",
-      "value": "9e77f499-1081-4ec5-ad71-4eeb71bd25ba"
+      "value": "9e77f499-1081-4ec5-ad71-4eeb71bd25ba",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "A28579"
+        }
+      }
     }
   ],
   "status": "final",
@@ -57,7 +55,7 @@
     }
   ],
   "valueQuantity": {
-    "value": 81,
+    "value": 81.0,
     "unit": "Kg",
     "system": "http://unitsofmeasure.org",
     "code": "kg"

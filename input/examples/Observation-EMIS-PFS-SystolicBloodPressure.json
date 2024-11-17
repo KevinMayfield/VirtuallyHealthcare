@@ -9,16 +9,14 @@
   },
   "identifier": [
     {
-      "type": {
-        "coding": [
-          {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "code": "A28579"
-          }
-        ]
-      },
       "system": "https://emis.com/Id/Event/GUID",
-      "value": "cb41876b-ce8e-40c2-b6c1-1351d3e4e04a"
+      "value": "cb41876b-ce8e-40c2-b6c1-1351d3e4e04a",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "A28579"
+        }
+      }
     }
   ],
   "status": "final",
@@ -27,7 +25,7 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "exam"
+          "code": "vital-signs"
         }
       ]
     }
@@ -35,12 +33,19 @@
   "code": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
-        "code": "114311000006111",
         "display": "Systolic blood pressure"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "75367002",
+        "display": "Blood pressure"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "85354-9"
       }
     ],
-    "text": "Systolic blood pressure"
+    "text": "Blood Pressure 148/88 mmHg"
   },
   "subject": {
     "reference": "Patient/1bec52a2-1bea-452f-a6ba-5eea5f97a24e"
@@ -56,10 +61,48 @@
       "display": "Dr Virtually Health (Partner Programme Test 04)"
     }
   ],
-  "valueQuantity": {
-    "value": 148,
-    "unit": "mm Hg",
-    "system": "http://unitsofmeasure.org",
-    "code": "mm[Hg]"
-  }
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "72313002",
+            "display": "Systolic blood pressure"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "8480-6"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 148.0,
+        "unit": "mm Hg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1091811000000102",
+            "display": "Diastolic blood pressure"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "8462-4"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 88.0,
+        "unit": "mm Hg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  ]
 }

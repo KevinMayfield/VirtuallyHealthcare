@@ -34,7 +34,13 @@
     "identifier": [
         {
             "system": "https://emis.com/Id/Medication/GUID",
-            "value": "4a71ace9-4d16-4dfb-8097-d7c78dc7ea7d"
+            "value": "4a71ace9-4d16-4dfb-8097-d7c78dc7ea7d",
+            "assigner": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "A28579"
+                }
+            }
         }
     ],
     "status": "active",
@@ -42,12 +48,8 @@
     "medicationCodeableConcept": {
         "coding": [
             {
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/coding-sctdescid",
-                        "valueId": "91941000033117"
-                    }
-                ],
+                "system": "http://snomed.info/sct",
+                "code": "91941000033117",
                 "display": "Atorvastatin 10mg tablets"
             }
         ],
@@ -58,10 +60,7 @@
     },
     "authoredOn": "2024-05-14T16:48:02+00:00",
     "requester": {
-        "identifier": {
-            "system": "https://emis.com/Id/PractitionerRole/GUID",
-            "value": "68c78dec-fb99-401b-93ad-b54f02234a87"
-        },
+        "reference": "Practitioner/68c78dec-fb99-401b-93ad-b54f02234a87",
         "display": "Mrs Ann Stanley (Partner Programme Test 04)"
     },
     "courseOfTherapyType": {
@@ -80,11 +79,11 @@
     ],
     "dispenseRequest": {
         "quantity": {
-            "value": 28,
+            "value": 28.0,
             "unit": "tablet"
         }
     },
     "substitution": {
-    "allowedBoolean": false
-}
+        "allowedBoolean": false
+    }
 }

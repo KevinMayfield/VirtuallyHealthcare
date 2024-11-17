@@ -9,16 +9,14 @@
   },
   "identifier": [
     {
-      "type": {
-        "coding": [
-          {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "code": "A28579"
-          }
-        ]
-      },
       "system": "https://emis.com/Id/Attachment/GUID",
-      "value": "ad1fcc5e-e9c6-491e-a12c-09085129c04c"
+      "value": "ad1fcc5e-e9c6-491e-a12c-09085129c04c",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "A28579"
+        }
+      }
     }
   ],
   "type": {
