@@ -33,9 +33,6 @@
   "code": {
     "coding": [
       {
-        "display": "Systolic blood pressure"
-      },
-      {
         "system": "http://snomed.info/sct",
         "code": "75367002",
         "display": "Blood pressure"
