@@ -2,11 +2,9 @@ Instance: IM1TransactionTPPFacade
 InstanceOf: CapabilityStatement
 Title: "Facade - IM1 Transaction TPP"
 Usage: #definition
-* description = """
-This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [IM1 Transaction](https://digital.nhs.uk/services/gp-it-futures-systems/im1-pairing-integration/interface-mechanisms-guidance#transaction)
+* description = """This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [IM1 Transaction](https://digital.nhs.uk/services/gp-it-futures-systems/im1-pairing-integration/interface-mechanisms-guidance#transaction)
 
-This is not a complete description of the API and so does not represent the actual implemented API or capabilities of the GP provider. This is a facade to the GP System IM1, this is not the API provided by the GP System.
-"""
+This is not a complete description of the API and so does not represent the actual implemented API or capabilities of the GP provider. This is a facade to the GP System IM1, this is not the API provided by the GP System."""
 
 * name = "IM1TransactionTPPFacade"
 * title = "Facade - IM1 Transaction TPP"

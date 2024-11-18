@@ -39,27 +39,27 @@ Usage: #example
 * section[+]
   * title = "Advance Directives"
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th></th><th></th></tr></thead><tbody></tbody></table></div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Nil</li></ul></div>"
   * code = http://loinc.org#42348-3
 
 * section[+]
   * title = "Alerts"
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th></th><th></th></tr></thead><tbody></tbody> </table></div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Nil</li></ul></div>"
   * code = http://loinc.org#104605-1
 
 
 * section[+]
   * title = "Individual Requirements (PRSB)"
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th></th><th></th></tr></thead><tbody></tbody></table></div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Nil</li></ul></div>"
   * code = $sct#1078911000000106
 
 
 * section[+]
   * title = "Results"
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th></th><th></th></tr></thead><tbody></tbody></table></div>"
+  * text.div ="<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Nil</li></ul></div>"
 
   * code = http://loinc.org#18776-5
 

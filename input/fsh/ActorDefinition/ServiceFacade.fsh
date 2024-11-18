@@ -10,7 +10,6 @@ Usage:  #definition
 This is a [facade](https://en.wikipedia.org/wiki/Facade_pattern) service.
 
 This acts as an [Anti-Corruption-Layer](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/acl.html) which transforms data models in external services to an enterprise [canonical data model](https://www.enterpriseintegrationpatterns.com/patterns/messaging/CanonicalDataModel.html)/[domain model](https://martinfowler.com/eaaCatalog/domainModel.html).
-
 """
 * documentation = """
 This enterprise domain model is evolving, it is based on:
