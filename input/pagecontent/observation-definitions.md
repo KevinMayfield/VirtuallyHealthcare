@@ -70,7 +70,7 @@ This relates to the *Social History* section of the [HL7 International Patient S
 
 | Term                   | SNOMED CT | SNOMED CT Display                   | FHIR Value Type | Unit Code | ValueSet                                                |
 |------------------------|-----------|-------------------------------------|-----------------|-----------|---------------------------------------------------------|
-| Smoking Status         | 365981007 | Tobacco smoking behaviour - finding | CodeableConcept |           | [Smoking Status](ValueSet-valueset-smoking-status.html) | 
+| Smoking Status         | 365981007 | Tobacco smoking behaviour - finding | CodeableConcept |           | Smoking Status | 
 | Number Of Times Fallen | [161898004](http://snomed.info/id/161898004)          | Falls                                 |                 |
 
 ### Miscellaneous
