@@ -66,9 +66,9 @@ RuleSet: SearchParamCombinationWithExpectation(expectation)
 * rest.resource[=]
   * extension[+]
     * url = Canonical(http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination)
-    * extension[+]
-      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-      * valueCode = {expectation}
+//    * extension[+]
+//     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+//      * valueCode = {expectation}
 
 
 RuleSet: RequiringSearchParam(name)
