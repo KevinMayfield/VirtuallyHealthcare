@@ -49,11 +49,6 @@
   "code": {
     "coding": [
       {
-        "system": "http://read.info/readv2",
-        "code": "33BC.",
-        "display": "Cardiovascular event risk"
-      },
-      {
         "system": "http://snomed.info/sct",
         "code": "395112001",
         "display": "Cardiovascular event risk"

@@ -35,11 +35,6 @@
   "medicationCodeableConcept": {
     "coding": [
       {
-        "system": "https://fhir.hl7.org.uk/Id/emis-drug-codes",
-        "code": "AMOR17519NEMIS",
-        "display": "Amoxicillin 125mg/5ml oral suspension sugar free"
-      },
-      {
         "system": "http://snomed.info/sct",
         "code": "35901911000001104",
         "display": "Amoxicillin 125mg/5ml oral suspension sugar free"

@@ -3,6 +3,8 @@ Parent: https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest
 Id: MedicationRequest
 Description: "Extension of UKCore-MedicationRequest and includes elements from [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)"
 
+* extension contains ExtensionCourses named extensionCourses 0..1
+
 * identifier 1..* MS
 
 * identifier ^slicing.discriminator.type = #pattern
