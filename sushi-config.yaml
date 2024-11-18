@@ -70,6 +70,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   generate:
     - xml
     - json
+  path-expansion-params: '../resources/Parameters-exp-params.json'
 
 instanceOptions:
   setMetaProfile: never
