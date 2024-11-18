@@ -10,6 +10,6 @@ Description: "EMIS PFS Courses"
     canBeRequested 0..*
 
 * extension[nextIssue] ^short = "Next issue"
-* extension[nextIssue].value[x] only Reference
+* extension[nextIssue].value[x] only DateTime
 * extension[canBeRequested] ^short = "Can be requested"
 * extension[canBeRequested].value[x] only boolean
