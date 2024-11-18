@@ -1,4 +1,4 @@
-Extension: Extension-Courses
+Extension: ExtensionCourses
 Id: ExtensionCourses
 Title: "EMIS PFS Courses"
 Description: "EMIS PFS Courses"
