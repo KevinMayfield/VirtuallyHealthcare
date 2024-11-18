@@ -5,7 +5,7 @@ Description: "Extension of [UKCore-Observation](https://simplifier.net/hl7fhiruk
 
 * identifier 1..* MS
 
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #closed
 * identifier contains
@@ -15,8 +15,8 @@ Description: "Extension of [UKCore-Observation](https://simplifier.net/hl7fhiruk
 * identifier[CommonResourceIdentifiers] ^short = "Common Resource Identifiers"
 
 * code from VHObservationType (extensible)
-* code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
-* code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
+//* code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
+//* code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
 * component.code from VHObservationType (extensible)
 
 * subject.reference 1..1 MS
@@ -24,13 +24,13 @@ Description: "Extension of [UKCore-Observation](https://simplifier.net/hl7fhiruk
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* effective[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
-* effective[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
+//* effective[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
+//* effective[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
 
 * performer 1..* MS
 * performer only Reference(Practitioner or Patient)
 * performer.reference 0..1
 * performer.identifier only ProfessionalLicense or NHSNumbers or StaffEnterpriseNumber
 
-* value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
-* value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
+//* value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
+//* value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
