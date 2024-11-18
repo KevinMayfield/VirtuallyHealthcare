@@ -59,8 +59,7 @@ Usage: #example
 * section[+]
   * title = "Results"
   * text.status = #generated
-  * text.div ="<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Nil</li></ul></div>"
-
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Nil</li></ul></div>"
   * code = http://loinc.org#18776-5
 
 
