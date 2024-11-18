@@ -17,6 +17,7 @@ Description: "Extension of UKCore-MedicationRequest and includes elements from [
 * subject.reference 1..1 MS
 * subject.identifier only NHSNumbers
 
+* medicationCodeableConcept from VHMedicationCode (extensible)
 * medication[x] only CodeableConcept
 * medication[x] MS
 * medication[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
