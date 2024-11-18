@@ -8,7 +8,7 @@
   },
   "extension": [
     {
-      "url": "http://fhir.virtuallyhealthcare.co.uk/Role",
+      "url": "https://fhir.virtually.healthcare/StructureDefinition/Role",
       "extension": [
         {
           "url": "url",

@@ -32,11 +32,6 @@
   "vaccineCode": {
     "coding": [
       {
-        "system": "http://read.info/readv2",
-        "code": "65E..",
-        "display": "Influenza vaccination"
-      },
-      {
         "system": "http://snomed.info/sct",
         "code": "86198006",
         "display": "Influenza vaccination"

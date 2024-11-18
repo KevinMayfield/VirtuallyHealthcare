@@ -3824,7 +3824,7 @@
         "id": "a716058c-f9d5-4537-b1e7-d021bd2185a3",
         "extension": [
           {
-            "url": "http://fhir.virtuallyhealthcare.co.uk/Role",
+            "url": "https://fhir.virtually.healthcare/StructureDefinition/Role",
             "extension": [
               {
                 "url": "url",

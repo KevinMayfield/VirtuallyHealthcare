@@ -61,24 +61,5 @@
         "title": "Save250108120233.tif"
       }
     }
-  ],
-  "context": {
-    "event": [
-      {
-        "coding": [
-          {
-            "system": "http://read.info/readv2",
-            "code": "9N33.",
-            "display": "Letter encounter"
-          },
-          {
-            "system": "http://snomed.info/sct",
-            "code": "308720009",
-            "display": "Letter encounter"
-          }
-        ],
-        "text": "Letter encounter"
-      }
-    ]
-  }
+  ]
 }

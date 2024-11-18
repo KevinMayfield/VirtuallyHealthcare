@@ -49,11 +49,6 @@
   "code": {
     "coding": [
       {
-        "system": "http://read.info/readv2",
-        "code": "662P.",
-        "display": "Hypertension monitoring"
-      },
-      {
         "system": "http://snomed.info/sct",
         "code": "275944005",
         "display": "Hypertension monitoring"

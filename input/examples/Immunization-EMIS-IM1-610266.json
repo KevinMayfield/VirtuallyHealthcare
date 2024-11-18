@@ -32,11 +32,6 @@
   "vaccineCode": {
     "coding": [
       {
-        "system": "http://read.info/readv2",
-        "code": "8I3Q.",
-        "display": "Pneumococcal vaccination declined"
-      },
-      {
         "system": "http://snomed.info/sct",
         "code": "401086001",
         "display": "Pneumococcal vaccination declined"

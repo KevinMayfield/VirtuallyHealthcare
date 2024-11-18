@@ -31,7 +31,7 @@ The CDR closely follows:
 
 * insert ResourceWithExpectation(#Patient,Patient , #SHALL)
 * insert WithSupportedProfile(https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient)
-* insert WithSupportedProfile(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient)
+// * insert WithSupportedProfile(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient)
 * rest.resource[=]
   * documentation = """
 
@@ -86,7 +86,7 @@ The CDR closely follows:
 
 * insert ResourceWithExpectation(#AllergyIntolerance,AllergyIntolerance , #SHALL)
 * insert WithSupportedProfile(https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance)
-* insert WithSupportedProfile(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance)
+// * insert WithSupportedProfile(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance)
 
 * insert Interaction(#search-type)
 * insert SearchParam(patient, #reference)
@@ -146,7 +146,7 @@ The CDR closely follows:
 
 * insert ResourceWithExpectation(#Observation, Observation , #SHALL)
 * insert WithSupportedProfile(https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation)
-* insert WithSupportedProfile(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation)
+// * insert WithSupportedProfile(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation)
 * insert WithSupportedProfile(http://hl7.org/fhir/StructureDefinition/vitalsigns)
 
 * insert Interaction(#search-type)

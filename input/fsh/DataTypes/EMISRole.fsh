@@ -3,7 +3,6 @@ Id: Role
 Title: "EMIS Practitioner Role"
 Description: "EMIS Practitioner Role"
 
-* ^url = "http://fhir.virtuallyhealthcare.co.uk/Role"
 * ^context[0].type = #element
 * ^context[=].expression = "Practitioner"
 * extension contains
