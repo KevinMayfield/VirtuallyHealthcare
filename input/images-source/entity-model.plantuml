@@ -19,8 +19,8 @@ commonly supported in UK interoperabiity as HL7 ADT
 end note
 
 class PatientIdentifier <<entity>> {
-[[StructureDefinition-nhs-number.html NHSNumber]] 0..1
-[[StructureDefinition-chi-number.html CHINumber]] 0..1
+NHSNumber 0..1
+CHINumber 0..1
 MedicalRecordNumber (EMIS, TPP, Hospital Number, etc)
 }
 note right
@@ -40,7 +40,7 @@ Patient "identifier" --> PatientIdentifier
 frame Diagnostics as "Diagnostics" {
 class "[[StructureDefinition-Observation.html Observation]]" as Observation <<entity>> {
 identifier 1..*
-subject 1..1: PatientIdentier
+subject 1..1: PatientIdentifier
 code : UK SNOMED CT or LOINC
 effectiveDateTime
 value[x]: codes are UK SNOMED CT or LOINC
@@ -56,7 +56,7 @@ end note
 
 class "[[observation-definitions.html Observation Panel]]" as ObservationPanel <<entity>> {
 identifier 1..*
-subject 1..1: PatientIdentier
+subject 1..1: PatientIdentifier
 code : UK SNOMED CT or LOINC
 effectiveDateTime
 hasMember: 1..*: Observation
@@ -75,7 +75,7 @@ end note
 class "[[StructureDefinition-DiagnosticReport.html Diagnostic Report]]" as DiagnosticReport <<aggregate root>> {
 identifier 1..*
 basedOn 0..1: AccessionNumber
-subject: PatientIdentier
+subject: PatientIdentifier
 code : UK SNOMED CT or LOINC
 effectiveDateTime
 result: ObservationPanel and Observation
@@ -119,7 +119,7 @@ rarely present in UK interoperabiity
 end note
 
 
-class "[[StructureDefinition-Questionnaire.html Form Defintion]]" as FormDefintion <<aggregate root>> {
+class "[[StructureDefinition-Questionnaire.html Form Definition]]" as FormDefinition <<aggregate root>> {
 identifier 1..1
 url
 code : UK SNOMED CT or LOINC
@@ -130,7 +130,7 @@ HL7 FHIR Questionnaire
 openEHR CKM i.e. Archetype or Template
 
 many UK EPR have ad-hoc definitions
-rarely present in UK interoperabiity
+rarely present in UK interoperability
 end note
 
 class LogicalModel {
@@ -140,7 +140,7 @@ note right
 [[https://theprsb.org/standards/ PRSB]]
 end note
 
-LogicalModel -d-|> FormDefintion: FormDefinition are the physical models
+LogicalModel -d-|> FormDefinition: FormDefinition are the physical models
 
 FormDefintion "url" -d-|> "questionnaire" Form : defintion
 
@@ -189,7 +189,7 @@ class "Laboratory/Imaging Order" as labOrder <<aggregate root>> {
 accessionNumber 1..1 : AccessionNumber
 filerOrderNumber 1..1: Identifier
 placerOrderNumber 1..1 : Identifier
-subject: PatientIdentier
+subject: PatientIdentifier
 code: Procedure code UK SNOMED CT, LOINC or NICIP
 }
 note right
@@ -203,7 +203,7 @@ class AccessionNumber <<value>> {
 
 class "Prescription" as Prescription <<aggregate root>> {
 identifier 1..*
-subject: PatientIdentier
+subject: PatientIdentifier
 medication: UK SNOMED CT (dm+d)
 }
 note right
@@ -213,7 +213,7 @@ end note
 
 class "Referral" as Referral <<aggregate root>> {
 identifier 1..*
-subject: PatientIdentier
+subject: PatientIdentifier
 code: Procedure code UK SNOMED CT
 }
 note right
