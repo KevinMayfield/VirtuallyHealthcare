@@ -43,5 +43,5 @@ Usage: #example
 * contact.name.family = "DAWKINS"
 * contact.name.given = "Bob"
 * contact.telecom.value = "077021231231"
-* contect.telecom.system = #phone
+* contact.telecom.system = #phone
 * contact.telecom.use = #mobile
