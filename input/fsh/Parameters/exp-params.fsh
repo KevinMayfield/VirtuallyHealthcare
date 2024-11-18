@@ -8,4 +8,4 @@ Usage: #example
 
 * parameter[+]
   * name = "system-version"
-  * valueUri = "http://snomed.info/sct|http://snomed.info/sct/999000041000000102"
+  * valueUri = "http://snomed.info/sct|http://snomed.info/sct/83821000000107"
