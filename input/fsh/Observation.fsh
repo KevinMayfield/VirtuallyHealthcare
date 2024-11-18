@@ -14,6 +14,7 @@ Description: "Extension of [UKCore-Observation](https://simplifier.net/hl7fhiruk
 * identifier[CommonResourceIdentifiers] only CommonResourceIdentifiers
 * identifier[CommonResourceIdentifiers] ^short = "Common Resource Identifiers"
 
+* code from UKObservationType
 * code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
 * code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
 
