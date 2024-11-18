@@ -50,10 +50,10 @@ Usage: #example
 
 
 * section[+]
-  * title = "Individual Requirements (PRSB)"
+  * title = "Individual Requirements"
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Nil</li></ul></div>"
-  * code = $sct#1078911000000106
+  * code = http://loinc.org#Instructions
 
 
 * section[+]
