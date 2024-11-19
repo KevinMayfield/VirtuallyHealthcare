@@ -2,7 +2,10 @@
   "resourceType": "Encounter",
   "id": "93d2c059-a934-4796-827b-dee1158cc4dc",
   "meta": {
-    "lastUpdated": "2005-01-14T00:00:00.000+00:00"
+    "lastUpdated": "2005-01-14T00:00:00.000+00:00",
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/Encounter"
+    ]
   },
   "type": [
     {

@@ -9,6 +9,6 @@ Description:    "Extension of UKCore Practitioner and includes elements from [IH
 
 * identifier 1..* MS
 * identifier.type from IdentifierTypeVH
-* identifier only ProfessionalLicense or StaffEnterpriseNumber
+* identifier.system from PractitionerIdentifiers (extensible)
 * identifier.system 1..1
 * identifier.value 1..1
