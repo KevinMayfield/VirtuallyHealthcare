@@ -59,7 +59,7 @@
   "issued": "2004-03-04T00:00:00.000+00:00",
   "performer": [
     {
-      "reference": "Practitioner/812af0ad-e71e-41e2-997a-b6787f934928",
+      "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
       "type": "Practitioner",
       "identifier": {
         "system": "https://fhir.hl7.org.uk/Id/gmp-number",

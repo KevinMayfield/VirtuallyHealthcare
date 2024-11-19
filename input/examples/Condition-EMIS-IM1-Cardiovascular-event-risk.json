@@ -62,7 +62,7 @@
   },
   "onsetDateTime": "2006-01-05T00:00:00+00:00",
   "asserter": {
-    "reference": "Practitioner/f0b26662-5519-4020-9fc9-35774eb1e826",
+    "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
     "type": "Practitioner",
     "identifier": {
       "system": "https://fhir.hl7.org.uk/Id/gmp-number",

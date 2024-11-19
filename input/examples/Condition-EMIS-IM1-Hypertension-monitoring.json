@@ -62,11 +62,11 @@
   },
   "onsetDateTime": "2017-08-25T14:13:00+00:00",
   "asserter": {
-    "reference": "Practitioner/eb70cfd7-6e08-4e83-9131-9af4e4412c60",
+    "reference": "Practitioner/a716058c-f9d5-4537-b1e7-d021bd2185a3",
     "type": "Practitioner",
     "identifier": {
       "system": "https://emis.com/Id/Practitioner/GUID",
-      "value": "eb70cfd7-6e08-4e83-9131-9af4e4412c60"
+      "value": "a716058c-f9d5-4537-b1e7-d021bd2185a3"
     },
     "display": "Dr Amanda McDonnell"
   }
