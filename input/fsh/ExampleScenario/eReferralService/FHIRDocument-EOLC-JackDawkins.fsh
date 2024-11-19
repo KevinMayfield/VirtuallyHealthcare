@@ -20,7 +20,7 @@ Usage: #example
   * title = "Problems"
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Dyspnoea</li></ul></div>"
-  * code = http://loinc.org#57852-6 "Problem list - Reported"
+  * code = http://loinc.org#57852-6 "Problem list Narrative - Reported"
   * entry[+].reference = "urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80"
 
 * section[+]

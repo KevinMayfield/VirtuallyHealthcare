@@ -33,7 +33,7 @@
           "display": "Agent of patient"
         },
         {
-          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
           "code": "NOK",
           "display": "next of kin"
         }

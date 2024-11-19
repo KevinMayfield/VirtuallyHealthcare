@@ -2048,11 +2048,6 @@
         "medicationCodeableConcept": {
           "coding": [
             {
-              "system": "https://fhir.hl7.org.uk/Id/emis-drug-codes",
-              "code": "ASDI224",
-              "display": "Aspirin 75mg dispersible tablets"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "42291811000001106",
               "display": "Aspirin 75mg dispersible tablets"

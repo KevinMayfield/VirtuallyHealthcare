@@ -24,7 +24,7 @@ Not following UKCore-Composition due to coding issues around section.code.
 * section.code.coding.code 1..1
 
 
-* section ^slicing.discriminator[0].type = #pattern
+* section ^slicing.discriminator[0].type = #value
 * section ^slicing.discriminator[=].path = "code"
 * section ^slicing.ordered = false
 * section ^slicing.rules = #open

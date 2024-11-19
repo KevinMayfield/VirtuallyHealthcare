@@ -22,6 +22,11 @@
       "text": "Medical Appliance Supplier"
     },
     {
+      "type": "reference",
+      "linkId": "preferredDispenserOrganization",
+      "text": "Preferred Dispenser Organization"
+    },
+    {
       "type": "boolean",
       "linkId": "interpreterRequired",
       "text": "Interpreter Required"

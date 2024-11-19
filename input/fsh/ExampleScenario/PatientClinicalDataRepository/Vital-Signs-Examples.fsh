@@ -166,14 +166,14 @@ Usage: #example
   * code.coding[+] = http://loinc.org#8480-6
   * valueQuantity.value = 117
   * valueQuantity.code = #mm[Hg]
-  * valueQuantity.unit = "mm[Hg]"
+  * valueQuantity.unit = "mm Hg"
   * valueQuantity.system = "http://unitsofmeasure.org"
 * component[+]
   * code.coding[+] = http://snomed.info/sct#1091811000000102 "Diastolic arterial pressure"
   * code.coding[+] = http://loinc.org#8462-4
   * valueQuantity.value = 74
   * valueQuantity.code = #mm[Hg]
-  * valueQuantity.unit = "mm[Hg]"
+  * valueQuantity.unit = "mm Hg"
   * valueQuantity.system = "http://unitsofmeasure.org"
 * performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"

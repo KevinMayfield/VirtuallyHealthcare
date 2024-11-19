@@ -86,9 +86,13 @@
           "extension": [
             {
               "url": "type",
-              "valueCoding": {
-                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType",
-                "code": "PAF"
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType",
+                    "code": "PAF"
+                  }
+                ]
               }
             },
             {
