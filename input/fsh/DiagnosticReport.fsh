@@ -4,15 +4,7 @@ Id: DiagnosticReport
 Description: "Merge of Royal College of Radiologists (HL7 v2 ORU), Digital Health and Care Wales HL7 v2 ORU and UKCore-DiagnosticReport"
 
 * identifier 1..* MS
-
-* identifier ^slicing.discriminator.type = #profile
-* identifier ^slicing.discriminator.path = "resolve()"
-* identifier ^slicing.rules = #closed
-* identifier contains
-    CommonResourceIdentifiers 0..*
-
-* identifier[CommonResourceIdentifiers] only CommonResourceIdentifiers
-* identifier[CommonResourceIdentifiers] ^short = "Common Resource Identifiers"
+* identifier only CommonResourceIdentifiers
 
 
 //* code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)

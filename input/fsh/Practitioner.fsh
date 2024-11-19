@@ -9,16 +9,6 @@ Description:    "Extension of UKCore Practitioner and includes elements from [IH
 
 * identifier 1..* MS
 * identifier.type from IdentifierTypeVH
+* identifier only ProfessionalLicense or StaffEnterpriseNumber
 * identifier.system 1..1
 * identifier.value 1..1
-
-* identifier ^slicing.discriminator.type = #profile
-* identifier ^slicing.discriminator.path = "resolve()"
-* identifier ^slicing.rules = #open
-* identifier contains
-  ProfessionalLicense 0..* and StaffEnterpriseNumber 0..1
-
-* identifier[ProfessionalLicense] only ProfessionalLicense
-* identifier[StaffEnterpriseNumber] ^short = "Avoid using Staff Enterprise Numbers in FHIR Reference, LicenseNumbers are more useful to resource consumers."
-* identifier[StaffEnterpriseNumber] only StaffEnterpriseNumber
-

@@ -6,15 +6,7 @@ Extension of [UKCore-ServiceRequest](https://simplifier.net/hl7fhirukcorer4/ukco
 """
 
 * identifier 1..* MS
-
-* identifier ^slicing.discriminator.type = #profile
-* identifier ^slicing.discriminator.path = "resolve()"
-* identifier ^slicing.rules = #closed
-* identifier contains
-    CommonResourceIdentifiers 0..*
-
-* identifier[CommonResourceIdentifiers] only CommonResourceIdentifiers
-* identifier[CommonResourceIdentifiers] ^short = "Common Resource Identifiers"
+* identifier only CommonResourceIdentifiers
 
 * code 0..1
 * subject.reference 0..1 MS

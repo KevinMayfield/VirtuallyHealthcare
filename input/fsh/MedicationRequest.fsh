@@ -6,15 +6,7 @@ Description: "Extension of UKCore-MedicationRequest and includes elements from [
 * extension contains ExtensionCourses named extensionCourses 0..1
 
 * identifier 1..* MS
-
-* identifier ^slicing.discriminator.type = #profile
-* identifier ^slicing.discriminator.path = "resolve()"
-* identifier ^slicing.rules = #closed
-* identifier contains
-    CommonResourceIdentifiers 0..*
-
-* identifier[CommonResourceIdentifiers] only CommonResourceIdentifiers
-* identifier[CommonResourceIdentifiers] ^short = "Common Resource Identifiers"
+* identifier only CommonResourceIdentifiers
 
 * subject.reference 1..1 MS
 * subject.identifier only NHSNumbers

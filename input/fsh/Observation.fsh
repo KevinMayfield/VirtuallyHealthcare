@@ -4,15 +4,7 @@ Id: Observation
 Description: "Extension of [UKCore-Observation](https://simplifier.net/hl7fhirukcorer4/ukcore-observation) and includes elements from [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)"
 
 * identifier 1..* MS
-
-* identifier ^slicing.discriminator.type = #profile
-* identifier ^slicing.discriminator.path = "resolve()"
-* identifier ^slicing.rules = #closed
-* identifier contains
-    CommonResourceIdentifiers 0..*
-
-* identifier[CommonResourceIdentifiers] only CommonResourceIdentifiers
-* identifier[CommonResourceIdentifiers] ^short = "Common Resource Identifiers"
+* identifier only CommonResourceIdentifiers
 
 * code from VHObservationType (extensible)
 //* code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)

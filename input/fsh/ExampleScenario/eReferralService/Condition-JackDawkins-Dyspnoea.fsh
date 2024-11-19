@@ -8,8 +8,8 @@ Loosely based on [NHS Digital End of Life Care FHIR STU3 - Advance Treatment Pre
 """
 Usage: #example
 
-* identifier[CommonResourceIdentifiers].system = "https://tools.ietf.org/html/rfc4122"
-* identifier[CommonResourceIdentifiers].value = "71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0"
+* identifier.system = "https://tools.ietf.org/html/rfc4122"
+* identifier.value = "71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0"
 
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
