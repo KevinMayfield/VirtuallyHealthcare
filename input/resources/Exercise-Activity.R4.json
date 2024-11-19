@@ -32,6 +32,10 @@
               }
             ]
           }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+          "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
         }
       ],
       "linkId": "ExerciseActivity",
@@ -43,57 +47,7 @@
         }
       ],
       "text": "Exercise activity",
-      "answerOption": [
-        {
-          "valueCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "1968006",
-            "display": "Jogging"
-          }
-        },
-        {
-          "valueCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "54391000087108",
-            "display": "Cycling"
-          }
-        },
-        {
-          "valueCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "418060005",
-            "display": "Running"
-          }
-        },
-        {
-          "valueCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "20461001",
-            "display": "Swimming"
-          }
-        },
-        {
-          "valueCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "870595007",
-            "display": "Walking"
-          }
-        },
-        {
-          "valueCoding": {
-            "system": "http://loinc.org",
-            "code": "LA11839-0",
-            "display": "Weights"
-          }
-        },
-        {
-          "valueCoding": {
-            "system": "http://loinc.org",
-            "code": "LA11840-8",
-            "display": "Mixed"
-          }
-        }
-      ]
+      "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C+415577004"
     },
     {
       "type": "quantity",
