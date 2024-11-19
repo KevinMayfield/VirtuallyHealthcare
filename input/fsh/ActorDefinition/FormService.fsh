@@ -3,7 +3,7 @@ InstanceOf: ActorDefinition
 Title:   "Form Service"
 Usage:  #definition
 
-* name = "Form Service"
+* name = "FormService"
 * type = http://hl7.org/fhir/examplescenario-actor-type#system
 * status = http://hl7.org/fhir/publication-status#draft
 * description = """

@@ -5,8 +5,8 @@ Description: "Merge of IHE Europe XDS, UKCore DocumentReference and includes ele
 
 * identifier 1..* MS
 
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.discriminator.type = #profile
+* identifier ^slicing.discriminator.path = "resolve()"
 * identifier ^slicing.rules = #closed
 * identifier contains
     CommonResourceIdentifiers 0..*

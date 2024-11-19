@@ -12,8 +12,8 @@ Description:    "Extension of UKCore Practitioner and includes elements from [IH
 * identifier.system 1..1
 * identifier.value 1..1
 
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.discriminator.type = #profile
+* identifier ^slicing.discriminator.path = "resolve()"
 * identifier ^slicing.rules = #open
 * identifier contains
   ProfessionalLicense 0..* and StaffEnterpriseNumber 0..1

@@ -7,8 +7,8 @@ Extension of [UKCore-ServiceRequest](https://simplifier.net/hl7fhirukcorer4/ukco
 
 * identifier 1..* MS
 
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.discriminator.type = #profile
+* identifier ^slicing.discriminator.path = "resolve()"
 * identifier ^slicing.rules = #closed
 * identifier contains
     CommonResourceIdentifiers 0..*

@@ -20,7 +20,7 @@ Usage: #example
   * title = "Problems"
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Dyspnoea</li></ul></div>"
-  * code = http://loinc.org#11450-4 "Problem list - Reported"
+  * code = http://loinc.org#57852-6 "Problem list - Reported"
   * entry[+].reference = "urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80"
 
 * section[+]
@@ -43,17 +43,10 @@ Usage: #example
   * code = http://loinc.org#42348-3
 
 * section[+]
-  * title = "Alerts"
-  * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Nil</li></ul></div>"
-  * code = http://loinc.org#104605-1
-
-
-* section[+]
   * title = "Individual Requirements"
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Nil</li></ul></div>"
-  * code = http://loinc.org#Instructions
+  * code = http://loinc.org#69730-0
 
 
 * section[+]

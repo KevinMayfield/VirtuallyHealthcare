@@ -3,7 +3,7 @@ InstanceOf: ActorDefinition
 Title:   "Form Repository"
 Usage:  #definition
 
-* name = "Form Repository"
+* name = "FormRepository"
 * type = http://hl7.org/fhir/examplescenario-actor-type#system
 * status = http://hl7.org/fhir/publication-status#draft
 * description = """

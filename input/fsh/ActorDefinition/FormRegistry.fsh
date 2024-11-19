@@ -3,7 +3,7 @@ InstanceOf: ActorDefinition
 Title:   "Form Registry"
 Usage:  #definition
 
-* name = "Form Registry"
+* name = "FormRegistry"
 * type = http://hl7.org/fhir/examplescenario-actor-type#system
 * status = http://hl7.org/fhir/publication-status#draft
 * description = """
