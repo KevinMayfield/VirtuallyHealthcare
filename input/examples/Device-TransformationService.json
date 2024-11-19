@@ -1,0 +1,11 @@
+{
+  "resourceType": "Device",
+  "id": "TransformationService",
+  "identifier": [
+    {
+      "system": "http://goodcare.org/devices/id",
+      "value": "345675"
+    }
+  ],
+  "name": "Transformation Service"
+}

@@ -8,7 +8,7 @@ Usage: #example
 * type = $sct#25611000000107 "Referral letter"
 //* meta.versionId = 3
 * date = "2024-10-13T10:33:00+00:00"
-* author.reference = "https://example.nhs.uk/Device/TransformationService"
+* author.reference = "https://fhir.virtually.healthcare/Device/TransformationService"
 * author.display = "Example NHS Trust Transformation Service"
 * title = "Composition Referral Letter Jack Dawkins"
 * subject.reference = "urn:uuid:d6faafcf-db64-4c11-9da8-25f36774c1bd"
