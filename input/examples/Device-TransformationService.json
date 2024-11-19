@@ -7,5 +7,10 @@
       "value": "345675"
     }
   ],
-  "name": "Transformation Service"
+  "deviceName":[
+    {
+      "name": "Transformation Service",
+      "code": "user-friendly-name"
+    }
+  ]
 }

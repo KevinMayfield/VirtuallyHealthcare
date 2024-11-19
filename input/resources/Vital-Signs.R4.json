@@ -276,7 +276,6 @@
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
           "valueCoding": {
             "code": "mm[Hg]",
-            "display": "mm Hg",
             "system": "http://unitsofmeasure.org"
           }
         }
@@ -288,7 +287,7 @@
         {
           "valueQuantity": {
             "unit": "millimeter of mercury",
-            "code": "mm Hg",
+            "code": "mm[Hg]",
             "system": "http://unitsofmeasure.org"
           }
         }
@@ -313,7 +312,6 @@
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
           "valueCoding": {
             "code": "{beats}/min",
-            "display": "beats/min",
             "system": "http://unitsofmeasure.org"
           }
         }
