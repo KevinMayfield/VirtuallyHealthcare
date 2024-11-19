@@ -6,6 +6,8 @@ Description: "Extension of [UKCore-Observation](https://simplifier.net/hl7fhiruk
 * identifier 1..* MS
 * identifier only CommonResourceIdentifiers
 
+* contained 0..0
+
 * code from VHObservationType (extensible)
 //* code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
 //* code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)

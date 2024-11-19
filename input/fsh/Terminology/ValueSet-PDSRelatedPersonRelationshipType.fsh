@@ -5,6 +5,8 @@ Description: """
 Extracted from [PDS FHIR API - Get a patient's related people](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient/-id-/RelatedPerson)
 """
 
+* ^experimental  = false
+
 * https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole#Agent "Agent of patient"
 * https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole#Guardian "Guardian of patient"
 * https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole#Personal "Personal relationship with the patient"

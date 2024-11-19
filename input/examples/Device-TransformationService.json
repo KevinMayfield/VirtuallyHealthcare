@@ -10,7 +10,7 @@
   "deviceName":[
     {
       "name": "Transformation Service",
-      "code": "user-friendly-name"
+      "type": "user-friendly-name"
     }
   ]
 }
