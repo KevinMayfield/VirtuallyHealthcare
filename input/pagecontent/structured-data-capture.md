@@ -1,4 +1,11 @@
 
+The aim of this is to:
+
+- Provide support for a wide variety of forms in use within the NHS and social sector.
+  - This can also be used to support for new forms in applications via code, see [Advanced Form Rendering](https://build.fhir.org/ig/HL7/sdc/rendering.html) for more details.
+- Support pre population of forms by reusing existing data which will save clinicians and patients considerable time.
+- It will simplify storage of clinical data in both internal and external clinical data repositories.
+- It improves our data standards.
 
 <figure>
 {%include component-structured-data-capture.svg%}
