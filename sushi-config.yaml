@@ -96,8 +96,9 @@ pages:
   observation-definitions.md:
     title: Observation Panel
     generation: markdown
-
-
+  structured-data-capture.md:
+    title: Structured Data Capture
+    generation: markdown
 
 
 resources:
