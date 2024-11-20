@@ -7,6 +7,10 @@
       "https://fhir.virtually.healthcare/StructureDefinition/QuestionnaireResponse"
     ]
   },
+  "identifier": {
+    "system": "https://fhir.nhs.uk/Id/nhs-number",
+    "value": "Patient/9449304424/_history/219"
+  },
   "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/PDSPatientPreferences",
   "status": "completed",
   "subject": {
@@ -14,6 +18,12 @@
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
       "value": "9449304424"
+    }
+  },
+  "author": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "X26"
     }
   },
   "item": [

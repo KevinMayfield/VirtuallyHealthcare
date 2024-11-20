@@ -5,12 +5,16 @@ Description: "Based on [HL7 Structured Data Capture](https://build.fhir.org/ig/H
 
 * identifier 1..1 MS
 * identifier only CommonResourceIdentifiers
+* identifier ^short = "Identifier of the completed form. Required for POST operations"
+
+* questionnaire 1..1 MS
 
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject.identifier only NHSNumbers
 
-* authored 1..1 MS
-* author 1..1 MS
+* authored 0..1 MS
+* authored ^short = "When the form was completed. Required for POST operations"
+* author 0..1 MS
 
-* encounter ^short = "Required for GP system writeaback, optional for CDR"
+* encounter ^short = "The encounter where the data was captured in. Required for GP system writeaback, optional for CDR"
