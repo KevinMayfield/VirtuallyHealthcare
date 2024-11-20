@@ -29,7 +29,7 @@ end note
 
 component "Clinical Data Repository" as CDR
 note right
-Either local and/or external CDR (GP systems)
+Either local and/or external (GP systems) CDR
 
 Observations persisted for reuse in other forms.
 end note
