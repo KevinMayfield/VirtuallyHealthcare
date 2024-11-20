@@ -6,7 +6,7 @@
 </figure>
 <br clear="all">
 
-## Data Capture
+## Data Capture Application
 
 This would often be implemented as form in an application. This should follow a FHIR Questionnaire which defines data types to be used and valuesets that can be used with picklists. 
 
@@ -36,7 +36,7 @@ This is new experimental feature and can be found at [FHIR Validation](https://i
 
 This service can check all data going into CDR's meet our domain model requirements.
 
-## Extraction Service
+## Clinical Data Extraction Service
 
 This converts the FHIR QuestionnaireResponse into Observations. 
 
