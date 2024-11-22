@@ -1,0 +1,50 @@
+@startuml
+
+hide footbox
+
+participant "Event Service" as events
+
+participant "Clinical Assessment Service" as riskAssessment
+
+participant "Clinical Data Extraction Service" as formPopulate
+
+participant "[X] Clinical Knowledge Service" as cds
+
+participant "Clinical Data Repository" as CDR
+
+events -> riskAssessment : event feed \n(FHIR Observation)
+
+note over riskAssessment
+This is probably a rules engine e.g.
+if X is higher than normal X then trigger Y
+end note
+
+opt if a triggering event
+
+
+
+note over cds, riskAssessment
+This service performs the clinical assessment, this may be an external API or application.
+See also [[https://www.ihe.net/uploadedFiles/Documents/PCC/IHE_PCC_Suppl_ACDC.pdf IHE Assessment Curation and Data Collection (ACDC)]] and [[https://confluence.hl7.org/display/PC/Clinical+Assessment HL7 Clinical Assessment]]
+end note
+
+riskAssessment -> cds: Assess Patient [PCC-X3]\nAssessment (FHIR QuestionnaireResponse)
+
+note over formPopulate
+This is the same service used in SDC
+See also [[https://build.fhir.org/ig/HL7/sdc/populate.html HL7 SDC Form Populate]]
+end note
+cds -> formPopulate : Get Assessment (automatically populated from existing data)
+formPopulate --> cds: Assessment (FHIR QuestionnaireResponse?)
+
+alt if clinical assessment was complete
+cds --> riskAssessment: Clinical Assessment\n(FHIR ClinicalImpression and Observations (Calculated Scores))
+riskAssessment -> CDR: Store Clinical Assessment
+else Clinical Assessment not completed
+  cds --> riskAssessment: Issues\n(FHIR OperationOutcome)
+  riskAssessment -> events: Request Assessment (Data Capture) to be performed\n(FHIR Task)
+end
+
+end opt
+
+@enduml

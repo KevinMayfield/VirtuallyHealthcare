@@ -97,7 +97,10 @@ pages:
     title: Observation Panel
     generation: markdown
   structured-data-capture.md:
-    title: Structured Data Capture
+    title: Structured Data Capture (Assessments)
+    generation: markdown
+  clinial-assessment.md:
+    title: Clinical Assessment
     generation: markdown
 
 
