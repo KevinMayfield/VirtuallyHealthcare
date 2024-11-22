@@ -15,7 +15,7 @@ The `Clinical Assessment Service` inspects the event feed for triggering events.
 
 - if resting heart (LOINC 55425-3) is 10 beats higher than average resting heart rate for last two weeks then call `Does Patient have COVID Clinical Knowledge Sevice`
 - if body weight (SNOMED 27113001) recorded then perform `Calculate BMI`
-- if vital sigs recorded and patient has active episode then perform `NEWS2 Risk Calculations`
+- if vital signs recorded and patient has active episode then perform `NEWS2 Risk Calculations`
 
 ## Assess Patient
 
