@@ -99,7 +99,7 @@ pages:
   structured-data-capture.md:
     title: Structured Data Capture (Assessments)
     generation: markdown
-  clinial-assessment.md:
+  clinical-assessment.md:
     title: Clinical Assessment
     generation: markdown
 
