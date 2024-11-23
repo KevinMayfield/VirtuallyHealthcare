@@ -34,8 +34,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "253677014",
-        "display": "O/E - weight"
+        "code": "27113001",
+        "display": "Body weight"
       }
     ],
     "text": "O/E - weight"
