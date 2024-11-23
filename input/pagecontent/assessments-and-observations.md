@@ -1,7 +1,9 @@
 
 All units are [UCUM](http://unitsofmeasure.org) unless stated.
 
-### Vital Signs
+### Common Observations
+
+#### Vital Signs
 
 See also [Vital Signs](Questionnaire-VitalSigns.html) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
 This relates to the *Vital Signs* section of the [HL7 International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/Structure-of-the-International-Patient-Summary.html#vital-signs)
@@ -24,9 +26,16 @@ This relates to the *Vital Signs* section of the [HL7 International Patient Summ
 | [Blood pressure](https://hl7.org/fhir/R4/bp.html)             | [75367002](http://snomed.info/id/75367002)                                                                    | Blood pressure                                                          | [85354-9](https://loinc.org/85354-9) | component       |           | [Blood pressure example](Observation-8037d992-5936-44bf-9253-f76f904ba7b9.html)     |
 | - Systolic blood pressure                                     | [72313002](http://snomed.info/id/72313002)                                                                    | Systolic arterial pressure                                              | [8480-6](https://loinc.org/8480-6)   | Quantity        | mm[Hg]    |                                                                                     |
 | - Diastolic blood pressure                                    | [1091811000000102](http://snomed.info/id/1091811000000102)                                                    | Diastolic arterial pressure                                             | [8462-4](https://loinc.org/8462-4)   | Quantity        | mm[Hg]    |                                                                                     |
-| Heart Rate Variability SDNN                                   |                                                                                                               |                                                                         | [80404-7](https://loinc.org/80404-7) | Quantity        | ms        |                                                                                     |
-| Blood Glucose                                                 | [997671000000106](http://snomed.info/id/997671000000106)                                                      | Blood glucose level                                                     |                                      |                 |           |
 
+#### Miscellaneous
+
+These are additional observations which will be present in a patients (mobile device) health record.
+
+| Term                        | SNOMED CT                                                              | SNOMED CT Display                             | LOINC                                | FHIR Value Type | Unit Code | Example |
+|-----------------------------|------------------------------------------------------------------------|-----------------------------------------------|--------------------------------------|-----------------|-----------|---------|
+| Heart Rate Variability SDNN |                                                                        |                                               | [80404-7](https://loinc.org/80404-7) | Quantity        | ms        |         |
+| Blood Glucose               | [997671000000106](http://snomed.info/id/997671000000106)  | Blood glucose level                           |                                      |                 |           |
+| Atrial Fibrillation Burden  | [713801000000102](http://snomed.info/id/713801000000102)    | Atrial fibrillation monitoring administration |                                      |
 
 ### Physical Activity
 
@@ -64,17 +73,11 @@ See also [Daily Physical Activity](Questionnaire-DailyPhysicalActivity.html) for
 | Average Resting Heart Rate |           |                   | [40443-4](https://loinc.org/40443-4) and [8867-4](https://loinc.org/8867-4) | Quantity        | /min        | [Average resting heart rate example](Observation-ea09866e-d540-4d9c-ba9c-8e22338e524c.html) | 
 | Calories per Day           |           |                   | [41979-6](https://loinc.org/41979-6)                                        | Quantity        | kcal/(24.h) | [Calories per Day example](Observation-b8df13d9-86f3-4545-9e82-50bca88090d9.html)          | 
 
-### Social History
+### NHS Health Assessment
 
-This relates to the *Social History* section of the [HL7 International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/Structure-of-the-International-Patient-Summary.html#social-history)
+**Draft** for elaboration
 
-| Term                   | SNOMED CT | SNOMED CT Display                   | FHIR Value Type | Unit Code | ValueSet                                                |
-|------------------------|-----------|-------------------------------------|-----------------|-----------|---------------------------------------------------------|
-| Smoking Status         | 365981007 | Tobacco smoking behaviour - finding | CodeableConcept |           | Smoking Status | 
-| Number Of Times Fallen | [161898004](http://snomed.info/id/161898004)          | Falls                                 |                 |
+This relates to the [PRSB NHS Health Check Standard](https://theprsb.org/standards/nhshealthcheckstandard)
+See also [NHS Health Check Asessment](Questionnaire-NHSHealthCheckAssessment.html) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
 
-### Miscellaneous
-
-| Term                       | SNOMED CT | SNOMED CT Display                   | FHIR Value Type | Unit Code | ValueSet                                                |
-|----------------------------|-----------|-------------------------------------|-----------------|-----------|---------------------------------------------------------|
-| Atrial Fibrillation Burden | [713801000000102](http://snomed.info/id/713801000000102)          | Atrial fibrillation monitoring administration                               |                 |
+This has overlap with [vital-signs](#vital-signs) and uses consistent SNOMED CT coding.

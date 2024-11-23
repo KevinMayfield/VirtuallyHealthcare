@@ -1,0 +1,483 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "NHSHealthCheckAssessment",
+  "meta": {
+    "profile": [
+      "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"
+    ]
+  },
+  "url": "https://fhir.virtually.healthcare/Questionnaire/NHSHealthCheckAssessment",
+  "title": "NHS Health Check Assessment",
+  "status": "draft",
+  "description": "Based on [PRSB NHS Health Check Standard](https://theprsb.org/standards/nhshealthcheckstandard)",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "763661000000101",
+      "display": "NHS Health Check annual review"
+    }
+  ],
+  "item": [
+    {
+      "item": [
+        {
+          "item": [
+            {
+              "item": [
+                {
+                  "type": "choice",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "drop-down",
+                            "display": "Drop down"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+                      "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+                    }
+                  ],
+                  "linkId": "962923977516",
+                  "code": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "8517006",
+                      "display": "Ex-smoker"
+                    }
+                  ],
+                  "text": "How much did you smoke?",
+                  "enableWhen": [
+                    {
+                      "question": "103805351277",
+                      "operator": "=",
+                      "answerBoolean": true
+                    }
+                  ],
+                  "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C%3C+8517006"
+                }
+              ],
+              "type": "boolean",
+              "linkId": "103805351277",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "8517006"
+                }
+              ],
+              "text": "Have you ever smoked?",
+              "enableWhen": [
+                {
+                  "question": "435500959470",
+                  "operator": "=",
+                  "answerBoolean": false
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+                  "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+                }
+              ],
+              "linkId": "498958545216",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "77176002",
+                  "display": "Smoker"
+                }
+              ],
+              "text": "How much do you smoke?",
+              "enableWhen": [
+                {
+                  "question": "435500959470",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C%3C+77176002"
+            }
+          ],
+          "type": "boolean",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+              "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+            }
+          ],
+          "linkId": "435500959470",
+          "text": "Do you smoke"
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+                  "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+                }
+              ],
+              "linkId": "607455405369",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "219006"
+                }
+              ],
+              "text": "How much do you drink",
+              "enableWhen": [
+                {
+                  "question": "387112697371",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C%3C+219006"
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+                  "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+                }
+              ],
+              "linkId": "306778975762",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "105542008"
+                }
+              ],
+              "text": "Non alcohol drinker reason",
+              "enableWhen": [
+                {
+                  "question": "387112697371",
+                  "operator": "=",
+                  "answerBoolean": false
+                }
+              ],
+              "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C+105542008"
+            }
+          ],
+          "type": "boolean",
+          "linkId": "387112697371",
+          "text": "Do you drink alcohol"
+        }
+      ],
+      "type": "group",
+      "linkId": "4470123292646",
+      "text": "Social Context"
+    },
+    {
+      "type": "group",
+      "linkId": "831473381431",
+      "text": "Family History",
+      "item": [
+        {
+          "type": "boolean",
+          "linkId": "843227939948",
+          "text": "Any problems or diagnoses in the family?",
+          "repeats": false,
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+                  "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+                }
+              ],
+              "linkId": "842226682137",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "281666001"
+                }
+              ],
+              "text": "Problems or Diagnosis within the family",
+              "enableWhen": [
+                {
+                  "question": "843227939948",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C%3C+281666001"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": [
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "cm",
+                "display": "centimeter"
+              }
+            }
+          ],
+          "linkId": "479360401949",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "50373000"
+            }
+          ],
+          "text": "Height/Length"
+        },
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "kg",
+                "display": "kilogram"
+              }
+            }
+          ],
+          "linkId": "209589934335",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27113001"
+            }
+          ],
+          "text": "Weight"
+        },
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "cm",
+                "display": "centimeter"
+              }
+            }
+          ],
+          "linkId": "872630017654",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "276361009"
+            }
+          ],
+          "text": "Waist Circumference"
+        },
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "kg/m2",
+                "display": "kilogram per square meter"
+              }
+            }
+          ],
+          "linkId": "565831934607",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "60621009"
+            }
+          ],
+          "text": "BMI"
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+                  "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+                }
+              ],
+              "linkId": "347811147798",
+              "text": "Where was the blood pressure taken",
+              "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C%3C+442083009",
+              "item": [
+                {
+                  "linkId": "347811147798_helpText",
+                  "type": "display",
+                  "text": "Need to narrow the valueset down",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "help",
+                            "display": "Help-Button"
+                          }
+                        ],
+                        "text": "Help-Button"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]",
+                    "display": "millimeter of mercury"
+                  }
+                }
+              ],
+              "linkId": "133904981906",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "72313002"
+                }
+              ],
+              "text": "Systolic Blood Pressure"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]",
+                    "display": "millimeter of mercury"
+                  }
+                }
+              ],
+              "linkId": "216119656374",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1091811000000102"
+                }
+              ],
+              "text": "Diastolic Blood Pressure"
+            }
+          ],
+          "type": "group",
+          "linkId": "790250654077",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "75367002"
+            }
+          ],
+          "text": "Blood Pressue"
+        },
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "code": "{beats}/min",
+                "display": "{beats}/min"
+              }
+            }
+          ],
+          "linkId": "326080499911",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364075005"
+            }
+          ],
+          "text": "Pulse"
+        }
+      ],
+      "type": "group",
+      "linkId": "906645563435",
+      "text": "Observations"
+    }
+  ]
+}

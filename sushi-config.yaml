@@ -93,8 +93,8 @@ pages:
   data-model.md:
     title: Data Model
     generation: markdown
-  observation-definitions.md:
-    title: Observation Panel
+  assessments-and-observations.md:
+    title: Assessments and Observation Definitions
     generation: markdown
   structured-data-capture.md:
     title: Structured Data Capture (Assessments)
@@ -290,8 +290,12 @@ resources:
     description: EMIS Section Headers Mapping
     exampleBoolean: false
   Questionnaire/PharmacyNomination:
-    name: Example
-    description: Example
+    name: PharmacyNomination
+    description: Pharmacy Nomination
+    exampleBoolean: false
+  Questionnaire/NHSHealthCheckAssessment:
+    name: NHSHealthCheckAssessment
+    description: NHS Health Check Assessment
     exampleBoolean: false
   Encounter/93d2c059-a934-4796-827b-dee1158cc4dc:
     name: Example
