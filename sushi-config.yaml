@@ -295,7 +295,7 @@ resources:
     exampleBoolean: false
   Questionnaire/NHSHealthCheckAssessment:
     name: NHSHealthCheckAssessment
-    description: NHS Health Check Assessment
+    description: NHS Health Check Assessment, based on [PRSB NHS Health Check Standard](https://theprsb.org/standards/nhshealthcheckstandard)
     exampleBoolean: false
   Encounter/93d2c059-a934-4796-827b-dee1158cc4dc:
     name: Example
@@ -359,5 +359,5 @@ menu:
     IM1 Transaction and Patient: IM1.html
   Domain Model:
     Data Model: data-model.html
-    Observation Panel: observation-definitions.html
+    Assessments and Observations: assessments-and-observations.html
   FHIR Assets: artifacts.html

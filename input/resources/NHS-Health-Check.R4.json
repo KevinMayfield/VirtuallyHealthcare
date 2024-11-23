@@ -221,10 +221,6 @@
       "text": "Family History",
       "item": [
         {
-          "type": "boolean",
-          "linkId": "843227939948",
-          "text": "Any problems or diagnoses in the family?",
-          "repeats": false,
           "item": [
             {
               "type": "choice",
@@ -263,7 +259,11 @@
               ],
               "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C%3C+281666001"
             }
-          ]
+          ],
+          "type": "boolean",
+          "linkId": "843227939948",
+          "text": "Any problems or diagnoses in the family?",
+          "repeats": false
         }
       ]
     },
@@ -478,6 +478,16 @@
       "type": "group",
       "linkId": "906645563435",
       "text": "Observations"
+    },
+    {
+      "type": "text",
+      "linkId": "980169581864",
+      "text": "Information and Advice Given"
+    },
+    {
+      "type": "string",
+      "linkId": "571370081871",
+      "text": "Signposting"
     }
   ]
 }

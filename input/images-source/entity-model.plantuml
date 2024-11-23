@@ -54,7 +54,7 @@ Commonly supported in UK EPR
 end note
 
 
-class "[[observation-definitions.html Observation Panel]]" as ObservationPanel <<entity>> {
+class "[[assessments-and-observations.html Observation Panel]]" as ObservationPanel <<entity>> {
 identifier 1..*
 subject 1..1: PatientIdentifier
 code : UK SNOMED CT or LOINC
