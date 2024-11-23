@@ -49,7 +49,7 @@
         "coding": [
             {
                 "system": "http://snomed.info/sct",
-                "code": "91941000033117",
+                "code": "39695411000001103",
                 "display": "Atorvastatin 10mg tablets"
             }
         ],
@@ -79,7 +79,7 @@
     ],
     "dispenseRequest": {
         "quantity": {
-            "value": 28.0,
+            "value": 28,
             "unit": "tablet"
         }
     },
