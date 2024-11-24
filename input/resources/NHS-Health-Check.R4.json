@@ -277,7 +277,7 @@
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "cm",
-                "display": "centimeter"
+                "display": "cm"
               }
             }
           ],
@@ -298,7 +298,7 @@
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "kg",
-                "display": "kilogram"
+                "display": "kg"
               }
             }
           ],
@@ -319,7 +319,7 @@
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "cm",
-                "display": "centimeter"
+                "display": "cm"
               }
             }
           ],
@@ -340,7 +340,7 @@
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "kg/m2",
-                "display": "kilogram per square meter"
+                "display": "kg/m2"
               }
             }
           ],
@@ -409,7 +409,7 @@
                   "valueCoding": {
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]",
-                    "display": "millimeter of mercury"
+                    "display": "mm[Hg]"
                   }
                 }
               ],
@@ -430,7 +430,7 @@
                   "valueCoding": {
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]",
-                    "display": "millimeter of mercury"
+                    "display": "mm[Hg]"
                   }
                 }
               ],
