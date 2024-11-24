@@ -1,15 +1,12 @@
 Profile: Observation
 Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation
 Id: Observation
-Description: "[HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/) to include elements of [UKCore-Observation](https://simplifier.net/hl7fhirukcorer4/ukcore-observation)"
+Description: "Extension of [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/) to include elements of [UKCore-Observation](https://simplifier.net/hl7fhirukcorer4/ukcore-observation)"
 
 * identifier 1..* MS
 * identifier only CommonResourceIdentifiers
 
 * contained 0..0
-
-// Override UK Core
-* code from VHObservationType (preferred)
 
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "system"
@@ -18,15 +15,34 @@ Description: "[HL7 International Patient Access](https://build.fhir.org/ig/HL7/f
 * code.coding contains
     SNOMED 0..* MS and
     LOINC 0..*
-
-* code.coding[SNOMED] from VHObservationType (extensible)
+* code.coding[SNOMED] from https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationType (extensible)
 * code.coding[SNOMED].system = $sct
 * code.coding[LOINC] from http://hl7.org/fhir/ValueSet/observation-codes (extensible)
 * code.coding[LOINC].system = $loinc
 
-//* code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
-//* code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
-* component.code from VHObservationType (extensible)
+* component.code.coding ^slicing.discriminator[0].type = #value
+* component.code.coding ^slicing.discriminator[=].path = "system"
+* component.code.coding ^slicing.ordered = false
+* component.code.coding ^slicing.rules = #closed
+* component.code.coding contains
+    SNOMED 0..* MS and
+    LOINC 0..*
+* component.code.coding[SNOMED] from https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationType (extensible)
+* component.code.coding[SNOMED].system = $sct
+* component.code.coding[LOINC] from http://hl7.org/fhir/ValueSet/observation-codes (extensible)
+* component.code.coding[LOINC].system = $loinc
+
+* valueCodeableConcept.coding ^slicing.discriminator[0].type = #value
+* valueCodeableConcept.coding ^slicing.discriminator[=].path = "system"
+* valueCodeableConcept.coding ^slicing.ordered = false
+* valueCodeableConcept.coding ^slicing.rules = #closed
+* valueCodeableConcept.coding contains
+    SNOMED 0..* MS and
+    LOINC 0..*
+* valueCodeableConcept.coding[SNOMED] from https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationType (extensible)
+* valueCodeableConcept.coding[SNOMED].system = $sct
+* valueCodeableConcept.coding[LOINC] from http://hl7.org/fhir/ValueSet/observation-codes (extensible)
+* valueCodeableConcept.coding[LOINC].system = $loinc
 
 * subject.reference 1..1 MS
 * subject.identifier only NHSNumbers
