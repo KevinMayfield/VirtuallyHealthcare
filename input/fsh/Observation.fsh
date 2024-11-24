@@ -1,14 +1,29 @@
 Profile: Observation
-Parent: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation
+Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation
 Id: Observation
-Description: "Extension of [UKCore-Observation](https://simplifier.net/hl7fhirukcorer4/ukcore-observation) and includes elements from [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)"
+Description: "[HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/) to include elements of [UKCore-Observation](https://simplifier.net/hl7fhirukcorer4/ukcore-observation)"
 
 * identifier 1..* MS
 * identifier only CommonResourceIdentifiers
 
 * contained 0..0
 
-* code from VHObservationType (extensible)
+// Override UK Core
+* code from VHObservationType (preferred)
+
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[=].path = "system"
+* code.coding ^slicing.ordered = false
+* code.coding ^slicing.rules = #closed
+* code.coding contains
+    SNOMED 0..* MS and
+    LOINC 0..*
+
+* code.coding[SNOMED] from VHObservationType (extensible)
+* code.coding[SNOMED].system = $sct
+* code.coding[LOINC] from http://hl7.org/fhir/ValueSet/observation-codes (extensible)
+* code.coding[LOINC].system = $loinc
+
 //* code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
 //* code insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
 * component.code from VHObservationType (extensible)

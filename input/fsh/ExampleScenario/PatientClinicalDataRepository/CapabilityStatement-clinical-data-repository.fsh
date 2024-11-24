@@ -66,19 +66,19 @@ The CDR closely follows:
 * insert SearchParamWithExpectation(name, #string, #SHALL)
 * insert WithSearchParamDocumentation([[A patients name]])
 
-* insert SearchParamCombinationWithExpectation(#SHALL)
+* insert SearchParamCombination
 * insert RequiringSearchParam(birthdate)
 * insert RequiringSearchParam(family)
 
-* insert SearchParamCombinationWithExpectation(#SHALL)
+* insert SearchParamCombination
 * insert RequiringSearchParam(birthdate)
 * insert RequiringSearchParam(name)
 
-* insert SearchParamCombinationWithExpectation(#SHALL)
+* insert SearchParamCombination
 * insert RequiringSearchParam(gender)
 * insert RequiringSearchParam(family)
 
-* insert SearchParamCombinationWithExpectation(#SHALL)
+* insert SearchParamCombination
 * insert RequiringSearchParam(gender)
 * insert RequiringSearchParam(name)
 
@@ -99,13 +99,13 @@ The CDR closely follows:
 * insert SearchParamWithExpectation(last-date, #date, #SHALL)
 * insert WithSearchParamDocumentation([[Date(/time) of last known occurrence of a reaction]])
 
-* insert SearchParamCombinationWithExpectation(#SHALL)
+* insert SearchParamCombination
 * insert RequiringSearchParam(patient)
 * insert RequiringSearchParam(clinical-status)
-* insert SearchParamCombinationWithExpectation(#SHALL)
+* insert SearchParamCombination
 * insert RequiringSearchParam(patient)
 * insert RequiringSearchParam(date)
-* insert SearchParamCombinationWithExpectation(#SHALL)
+* insert SearchParamCombination
 * insert RequiringSearchParam(patient)
 * insert RequiringSearchParam(last-date)
 
@@ -162,21 +162,21 @@ The CDR closely follows:
 * insert SearchParam(status, #token)
 * insert WithSearchParamDocumentation([[The status of the observation]])
 
-* insert SearchParamCombinationWithExpectation(#SHALL)
+* insert SearchParamCombination
 * insert RequiringSearchParam(patient)
 * insert RequiringSearchParam(category)
-* insert SearchParamCombinationWithExpectation(#SHALL)
+* insert SearchParamCombination
 * insert RequiringSearchParam(patient)
 * insert RequiringSearchParam(code)
-* insert SearchParamCombinationWithExpectation(#SHALL)
+* insert SearchParamCombination
 * insert RequiringSearchParam(patient)
 * insert RequiringSearchParam(category)
 * insert RequiringSearchParam(date)
-* insert SearchParamCombinationWithExpectation(#SHALL)
+* insert SearchParamCombination
 * insert RequiringSearchParam(patient)
 * insert RequiringSearchParam(category)
 * insert RequiringSearchParam(status)
-* insert SearchParamCombinationWithExpectation(#SHALL)
+* insert SearchParamCombination
 * insert RequiringSearchParam(patient)
 * insert RequiringSearchParam(code)
 * insert RequiringSearchParam(date)

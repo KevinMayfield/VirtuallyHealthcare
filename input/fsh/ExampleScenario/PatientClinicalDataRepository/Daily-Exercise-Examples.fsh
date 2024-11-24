@@ -11,7 +11,7 @@ Usage: #example
   * value = "0a7f38ae-9658-4b43-a3f9-02f66f65bf38"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#activity
-* code.coding[+] = http://loinc.org#41950-7 "Number of steps in 24 Hours, Measured"
+* code.coding[LOINC][+] = http://loinc.org#41950-7 "Number of steps in 24 Hours, Measured"
 * subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
 * valueQuantity.value = 9607
@@ -34,8 +34,8 @@ Usage: #example
   * value = "a14a52b7-b647-45f3-851a-8c00e28c0968"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding[+] = http://loinc.org#8873-2 "Maximum Heart rate in 24 Hours"
-* code.coding[+] = http://loinc.org#8867-4
+* code.coding[LOINC][+] = http://loinc.org#8873-2 "Maximum Heart rate in 24 Hours"
+* code.coding[LOINC][+] = http://loinc.org#8867-4
 * subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
 * valueQuantity.value = 132
@@ -58,8 +58,8 @@ Usage: #example
   * value = "ea09866e-d540-4d9c-ba9c-8e22338e524c"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding[+] = http://loinc.org#40443-4 "Heart rate - resting"
-* code.coding[+] = http://loinc.org#8867-4
+* code.coding[LOINC][+] = http://loinc.org#40443-4 "Heart rate - resting"
+* code.coding[LOINC][+] = http://loinc.org#8867-4
 * subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
 * valueQuantity.value = 64
@@ -82,7 +82,7 @@ Usage: #example
   * value = "b8df13d9-86f3-4545-9e82-50bca88090d9"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#activity
-* code.coding[+] = http://loinc.org#41979-6 "Calories burned in 24 Hours, Calc"
+* code.coding[LOINC][+] = http://loinc.org#41979-6 "Calories burned in 24 Hours, Calc"
 * subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
 * valueQuantity.value = 714
