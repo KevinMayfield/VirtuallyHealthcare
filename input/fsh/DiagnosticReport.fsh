@@ -2,8 +2,8 @@ Profile: DiagnosticReport
 Parent: https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport
 Id: DiagnosticReport
 Description: """
-Extension of [UKCore-UKCore-DiagnosticReport](https://simplifier.net/hl7fhirukcorer4/ukcore-diagnosticreport)
-Merge of Royal College of Radiologists (HL7 v2 ORU), Digital Health and Care Wales HL7 v2 ORU and [DiagnosticReport (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips)
+Extension of [UKCore-UKCore-DiagnosticReport](https://simplifier.net/hl7fhirukcorer4/ukcore-diagnosticreport),
+to include  Royal College of Radiologists (HL7 v2 ORU), Digital Health and Care Wales HL7 v2 ORU and [HL7 IPS DiagnosticReport](http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips)
 """
 
 * identifier 1..* MS

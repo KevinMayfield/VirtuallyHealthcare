@@ -1,7 +1,7 @@
 Profile: Condition
 Parent: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition
 Id: Condition
-Description: "Extension to UKCore Condition and includes elements from [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)"
+Description: "Extension to [UKCore Condition](https://simplifier.net/hl7fhirukcorer4/ukcore-condition) with requirements from [HL7 IPA Condition](https://build.fhir.org/ig/HL7/fhir-ipa/StructureDefinition-ipa-condition.html)"
 
 * identifier 1..* MS
 * identifier only CommonResourceIdentifiers
@@ -9,3 +9,15 @@ Description: "Extension to UKCore Condition and includes elements from [HL7 Inte
 * subject 1..1
 * subject only Reference(Patient)
 * subject.identifier only NHSNumbers
+
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[=].path = "system"
+* code.coding ^slicing.ordered = false
+* code.coding ^slicing.rules = #closed
+* code.coding contains
+    SNOMED 0..* MS and
+    LOINC 0..*
+* code.coding[SNOMED] from https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode (extensible)
+* code.coding[SNOMED].system = $sct
+* code.coding[LOINC] from http://hl7.org/fhir/ValueSet/observation-codes (extensible)
+* code.coding[LOINC].system = $loinc

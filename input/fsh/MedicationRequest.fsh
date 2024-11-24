@@ -1,7 +1,7 @@
 Profile: MedicationRequest
-Parent: https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest
+Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationrequest
 Id: MedicationRequest
-Description: "Extension of UKCore-MedicationRequest and includes elements from [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)"
+Description: "[HL7 IPA MedicationRequest](http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationrequest) plus requirements from [UKCore-MedicationRequest](https://simplifier.net/hl7fhirukcorer4/ukcore-medicationrequest)"
 
 * extension contains ExtensionCourses named extensionCourses 0..1
 

@@ -1,7 +1,7 @@
 Profile: Observation
 Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation
 Id: Observation
-Description: "Extension of [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/) to include elements of [UKCore-Observation](https://simplifier.net/hl7fhirukcorer4/ukcore-observation)"
+Description: "Extension of [HL7 IPA Observation](https://build.fhir.org/ig/HL7/fhir-ipa/StructureDefinition-ipa-observation.html) to include elements of [UKCore-Observation](https://simplifier.net/hl7fhirukcorer4/ukcore-observation)"
 
 * identifier 1..* MS
 * identifier only CommonResourceIdentifiers

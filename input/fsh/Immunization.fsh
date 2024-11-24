@@ -1,11 +1,10 @@
 Profile: Immunization
-Parent: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization
+Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization
 Id: Immunization
-Description: "Extension to UKCore Immunization  and includes elements from [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)"
+Description: "Extension to [HL7 IPA Immunization](http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization) plus requirements from [UKCore Immunization](https://simplifier.net/hl7fhirukcorer4/ukcore-immunization)"
 
 * identifier 1..* MS
 * identifier only CommonResourceIdentifiers
 
 * patient 1..1
-* patient only Reference(Patient)
 * patient.identifier only NHSNumbers
