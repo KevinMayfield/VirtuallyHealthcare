@@ -15,7 +15,7 @@ Description: "Extension to [HL7 IPA AllergyIntolerance](http://hl7.org/fhir/uv/i
 * code.coding ^slicing.rules = #closed
 * code.coding contains
     SNOMED 0..* MS
-* code.coding[SNOMED] from https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyCode (extensible)
+* code.coding[SNOMED] from https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyCode (required)
 * code.coding[SNOMED].system = $sct
 
 

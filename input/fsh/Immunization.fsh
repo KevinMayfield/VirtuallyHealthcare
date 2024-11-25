@@ -8,3 +8,5 @@ Description: "Extension to [HL7 IPA Immunization](http://hl7.org/fhir/uv/ipa/Str
 
 * patient 1..1
 * patient.identifier only NHSNumbers
+
+* vaccineCode from VHImmunisationCode (required)

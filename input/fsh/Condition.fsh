@@ -17,7 +17,7 @@ Description: "Extension to [UKCore Condition](https://simplifier.net/hl7fhirukco
 * code.coding contains
     SNOMED 0..* MS and
     LOINC 0..*
-* code.coding[SNOMED] from https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode (extensible)
+* code.coding[SNOMED] from VHConditionCode (required)
 * code.coding[SNOMED].system = $sct
 * code.coding[LOINC] from http://hl7.org/fhir/ValueSet/observation-codes (extensible)
 * code.coding[LOINC].system = $loinc

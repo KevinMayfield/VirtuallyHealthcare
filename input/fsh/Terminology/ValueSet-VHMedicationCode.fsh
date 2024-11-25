@@ -2,7 +2,7 @@ ValueSet: VHMedicationCode
 Id: VHMedicationCode
 Title: "VH Medication Code"
 Description: """
-VH Medication Code - copy of `https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationType` with UK SNOMED CT
+VH Medication Code - based on `https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode` using UK SNOMED CT Drug Extension (dm+d)
 """
 * ^experimental  = false
 * include codes from system http://snomed.info/sct where concept descendent-of #373873005 "Pharmaceutical / biologic product"

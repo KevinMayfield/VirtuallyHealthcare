@@ -15,7 +15,7 @@ Description: "Extension of [HL7 IPA Observation](https://build.fhir.org/ig/HL7/f
 * code.coding contains
     SNOMED 0..* MS and
     LOINC 0..*
-* code.coding[SNOMED] from https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationType (extensible)
+* code.coding[SNOMED] from VHObservationCode (required)
 * code.coding[SNOMED].system = $sct
 * code.coding[LOINC] from http://hl7.org/fhir/ValueSet/observation-codes (extensible)
 * code.coding[LOINC].system = $loinc
@@ -27,7 +27,7 @@ Description: "Extension of [HL7 IPA Observation](https://build.fhir.org/ig/HL7/f
 * component.code.coding contains
     SNOMED 0..* MS and
     LOINC 0..*
-* component.code.coding[SNOMED] from https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationType (extensible)
+* component.code.coding[SNOMED] from VHObservationCode (required)
 * component.code.coding[SNOMED].system = $sct
 * component.code.coding[LOINC] from http://hl7.org/fhir/ValueSet/observation-codes (extensible)
 * component.code.coding[LOINC].system = $loinc
@@ -39,7 +39,7 @@ Description: "Extension of [HL7 IPA Observation](https://build.fhir.org/ig/HL7/f
 * valueCodeableConcept.coding contains
     SNOMED 0..* MS and
     LOINC 0..*
-* valueCodeableConcept.coding[SNOMED] from https://fhir.hl7.org.uk/ValueSet/UKCore-ObservationType (extensible)
+* valueCodeableConcept.coding[SNOMED] from VHObservationCode (required)
 * valueCodeableConcept.coding[SNOMED].system = $sct
 * valueCodeableConcept.coding[LOINC] from http://hl7.org/fhir/ValueSet/observation-codes (extensible)
 * valueCodeableConcept.coding[LOINC].system = $loinc
