@@ -39,9 +39,9 @@ Description: "Extension of [HL7 IPA Observation](https://build.fhir.org/ig/HL7/f
 * valueCodeableConcept.coding contains
     SNOMED 0..* MS and
     LOINC 0..*
-* valueCodeableConcept.coding[SNOMED] from VHObservationCode (required)
+* valueCodeableConcept.coding[SNOMED] from VHObservationValueCode (required)
 * valueCodeableConcept.coding[SNOMED].system = $sct
-* valueCodeableConcept.coding[LOINC] from http://hl7.org/fhir/ValueSet/observation-codes (extensible)
+* valueCodeableConcept.coding[LOINC] from http://hl7.org/fhir/ValueSet/observation-codes (required)
 * valueCodeableConcept.coding[LOINC].system = $loinc
 
 * subject.reference 1..1 MS
