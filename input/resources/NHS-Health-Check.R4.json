@@ -535,7 +535,7 @@
       "text": "Observations"
     },
     {
-      "type": "text",
+      "type": "string",
       "linkId": "4",
       "prefix": "4",
       "text": "Information and Advice Given"
