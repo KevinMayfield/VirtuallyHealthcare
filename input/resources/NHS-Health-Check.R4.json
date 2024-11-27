@@ -440,15 +440,15 @@
                   }
                 }
               ],
-              "linkId": "3.5.2",
+              "linkId": "3.5.3",
               "code": [
                 {
                   "system": "http://snomed.info/sct",
-                  "code": "72313002"
+                  "code": "1091811000000102"
                 }
               ],
-              "prefix": "3.5.2",
-              "text": "Systolic Blood Pressure"
+              "prefix": "3.5.3",
+              "text": "Diastolic Blood Pressure"
             },
             {
               "type": "quantity",
@@ -462,15 +462,15 @@
                   }
                 }
               ],
-              "linkId": "3.5.3",
+              "linkId": "3.5.2",
               "code": [
                 {
                   "system": "http://snomed.info/sct",
-                  "code": "1091811000000102"
+                  "code": "72313002"
                 }
               ],
-              "prefix": "3.5.3",
-              "text": "Diastolic Blood Pressure"
+              "prefix": "3.5.2",
+              "text": "Systolic Blood Pressure"
             }
           ],
           "type": "group",
