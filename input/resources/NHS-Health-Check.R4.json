@@ -242,7 +242,7 @@
                   "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
                 }
               ],
-              "linkId": "842226682137",
+              "linkId": "2.1",
               "code": [
                 {
                   "system": "http://snomed.info/sct",
@@ -261,7 +261,7 @@
             }
           ],
           "type": "boolean",
-          "linkId": "843227939948",
+          "linkId": "2.2",
           "text": "Any problems or diagnoses in the family?",
           "repeats": false
         }
