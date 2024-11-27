@@ -417,6 +417,12 @@
               "linkId": "3.5.1",
               "prefix": "3.5.1",
               "text": "Where was the blood pressure taken",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "442083009"
+                }
+              ],
               "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C%3C+442083009",
               "item": [
                 {
