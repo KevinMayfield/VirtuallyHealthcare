@@ -33,6 +33,7 @@
         }
       ],
       "linkId": "OxygenSaturation",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -66,6 +67,7 @@
         }
       ],
       "linkId": "HemoglobinSaturationWithOxygen",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -97,6 +99,7 @@
         }
       ],
       "linkId": "Weight",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -135,6 +138,7 @@
         }
       ],
       "linkId": "HeadCircumference",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -173,6 +177,7 @@
         }
       ],
       "linkId": "BodyHeight",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -211,6 +216,7 @@
         }
       ],
       "linkId": "BodyTemperature",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -250,6 +256,7 @@
             }
           ],
           "linkId": "DiastolicBloodPressure",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component.valueQuantity",
           "code": [
             {
               "system": "http://snomed.info/sct",
@@ -283,6 +290,7 @@
             }
           ],
           "linkId": "SystolicBloodPressure",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component.valueQuantity",
           "code": [
             {
               "system": "http://snomed.info/sct",
@@ -313,7 +321,8 @@
         }
       ],
       "prefix": "7",
-      "text": "Blood Pressue"
+      "text": "Blood Pressure",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component"
     },
     {
       "type": "quantity",
@@ -327,6 +336,7 @@
         }
       ],
       "linkId": "HeartRate",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -364,6 +374,7 @@
         }
       ],
       "linkId": "RespiratoryRate",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -402,6 +413,7 @@
         }
       ],
       "linkId": "BodyMassIndex",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -430,6 +442,7 @@
     {
       "type": "boolean",
       "linkId": "BreathingRoomAir",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueBoolean",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -453,6 +466,7 @@
         }
       ],
       "linkId": "PatientOnOxygen",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
