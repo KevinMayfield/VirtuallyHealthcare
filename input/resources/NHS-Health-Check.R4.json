@@ -52,6 +52,7 @@
                       "display": "Ex-smoker"
                     }
                   ],
+                  "prefix": "1.1.1.1",
                   "text": "How much did you smoke?",
                   "enableWhen": [
                     {
@@ -71,10 +72,11 @@
                   "code": "8517006"
                 }
               ],
+              "prefix": "1.1.1",
               "text": "Have you ever smoked?",
               "enableWhen": [
                 {
-                  "question": "1.2",
+                  "question": "1.1",
                   "operator": "=",
                   "answerBoolean": false
                 }
@@ -108,10 +110,11 @@
                   "display": "Smoker"
                 }
               ],
+              "prefix": "1.1.2",
               "text": "How much do you smoke?",
               "enableWhen": [
                 {
-                  "question": "1,1",
+                  "question": "1.1",
                   "operator": "=",
                   "answerBoolean": true
                 }
@@ -127,6 +130,13 @@
             }
           ],
           "linkId": "1.1",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "77176002"
+            }
+          ],
+          "prefix": "1.1",
           "text": "Do you smoke"
         },
         {
@@ -158,6 +168,7 @@
                   "code": "219006"
                 }
               ],
+              "prefix": "1.2.1",
               "text": "How much do you drink",
               "enableWhen": [
                 {
@@ -195,6 +206,7 @@
                   "code": "105542008"
                 }
               ],
+              "prefix": "1.2.2",
               "text": "Non alcohol drinker reason",
               "enableWhen": [
                 {
@@ -208,17 +220,22 @@
           ],
           "type": "boolean",
           "linkId": "1.2",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "219006"
+            }
+          ],
+          "prefix": "1.2",
           "text": "Do you drink alcohol"
         }
       ],
       "type": "group",
       "linkId": "1",
+      "prefix": "1",
       "text": "Social Context"
     },
     {
-      "type": "group",
-      "linkId": "2",
-      "text": "Family History",
       "item": [
         {
           "item": [
@@ -242,7 +259,7 @@
                   "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
                 }
               ],
-              "linkId": "2.1",
+              "linkId": "842226682137",
               "code": [
                 {
                   "system": "http://snomed.info/sct",
@@ -261,11 +278,16 @@
             }
           ],
           "type": "boolean",
-          "linkId": "2.2",
+          "linkId": "843227939948",
+          "prefix": "2.1",
           "text": "Any problems or diagnoses in the family?",
           "repeats": false
         }
-      ]
+      ],
+      "type": "group",
+      "linkId": "2",
+      "prefix": "2",
+      "text": "Family History"
     },
     {
       "item": [
@@ -288,6 +310,7 @@
               "code": "50373000"
             }
           ],
+          "prefix": "3.1",
           "text": "Height/Length"
         },
         {
@@ -309,6 +332,7 @@
               "code": "27113001"
             }
           ],
+          "prefix": "3.2",
           "text": "Weight"
         },
         {
@@ -330,6 +354,7 @@
               "code": "276361009"
             }
           ],
+          "prefix": "3.3",
           "text": "Waist Circumference"
         },
         {
@@ -351,6 +376,7 @@
               "code": "60621009"
             }
           ],
+          "prefix": "3.4",
           "text": "BMI"
         },
         {
@@ -376,6 +402,7 @@
                 }
               ],
               "linkId": "3.5.1",
+              "prefix": "3.5.1",
               "text": "Where was the blood pressure taken",
               "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C%3C+442083009",
               "item": [
@@ -420,6 +447,7 @@
                   "code": "72313002"
                 }
               ],
+              "prefix": "3.5.2",
               "text": "Systolic Blood Pressure"
             },
             {
@@ -441,6 +469,7 @@
                   "code": "1091811000000102"
                 }
               ],
+              "prefix": "3.5.3",
               "text": "Diastolic Blood Pressure"
             }
           ],
@@ -452,6 +481,7 @@
               "code": "75367002"
             }
           ],
+          "prefix": "3.5",
           "text": "Blood Pressure"
         },
         {
@@ -472,21 +502,25 @@
               "code": "364075005"
             }
           ],
+          "prefix": "3.6",
           "text": "Pulse"
         }
       ],
       "type": "group",
       "linkId": "3",
+      "prefix": "3",
       "text": "Observations"
     },
     {
       "type": "text",
       "linkId": "4",
+      "prefix": "4",
       "text": "Information and Advice Given"
     },
     {
       "type": "string",
       "linkId": "5",
+      "prefix": "5",
       "text": "Signposting"
     }
   ]
