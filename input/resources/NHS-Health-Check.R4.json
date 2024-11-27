@@ -44,7 +44,7 @@
                       "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
                     }
                   ],
-                  "linkId": "962923977516",
+                  "linkId": "1.1.1.1",
                   "code": [
                     {
                       "system": "http://snomed.info/sct",
@@ -55,7 +55,7 @@
                   "text": "How much did you smoke?",
                   "enableWhen": [
                     {
-                      "question": "103805351277",
+                      "question": "1.1.1",
                       "operator": "=",
                       "answerBoolean": true
                     }
@@ -64,7 +64,7 @@
                 }
               ],
               "type": "boolean",
-              "linkId": "103805351277",
+              "linkId": "1.1.1",
               "code": [
                 {
                   "system": "http://snomed.info/sct",
@@ -74,7 +74,7 @@
               "text": "Have you ever smoked?",
               "enableWhen": [
                 {
-                  "question": "435500959470",
+                  "question": "1.2",
                   "operator": "=",
                   "answerBoolean": false
                 }
@@ -100,7 +100,7 @@
                   "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
                 }
               ],
-              "linkId": "498958545216",
+              "linkId": "1.1.2",
               "code": [
                 {
                   "system": "http://snomed.info/sct",
@@ -111,7 +111,7 @@
               "text": "How much do you smoke?",
               "enableWhen": [
                 {
-                  "question": "435500959470",
+                  "question": "1,1",
                   "operator": "=",
                   "answerBoolean": true
                 }
@@ -126,7 +126,7 @@
               "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
             }
           ],
-          "linkId": "435500959470",
+          "linkId": "1.1",
           "text": "Do you smoke"
         },
         {
@@ -151,7 +151,7 @@
                   "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
                 }
               ],
-              "linkId": "607455405369",
+              "linkId": "1.2.1",
               "code": [
                 {
                   "system": "http://snomed.info/sct",
@@ -161,7 +161,7 @@
               "text": "How much do you drink",
               "enableWhen": [
                 {
-                  "question": "387112697371",
+                  "question": "1.2",
                   "operator": "=",
                   "answerBoolean": true
                 }
@@ -188,7 +188,7 @@
                   "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
                 }
               ],
-              "linkId": "306778975762",
+              "linkId": "1.2.2",
               "code": [
                 {
                   "system": "http://snomed.info/sct",
@@ -198,7 +198,7 @@
               "text": "Non alcohol drinker reason",
               "enableWhen": [
                 {
-                  "question": "387112697371",
+                  "question": "1.2",
                   "operator": "=",
                   "answerBoolean": false
                 }
@@ -207,17 +207,17 @@
             }
           ],
           "type": "boolean",
-          "linkId": "387112697371",
+          "linkId": "1.2",
           "text": "Do you drink alcohol"
         }
       ],
       "type": "group",
-      "linkId": "4470123292646",
+      "linkId": "1",
       "text": "Social Context"
     },
     {
       "type": "group",
-      "linkId": "831473381431",
+      "linkId": "2",
       "text": "Family History",
       "item": [
         {
@@ -281,7 +281,7 @@
               }
             }
           ],
-          "linkId": "479360401949",
+          "linkId": "3.1",
           "code": [
             {
               "system": "http://snomed.info/sct",
@@ -302,7 +302,7 @@
               }
             }
           ],
-          "linkId": "209589934335",
+          "linkId": "3.2",
           "code": [
             {
               "system": "http://snomed.info/sct",
@@ -323,7 +323,7 @@
               }
             }
           ],
-          "linkId": "872630017654",
+          "linkId": "3.3",
           "code": [
             {
               "system": "http://snomed.info/sct",
@@ -344,7 +344,7 @@
               }
             }
           ],
-          "linkId": "565831934607",
+          "linkId": "3.4",
           "code": [
             {
               "system": "http://snomed.info/sct",
@@ -375,7 +375,7 @@
                   "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
                 }
               ],
-              "linkId": "347811147798",
+              "linkId": "3.5.1",
               "text": "Where was the blood pressure taken",
               "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C%3C+442083009",
               "item": [
@@ -413,7 +413,7 @@
                   }
                 }
               ],
-              "linkId": "133904981906",
+              "linkId": "3.5.2",
               "code": [
                 {
                   "system": "http://snomed.info/sct",
@@ -434,7 +434,7 @@
                   }
                 }
               ],
-              "linkId": "216119656374",
+              "linkId": "3.5.3",
               "code": [
                 {
                   "system": "http://snomed.info/sct",
@@ -445,14 +445,14 @@
             }
           ],
           "type": "group",
-          "linkId": "790250654077",
+          "linkId": "3.5",
           "code": [
             {
               "system": "http://snomed.info/sct",
               "code": "75367002"
             }
           ],
-          "text": "Blood Pressue"
+          "text": "Blood Pressure"
         },
         {
           "type": "quantity",
@@ -465,7 +465,7 @@
               }
             }
           ],
-          "linkId": "326080499911",
+          "linkId": "3.6",
           "code": [
             {
               "system": "http://snomed.info/sct",
@@ -476,17 +476,17 @@
         }
       ],
       "type": "group",
-      "linkId": "906645563435",
+      "linkId": "3",
       "text": "Observations"
     },
     {
       "type": "text",
-      "linkId": "980169581864",
+      "linkId": "4",
       "text": "Information and Advice Given"
     },
     {
       "type": "string",
-      "linkId": "571370081871",
+      "linkId": "5",
       "text": "Signposting"
     }
   ]
