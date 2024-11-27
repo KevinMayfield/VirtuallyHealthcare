@@ -9,7 +9,7 @@
   "url": "https://fhir.virtually.healthcare/Questionnaire/NHSHealthCheckAssessment",
   "title": "NHS Health Check Assessment",
   "status": "draft",
-  "description": "Based on [PRSB NHS Health Check Standard](https://theprsb.org/standards/nhshealthcheckstandard)",
+  "description": "This is based on assessment (data capture) requirements mentioned in [PRSB NHS Health Check Standard](https://theprsb.org/standards/nhshealthcheckstandard)",
   "code": [
     {
       "system": "http://snomed.info/sct",
