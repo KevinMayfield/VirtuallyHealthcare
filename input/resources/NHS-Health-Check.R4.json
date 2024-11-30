@@ -39,10 +39,6 @@
                           }
                         ]
                       }
-                    },
-                    {
-                      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
-                      "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
                     }
                   ],
                   "linkId": "1.1.1.1",
@@ -99,10 +95,6 @@
                       }
                     ]
                   }
-                },
-                {
-                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
-                  "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
                 }
               ],
               "linkId": "1.1.2",
@@ -127,12 +119,6 @@
           ],
           "type": "boolean",
           "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueBoolean",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
-              "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
-            }
-          ],
           "linkId": "1.1",
           "code": [
             {
@@ -160,10 +146,6 @@
                       }
                     ]
                   }
-                },
-                {
-                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
-                  "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
                 }
               ],
               "linkId": "1.2.1",
@@ -199,10 +181,6 @@
                       }
                     ]
                   }
-                },
-                {
-                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
-                  "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
                 }
               ],
               "linkId": "1.2.2",
@@ -261,10 +239,6 @@
                       }
                     ]
                   }
-                },
-                {
-                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
-                  "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
                 }
               ],
               "linkId": "842226682137",
@@ -408,10 +382,6 @@
                       }
                     ]
                   }
-                },
-                {
-                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
-                  "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
                 }
               ],
               "linkId": "3.5.1",
