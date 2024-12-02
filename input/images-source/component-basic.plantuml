@@ -1,0 +1,37 @@
+@startuml
+
+actor user
+component "User Interface" as ui
+component Backend
+interface API
+database Database
+component "Message Bus" as tie
+component "Process Services" as process
+
+
+user <-l-> ui
+ui <-d-> API
+API -d-> Backend
+Backend -l-> Database
+Backend <-d-> tie
+tie <-d-> process
+
+note left of ui
+HL7 Structured Data Capture?
+end note
+
+note left of API
+Base FHIR RESTful, HL7 International Patient Access (FHIR)
+or IHE QEDm (FHIR)?
+end note
+
+note right of tie
+HL7 v2 ADT and ORU
+end note
+
+note right of process
+Internal and external workflow
+end note
+
+
+@enduml
